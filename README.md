@@ -125,7 +125,7 @@ Seen here: http://hackage.haskell.org/package/lens
 
 ## Frontend/JavaScript
 
-If you need JavaScript, you probably want Purescript for generating JS. Purescript *not* strictly Haskell but it is very similar and quite pleasant.
+If you need JavaScript, you probably want Purescript for generating JS. Purescript is *not* strictly Haskell but it is very similar and quite pleasant.
 
 - http://www.purescript.org/
 - http://try.purescript.org/
@@ -156,7 +156,7 @@ https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms
 
 People vastly overestimate the difficulty of using Lens. Anybody comfortable with Functor/Foldable/Traversable (or even just the first one) can leverage lenses and prisms to make their life happier.
 
-If you've ever done something like: `(fmap . fmap)` you've were "lensing" in your head.
+If you've ever done something like: `(fmap . fmap)` you were "lensing" in your head.
 
 I recommend these two tutorials/introductions:
 
