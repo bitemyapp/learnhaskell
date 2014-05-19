@@ -6,7 +6,7 @@ This is my recommended path for learning Haskell.
 
 ## Getting started
 
-### Ubuntu users -> PPA
+### Ubuntu
 
 This PPA is excellent and is what I use on all my Linux dev and build machines: http://launchpad.net/~hvr/+archive/ghc
 
@@ -19,7 +19,7 @@ Specifically:
 
 Then add `~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.2/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin` to your PATH (bash_profile, zshrc, bashrc, etc)
 
-### Arch Linux users
+### Arch Linux
 
 To install Haskell from the official repos on Arch Linux
 
@@ -29,7 +29,7 @@ Update your mirrorlist
 Download Haskell
 - sudo pacman -S cabal-install ghc happy alex haddock
 
-### Mac OS X and non-Ubuntu Linux users -> download the binary distribution
+### Mac OS X and other Linux users
 
 Download the latest binary distributions for cabal and ghc:
 
