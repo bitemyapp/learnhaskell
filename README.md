@@ -12,10 +12,10 @@ This PPA is excellent and is what I use on all my Linux dev and build machines: 
 
 Specifically:
 
-- sudo apt-get install python-software-properties
-- sudo add-apt-repository -y ppa:hvr/ghc
-- sudo apt-get update
-- sudo apt-get install cabal-install-1.20 ghc-7.8.2 happy-1.19.3 alex-3.1.3
+- `sudo apt-get install python-software-properties`
+- `sudo add-apt-repository -y ppa:hvr/ghc`
+- `sudo apt-get update`
+- `sudo apt-get install cabal-install-1.20 ghc-7.8.2 happy-1.19.3 alex-3.1.3`
 
 Then add `~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.2/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin` to your PATH (bash_profile, zshrc, bashrc, etc)
 
@@ -24,10 +24,10 @@ Then add `~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.2/bin:/opt/happy/1.19.3/
 To install Haskell from the official repos on Arch Linux
 
 Update your mirrorlist
-- sudo pacman -Syy
+- `sudo pacman -Syy`
 
 Download Haskell
-- sudo pacman -S cabal-install ghc happy alex haddock
+- `sudo pacman -S cabal-install ghc happy alex haddock`
 
 ### Mac OS X, Windows, and other Linux users
 
