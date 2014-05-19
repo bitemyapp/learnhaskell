@@ -29,7 +29,7 @@ Update your mirrorlist
 Download Haskell
 - sudo pacman -S cabal-install ghc happy alex haddock
 
-### Mac OS X and other Linux users
+### Mac OS X, Windows, and other Linux users
 
 Download the latest binary distributions for cabal and ghc:
 
@@ -48,10 +48,6 @@ https://www.haskell.org/cabal/download.html
 #### Detailed guide
 
 Excellent guide here: http://www.davesquared.net/2014/05/platformless-haskell.html
-
-### Windows
-
-Either Haskell Platform (if you'll need stuff that compiles in dependencies for things like OpenGL) or the aforementioned binary distribution.
 
 ## Yorgey course - Do this first, this is the primary way I recommend being introduced to Haskell.
 
