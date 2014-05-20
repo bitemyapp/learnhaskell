@@ -102,7 +102,7 @@ You should do Yorgey's course before attempting this: https://github.com/NICTA/c
 
 ## Secondary material, references
 
-LYAH and Real World Haskell (Thanks bos!) are available online.
+[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) and [Real World Haskell](http://book.realworldhaskell.org) (Thanks bos!) are available online.
 
 I recommend RWH as a reference (thick book). The chapters for parsing and monads are great for getting a sense for where monads are useful. Other people have said that they've liked it a lot. Perhaps a good follow-up for practical idioms after you've got the essentials of Haskell down?
 
