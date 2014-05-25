@@ -184,11 +184,13 @@ If you want to follow up on the type and category theory:
 
 Harper's Practical Foundations for Programming Languages is the best PL focused intro to type theory I've read: http://www.cs.cmu.edu/~rwh/plbook/book.pdf
 
-http://en.wikibooks.org/wiki/Haskell/Category_theory
+http://en.wikibooks.org/wiki/Haskell/Category_theory nice diagrams
 
-http://www.haskell.org/haskellwiki/Category_theory
+http://www.haskell.org/haskellwiki/Category_theory good links to other resources
 
-https://www.google.com/search?q=Awodey+Category+Theory
+http://science.raphael.poss.name/categories-from-scratch.html includes practical examples
+
+https://www.google.com/search?q=Awodey+Category+Theory the standard text along with MacLane
 
 http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/
 
