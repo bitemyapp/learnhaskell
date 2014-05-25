@@ -174,7 +174,7 @@ https://github.com/ekmett/lens#lens-lenses-folds-and-traversals
 
 If you want to follow up on the type and category theory:
 
-http://www.cis.upenn.edu/~bcpierce/tapl/
+Harper's Practical Foundations for Programming Languages is the best PL focused intro to type theory I've read: http://www.cs.cmu.edu/~rwh/plbook/book.pdf
 
 http://en.wikibooks.org/wiki/Haskell/Category_theory
 
