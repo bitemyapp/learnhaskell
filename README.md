@@ -51,7 +51,9 @@ Cabal does project management and dependency resolution. It's how you'll install
 
 https://www.haskell.org/cabal/download.html
 
-#### Detailed guide
+#### Detailed manual install guide for Mac OS X
+
+You don't need this if you use the .app
 
 Excellent guide here: http://www.davesquared.net/2014/05/platformless-haskell.html
 
