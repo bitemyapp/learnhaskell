@@ -29,7 +29,13 @@ Update your mirrorlist
 Download Haskell
 - `sudo pacman -S cabal-install ghc happy alex haddock`
 
-### Mac OS X, Windows, and other Linux users
+### Mac OS X
+
+Install the GHC for Mac OS X app, which includes GHC and Cabal. It provides instructions on how to add GHC and Cabal to your path after you've dropped the .app somewhere.
+
+http://ghcformacosx.github.io/
+
+### Windows and other Linux users
 
 Download the latest binary distributions for cabal and ghc:
 
