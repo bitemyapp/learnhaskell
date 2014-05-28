@@ -59,7 +59,8 @@ Excellent guide here: http://www.davesquared.net/2014/05/platformless-haskell.ht
 
 ## Yorgey course - Do this first, this is the primary way I recommend being introduced to Haskell.
 
-http://www.seas.upenn.edu/~cis194/lectures.html Brent Yorgey's course is the best I've found so far and replaces both Yann Esposito's HF&H and the NICTA course. This course is particularly valuable as it will not only equip you to write Haskell but also help you understand parser combinators. 
+http://www.seas.upenn.edu/~cis194/lectures.html Brent Yorgey's course is the best I've found so far and replaces both Yann Esposito's HF&H and the NICTA course. This course is particularly valuable as it will not only equip you to write Haskell but also help you understand parser combinators.
+Also available School of Haskell interactive version https://www.fpcomplete.com/school/starting-with-haskell/introduction-to-haskell
 
 ## Supplementary course that provides more material on intermediate topics
 
