@@ -148,6 +148,8 @@ If you need JavaScript, you probably want Purescript for generating JS. Purescri
 
 This book by Simon Marlow is probably the best I've ever read on the topics of Parallelism and Concurrency: http://chimera.labs.oreilly.com/books/1230000000929
 
+A thorough walk-through on testing & incremental development of a multi-threaded application in Haskell: http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application
+
 http://www.haskell.org/haskellwiki/Functional_Reactive_Programming
 
 ## Recursion Schemes
