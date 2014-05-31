@@ -196,6 +196,14 @@ https://www.google.com/search?q=Awodey+Category+Theory the standard text along w
 
 http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/
 
+### Stephen's Nifty "How to get to monad" posts
+
+Didn't know where else to put these:
+
+- http://www.stephendiehl.com/posts/adjunctions.html
+
+- http://www.stephendiehl.com/posts/monads.html
+
 ## Ad-hoc & parametric polymorphism, free theorems
 
 http://swizec.com/blog/week-20-making-ad-hoc-polymorphism-less-ad-hoc/swizec/6564
