@@ -200,6 +200,8 @@ If you want to follow up on the type and category theory:
 
 - http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/
 
+- http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml Pierce's Great Works in PL list
+
 ### Stephen's Nifty "How to get to monad" posts
 
 Didn't know where else to put these:
@@ -213,6 +215,22 @@ Didn't know where else to put these:
 - http://swizec.com/blog/week-20-making-ad-hoc-polymorphism-less-ad-hoc/swizec/6564
 
 - http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf
+
+## Comonads
+
+- https://speakerdeck.com/dmoverton/comonads-in-haskell
+
+## Yoneda / CoYoneda
+
+- http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu
+
+## Dependent typing
+
+- http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html squint hard.
+
+- http://okmij.org/ftp/Computation/lightweight-dependent-typing.html
+
+- http://www.idris-lang.org/
 
 ## Extended Reading list (some is already included here)
 
