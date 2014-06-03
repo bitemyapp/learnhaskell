@@ -220,6 +220,8 @@ Didn't know where else to put these:
 
 - https://speakerdeck.com/dmoverton/comonads-in-haskell
 
+- http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad
+
 ## Yoneda / CoYoneda
 
 - http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu
