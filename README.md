@@ -217,6 +217,20 @@ Didn't know where else to put these:
 
 - http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf
 
+## Initial and Final, DSLs, Finally Tagless
+
+- http://martijn.van.steenbergen.nl/journal/2009/10/18/transforming-polymorphic-values/
+
+- http://martijn.van.steenbergen.nl/journal/2009/11/12/gadts-in-haskell-98/
+
+- https://www.fpcomplete.com/user/mutjida/typed-tagless-final-linear-lambda-calculus
+
+- http://okmij.org/ftp/tagless-final/course/course.html
+
+- http://okmij.org/ftp/tagless-final/course/lecture.pdf
+
+- http://existentialtype.wordpress.com/2011/03/21/the-dog-that-didnt-bark/ less specifically relevant but interesting
+
 ## Comonads
 
 - https://speakerdeck.com/dmoverton/comonads-in-haskell
