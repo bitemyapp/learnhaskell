@@ -12,6 +12,7 @@ This PPA is excellent and is what I use on all my Linux dev and build machines: 
 
 Specifically:
 
+- `sudo apt-get update`
 - `sudo apt-get install python-software-properties`
 - `sudo add-apt-repository -y ppa:hvr/ghc`
 - `sudo apt-get update`
