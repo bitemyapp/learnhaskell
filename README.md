@@ -147,6 +147,23 @@ If you need JavaScript, you probably want Purescript for generating JS. Purescri
 - http://www.purescript.org/
 - http://try.purescript.org/
 
+## Laziness, strictness, guarded recursion
+
+http://www.vex.net/~trebla/haskell/lazy.xhtml
+
+http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization
+
+```haskell
+let a = 1 : a -- guarded recursion, (:) is lazy and can be pattern matched.
+> head a
+1
+
+let a = 1 * a -- not guarded, (*) is strict
+> a
+*** Exception: <<loop>>
+
+```
+
 ## Parallelism/Concurrency
 
 - http://chimera.labs.oreilly.com/books/1230000000929 This book by Simon Marlow is probably the best I've ever read on the topics of Parallelism and Concurrency: 
