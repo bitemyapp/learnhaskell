@@ -155,7 +155,10 @@ http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-opt
 
 ```haskell
 let a = 1 : a -- guarded recursion, (:) is lazy and can be pattern matched.
-> head a
+let (v : _) = a
+> v
+1
+> head a -- head a == v
 1
 
 let a = 1 * a -- not guarded, (*) is strict
