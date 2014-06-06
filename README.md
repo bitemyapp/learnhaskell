@@ -115,6 +115,8 @@ Put briefly:
 - Always use sandboxes for installing new packages, building new or existing projects, or starting experiments
 - Use `cabal repl` to start a project-scoped ghci instance
 
+The sandbox-based approach I suggest should avoid package-dependency problems, but it's incompatible with the way the Haskell Platform provides pre-built packages. If you're still learning Haskell and don't understand how ghc-pkg and Cabal work, *avoid Platform* and instead use the install instructions earlier in the guide.
+
 ## Exercises for practice
 
 You should do Yorgey's course before attempting this: https://github.com/NICTA/course/
