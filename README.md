@@ -4,6 +4,14 @@ This is my recommended path for learning Haskell.
 
 # Primary course
 
+## What are Haskell, GHC, and Cabal?
+
+Haskell is a programming language as laid out in the reports, most recent one being in 2010. http://www.haskell.org/onlinereport/haskell2010/
+
+GHC is the most popular compiler for Haskell and is what you'll install along with Cabal. Cabal is the project and dependency management tool used with GHC. You almost definitely want both if you're going to start writing Haskell.
+
+Cabal is equivalent to Ruby's Bundler, Python's pip, Node's NPM, Maven, etc. GHC manages packaging itself, Cabal chooses what versions to install.
+
 ## Getting started
 
 ### Ubuntu
