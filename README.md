@@ -82,6 +82,10 @@ This is Bryan O'Sullivan's online course from the class he teaches at Stanford. 
 
 - http://tim.dysinger.net/posts/2014-02-18-haskell-with-emacs.html
 
+- https://github.com/chrisdone/chrisdone-emacs
+
+- https://github.com/bitemyapp/dotfiles/
+
 ### Vim
 
 - http://www.haskell.org/haskellwiki/Vim
