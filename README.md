@@ -154,6 +154,10 @@ https://www.fpcomplete.com/hoogle
 
 Also Hayoo (which has all of hackage enabled for search by default): http://holumbus.fh-wedel.de/hayoo/hayoo.html
 
+### Setting up your own local instance of Hoogle
+
+https://gist.github.com/bitemyapp/3e6a015760775e0679bf
+
 ## Fun Stuff
 
 After you're comfortable with Haskell, strongly consider learning Lenses and Prisms, even if just as a "user". You don't need to understand the underlying category for it to be useful.
