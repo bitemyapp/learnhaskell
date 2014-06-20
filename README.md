@@ -261,7 +261,11 @@ Didn't know where else to put these:
 
 - http://www.stephendiehl.com/posts/monads.html
 
-## Ad-hoc & parametric polymorphism, free theorems
+## Parametricity, ad-hoc vs. parametric polymorphism, free theorems
+
+- http://dl.dropboxusercontent.com/u/7810909/media/doc/parametricity.pdf
+
+- https://github.com/tonymorris/parametricity/
 
 - http://swizec.com/blog/week-20-making-ad-hoc-polymorphism-less-ad-hoc/swizec/6564
 
