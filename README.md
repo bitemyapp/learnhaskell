@@ -173,13 +173,15 @@ If you need JavaScript, you probably want Purescript for generating JS. Purescri
 
 ## Laziness, strictness, guarded recursion
 
-http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html
+- http://chimera.labs.oreilly.com/books/1230000000929/ch02.html Marlow's book about parallelism and concurrency has one of the best introductions to laziness and normal form I've found. Use other material too if it doesn't stick immediately.
 
-http://alpmestan.com/2013/10/02/oh-my-laziness/
+- http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html
 
-http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization
+- http://alpmestan.com/2013/10/02/oh-my-laziness/
 
-http://www.slideshare.net/tibbe/reasoning-about-laziness
+- http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization
+
+- http://www.slideshare.net/tibbe/reasoning-about-laziness
 
 ```haskell
 let a = 1 : a -- guarded recursion, (:) is lazy and can be pattern matched.
@@ -195,7 +197,7 @@ let a = 1 * a -- not guarded, (*) is strict
 
 ```
 
-http://www.vex.net/~trebla/haskell/lazy.xhtml
+- http://www.vex.net/~trebla/haskell/lazy.xhtml
 
 ## Parallelism/Concurrency
 
