@@ -250,7 +250,7 @@ I recommend these two tutorials/introductions:
 
 If you want to follow up on the type and category theory:
 
-- http://byorgey.wordpress.com/2014/01/14/catsters-guide/ and http://byorgey.wordpress.com/2014/01/14/catsters-guide/
+- http://byorgey.wordpress.com/2014/01/14/catsters-guide/ and http://byorgey.wordpress.com/catsters-guide-2/
 
 - http://www.cs.cmu.edu/~rwh/plbook/book.pdf Harper's Practical Foundations for Programming Languages is the best PL focused intro to type theory I've read.
 
