@@ -28,6 +28,17 @@ Specifically:
 
 Then add `~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.2/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin` to your PATH (bash_profile, zshrc, bashrc, etc)
 
+
+### Debian
+
+Debian can follow the same steps as Ubuntu, but has to execute an additional command. Immediately after `sudo add-apt-repository -y ppa:hvr/ghc` is ran, run:
+
+- `sudo sed -i s/wheezy/trusty/g /etc/apt/sources.list.d/hvr-ghc-wheezy.list`
+
+For other Debian versions, just replace all occurences of "wheezy" with your version name in the command above.
+
+If, for some reason, the file `/etc/apt/sources.list.d/hvr-ghc-wheezy.list` does not exist, try the same command but with `/etc/apt/sources.list` instead.
+
 ### Arch Linux
 
 To install Haskell from the official repos on Arch Linux
