@@ -150,7 +150,7 @@ I recommend RWH as a reference (thick book). The chapters for parsing and monads
 
 ## For learning some common typeclasses
 
-Useful for understanding typeclasses in general but also some Hask-specific category theory:
+Useful for understanding `Functor`, `Applicative`, `Monad`, `Monoid` and other typeclasses in general but also some Hask-specific category theory:
 - http://www.haskell.org/haskellwiki/Typeclassopedia
 
 ## Search code by type signature
