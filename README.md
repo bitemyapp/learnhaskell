@@ -115,6 +115,10 @@ This is Bryan O'Sullivan's online course from the class he teaches at Stanford. 
 
 - https://github.com/SublimeHaskell/SublimeHaskell
 
+### Eclipse
+
+- http://eclipsefp.github.io
+
 ## FAQ and working with Cabal
 
 ### Fantastic FAQ
@@ -150,7 +154,7 @@ I recommend RWH as a reference (thick book). The chapters for parsing and monads
 
 ## For learning some common typeclasses
 
-Useful for understanding typeclasses in general but also some Hask-specific category theory:
+Useful for understanding `Functor`, `Applicative`, `Monad`, `Monoid` and other typeclasses in general but also some Hask-specific category theory:
 - http://www.haskell.org/haskellwiki/Typeclassopedia
 
 ## Search code by type signature
