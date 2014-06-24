@@ -115,10 +115,6 @@ This is Bryan O'Sullivan's online course from the class he teaches at Stanford. 
 
 - https://github.com/SublimeHaskell/SublimeHaskell
 
-### Eclipse
-
-- http://eclipsefp.github.io
-
 ## FAQ and working with Cabal
 
 ### Fantastic FAQ
