@@ -180,7 +180,10 @@ Seen here: http://hackage.haskell.org/package/lens
 If you need JavaScript, you probably want Purescript for generating JS. Purescript is *not* strictly Haskell but it is very similar and quite pleasant.
 
 - http://www.purescript.org/
+
 - http://try.purescript.org/
+
+- http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/ Great guide for getting started
 
 ## Laziness, strictness, guarded recursion
 
