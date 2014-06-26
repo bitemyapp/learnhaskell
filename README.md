@@ -129,6 +129,8 @@ This is Bryan O'Sullivan's online course from the class he teaches at Stanford. 
 
 - https://github.com/dag/vim2hs
 
+- http://www.vim.org/scripts/script.php?script_id=1968
+
 ### Sublime Text
 
 - https://github.com/SublimeHaskell/SublimeHaskell
