@@ -321,6 +321,12 @@ Didn't know where else to put these:
 
 - http://www.idris-lang.org/
 
+## Propositions vs. Judgments (computation)
+
+- http://cstheory.stackexchange.com/questions/9826/what-is-the-difference-between-propositions-and-judgments
+
+- http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf
+
 ## Extended Reading list (some is already included here)
 
 - http://www.stephendiehl.com/posts/essential_haskell.html
