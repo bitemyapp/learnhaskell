@@ -127,6 +127,8 @@ This is Bryan O'Sullivan's online course from the class he teaches at Stanford. 
 
 - https://github.com/eagletmt/neco-ghc
 
+- https://github.com/dag/vim2hs
+
 ### Sublime Text
 
 - https://github.com/SublimeHaskell/SublimeHaskell
