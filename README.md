@@ -133,6 +133,8 @@ This is Bryan O'Sullivan's online course from the class he teaches at Stanford. 
 
 - http://projects.haskell.org/haskellmode-vim/
 
+- https://github.com/dan-t/vim-hsimport
+
 ### Sublime Text
 
 - https://github.com/SublimeHaskell/SublimeHaskell
