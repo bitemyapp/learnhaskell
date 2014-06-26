@@ -119,6 +119,8 @@ This is Bryan O'Sullivan's online course from the class he teaches at Stanford. 
 
 - http://www.stephendiehl.com/posts/vim_haskell.html
 
+- https://github.com/scrooloose/syntastic
+
 - https://github.com/kazu-yamamoto/ghc-mod
 
 - https://github.com/eagletmt/ghcmod-vim
