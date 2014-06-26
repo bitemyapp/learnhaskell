@@ -49,6 +49,18 @@ Update your mirrorlist
 Download Haskell
 - `sudo pacman -S cabal-install ghc happy alex haddock`
 
+### Gentoo
+
+Gentoo is awesome for Haskell, and lets you use Portage for everything.
+
+First, add the Gentoo Haskell overlay. Follow the instructions at: https://github.com/gentoo-haskell/gentoo-haskell
+
+Then just install whatever you need. A good way to start is just:
+
+- `emerge ghc cabal cabal-install`
+
+Join #Gentoo-Haskell on irc.freenode.net for Gentoo Haskell problems.
+
 ### Mac OS X
 
 Install the GHC for Mac OS X app, which includes GHC and Cabal. It provides instructions on how to add GHC and Cabal to your path after you've dropped the .app somewhere.
