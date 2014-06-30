@@ -249,6 +249,24 @@ I recommend these two tutorials/introductions:
 
 - https://github.com/ekmett/lens#lens-lenses-folds-and-traversals
 
+## Dreaded monads and monad transformers
+
+### Do not do these until you understand typeclasses, Monoid, Functor, and Applicative!
+
+Implement the standard library monads ( List, Maybe, Cont, Error, Reader, Writer, State ) for yourself to understand them better. Then maybe write an monadic interpreter for a small expression language using Monad Transformers Step by Step paper.
+
+Writing many interpreters by just changing the monad to change the semantics can help convey what's going on.
+
+- http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf
+
+Also, reimplement Control.Monad. Functions like `mapM` or `sequence` are good opportunities to practice writing generic monadic code.
+
+The NICTA course can be used as a guide to this process, which will also involve writing your own Applicative as well.
+
+From: 
+- http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6
+- http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg
+
 ## Type and Category Theory (*not* needed to actually write Haskell, just for those interested!)
 
 If you want to follow up on the type and category theory:
