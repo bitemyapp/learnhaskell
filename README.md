@@ -2,6 +2,12 @@ This is my recommended path for learning Haskell.
 
 #### Something to keep in mind: *don't sweat the stuff you don't understand immediately*. Just keep moving.
 
+# Community
+
+Our IRC channel is `#haskell-beginners` on Freenode.
+
+IRC web client here: http://webchat.freenode.net/
+
 # Primary course
 
 ## What are Haskell, GHC, and Cabal?
