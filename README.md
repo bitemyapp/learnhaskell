@@ -90,6 +90,10 @@ You don't need this if you use the .app, but if it doesn't work for you, try thi
 
 http://www.seas.upenn.edu/~cis194/lectures.html Brent Yorgey's course is the best I've found so far and replaces both Yann Esposito's HF&H and the NICTA course. This course is particularly valuable as it will not only equip you to write Haskell but also help you understand parser combinators. 
 
+The only reason you shouldn't start with cis194 is if you are not a programmer or are an inexperienced one. If that's the case, start with http://learnyouahaskell.com/ and transition to cis194.
+
+Learn You A Haskell and http://book.realworldhaskell.org/ are recommended primarily as supplemental references for completing the cis194 course if you are not new to programming. RWH has some additional material that LYAH does not that is useful to people using Haskell in production as well.
+
 ---
 
 ## Understanding basic Haskell error messages
