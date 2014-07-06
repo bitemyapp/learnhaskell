@@ -38,7 +38,10 @@ Then add `~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.2/bin:/opt/happy/1.19.3/
 ### Debian
 
 #### GHC Repository for debian stable
-If you use debian stable, it is easier to use this: http://deb.haskell.org/
+If you use debian stable, it is easier to use this: http://deb.haskell.org/. After installing GHC:
+- Get `cabal-install` source at https://www.haskell.org/cabal/download.html
+- Run `bootstrap.sh`
+- Run `cabal update && cabal install cabal cabal-install alex happy`
 
 #### Using Ubuntu PPA
 If you're not using stable, you can follow the same steps as Ubuntu, but has to execute an additional command. Immediately after `sudo add-apt-repository -y ppa:hvr/ghc` is ran, run:
