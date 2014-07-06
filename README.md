@@ -37,13 +37,24 @@ Then add `~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.2/bin:/opt/happy/1.19.3/
 
 ### Debian
 
-Debian can follow the same steps as Ubuntu, but has to execute an additional command. Immediately after `sudo add-apt-repository -y ppa:hvr/ghc` is ran, run:
+#### GHC Repository for debian stable
+If you use debian stable, it is easier to use this: http://deb.haskell.org/
+
+#### Using Ubuntu PPA
+If you're not using stable, you can follow the same steps as Ubuntu, but has to execute an additional command. Immediately after `sudo add-apt-repository -y ppa:hvr/ghc` is ran, run:
 
 - `sudo sed -i s/wheezy/trusty/g /etc/apt/sources.list.d/hvr-ghc-wheezy.list`
 
 For other Debian versions, just replace all occurences of "wheezy" with your version name in the command above.
 
 If, for some reason, the file `/etc/apt/sources.list.d/hvr-ghc-wheezy.list` does not exist, try the same command but with `/etc/apt/sources.list` instead.
+
+#### Manual compilation 
+You can follow the guide written for Mac OS X: http://www.davesquared.net/2014/05/platformless-haskell.html. Notes:
+- set your prefix accordingly when configuring ghc
+- instead of grabbing the `cabal-install` binary, grab the source and then run `bootstrap.sh` script.
+
+
 
 ### Arch Linux
 
