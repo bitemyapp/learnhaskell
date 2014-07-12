@@ -110,15 +110,30 @@ Learn You A Haskell and http://book.realworldhaskell.org/ are recommended primar
 
 ---
 
-## Understanding basic Haskell error messages
-
-- http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf
-
 ## Supplementary course that provides more material on intermediate topics
 
 This is Bryan O'Sullivan's online course from the class he teaches at Stanford. If you don't know who he is, take a gander at half the libraries any Haskell application ends up needing and his name is on it. Of particular note if you've already done the Yorgey course are the modules on phantom types, information flow control, language extensions, concurrency, pipes, and lenses.
 
 - http://www.scs.stanford.edu/14sp-cs240h/
+
+## Exercises for practice (the NICTA course)
+
+You should do Yorgey's course before attempting this: https://github.com/NICTA/course/
+
+## Secondary material, references
+
+[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) and [Real World Haskell](http://book.realworldhaskell.org) (Thanks bos!) are available online.
+
+I recommend RWH as a reference (thick book). The chapters for parsing and monads are great for getting a sense for where monads are useful. Other people have said that they've liked it a lot. Perhaps a good follow-up for practical idioms after you've got the essentials of Haskell down?
+
+### For learning some common typeclasses
+
+Useful for understanding `Functor`, `Applicative`, `Monad`, `Monoid` and other typeclasses in general but also some Hask-specific category theory:
+- http://www.haskell.org/haskellwiki/Typeclassopedia
+
+### Understanding basic Haskell error messages
+
+- http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf
 
 ## Development Environment
 
@@ -166,21 +181,6 @@ Put briefly:
 - Use `cabal repl` to start a project-scoped ghci instance
 
 The sandbox-based approach I suggest should avoid package-dependency problems, but it's incompatible with the way the Haskell Platform provides pre-built packages. If you're still learning Haskell and don't understand how ghc-pkg and Cabal work, *avoid Platform* and instead use the install instructions earlier in the guide.
-
-## Exercises for practice
-
-You should do Yorgey's course before attempting this: https://github.com/NICTA/course/
-
-## Secondary material, references
-
-[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) and [Real World Haskell](http://book.realworldhaskell.org) (Thanks bos!) are available online.
-
-I recommend RWH as a reference (thick book). The chapters for parsing and monads are great for getting a sense for where monads are useful. Other people have said that they've liked it a lot. Perhaps a good follow-up for practical idioms after you've got the essentials of Haskell down?
-
-## For learning some common typeclasses
-
-Useful for understanding `Functor`, `Applicative`, `Monad`, `Monoid` and other typeclasses in general but also some Hask-specific category theory:
-- http://www.haskell.org/haskellwiki/Typeclassopedia
 
 ## Search code by type signature
 
