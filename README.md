@@ -226,6 +226,18 @@ If you need JavaScript, you probably want Purescript for generating JS. Purescri
 
 - http://www.slideshare.net/tibbe/reasoning-about-laziness
 
+### For a more thorough understanding of laziness, NF, WHNF
+
+- https://vec.io/posts/notes-on-lambda-calculus
+
+- http://homepages.inf.ed.ac.uk/wadler/topics/call-by-need.html#need-journal
+
+- http://www.itu.dk/~sestoft/papers/sestoft-lamreduce.pdf
+
+- http://www.cs.ox.ac.uk/files/293/lazy.pdf
+
+### Brief demonstration
+
 ```haskell
 let a = 1 : a -- guarded recursion, (:) is lazy and can be pattern matched.
 let (v : _) = a
