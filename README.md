@@ -20,7 +20,7 @@ Cabal is equivalent to Ruby's Bundler, Python's pip, Node's NPM, Maven, etc. GHC
 
 ## Getting started
 
-### Ubuntu
+### For Ubuntu 12.04 and below
 
 This PPA is excellent and is what I use on all my Linux dev and build machines: http://launchpad.net/~hvr/+archive/ghc
 
@@ -30,10 +30,23 @@ Specifically:
 - `sudo apt-get install python-software-properties`
 - `sudo add-apt-repository -y ppa:hvr/ghc`
 - `sudo apt-get update`
-- `sudo apt-get install cabal-install-1.20 ghc-7.8.2 happy-1.19.3 alex-3.1.3`
+- `sudo apt-get install cabal-install-1.20 ghc-7.8.3 happy-1.19.4 alex-3.1.3`
 
-Then add `~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.2/bin:/opt/happy/1.19.3/bin:/opt/alex/3.1.3/bin` to your PATH (bash_profile, zshrc, bashrc, etc)
+Then add `~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin` to your PATH (bash_profile, zshrc, bashrc, etc)
 
+### For Ubuntu 12.10 and above
+
+- `sudo apt-get update`
+- `sudo apt-get install software-properties-common`
+- `sudo add-apt-repository -y ppa:hvr/ghc`
+- `sudo apt-add-repository "deb http://ppa.launchpad.net/hvr/ghc/ubuntu precise main"`
+- `sudo apt-get update`
+- `sudo apt-get install cabal-install-1.20 ghc-7.8.3 happy-1.19.4 alex-3.1.3`
+
+Then add `~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin` to your PATH (bash_profile, zshrc, bashrc, etc)
+
+You could also add `.cabal-sandbox/bin` to your path. Code that you are actively developing will be available to you from the command line.
+This only works when your current working directory is a cabal sandbox.
 
 ### Debian
 
@@ -52,7 +65,7 @@ For other Debian versions, just replace all occurences of "wheezy" with your ver
 
 If, for some reason, the file `/etc/apt/sources.list.d/hvr-ghc-wheezy.list` does not exist, try the same command but with `/etc/apt/sources.list` instead.
 
-#### Manual compilation 
+#### Manual compilation
 You can follow the guide written for Mac OS X: http://www.davesquared.net/2014/05/platformless-haskell.html. Notes:
 - set your prefix accordingly when configuring ghc
 - instead of grabbing the `cabal-install` binary, grab the source and then run `bootstrap.sh` script.
@@ -102,7 +115,7 @@ You don't need this if you use the .app, but if it doesn't work for you, try thi
 ## Yorgey course - *Do this first*, this is the primary way I recommend being introduced to Haskell.
 
 
-http://www.seas.upenn.edu/~cis194/lectures.html Brent Yorgey's course is the best I've found so far and replaces both Yann Esposito's HF&H and the NICTA course. This course is particularly valuable as it will not only equip you to write Haskell but also help you understand parser combinators. 
+http://www.seas.upenn.edu/~cis194/lectures.html Brent Yorgey's course is the best I've found so far and replaces both Yann Esposito's HF&H and the NICTA course. This course is particularly valuable as it will not only equip you to write Haskell but also help you understand parser combinators.
 
 The only reason you shouldn't start with cis194 is if you are not a programmer or are an inexperienced one. If that's the case, start with http://learnyouahaskell.com/ and transition to cis194.
 
@@ -256,7 +269,7 @@ let a = 1 * a -- not guarded, (*) is strict
 
 ## Parallelism/Concurrency
 
-- http://chimera.labs.oreilly.com/books/1230000000929 This book by Simon Marlow is probably the best I've ever read on the topics of Parallelism and Concurrency: 
+- http://chimera.labs.oreilly.com/books/1230000000929 This book by Simon Marlow is probably the best I've ever read on the topics of Parallelism and Concurrency:
 
 - http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application A thorough walk-through on testing & incremental development of a multi-threaded application in Haskell
 
@@ -304,7 +317,7 @@ Also, reimplement Control.Monad. Functions like `mapM` or `sequence` are good op
 
 The NICTA course can be used as a guide to this process, which will also involve writing your own Applicative as well.
 
-From: 
+From:
 - http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6
 - http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg
 
