@@ -27,10 +27,11 @@ This PPA is excellent and is what I use on all my Linux dev and build machines: 
 Specifically:
 
 - `sudo apt-get update`
-- `sudo apt-get install python-software-properties` for Ubuntu 12.04 and below. Otherwise `sudo apt-get install software-properties-common`
+- `sudo apt-get install python-software-properties` for Ubuntu 12.04 and below
+- `sudo apt-get install software-properties-common` for Ubuntu 12.04 and above
 - `sudo add-apt-repository -y ppa:hvr/ghc`
-- `sudo apt-add-repository "deb http://ppa.launchpad.net/hvr/ghc/ubuntu precise main"`. Skip this step if you are using Ubuntu 12.04
-- `rm /etc/apt/sources.list.d/hvr-ghc-<some ubuntu version>.list`. Skip this step if you are using Ubuntu 12.04
+- `sudo apt-add-repository "deb http://ppa.launchpad.net/hvr/ghc/ubuntu precise main"` if not Ubuntu 12.04
+- `rm /etc/apt/sources.list.d/hvr-ghc-<some ubuntu version>.list` if not Ubuntu 12.04
 - `sudo apt-get update`
 - `sudo apt-get install cabal-install-1.20 ghc-7.8.3 happy-1.19.4 alex-3.1.3`
 
