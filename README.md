@@ -20,32 +20,23 @@ Cabal is equivalent to Ruby's Bundler, Python's pip, Node's NPM, Maven, etc. GHC
 
 ## Getting started
 
-### For Ubuntu 12.04 and below
+### For Ubuntu
 
 This PPA is excellent and is what I use on all my Linux dev and build machines: http://launchpad.net/~hvr/+archive/ghc
 
 Specifically:
 
 - `sudo apt-get update`
-- `sudo apt-get install python-software-properties`
+- `sudo apt-get install python-software-properties` for Ubuntu 12.04 and below. Otherwise `sudo apt-get install software-properties-common`
 - `sudo add-apt-repository -y ppa:hvr/ghc`
+- `sudo apt-add-repository "deb http://ppa.launchpad.net/hvr/ghc/ubuntu precise main"`. Skip this step if you are using Ubuntu 12.04
+- `rm /etc/apt/sources.list.d/hvr-ghc-<some ubuntu version>.list`. Skip this step if you are using Ubuntu 12.04
 - `sudo apt-get update`
 - `sudo apt-get install cabal-install-1.20 ghc-7.8.3 happy-1.19.4 alex-3.1.3`
 
 Then add `~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin` to your PATH (bash_profile, zshrc, bashrc, etc)
 
-### For Ubuntu 12.10 and above
-
-- `sudo apt-get update`
-- `sudo apt-get install software-properties-common`
-- `sudo add-apt-repository -y ppa:hvr/ghc`
-- `sudo apt-add-repository "deb http://ppa.launchpad.net/hvr/ghc/ubuntu precise main"`
-- `sudo apt-get update`
-- `sudo apt-get install cabal-install-1.20 ghc-7.8.3 happy-1.19.4 alex-3.1.3`
-
-Then add `~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin` to your PATH (bash_profile, zshrc, bashrc, etc)
-
-You could also add `.cabal-sandbox/bin` to your path. Code that you are actively developing will be available to you from the command line.
+*Optional* You could also add `.cabal-sandbox/bin` to your path. Code that you are actively developing will be available to you from the command line.
 This only works when your current working directory is a cabal sandbox.
 
 ### Debian
