@@ -308,6 +308,12 @@ From:
 - http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6
 - http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg
 
+### Monad transformers
+
+- https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md
+
+- https://vimeo.com/73648150
+
 ## Type and Category Theory (*not* needed to actually write Haskell, just for those interested!)
 
 If you want to follow up on the type and category theory:
