@@ -57,7 +57,11 @@ You can follow the guide written for Mac OS X: http://www.davesquared.net/2014/0
 - set your prefix accordingly when configuring ghc
 - instead of grabbing the `cabal-install` binary, grab the source and then run `bootstrap.sh` script.
 
+### Fedora 20
 
+To install Haskell 7.8x from the unofficial repo (Fedora 21+ will include it in the official one:
+- Add https://copr.fedoraproject.org/coprs/petersen/ghc-7.8/repo/fedora-20/petersen-ghc-7.8-fedora-20.repo as  petersen-ghc-7.8-fedora-20.repo
+- `sudo yum install ghc`
 
 ### Arch Linux
 
