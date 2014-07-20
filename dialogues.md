@@ -66,7 +66,7 @@ doubleEveryOther list = reverse .doubleEveryOtherForward . reverse $ list
 05:04 < mm_freak_> dealing with ASTs is a real joy in haskell, because most of the code writes itself =)
 ```
 
-## Contination passing style, CPS transform
+## Continuation passing style, CPS transform
 
 ```
 05:10 < pyro-> now i am writing a cpsTransform function :D
