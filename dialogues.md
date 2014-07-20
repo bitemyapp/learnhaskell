@@ -52,3 +52,51 @@ doubleEveryOther list = reverse .doubleEveryOtherForward . reverse $ list
 04:13 < bitemyapp> > id 1
 04:13 < lambdabot>  1
 ```
+
+## Reduction, strict evaluation, ASTs, fold, reduce
+
+```
+05:00 < ReinH> pyro-: well, "reduce" already has a typeclass, depending on what you mean
+05:00 < ReinH> so does "evaluation", depending on what you mean
+05:02 < pyro-> ReinH: reduce is lambda calculus under strict evaluation
+05:02 < ReinH> Yep, and it's also the other thing too.
+05:02 < ReinH> ;)
+05:03 < pyro-> :|
+05:03 < pyro-> oh, like on lists?
+05:04 < mm_freak_> dealing with ASTs is a real joy in haskell, because most of the code writes itself =)
+```
+
+## Contination passing style, CPS transform
+
+```
+05:10 < pyro-> now i am writing a cpsTransform function :D
+05:10 < pyro-> it already works, but the current version introduces superflous continuations
+05:10 < pyro-> so i am trying to fix :D
+05:10 < ReinH> pyro-: Here's a CPS transform function: flip ($)
+05:11 < pyro-> i will find out about flip
+05:11 < ReinH> @src flip
+05:11 < lambdabot> flip f x y = f y x
+05:11 < ReinH> pyro-: the essence of CPS can be described as follows:
+05:11 < ReinH> :t flip ($)
+05:11 < lambdabot> b -> (b -> c) -> c
+05:12 < ReinH> is the type of a function which takes a value and produces a suspended computation that takes a continuation and runs it against the value
+05:12 < ReinH> for example:
+05:12 < ReinH> > let c = flip ($) 3 in c show
+05:12 < lambdabot>  "3"
+05:12 < ReinH> > let c = flip ($) 3 in c succ
+05:12 < lambdabot>  4
+05:13 < mm_freak_> direct style:  f x = 3*x + 1
+05:13 < mm_freak_> CPS:  f x k = k (3*x + 1)
+05:13 < mm_freak_> the rules are:  take a continuation argument and be fully polymorphic on the result type
+05:13 < mm_freak_> f :: Integer -> (Integer -> r) -> r
+05:14 < mm_freak_> as long as your result type is fully polymorphic and doesn't unify with anything else in the type signature you can't do anything wrong other than to descend
+                   into an infinite recursion =)
+05:14 < mm_freak_> good:  (Integer -> r) -> r
+05:15 < mm_freak_> bad:  (Integer -> String) -> String
+05:15 < mm_freak_> bad: (Num r) => (Integer -> r) -> r
+05:15 < mm_freak_> bad:  r -> (Integer -> r) -> r
+05:15 < pyro-> but flip ($) is not what i had in mind :D
+05:16 < mm_freak_> that's just one CPS transform…  there are many others =)
+05:16 < ReinH> No, it's probably not.
+05:16 < ReinH> But other things are pretty much generalizations of that
+```
