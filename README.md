@@ -360,6 +360,8 @@ Didn't know where else to put these:
 
 ## Initial and Final, DSLs, Finally Tagless
 
+- http://creativelad.wordpress.com/2013/11/28/final-encodings-part-1-a-quick-demonstration/
+
 - http://martijn.van.steenbergen.nl/journal/2009/10/18/transforming-polymorphic-values/
 
 - http://martijn.van.steenbergen.nl/journal/2009/11/12/gadts-in-haskell-98/
