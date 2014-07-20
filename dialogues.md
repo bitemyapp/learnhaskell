@@ -128,7 +128,7 @@ cpsTransform (Lambda p b) k = Invocation k $ Procedure p
 cpsTransform (Combination a b) k = cpsTransform  a $ Continuation "v" $ cpsTransform b k
 ```
 
-Later...
+### Later...
 
 ```
 05:38 < ReinH> So for example, if you have an incredibly simple expression language like data Expr a = Val a | Neg a | Add a a
@@ -160,4 +160,13 @@ Later...
 05:49 < bitemyapp> I figured it was a morphism of some sort, but with only a final -> initial and not a way to get back, I wasn't sure which.
 05:49 < ReinH> toInitial k = k (:) []; toFinal xs = \f z -> foldr f z xs
 05:49 < bitemyapp> thank you :)
+```
+
+### Something about adjunctions. I don't know.
+
+```
+05:51 < ReinH> bitemyapp: usually one loses information going from initial to final though
+05:51 < ReinH> there's probably an adjunction here
+05:51 < ReinH> there's always an adjunction
+05:52 < ReinH> lol of course there's an adjunction
 ```
