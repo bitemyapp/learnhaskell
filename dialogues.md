@@ -100,3 +100,30 @@ doubleEveryOther list = reverse .doubleEveryOtherForward . reverse $ list
 05:16 < ReinH> No, it's probably not.
 05:16 < ReinH> But other things are pretty much generalizations of that
 ```
+
+```haskell
+type Variable = String
+
+data Expression = Reference Variable
+                | Lambda Variable Expression
+                | Combination Expression Expression
+
+type Kvariable = String
+
+data Uatom = Procedure Variable Kvariable Call
+           | Ureference Variable
+
+data Katom = Continuation Variable Call
+           | Kreference Variable
+           | Absorb
+
+data Call = Application Uatom Uatom Katom
+          | Invocation Katom Uatom
+
+cpsTransform :: Expression -> Katom -> Call
+cpsTransform (Reference r) k = Invocation k $ Ureference r
+cpsTransform (Lambda p b) k = Invocation k $ Procedure p
+                                             "k" $
+                                cpsTransform b $ Kreference "k"
+cpsTransform (Combination a b) k = cpsTransform  a $ Continuation "v" $ cpsTransform b k
+```
