@@ -127,3 +127,37 @@ cpsTransform (Lambda p b) k = Invocation k $ Procedure p
                                 cpsTransform b $ Kreference "k"
 cpsTransform (Combination a b) k = cpsTransform  a $ Continuation "v" $ cpsTransform b k
 ```
+
+Later...
+
+```
+05:38 < ReinH> So for example, if you have an incredibly simple expression language like data Expr a = Val a | Neg a | Add a a
+05:38 < ReinH> a (more) initial encoding of an expression would be Add (Val 1) (Neg (Val 1))
+05:38 < ReinH> A (more) final encoding might be (1 - 1) or even 0
+05:39 < ReinH> The initial encoding generally is more flexible (you can still write a double-negation elimination rule, for instance
+05:39 < ReinH> the final encoding is less flexible, but also does more work up-front
+05:40 < ReinH> More initial encodings tend to force you to use quantification and type-level tricks, CPS and pre-applied functions tend to appear more in final encodings
+05:40 < ReinH> An even smaller example:
+05:40 < ReinH> \f z -> foldr f z [1,2,3] is a final encoding of the list [1,2,3]
+05:41 < ReinH> pyro-: I'm not really a lisper, but I'm always looking for good reading material
+05:41 < ReinH> for bonus points, the foldr encoding is *invertible* as well :)
+05:44 < ReinH> pyro-: the relevance is that you seem to be using the cps transform in a more initial encoding than I usually see it
+05:44 < ReinH> not that this is at all bad
+05:46 < bitemyapp> ReinH: where does the invertibility in the final encoding come from?
+05:46 < ReinH> foldr (:) [] :)
+05:46 < ReinH> it's not generally so
+05:46 < bitemyapp> > foldr (:) [] [1, 2, 3]
+05:46 < lambdabot>  [1,2,3]
+05:47 < bitemyapp> I may not understand the proper meaning of invertibility in this case.
+05:47 < bitemyapp> Do you mean invertibility from final to initial encoding?
+05:47 < ReinH> Just that, yes
+05:47 < bitemyapp> how would it get you back to final from initial?
+05:47 < ReinH> I'm not sure if that's the correct term
+05:47 < bitemyapp> I don't think it is, but the intent is understood and appreciated.
+05:48 < bitemyapp> invertibility implies isomorphism, implies ability to go final -> initial -> final
+05:48 < ReinH> well, there is an isomorphism
+05:48 < bitemyapp> well, we've established final -> initial, where's initial -> final for this example?
+05:49 < bitemyapp> I figured it was a morphism of some sort, but with only a final -> initial and not a way to get back, I wasn't sure which.
+05:49 < ReinH> toInitial k = k (:) []; toFinal xs = \f z -> foldr f z xs
+05:49 < bitemyapp> thank you :)
+```
