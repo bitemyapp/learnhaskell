@@ -412,3 +412,175 @@ Note: Seeing a paper on free monoids dating to 1972 by Eduardo J. Dubuc.
 - http://stackoverflow.com/questions/9259921/haskell-existential-quantification-in-detail
 
 - http://en.wikibooks.org/wiki/Haskell/Polymorphism
+
+## Function types and why a -> b has b^a inhabitants
+
+```
+02:17 < bartleby> so I understand sum and product types, but why does a -> b have b^a cardinality?
+02:23 < Iceland_jack> How many functions are there of type
+02:23 < Iceland_jack>     () -> b
+02:23 < Iceland_jack> if b has 5 inhabitants?
+02:23 < bartleby> 5
+02:24 < Iceland_jack> which is 5^1 right?
+02:24 < Iceland_jack> You'll want to look at Chris's blog: http://chris-taylor.github.io/blog/2013/02/10/the-algebra-of-algebraic-data-types/
+02:24 < bartleby> yes
+02:24 < bartleby> purple link, hm... I've been there, might've missed that.
+02:25 < Iceland_jack> Now what about
+02:25 < Iceland_jack>     Bool -> b
+02:25 < Iceland_jack> if b has 3 inhabitants
+02:25 < Iceland_jack> You can gain your intuition by working these things out for increasingly more involved types
+02:26 < bartleby> I was trying this, but it looked like a product type... I'm doing something wrong
+02:26 < bartleby> let me see this case
+02:26 < Iceland_jack> sure
+02:27 < bartleby> wait, if I have one pattern for True and another for False, does it count as a single function? or two?
+02:28 < Iceland_jack> If they're two patterns in the same function then it's the same function
+02:28 < Iceland_jack> I.e. in the function definition
+02:28 < Iceland_jack>     f True  = ...
+02:28 < Iceland_jack>     f False = ...
+02:28 < Iceland_jack> 'f' is a single function
+02:29 < Iceland_jack> and for the first ellipsis '...' you have one of three choices (b = {b1, b2, b3}) and same for the second one
+02:29 < pyro-> does b^a include non total functions?
+02:29 < Iceland_jack> no
+02:29 < pyro-> why is that?
+02:30 < Iceland_jack> Because it breaks all sorts of reasoning and makes it more complicated
+02:30 < pyro-> :D
+02:30 < bartleby> no? I thought that was what I was missing...
+02:30 < Iceland_jack> bartleby: How many functions of type
+02:30 < Iceland_jack>     Bool -> ()
+02:31 < bartleby> yes, that's where I'm confused. I'd guess one?
+02:31 < Iceland_jack> Right, because the only choice is
+02:31 < Iceland_jack>     fn True  = ()
+02:31 < Iceland_jack>     fn False = ()
+02:31 < bartleby> matching True and False, but only returning ()
+02:32 < Iceland_jack> so the number of function |Bool -> ()| is |()| ^ |Bool|
+02:32 < Iceland_jack>       |()| ^ |Bool|
+02:32 < Iceland_jack>     = 1 ^ 2
+02:32 < Iceland_jack>     = 1
+02:32 < bartleby> ah, I think I get it
+02:33 < Iceland_jack> And there are 2 functions from
+02:33 < Iceland_jack>     Bool -> ()
+02:33 < Iceland_jack> conversely
+02:33 < Iceland_jack> oops, () -> Bool I meant
+02:33 < pyro-> Just by sitting in this channel I a learning things :D bartleby, how is it that cardinality of a type has interested you? I haven't even heard the term before
+02:33 < Iceland_jack> 'const False' and 'const True' respectively
+02:33 < bartleby> Iceland_jack: because 2^1
+02:33 < Iceland_jack> Precisely
+02:34 < Iceland_jack> pyro-: You should definitely read up on the 'Algebra of Algebraic Data Types'
+                      http://chris-taylor.github.io/blog/2013/02/10/the-algebra-of-algebraic-data-types/
+02:34 < pyro-> thanks
+02:34 < Iceland_jack> Lated parts discuss some more advanced uses
+02:34 < Iceland_jack> *Later
+02:34 < bartleby> pyro-: Algebraic Data Types, means you have an algebra for dealing with them.
+02:35 < Iceland_jack> Just like you knew that
+02:35 < Iceland_jack>     1 + 2 = 2 + 1
+02:35 < Iceland_jack> in grade school so you can know that
+02:35 < Iceland_jack>     Either () Bool ≅ Either Bool ()
+02:35 < bartleby> blowed my mind when I read about zippers, but I hadn't seen it with functions yet
+02:36 < Iceland_jack> viewing (+) = Either, 1 = () and 2 = Bool
+02:36 < Iceland_jack> It also means that you can define Bool as
+02:36 < Iceland_jack>     type Bool = Either () ()
+02:36 < Iceland_jack> rather than
+02:36 < Iceland_jack>     data Bool = False | True
+02:36 < Iceland_jack> since
+02:36 < Iceland_jack>     1 + 1 ≅ 2
+02:37 < Iceland_jack> Given the recent pattern synonyms extensions (PatternSynonyms) you can even use the same constructors and pattern match
+02:37 < pyro-> Thats interesting
+02:37 < Iceland_jack>     type (+)  = Either
+02:37 < Iceland_jack>     type BOOL = () + ()
+02:37 < Iceland_jack>     pattern TRUE  = Right () :: BOOL
+02:37 < Iceland_jack>     pattern FALSE = Left  () :: BOOL
+02:38 < Iceland_jack> and then
+02:38 < Iceland_jack>     not :: BOOL -> BOOL
+02:38 < Iceland_jack>     not TRUE  = FALSE
+02:38 < Iceland_jack>     not FALSE = TRUE
+02:38 < pyro-> what abut values instead of types? 1 + 2 = 2 + 1 works for Int. what about algebra for values of other type?
+02:38 < Iceland_jack> pyro-: You're not actually using numbers
+02:38 < Iceland_jack> 1 is just a nice and confusing way to refer to the type ()
+02:38 < pyro-> i understand
+02:38 < bartleby> whoa, easy there boy! I'm overheating with 2^2 here
+02:38 < Iceland_jack> not the value 1
+02:38 < bartleby> :-D
+02:38 < pyro-> thanks
+02:39 < Iceland_jack> bartleby: Slowing down :)
+02:39 < pyro-> actually that i'm not using numbers is kind of the point right?
+02:39 < Iceland_jack> well it makes the analogy with elementary arithmetic clearer
+02:39 < bartleby> pyro-:  you are counting possible values of that type
+02:40 < Iceland_jack> So you can write '2' for Bool because Bool has two things
+02:40 < bartleby> so Either () Bool has three because: Left (), or Right True, or Right False
+02:40 < Iceland_jack> Maybe Bool would be 3
+02:40 < Iceland_jack> Yes exactly
+02:40 < Iceland_jack> and thus
+02:40 < Iceland_jack>     Either () Bool ≅ Maybe Bool
+02:41 < Iceland_jack> and also
+02:41 < Iceland_jack>     Maybe a ≅ Either () a
+02:41 < Iceland_jack> If you define
+02:41 < Iceland_jack>     Maybe    b = 1 + b
+02:41 < Iceland_jack>     Either a b = a + b
+02:41 < Iceland_jack> then it becomes fairly clear
+02:44 < bartleby> ah, I think it clicked here. I managed to list Bool -> Bool, four different functions
+02:46 < Iceland_jack> and then for Bool -> Three where |Three| = 3 you have 3 independent choices for True and False so you have 3 * 3 = 3^2
+02:46 < Iceland_jack> and so forth
+02:46 < Iceland_jack> hope this clears things up a bit
+02:46 < bartleby> I was unsure about partial fuctions, but now it makes sense. It's just a permutations of b I think (not sure if permutation is the right word)
+02:47 < bartleby> how many arrangements with `a` elements of type `b` can I make?
+02:51 < bartleby> Iceland_jack: thank you. I see that I have that page bookmarked, but I think I didn't get that Functions sections at the time
+02:52 < bartleby> in fact, it's still confusing...
+02:52 < bartleby> "Then each of First, Second and Third can map to two possible values, and in total there are 2⋅2⋅2 = 2^3 = 8 functions of type Trio -> Bool"
+02:53 < bartleby> counting like this I was only seeing First->True, First->False, Second->True, Second->False... 6, like a product
+02:54 < Iceland_jack> You have to map all the values
+02:54 < Iceland_jack> so the first function might be
+02:54 < Iceland_jack>     f1 First  = False
+02:54 < Iceland_jack>     f1 Second = False
+02:54 < Iceland_jack>     f1 Third  = False
+02:54 < Iceland_jack> And the second function might be
+02:54 < Iceland_jack>     f2 First  = True
+02:54 < Iceland_jack>     f2 Second = False
+02:54 < Iceland_jack>     f2 Third  = False
+02:54 < bartleby> yeah, I missed that. Thinking about combinations is easier IMO. True True True, True True False, ...
+02:55 < bartleby> reminds me of truth tables :)
+02:55 < Iceland_jack> writing False as 0 and True as 1 you get
+02:55 < Iceland_jack>     Trio -> Bool = { 000, 001, 010, 011, 100, 101, 110, 111 }
+02:55 < Iceland_jack> with
+02:55 < Iceland_jack>       |Trio -> Bool|
+02:56 < Iceland_jack>     = |Bool| ^ |Trio|
+02:56 < dibblego> a function of the type X -> Y has Y^X possibilites
+02:56 < Iceland_jack>     = 2 ^ 3 = 8
+02:56 < Iceland_jack> right :)
+02:57 < Iceland_jack> so a function from
+02:57 < Iceland_jack>     Trio -> Bool
+02:57 < Iceland_jack> has the following implementations
+02:57 < Iceland_jack> > replicateM 3 [0, 1]
+02:57 < lambdabot>  [[0,0,0],[0,0,1],[0,1,0],[0,1,1],[1,0,0],[1,0,1],[1,1,0],[1,1,1]]
+02:58 < Iceland_jack> and
+02:58 < Iceland_jack>     Quad -> Bool
+02:58 < Iceland_jack> > replicateM 4 [0, 1] -- etc.
+02:58 < lambdabot>  [[0,0,0,0],[0,0,0,1],[0,0,1,0],[0,0,1,1],[0,1,0,0],[0,1,0,1],[0,1,1,0],[0,1,...
+02:58 < Iceland_jack> > [ length (replicateM domainSize [0,1]) | domainSize <- [0..6] ]
+02:58 < lambdabot>  [1,2,4,8,16,32,64]
+02:59 < Iceland_jack> > [ 2^domainSize | domainSize <- [0..6] ]
+02:59 < lambdabot>  [1,2,4,8,16,32,64]
+03:01 < bartleby> > replicateM 2 [0,1,2]
+03:01 < lambdabot>  [[0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2]]
+03:01 < bartleby> so that's Bool -> Trio. nice
+03:01 < Iceland_jack> Which has 3^2 = 9 elements not to put too fine a point on it
+03:02  * bartleby is counting subarrays
+03:02 < bartleby> yup, nine
+03:02 < bartleby> now it makes sense, thanks
+03:04 < spion> so basically, you want the number of the possible tables, rather than the number of items in a table?
+03:04 < spion> :)
+03:04 < dibblego> this is why you find there are 4 implementations of (Bool -> Bool)
+03:05 < Iceland_jack> yes since you can interpret each table as a function definition
+03:05 < Iceland_jack>     True | False
+03:05 < Iceland_jack>     -----+------
+03:05 < Iceland_jack>     a    | b
+03:05 < spion> right
+03:05 < Iceland_jack> and
+03:05 < Iceland_jack>     replicateM (length xs) xs
+03:05 < Iceland_jack> should always have n^n elements given n = length xs
+03:06 < Iceland_jack> can also be rewritten as
+03:06 < Iceland_jack>     (length >>= replicateM) xs
+03:07 < Iceland_jack> > map (length . (length>>=replicateM) . flip replicate ()) [0..7]
+03:07 < lambdabot>  [1,1,4,27,256,3125,46656,823543]
+03:07 < Iceland_jack> > [ n^n | n <- [0..7] ]
+03:07 < lambdabot>  [1,1,4,27,256,3125,46656,823543]
+```
