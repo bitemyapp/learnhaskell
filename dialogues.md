@@ -173,7 +173,6 @@ cpsTransform (Combination a b) k = cpsTransform  a $ Continuation "v" $ cpsTrans
 
 ## Data structures with efficient head and tail manipulation
 
-```
 Asker:
 
 I am teaching myself haskell. The first impression is very good.
@@ -189,18 +188,18 @@ So I shouldn't even try to imagine some haskell O(1) equivalent.
 2) Or will optimizer (llvm?) reduce init&last complexity to 1?
 3) Some people suggest to use sequences package, but still how do they
 implement O(1) init&last sequences equivalent in haskell?
-```
 
-```
+* * * * *
+
 Tom Ellis:
 
 I'm rather confused about your question.  If you want a Haskell data
 structure that supports O(1) head, tail, init and last why not indeed use
 Data.Sequence as has been suggested?  As for how it's implemented, it uses
 the (very cool) fingertree datastructure.  See here for more details:
-```
 
-```
+* * * * *
+
 Asker:
 
 Tom said that finger tree gives us O(1) on removing last element, but
@@ -215,9 +214,9 @@ operation just because it should return brand new list with one elem
 added. Or maybe functional approach uses pretty much different
 complexity metric, there copying of some structure "list" for example
 is just O(1)? If so then Q about compiler is still exists.
-```
 
-```
+* * * * *
+
 Tom Ellis:
 
 Sounds like magic doesn't it :)
@@ -229,9 +228,9 @@ linked from the Hackage docs.
 
    http://hackage.haskell.org/package/containers-0.2.0.1/docs/Data-Sequence.html
 
-```
 
-```
+* * * * *
+
 Asker:
 
 Jake It would be great if you give some examples when find your
@@ -244,7 +243,8 @@ C/C++ programmer is "Do I get same perfomance?" (even if he do not
 need it).
 Maybe some simple and cool PDF tutorial which describes why haskell
 could be as fast as others will be great to have.
-```
+
+* * * * *
 
 Richard A. O'Keefe:
 
@@ -312,27 +312,29 @@ in C is one of the reasons for learning Haskell.
 
 Why not tell us what problem P is?
 
+* * * * *
+
 Tony Morris:
 
-> data SnocList a = SnocList ([a] -> [a])
-> 
-> Inserts to the front and end in O(1).
+data SnocList a = SnocList ([a] -> [a])
+
+Inserts to the front and end in O(1).
 
 ### I consider the following conclusive
 
 Edward Kmett:
 
-> Note: all of the options for playing with lists and queues and fingertrees come with trade-offs.
-> 
-> Finger trees give you O(log n) appends and random access, O(1) cons/uncons/snoc/unsnoc etc. but _cost you_ infinite lists.
-> 
-> Realtime queues give you the O(1) uncons/snoc. There are catenable output restricted deques that can preserve those and can upgrade you to O(1) append, but we've lost unsnoc and random access along the way.
-> 
-> Skew binary random access lists give you O(log n) drop and random access and O(1) cons/uncons, but lose the infinite lists, etc.
-> 
-> Tarjan and Mihaescu's deque may get you back worst-case bounds on more of the, but we still lose O(log n) random access and infinite lists.
-> 
-> Difference lists give you an O(1) append, but alternating between inspection and construction can hit your asymptotics.
-> 
-> Lists are used by default because they cleanly extend to the infinite cases, anything more clever necessarily loses some of that power.
+Note: all of the options for playing with lists and queues and fingertrees come with trade-offs.
+
+Finger trees give you O(log n) appends and random access, O(1) cons/uncons/snoc/unsnoc etc. but _cost you_ infinite lists.
+
+Realtime queues give you the O(1) uncons/snoc. There are catenable output restricted deques that can preserve those and can upgrade you to O(1) append, but we've lost unsnoc and random access along the way.
+
+Skew binary random access lists give you O(log n) drop and random access and O(1) cons/uncons, but lose the infinite lists, etc.
+
+Tarjan and Mihaescu's deque may get you back worst-case bounds on more of the, but we still lose O(log n) random access and infinite lists.
+
+Difference lists give you an O(1) append, but alternating between inspection and construction can hit your asymptotics.
+
+Lists are used by default because they cleanly extend to the infinite cases, anything more clever necessarily loses some of that power.
 
