@@ -322,7 +322,7 @@ data SnocList a = SnocList ([a] -> [a])
 Inserts to the front and end in O(1).
 ```
 
-### I consider the follow dispositve on the subject.
+### I consider the following conclusive
 
 ```
 Edward Kmett:
