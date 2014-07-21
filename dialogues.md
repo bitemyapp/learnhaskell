@@ -338,3 +338,23 @@ Difference lists give you an O(1) append, but alternating between inspection and
 
 Lists are used by default because they cleanly extend to the infinite cases, anything more clever necessarily loses some of that power.
 
+## listen in Writer monad
+
+```
+20:26 < ifesdjee_> hey guys, could anyone point me to the place where I could read up on how `listen` of writer monad works?
+20:26 < ifesdjee_> can't understand it from type signature, don't really know wether it does what i want..
+20:30 < ReinH> :t listen
+20:30 < lambdabot> MonadWriter w m => m a -> m (a, w)
+20:31 < mm_freak_> ifesdjee_: try this: runWriterT (listen (tell "abc" >> tell "def") >>= liftIO . putStrLn . snd)
+20:33 < mm_freak_> in any case 'listen' really just embeds a writer action and gives you access to what it produced
+20:33 < ifesdjee_> most likely i misunderstood what happens in `listen`...
+20:34 < ifesdjee_> i thought i could access current "state" of writer
+20:34 < mm_freak_> remember that the embedded writer's log still becomes part of the overall log
+20:34 < mm_freak_> execWriter (listen (tell "abc") >> tell "def") = "abcdef"
+20:35 < mm_freak_> all you get is access to that "abc" from within the writer action
+20:35 < ifesdjee_> yup, I see
+20:35 < ifesdjee_> thank you a lot!
+20:35 < mm_freak_> my pleasure
+20:37 < mm_freak_> i wonder why there is no evalWriter*
+20:37 < ifesdjee_> not sure, really
+```
