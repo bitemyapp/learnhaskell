@@ -246,7 +246,6 @@ Maybe some simple and cool PDF tutorial which describes why haskell
 could be as fast as others will be great to have.
 ```
 
-```
 Richard A. O'Keefe:
 
 
@@ -312,32 +311,28 @@ After all, being able to do things that are unthinkable
 in C is one of the reasons for learning Haskell.
 
 Why not tell us what problem P is?
-```
 
-```
 Tony Morris:
 
-data SnocList a = SnocList ([a] -> [a])
-
-Inserts to the front and end in O(1).
-```
+> data SnocList a = SnocList ([a] -> [a])
+> 
+> Inserts to the front and end in O(1).
 
 ### I consider the following conclusive
 
-```
 Edward Kmett:
 
-Note: all of the options for playing with lists and queues and fingertrees come with trade-offs.
+> Note: all of the options for playing with lists and queues and fingertrees come with trade-offs.
+> 
+> Finger trees give you O(log n) appends and random access, O(1) cons/uncons/snoc/unsnoc etc. but _cost you_ infinite lists.
+> 
+> Realtime queues give you the O(1) uncons/snoc. There are catenable output restricted deques that can preserve those and can upgrade you to O(1) append, but we've lost unsnoc and random access along the way.
+> 
+> Skew binary random access lists give you O(log n) drop and random access and O(1) cons/uncons, but lose the infinite lists, etc.
+> 
+> Tarjan and Mihaescu's deque may get you back worst-case bounds on more of the, but we still lose O(log n) random access and infinite lists.
+> 
+> Difference lists give you an O(1) append, but alternating between inspection and construction can hit your asymptotics.
+> 
+> Lists are used by default because they cleanly extend to the infinite cases, anything more clever necessarily loses some of that power.
 
-Finger trees give you O(log n) appends and random access, O(1) cons/uncons/snoc/unsnoc etc. but _cost you_ infinite lists.
-
-Realtime queues give you the O(1) uncons/snoc. There are catenable output restricted deques that can preserve those and can upgrade you to O(1) append, but we've lost unsnoc and random access along the way.
-
-Skew binary random access lists give you O(log n) drop and random access and O(1) cons/uncons, but lose the infinite lists, etc.
-
-Tarjan and Mihaescu's deque may get you back worst-case bounds on more of the, but we still lose O(log n) random access and infinite lists.
-
-Difference lists give you an O(1) append, but alternating between inspection and construction can hit your asymptotics.
-
-Lists are used by default because they cleanly extend to the infinite cases, anything more clever necessarily loses some of that power.
-```
