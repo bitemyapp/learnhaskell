@@ -170,3 +170,174 @@ cpsTransform (Combination a b) k = cpsTransform  a $ Continuation "v" $ cpsTrans
 05:51 < ReinH> there's always an adjunction
 05:52 < ReinH> lol of course there's an adjunction
 ```
+
+## Data structures with efficient head and tail manipulation
+
+```
+Asker:
+
+I am teaching myself haskell. The first impression is very good.
+But phrase "haskell is polynomially reducible" is making me sad :(.
+Anyway I am trying to backport my algorithm written in C. The key to
+performance is to have ability to remove element from the end of a
+list in O(1).
+But the original haskell functions last and init are O(n).
+My questions are:
+1) Is last function is something like "black box" written in C++ which
+perform O(1)?
+So I shouldn't even try to imagine some haskell O(1) equivalent.
+2) Or will optimizer (llvm?) reduce init&last complexity to 1?
+3) Some people suggest to use sequences package, but still how do they
+implement O(1) init&last sequences equivalent in haskell?
+```
+
+```
+Tom Ellis:
+
+I'm rather confused about your question.  If you want a Haskell data
+structure that supports O(1) head, tail, init and last why not indeed use
+Data.Sequence as has been suggested?  As for how it's implemented, it uses
+the (very cool) fingertree datastructure.  See here for more details:
+```
+
+```
+Asker:
+
+Tom said that finger tree gives us O(1) on removing last element, but
+in haskell all data is persistent.
+So function should return list as is minus last element. How it could
+be O(1)? This is just blows my mind...
+
+My hypothesis is that somehow compiler reduces creating of a new list
+to just adding or removing one element. If it is not so.
+Then even ':' which is just adding to list head would be an O(n)
+operation just because it should return brand new list with one elem
+added. Or maybe functional approach uses pretty much different
+complexity metric, there copying of some structure "list" for example
+is just O(1)? If so then Q about compiler is still exists.
+```
+
+```
+Tom Ellis:
+
+Sounds like magic doesn't it :)
+
+But no, there's no compiler magic, just an amazing datastructure.  The
+caveat is that the complexity is amortised, not guaranteed for every
+operation.  Have a look at the paper if you learn about how it works.  It's
+linked from the Hackage docs.
+
+   http://hackage.haskell.org/package/containers-0.2.0.1/docs/Data-Sequence.html
+
+```
+
+```
+Asker:
+
+Jake It would be great if you give some examples when find your
+notebook :) And link to the book about pure functional data structures
+which you are talking about.
+Also If some "haskell.org" maintainers are here I'd like to recommend
+them to pay more attention to optimality/performance questions.
+Because almost first question which is apeared  in head of standart
+C/C++ programmer is "Do I get same perfomance?" (even if he do not
+need it).
+Maybe some simple and cool PDF tutorial which describes why haskell
+could be as fast as others will be great to have.
+```
+
+```
+Richard A. O'Keefe:
+
+
+> I am teaching myself haskell. The first impression is very good...
+> Anyway I am trying to backport my algorithm written in C. The key to
+> performance is to have ability to remove element from the end of a
+> list in O(1).
+
+You can't.  Not in *any* programming language.  That's because
+lists are one of many possible implementations of the "sequence"
+concept, and they are optimised to support some operations at
+the expense of others.  At the beginning level, you should think
+of all Haskell data structures as immutable; fixed; frozen;
+forever unchanged.  You can't even remove an element from the
+front of a Haskell list, at all.  All you can do is to forget
+about the original list and concentrate on its tail.
+
+> But the original haskell functions last and init are O(n).
+
+Haskell lists are singly linked lists.  Even by going to
+assembly code, you could not make these operations O(1)
+without *using a different data structure*.
+
+> My questions are:
+> 1) Is last function is something like "black box" written in C++ which
+> perform O(1)?
+
+No.
+
+> 2) Or will optimizer (llvm?) reduce init&last complexity to 1?
+
+No.
+
+> 3) Some people suggest to use sequences package, but still how do they
+> implement O(1) init&last sequences equivalent in haskell?
+
+Well, you could try reading Chris Okasaki's functional data
+structures book.
+
+There is a classic queue representation devised for Lisp
+last century which represents
+ <a,b,c,d,e>
+by ([a,b],[e,d,c])
+so that you can push and pop at either end.
+When the end you are working on runs out, you
+reverse the other end, e.g.,
+  ([],[e,d,c]) -> ([c,d,e],[]).
+
+That can give you a queue with *amortised* constant time.
+(There is a technical issue which I'll avoid for now.)
+
+But let's start at the beginning.
+You have an interesting problem, P.
+You have an algorithm for it, A, written in C.
+You want an algorithm for it, H, written in Haskell.
+Your idea is to make small local syntactic changes
+to A to turn in into H.
+That's probably going to fail, because C just
+loves to smash things, and Haskell hates to.
+Maybe you should be using quite a different approach,
+one that would be literally unthinkable in C.
+After all, being able to do things that are unthinkable
+in C is one of the reasons for learning Haskell.
+
+Why not tell us what problem P is?
+```
+
+```
+Tony Morris:
+
+data SnocList a = SnocList ([a] -> [a])
+
+Inserts to the front and end in O(1).
+```
+
+### I consider the follow dispositve on the subject.
+
+```
+Edward Kmett:
+
+Note: all of the options for playing with lists and queues and fingertrees come with trade-offs.
+
+Finger trees give you O(log n) appends and random access, O(1) cons/uncons/snoc/unsnoc etc. but _cost you_ infinite lists.
+
+Realtime queues give you the O(1) uncons/snoc. There are catenable output restricted deques that can preserve those and can upgrade you to O(1) append, but we've lost unsnoc and random access along the way.
+
+Skew binary random access lists give you O(log n) drop and random access and O(1) cons/uncons, but lose the infinite lists, etc.
+
+Tarjan and Mihaescu's deque may get you back worst-case bounds on more of the, but we still lose O(log n) random access and infinite lists.
+
+Difference lists give you an O(1) append, but alternating between inspection and construction can hit your asymptotics.
+
+Lists are used by default because they cleanly extend to the infinite cases, anything more clever necessarily loses some of that power.
+```
