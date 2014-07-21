@@ -358,3 +358,57 @@ Lists are used by default because they cleanly extend to the infinite cases, any
 20:37 < mm_freak_> i wonder why there is no evalWriter*
 20:37 < ifesdjee_> not sure, really
 ```
+
+## Introduction and origination of free monads
+
+```
+21:32 < sclv> does anyone have a citation for the introduction of free monads?
+21:33 < sclv> they’re so universally used in the literature nobody cites where they came from anymore
+21:33 < sclv> in a computational context goes back to ’91 at least
+21:40 < sclv> found it
+21:40 < sclv> coequalizers and free triples, barr, 1970
+```
+
+http://link.springer.com/article/10.1007%2FBF01111838#page-1
+
+Note: Seeing a paper on free monoids dating to 1972 by Eduardo J. Dubuc.
+
+## Rank 2 types and type inference
+
+```
+03:13 < shachaf> dolio: Do you know what people mean when they say rank-2 types are inferrable?
+03:14 < dolio> Not really. I've never taken the time to understand it.
+03:16 < dolio> One reading makes no sense, I think. Because rank-2 is sufficient to lack principal types, isn't it?
+03:17 < dolio> Or perhaps it isn't....
+03:17 < shachaf> Well, you can encode existentials.
+03:17 < dolio> Can you?
+03:17 < dolio> forall r. (forall a. a -> r) -> r
+03:17 < dolio> I guess that's rank-2.
+03:18 < shachaf> You can give rank-2 types to expressions like (\x -> x x)
+03:18 < shachaf> What type do you pick for x?
+03:19 < dolio> forall a. a -> β
+03:19 < dolio> Presumably.
+03:20 < shachaf> Does β mean something special here?
+03:20 < dolio> It's still open.
+03:20 < dolio> Greek for unification variables.
+03:21 < shachaf> OK, but what type do you infer for the whole thing?03:21 < dolio> forall r. (forall a. a -> r) -> r
+03:23 < dolio> (\f -> f 6) : forall r. (Int -> r) -> r
+03:23 < dolio> Is that a principal type?
+03:23 < shachaf> Do you allow type classes?
+03:24 < dolio> People who say rank-2 is decidable certainly shouldn't be thinking about type classes.
+03:24 < shachaf> I guess with impredicativity the type you gave works... Well, does it?
+03:25 < dolio> Maybe rank-2 is sufficient to eliminate all ambiguities.
+03:25 < dolio> Like, one common example is: [id]
+03:25 < dolio> Is that forall a. [a -> a] or [forall a. a -> a]
+03:25 < dolio> But, we're not talking about Haskell, we're talking about something like system f.
+03:26 < dolio> So you'd have to encode.
+03:26 < dolio> And: (forall r. ((forall a. a -> a) -> r -> r) -> r -> r) is rank-3.
+03:27 < shachaf> I guess...
+03:27 < dolio> If I had to guess, that's what the answer is.
+```
+
+- Practical type inference for arbitrary-rank types - Peyton Jones, Vytinotis, Weirich, Shields
+
+- http://stackoverflow.com/questions/9259921/haskell-existential-quantification-in-detail
+
+- http://en.wikibooks.org/wiki/Haskell/Polymorphism
