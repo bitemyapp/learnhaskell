@@ -386,7 +386,7 @@ Didn't know where else to put these:
 
 ## GHC Core and performance tuning
 
-- [Write Haskell as Fast as C](write_haskell_as_fast_as.md)
+- [Write Haskell as Fast as C](write_haskell_as_fast_as_c.md)
 
 - https://ghc.haskell.org/trac/ghc/wiki/Commentary/Compiler/CoreSynType
 
