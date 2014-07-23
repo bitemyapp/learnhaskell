@@ -384,6 +384,20 @@ Didn't know where else to put these:
 
 - http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu
 
+## GHC Core and performance tuning
+
+- [Write Haskell as Fast as C](write_haskell_as_fast_as.md)
+
+- https://ghc.haskell.org/trac/ghc/wiki/Commentary/Compiler/CoreSynType
+
+- https://hackage.haskell.org/package/ghc-core
+
+- http://stackoverflow.com/questions/6121146/reading-ghc-core
+
+- http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/
+
+- http://book.realworldhaskell.org/read/profiling-and-optimization.html
+
 ## Dependent typing
 
 - http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html squint hard.
