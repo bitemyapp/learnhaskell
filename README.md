@@ -214,6 +214,16 @@ If you need JavaScript, you probably want Purescript for generating JS. Purescri
 
 - http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/ Great guide for getting started
 
+## Parsing and generating JSON
+
+- http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/
+
+- http://bitemyapp.com/posts/2014-04-11-aeson-and-user-created-types.html
+
+- http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html
+
+- https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json
+
 ## Laziness, strictness, guarded recursion
 
 - http://chimera.labs.oreilly.com/books/1230000000929/ch02.html Marlow's book about parallelism and concurrency has one of the best introductions to laziness and normal form I've found. Use other material too if it doesn't stick immediately.
@@ -262,22 +272,6 @@ let a = 1 * a -- not guarded, (*) is strict
 
 - http://www.haskell.org/haskellwiki/Functional_Reactive_Programming
 
-## Recursion Schemes
-
-Some of the crazy *-morphism words you've heard are actually about recursion. NB - before tackling this material you should know how to implement foldr for lists and at least one other data structure, such as a tree. (folds are catamorphisms) Knowing how to implement an unfold (anamorphism) for the same will round things out a bit.
-
-This material dovetails with traversable and foldable.
-
-- http://patrickthomson.ghost.io/an-introduction-to-recursion-schemes/
-
-- http://fho.f12n.de/posts/2014-05-07-dont-fear-the-cat.html - good demonstration of how hylomorphism is the composition of cata and ana.
-
-- http://comonad.com/reader/2009/recursion-schemes/ - this field guide is excellent.
-
-- http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf
-
-- https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms
-
 ## Lenses and Prisms
 
 People vastly overestimate the difficulty of using Lens. Anybody comfortable with Functor/Foldable/Traversable (or even just the first one) can leverage lenses and prisms to make their life happier.
@@ -313,6 +307,22 @@ From:
 - https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md
 
 - https://vimeo.com/73648150
+
+## Recursion Schemes
+
+Some of the crazy *-morphism words you've heard are actually about recursion. NB - before tackling this material you should know how to implement foldr for lists and at least one other data structure, such as a tree. (folds are catamorphisms) Knowing how to implement an unfold (anamorphism) for the same will round things out a bit.
+
+This material dovetails with traversable and foldable.
+
+- http://patrickthomson.ghost.io/an-introduction-to-recursion-schemes/
+
+- http://fho.f12n.de/posts/2014-05-07-dont-fear-the-cat.html - good demonstration of how hylomorphism is the composition of cata and ana.
+
+- http://comonad.com/reader/2009/recursion-schemes/ - this field guide is excellent.
+
+- http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf
+
+- https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms
 
 ## Type and Category Theory (*not* needed to actually write Haskell, just for those interested!)
 
