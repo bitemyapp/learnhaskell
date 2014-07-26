@@ -584,3 +584,35 @@ Note: Seeing a paper on free monoids dating to 1972 by Eduardo J. Dubuc.
 03:07 < Iceland_jack> > [ n^n | n <- [0..7] ]
 03:07 < lambdabot>  [1,1,4,27,256,3125,46656,823543]
 ```
+
+## Applicative and liftA2
+
+```
+02:42 < dibblego> > liftA2 (+) [1,2,3] [30,40,50]
+02:42 < lambdabot>  [31,41,51,32,42,52,33,43,53]
+02:42 < blueclaude> Thanks dibblego
+02:42 < dibblego> ! [1+30,1+40,1+50,2+30,2+40,2+50,3+30,3+40,3+50]
+02:43 < benzrf> blueclaude: (<*>) on the list applicative is cartesian
+product, but applying the first item to the second
+02:43 < benzrf> > [(++"foo"), (++"bar")] <*> ["test", "othertest", "more"]
+02:43 < lambdabot>
+["testfoo","othertestfoo","morefoo","testbar","othertestbar","morebar"]
+02:44 < dibblego> > join (Just (Just 4))
+02:44 < lambdabot>  Just 4
+02:44 < dibblego> > join (Just Nothing)
+02:44 < lambdabot>  Nothing
+02:44 < benzrf> > join []
+02:45 < lambdabot>  []
+02:45 < damncabbage> > [(+ 1), (+ 2)] <*> [1,2,3]
+02:45 < lambdabot>  [2,3,4,3,4,5]
+02:45 < dibblego> Maybe is cosemimonad, but not a comonad
+02:47 < dibblego> bitemyapp: [] is also cosemimonad but not comonad
+```
+
+```haskell
+liftA2 :: Applicative f => (a -> b -> c) -> f a -> f b -> f c
+(<*>) :: Applicative f => f (a -> b) -> f a -> f b
+-- by itself, cosemimonad
+class Functor w =>
+extend :: (w a -> b) -> w a -> w b
+```
