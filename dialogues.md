@@ -616,3 +616,48 @@ liftA2 :: Applicative f => (a -> b -> c) -> f a -> f b -> f c
 class Functor w =>
 extend :: (w a -> b) -> w a -> w b
 ```
+
+## RankNTypes with CPS'y example
+
+```haskell
+myFunc :: (forall a. a -> (a -> a) -> a) -> Int
+myFunc f = f 0 (+1)
+
+-- won't work
+-- otherFunc :: (a -> (a -> a) -> a) -> Int
+-- otherFunc f = f 0 (+1)
+
+-- use:
+-- myFunc (flip ($))
+```
+
+```
+22:42 < mm_freak_> because 'f' is polymorphic, myFunc gets to apply it
+to its own choice of types
+22:42 < mm_freak_> in particular it can make different choices in
+different places
+22:43 < mm_freak_> the "forall" really just means that the function
+implicitly takes a type argument
+22:44 < bitemyapp> mm_freak_: I think part of the problem is the difference between
+22:44 < bitemyapp> (forall a. a -> (a -> a) -> a) -> Int
+22:44 < bitemyapp> vs.
+22:44 < bitemyapp> forall a. (a -> (a -> a) -> a) -> Int
+22:44 < bitemyapp> yes?
+22:44 < bitemyapp> the latter being implicitly the case in Haskell.
+22:44 < mm_freak_> yes, but think about it…  think really really simple in this case
+22:45 < mm_freak_> in the former case myFunc receives a polymorphic function, so myFunc
+                   gets to choose the type
+22:45 < mm_freak_> in the latter case myFunc itself is polymorphic, so the applier of
+                   myFunc gets to choose it
+22:45 < mm_freak_> notice that in the former case myFunc is
+monomorphic!
+22:46 < mm_freak_> yeah…  its type isn't quantified over any type
+variables
+22:46 < bitemyapp> mm_freak_: but the lambda passed to it is?
+22:46 < mm_freak_> yeah
+22:46 < bitemyapp> okay, yes.
+22:46 < bitemyapp> so we're assigning/shifting around polymorphism
+22:46 < bitemyapp> between the top level function the func arg
+22:46 < bitemyapp> based on the ranks/nesting
+22:46 < bitemyapp>  / scope'ish
+```
