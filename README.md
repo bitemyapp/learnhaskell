@@ -426,3 +426,8 @@ Didn't know where else to put these:
 ## Extended Reading list (some is already included here)
 
 - http://www.stephendiehl.com/posts/essential_haskell.html
+
+## Dialogues
+
+[Dialogues](dialogues.md) these are actually pretty important and
+helpful. Look here for deep dives on a variety of topics.
