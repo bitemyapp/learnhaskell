@@ -753,7 +753,7 @@ Arrows. Really quickly, here’s Yoneda and Coyoneda (the “two” free
 functors)
 
 ```haskell
-newtype Yoneda f a = Yoenda { runYoneda :: forall b . (a -> b) -> f b }
+newtype Yoneda f a = Yoneda { runYoneda :: forall b . (a -> b) -> f b }
 data Coyoneda f b where Coyoneda :: f a -> (a -> b) -> Coyoneda f b
 ```
 
