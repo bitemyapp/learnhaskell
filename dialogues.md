@@ -661,3 +661,275 @@ variables
 22:46 < bitemyapp> based on the ranks/nesting
 22:46 < bitemyapp>  / scope'ish
 ```
+
+## Epic Functor, algebra, Coyoneda discussion
+
+* * * * *
+
+bitemyapp edited 4 days ago | link | delete | reply
+
+I realize this is partly because the examples are in Scala, but none
+of this gets at what a Functor really is.
+
+Functor is an algebra.
+
+Functor is an algebra with one operation, usually called map.
+
+That one operation has a type something like:
+
+```haskell
+(a -> b) -> f a -> f b
+```
+
+That one operation should respect identity:
+
+```
+map id = id
+```
+
+And that one operation should be associative:
+
+```
+map (p . q) = (map p) . (map q)
+```
+
+That’s it people. That’s it. Functor is a very weak structure. Many
+things can be functor. Many of those things will not look anything
+like a “list”, “collection”, or even a “data structure”.
+
+Understanding free objects, free versions of these algebraic
+structures, can lend a more faithful intuition for what these things
+are.
+
+Glancing at Coyoneda (the free functor) should give one some idea of
+why you’re not dealing with something that has anything to do with
+lists.
+
+Want to know more?
+
+You know the drill: https://github.com/bitemyapp/learnhaskell
+
+Edit:
+
+Since I take great satisfaction in excising misunderstandings, I’m
+going to include a Functor instance that should help drop the
+“collections” oriented view of what they are.
+
+```haskell
+-- (->) or -> is the type constructor for functions
+-- a -> a, the identity function's type is a type of
+-- -> taking two parameters of the same type (a and a)
+-- (->) a a   analogous to   Either a b
+instance Functor ((->) r) where
+    map = (.)
+
+-- (.) or .  is function composition
+-- (.) :: (b -> c) -> (a -> b) -> a -> c
+-- more on this Functor instance:
+-- http://stackoverflow.com/questions/10294272/confused-about-function-as-instance-of-functor-in-haskell
+```
+
+Bonus round for upvoting me:
+
+http://www.haskellforall.com/2012/09/the-functor-design-pattern.html
+http://hackage.haskell.org/package/kan-extensions-3.7/docs/Data-Functor-Coyoneda.html
+http://oleksandrmanzyuk.wordpress.com/2013/01/18/co-yoneda-lemma/
+http://www.reddit.com/r/haskell/comments/17a33g/free_functors_the_reason_free_and_operational_are/c83p8k2
+https://gist.github.com/thoughtpolice/5843762
+
+* * * * *
+
+tel 4 days ago | link | reply
+
+```
+Understanding free objects, free versions of these algebraic
+structures, can lend a more faithful intuition for what these things
+are.
+```
+
+This is a super great point—it also, meaningfully, applies to other
+structures like Monads, Applicatives, or Monoids, Categories,
+Arrows. Really quickly, here’s Yoneda and Coyoneda (the “two” free
+functors)
+
+```haskell
+newtype Yoneda f a = Yoenda { runYoneda :: forall b . (a -> b) -> f b }
+data Coyoneda f b where Coyoneda :: f a -> (a -> b) -> Coyoneda f b
+```
+
+In each case we see that functor tends to mean having a parametric
+structure (the f) and a method of transforming the parameter to
+something else (the functions a -> b). When we “collapse” this free
+view of a functor we get to decide if, how, when, and why we combine
+that structure and its mapping function. For lists we, well, map
+it. For something like
+
+```haskell
+data Liar a = Liar -- note that `a` does not appear on the right side
+```
+
+we just throw the mapping function away.
+
+(Another key point that’s a bit harder to see is that if you map the
+Yoneda/Coyoneda formulation repeatedly it does not store each and
+every mapping function but instead composes them all together and
+retains only that composition. This ensures that functors cannot “see”
+how many times fmap has been called. That would let you violate the
+functor laws!)
+
+* * * * *
+
+gclaramunt 3 days ago | link | reply
+
+Do you have any reference of functor being an algebra? I’m intrigued
+
+Since we’re clarifying what a functor is, I guess is worth noting that
+you’re talking about endofunctors in the (idealized) Hask category. In
+category theory, a functor is defined by two mappings: one for objects
+in the category and one for arrows, that must preserve identity and
+composition (the laws you mention). Since the mapping of objects is
+already given by the type constructor, here one needs to provide only
+the mapping of functions but it kind of irks me when ppl. say a
+functor is only defined by “map” :)
+
+* * * * *
+
+tel 2 days ago | link | reply
+
+Functor is definitely an algebra. Its rules mean that it has tight
+relation to certain functors in CT.
+
+* * * * *
+
+gclaramunt edited 2 days ago | link | reply
+
+Interesting… any refereces I can read? Or you’re talking about
+F-algebras?
+
+* * * * *
+
+tel 2 days ago | link | reply
+
+I mean “algebra” as “set of operations and equalities”.
+
+* * * * *
+
+gclaramunt 2 days ago | link | reply
+
+Ok. To be honest, I need to familiarize myself with the definition of
+algebra, is just that I had never heard this before :)
+
+* * * * *
+
+tel 1 day ago | link | reply
+
+It’s an incredibly overloaded term, tbh. In the context of abstract
+algebra you’d probably want to think of a (G, L)-algebra as a set
+inductively defined by generators G and laws L. For instance, here’s a
+“free” monoid algebra (note that this isn’t a free monoid, but a “free
+monoid algebra” or a “free algebra of the monoid type” or a “(monoid,
+{})-algebra” maybe)
+
+```haskell
+data FMonoid where
+  Fmempty :: FMonoid
+  Fmappend :: FMonoid -> FMonoid -> FMonoid
+
+class Monoid FMonoid where    -- this is wrong! doesn't follow laws!
+  mempty = Fmempty
+  mappend = Fmappend
+```
+
+note that it has all the “generators” of the typeclass Monoid but
+follows none of the rules (mempty <> mempty != mempty). Typically we
+also want to add a set of constants to form the smallest free algebra
+over a set
+
+```haskell
+data FMonoid a where
+  Embed :: a -> FMonoid a
+  Fmempty :: FMonoid a
+  Fmappend :: FMonoid a -> FMonoid a -> FMonoid a
+```
+
+* * * * *
+
+gclaramunt 1 day ago | link | reply
+
+Really interesting, thanks a lot! Now I’m trying to see how this ties
+to the Functor typeclass: G are the instance constructors and the
+functor laws make L ? I think I’m missing an important piece of the
+puzzle here :)
+
+* * * * *
+
+tel 1 day ago | link | reply
+
+You’re not, that’s basically it.
+
+```haskell
+data FFunctor f a where
+  EmbedFunctor :: f a -> FFunctor f a
+  Ffmap :: (a -> b) -> FFunctor f a -> FFunctor f b
+```
+
+This lets you build the free (Functor, {})-algebra over some initial
+type f. If we translate it naively then it doesn’t follow the laws
+
+```haskell
+class Functor (FFunctor f) where -- wrong!
+  fmap = Ffmap
+```
+
+but we can implement it properly if we’re a little more clever
+
+```haskell
+class Functor (FFunctor f) where
+  fmap f x = case x of
+    EmbedFunctor fa -> Ffmap f x
+    Ffmap g fa -> Ffmap (f . g) fa
+```
+
+We need one more function, though, since we can’t use EmbedFunctor
+directly without exposing information about whether or not we’ve ever
+fmaped this functor (which shouldn’t be possible to access, that’s
+what fmap id = id says)
+
+```haskell
+embed :: f a -> FFunctor f a
+embed fa = Ffmap id (EmbedFunctor fa)
+```
+
+And now, if we think about it, we can see that every value of FFunctor
+constructed using embed and fmap is of the form
+
+```haskell
+Ffmap fun (EmbedFunctor fa)
+```
+
+And so that EmbedFunctor constructor is totally superfluous. Let’s
+remove it
+
+```haskell
+data FFunctor f a where
+  Ffmap :: (a -> b) -> f a -> FFunctor f b
+
+embed :: f a -> FFunctor f a
+embed fa = Ffmap id fa
+```
+
+And—well—this is just CoYoneda again!
+
+```haskell
+lower :: Functor f => FFunctor f a -> f a
+lower (Ffmap f fa) = fmap f fa
+```
+
+* * * * *
+
+gclaramunt about 9 hours ago | link | reply
+
+Nice Haven’t digested it properly but I see the trick is to capture
+the functor with a datatype (is the same thing with free monads,
+right?) Now is easier to see from where CoYoneda comes, thanks! (you
+did show me an important piece of the puzzle :P )

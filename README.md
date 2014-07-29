@@ -20,7 +20,7 @@ Cabal is equivalent to Ruby's Bundler, Python's pip, Node's NPM, Maven, etc. GHC
 
 ## Getting started
 
-### For Ubuntu
+### Ubuntu
 
 This PPA is excellent and is what I use on all my Linux dev and build machines: http://launchpad.net/~hvr/+archive/ghc
 
