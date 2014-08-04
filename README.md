@@ -8,7 +8,11 @@ Our IRC channel is `#haskell-beginners` on Freenode.
 
 IRC web client here: http://webchat.freenode.net/
 
+## Community Guidelines
+
 [Letter to a Young Haskell Enthusiast](http://comonad.com/reader/2014/letter-to-a-young-haskell-enthusiast/)
+
+Be nice above all else!
 
 # Primary course
 
