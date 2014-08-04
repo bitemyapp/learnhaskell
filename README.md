@@ -8,6 +8,8 @@ Our IRC channel is `#haskell-beginners` on Freenode.
 
 IRC web client here: http://webchat.freenode.net/
 
+[Letter to a Young Haskell Enthusiast](http://comonad.com/reader/2014/letter-to-a-young-haskell-enthusiast/)
+
 # Primary course
 
 ## What are Haskell, GHC, and Cabal?
