@@ -938,6 +938,8 @@ did show me an important piece of the puzzle :P )
 
 - [Original post](https://www.fpcomplete.com/user/bss/magma-tree)
 
+- [Guy Steele talk referenced](https://vimeo.com/6624203)
+
 - [Comment thread](http://www.reddit.com/r/haskell/comments/2corq6/algebraic_terraforming_trees_from_magma/)
 
 * * * * *
