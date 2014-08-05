@@ -969,3 +969,55 @@ Switching to a finger tree gives you guaranteed O(log n) splits, but now merges 
 In a general magma the split is potentially completely lopsided. You can 'steal work' but as often as not you likely steal a single unit, or in a unital magma, possibly nothing.
 
 The cost of these richer structures is you lose the continuous extension to the infinite case, but when trading O(n) or worse for O(log n) it is often worth making that trade-off.
+
+## Why non-strictness (laziness) needs to be the default
+
+```
+23:20 < slack1256> It is folklore that lazy evaluation compose better, usually showing how it supports separated
+generators/consumers as in "Why functional programming matters", but does this notion of
+composition goes further?
+23:20 < Cale> slack1256: In what sense?
+23:21 < slack1256> as in, if some function is not based on generator/consumer based can still benefit from
+laziness?.
+23:21 < slack1256> (this is a problem of me having lack of imagination)
+23:22 < Cale> slack1256: Most functions are consuming or generating something. Those which produce or consume
+larger structures with many parts that could be evaluated separately tend to benefit from laziness.
+23:22 < tabemann> from what I gather, though, lazy lists aren't as useful as that paper purported
+23:23 < Cale> We use them all the time
+23:23 < haasn> Laziness can play well into parallelism
+23:23 < haasn> Or, rather, nonstrictness
+23:23 < haasn> Only evaluate the strict parts immediately, evaluate parts that don't have to be forced yet in parallel
+23:23 < tabemann> what I mean is that there are better lazy sequence data structures than the list
+23:23 < Cale> Oh?
+23:23 < Cale> Lists are absolutely perfect for what they are
+23:24 < slack1256> Mmm you're right, most functions are consuming or generating something, specially in a pure
+language.
+23:24 < Cale> If you plan on iterating through a list of things in order, then lists present you with about as
+concise a representation as possible.
+23:24 < Cale> slack1256: Lists are essentially our loops
+23:25 < Cale> and it helps sometimes that they can be infinite, or combinatorially large
+23:25 < Cale> for the same reason that you might want to have an infinite loop, or one which potentially iterates
+more times than you'll practically ever want to actually have the loop body occur.
+23:26 < slack1256> In "more points for lazy evaluation" augustss shows that laziness enable efficient higher-order
+functions, and bob concedes that point that in strict languages that really hurts because you
+have to use manual recursion.
+23:26 < Cale> yep
+23:26 < slack1256> Maybe I should really learn SML to appreciate more the benefits of laziness
+23:27 < josephle> then you'll lament the lack of backpack in Haskell ;)
+23:28 < Cale> It really needs to be the default for that reason: if the default is to be strict, when you find the
+functions that you want to compose in your library, the chances are good that whoever wrote it won't
+have thought about your use case, and you'll need to rewrite it to be explicitly lazy, which defeats
+a lot of the point of having things be compositional.
+23:31 < Cale> Whereas strictness is just slightly more rarely required, and tends to be the kind of thing that you
+can't ignore when you really need it, because your program's performance will suffer dramatically. So
+it just becomes a matter of learning to spot the places where it'll be important. The rule of thumb I
+use is this: if you're collapsing many individual bits of data down into a single thing which depends
+on all of them
+23:31 < Cale> and can't be partially evaluated, that's where you want some sort of strict higher-order function
+like foldl' or some explicit strictness annotations.
+23:32 < Cale> Basically, things you'd think of as accumulations of some sort. You want to avoid building up large
+expressions in memory composed of strict functions (functions that must pattern match on their input
+to produce any part of their result).
+23:34 < Cale> So for instance, when you're repeatedly updating the contents of an IORef, or recursively updating an
+accumulating parameter without matching on it, you want to be careful there.
+```
