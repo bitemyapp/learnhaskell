@@ -933,3 +933,37 @@ Nice Haven’t digested it properly but I see the trick is to capture
 the functor with a datatype (is the same thing with free monads,
 right?) Now is easier to see from where CoYoneda comes, thanks! (you
 did show me an important piece of the puzzle :P )
+
+## Magma, parallelism, free monoid
+
+- [Original post](https://www.fpcomplete.com/user/bss/magma-tree)
+
+- [Comment thread](http://www.reddit.com/r/haskell/comments/2corq6/algebraic_terraforming_trees_from_magma/)
+
+* * * * *
+
+edwardkmett 7 points an hour ago
+
+Much of Guy Steele's work here pertained to a desire to be able to parallelize calculation. This is a laudable goal.
+The main issue with a naïve magma approach Steele proposed for Fortress is that you have zero guarantees about efficient splittability. All the mass of your magma could be on one side or the other.
+
+The benefit is that without those guarantees infinite magmas make sense in a lazy language. You can have infinitely large trees just fine, that go off to infinity at any point not just at the right.
+
+This has a certain pleasing structure to it. Why? Well, lists aren't really the free monoid if you allow for infinitely recursive use of your monoid! You have unit and associativity laws and by induction you can apply them a finite number of times, but reassociating an infinite tree from the left to the right requires an infinite number of steps, taking us out of the constructive world we can program. So ultimately a free Monoid (allowing for infinite monoids) is something like Sjoerd Visscher's
+
+```haskell
+newtype Free p = Free { runFree :: forall r. p r => (a -> r) -> r }
+
+type List = Free Monoid
+```
+
+Here we borrow the assumption of unit and association from the target r and generate something using it. It is an almost vacuous but now correct construction, whereas the association to the right to make a list required us to be able to right associate infinite trees. You can view this as a sort of quotient on a magma, where you guarantee to only consume it with monoidal reductions.
+
+Binding/substituting on a (unital) magma can now take longer than O(n), why? Because now I have to walk past all the structure. You can replace this with Oleg and Atze's "Reflection without Remorse", but walking down a unital Magma structure doesn't decrease n necesssarily.
+
+In the absence of infinite trees, you usually want some form of balance depending on what you want to do with the structure. e.g. turning it into a catenable deque gives you efficient access to both ends and lets you still glue in O(1) or O(log n).
+
+Switching to a finger tree gives you guaranteed O(log n) splits, but now merges go from O(1) to O(log n)
+In a general magma the split is potentially completely lopsided. You can 'steal work' but as often as not you likely steal a single unit, or in a unital magma, possibly nothing.
+
+The cost of these richer structures is you lose the continuous extension to the infinite case, but when trading O(n) or worse for O(log n) it is often worth making that trade-off.
