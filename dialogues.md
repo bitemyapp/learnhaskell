@@ -24,13 +24,13 @@ John Wiegley:
 Looking at the type of a fold:
 
 ```haskell
-    foldr :: (a -> b -> b) -> b -> [a] -> b
+foldr :: (a -> b -> b) -> b -> [a] -> b
 ```
 
 If we juggle the arguments we get:
 
 ```haskell
-    foldr :: (a -> b -> b) -> [a] -> b -> b
+foldr :: (a -> b -> b) -> [a] -> b -> b
 ```
 
 And if we imagine State b () actions, we can directly rewrite this as:
