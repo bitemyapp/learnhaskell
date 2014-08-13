@@ -1,5 +1,81 @@
 # Dialogues from the IRC channel or other places
 
+## State monad vs. fold
+
+Martin:
+
+Hello all,
+
+many times I see a problem and I say to myself: "there is some state". I then play around with the state monad and often
+I don't get anywhere. Then at some point I realizes, that all I need is a simple fold. I don't think I ever used the
+state monad outside of toy examples.
+
+Can someone give me some insights when the State Monad is beneficial and where a fold is the better choice.
+
+* * * * *
+
+John Wiegley:
+
+>>>>> martin  <martin.drautzburg@web.de> writes:
+
+> Can someone give me some insights when the State Monad is beneficial and
+> where a fold is the better choice.
+
+Looking at the type of a fold:
+
+```haskell
+    foldr :: (a -> b -> b) -> b -> [a] -> b
+```
+
+If we juggle the arguments we get:
+
+```haskell
+    foldr :: (a -> b -> b) -> [a] -> b -> b
+```
+
+And if we imagine State b () actions, we can directly rewrite this as:
+
+```haskell
+foldrS :: (a -> State b ()) -> [a] -> State b ()
+```
+
+Which generalizes to:
+
+```haskell
+foldrS :: MonadState b m => (a -> m ()) -> [a] -> m ()
+```
+
+Which is roughly the same thing as using mapM_ over our State monad:
+
+```haskell
+mapM_ :: Monad m => (a -> m b) -> [a] -> m ()
+```
+
+In other words, these two forms in our example say the same thing:
+
+```haskell
+foldr f b xs
+execState (mapM_ f' xs) b
+```
+
+With the only difference being the types of f and f':
+
+```haskell
+f  : a -> b -> b
+f' : a -> State b ()
+```
+
+The other question you asked is when to choose one over the other.  Since they
+are equivalent, it's really up to you.  I tend to prefer using a fold over
+State, to keep things on the level of functions and values, rather than
+pulling in monads and possibly monad transformers unnecessarily.
+
+But it's a very good thing to hold these isomorphisms in your mind, since you
+can then freely switch from one representation to another as need be.  This is
+true of a lot of type equivalences throughout Haskell, where the more things
+you can see as being essentially the same, the more freedom you have to find
+the best abstraction for a particular context.
+
 ## On $ and . operator
 
 ```haskell
