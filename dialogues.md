@@ -1119,3 +1119,60 @@ accumulating parameter without matching on it, you want to be careful there.
 λ> join (*) 7
 49
 ```
+
+## Reversing a list operation that uses >>=
+
+SpacemanInBikini:
+
+I made a function in Haskell that takes in a number and returns a list of integers from 1 to that number.
+
+```haskell
+gen x = [1..x]
+gen 4
+-> [1, 2, 3, 4]
+```
+
+As I was learning about the monads I noticed that I could bind a list into this function as it has the type of (a -> m a).
+
+```haskell
+[2, 3, 6, 1, 4] >>= gen
+-> [1, 2, 1, 2, 3, 1, 2, 3, 4, 5, 6, 1, 1, 2, 3, 4]
+```
+
+Then I wanted to write a function that would reverse the (>>= gen) and i came up with this function.
+
+```haskell
+revgen (x:xs) =
+  case (null xs) of
+    False -> case ((head xs) - x) of
+               1         -> 1 + revgen xs
+               otherwise -> 0 : revgen xs
+    True  -> 1 : []
+```
+
+But it doesn't work, I think because of the revgen returning both numbers and lists. But I can't come up with a way to do this any other way with one function. Also the nested cases look ugly as hell but I quess they work as intented because at least it compiles.
+
+* * * * *
+
+meditans:
+
+Given the definitions:
+
+```haskell
+gen x = [1..x]
+f xs = xs >>= gen
+```
+
+If you want a function g such that g . f = id, I think you could use:
+
+```haskell
+g xs = map last $ groupBy (<) xs
+```
+
+```haskell
+λ> groupBy (<) [1, 2, 1, 2, 3, 1, 2, 3, 4, 5, 6, 1, 1, 2, 3, 4]
+[[1,2],[1,2,3],[1,2,3,4,5,6],[1],[1,2,3,4]]
+
+λ> map last $ groupBy (<) [1, 2, 1, 2, 3, 1, 2, 3, 4, 5, 6, 1, 1, 2, 3, 4]
+[2,3,6,1,4]
+```
