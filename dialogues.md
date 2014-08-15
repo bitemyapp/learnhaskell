@@ -1176,3 +1176,20 @@ g xs = map last $ groupBy (<) xs
 λ> map last $ groupBy (<) [1, 2, 1, 2, 3, 1, 2, 3, 4, 5, 6, 1, 1, 2, 3, 4]
 [2,3,6,1,4]
 ```
+
+## Programmatically finding the inverse of a bijective function
+
+tel:
+
+If the range is finite and the domain has decidable equality
+
+```haskell
+class Finite a where
+  -- x :: a iff elem x universe = True
+  universe :: [a]
+
+inv :: (Eq b, Finite a) => (a -> b) -> (b -> a)
+inv f b = let [a] = [ a | a <- universe, f a == b ] in a
+```
+
+The pattern matching above will fail if f is not bijective.
