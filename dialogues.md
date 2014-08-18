@@ -1098,6 +1098,44 @@ to produce any part of their result).
 accumulating parameter without matching on it, you want to be careful there.
 ```
 
+## Functor for Reader
+
+```
+< OscarZ> instance Functor ((->) t) where
+< ajcoppa> OscarZ: you know about (->) from the types of functions, right?
+< OscarZ> ajcoppa: yes
+< ajcoppa> ((->) t) is a partial definition that describes a function that takes in a value of type t
+< OscarZ> ajcoppa: im a bit confused.. so does "instance Functor ((->) t) where" mean that were defining that any function that takes a parameter is a Functor instance?
+< ajcoppa> OscarZ: yep!
+< OscarZ> ajcoppa: is that different than saying instance Functor (a -> b) where ?
+< ajcoppa> OscarZ: it is different, because functors need to have a kind of * -> *
+< ajcoppa> as an example, when defining a functor for Optional, you don't say instance Functor (Optional Int) where -- you say instance Functor Optional where
+< pjdelport> OscarZ: "Functor ((->) r)" is a lot like "Functor (Either a)" and "Functor ((,) a)"
+< pjdelport> OscarZ: You're declaring an instance for a partially-applied type, which itself will get applied to a remaining type (which is the "slot" that the functor operates on)
+< pjdelport> OscarZ: So in the same sense that "instance Functor Maybe where ..." means: fmap :: (a -> b) -> Maybe a -> Maybe b
+< pjdelport> "instance Functor ((,) x) where ..." means: fmap (a -> b) -> (x,a) -> (x,b)
+< pjdelport> Or in equivalent syntax: fmap :: (a -> b) -> ((,) x) a -> ((,) x) b
+< pjdelport> where ((,) x) is what "f" gets replaced with
+< pjdelport> So for "instance Functor (Either x) where ...", you have fmap ::  (a -> b) -> Either x a -> Either x b
+< pjdelport> and for "instance Functor ((->) r) where ...", you have fmap ::  (a -> b) -> (->) r a -> (->) r b
+< pjdelport> or equivalently: fmap :: (a -> b) -> (r -> a) -> (r -> b)
+< OscarZ> oh.. i think i finally get it
+< pjdelport> OscarZ: To read that more intuitively, just remember what the "slot" that fmap operates on is for each Functor instance: for lists, the "slots" are all of a list's elements. For Maybe, the "slots" are Just values (if any). For Either, the "slots" are Right values.
+< pjdelport> OscarZ: For functions, (->), the "slot" that you're operating on is the *result* of the function.
+< pjdelport> So applying "fmap f" to a function value like (r -> a) uses f to "replace" the result value 'a' with a 'b', yielding a new function (r -> b).
+< pjdelport> (Just like how applying "fmap f" to a list value [a] uses f to "replace" each element 'a' with a 'b', yielding a new list [b].)
+< OscarZ> to implement Functor functions with signature a -> a -> a, should it be instance Function ((->) r t) where ?
+< pjdelport> OscarZ:  a -> a -> a, or (a -> (a -> a)), is just a special case of (a -> b) where b = (a -> a)
+< OscarZ> pjdelport: so like Functor (Either a) matches (Either a) part in Either a b, Functor ((->) r) matches just the first a in a -> (a -> a)  ? in this case the slot would be of type (a -> a) ?
+< pjdelport> OscarZ: Yep.
+< OscarZ> ok thanks.. i think i get.. apparently im not used to functions as first-class citizens :) somehow got confused when it was a function instead of something like Either a b
+< ajcoppa> it is very normal to need some time to wrap your head around this instance in particular
+< pjdelport> Yeah, it can be mind-bending. :)
+< pjdelport> but it's good exercise
+< OscarZ> you guys are good at explaining :)
+< OscarZ> you could teach FP to a rotten cabbage
+```
+
 ## Join for Reader
 
 ```
