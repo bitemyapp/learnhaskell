@@ -1136,6 +1136,49 @@ accumulating parameter without matching on it, you want to be careful there.
 < OscarZ> you could teach FP to a rotten cabbage
 ```
 
+```haskell
+-- n.b. * means we're showing kind signatures, not type signatures.
+-- application of type arguments
+
+data (->) a b
+(->) :: * -> * -> *
+((->) e) :: * -> *
+
+instance Functor ((->) r) where
+    fmap = (.)
+
+instance Functor ((->) r) where  
+    fmap f g = (\x -> f (g x))
+
+
+data (,) a b = (,) a b
+(,) :: * -> * -> *
+((,) a) :: * -> *
+
+instance Functor ((,) a) where
+    fmap f (x,y) = (x, f y)
+
+
+newtype Reader r a = Reader { runReader :: r -> a }
+Reader :: * -> * -> *
+(Reader r) :: * -> *
+
+instance Functor (Reader r) where
+    fmap f m = Reader $ \r -> f (runReader m r)
+
+instance Monad (Reader r) where
+    return a = R $ \_ -> a
+    m >>= k = R $ \r -> runReader (k (runReader m r)) r
+
+
+class Functor (f :: * -> *) where
+  fmap :: Functor f => (a -> b) -> f a -> f b
+
+class Monad (m :: * -> *) where
+  (>>=) :: m a -> (a -> m b) -> m b
+  return :: a -> m a
+```
+
 ## Join for Reader
 
 ```
