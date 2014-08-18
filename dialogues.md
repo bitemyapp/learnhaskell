@@ -738,7 +738,7 @@ variables
 22:46 < bitemyapp>  / scope'ish
 ```
 
-## Epic Functor, algebra, Coyoneda discussion
+## Functor, algebras, Coyoneda
 
 * * * * *
 
