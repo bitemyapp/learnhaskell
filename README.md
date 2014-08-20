@@ -293,7 +293,7 @@ I recommend these two tutorials/introductions:
 
 - https://github.com/ekmett/lens#lens-lenses-folds-and-traversals
 
-## Dreaded monads and monad transformers
+## Monads and monad transformers
 
 ### Do not do these until you understand typeclasses, Monoid, Functor, and Applicative!
 
