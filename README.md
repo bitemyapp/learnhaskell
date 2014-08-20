@@ -178,7 +178,7 @@ In addition to being an amazing guide for all kinds of things such as GADTs, thi
 
 ### Cabal guidelines
 
-- http://katychuang.com/cabal-guide/ Cabal - the simple guide
+- http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html
 
 Cabal Hell was a problem for Haskell users before the introduction of sandboxes. Installing outside of a sandbox will install into your user package-db. This is *not* a good idea except for foundational packages like Cabal, alex, and happy. Nothing else should be installed in the user or global package-dbs unless you know what you're doing.
 
