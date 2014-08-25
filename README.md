@@ -411,9 +411,9 @@ Didn't know where else to put these:
 
 Comment from Reddit thread by `glaebhoerl`
 
-```
+
 Interesting side note: GHC needs to hide the state token representation behind an abstract IO type because the state token must always be used linearly (not duplicated or dropped), but the type system can't enforce this. Clean, another lazy Haskell-like language, has uniqueness types (which are like linear types and possibly different in ways I'm not aware of), and they expose the World-passing directly and provide a (non-abstract) IO monad only for convenience.
-```
+
 
 - http://blog.jle.im/entry/first-class-statements
 
