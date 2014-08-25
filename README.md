@@ -399,6 +399,26 @@ Didn't know where else to put these:
 
 - http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu
 
+- http://comonad.com/reader/2011/free-monads-for-less/
+
+- http://comonad.com/reader/2011/free-monads-for-less-2/
+
+- http://comonad.com/reader/2011/free-monads-for-less-3/
+
+## IO
+
+- https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens
+
+Comment from Reddit thread by `glaebhoerl`
+
+```
+Interesting side note: GHC needs to hide the state token representation behind an abstract IO type because the state token must always be used linearly (not duplicated or dropped), but the type system can't enforce this. Clean, another lazy Haskell-like language, has uniqueness types (which are like linear types and possibly different in ways I'm not aware of), and they expose the World-passing directly and provide a (non-abstract) IO monad only for convenience.
+```
+
+- http://blog.jle.im/entry/first-class-statements
+
+- http://hackage.haskell.org/package/base-4.7.0.1/docs/System-IO-Unsafe.html#v:unsafePerformIO Read the docs and note implementation of unsafeDupablePerformIO
+
 ## GHC Core and performance tuning
 
 - [Write Haskell as Fast as C](write_haskell_as_fast_as_c.md)
