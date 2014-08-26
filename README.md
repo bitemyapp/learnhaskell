@@ -148,7 +148,7 @@ Useful for understanding `Functor`, `Applicative`, `Monad`, `Monoid` and other t
 
 ### Emacs
 
-- https://github.com/serras/emacs-haskell-tutorial
+- https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md
 
 - https://github.com/bitemyapp/dotfiles/
 
