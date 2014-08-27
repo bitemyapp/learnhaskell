@@ -315,6 +315,14 @@ From:
 
 - https://vimeo.com/73648150
 
+## Resource handling, finalization, cleanup
+
+- Overview of resourceT by Snoyman: https://www.fpcomplete.com/user/snoyberg/library-documentation/resourcet
+
+## Streaming IO
+
+- https://github.com/jwiegley/simple-conduit Good simple library for learning how streaming IO works in general, knowledge transferrable to libraries like Pipes and Conduit
+
 ## Recursion Schemes
 
 Some of the crazy *-morphism words you've heard are actually about recursion. NB - before tackling this material you should know how to implement foldr for lists and at least one other data structure, such as a tree. (folds are catamorphisms) Knowing how to implement an unfold (anamorphism) for the same will round things out a bit.
