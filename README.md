@@ -111,7 +111,7 @@ You don't need this if you use the .app, but if it doesn't work for you, try thi
 ## Yorgey course - *Do this first*, this is the primary way I recommend being introduced to Haskell.
 
 
-http://www.seas.upenn.edu/~cis194/lectures.html Brent Yorgey's course is the best I've found so far and replaces both Yann Esposito's HF&H and the NICTA course. This course is particularly valuable as it will not only equip you to write Haskell but also help you understand parser combinators.
+http://www.seas.upenn.edu/~cis194/spring13/index.html Brent Yorgey's course is the best I've found so far and replaces both Yann Esposito's HF&H. This course is valuable as it will not only equip you to write basic Haskell but also help you to understand parser combinators.
 
 The only reason you shouldn't start with cis194 is if you are not a programmer or are an inexperienced one. If that's the case, start with http://learnyouahaskell.com/ and transition to cis194.
 
