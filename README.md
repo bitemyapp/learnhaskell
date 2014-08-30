@@ -205,6 +205,23 @@ Also Hayoo (which has all of hackage enabled for search by default): http://holu
 
 https://gist.github.com/bitemyapp/3e6a015760775e0679bf
 
+## Haddock
+
+- First: http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html
+- Second: http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html
+
+### What you really need to know
+
+In order to have haddocks include documentation for related packages, you have to set documentation: True in your ~/.cabal/config. If it was left on the default (False) or set to False, you'll have to delete all your packages and reinstall before generating haddocks.
+
+The other thing to keep in mind is that due to the way the $pkg parameter gets interpolated *by* haddock, not by you, the html-location and content-location parameters must be in single quotes and entered into a shell or contained in a shell script. They will not work in a Makefile, because it will think they are Make variables!
+
+```bash
+#!/bin/bash
+
+cabal haddock --hoogle --hyperlink-source --html-location='http://hackage.haskell.org/package/$pkg/docs' --contents-location='http://hackage.haskell.org/package/$pkg'
+```
+
 ## Fun Stuff
 
 After you're comfortable with Haskell, strongly consider learning Lenses and Prisms, even if just as a "user". You don't need to understand the underlying category for it to be useful.
