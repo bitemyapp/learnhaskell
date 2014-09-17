@@ -55,11 +55,18 @@ If you use debian stable, it is easier to use this: http://deb.haskell.org/. Aft
 #### Using Ubuntu PPA
 If you're not using stable, you can follow the same steps as Ubuntu, but has to execute an additional command. Immediately after `sudo add-apt-repository -y ppa:hvr/ghc` is ran, run:
 
-- `sudo sed -i s/wheezy/trusty/g /etc/apt/sources.list.d/hvr-ghc-wheezy.list`
+- `sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list`
 
-For other Debian versions, just replace all occurences of "wheezy" with your version name in the command above.
+For other Debian versions, just replace all occurences of "jessie" with your version name in the command above.
 
-If, for some reason, the file `/etc/apt/sources.list.d/hvr-ghc-wheezy.list` does not exist, try the same command but with `/etc/apt/sources.list` instead.
+If, for some reason, the file `/etc/apt/sources.list.d/hvr-ghc-jessie.list` does
+not exist, then `/etc/apt/sources.list` should contain a line like this:
+
+```
+deb http://ppa.launchpad.net/hvr/ghc/ubuntu jessie main
+```
+
+Replace "jessie" with "trusty" in this line.
 
 #### Manual compilation
 You can follow the guide written for Mac OS X: http://www.davesquared.net/2014/05/platformless-haskell.html. Notes:
