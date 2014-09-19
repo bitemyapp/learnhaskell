@@ -1,5 +1,107 @@
 # Dialogues from the IRC channel or other places
 
+## Transducers
+
+```
+19:31 < edwardk> bitemyapp: a transducer is recognizing that the signature of foldl splits
+19:31 < edwardk> :t foldl
+19:31 < lambdabot> (b -> a -> b) -> b -> [a] -> b
+19:31 < bitemyapp> (b -> a -> b) -> (b -> [a] -> b) ?
+19:31 < dfeuer> Splits?
+19:31 < edwardk> yes, now replace a and [a] with two things and quantify over the bs
+19:31 < edwardk> done
+19:32 < monochrom> dfeuer: do you want -O1 or -O2?
+19:32 < edwardk> type Transducer x y = forall b. (b -> y -> b) -> (b -> x -> b)
+19:32 < edwardk> tada transducer
+19:32 < edwardk> they compose like lenses
+19:32 < edwardk> nuff said
+19:32 < edwardk> now the left and right are 'of the same shape
+19:32 < edwardk> :t foldl.foldl
+19:32 < lambdabot> (b -> a -> b) -> b -> [[a]] -> b
+19:32 < edwardk> :t foldl.foldl.foldl
+19:32 < lambdabot> (b -> a -> b) -> b -> [[[a]]] -> b
+19:33 < edwardk> yay transducers, next? =)
+19:32 < edwardk> now the left and right are 'of the same shape
+19:32 < edwardk> :t foldl.foldl
+19:32 < lambdabot> (b -> a -> b) -> b -> [[a]] -> b
+19:32 < edwardk> :t foldl.foldl.foldl
+19:32 < lambdabot> (b -> a -> b) -> b -> [[[a]]] -> b
+19:33 < edwardk> yay transducers, next? =)
+19:35 < bitemyapp> dfeuer: the last definition Hickey gave of transducers was: "a transducer is just a pre-fused
+                   Kleisli arrows in the list monad"
+19:35 < dfeuer> bitemyapp, yeeeeeeeeeeaaaaahhhhhh.
+19:35 < bitemyapp> edwardk: ^^ does that definition make sense to you?
+19:35 < mauke> I like git
+19:35 < bitemyapp> tel added that there was ambient mutable state too.
+19:35 < xplat> edwardk: what are some other transducers besides foldl and (flip.foldr.flip) or whatever it was?
+19:36 < edwardk> xplat: you can define maps and concatmaps, etc.
+19:36 < bitemyapp> I'm not entirely sure what the list monad has to do with it, for example.
+19:36 < bitemyapp> since it seems to be about folding.
+19:36 < edwardk> xplat: you basically just have to say how you explode 'y' into a bunch of 'b's and fold through it
+                 left to right
+19:36 < edwardk> er y into a bunch of x's and fold through them left to right
+19:37 < edwardk> (or is it the other way around)
+19:37 < bitemyapp> I guess that could be monadic.
+19:37 < bitemyapp> sorta?
+19:37 < bitemyapp> you're not using join though.
+19:37 < xplat> x into a bunch of ys
+19:37 < bitemyapp> you'd be mapping an x -> [y] and then reducing with fold.
+19:37 < bitemyapp> rather than join.
+19:37 < bitemyapp> based on edwardk's casual definition.
+19:37 < edwardk> @let type Transducer a b = forall r. (r -> b -> r) -> r -> a -> r
+19:37 < lambdabot>  Defined.
+19:37 < edwardk> :t foldl :: Transducer [a] a
+19:37 < lambdabot> (r -> a -> r) -> r -> [a] -> r
+19:37 < xplat> bitemyapp: it's 'exploding an x into a sequence of ys' i think that brings in the list monad
+19:38 < bitemyapp> xplat: yeah, that's what I meant by "I guess that could be monadic"
+19:38 < bitemyapp> xplat: but the thing is, it's not really.
+19:38 < bitemyapp> xplat: you just need fmap for that.
+19:38 < xplat> i wonder if these things have other shapes like traversals and folds do
+19:38 < bitemyapp> xplat: fmap can do x -> [y], you need monad for concatMap - ie: join
+19:39 < bitemyapp> xplat: since we're not using the parts that are specific to the list monad (bind/join), it's not
+really about the list monadic because the reduction is whatever fold we defined.
+19:39 < edwardk> :t (\f g r -> g r . f) :: (a -> b) -> Transducer a b
+19:39 < lambdabot> (a -> b) -> (r -> b -> r) -> r -> a -> r
+19:39 < bitemyapp> so I'm not totally convinced but I can see why the nested introduction of lists would put
+                   somebody into thinking it was about the list monad.
+19:39 < edwardk> :let tmap :: (a -> b) -> Transducer a b; tmap f g r = g r . f
+19:39 < edwardk> @let tmap :: (a -> b) -> Transducer a b; tmap f g r = g r . f
+19:39 < lambdabot>  Defined.
+19:39 < Ferdirand> hmm
+19:40 < edwardk> :t foldl.tmap succ
+19:40 < lambdabot> Enum b1 => (b -> b1 -> b) -> b -> [b1] -> b
+19:40 < Ferdirand> so what are the other interesting Transducer types, beyond Transducer a [a] ?
+19:40 < xplat> Ferdirand: well, you can use foldl or foldr for any Foldable
+19:40 < edwardk> :t (\f g r -> foldl g r . f) :: (a -> [b]) -> Transducer a b
+19:40 < lambdabot> (a -> [b]) -> (r -> b -> r) -> r -> a -> r
+19:40 < edwardk> there you get a concatMap, etc.
+19:41 < edwardk> Ferdirand: work for any Foldable, etc.
+19:41 < edwardk> anyways its basically just a crippled left-biased Fold
+19:41 < Ferdirand> okay, but for instance, does (Transducer [a] a) corresponds to something meaningful ?
+19:42 < edwardk> by biasing left it can't handle infinite cases
+19:42 < edwardk> Ferdirand: sure its a function from [a] to basically [a] ;)
+19:42 < xplat> so far this all seems like stuff that would work with a Fold too; is there a difference?
+19:42 < edwardk> Transducer a b is a -> [b] in disguise
+19:42 < edwardk> for a finite case
+19:42 < edwardk> xplat: no
+19:42 < edwardk> xplat: other than the fact that this version doesn't handle infinite cases
+19:42 < xplat> it seems like you could get a transducer from any fold by reading it out into Endo
+19:43 < edwardk> yes
+19:43 < edwardk> :t foldlOf
+19:43 < lambdabot> Getting (Dual (Endo r)) s a -> (r -> a -> r) -> r -> s -> r
+19:43 < edwardk> yay transducer
+19:43 < edwardk> next =)
+19:44 < mauke> http://jlongster.com/Transducers.js--A-JavaScript-Library-for-Transformation-of-Data are these the
+               same transducers?
+19:44 < monochrom> dfeuer: OK, I use -O2, the experiment code is "f x y = quot x y + rem x y" and "g x y = q + r
+                   where (q, r) = quotRem x y". whether Int, Integer, or Integral, f and g are different in GHC
+                   core.
+19:44 < edwardk> xplat: transducers themselves aren't terribly brain bending, they are just a use of the same
+                 pattern that lens uses. finding a shape that factors through (->) when something gets quantified
+                 and using (.) and id as the way to compose them
+19:45 < edwardk> its nice that they've been rediscovered, but there isn't a lot of magic there
+```
+
 ## State monad vs. fold
 
 Martin:
