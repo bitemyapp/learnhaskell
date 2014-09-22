@@ -478,6 +478,25 @@ Interesting side note: GHC needs to hide the state token representation behind a
 
 - http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf
 
+## Graph algorithms and data structures
+
+- https://hackage.haskell.org/package/fgl particularly the shortest path algos here which are pure: http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html
+
+- http://web.engr.oregonstate.edu/~erwig/papers/abstracts.html#JFP01
+
+- http://web.engr.oregonstate.edu/~erwig/fgl/haskell/old/fgl0103.pdf
+
+- http://hackage.haskell.org/package/containers-0.5.5.1/docs/Data-Graph.html
+
+- https://hackage.haskell.org/package/graphs
+
+- http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec
+
+- https://www.fpcomplete.com/user/edwardk/phoas
+
+- http://www.haskell.org/haskellwiki/Tying_the_Knot
+
+
 ## Extended Reading list (some is already included here)
 
 - http://www.stephendiehl.com/posts/essential_haskell.html
