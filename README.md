@@ -323,7 +323,7 @@ Implement the standard library monads ( List, Maybe, Cont, Error, Reader, Writer
 
 Writing many interpreters by just changing the monad to change the semantics can help convey what's going on.
 
-- http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf
+- https://vimeo.com/73648150 This talk by Tony excellently motivates monad transformers
 
 Also, reimplement Control.Monad. Functions like `mapM` or `sequence` are good opportunities to practice writing generic monadic code.
 
@@ -337,7 +337,7 @@ From:
 
 - https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md
 
-- https://vimeo.com/73648150
+- http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf
 
 ## Resource handling, finalization, cleanup
 
