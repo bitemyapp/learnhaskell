@@ -87,9 +87,17 @@ To install Haskell from the official repos on Arch Linux, run
 
 ### Mac OS X
 
+#### 10.9
+
 Install the GHC for Mac OS X app, which includes GHC and Cabal. It provides instructions on how to add GHC and Cabal to your path after you've dropped the .app somewhere.
 
 - http://ghcformacosx.github.io/
+
+#### 10.6-10.8
+
+Do the binary distribution install described below with this tarball:
+
+- https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2
 
 ### Windows and other Linux users
 
