@@ -255,8 +255,10 @@ If you need JavaScript, you probably want Purescript for generating JS. Purescri
 
 ## Parsing in Haskell
 
-- Parser combinator tutorial for Haskell: https://github.com/bitemyapp/intro_to_parsing based on the excellent https://github.com/JakeWheat/intro_to_parsing
+- Parser combinator tutorial for Haskell using Parsec: https://github.com/JakeWheat/intro_to_parsing
+
 - Writing your own micro-Parsec: http://olenhad.me/articles/monadic-parsers/
+
 ### Parsing and generating JSON
 
 - http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/
