@@ -510,10 +510,17 @@ Interesting side note: GHC needs to hide the state token representation behind a
 
 - http://www.haskell.org/haskellwiki/Tying_the_Knot
 
-
 ## Extended Reading list (some is already included here)
 
 - http://www.stephendiehl.com/posts/essential_haskell.html
+
+## Stackage
+
+For any users (usually Yesod users) that have build problems, consider Stackage.
+
+- A good summary of Stackage is here: https://www.fpcomplete.com/blog/2014/05/stackage-server
+
+In the author's opinion, Stackage is usually more useful than `cabal freeze`.
 
 ## Dialogues
 
