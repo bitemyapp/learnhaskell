@@ -351,7 +351,7 @@ From:
 
 - https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md
 
-- http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf
+- http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf (warning, code out of date)
 
 ## Resource handling, finalization, cleanup
 
