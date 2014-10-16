@@ -353,6 +353,11 @@ From:
 
 - http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf (warning, code out of date)
 
+## Testing, tests, specs, generative/property testing
+
+- https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md This tutorial by Kazu Yamamoto is fantastic.
+
+
 ## Resource handling, finalization, cleanup
 
 - Overview of resourceT by Snoyman: https://www.fpcomplete.com/user/snoyberg/library-documentation/resourcet
