@@ -71,14 +71,21 @@ To install Haskell from the official repos on Arch Linux, run
 
 ### Gentoo
 
-On Gentoo, you will want to install the Haskell platform through Portage.  The
-package is likely masked, so you'll want to unmask it with something like so
+On Gentoo, you can install the individual components of the Haskell Platform
+through Portage. If you use `ACCEPT_KEYWORDS=arch` (as opposed to
+`ACCEPT_KEYWORDS=~arch`), `cabal-install` is likely to be masked, so you should
+probably run something like
 
-    echo ">=dev-haskell/haskell-platform-2013.2.0.0 ~amd64" >> /etc/portage/package.keywords
+    echo ">=dev-haskell/cabal-install-1.18.0.3 ~amd64" >> /etc/portage/package.keywords
 
-Once it's unmasked, run
+Replacing `amd64` with your architecture. Once that is done,
 
-    emerge --jobs --ask --verbose dev-haskell/haskell-platform
+    emerge --jobs --ask --verbose dev-lang/ghc dev-haskell/cabal-install dev-haskell/happy dev-haskell/alex
+
+Gentoo keeps a "stable" (read: old) version of `cabal-install` in the Portage
+tree, so you'll want to use `cabal-install` to install the more recent version.
+
+    cabal install cabal-install
 
 ### Mac OS X
 
