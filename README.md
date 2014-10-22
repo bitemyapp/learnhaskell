@@ -69,6 +69,17 @@ To install Haskell from the official repos on Arch Linux, run
 
     su -c "pacman -S cabal-install ghc happy alex haddock"
 
+### Gentoo
+
+On Gentoo, you will want to install the Haskell platform through Portage.  The
+package is likely masked, so you'll want to unmask it with something like so
+
+    echo ">=dev-haskell/haskell-platform-2013.2.0.0 ~amd64" >> /etc/portage/package.keywords
+
+Once it's unmasked, run
+
+    emerge --jobs --ask --verbose dev-haskell/haskell-platform
+
 ### Mac OS X
 
 Install the GHC for Mac OS X app, which includes GHC and Cabal. It provides instructions on how to add GHC and Cabal to your path after you've dropped the .app somewhere.
