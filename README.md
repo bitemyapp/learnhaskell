@@ -85,6 +85,28 @@ To install Haskell from the official repos on Arch Linux, run
 
     su -c "pacman -S cabal-install ghc happy alex haddock"
 
+### Gentoo
+
+On Gentoo, you can install the individual components of the Haskell Platform
+through Portage. If you use `ACCEPT_KEYWORDS=arch` (as opposed to
+`ACCEPT_KEYWORDS=~arch`), Portage will install ancient versions of the various
+Haskell things. With that in mind, iff you use `ACCEPT_KEYWORDS=arch`, add the
+following to `/etc/portage/package.keywords`, replacing `amd64` with your
+architecture.
+
+    >=dev-haskell/cabal-install-1.18.0.3 ~amd64
+    >=dev-lang/ghc-7.8.3 ~amd64
+
+ Once that is done,
+
+    emerge --jobs --ask --verbose dev-lang/ghc dev-haskell/cabal-install dev-haskell/happy dev-haskell/alex
+
+Gentoo keeps a "stable" (read: old) version of `cabal-install` in the Portage
+tree, so you'll want to use `cabal-install` to install the more recent version.
+
+    cabal update
+    cabal install cabal-install
+
 ### Mac OS X
 
 #### 10.9
