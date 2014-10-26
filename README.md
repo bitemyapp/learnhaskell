@@ -107,6 +107,10 @@ tree, so you'll want to use `cabal-install` to install the more recent version.
     cabal update
     cabal install cabal-install
 
+Once you do that, you'll want to install the additional tools `alex` and `happy`.
+
+    cabal install alex happy
+
 ### Mac OS X
 
 #### 10.9
