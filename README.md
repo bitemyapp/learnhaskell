@@ -196,6 +196,8 @@ Useful for understanding `Functor`, `Applicative`, `Monad`, `Monoid` and other t
 ### Vim
 
 - http://www.haskell.org/haskellwiki/Vim
+ 
+- https://github.com/begriffs/haskell-vim-now
 
 - http://www.stephendiehl.com/posts/vim_haskell.html
 
