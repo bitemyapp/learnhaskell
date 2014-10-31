@@ -273,13 +273,23 @@ Seen here: http://hackage.haskell.org/package/lens
 
 ## Frontend/JavaScript
 
-If you need JavaScript, you probably want Purescript for generating JS. Purescript is *not* strictly Haskell but it is very similar and quite pleasant.
+We have an embarrassment of riches! There are three main choices I would recommend:
 
+- Haste
+- http://haste-lang.org/
+- https://github.com/valderman/haste-compiler
+- http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps Excellent demo of Haste for an example project
+
+- GHCJS
+- https://github.com/ghcjs/ghcjs
+- http://weblog.luite.com/wordpress/?p=14
+- http://weblog.luite.com/wordpress/?p=127
+
+- PureScript (not strictly Haskell like Haste and GHCJS, but a popular choice among Haskellers)
 - http://www.purescript.org/
-
 - http://try.purescript.org/
-
 - http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/ Great guide for getting started
+
 
 ## Parsing in Haskell
 
