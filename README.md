@@ -265,6 +265,10 @@ The other thing to keep in mind is that due to the way the $pkg parameter gets i
 cabal haddock --hoogle --hyperlink-source --html-location='http://hackage.haskell.org/package/$pkg/docs' --contents-location='http://hackage.haskell.org/package/$pkg'
 ```
 
+## TravisCI
+
+If you're as big a fan of TravisCI as I am, then I *strongly* recommend you look at using https://github.com/hvr/multi-ghc-travis as the basis of the travis.yml for your Haskell projects.
+
 ## Fun Stuff
 
 After you're comfortable with Haskell, strongly consider learning Lenses and Prisms, even if just as a "user". You don't need to understand the underlying category for it to be useful.
