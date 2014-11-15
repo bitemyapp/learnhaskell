@@ -156,7 +156,7 @@ http://www.seas.upenn.edu/~cis194/spring13/index.html Brent Yorgey's course is t
 
 The only reason you shouldn't start with cis194 is if you are not a programmer or are an inexperienced one. If that's the case, start with http://learnyouahaskell.com/ and transition to cis194.
 
-Learn You A Haskell and http://book.realworldhaskell.org/ are recommended primarily as supplemental references for completing the cis194 course if you are not new to programming. RWH has some additional material that LYAH does not that is useful to people using Haskell in production as well.
+If you are not new to programming, Learn You A Haskell and http://book.realworldhaskell.org/ are recommended primarily as supplemental references for completing the cis194 course. RWH has some additional material that LYAH does not that is useful to people using Haskell in production as well.
 
 ---
 
