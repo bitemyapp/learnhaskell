@@ -494,7 +494,7 @@ Didn't know where else to put these:
 
 ## Parametricity, ad-hoc vs. parametric polymorphism, free theorems
 
-- http://dl.dropboxusercontent.com/u/7810909/media/doc/parametricity.pdf
+- https://github.com/tonymorris/scalaz-history/blob/master/slides/parametricity.tex
 
 - https://github.com/tonymorris/parametricity/
 
