@@ -91,25 +91,46 @@ On Gentoo, you can install the individual components of the Haskell Platform
 through Portage. If you use `ACCEPT_KEYWORDS=arch` (as opposed to
 `ACCEPT_KEYWORDS=~arch`), Portage will install ancient versions of the various
 Haskell things. With that in mind, iff you use `ACCEPT_KEYWORDS=arch`, add the
-following to `/etc/portage/package.keywords`, replacing `amd64` with your
-architecture.
+following to `/etc/portage/package.keywords`.
 
-    >=dev-haskell/cabal-install-1.18.0.3 ~amd64
-    >=dev-lang/ghc-7.8.3 ~amd64
+    dev-haskell/cabal-install
+    dev-lang/ghc
 
  Once that is done,
 
-    emerge --jobs --ask --verbose dev-lang/ghc dev-haskell/cabal-install dev-haskell/happy dev-haskell/alex
+    emerge -jav dev-lang/ghc dev-haskell/cabal-install 
 
 Gentoo keeps a "stable" (read: old) version of `cabal-install` in the Portage
-tree, so you'll want to use `cabal-install` to install the more recent version.
+tree, so you'll want to use `cabal-install` to install the more recent
+version. Note that the backslashes are intentional.
 
-    cabal update
-    cabal install cabal-install
+    \cabal update
+    \cabal install cabal-install
 
-Once you do that, you'll want to install the additional tools `alex` and `happy`.
+You have now installed cabal on a global scale with portage, and locally in your
+home directory with `cabal-install`. The next step is to make sure that when you
+run `cabal` in a terminal, your shell will run the up-to-date version in your
+home directory. You will want to add the following lines to your shell's
+configuration file:
+
+    PATH=$PATH:$HOME/.cabal/bin
+    alias cabal="$HOME/.cabal/bin/cabal"
+
+If you don't know what your shell is, more than likely, your shell is Bash. If
+you use Bash, the file you will edit is `~/.bashrc`. If you use Z-shell, the
+file is `~/.zshrc`. You can run the following command to find out what your
+shell is.
+
+    < /etc/passwd grep $(whoami) | awk -F/ '{print $NF}'
+
+I use zsh, so that command outputs `zsh` when I run it.
+
+Once you do all of that, you'll want to install the additional tools `alex` and
+`happy`.
 
     cabal install alex happy
+
+Congratulations! You now have a working Haskell installation!
 
 ### Mac OS X
 
