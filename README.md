@@ -98,7 +98,7 @@ following to `/etc/portage/package.keywords`.
 
  Once that is done,
 
-    emerge -jav dev-lang/ghc dev-haskell/cabal-install 
+    emerge -jav dev-lang/ghc dev-haskell/cabal-install
 
 Gentoo keeps a "stable" (read: old) version of `cabal-install` in the Portage
 tree, so you'll want to use `cabal-install` to install the more recent
@@ -221,7 +221,7 @@ Useful for understanding `Functor`, `Applicative`, `Monad`, `Monoid` and other t
 ### Vim
 
 - http://www.haskell.org/haskellwiki/Vim
- 
+
 - https://github.com/begriffs/haskell-vim-now
 
 - http://www.stephendiehl.com/posts/vim_haskell.html
