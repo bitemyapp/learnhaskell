@@ -98,7 +98,7 @@ following to `/etc/portage/package.keywords`.
 
  Once that is done,
 
-    emerge -jav dev-lang/ghc dev-haskell/cabal-install 
+    emerge -jav dev-lang/ghc dev-haskell/cabal-install
 
 Gentoo keeps a "stable" (read: old) version of `cabal-install` in the Portage
 tree, so you'll want to use `cabal-install` to install the more recent
@@ -221,7 +221,7 @@ Useful for understanding `Functor`, `Applicative`, `Monad`, `Monoid` and other t
 ### Vim
 
 - http://www.haskell.org/haskellwiki/Vim
- 
+
 - https://github.com/begriffs/haskell-vim-now
 
 - http://www.stephendiehl.com/posts/vim_haskell.html
@@ -278,14 +278,17 @@ https://gist.github.com/bitemyapp/3e6a015760775e0679bf
 - First: http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html
 - Second: http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html
 
+Note that these posts are slightly out of date: for example, now
+Hackage sports shiny new info with documentation info and build status.
+
 ### What you really need to know
 
 In order to have haddocks include documentation for related packages, you have to set documentation: True in your ~/.cabal/config. If it was left on the default (False) or set to False, you'll have to delete all your packages and reinstall before generating haddocks.
 
-The other thing to keep in mind is that due to the way the $pkg parameter gets interpolated *by* haddock, not by you, the html-location and content-location parameters must be in single quotes and entered into a shell or contained in a shell script. They will not work in a Makefile, because it will think they are Make variables!
+The other thing to keep in mind is that due to the way the $pkg parameter gets interpolated *by* cabal, not by you, the html-location and content-location parameters must be in single quotes and entered into a shell or contained in a shell script. They will not work in a Makefile, because it will think they are Make variables!
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env sh
 
 cabal haddock --hoogle --hyperlink-source --html-location='http://hackage.haskell.org/package/$pkg/docs' --contents-location='http://hackage.haskell.org/package/$pkg'
 ```
