@@ -278,11 +278,14 @@ https://gist.github.com/bitemyapp/3e6a015760775e0679bf
 - First: http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html
 - Second: http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html
 
+Note that these posts are slightly out of date: for example, now
+Hackage sports shiny new info with documentation info and build status.
+
 ### What you really need to know
 
 In order to have haddocks include documentation for related packages, you have to set documentation: True in your ~/.cabal/config. If it was left on the default (False) or set to False, you'll have to delete all your packages and reinstall before generating haddocks.
 
-The other thing to keep in mind is that due to the way the $pkg parameter gets interpolated *by* haddock, not by you, the html-location and content-location parameters must be in single quotes and entered into a shell or contained in a shell script. They will not work in a Makefile, because it will think they are Make variables!
+The other thing to keep in mind is that due to the way the $pkg parameter gets interpolated *by* cabal, not by you, the html-location and content-location parameters must be in single quotes and entered into a shell or contained in a shell script. They will not work in a Makefile, because it will think they are Make variables!
 
 ```bash
 #!/usr/bin/env sh
