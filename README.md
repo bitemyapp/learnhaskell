@@ -285,7 +285,7 @@ In order to have haddocks include documentation for related packages, you have t
 The other thing to keep in mind is that due to the way the $pkg parameter gets interpolated *by* haddock, not by you, the html-location and content-location parameters must be in single quotes and entered into a shell or contained in a shell script. They will not work in a Makefile, because it will think they are Make variables!
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env sh
 
 cabal haddock --hoogle --hyperlink-source --html-location='http://hackage.haskell.org/package/$pkg/docs' --contents-location='http://hackage.haskell.org/package/$pkg'
 ```
