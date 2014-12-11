@@ -146,7 +146,13 @@ Do the binary distribution install described below with this tarball:
 
 - https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2
 
-### Windows and other Linux users
+### Windows
+
+- http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html is able to compile `network` et al. Technically in beta but should work for the purposes of anybody reading this guide.
+
+Don't forget to run the installer as administrator as it will want to install in your Program Files.
+
+### Other Linux users
 
 Download the latest binary distributions for cabal and ghc:
 
