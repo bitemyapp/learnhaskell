@@ -232,7 +232,7 @@ Useful for understanding `Functor`, `Applicative`, `Monad`, `Monoid` and other t
 
 - https://github.com/bitemyapp/dotfiles/
 
-- https://github.com/chrisdone/hindent
+- https://github.com/chrisdone/chrisdone-emacs
 
 ### Vim
 
