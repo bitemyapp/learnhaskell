@@ -224,6 +224,8 @@ Useful for understanding `Functor`, `Applicative`, `Monad`, `Monoid` and other t
 
 - https://github.com/bitemyapp/dotfiles/
 
+- https://github.com/chrisdone/hindent
+
 ### Vim
 
 - http://www.haskell.org/haskellwiki/Vim
@@ -235,6 +237,8 @@ Useful for understanding `Functor`, `Applicative`, `Monad`, `Monoid` and other t
 - https://github.com/kazu-yamamoto/ghc-mod
 
 - https://github.com/eagletmt/ghcmod-vim
+
+- https://github.com/chrisdone/hindent
 
 ### Sublime Text
 
