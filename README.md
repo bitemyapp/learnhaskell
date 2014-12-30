@@ -368,7 +368,7 @@ All three are great choices and will work for most frontend projects.
 
 - http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html
 
-- http://alpmestan.com/2013/10/02/oh-my-laziness/
+- http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html
 
 - http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization
 
