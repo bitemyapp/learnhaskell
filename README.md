@@ -336,7 +336,7 @@ We have an embarrassment of riches! There are three main choices I would recomme
 - http://try.purescript.org/
 - http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/ Great guide for getting started
 
-### Which do frontend language do I use?
+### Which frontend language do I use?
 
 GHCJS and Haste are both fully Haskell. GHCJS will work with more Haskell packages than Haste, but this doesn't affect a lot of frontend projects. PureScript isn't Haskell at all, so direct code sharing with your backend will not work.
 
