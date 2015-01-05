@@ -83,7 +83,7 @@ To install Haskell 7.8x from the unofficial repo (Fedora 21+ will include it in 
 
 To install Haskell from the official repos on Arch Linux, run
 
-    su -c "pacman -S cabal-install ghc happy alex haddock"
+    sudo pacman -S cabal-install ghc happy alex haddock
 
 ### Gentoo
 
