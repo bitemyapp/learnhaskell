@@ -865,7 +865,7 @@ That one operation should respect identity:
 map id = id
 ```
 
-And that one operation should be associative:
+And that one operation should be distributive:
 
 ```
 map (p . q) = (map p) . (map q)
