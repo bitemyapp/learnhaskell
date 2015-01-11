@@ -1379,7 +1379,7 @@ The pattern matching above will fail if f is not bijective.
 
 ## pseq, seq, sparks
 
-```markdown
+
 16:24 < Lindrian> sparks in haskell seem so... unintuitive
 16:24 < Lindrian> It doesnt really follow the traditional sense of how you use threads, which might be why I find it odd
 16:25 < qu1j0t3> this might also be a very good thing :-)
@@ -1423,4 +1423,3 @@ The pattern matching above will fail if f is not bijective.
 17:07 < ski> `seq' is specified using "denotational semantics", which only talks about the final value/denotation of an evaluation, not how you can get to it
 17:08 < ski> `pseq' would need to be specified using "operational semantics", which talks in terms of rewriting steps (so there's an inherent ordering that we talk about here)
 17:08  * ski nods to Lindrian
-```
