@@ -1379,7 +1379,7 @@ The pattern matching above will fail if f is not bijective.
 
 ## pseq, seq, sparks
 
-```
+```markdown
 16:24 < Lindrian> sparks in haskell seem so... unintuitive
 16:24 < Lindrian> It doesnt really follow the traditional sense of how you use threads, which might be why I find it odd
 16:25 < qu1j0t3> this might also be a very good thing :-)
