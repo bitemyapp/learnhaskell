@@ -1285,15 +1285,16 @@ class Monad (m :: * -> *) where
 
 ```
 18:51 < OscarZ> about join... im wondering about join (+) 7 = 14
-19:14 < pjdelport> OscarZ: join for Reader becomes even more Intuitive when you pronounce Reader e a as "function
-                   from an environment e to a"
-19:15 < pjdelport> Then "Reader e (Reader e a)" is just "function from an environment e to function from an
+19:14 < pjdelport> OscarZ: join for Reader becomes even more Intuitive when you 
+                   pronounce Reader e a as "function from an environment e to a"
+19:15 < pjdelport> Then "Reader e (Reader e a)" is just "function from an environment e 
+                   to function from an environment e to a"
+19:16 < pjdelport> And joining means turning that into  just one "function from an
                    environment e to a"
-19:16 < pjdelport> And joining means turning that into  just one "function from an environment e to a"
-19:16 < pjdelport> And saying it like that should (hopefully) make the implementation and what it does more obvious
-                   :)
-19:23 < pjdelport> I still think just pondering "type Reader e a = e -> a" is a great way to to get that "a ha"
-                   moment
+19:16 < pjdelport> And saying it like that should (hopefully) make the implementation and what 
+                   it does more obvious :)
+19:23 < pjdelport> I still think just pondering "type Reader e a = e -> a" is a great way to 
+                   to get that "a ha" moment
 ```
 
 ```haskell
