@@ -1387,7 +1387,8 @@ which might be why I find it odd
 16:26 < Lindrian> why?
 16:28 < Lindrian> I need to remember the functionality of seq, par and pseq.
 16:28 < Lindrian> seq forces evaluation of the first argument, before returning the second?
-par creates a "spark" that allows the first argument to be evaluated at the same time the second is being returned?
+par creates a "spark" that allows the first argument to be evaluated at the same time the
+second is being returned?
 16:28 < Lindrian> I thinkkkkk
 16:30 < Lindrian> damn cant remember pseq, gotta look it up
 16:31 < Lindrian> oh right, pseq evaluates the left before returning the right, guaranteed.
