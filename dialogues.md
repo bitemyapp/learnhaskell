@@ -1383,13 +1383,13 @@ The pattern matching above will fail if f is not bijective.
 ```
 16:24 < Lindrian> sparks in haskell seem so... unintuitive
 16:24 < Lindrian> It doesnt really follow the traditional sense of how you use threads,
-which might be why I find it odd
+                  which might be why I find it odd
 16:25 < qu1j0t3> this might also be a very good thing :-)
 16:26 < Lindrian> why?
 16:28 < Lindrian> I need to remember the functionality of seq, par and pseq.
 16:28 < Lindrian> seq forces evaluation of the first argument, before returning the second?
-par creates a "spark" that allows the first argument to be evaluated at the same time the
-second is being returned?
+                  par creates a "spark" that allows the first argument to be evaluated at
+                  the same time the second is being returned?
 16:28 < Lindrian> I thinkkkkk
 16:30 < Lindrian> damn cant remember pseq, gotta look it up
 16:31 < Lindrian> oh right, pseq evaluates the left before returning the right, guaranteed.
@@ -1401,18 +1401,18 @@ second is being returned?
 16:53 < lambdabot>  Not in scope: ‘pseq’
 16:53 < lambdabot>  Perhaps you meant ‘seq’ (imported from Prelude)
 16:54 < zwer_z> IIRC in ghc seq will always evaluate to error "one", while
-haskell (the language) allows either
+                haskell (the language) allows either
 16:55 < Lindrian> i read seq as "try to evaluate the first argument, but compiler might think otherwise"
 16:55 < ski> Lindrian : yes, `pseq a b' guarantees `a' is forced before `b'. `seq a b' doesn't
 16:56 < ski> (i think in `seq a b' you're not even guaranteed that `a' is forced before `b' is
-returned .. as long as it will happen eventually)
+             returned .. as long as it will happen eventually)
 16:56 < zwer> ski I think there's a lack of guarantee only if both a and b are bottom.
 16:57 < zwer> > seq (error "foo") 10
 16:57 < lambdabot>  *Exception: foo
 16:57 < zwer> whereas that should always evaluate to bottom
 16:58 < benzrf> iirc
 16:58 < ski> zwer : consider `seq (seq (error "foo") ()) (error "bar")' -- i think this can legally
-raise `error "bar"'
+             raise `error "bar"'
 16:58 < benzrf> the haskell spec only says
 16:58 < benzrf> seq bottom anything = bottom
 16:58 < ski> yes
@@ -1425,12 +1425,13 @@ raise `error "bar"'
 17:05 < ski> yes
 17:05 < ski> (i think i used a different argument, though. i can't recall it atm)
 17:06 < ski> Lindrian : both will evaluate to WHNF. `pseq' guarantees sequential *ordering*.
-`seq' just guarantees that both will be forced
+             `seq' just guarantees that both will be forced
 17:07 < Lindrian> pseq guarantees the first argument is evaluated to WHNF before the second,
-while seq doesnt. Ok.
+                  while seq doesnt. Ok.
 17:07 < ski> `seq' is specified using "denotational semantics", which only talks about the
-final value/denotation of an evaluation, not how you can get to it
+             final value/denotation of an evaluation, not how you can get to it
 17:08 < ski> `pseq' would need to be specified using "operational semantics", which talks
-in terms of rewriting steps (so there's an inherent ordering that we talk about here)
+             in terms of rewriting steps (so there's an inherent ordering that we talk
+             about here)
 17:08  * ski nods to Lindrian
 ```
