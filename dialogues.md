@@ -1399,7 +1399,8 @@ second is being returned?
 16:53 < Lindrian> > pseq (error "first") (error "second")
 16:53 < lambdabot>  Not in scope: ‘pseq’
 16:53 < lambdabot>  Perhaps you meant ‘seq’ (imported from Prelude)
-16:54 < zwer_z> IIRC in ghc seq will always evaluate to error "one", while haskell (the language) allows either
+16:54 < zwer_z> IIRC in ghc seq will always evaluate to error "one", while
+haskell (the language) allows either
 16:55 < Lindrian> i read seq as "try to evaluate the first argument, but compiler might think otherwise"
 16:55 < ski> Lindrian : yes, `pseq a b' guarantees `a' is forced before `b'. `seq a b' doesn't
 16:56 < ski> (i think in `seq a b' you're not even guaranteed that `a' is forced before `b' is
@@ -1424,10 +1425,11 @@ raise `error "bar"'
 17:05 < ski> (i think i used a different argument, though. i can't recall it atm)
 17:06 < ski> Lindrian : both will evaluate to WHNF. `pseq' guarantees sequential *ordering*.
 `seq' just guarantees that both will be forced
-17:07 < Lindrian> pseq guarantees the first argument is evaluated to WHNF before the second, while seq doesnt. Ok.
+17:07 < Lindrian> pseq guarantees the first argument is evaluated to WHNF before the second,
+while seq doesnt. Ok.
 17:07 < ski> `seq' is specified using "denotational semantics", which only talks about the
 final value/denotation of an evaluation, not how you can get to it
-17:08 < ski> `pseq' would need to be specified using "operational semantics", which talks in terms of
-rewriting steps (so there's an inherent ordering that we talk about here)
+17:08 < ski> `pseq' would need to be specified using "operational semantics", which talks
+in terms of rewriting steps (so there's an inherent ordering that we talk about here)
 17:08  * ski nods to Lindrian
 ```
