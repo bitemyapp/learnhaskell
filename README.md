@@ -609,6 +609,8 @@ Interesting side note: GHC needs to hide the state token representation behind a
 
 - http://www.haskell.org/haskellwiki/Tying_the_Knot
 
+- https://hackage.haskell.org/package/dag
+
 ## Extended Reading list (some is already included here)
 
 - http://www.stephendiehl.com/posts/essential_haskell.html
