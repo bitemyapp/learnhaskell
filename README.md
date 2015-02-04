@@ -182,9 +182,15 @@ You don't need this if you use the .app, but if it doesn't work for you, try thi
 
 http://www.seas.upenn.edu/~cis194/spring13/index.html Brent Yorgey's course is the best I've found so far and replaces both Yann Esposito's HF&H. This course is valuable as it will not only equip you to write basic Haskell but also help you to understand parser combinators.
 
-The only reason you shouldn't start with cis194 is if you are not a programmer or are an inexperienced one. If that's the case, start with http://learnyouahaskell.com/ and transition to cis194.
+The only reason you shouldn't start with cis194 is if you are not a programmer or are an inexperienced one. If that's the case, start with [Thompson's book](http://www.haskellcraft.com/craft3e/Home.html) and then transition to cis194.
 
-If you are not new to programming, Learn You A Haskell and http://book.realworldhaskell.org/ are recommended primarily as supplemental references for completing the cis194 course. RWH has some additional material that LYAH does not that is useful to people using Haskell in production as well.
+After you're done with cis194, move on to the NICTA Course.
+
+---
+
+## Exercises for practice (do this after cis194)
+
+You should do this course after cis194: https://github.com/NICTA/course/
 
 ---
 
@@ -194,15 +200,6 @@ This is Bryan O'Sullivan's online course from the class he teaches at Stanford. 
 
 - http://www.scs.stanford.edu/14sp-cs240h/
 
-## Exercises for practice (do this after cis194)
-
-You should do Yorgey's course before attempting this: https://github.com/NICTA/course/
-
-## Secondary material, references
-
-[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) and [Real World Haskell](http://book.realworldhaskell.org) (Thanks bos!) are available online.
-
-I recommend RWH as a reference (thick book). The chapters for parsing and monads are great for getting a sense for where monads are useful. Other people have said that they've liked it a lot. Perhaps a good follow-up for practical idioms after you've got the essentials of Haskell down?
 
 ### For understanding list and fold
 
