@@ -97,7 +97,15 @@ following to `/etc/portage/package.keywords`.
     dev-haskell/cabal-install
     dev-lang/ghc
 
- Once that is done,
+**Important**: Make sure GHC is installed with `USE="-binary"`. Installing
+binary GHC is known to cause cabal hell in Gentoo. You can see if GHC will be
+installed with `USE="binary"` by running `equery u ghc`. If you have
+`USE="binary"` set for `dev-lang/ghc`, add this line to
+`/etc/portage/package.use`:
+
+    dev-lang/ghc -binary
+
+Once that is done,
 
     emerge -jav dev-lang/ghc dev-haskell/cabal-install
 
