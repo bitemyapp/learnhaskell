@@ -228,23 +228,12 @@ far and replaces Yann Esposito's HF&H. This course is valuable as it will not
 only equip you to write basic Haskell but also help you to understand parser
 combinators.
 
-<<<<<<< Updated upstream
-The only reason you shouldn't start with cis194 is if you are not a programmer or are an inexperienced one. If that's the case, start with [Thompson's book](http://www.haskellcraft.com/craft3e/Home.html) and then transition to cis194.
-
-After you're done with cis194, move on to the NICTA Course.
-
----
-
-## Exercises for practice (do this after cis194)
-
-You should do this course after cis194: https://github.com/NICTA/course/
-=======
 The only reason you shouldn't start with cis194 is if you are not a programmer
 or are an inexperienced one. If that's the case, start with
-[Learn You a Haskell](http://learnyouahaskell.com/) and transition to cis194.
+[Thompson's book](http://www.haskellcraft.com/craft3e/Home.html) and transition to cis194.
 
-If you are not new to programming, Learn You A Haskell and
-[Real World Haskell](http://book.realworldhaskell.org/) are recommended
+If you are not new to programming, [Learn You A Haskell](learnyouahaskell.com)
+and [Real World Haskell](http://book.realworldhaskell.org/) are recommended
 primarily as supplemental references for completing the cis194 course. RWH has
 some additional material that LYAH does not that is useful to people using
 Haskell in production as well.
@@ -745,13 +734,9 @@ convenience.
 
 - [Tying the Knot](http://www.haskell.org/haskellwiki/Tying_the_Knot).
 
-<<<<<<< Updated upstream
-- https://hackage.haskell.org/package/dag
+- [Hackage: dag](https://hackage.haskell.org/package/dag).
 
-## Extended Reading list (some is already included here)
-=======
 ## Extended Reading list (some are already included here)
->>>>>>> Stashed changes
 
 - [Essential Haskell Reading List](http://www.stephendiehl.com/posts/essential_haskell.html)
 
