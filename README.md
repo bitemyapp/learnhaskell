@@ -219,24 +219,26 @@ binary distribution.
 
 ---
 
-## [Yorgey course](http://www.seas.upenn.edu/~cis194/spring13/index.html)
+## [Yorgey's cis194 course](http://www.seas.upenn.edu/~cis194/spring13/index.html)
 
 > *Do this first*, this is the primary way I recommend being introduced to Haskell.
 
-[Brent Yorgey](https://byorgey.wordpress.com)'s course is the best I've found so
-far and replaces Yann Esposito's HF&H. This course is valuable as it will not
-only equip you to write basic Haskell but also help you to understand parser
-combinators.
+[Brent Yorgey](https://byorgey.wordpress.com)'s course is the best I've found so far.
+This course is valuable as it will not only equip you to write basic Haskell but also
+help you to understand parser combinators.
 
 The only reason you shouldn't start with cis194 is if you are not a programmer
 or are an inexperienced one. If that's the case, start with
 [Thompson's book](http://www.haskellcraft.com/craft3e/Home.html) and transition to cis194.
 
-If you are not new to programming, [Learn You A Haskell](learnyouahaskell.com)
-and [Real World Haskell](http://book.realworldhaskell.org/) are recommended
-primarily as supplemental references for completing the cis194 course. RWH has
-some additional material that LYAH does not that is useful to people using
-Haskell in production as well.
+---
+
+## [NICTA course](https://github.com/NICTA/course)
+
+> This is the course I recommend doing after Yorgey's cis194 course
+
+This will reinforce and give you experience directly implementing the abstractions introduced in cis194, this is practice which is *critical* to becoming comfortable with everyday uses of Functor/Applicative/Monad/etc. in Haskell. Doing cis194 and then the NICTA course represents the core recommendation of my guide and is how I teach
+everyone Haskell.
 
 ---
 
