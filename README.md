@@ -101,13 +101,17 @@ Notes:
 - Instead of grabbing the `cabal-install` binary, grab the source and then run
   `bootstrap.sh` script.
 
-### Fedora 20
+### Fedora 21
 
-To install Haskell 7.8x from the unofficial repo (Fedora 21+ will include it in
-the official one:
+To install Haskell 7.8.4 from the unofficial repo (Fedora 22+ will include it in
+the official one):
 
-- Add `https://copr.fedoraproject.org/coprs/petersen/ghc-7.8/repo/fedora-20/petersen-ghc-7.8-fedora-20.repo` as petersen-ghc-7.8-fedora-20.repo
-- `sudo yum install ghc`
+```bash
+sudo yum-config-manager --add-repo https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
+sudo yum install ghc cabal-install
+```
+
+As stated in [petersen/ghc-7.8.4 copr page](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/) this ghc cannot be parallel installed with Fedora/EPEL ghc.
 
 ### Arch Linux
 
