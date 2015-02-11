@@ -111,6 +111,8 @@ sudo yum-config-manager --add-repo https://copr.fedoraproject.org/coprs/petersen
 sudo yum install ghc cabal-install
 ```
 
+As stated in [petersen/ghc-7.8.4 copr page](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/) this ghc cannot be parallel installed with Fedora/EPEL ghc.
+
 ### Arch Linux
 
 To install Haskell from the official repos on Arch Linux, run
