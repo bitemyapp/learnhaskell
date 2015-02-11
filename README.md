@@ -410,7 +410,7 @@ Look here: [Lens package on hackage](http://hackage.haskell.org/package/lens).
 We have an embarrassment of riches! There are three main choices I would
 recommend:
 
-* [Haste](http://haste-lang.org/) a javascript to haskell compiler
+* [Haste](http://haste-lang.org/) a Haskell to JavaScript compiler
   - The [compiler](https://github.com/valderman/haste-compiler) on github.
   - An excellent [demo](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps) of Haste with an example project
 
