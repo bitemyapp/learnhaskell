@@ -108,7 +108,7 @@ the official one):
 
 ```bash
 sudo yum-config-manager --add-repo https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
-sudo yum install ghc
+sudo yum install ghc cabal-install
 ```
 
 ### Arch Linux
