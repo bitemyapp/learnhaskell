@@ -59,11 +59,9 @@ $ sudo apt-get install cabal-install-1.20 ghc-7.8.3 happy-1.19.4 alex-3.1.3
 
 Then add the following to your `$PATH` (bash\_profile, zshrc, bashrc, etc):
 
-- `~/.cabal/bin`
-- `/opt/cabal/1.20/bin`
-- `/opt/ghc/7.8.3/bin`
-- `/opt/happy/1.19.4/bin`
-- `/opt/alex/3.1.3/bin`
+```
+~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin
+```
 
 *Optional:* You could also add `.cabal-sandbox/bin` to your path. Code that you
 are actively developing will be available to you from the command line.  This
