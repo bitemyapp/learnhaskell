@@ -6,7 +6,8 @@ AUTHOR = -V author=bitemyapp
 FONTSIZE = -V fontsize=12pt
 FONTFAMILY = -V fontfamily=sans
 PAGESIZE = -V pagesize=a4paper
-VARIABLES = $(FONTSIZE) $(PAGESIZE) $(TITLE) $(AUTHOR) $(FONTFAMILY)
+GEOMETRY = -V geometry=landscape
+VARIABLES = $(GEOMETRY) $(FONTSIZE) $(PAGESIZE) $(TITLE) $(AUTHOR) $(FONTFAMILY)
 FLAGS = --normalize --smart --toc $(VARIABLES)
 
 pdf: README.md

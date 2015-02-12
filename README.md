@@ -123,13 +123,14 @@ To install Haskell 7.8.4 from the unofficial repo (Fedora 22+ will include it in
 the official one):
 
 ```bash
-sudo yum-config-manager --add-repo https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
-sudo yum install ghc cabal-install
+$ sudo yum-config-manager --add-repo \
+> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
+$ sudo yum install ghc cabal-install
 ```
 
 As stated in
 [petersen/ghc-7.8.4 copr page](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/)
-this ghc cannot be parallel installed with Fedora/EPEL ghc.
+this ghc cannot be installed in parallel with Fedora/EPEL ghc.
 
 ## Arch Linux
 
@@ -147,9 +148,8 @@ through Portage. If you use `ACCEPT_KEYWORDS=arch` (as opposed to
 Haskell things. With that in mind, iff you use `ACCEPT_KEYWORDS=arch`, add the
 following to `/etc/portage/package.keywords`.
 
-> dev-haskell/cabal-install
-
-> dev-lang/ghc
+    dev-haskell/cabal-install
+    dev-lang/ghc
 
 Once that is done,
 
