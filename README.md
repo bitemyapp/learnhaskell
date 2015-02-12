@@ -700,27 +700,6 @@ This material dovetails with traversable and foldable.
 
 - [Real World Haskell, Chapter 25: Profiling and Optimizations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
 
-## Graph algorithms and data structures
-
-- The [fgl package](https://hackage.haskell.org/package/fgl) particularly the
-  purely functional shortest path [algos](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html).
-
-- [Inductive graphs and Functional Graph Algorithms](http://web.engr.oregonstate.edu/~erwig/papers/abstracts.html#JFP01).
-
-- [FGL/Haskell - A Functional Graph Library](http://web.engr.oregonstate.edu/~erwig/fgl/haskell/old/fgl0103.pdf).
-
-- [Data.Graph source from Containers package](http://hackage.haskell.org/package/containers-0.5.5.1/docs/Data-Graph.html).
-
-- The [graphs package](https://hackage.haskell.org/package/graphs).
-
-- [SO question about PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
-
-- [PHOAS for free](https://www.fpcomplete.com/user/edwardk/phoas).
-
-- [Tying the Knot](http://www.haskell.org/haskellwiki/Tying_the_Knot).
-
-- [Hackage: dag](https://hackage.haskell.org/package/dag).
-
 # Type and Category Theory
 
 > *Not* needed to actually write Haskell, just for those interested!
