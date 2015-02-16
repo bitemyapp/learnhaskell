@@ -26,7 +26,7 @@ No feigning surprise. Don't act surprised when somebody says they don't know som
 
 No well-actually's. When someone says something that's almost - but not entirely - correct, and you say, "well, actually…" and then give a minor correction. This is especially annoying when the correction has no bearing on the actual conversation. This doesn't mean Hacker School isn't about truth-seeking or that we don't care about being precise. Almost all well-actually's are about grandstanding, not truth-seeking.
 
-No back-seat driving. If you see people working through a problem, you shouldn't intermittently interject advice. Let them work it out unless someone asks for help. Avoiding interruptions is [one of the founding purposes for #haskell-beginners](http://chrisdone.com/posts/teaching). 
+No back-seat driving. If you see people working through a problem, you shouldn't intermittently interject advice. Let them work it out unless someone asks for help. Avoiding interruptions is [one of the founding purposes of #haskell-beginners](http://chrisdone.com/posts/teaching). 
 
 No subtle -isms. Racism, sexism, homophobia, transphobia, and other kinds of bias are not welcome and will not be tolerated.
 
