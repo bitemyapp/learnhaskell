@@ -751,7 +751,7 @@ If you want to follow up on type and category theory:
 
 - [Monads](http://www.stephendiehl.com/posts/monads.html).
 
-# Other theoretical topics
+# Other fun topics
 
 ## Parametricity, ad-hoc vs. parametric polymorphism, free theorems
 
