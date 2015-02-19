@@ -809,6 +809,16 @@ If you want to follow up on type and category theory:
 
 - [Idris programming language](http://www.idris-lang.org/).
 
+# Statically linking binaries
+
+- [Static linking](https://wiki.haskell.org/Web/Literature/Static_linking)
+
+- [Static linking with GHC on Arch Linux](http://www.edofic.com/posts/2014-05-03-ghc-arch-static.html)
+
+- [Statically linking Linux binaries for ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
+
+- [Statically link GMP using GHC and LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
+
 # Extended Reading list
 
 > Some are already included here
