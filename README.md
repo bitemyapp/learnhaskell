@@ -394,7 +394,7 @@ Writing many interpreters by just changing the monad to change the semantics can
 help convey what's going on.
 
 - [This talk](https://vimeo.com/73648150) by Tony excellently motivates monad
-  transformers.
+  transformers, [the slides](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
 
 Also, reimplement `Control.Monad`. Functions like `mapM` or `sequence` are good
 opportunities to practice writing generic monadic code.
