@@ -253,7 +253,7 @@ binary distribution.
 > *Do this first*, this is the primary way I recommend being introduced to
 > Haskell.
 
-Available [online](http://www.seas.upenn.edu/~cis194/spring13/index.html).
+Available [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 [Brent Yorgey](https://byorgey.wordpress.com)'s course is the best I've found so
 far.  This course is valuable as it will not only equip you to write basic
