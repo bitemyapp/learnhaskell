@@ -575,3 +575,50 @@ Für alle Nutzer (normalerweise Yesod Nutzer), die Build Probleme haben, zieht S
   [hier](https://www.fpcomplete.com/blog/2014/05/stackage-server).
 
 Der Meinung des Authors nach, ist Stackage normalerweise nützlicher als ein `cabal freeze`.
+
+# Hoogle und Haddock
+
+## Suche Code nach der Typ Signatur
+
+Die [Hoogle Suchmaschine](http://www.haskell.org/hoogle/) kann nach Typen suchen.
+
+Zum Beispiel, guck dir die such Resultate für `(a -> b) -> [a] -> [b]`
+[an](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
+
+Auch verfügbar über FPComplete [hier](https://www.fpcomplete.com/hoogle).
+
+Außerdem gibt es [Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html) (welches standardmäßig ganz
+hackage durchsucht).
+
+## Eine eigene lokale Instanz von Hoogle aufsetzen
+
+Siehe [hier](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
+
+## Haddock
+
+1. [Fix your hackage documentation](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html)
+
+2. [Hackage Dokumentation v2](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html)
+
+Beachte, dass diese Artikel *etwas veraltet* sind: Zum Beispile, hat Hackage jetzt eine neue
+Info mit Dokumentation Info und Build Status.
+
+## Was du wirklich wissen solltest
+
+Damit Haddock Dokumentation für verwandte Pakete inkludiert, musst du `documentation: True`
+in deiner `~/.cabal/config` setzen. Wenn es auf Standard Wert (`False`) gelassen wurde,
+musst du alle Pakete löschen und neu installieren bevor die Haddocks generiert werden.
+
+Die andere Sache, an die man denken sollte, ist, dass aufgrund der Art wie `$pkg` interpoliert
+wird *von* cabal, nicht von dir, die `html-location` und `content-location` Parameter
+*müssen in Apostrophen* stehen und in die Shell eingegeben werden oder in einem Shell Skript stehen.
+Sie werden nicht in einer Makefile funktionieren, da Make denken wird es seien Make Variablen
+
+```bash
+#! /usr/bin/env sh
+
+# You can write it one one line by skipping the backslashes
+cabal haddock --hoogle --hyperlink-source                       \
+ --html-location='http://hackage.haskell.org/package/$pkg/docs' \
+ --contents-location='http://hackage.haskell.org/package/$pkg'
+```
