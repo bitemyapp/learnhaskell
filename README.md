@@ -9,6 +9,8 @@ This is my recommended path for learning Haskell.
 
 * [Στην ελληνική](guide-el.md)
 
+* [En Español](guide-es.md)
+
 * [En Français](guide-fr.md)
 
 * [In Italiano](guide-it.md)
