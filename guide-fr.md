@@ -266,11 +266,11 @@ meilleures introduction au sujet de l'évaluation paresseuse et des formes
 normales que j'ai trouvé. N'hésitez pas à utiliser d'autres ressources si
 vous n'accrochez pas immédiatement à celle ci.
 
-- [More points for lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
+- [Des points en plus pour l'evaluation paresseuse](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
 
-- [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
+- [Oh ma paresse !](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
 
-- SO question '[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+- Question sur SO : '[Haskell a-t-il une évaluation paresseuse ?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
 - les slides de [Johan Tibell](https://github.com/tibbe) pour une présentation
 intitulé [raisoner avec l'évaluation paresseuse](http://www.slideshare.net/tibbe/reasoning-about-laziness).
@@ -290,3 +290,56 @@ let a = 1 * a -- not guarded, (*) is strict
 *** Exception: <<loop>>
 ```
 
+# IO
+
+- [Ordre d'évaluation et State tokens](https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens)
+
+- [Révéler les mytères de la monade IO](http://blog.ezyang.com/2011/05/unraveling-the-mystery-of-the-io-monad/).
+
+- ["instructions" du premier ordre](http://blog.jle.im/entry/first-class-statements).
+
+- [Haddocks pour System.IO.Unsafe.unsafePerformIO](http://hackage.haskell.org/package/base-4.7.0.1/docs/System-IO-Unsafe.html#v:unsafePerformIO)
+  Lire la documentation et remarquez l'implémentation de `unsafeDupablePerformIO`
+
+Commentaire sur un fil Reddit de `glaebhoerl` :
+
+> Une intéressante note annexe: GHC a besoin de cacher la représentation du
+> jeton d'état derrière un type abstrait IO car le jeton d'état doit toujours
+> être utilisé linéairement (il ne doit pas être dupliqué ou abandonné), mais
+> son système de types ne peut l'imposer. Clean, un autre langage paresseux
+> à la Haskell, a des types uniques (qui sont des types linéaires et qui sont
+> peut être différent sur d'autre points que j0ignore). Ils exposent le passage
+> du Monde explicitement et proposent une monade IO (non-abstraite) uniquement
+> pour plus de commodités.
+
+# Monades et transformateurs de monades
+
+> Ne faites pas ça vant de comprendres les typeclasses, Monoid, Functor et
+> Applicative !
+
+Implémenter les monades de la librairie standard (List, Maybe, Cont, Error,
+Reader, Writer, State) par vous-même afin de mieux les comprendre. Après, vous
+pouvez peut-être écrire un interpréteur monadique pour un langage avec des petites
+expressions en utilisant le papier sur les
+[transformateurs de monades étape par étape](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf)
+(mentioné dans la section "transformateurs de monades" ci-dessous).
+
+Ecrire plusieurs interpréteurs en changeant juste la monde pour changer les
+sémantiques peut aider à comprendre ce qui se passe.
+
+- [Cette présentation](https://vimeo.com/73648150) de Tony justifie avec brio 
+l'utilité des transformateurs de monades. Les slides sont également
+[disponibles](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
+
+De la même manière, réimplémanter `Control.Monad`. Des fonctions comme `mapM`
+ou `sequence` sont de bonnes opportunités pour s'entrainer à écrire du code
+monadique.
+
+Le cours du NICTA peuvent être utiliser comme un guide lors de ce processus,
+guide qui vous demandera également d'écrire vos propres Applicatives.
+
+Remerciements:
+
+- Commentaires de htmltyp et Crandom sur Reddit [ici](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
+
+- Commentaire de jozefg [ici](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
