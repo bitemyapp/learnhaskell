@@ -212,3 +212,36 @@ $ cabal install alex happy
 ```
 
 Glückwunsch! Du hast jetzt eine funktionierende Haskell installation!
+
+## Mac OS X
+
+### 10.9
+
+Installiere die [GHC for Mac OS X](http://ghcformacosx.github.io/) App, welche
+GHC und Cabal beinhaltet. Sie liefert Anweisungen, wie du GHC und Cabal zu deinem 
+path hinzufügen kansnt, nachdem du die `.app` irgendwo ableget hast.
+
+### 10.6-10.8
+
+Installiere die Binary Distribution, wie unten beschrieben, mit [diesem tarball](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2).
+
+## Windows
+
+- Der [windows minimal GHC installer](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
+  ist in der Lage `network` et al. zu installieren. Technisch gesehen in beta, sollte aber funktionieren für die Zwecke
+  eines jeden der diese Anleitung ließt.
+
+Vergesse nicht den Installer als Administrator auszuführen, da er in deinen Programmen installieren will.
+
+## Andere Linux Nutzer
+
+Lade die aktuellen Binary Distributions für cabal und ghc:
+
+- [GHC](http://www.haskell.org/ghc/).
+
+- [Cabal](https://www.haskell.org/cabal/download.html).
+
+#### Detailierte Installationsanleitung für Mac OS X
+
+Du musst das nicht machen, wenn du die .app nutzt, aber wenn das für dich nicht funktioniert, versuche
+[das](http://www.davesquared.net/2014/05/platformless-haskell.html) mit der Binary Distribution.
