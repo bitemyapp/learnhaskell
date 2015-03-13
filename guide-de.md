@@ -622,3 +622,9 @@ cabal haddock --hoogle --hyperlink-source                       \
  --html-location='http://hackage.haskell.org/package/$pkg/docs' \
  --contents-location='http://hackage.haskell.org/package/$pkg'
 ```
+
+# TravisCI
+
+Wenn du, wie ich, ein großer Fan von [TravisCI](https://travis-ci.org) bist, dann empfehle
+ich *sehr* [multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) anzugucken für die Basis
+der `travis.yml` für deine Haskell Projekte.
