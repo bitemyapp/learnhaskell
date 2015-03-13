@@ -338,8 +338,25 @@ monadique.
 Le cours du NICTA peuvent être utiliser comme un guide lors de ce processus,
 guide qui vous demandera également d'écrire vos propres Applicatives.
 
-Remerciements:
+Crédits:
 
-- Commentaires de htmltyp et Crandom sur Reddit [ici](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
+- Commentaires de htmltyp et Crandom sur Reddit
+[ici](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
 
-- Commentaire de jozefg [ici](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
+- Commentaire de jozefg
+[ici](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
+
+# Test, specification, test de propriétés (tests par génération)
+
+- Ce [tutoriel](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md)
+de Kazu Yamamoto est fantastique.
+
+- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Une bonne librairie simple pour apprendre comment le streaming d'IO fonctionne en général. Les connaissances acquises ici sont transférables à Pipes et Conduit.
+
+# Parsing en Haskell
+
+- [Tutoriel](https://github.com/JakeWheat/intro_to_parsing) sur les parser
+combinators en Haskell utilisant Parsec.
+
+- [Ecrivez votre propre micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
+
