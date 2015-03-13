@@ -258,12 +258,6 @@ Download the latest binary distributions for cabal and ghc:
 
 - [Cabal](https://www.haskell.org/cabal/download.html).
 
-#### Detailed manual install guide for Mac OS X
-
-You don't need this if you use the .app, but if it doesn't work for you, try
-[this](http://www.davesquared.net/2014/05/platformless-haskell.html) with the
-binary distribution.
-
 # Primary Courses
 
 ## Yorgey's cis194 course
