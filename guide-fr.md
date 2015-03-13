@@ -48,3 +48,21 @@ Haskell est un langage de programmation, défini par une spécification, la plus
 [Cabal](https://www.haskell.org/cabal/download.html) s'occupe de la gestion du projet et de la résolution des dépendances. C'est lui qui aide à l'installation de projets, typiquement dans leurs propres sandbox.
 
 Cabal est l'équivalent de Bundler pour Ruby, de pip pour Python, de NPM pour Node, Maven, etc. GHC gère le packaging lui-même, Cabal choisit quelles versions doivent être installées.
+
+# Cours de base
+
+## Le cours cis194 de Yorgey
+
+> *Faites le en premier*, c'est la principale introduction à Haskell que je recommande.
+
+Disponible [en ligne](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+
+Le cours de [Brent Yorgey](https://byorgey.wordpress.com) est le meilleur que j'ai trouvé jusque là.
+La valeur de ce cours est qu'il vous équipera pour écrire du code basique en Haskell mais aussi vous
+aidera à comprendre les combinateurs d'analyse (parser combinators).
+
+La seule raison pour laquelle vous ne devriez pas commencer avec cis194 est si vous n'êtes pas un
+developpeur ou un inexprimenté. Si c'est le cas, commencez par le
+[livre de Thompson](http://www.haskellcraft.com/craft3e/Home.html) puis enchainez avec cis194.
+
+---
