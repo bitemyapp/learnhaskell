@@ -245,3 +245,84 @@ Lade die aktuellen Binary Distributions für cabal und ghc:
 
 Du musst das nicht machen, wenn du die .app nutzt, aber wenn das für dich nicht funktioniert, versuche
 [das](http://www.davesquared.net/2014/05/platformless-haskell.html) mit der Binary Distribution.
+
+# Grundlegende Kurse
+
+## Yorgey's cis194 Kurs
+
+> *Den solltest du zuerst machen*, das ist eine erstklassige Einführung
+> in Haskell, die ich sehr empfehle
+
+Verfügbar [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+
+[Brent Yorgey](https://byorgey.wordpress.com)s Kurs ist der beste, den ich bisher gefunden habe.
+Dieser Kurs ist wertvoll, da du nicht nur Grundlegendes über Haskell lernst, sondern auch lernst
+Parser Combinators zu verstehen.
+
+Der einzige Fall, in dem du nicht mit cis194 anfangen solltest, ist, wenn du kein oder ein unerfahrener
+Programmierer bist. Wenn das der Fall ist, starte mit
+[Thompsons Buch](http://www.haskellcraft.com/craft3e/Home.html) und gehe über zu
+cis194.
+
+---
+
+## NICTA Kurs
+
+> Das ist der Kurs, den ich empfehle nach Yorgeys cis194 Kurs, zu machen
+
+Verfügbar auf github [hier](https://github.com/NICTA/course).
+
+Das wird dein Verständnis verbessern und dir Erfahrung mit der Implementierung der
+Abstraktionen geben, die in cis194 eingeführt wurden, das ist die Praxis, die *ausschlaggebend* ist, um
+mit der üblichen Nutzung von Functor/Applicative/Monad/etc. in Haskell vertraut zu verwerden.
+Erst cis194 und dann den NICTA Kurs zu machen, ist die wesentliche Empfehlung meiner Anleitung
+und ist der Weg, wie ich anderen Leuten Haskell beibringe.
+
+---
+
+## Zusätzliche Kurse cs240h
+
+> Stellt weiteres Material für fortgeschrittene Themen bereit
+
+Verfügbar [online](http://www.scs.stanford.edu/14sp-cs240h/).
+
+Das ist [Bryan O'Sullivan](https://github.com/bos)s online Version des Kurses, den er
+in Stanford unterrichtet. Wenn du nicht weißt, wer er ist, guck dir der Hälfte der Libraries
+and, die jede Haskell Anwendunge am Ende braucht unnd sein Name wird dabei sein. 
+Wenn du bereits den Yorgey Kurs gemacht hast, sind die Module über
+phantom types, information flow control, language extensions, concurrency,
+pipes, und lenses von besonderer Bedeutung.
+
+---
+
+## Referenz Material für die drei Kurse
+
+[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) und
+[Real World Haskell](http://book.realworldhaskell.org) (Danke bos!) sind
+online verfügbar.
+
+I empfehle RWH als Referenz (dickes Buch). Die Kapitel über Parsing und Monaden
+sind sehr gut, um ein Verständnis dafür zu kriegen, wofür Monaten nützlich sind. Andere Leute sagen,
+dass sie es oft verlinkt haben. Vermutlich eine gute Nachbereitung für die praktischen Teile
+nachdem du die essentiellen Sachen in Haskell verstanden hast?
+
+### Was macht dieser `<-` / `do` / list comprehension syntaktische Zucker?
+
+Exzellenter [Artikel](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html).
+
+### Um Listen und Fold zu verstehen
+
+- [Explain List Folds to Yourself](http://vimeo.com/64673035)
+
+### Um ein paar wesentliche Typ Klassen zu lernen
+
+Nützlich um `Functor`, `Applicative`, `Monad`, `Monoid` und andere
+Typ Klassen im Allgemeinen zu verstehen aber auch etwas Hask-bezogene Kategorien Theorie:
+
+- Die [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
+
+### Die grundlegenden Haskell Fehler Meldungen verstehen
+
+- [Understanding basic error messages](http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf)
+
+---
