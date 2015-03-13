@@ -388,3 +388,38 @@ Original:
 > and possibly different in ways I'm not aware of), and they expose the
 > World-passing directly and provide a (non-abstract) IO monad only for
 > convenience.
+
+# Monaden und Monaden Transformer (monad transformers)
+
+> Versuche nicht diese zu lernen bis du nicht Type Klassen, Monide, Funktoren
+> und Applikativen verstanden hast
+
+Implementiere die Monaden aus der Standard Bibliothek ( List, Maybe, Cont, Error, Reader,
+Writer, State ) für dich selbst, um sie besser zu verstehen. Dann schreibe vielleicht einen
+monadischen Interpreter für eine kleine Expression Sprache mit dem
+[Monad Transformers Step by Step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf)
+Paper (erwähnt in 'monad transformers' im folgenden).
+
+Mehrere Interpreter zu schreiben, indem man einfach nur die Monade ändert um die Semantik zu verändern
+kann helfen, zu verstehen was passiert.
+
+- [Dieser Vortrag](https://vimeo.com/73648150) von Tony motiviert Monad
+  Transformers sehr gut, [die Folien](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
+
+Zusätzlich, implementiere `Control.Monad` selbst. Funktionen wie `mapM` oder `sequence` sind gute
+Möglichkeiten, um zu üben, generischen monadischen Code zu schreiben.
+
+Der NICTA Kurs kann als Anleitung für diese Prozess genutzt werden, was auch beinhaltet
+eine eigene Applicative zu schreiben.
+
+Credits:
+
+- Reddit Kommentar von htmltyp und Crandom [hier](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
+
+- Reddit Kommentar von jozefg [hier](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
+
+## Monad transformers
+
+- [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
+
+- [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (warning, code out of date).
