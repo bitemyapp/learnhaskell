@@ -423,3 +423,60 @@ Credits:
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
 
 - [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (warning, code out of date).
+# Testing, tests, specs, generative/property testing
+
+- This [tutorial](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) by Kazu Yamamoto is fantastic.
+
+- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Good simple
+  library for learning how streaming IO works in general, knowledge
+  transferrable to libraries like Pipes and Conduit
+
+# Parsing in Haskell
+
+- Parser combinator [tutorial](https://github.com/JakeWheat/intro_to_parsing)
+  for Haskell using Parsec
+
+- [Writing your own micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
+
+## Parsing and generating JSON
+
+Aeson is the standard [JSON](https://json.org) parsing solution in
+haskell. Available from [hackage](https://hackage.haskell.org/package/aeson) and
+[github](https://github.com/bos/aeson).
+
+- [Parsing JSON using Aeson](http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/)
+
+- [Aeson and user created types](http://bitemyapp.com/posts/2014-04-11-aeson-and-user-created-types.html)
+
+- [Parsing non-deterministic data with aeson and sum types](http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html)
+
+- [Aeson tutorial](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
+
+# Testen, Tests, Specs, generative/property testing
+
+- Dieses [Tutorial](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) von Kazu Yamamoto ist fantastisch.
+
+- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Gute, einfache
+  Bibliothek um zu lernen, wie streaming IO funktioniert im allgemeinen, die Konzepte
+  sind transferierbar auf Bibliotheken wie Pipes und Conduit
+
+# Parsen in Haskell
+
+- Parser combinator [tutorial](https://github.com/JakeWheat/intro_to_parsing)
+  für Haskell mit Parsec
+
+- [Writing your own micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
+
+## Parsen und generieren von JSON
+
+Aeson ist die standard Lösung für parsen von [JSON](https://json.org) in
+Haskell. Verfübar über [hackage](https://hackage.haskell.org/package/aeson) und
+[github](https://github.com/bos/aeson).
+
+- [Parsing JSON using Aeson](http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/)
+
+- [Aeson and user created types](http://bitemyapp.com/posts/2014-04-11-aeson-and-user-created-types.html)
+
+- [Parsing non-deterministic data with aeson and sum types](http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html)
+
+- [Aeson tutorial](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
