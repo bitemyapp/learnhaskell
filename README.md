@@ -15,6 +15,8 @@ This is my recommended path for learning Haskell.
 
 * [Em Português](guide-pt.md)
 
+* [Türkçe](guide-tr.md)
+
 
 #### Something to keep in mind: *don't sweat the stuff you don't understand immediately*. Just keep moving.
 
