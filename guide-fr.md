@@ -49,6 +49,196 @@ Haskell est un langage de programmation, défini par une spécification, la plus
 
 Cabal est l'équivalent de Bundler pour Ruby, de pip pour Python, de NPM pour Node, Maven, etc. GHC gère le packaging lui-même, Cabal choisit quelles versions doivent être installées.
 
+# Mise en place
+
+## Ubuntu
+
+[Ce PPA](http://launchpad.net/~hvr/+archive/ghc) est excellent. C'est ce que j'utilise sur toutes mes machines Linux dédiées au développement.
+
+Plus précisément:
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get install python-software-properties # v12.04 and below
+$ sudo apt-get install software-properties-common # v12.10 and above
+$ sudo add-apt-repository -y ppa:hvr/ghc
+$ sudo apt-get update
+$ sudo apt-get install cabal-install-1.20 ghc-7.8.3 happy-1.19.4 alex-3.1.3
+```
+
+Après, ajoutez ce qui suit à votre `$PATH` (bash\_profile, zshrc, bashrc, etc.) :
+
+```
+~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin
+```
+
+*Optionnel:* Vous pouvez aussi ajouter `.cabal-sandbox/bin` à votre _path_.
+Ainsi, vous aurez accès au code que vous serez en train de développer directement
+en ligne de commandes. Cela ne marchera que si votre répertoire de travail actuel
+contient une _sandbox_ cabal.
+
+## Debian
+
+### Dêpot GHC pour debian stable
+
+Si vous utilisez la version stable de Debian, il est plus simple d'utiliser
+http://deb.haskell.org/. Pour cela:
+
+- Ajouter la ligne `deb http://deb.haskell.org/stable/ ./` à `/etc/apt/sources.list`
+
+```bash
+## Ajoute la clé pour supprimer les messages d'avertissement
+$ GET http://deb.haskell.org/deb.haskell.org.gpg-key | apt-key add -
+$ sudo apt-get update
+$ sudo apt-get install ghc-7.8.3 happy alex cabal-install
+```
+
+### Utiliser le PPA d'Ubuntu
+
+Si vous n'utilisez pas la version stable, vous pouvez suivre les mêmes étapes
+que pour Ubuntu mais vous aurez besoin d'exécuter un commande supplémentaire.
+Immédiatement après l'exécution de `sudo add-apt-repository -y ppa:hvr/ghc`,
+lancez :
+
+```bash
+$ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
+```
+
+Pour les autres versions de Debian, il suffit de remplacer les occurences de
+`jessie` par le nom de votre version dans la commandes ci-dessus.
+
+Si, pour une quelconque raison, le fichier
+`/etc/apt/sources.list.d/hvr-ghc-jessie.list` n'existe pas, alors
+`/etc/apt/sources.list` devrait contenir une ligne de ce genre:
+
+    deb http://ppa.launchpad.net/hvr/ghc/ubuntu jessie main
+
+Remplacez alors `jessie` par `trusty` dans cette ligne.
+
+### Compilation depuis les sources
+
+Vous pouvez suivre
+[ce guide](http://www.davesquared.net/2014/05/platformless-haskell.html)
+écrit pour Mac OS X:
+
+Notes:
+
+- Configurez votre préfixe de manière adéquate lorsque vous configurez ghc.
+- Au lieu de récupérez l'exécutable de `cabal-install`, récupérez les sources
+et ensuite lancez le script `bootstrap.sh`.
+
+## Fedora 21
+
+Pour installer Haskell 7.8.4 depuis le dépôt non-officiel
+(Fedora 22+ l'incluera dans l'officiel) :
+
+```bash
+$ sudo yum-config-manager --add-repo \
+> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
+$ sudo yum install ghc cabal-install
+```
+
+Comme indiqué dans
+[petersen/ghc-7.8.4 copr page](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/)
+cette version de ghc ne peut pas être installé en même temps que la version
+Fedora/EPEL de ghc.
+
+## Arch Linux
+
+Pour installer Haskell depuis le dépôt officiel d'Arch Linux, lancez :
+
+```bash
+$ sudo pacman -S cabal-install ghc happy alex haddock
+```
+
+## Gentoo
+
+Sur Gentoo, vous pouvez installer les différents composants de la plateforme
+Haskell depuis Portage. Si vous utilisez `ACCEPT_KEYWORDS=arch` (par opposition à
+`ACCEPT_KEYWORDS=~arch`), Portage installera d'anciennes versions des différents
+composants Haskell. Maintenant que vous avez ça en tête, si et seulement si vous
+utilisez `ACCEPT_KEYWORDS=arch`, ajoutez ce qui suit à
+`/etc/portage/package.keywords`.
+
+    dev-haskell/cabal-install
+    dev-lang/ghc
+
+Une fois que cela est fait,
+
+```bash
+$ emerge -jav dev-lang/ghc dev-haskell/cabal-install
+```
+
+Gentoo garde une version "stable" (comprenez : vieille) de `cabal-install`
+dans la hierarchie de Portage. Donc, si vous allez devoir utiliser
+`cabal-install` pour installer la dernière version.  Notez que les backslashes
+sont intentionnels dans ce qui suit.
+
+```bash
+$ \cabal update                # Les  backslashes
+$ \cabal install cabal-install # sont intentionels
+```
+
+Vous avez maintenant installé cabal au niveau global avec portage, et dans votre
+répertoire personnel avec `cabal-install`. L'étape suivante est de s'assurer que
+quand vous lancez `cabal` dans un terminal, votre shell lancera la version à jour
+dans votre répertoire personnel. Vous allez donc devoir ajouter les lignes
+suivantes à votre fichier de configuration du shell :
+
+```bash
+PATH=$PATH:$HOME/.cabal/bin
+alias cabal="$HOME/.cabal/bin/cabal"
+```
+
+Si vous ne savez quel est votre shell, il y a de fortes chances que ce soit
+Bash. Si vous utilisez Bash, le fichier à modifier est `~/.bashrc`. Si vous
+utilisez Z-shell, il s'agit du fichier `~/.zshrc`. Vous pouvez lancer la commande
+suivante pour savoir quel est votre shell :
+
+```bash
+echo $SHELL | xargs basename
+```
+
+J'utilise zsh, donc cette commande renvoie `zsh` quand je la lance.
+
+Une fois que vous avez fait tout cela, vous allez devoir installer les outils 
+complémentaires `alex` et `happy`.
+
+```bash
+$ cabal install alex happy
+```
+
+Félicitations ! Vous avez maintenant une installation de Haskell en état de marche !
+
+## Mac OS X
+
+### 10.9
+
+Installez l'app [GHC pour Mac OS X](http://ghcformacosx.github.io/) qui inclue
+GHC et Cabal. Elle vous indiquera comment ajouter GHC et cabal à votre path
+après que vous ayez déposé le `.app` quelquepart.
+
+### 10.6-10.8
+
+Faites l'installation décrite ci-dessous avec cette [archive](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2).
+
+## Windows
+
+- L'[installeur minimal pour GHC](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
+est capable de compiler `network` et les autres. Techniquement, il s'agit d'une
+beta mais cela devrait répondre au besoin de quiconque lira ce guide.
+
+N'oubliez pas de lancer l'installation en tant qu'administrateur puisque le
+programme cherchera à s'installer dans votre répertoire Program Files.
+
+### Guide d'installation détaillé pour Mac OS X
+
+Vous n'avez pas besoin de cela si vous utilisez le `.app` mais si cela ne
+marche pas pour vous, essayez
+[cela](http://www.davesquared.net/2014/05/platformless-haskell.html)
+avec la version exécutable.
+
+
 # Cours de base
 
 ## Le cours cis194 de Yorgey
@@ -66,3 +256,37 @@ developpeur ou un inexprimenté. Si c'est le cas, commencez par le
 [livre de Thompson](http://www.haskellcraft.com/craft3e/Home.html) puis enchainez avec cis194.
 
 ---
+
+
+# Evaluation stricte et paresseuse, _guarded recursion_
+
+- Le [livre](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)
+écrit par Marlow au sujet du parallélisme et de la concurrence est une des
+meilleures introduction au sujet de l'évaluation paresseuse et des formes
+normales que j'ai trouvé. N'hésitez pas à utiliser d'autres ressources si
+vous n'accrochez pas immédiatement à celle ci.
+
+- [More points for lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
+
+- [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
+
+- SO question '[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+
+- les slides de [Johan Tibell](https://github.com/tibbe) pour une présentation
+intitulé [raisoner avec l'évaluation paresseuse](http://www.slideshare.net/tibbe/reasoning-about-laziness).
+
+## Brève démonstration
+
+```haskell
+let a = 1 : a   -- guarded recursion, (:) est évalué paresseusement
+let (v : _) = a -- et on peut lui appliquer du pattern matching
+> v
+1
+> head a -- head a == v
+1
+
+let a = 1 * a -- not guarded, (*) is strict
+> a
+*** Exception: <<loop>>
+```
+
