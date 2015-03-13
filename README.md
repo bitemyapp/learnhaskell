@@ -2,11 +2,15 @@
 
 This is my recommended path for learning Haskell.
 
+
 ## For non-English speakers
 
 * [Auf Deutsch](guide-de.md)
 
 * [En Français](guide-fr.md)
+
+* [In Italiano](guide-it.md)
+
 
 #### Something to keep in mind: *don't sweat the stuff you don't understand immediately*. Just keep moving.
 
