@@ -256,3 +256,37 @@ developpeur ou un inexprimenté. Si c'est le cas, commencez par le
 [livre de Thompson](http://www.haskellcraft.com/craft3e/Home.html) puis enchainez avec cis194.
 
 ---
+
+
+# Evaluation stricte et paresseuse, _guarded recursion_
+
+- Le [livre](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)
+écrit par Marlow au sujet du parallélisme et de la concurrence est une des
+meilleures introduction au sujet de l'évaluation paresseuse et des formes
+normales que j'ai trouvé. N'hésitez pas à utiliser d'autres ressources si
+vous n'accrochez pas immédiatement à celle ci.
+
+- [More points for lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
+
+- [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
+
+- SO question '[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+
+- les slides de [Johan Tibell](https://github.com/tibbe) pour une présentation
+intitulé [raisoner avec l'évaluation paresseuse](http://www.slideshare.net/tibbe/reasoning-about-laziness).
+
+## Brève démonstration
+
+```haskell
+let a = 1 : a   -- guarded recursion, (:) est évalué paresseusement
+let (v : _) = a -- et on peut lui appliquer du pattern matching
+> v
+1
+> head a -- head a == v
+1
+
+let a = 1 * a -- not guarded, (*) is strict
+> a
+*** Exception: <<loop>>
+```
+
