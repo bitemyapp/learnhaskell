@@ -501,3 +501,77 @@ Haskell. Verfübar über [hackage](https://hackage.haskell.org/package/aeson) un
 - [Tying the Knot](http://www.haskell.org/haskellwiki/Tying_the_Knot).
 
 - [Hackage: dag](https://hackage.haskell.org/package/dag).
+
+# Entwicklungsumgebung
+
+## Emacs
+
+- [Alejandro Serrass Tutorial](https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md)
+
+- [Meine Konfigurationsdateien](https://github.com/bitemyapp/dotfiles/)
+
+- [Chris Done's emacs Konfiuration](https://github.com/chrisdone/chrisdone-emacs)
+
+## Vim
+
+- [Vim Seite im Haskell Wiki](http://www.haskell.org/haskellwiki/Vim)
+
+- [Haskell-vim-now](https://github.com/begriffs/haskell-vim-now)
+
+- [Ein vim+haskell Workflow](http://www.stephendiehl.com/posts/vim_haskell.html)
+
+- [GHC-Mod](https://github.com/kazu-yamamoto/ghc-mod)
+
+- [GHC-Mod vim plugin](https://github.com/eagletmt/ghcmod-vim)
+
+- [Hindent](https://github.com/chrisdone/hindent)
+
+## Sublime Text
+
+- [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
+
+# FAQ und Arbeiten mit Cabal
+
+## Fantastic FAQ
+
+Neben vielen nützlichen Informationen zu allen Arten von Konzepten, wie GADTs,
+ist dies auch eine hilfreiche Anleitung für Cabal:
+
+- [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
+  auch auf github [hier](https://github.com/sdiehl/wiwinwlh).
+
+## Cabal Leitfaden
+
+Cabal Hell war ein Problem für Haskell Nutzer vor der Einführung von
+Sandboxes. Eine Installation außerhalb einer sandbox wird in die user
+package-db installieren. Das ist *keine* gute Idee außer für grundlegende Pakete wie
+Cabal, alex, und happy. Nichts anderes sollte in den user oder der globalen
+package-dbs installiert sein, außer du weißt was du tust
+
+[Hier](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html) gibt es ein
+paar gute Praktiken um Cabal hell zu verhindern.
+
+
+Um mit einem Paket zu experimentieren oder ein Projekt zu starten, beginne mit
+`cabal sandbox init` in einem neuen Verzeichnis.
+
+Kurz gesagt:
+
+- Nutze immer Sandboxes, um neue Pakete zu installieren, neue oder existierende Projekte zu bauen oder
+  Experimente zu starten
+
+- Nutze `cabal repl` um eine Projekt bezogene ghci Instanz zu starten
+
+Die vorgeschlagene, sandbox-basierte Methode sollte Paket Abhängigkeits Probleme vermeiden
+aber sie ist inkompatibel zu der Art wie die Haskell Plattform fertig gebaute Pakete bereitstellt.
+Wenn du momentan noch Haskell lernst und nicht verstehst wie ghc-pkg und Cabal funktionieren,
+*nutze nicht die Plattform* und stattdessen die Instruktionen, die zu Beginn erklärt wurden.
+
+## Stackage
+
+Für alle Nutzer (normalerweise Yesod Nutzer), die Build Probleme haben, zieht Stackage in Erwägung:
+
+- Eine gute Zusammenfassung ist
+  [hier](https://www.fpcomplete.com/blog/2014/05/stackage-server).
+
+Der Meinung des Authors nach, ist Stackage normalerweise nützlicher als ein `cabal freeze`.
