@@ -326,3 +326,65 @@ Typ Klassen im Allgemeinen zu verstehen aber auch etwas Hask-bezogene Kategorien
 - [Understanding basic error messages](http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf)
 
 ---
+
+# Laziness, strictness, guarded recursion
+
+- Marlows [Buch](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)
+  über Parallelisierung und Nebenläufigkeit hat eine der besten Einführungen über
+  laziness und normal form, die ich finden konnte. Nutze anderes Material, wenn es nicth direkt
+  verständlich ist.
+
+- [More points for lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
+
+- [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
+
+- SO Frage '[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+
+- [Johan Tibell](https://github.com/tibbe)s Folien von seinem Vortrag 
+  [reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness).
+
+## Kurze Demonstration
+
+```haskell
+let a = 1 : a -- guarded recursion, (:) is lazy and can be pattern matched.
+let (v : _) = a
+> v
+1
+> head a -- head a == v
+1
+
+let a = 1 * a -- not guarded, (*) is strict
+> a
+*** Exception: <<loop>>
+```
+
+# IO
+
+- [Evaluation order and State tokens](https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens)
+
+- [Unraveling the mystery of the IO monad](http://blog.ezyang.com/2011/05/unraveling-the-mystery-of-the-io-monad/).
+
+- [First class "statements"](http://blog.jle.im/entry/first-class-statements).
+
+- [Haddocks for System.IO.Unsafe.unsafePerformIO](http://hackage.haskell.org/package/base-4.7.0.1/docs/System-IO-Unsafe.html#v:unsafePerformIO)
+  Lies die Dokumentation und Implementierung von unsafeDupablePerformIO
+
+Kommentar auf Reddit von `glaebhoerl`
+
+Übersetzt:
+> Interessante Randbemerkung: GHC muss die state token Darstellung hinter
+> einem abstrakten IO Typ verstecken, weil der state token immer linear benutzt werden muss (nicht
+> dupliziert oder dropped(??)), aber das Typsystem kann das nicht erzwingen. Clean, ein andere
+> lazy Haskell-ähnliche Sprache, hat eindeutige Typen (die ähnliche zu Linearen Typen sind
+> und vermutlich anders in vielen Aspekten, die mir nicht bekannt sind), und sie stellen
+> World-passing(??) direkt und eine (nicht abstrakte) IO Monade nur der Einfachheit halber
+> bereit.
+
+Original:
+> Interesting side note: GHC needs to hide the state token representation behind
+> an abstract IO type because the state token must always be used linearly (not
+> duplicated or dropped), but the type system can't enforce this. Clean, another
+> lazy Haskell-like language, has uniqueness types (which are like linear types
+> and possibly different in ways I'm not aware of), and they expose the
+> World-passing directly and provide a (non-abstract) IO monad only for
+> convenience.
