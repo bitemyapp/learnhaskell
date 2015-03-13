@@ -7,6 +7,8 @@ This is my recommended path for learning Haskell.
 
 * [Auf Deutsch](guide-de.md)
 
+* [Στην ελληνική](guide-el.md)
+
 * [En Français](guide-fr.md)
 
 * [In Italiano](guide-it.md)
