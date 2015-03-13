@@ -480,3 +480,24 @@ Haskell. Verfübar über [hackage](https://hackage.haskell.org/package/aeson) un
 - [Parsing non-deterministic data with aeson and sum types](http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html)
 
 - [Aeson tutorial](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
+
+# Graph Algorithmen und Datenstrukturen
+
+- Das [fgl Paket](https://hackage.haskell.org/package/fgl) im Besonderen die
+  puren, funktionalen kürzester Pfad [Algos](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html).
+
+- [Inductive graphs and Functional Graph Algorithms](http://web.engr.oregonstate.edu/~erwig/papers/abstracts.html#JFP01).
+
+- [FGL/Haskell - A Functional Graph Library](http://web.engr.oregonstate.edu/~erwig/fgl/haskell/old/fgl0103.pdf).
+
+- [Data.Graph Quellcode vom Containers Paket](http://hackage.haskell.org/package/containers-0.5.5.1/docs/Data-Graph.html).
+
+- Das [graphs Paket](https://hackage.haskell.org/package/graphs).
+
+- [SO Frage zu PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+
+- [PHOAS for free](https://www.fpcomplete.com/user/edwardk/phoas).
+
+- [Tying the Knot](http://www.haskell.org/haskellwiki/Tying_the_Knot).
+
+- [Hackage: dag](https://hackage.haskell.org/package/dag).
