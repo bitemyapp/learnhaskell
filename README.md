@@ -2,6 +2,10 @@
 
 This is my recommended path for learning Haskell.
 
+## For non-English speakers
+
+[En Français](guide-fr.md)
+
 #### Something to keep in mind: *don't sweat the stuff you don't understand immediately*. Just keep moving.
 
 ## Community
