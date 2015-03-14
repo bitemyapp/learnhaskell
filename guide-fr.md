@@ -303,7 +303,7 @@ Un [article](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.ht
 
 ### Pour comprendre list et fold
 
-- [Explain List Folds to Yourself](http://vimeo.com/64673035)
+- [Expliquez vous List et Folds](http://vimeo.com/64673035)
 
 ### Pour apprendre quelques typeclasses courantes
 
@@ -313,9 +313,9 @@ typeclasses en general mais aussi une peu de théorie des catégories spécifiqu
 
 - La [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
 
-### Comprendre les messages d'erreurs standards d'Haskell
+### Comprendre les messages d'erreur standards d'Haskell
 
-- [Understanding basic error messages](http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf)
+- [Comprendre les messages d'erreur standards](http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf)
 
 ---
 
