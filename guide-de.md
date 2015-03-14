@@ -665,3 +665,86 @@ PureScript hat die beste JS Tooling Integration (nutzt gulp/grunt/bower), GHCJS
 und Haste integrieren besser mit Haskells Tooling (Cabal).
 
 Alle drei sind eine gute Wahl und werden für die meisten Frontend Projekte genügen.
+
+# Für ein tiefergehendes Verständnis für Laziness, NF, WHNF
+
+- [Notes on lambda calculus](https://vec.io/posts/notes-on-lambda-calculus).
+
+## Forschungs Paper über Lazy Lambda Calculi
+
+- [A call by need lambda calculus](http://homepages.inf.ed.ac.uk/wadler/topics/call-by-need.html#need-journal).
+
+- [Demonstrating Lambda Calculus Reduction](http://www.itu.dk/~sestoft/papers/sestoft-lamreduce.pdf)
+
+- [The lazy lambda calculus](http://www.cs.ox.ac.uk/files/293/lazy.pdf).
+
+- [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtlm)
+
+# Parallelisierung/Nebenläufigkeit
+
+- [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929). Dieses
+  Buch von Simon Marlow ist vermutlich das beste, was ich je gelesen habe über
+  Parallelisierung und Nebenläufigkeit.
+
+- Ein ausführliches [Tutorial](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application)
+  über Testen & schrittweise Entwicklung einer Multi-thread Anwendung in
+  Haskell.
+
+- [Functional Reactive Programming](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
+
+# Lenses und Prisms
+
+Nachdem du vertraut bist mit Haskell, solltest du unbedingt in Betracht ziehen
+Lenses und Prims zu lernen, auch wenn du nur ein "Nutzer" bist. Du brauchst nicht
+du zu grunde liegende Kategorie zu verstehen damit es nützlich ist.
+
+Die Schwierigkeit Lens zu nutzen wird oft stark überschätzt. Jeder der vertraut ist
+mit Functor/Foldable/Traversable (oder nur dem ersten der drei) kann Lenses und
+Prisms bereits nutzen, um sein Leben besser zu machen.
+
+Wenn du jemals etwas wie `(fmap . fmap)` gemacht hast, hast du bereits in deinem
+Kopf "lensing" gemacht.
+
+Ich empfehle zwei dieser Tutorials/Einführungen:
+
+- [A little lens starter tutorial](https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/a-little-lens-starter-tutorial)
+
+- [Lens: Lenses, Folds and Traversals](https://github.com/ekmett/lens#lens-lenses-folds-and-traversals)
+
+Siehe hier für weitere Informationen: [Lens Paket auf Hackage](http://hackage.haskell.org/package/lens).
+
+# Recursion Schemes
+
+Einige der verrückten \*-morphismus wörter, die du gehört hast, sind eigentlich
+über Rekursion. Beachte - Bevor du diese Material betrachtest, solltest du wissen,
+wie man foldr für listen implementiert und mindestens eine andere Datenstruktur,
+wie z.B. einen Baum (folds sind Catamorphismen). Wenn du auch noch weißt, wie man
+ein unfold (Anamorphismus) implementiert, ist das hilfreich.
+
+Diese Material passt gut mit Traversable und Foldable zusammen.
+
+- [An introduction to recursion schemes](http://patrickthomson.ghost.io/an-introduction-to-recursion-schemes/)
+
+- [Don't fear the cat](http://fho.f12n.de/posts/2014-05-07-dont-fear-the-cat.html) -
+  Gute Demonstration, warum Hylomorphismus die Komposition von cata und ana ist
+
+- [Recursion Schemes](http://comonad.com/reader/2009/recursion-schemes/) - Diese
+  Einführung ist echt gut.
+
+- [Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
+
+- [Catamorphisms](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
+
+# GHC Core und Performance Verbesserungen
+
+- [Write Haskell as Fast as C](write_haskell_as_fast_as_c.md)
+
+- [GHC Wiki: CoreSyn Type](https://ghc.haskell.org/trac/ghc/wiki/Commentary/Compiler/CoreSynType).
+
+- [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core).
+
+- [SO Frage: Reading GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
+
+- [Haskell as fast as C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
+
+- [Real World Haskell, Kapitel 25: Profiling and Optimizations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
