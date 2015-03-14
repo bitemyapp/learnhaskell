@@ -787,3 +787,53 @@ Wenn du dich mit Typ- oder Kategorien Theorie beschäftigen willst:
 - [Adjunctions](http://www.stephendiehl.com/posts/adjunctions.html).
 
 - [Monads](http://www.stephendiehl.com/posts/monads.html).
+
+# Andere interessante Themen
+
+## Parametricity, ad-hoc vs. parametric polymorphism, free theorems
+
+- [Parametricity](tony_parametricity.pdf).
+
+- [TeX Quellen](https://github.com/tonymorris/parametricity/) für den Vortrag
+  von oben.
+
+- [Making ad-hoc polymorphism less ad-hoc](http://swizec.com/blog/week-20-making-ad-hoc-polymorphism-less-ad-hoc/swizec/6564).
+
+- [Theorems for Free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf).
+
+## Initial und Final, DSLs, Finally Tagless
+
+- [Final Encodings, Part 1: A Quick Demonstration](http://creativelad.wordpress.com/2013/11/28/final-encodings-part-1-a-quick-demonstration/).
+
+- [Transforming Polymorphic Values](http://martijn.van.steenbergen.nl/journal/2009/10/18/transforming-polymorphic-values/).
+
+- [GADTs in Haskell 98](http://martijn.van.steenbergen.nl/journal/2009/11/12/gadts-in-haskell-98/).
+
+- [Typed Tagless-Final Linear Lambda Calculus](https://www.fpcomplete.com/user/mutjida/typed-tagless-final-linear-lambda-calculus).
+
+- [Typed tagless-final interpretations: Lecture notes](http://okmij.org/ftp/tagless-final/course/course.html).
+
+- [Typed Tagless Final Interpreters](http://okmij.org/ftp/tagless-final/course/lecture.pdf).
+
+- [The dog that didn't bark](http://existentialtype.wordpress.com/2011/03/21/the-dog-that-didnt-bark/) nicht unbedingt relevant aber interessant.
+
+## Comonads
+
+- [Comonads in Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
+
+- [SO Frage: Can a Monad be a Comonad](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
+
+## Yoneda / CoYoneda
+
+- [SO Frage: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+
+- Free monads for Less, eine Reihe von drei Artikeln von Edward Kmett
+  * [Part 1: Codensity](http://comonad.com/reader/2011/free-monads-for-less/).
+  * [Part 2: Yoneda](http://comonad.com/reader/2011/free-monads-for-less-2/).
+  * [Part 3: Yielding IO](http://comonad.com/reader/2011/free-monads-for-less-3/).
+
+## Propositions vs. Judgments (computation)
+
+- [StackExchange Frage: What is the difference between propositions and judgements](http://cstheory.stackexchange.com/questions/9826/what-is-the-difference-between-propositions-and-judgments).
+
+- [Vorlesungs Notizen eines kurzen, dreiteiligen Kurses](http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf)
