@@ -837,3 +837,34 @@ Wenn du dich mit Typ- oder Kategorien Theorie beschäftigen willst:
 - [StackExchange Frage: What is the difference between propositions and judgements](http://cstheory.stackexchange.com/questions/9826/what-is-the-difference-between-propositions-and-judgments).
 
 - [Vorlesungs Notizen eines kurzen, dreiteiligen Kurses](http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf)
+
+# Dependent typing
+
+- [Grokking sum types, value constructors, and type constructors](http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html) squint hard.
+
+- [Lightweight Dependent-type Programming](http://okmij.org/ftp/Computation/lightweight-dependent-typing.html).
+
+- [Idris programming language](http://www.idris-lang.org/).
+
+# Statisch gelinkte Binaries
+
+- [Static linking](https://wiki.haskell.org/Web/Literature/Static_linking)
+
+- [Static linking with GHC on Arch Linux](http://www.edofic.com/posts/2014-05-03-ghc-arch-static.html)
+
+- [Statically linking Linux binaries for ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
+
+- [Statically link GMP using GHC and LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
+
+# Weitere Dinge zum lesen
+
+> Einige sind bereits hier enthalten
+
+- [Essential Haskell Reading List](http://www.stephendiehl.com/posts/essential_haskell.html)
+
+## Dialog
+
+> In diesem Repository zu finden, siehe [hier](dialogues.md).
+
+Die sind eigentlich sehr wichtig und hilfreich. Schaue hier für tiefere Einblicke
+in eine Vielzahl von Themen.
