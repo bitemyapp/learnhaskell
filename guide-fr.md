@@ -134,7 +134,7 @@ Pour installer Haskell 7.8.4 depuis le dépôt non-officiel
 
 ```bash
 $ sudo yum-config-manager --add-repo \
-> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
+> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
 $ sudo yum install ghc cabal-install
 ```
 
@@ -201,7 +201,7 @@ echo $SHELL | xargs basename
 
 J'utilise zsh, donc cette commande renvoie `zsh` quand je la lance.
 
-Une fois que vous avez fait tout cela, vous allez devoir installer les outils 
+Une fois que vous avez fait tout cela, vous allez devoir installer les outils
 complémentaires `alex` et `happy`.
 
 ```bash
@@ -257,6 +257,67 @@ developpeur ou un inexprimenté. Si c'est le cas, commencez par le
 
 ---
 
+## Le cours NICTA
+
+> C'est le cours que je recommande après avoir suivi le cis194 de Yorgey
+
+Disponible sur github [ici](https://github.com/NICTA/course).
+
+Ce cours va renforcer et vous donnera de l'experience en implémentant directement
+les abstractions introduites dans le cis194, c'est un exercice *critique* pour
+être confortable avec les usages habituels des Functors/Applicatives/Monads/etc. en
+Haskell. Suivre les cours cis194 puis NICTA est la recommendation principale
+de mon guide et c'est comme ca que j'enseigne Haskell à tout le monde.
+
+---
+
+## Cours supplémentaire cs240h
+
+> Fournit plus de matière sur des sujets intermédiaires
+
+Disponible [en ligne](http://www.scs.stanford.edu/14sp-cs240h/).
+
+C'est la version en ligne du cours de [Bryan O'Sullivan](https://github.com/bos)
+enseigné à Stanford. Si vous ne savez qui il est, jetez un coup d'oeil à la moitié
+des libraries utilisées par les applications  Haskell, son nom est dessus. A souligner
+si vous avez déjà fait le cours de Yorgey les modules sur les
+types fantomes, les controles des flux d'informations, les extensions de language,
+la concurrence, les pipes, et les lenses.
+
+---
+
+## Documentation de référence pour les trois cours
+
+[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) et
+[Real World Haskell](http://book.realworldhaskell.org) (Merci bos !) sont
+disponibles en ligne.
+
+Je recommande RWH comme reference (un livre épais). Les chapitres sur le parsing et
+les monades sont super pour comprendre où les monades sont utiles. D'autres ont confirmé
+qu'il l'avaient beaucoup apprécié. Certainement une bonne suite pour des idomes plus pratiques
+lorsque vous aurez intégré les bases d'Haskell.
+
+### Que sont les sucres syntactiques `<-` / `do` / comprehension de listes ?
+
+Un [article](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html) excellent.
+
+### Pour comprendre list et fold
+
+- [Explain List Folds to Yourself](http://vimeo.com/64673035)
+
+### Pour apprendre quelques typeclasses courantes
+
+Utile pour comprendre `Functor`, `Applicative`, `Monad`, `Monoid` et autres
+typeclasses en general mais aussi une peu de théorie des catégories spécifique
+à Haskell:
+
+- La [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
+
+### Comprendre les messages d'erreurs standards d'Haskell
+
+- [Understanding basic error messages](http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf)
+
+---
 
 # Evaluation stricte et paresseuse, _guarded recursion_
 
@@ -327,7 +388,7 @@ expressions en utilisant le papier sur les
 Ecrire plusieurs interpréteurs en changeant juste la monde pour changer les
 sémantiques peut aider à comprendre ce qui se passe.
 
-- [Cette présentation](https://vimeo.com/73648150) de Tony justifie avec brio 
+- [Cette présentation](https://vimeo.com/73648150) de Tony justifie avec brio
 l'utilité des transformateurs de monades. Les slides sont également
 [disponibles](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
 
@@ -359,4 +420,3 @@ de Kazu Yamamoto est fantastique.
 combinators en Haskell utilisant Parsec.
 
 - [Ecrivez votre propre micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
-
