@@ -748,3 +748,42 @@ Diese Material passt gut mit Traversable und Foldable zusammen.
 - [Haskell as fast as C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
 
 - [Real World Haskell, Kapitel 25: Profiling and Optimizations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
+
+# Typ und Kategorien Theorie
+
+> *Nicht* notwending um in Haskell zu entwickeln, nur für Interessierte!
+
+Wenn du dich mit Typ- oder Kategorien Theorie beschäftigen willst:
+
+- [Catster's Guide](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) und
+  [Catster's Guide 2](http://byorgey.wordpress.com/catsters-guide-2/)
+
+- Das [Haskell Wikibuch](http://en.wikibooks.org/wiki/Haskell/Category_theory)
+  hat anschauliche Abbildungen
+
+- [Category Theory](http://www.haskell.org/haskellwiki/Category_theory) im
+  Haskell Wiki hat auch gute Links zu anderen Ressourcen
+
+- [Categories from scratch](http://science.raphael.poss.name/categories-from-scratch.html), beinhaltet ein paar praktische Beispiele
+
+- Pierces [Great Works in PL](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml) Liste.
+
+## Bücher
+
+- [Quora Frage: What is the best textbook for category theory?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1) Kmett's recommendations
+
+- [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do) und
+  [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038).
+  Die Standard Bücher über Kategorien Theorie.
+
+- [Harper's Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/plbook/book.pdf)
+  ist die beste auf Programmiersprachen fokussierte Einführung in Typentheorie,
+  die ich gelesen habe.
+
+- [Type theory and Functional Programming](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
+
+## Stephens tolle "How to get to monad" Artikel
+
+- [Adjunctions](http://www.stephendiehl.com/posts/adjunctions.html).
+
+- [Monads](http://www.stephendiehl.com/posts/monads.html).
