@@ -483,3 +483,58 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 ## Sublime Text
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
+
+
+# Hoogle et Haddock
+
+## Chercher du code à partir de la signature des types
+
+Le [moteur de recherche Hoogle](http://www.haskell.org/hoogle/) permet des
+recherches par type.
+
+Par exemple, le résultat d'une recherche pour `(a -> b) -> [a] -> [b]`
+sont disponibles [ici](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
+
+Hoogle est également hébergé par fpcomplete
+[ici](https://www.fpcomplete.com/hoogle).
+
+Il existe aussi [Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html) (qui
+contient tout hackage par défaut).
+
+## Mettre en place propre instance local de Hoogle
+
+Vous pouvez regerder [ici](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
+
+## Haddock
+
+1. [Réparer votre documentation Hackage](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html)
+
+2. [La v2 de la documentation de Hackage](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html)
+
+Notez que ces billets sont *légèrement obsolète*: par exemple, Hacakge contient
+maintent de jolies nouvelles information contenant la documentation et le statut
+du build.
+
+## Ce que vous avez vraiment besoin de savoir
+
+Afin qu'Haddock inclus la documentation des paquets référencés, vous devez
+mettre `documentation: True` dons votre `~/.cabal/config`. Si la valeur était
+par défaut (`False`) ou délibérément définie comme `False`, vous devrez
+supprimer tous vos paquets et les réinstaller avant de générer haddocks.
+
+L'autre chose que vous devez garder en tête est que comme le paramètre `$pkg`
+est interprété *par* cabal, et non par vous, les paramètres `html-location` et
+`content-location` *doivent être entourés de guillemets simples* et entrés dans
+un shell ou contenu dans un shell-script. Ils ne marcheront pas dans un Makefile,
+car on pensera alors qu'il s'agit de variables pour Make.
+
+```bash
+#! /usr/bin/env sh
+
+# Vous puvez écrire ceci ligne par ligen en omettant les backslashes
+cabal haddock --hoogle --hyperlink-source                       \
+ --html-location='http://hackage.haskell.org/package/$pkg/docs' \
+ --contents-location='http://hackage.haskell.org/package/$pkg'
+```
+
+
