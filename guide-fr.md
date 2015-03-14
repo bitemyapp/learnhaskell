@@ -455,3 +455,31 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 - [Attacher le noeud](http://www.haskell.org/haskellwiki/Tying_the_Knot).
 
 - [Hackage: dag](https://hackage.haskell.org/package/dag).
+
+# Environment de développement
+
+## Emacs
+
+- [le tutoriel d'Alejandro Serras](https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md)
+
+- [Mes dotfiles](https://github.com/bitemyapp/dotfiles/)
+
+- [la config emacs de Chris Done](https://github.com/chrisdone/chrisdone-emacs)
+
+## Vim
+
+- [la page Vim sur haskellwiki](http://www.haskell.org/haskellwiki/Vim)
+
+- [Haskell-vim-now](https://github.com/begriffs/haskell-vim-now)
+
+- [Un workflow vim+haskell](http://www.stephendiehl.com/posts/vim_haskell.html)
+
+- [GHC-Mod](https://github.com/kazu-yamamoto/ghc-mod)
+
+- [plugin vim GHC-Mod](https://github.com/eagletmt/ghcmod-vim)
+
+- [Hindent](https://github.com/chrisdone/hindent)
+
+## Sublime Text
+
+- [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
