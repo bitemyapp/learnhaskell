@@ -13,7 +13,7 @@ Client web IRC [ici](http://webchat.freenode.net/).
 
 Les [listes de diffusion](https://wiki.haskell.org/Mailing_lists) Haskell.
 
-### Lignes directrices de la communauté
+### Recommandations de la communauté
 
 [Voir le post sur l'enseignement de Chris Done](http://chrisdone.com/posts/teaching)
 
@@ -33,7 +33,7 @@ Pas de -ismes. Racisme, sexisme, homophobie, transphobie, et autres biais ne son
 
 ---
 
-Lignes directrices du [manuel de the Hacker School](https://www.hackerschool.com/manual). Merci de l'avoir partagé Hacker School.
+Recommandations du [manuel de the Hacker School](https://www.hackerschool.com/manual). Merci de l'avoir partagé Hacker School.
 
 # Qu'est ce que Haskell, GHC, et Cabal?
 
