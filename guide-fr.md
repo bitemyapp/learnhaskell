@@ -420,3 +420,17 @@ de Kazu Yamamoto est fantastique.
 combinators en Haskell utilisant Parsec.
 
 - [Ecrivez votre propre micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
+
+## Parsing et génération de JSON
+
+Aeson est la solution standard de parsing de [JSON](https://json.org) en haskell.
+Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
+[github](https://github.com/bos/aeson).
+
+- [Parser du JSON avec Aeson](http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/)
+
+- [Aeson et les types personalisés](http://bitemyapp.com/posts/2014-04-11-aeson-and-user-created-types.html)
+
+- [Parser des données non-deterministiques avec aeson et les types sum](http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html)
+
+- [tutoriel Aeson](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
