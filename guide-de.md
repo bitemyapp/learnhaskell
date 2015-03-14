@@ -628,3 +628,40 @@ cabal haddock --hoogle --hyperlink-source                       \
 Wenn du, wie ich, ein großer Fan von [TravisCI](https://travis-ci.org) bist, dann empfehle
 ich *sehr* [multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) anzugucken für die Basis
 der `travis.yml` für deine Haskell Projekte.
+
+# Frontend/JavaScript
+
+Wir haben eine große Auswahl! Im Grunde gibt es drei Möglichkeiten,
+die ich empfehlen würde:
+
+* [Haste](http://haste-lang.org/) ein Haskell zu JavaScript Compiler
+  - Der [Compiler](https://github.com/valderman/haste-compiler) auf github.
+  - Ein tolle
+    [Demo](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps)
+    von Haste mit einem Beispiel Projekt.
+
+* [GHCJS](https://github.com/ghcjs/ghcjs)
+  - [GHCJS Einführung](http://weblog.luite.com/wordpress/?p=14)
+  - [Functional Reactive Web Interfaces with GHCJS and Sodium](http://weblog.luite.com/wordpress/?p=127)
+  - [Writing Atom plugins in Haskell using ghcjs ](http://edsko.net/2015/02/14/atom-haskell/)
+
+* [PureScript](http://www.purescript.org/)
+  - Nicht direkt Haskell, wie Haste und GHCJS, aber eine beliebte Wahl unter Haskellern
+  - Geschrieben in und inspiriert durch Haskell
+  - Teste Purescript in deinem Browser [hier](http://try.purescript.org/)
+  - Gute Anleitung für [die ersten Schritte](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
+
+## Welche Frontend Sprache nutze ich?
+
+GHCJS und Haste sind beide komplett Haskell. GHCJS wird mit mehr Haskell
+Paketen funktionieren als Haste, aber ist egal für viele Frontend Projekte.
+Purescript ist kein Haskell, daher ist es nicht möglich Code direkt
+mit dem Backend zu teilen.
+
+GHCJS hat den größten Laufzeit Overhead mit über 100kb (luite arbeitet daran).
+Haste und Purescript sind vergleichbar.
+
+PureScript hat die beste JS Tooling Integration (nutzt gulp/grunt/bower), GHCJS
+und Haste integrieren besser mit Haskells Tooling (Cabal).
+
+Alle drei sind eine gute Wahl und werden für die meisten Frontend Projekte genügen.
