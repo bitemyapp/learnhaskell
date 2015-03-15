@@ -655,3 +655,17 @@ Ces documents se limitent aux traversables et foldables.
 - [Programmation Functionelle avec des Bananes, des Lenses, des Enveloppes et du Fil barbelé](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
 
 - [Catamorphismes](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
+
+# GHC Core et tuning de performance
+
+- [Ecrire du Haskell aussi rapide que du C](write_haskell_as_fast_as_c.md)
+
+- [GHC Wiki: le Type CoreSyn](https://ghc.haskell.org/trac/ghc/wiki/Commentary/Compiler/CoreSynType).
+
+- [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core).
+
+- [Question sur SO: Lire GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
+
+- [Haskell aussi rapide que du C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
+
+- [Real World Haskell, Chapitre 25: Profilage and Optimisations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
