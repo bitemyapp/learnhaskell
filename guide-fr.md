@@ -484,6 +484,51 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
 
+# FAQ et utilisation de Cabal
+
+## Une FAQ fantastique
+
+En plus d'être un guide extraordinaire pour pleins de sujets comme les GADT,
+il couvre aussi des some useful basics for Cabal
+
+- [Ce que j'aurais aimé savoir lors de mon apprentissage d'Haskell](http://dev.stephendiehl.com/hask/)
+  aussi sur github [ici](https://github.com/sdiehl/wiwinwlh).
+
+## recommandations pour Cabal
+
+L'enfer avec Cabal était un problème pour les utilisateurs d'Haskell avant l'introduction
+des bacs à sable. Installer en dehors d'un bac à sable va installer dans le package-db
+de l'utilisateur. Ce n'est *pas* une bonne idée mis à part pour quelques librairies
+fondamentales comme Cabal, alex, et happy. Rien d'autre ne devrait être installé dans le
+package-db de l'utilsateur ou le global à moins que vous ne sachiez ce que vous faites.
+
+Quelques bonnes pratiques pour éviter l'enfer avec cabal sont disponibles
+[ici](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html).
+
+Pour expérimenter avec un package ou démarrer un projet, commencez par
+`cabal sandbox init` dans un nouveau dossier.
+
+Pour résumer:
+
+- Toujours utiliser des bacs à sable pour installer de nouveaux packages, créer des
+  projets, ou démarrer des experimentations
+
+- Utiliser `cabal repl` pour démarrer une instance ghci dans un projet
+
+L'approche basée sur les bacs à sable que je suggère permet d'éviter les problèmes
+liés à la gestion des dépendances des packages, mais elle n'est pas compatible avec
+les packages pré-construits fournis par Haskell Platform.
+Si vous apprenez Haskell et ne comprenez pas comment ghc-pkg et Cabal fonctionnent,
+*évitez platform* et utilisez les instructions préalables du guide à la place.
+
+## Stackage
+
+Pour les utilisateurs (de Yesod généralement) qui ont des problèmes de build, considérez Stackage.
+
+- Un bon résumé de ce qu'est Stackage
+  [ici](https://www.fpcomplete.com/blog/2014/05/stackage-server).
+
+L'auteur éstime que Stackage est généralement plus utile que `cabal freeze`.
 
 # Hoogle et Haddock
 
@@ -540,7 +585,7 @@ cabal haddock --hoogle --hyperlink-source                       \
 # TravisCI
 
 Si vous êtes comme moi un grand fan de [TravisCI](https://travis-ci.org), je
-vous recommande alors *fortement* de jeter un œuil à 
+vous recommande alors *fortement* de jeter un œuil à
 [multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) pour avoir une base
 pour de fichier `travis.yml` pour vos projets Haskell.
 
@@ -584,3 +629,47 @@ Haskell (Cabal).
 Les trois sont de très bons choix et seont adaptés à la plupart des projets
 frontend.
 
+# Pour mieux comprendre l'évaluation paresseuse, NF, WHNF
+
+- [Notes sur lambda-calcul](https://vec.io/posts/notes-on-lambda-calculus).
+
+## Documents de recherche sur le lambda-calcul paresseux
+
+- [La nécessité du lambda-calcul](http://homepages.inf.ed.ac.uk/wadler/topics/call-by-need.html#need-journal).
+
+- [Démonstration de la réduction avec lambda-calcul](http://www.itu.dk/~sestoft/papers/sestoft-lamreduce.pdf)
+
+- [Le lambda-calcul paresseux](http://www.cs.ox.ac.uk/files/293/lazy.pdf).
+
+- [Evaluation paresseuse en Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtlm)
+
+# Parallelisme / Concurrence
+
+- [Programmation Parallele et Concurente en Haskell](http://chimera.labs.oreilly.com/books/1230000000929)
+  Ce livre de Simon Marlow est probablement le meilleur que j'ai lu sur le sujet du parallelisme et de
+  la concurence.
+
+- Un [pas à pas](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application) complet
+  sur les tests et le développement incrémental d'une application  multi-threadée en Haskell.
+
+- [Programmation Fonctionelle Réactive](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
+
+# Lenses et Prisms
+
+Une fois que êtes confortables avec Haskell, vous devriez considérer fortement l'apprentissage
+des Lenses et Prisms, même en tant que simple "utilisateur". Vous n'avez pas besoin de comprendre
+la catégorie sous-jascente pour que celà vous soit utile.
+
+Les gens sur-estiment grandement la difficulté d'utiliser les Lens. Quiconque confortable
+avec Functor/Foldable/Traversable (ou juste le premier) peux utiliser les
+lenses et prisms et rendre leur vie plus heureuse.
+
+Si vous avez déjà fait quelque chose comme: `(fmap . fmap)` vous étiez en train de "lenser" dans votre tête.
+
+Je recommande ces deux tutoriels / introductions:
+
+- [Un petit tutriel sur Lens pour commencer](https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/a-little-lens-starter-tutorial)
+
+- [Lens: Lenses, Folds et Traversals](https://github.com/ekmett/lens#lens-lenses-folds-and-traversals)
+
+Regardez ici pour plus d'informations: [Lens package on hackage](http://hackage.haskell.org/package/lens).
