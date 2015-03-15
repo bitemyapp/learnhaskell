@@ -613,3 +613,23 @@ pour de fichier `travis.yml` pour vos projets Haskell.
   sur les tests et le développement incrémental d'une application  multi-threadée en Haskell.
 
 - [Programmation Fonctionelle Réactive](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
+
+# Lenses et Prisms
+
+Une fois que êtes confortables avec Haskell, vous devriez considérer fortement l'apprentissage
+des Lenses et Prisms, même en tant que simple "utilisateur". Vous n'avez pas besoin de comprendre
+la catégorie sous-jascente pour que celà vous soit utile.
+
+Les gens sur-estiment grandement la difficulté d'utiliser les Lens. Quiconque confortable
+avec Functor/Foldable/Traversable (ou juste le premier) peux utiliser les
+lenses et prisms et rendre leur vie plus heureuse.
+
+Si vous avez déjà fait quelque chose comme: `(fmap . fmap)` vous étiez en train de "lenser" dans votre tête.
+
+Je recommande ces deux tutoriels / introductions:
+
+- [Un petit tutriel sur Lens pour commencer](https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/a-little-lens-starter-tutorial)
+
+- [Lens: Lenses, Folds et Traversals](https://github.com/ekmett/lens#lens-lenses-folds-and-traversals)
+
+Regardez ici pour plus d'informations: [Lens package on hackage](http://hackage.haskell.org/package/lens).
