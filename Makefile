@@ -12,3 +12,6 @@ FLAGS = --normalize --smart --toc $(VARIABLES)
 
 pdf: README.md
 	$(PANDOC) -s $(INPUT) -o $(OUTPUT) $(FLAGS) --column=80
+
+dialogues: dialogues.md
+	$(PANDOC) -s dialogues.md -o dialogues.pdf $(FLAGS) --column=80
