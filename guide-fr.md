@@ -669,3 +669,39 @@ Ces documents se limitent aux traversables et foldables.
 - [Haskell aussi rapide que du C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
 
 - [Real World Haskell, Chapitre 25: Profilage and Optimisations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
+
+# Type et Théorie des Catégories
+
+> *Pas* nécessaire pour écrire du Haskell, juste pour ceux interessés !
+
+Si vous voulez suivre sur les types et la théorie des catégories:
+
+- [Le guide de Catster](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) and
+  [Le guide de Catster 2](http://byorgey.wordpress.com/catsters-guide-2/)
+
+- Le [wikibook haskell](http://en.wikibooks.org/wiki/Haskell/Category_theory)
+  a de beaux diagrammes.
+
+- [Théorie des Catégories](http://www.haskell.org/haskellwiki/Category_theory) sur
+  haskellwiki, dispose de bons liens vers d'autres ressources.
+
+- [Categories à partir de rien](http://science.raphael.poss.name/categories-from-scratch.html), inclus des exemples concrets.
+
+- La liste [Superbes travaux sur les languages de programmation](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml) de Pierce.
+
+## Livres
+
+- [Question sur Quora: Quel est le meilleur livre sur la théorie des catégories ?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1) les recommandations de Kmett
+
+- [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do) et
+  [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038). Les livres de référencesur la théorie des catégories.
+
+- [Fondations Pratiques pour les Languages de Programmation de Harper](http://www.cs.cmu.edu/~rwh/plbook/book.pdf) est la meilleure introduction à la théorie des catégories d'un point de vue des languages de programmation.
+
+- [La théorie des Types et la Programmation Functionnelle](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
+
+## Les magnifiques posts de Stephen "Comment aller aux monades"
+
+- [Adjonctions](http://www.stephendiehl.com/posts/adjunctions.html).
+
+- [Monades](http://www.stephendiehl.com/posts/monads.html).
