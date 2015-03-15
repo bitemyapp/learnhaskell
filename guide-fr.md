@@ -673,3 +673,75 @@ Je recommande ces deux tutoriels / introductions:
 - [Lens: Lenses, Folds et Traversals](https://github.com/ekmett/lens#lens-lenses-folds-and-traversals)
 
 Regardez ici pour plus d'informations: [Lens package on hackage](http://hackage.haskell.org/package/lens).
+
+# Schémas de récursion
+
+Certains des mots en \*-morphisme dont vous avez entendu parler jusque là renvoient à la
+récursion. NB - avant de vous attaquer à la suite vous devriez savoir comment implementer
+foldr pour des listes et au moins une autre structure de données, comme les arbres. (les folds
+sont des catamorphismes) Savoir comment implementer un unfold (anamorphisme) pour les même structures
+devrait clarifier un peu les choses.
+
+Ces documents se limitent aux traversables et foldables.
+
+- [Une introduction aux schémas de récursion](http://patrickthomson.ghost.io/an-introduction-to-recursion-schemes/)
+
+- [N'ayez pas peur du chat](http://fho.f12n.de/posts/2014-05-07-dont-fear-the-cat.html) -
+  Une bonne démonstration sur comment l'hylomorphisme est une composition de cata et ana.
+
+- [Schémas de Récursion](http://comonad.com/reader/2009/recursion-schemes/) - Ce
+  guide pratique est excellent.
+
+- [Programmation Functionelle avec des Bananes, des Lenses, des Enveloppes et du Fil barbelé](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
+
+- [Catamorphismes](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
+
+# GHC Core et tuning de performance
+
+- [Ecrire du Haskell aussi rapide que du C](write_haskell_as_fast_as_c.md)
+
+- [GHC Wiki: le Type CoreSyn](https://ghc.haskell.org/trac/ghc/wiki/Commentary/Compiler/CoreSynType).
+
+- [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core).
+
+- [Question sur SO: Lire GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
+
+- [Haskell aussi rapide que du C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
+
+- [Real World Haskell, Chapitre 25: Profilage and Optimisations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
+
+# Type et Théorie des Catégories
+
+> *Pas* nécessaire pour écrire du Haskell, juste pour ceux interessés !
+
+Si vous voulez suivre sur les types et la théorie des catégories:
+
+- [Le guide de Catster](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) and
+  [Le guide de Catster 2](http://byorgey.wordpress.com/catsters-guide-2/)
+
+- Le [wikibook haskell](http://en.wikibooks.org/wiki/Haskell/Category_theory)
+  a de beaux diagrammes.
+
+- [Théorie des Catégories](http://www.haskell.org/haskellwiki/Category_theory) sur
+  haskellwiki, dispose de bons liens vers d'autres ressources.
+
+- [Categories à partir de rien](http://science.raphael.poss.name/categories-from-scratch.html), inclus des exemples concrets.
+
+- La liste [Superbes travaux sur les languages de programmation](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml) de Pierce.
+
+## Livres
+
+- [Question sur Quora: Quel est le meilleur livre sur la théorie des catégories ?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1) les recommandations de Kmett
+
+- [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do) et
+  [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038). Les livres de référencesur la théorie des catégories.
+
+- [Fondations Pratiques pour les Languages de Programmation de Harper](http://www.cs.cmu.edu/~rwh/plbook/book.pdf) est la meilleure introduction à la théorie des catégories d'un point de vue des languages de programmation.
+
+- [La théorie des Types et la Programmation Functionnelle](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
+
+## Les magnifiques posts de Stephen "Comment aller aux monades"
+
+- [Adjonctions](http://www.stephendiehl.com/posts/adjunctions.html).
+
+- [Monades](http://www.stephendiehl.com/posts/monads.html).
