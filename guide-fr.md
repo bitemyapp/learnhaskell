@@ -602,3 +602,14 @@ pour de fichier `travis.yml` pour vos projets Haskell.
 - [Le lambda-calcul paresseux](http://www.cs.ox.ac.uk/files/293/lazy.pdf).
 
 - [Evaluation paresseuse en Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtlm)
+
+# Parallelisme / Concurrence
+
+- [Programmation Parallele et Concurente en Haskell](http://chimera.labs.oreilly.com/books/1230000000929)
+  Ce livre de Simon Marlow est probablement le meilleur que j'ai lu sur le sujet du parallelisme et de
+  la concurence.
+
+- Un [pas à pas](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application) complet
+  sur les tests et le développement incrémental d'une application  multi-threadée en Haskell.
+
+- [Programmation Fonctionelle Réactive](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
