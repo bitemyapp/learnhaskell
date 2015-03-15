@@ -588,3 +588,17 @@ Si vous êtes comme moi un grand fan de [TravisCI](https://travis-ci.org), je
 vous recommande alors *fortement* de jeter un œuil à
 [multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) pour avoir une base
 pour de fichier `travis.yml` pour vos projets Haskell.
+
+# Pour mieux comprendre l'évaluation paresseuse, NF, WHNF
+
+- [Notes sur lambda-calcul](https://vec.io/posts/notes-on-lambda-calculus).
+
+## Documents de recherche sur le lambda-calcul paresseux
+
+- [La nécessité du lambda-calcul](http://homepages.inf.ed.ac.uk/wadler/topics/call-by-need.html#need-journal).
+
+- [Démonstration de la réduction avec lambda-calcul](http://www.itu.dk/~sestoft/papers/sestoft-lamreduce.pdf)
+
+- [Le lambda-calcul paresseux](http://www.cs.ox.ac.uk/files/293/lazy.pdf).
+
+- [Evaluation paresseuse en Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtlm)
