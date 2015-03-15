@@ -633,3 +633,25 @@ Je recommande ces deux tutoriels / introductions:
 - [Lens: Lenses, Folds et Traversals](https://github.com/ekmett/lens#lens-lenses-folds-and-traversals)
 
 Regardez ici pour plus d'informations: [Lens package on hackage](http://hackage.haskell.org/package/lens).
+
+# Schémas de récursion
+
+Certains des mots en \*-morphisme dont vous avez entendu parler jusque là renvoient à la
+récursion. NB - avant de vous attaquer à la suite vous devriez savoir comment implementer
+foldr pour des listes et au moins une autre structure de données, comme les arbres. (les folds
+sont des catamorphismes) Savoir comment implementer un unfold (anamorphisme) pour les même structures
+devrait clarifier un peu les choses.
+
+Ces documents se limitent aux traversables et foldables.
+
+- [Une introduction aux schémas de récursion](http://patrickthomson.ghost.io/an-introduction-to-recursion-schemes/)
+
+- [N'ayez pas peur du chat](http://fho.f12n.de/posts/2014-05-07-dont-fear-the-cat.html) -
+  Une bonne démonstration sur comment l'hylomorphisme est une composition de cata et ana.
+
+- [Schémas de Récursion](http://comonad.com/reader/2009/recursion-schemes/) - Ce
+  guide pratique est excellent.
+
+- [Programmation Functionelle avec des Bananes, des Lenses, des Enveloppes et du Fil barbelé](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
+
+- [Catamorphismes](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
