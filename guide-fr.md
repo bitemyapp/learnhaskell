@@ -745,3 +745,84 @@ Si vous voulez suivre sur les types et la théorie des catégories:
 - [Adjonctions](http://www.stephendiehl.com/posts/adjunctions.html).
 
 - [Monades](http://www.stephendiehl.com/posts/monads.html).
+
+# Autres sujets amusants
+
+## Paramétricité, ad-hoc vs. polymorphisme paramétrique, théorèmes libres
+
+- [Paramétricité](tony_parametricity.pdf).
+
+- [Les sources TeX](https://github.com/tonymorris/parametricity/) du
+  talk ci-dessus.
+
+- [Rendre le polymorphisme ad-hoc moins ad-hoc](http://swizec.com/blog/week-20-making-ad-hoc-polymorphism-less-ad-hoc/swizec/6564).
+
+- [Théorèmes gratuits !](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf).
+
+## Initial et Final, les DSL, Finally Tagless
+
+- [Encodages finaux, Partie 1: Une Démonstration rapide](http://creativelad.wordpress.com/2013/11/28/final-encodings-part-1-a-quick-demonstration/).
+
+- [Transformer des valeurs Polymorphiques](http://martijn.van.steenbergen.nl/journal/2009/10/18/transforming-polymorphic-values/).
+
+- [Les GADT en Haskell 98](http://martijn.van.steenbergen.nl/journal/2009/11/12/gadts-in-haskell-98/).
+
+- [Lambda-calcul linéaire Typed Tagless-Final](https://www.fpcomplete.com/user/mutjida/typed-tagless-final-linear-lambda-calculus).
+
+- [Interprétations de Typed tagless-final: notes de Lecture](http://okmij.org/ftp/tagless-final/course/course.html).
+
+- [Les interpréteurs Typed Tagless Final](http://okmij.org/ftp/tagless-final/course/lecture.pdf).
+
+- [Le chien qui n'aboyait pas](http://existentialtype.wordpress.com/2011/03/21/the-dog-that-didnt-bark/) moins spécifique mais interessant tout de même.
+
+## Co-monades
+
+- [Co-monades en Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
+
+- [question sur SO: Est-ce qu'une monade peut être une co-monade ?](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
+
+## Yoneda / CoYoneda
+
+- [question sur SO: explication pas-à-pas de coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+
+- Free monads for Less, une séquence de trois articles par Edward Kmett
+  * [Partie 1: Co-densité](http://comonad.com/reader/2011/free-monads-for-less/).
+  * [Partie 2: Yoneda](http://comonad.com/reader/2011/free-monads-for-less-2/).
+  * [Partie 3: Yielding IO](http://comonad.com/reader/2011/free-monads-for-less-3/).
+
+## Propositions vs. Jugements (informatique)
+
+- [une question sur StackExchange: Quelle est la difference entre les propositions et les jugements ?](http://cstheory.stackexchange.com/questions/9826/what-is-the-difference-between-propositions-and-judgments).
+
+- [Notes de lecture d'un petit cours de trois lectures](http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf)
+
+# Typage Dépendent
+
+- [Intégrer les type sum, les value constructors, et les type constructors](http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html).
+
+- [Programmation légère avec typage dépendant](http://okmij.org/ftp/Computation/lightweight-dependent-typing.html).
+
+- [Le language de programmation Idris](http://www.idris-lang.org/).
+
+# Interconnexion de binaires statique
+
+- [Interconnexion statique](https://wiki.haskell.org/Web/Literature/Static_linking)
+
+- [Interconnexion statique avec GHC sur Arch Linux](http://www.edofic.com/posts/2014-05-03-ghc-arch-static.html)
+
+- [Interconnexion statique de binaires Linux pour ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
+
+- [Interconnexion statique GMP avec GHC et LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
+
+# Liste de lecture étendue
+
+> Certains sont déjà inclus ici
+
+- [Liste de lecture Haskell Essentielle](http://www.stephendiehl.com/posts/essential_haskell.html)
+
+## Dialogues
+
+> Hébergés dans un dépot [ici](dialogues.md).
+
+Ils sont importants et utiles. A regarder pour une compréhension approfondie sur
+des sujets variés.
