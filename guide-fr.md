@@ -21,7 +21,7 @@ Soyez gentils et courtois. Etre méchant ou désagréable fait peur aux autres e
 
 Une critique pour le plaisir de critiquer ne sers que la personne qui la fait, pas celle qui la reçoit.
 
-Ne décrivez pas les choses comme "faciles" ou "triviales". Vous créerez un malaise pour les autres qui auraient la sensation de devoir travailler plus durement pour progresser. Les personnes qui apprenent lentement sont souvent celles qui font un apprentissage plus approfondi, c'est quelque chose que nous devons célébrer et encourager !
+Ne décrivez pas les choses comme "faciles" ou "triviales". Vous créerez un malaise pour les autres qui auraient la sensation de devoir travailler plus durement pour progresser. Les personnes qui apprennent lentement sont souvent celles qui font un apprentissage plus approfondi, c'est quelque chose que nous devons célébrer et encourager !
 
 Ne pas feindre la surprise. N'ayez pas l'air surpris lorsque quelqu'un affirme ne pas savoir quelque chose. La personne se sentira mal et vous n'aurez rien accompli mis à part flatter votre égo.
 
@@ -29,7 +29,7 @@ Pas de "en fait...". Lorsqu'une personne dit quelque chose de presque - mais pas
 
 Pas de conduite accompagnée. Si vous voyez des personnes buter sur un problème, vous ne devez pas immédiatement donner des conseils. Laissez travailler dessus à moins que quelqu'un demande de l'aide. Eviter les interruptions est [un des objectifs fondateurs du canal #haskell-beginners](http://chrisdone.com/posts/teaching).
 
-Pas de -ismes. Racisme, sexisme, homophobie, transphobie, et autres biais ne sont pas bienvenus et ne seront pas tolerés.
+Pas de -ismes. Racisme, sexisme, homophobie, transphobie, et autres biais ne sont pas bienvenus et ne seront pas tolérés.
 
 ---
 
@@ -41,7 +41,7 @@ Haskell est un langage de programmation, défini par une spécification, la plus
 
 ## GHC
 
-[GHC](http://www.haskell.org/ghc/) est le moyen le plus populaire de travailler avec le langage Haskell. Il inclut un compilateur, et un REPL(interpréteur), la gestion de paquets, et plus encore.
+[GHC](http://www.haskell.org/ghc/) est le moyen le plus populaire de travailler avec le langage Haskell. Il inclut un compilateur, et un REPL (interpréteur), la gestion de paquets, et plus encore.
 
 ## Cabal
 
@@ -79,7 +79,7 @@ contient un _bac à sable_ cabal.
 
 ## Debian
 
-### Dêpot GHC pour debian stable
+### Dépôt GHC pour debian stable
 
 Si vous utilisez la version stable de Debian, il est plus simple d'utiliser
 http://deb.haskell.org/. Pour cela:
@@ -104,7 +104,7 @@ lancez:
 $ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
 ```
 
-Pour les autres versions de Debian, il suffit de remplacer les occurences de
+Pour les autres versions de Debian, il suffit de remplacer les occurrences de
 `jessie` par le nom de votre version dans la commandes ci-dessus.
 
 Si, pour une raison quelconque, le fichier
@@ -130,7 +130,7 @@ et ensuite lancez le script `bootstrap.sh`.
 ## Fedora 21
 
 Pour installer Haskell 7.8.4 depuis le dépôt non-officiel
-(Fedora 22+ l'incluera dans l'officiel) :
+(Fedora 22+ l'inclura dans l'officiel) :
 
 ```bash
 $ sudo yum-config-manager --add-repo \
@@ -170,13 +170,13 @@ $ emerge -jav dev-lang/ghc dev-haskell/cabal-install
 ```
 
 Gentoo garde une version "stable" (comprenez: vieille) de `cabal-install`
-dans la hierarchie de Portage. Donc vous allez devoir utiliser
+dans la hiérarchie de Portage. Donc vous allez devoir utiliser
 `cabal-install` pour installer la dernière version. Notez que les backslashes
 sont intentionnels dans ce qui suit.
 
 ```bash
 $ \cabal update                # Les  backslashes
-$ \cabal install cabal-install # sont intentionels
+$ \cabal install cabal-install # sont intentionnels
 ```
 
 Vous avez maintenant installé cabal au niveau global avec portage, et dans votre
@@ -216,7 +216,7 @@ Félicitations ! Vous avez maintenant une installation de Haskell en état de ma
 
 Installez l'app [GHC pour Mac OS X](http://ghcformacosx.github.io/) qui inclus
 GHC et Cabal. Elle vous indiquera comment ajouter GHC et cabal à votre path
-après que vous ayez déposé le `.app` quelquepart.
+après que vous ayez déposé le `.app` quelque part.
 
 ### 10.6-10.8
 
@@ -252,7 +252,7 @@ Ce cours vous équipera pour écrire du code basique en Haskell mais aussi vous
 aidera à comprendre les combinateurs d'analyse (parser combinators).
 
 La seule raison pour laquelle vous ne devriez pas commencer avec cis194 est si vous n'êtes pas un
-developpeur ou inexprimenté. Si c'est le cas, commencez par le
+développeur ou inexpérimenté. Si c'est le cas, commencez par le
 [livre de Thompson](http://www.haskellcraft.com/craft3e/Home.html) puis enchainez avec cis194.
 
 ---
@@ -263,7 +263,7 @@ developpeur ou inexprimenté. Si c'est le cas, commencez par le
 
 Disponible sur github [ici](https://github.com/NICTA/course).
 
-Ce cours va renforcer vos conaissances et vous donnera de l'experience en implémentant directement
+Ce cours va renforcer vos connaissances et vous donnera de l'experience en implémentant directement
 les abstractions introduites dans le cis194, c'est un exercice *capital* pour
 être confortable avec les usages habituels des Functors/Applicatives/Monades/etc. en
 Haskell. Suivre les cours cis194 puis NICTA est la recommendation principale
@@ -280,8 +280,8 @@ Disponible [en ligne](http://www.scs.stanford.edu/14sp-cs240h/).
 C'est la version en ligne du cours de [Bryan O'Sullivan](https://github.com/bos)
 enseigné à Stanford. Si vous ne savez qui il est, jetez un coup d'oeil à la moitié
 des libraries utilisées par les applications Haskell, son nom y figure. A regarder de
-plus pret, si vous avez déjà fait le cours de Yorgey, les modules sur les
-types fantomes, les controles des flux d'informations, les extensions de language,
+plus près, si vous avez déjà fait le cours de Yorgey, les modules sur les
+types fantômes, les contrôles des flux d'informations, les extensions de language,
 la concurrence, les pipes, et les lenses.
 
 ---
@@ -294,7 +294,7 @@ disponibles en ligne.
 
 Je recommande RWH comme reference (un livre épais). Les chapitres sur le parsing et
 les monades sont super pour comprendre où les monades sont utiles. D'autres ont confirmé
-qu'il l'avaient beaucoup apprécié. Certainement une bonne suite pour des idomes plus pratiques
+qu'il l'avaient beaucoup apprécié. Certainement une bonne suite pour des idiomes plus pratiques
 lorsque vous aurez intégré les bases d'Haskell.
 
 ### Que sont les sucres syntactiques `<-` / `do` / comprehension de listes ?
@@ -334,7 +334,7 @@ vous n'accrochez pas immédiatement à celle ci.
 - Question sur SO : '[Haskell a-t-il une évaluation paresseuse ?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
 - les slides de [Johan Tibell](https://github.com/tibbe) tirés d'une présentation
-intitulée [raisoner avec l'évaluation paresseuse](http://www.slideshare.net/tibbe/reasoning-about-laziness).
+intitulée [raisonner avec l'évaluation paresseuse](http://www.slideshare.net/tibbe/reasoning-about-laziness).
 
 ## Brève démonstration
 
@@ -355,7 +355,7 @@ let a = 1 * a -- not guarded, (*) is strict
 
 - [Ordre d'évaluation et jetons d'états](https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens)
 
-- [Révéler les mytères de la monade IO](http://blog.ezyang.com/2011/05/unraveling-the-mystery-of-the-io-monad/).
+- [Révéler les mystères de la monade IO](http://blog.ezyang.com/2011/05/unraveling-the-mystery-of-the-io-monad/).
 
 - ["instructions" du premier ordre](http://blog.jle.im/entry/first-class-statements).
 
@@ -375,7 +375,7 @@ Commentaire sur un fil Reddit de `glaebhoerl` :
 
 # Monades et transformateurs de monades
 
-> Ne faites pas ça vant de comprendres les typeclasses, Monoid, Functor et
+> Ne faites pas ça avant de comprendre les typeclasses, Monoid, Functor et
 > Applicative !
 
 Implémenter les monades de la librairie standard (List, Maybe, Cont, Error,
@@ -383,7 +383,7 @@ Reader, Writer, State) par vous-même afin de mieux les comprendre. Après, vous
 pouvez peut-être écrire un interpréteur monadique pour un langage avec des petites
 expressions en utilisant le papier sur les
 [transformateurs de monades étape par étape](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf)
-(mentioné dans la section "transformateurs de monades" ci-dessous).
+(mentionné dans la section "transformateurs de monades" ci-dessous).
 
 Ecrire plusieurs interpréteurs en changeant juste le Monde pour changer les
 sémantiques peut aider à comprendre ce qui se passe.
@@ -500,7 +500,7 @@ L'enfer avec Cabal était un problème pour les utilisateurs d'Haskell avant l'i
 des bacs à sable. Installer en dehors d'un bac à sable va installer dans le package-db
 de l'utilisateur. Ce n'est *pas* une bonne idée mis à part pour quelques librairies
 fondamentales comme Cabal, alex, et happy. Rien d'autre ne devrait être installé dans le
-package-db de l'utilsateur ou le global à moins que vous ne sachiez ce que vous faites.
+package-db de l'utilisateur ou le global à moins que vous ne sachiez ce que vous faites.
 
 Quelques bonnes pratiques pour éviter l'enfer avec cabal sont disponibles
 [ici](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html).
@@ -548,7 +548,7 @@ contient tout hackage par défaut).
 
 ## Mettre en place propre instance local de Hoogle
 
-Vous pouvez regerder [ici](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
+Vous pouvez regarder [ici](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
 
 ## Haddock
 
@@ -576,7 +576,7 @@ car on pensera alors qu'il s'agit de variables pour Make.
 ```bash
 #! /usr/bin/env sh
 
-# Vous puvez écrire ceci ligne par ligne en omettant les backslashes
+# Vous pouvez écrire ceci ligne par ligne en omettant les backslashes
 cabal haddock --hoogle --hyperlink-source                       \
  --html-location='http://hackage.haskell.org/package/$pkg/docs' \
  --contents-location='http://hackage.haskell.org/package/$pkg'
@@ -606,16 +606,16 @@ peux recommander:
   - [Écrire des extensions Atom en Haskell en utilisant ghcjs](http://edsko.net/2015/02/14/atom-haskell/)
 
 * [PureScript](http://www.purescript.org/)
-  - Pas strcitement du Haskell comme Haste and GHCJS, mais un choix populaire
+  - Pas strictement du Haskell comme Haste and GHCJS, mais un choix populaire
     chez les Haskellers.
   - Écrit en et inspiré par Haskell.
-  - Essayez purescript dans votre navigateur [ici](http://try.purescript.org/)
+  - Essayez PureScript dans votre navigateur [ici](http://try.purescript.org/)
   - Un très bon guide pour [démarrer](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
 
 ## Quel langage frontend utiliser ?
 
 GHCJS et Haste sont tous deux du pur Haskell. GHCJS marchera avec de plus
-nombreux paquets Haskell que Haste, mais celà n'impacte pas un grand nombre
+nombreux paquets Haskell que Haste, mais cela n'impacte pas un grand nombre
 de projets frontend. PureScript n'est pas du tout du Haskell, donc un partage
 direct du code avec votre backend ne fonctionnera pas.
 
@@ -645,20 +645,20 @@ frontend.
 
 # Parallelisme / Concurrence
 
-- [Programmation Parallele et Concurente en Haskell](http://chimera.labs.oreilly.com/books/1230000000929)
-  Ce livre de Simon Marlow est probablement le meilleur que j'ai lu sur le sujet du parallelisme et de
-  la concurence.
+- [Programmation Parallele et Concurrente en Haskell](http://chimera.labs.oreilly.com/books/1230000000929)
+  Ce livre de Simon Marlow est probablement le meilleur que j'ai lu sur le sujet du parallélisme et de
+  la concurrence.
 
 - Un [pas à pas](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application) complet
   sur les tests et le développement incrémental d'une application multi-threadée en Haskell.
 
-- [Programmation Fonctionelle Réactive](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
+- [Programmation Fonctionnelle Réactive](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
 
 # Lenses et Prisms
 
 Une fois que êtes confortables avec Haskell, vous devriez considérer fortement l'apprentissage
 des Lenses et Prisms, même en tant que simple "utilisateur". Vous n'avez pas besoin de comprendre
-la catégorie sous-jascente pour que celà vous soit utile.
+la catégorie sous-jascente pour que cela vous soit utile.
 
 Les gens sur-estiment grandement la difficulté d'utiliser les Lens. Quiconque confortable
 avec Functor/Foldable/Traversable (ou juste le premier) peux utiliser les
@@ -668,7 +668,7 @@ Si vous avez déjà fait quelque chose comme: `(fmap . fmap)` vous étiez en tra
 
 Je recommande ces deux tutoriels / introductions:
 
-- [Un petit tutriel sur Lens pour commencer](https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/a-little-lens-starter-tutorial)
+- [Un petit tutoriel sur Lens pour commencer](https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/a-little-lens-starter-tutorial)
 
 - [Lens: Lenses, Folds et Traversals](https://github.com/ekmett/lens#lens-lenses-folds-and-traversals)
 
@@ -692,7 +692,7 @@ Ces documents se limitent aux traversables et foldables.
 - [Schémas de Récursion](http://comonad.com/reader/2009/recursion-schemes/) - Ce
   guide pratique est excellent.
 
-- [Programmation Functionelle avec des Bananes, des Lenses, des Enveloppes et du Fil barbelé](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
+- [Programmation Fonctionnelle avec des Bananes, des Lenses, des Enveloppes et du Fil barbelé](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
 
 - [Catamorphismes](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
 
@@ -712,7 +712,7 @@ Ces documents se limitent aux traversables et foldables.
 
 # Type et Théorie des Catégories
 
-> *Pas* nécessaire pour écrire du Haskell, juste pour ceux interessés !
+> *Pas* nécessaire pour écrire du Haskell, juste pour ceux intéressés !
 
 Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
@@ -734,7 +734,7 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 - [Question sur Quora: Quel est le meilleur livre sur la théorie des catégories ?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1) les recommandations de Kmett
 
 - [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do) et
-  [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038). Les livres de référencesur la théorie des catégories.
+  [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038). Les livres de référence sur la théorie des catégories.
 
 - [Fondations Pratiques pour les Languages de Programmation de Harper](http://www.cs.cmu.edu/~rwh/plbook/book.pdf) est la meilleure introduction à la théorie des catégories d'un point de vue des languages de programmation.
 
@@ -773,7 +773,7 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 - [Les interpréteurs Typed Tagless Final](http://okmij.org/ftp/tagless-final/course/lecture.pdf).
 
-- [Le chien qui n'aboyait pas](http://existentialtype.wordpress.com/2011/03/21/the-dog-that-didnt-bark/) moins spécifique mais interessant tout de même.
+- [Le chien qui n'aboyait pas](http://existentialtype.wordpress.com/2011/03/21/the-dog-that-didnt-bark/) moins spécifique mais intéressant tout de même.
 
 ## Co-monades
 
@@ -781,9 +781,9 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 - [question sur SO: Est-ce qu'une monade peut être une co-monade ?](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
 
-## Yoneda / CoYoneda
+## Yoneda / Co-Yoneda
 
-- [question sur SO: explication pas-à-pas de coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+- [question sur SO: explication pas-à-pas de co-yoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
 - Free monads for Less, une séquence de trois articles par Edward Kmett
   * [Partie 1: Co-densité](http://comonad.com/reader/2011/free-monads-for-less/).
@@ -822,7 +822,7 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 ## Dialogues
 
-> Hébergés dans un dépot [ici](dialogues.md).
+> Hébergés dans un dépôt [ici](dialogues.md).
 
 Ils sont importants et utiles. A regarder pour une compréhension approfondie sur
 des sujets variés.
