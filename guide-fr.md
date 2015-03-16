@@ -13,19 +13,19 @@ Un client web IRC [ici](http://webchat.freenode.net/).
 
 Les [listes de diffusion](https://wiki.haskell.org/Mailing_lists) Haskell.
 
-### Recommandations de la communauté
+### Règles d'usage de la communauté
 
 [Voir le post sur l'enseignement de Chris Done](http://chrisdone.com/posts/teaching)
 
 Soyez gentils et courtois. Etre méchant ou désagréable fait peur aux autres et ne les encourage pas à participer.
 
-Une critique pour le plaisir de critiquer ne sers que la personne qui la fait, pas celle qui la reçoit.
+Une critique pour le plaisir de critiquer ne sert que la personne qui la fait, pas celle qui la reçoit.
 
-Ne décrivez pas les choses comme "faciles" ou "triviales". Vous créerez un malaise pour les autres qui auraient la sensation de devoir travailler plus durement pour progresser. Les personnes qui apprennent lentement sont souvent celles qui font un apprentissage plus approfondi, c'est quelque chose que nous devons célébrer et encourager !
+Ne décrivez pas quelquechose comme "facile" ou "trivial". Vous créeriez un malaise chez ceux qui doivent travailler plus durement pour progresser. Les personnes qui apprennent lentement sont souvent celles qui font un apprentissage plus approfondi, c'est quelque chose que nous devons célébrer et encourager !
 
 Ne pas feindre la surprise. N'ayez pas l'air surpris lorsque quelqu'un affirme ne pas savoir quelque chose. La personne se sentira mal et vous n'aurez rien accompli mis à part flatter votre égo.
 
-Pas de "en fait...". Lorsqu'une personne dit quelque chose de presque - mais pas entièrement - correct, et vous répondez, "Ouais… en fait…" puis les corrigez. C'est particulièrement gênant lorsque la correction n'a aucune incidence sur la conversation actuelle. Cela ne signifie pas que Hacker School ne se soucie pas de la recherche de la vérité ou que nous ne nous soucions pas d'être précis. Presque tous les "Ouais… en fait…" sont un moyen de se mettre en valeur, et non de la recherche de la vérité.
+Pas de "en fait…". Lorsqu'une personne dit quelque chose de presque - mais pas entièrement - correct, et vous répondez, "Ouais… en fait…" puis les corrigez. C'est particulièrement gênant lorsque la correction n'a aucune incidence sur la conversation actuelle. Cela ne signifie pas que Hacker School ne se soucie pas de la recherche de la vérité ou que nous ne nous soucions pas d'être précis. Presque tous les "Ouais… en fait…" sont un moyen de se mettre en valeur, et non de la recherche de la vérité.
 
 Pas de conduite accompagnée. Si vous voyez des personnes buter sur un problème, vous ne devez pas immédiatement donner des conseils. Laissez travailler dessus à moins que quelqu'un demande de l'aide. Eviter les interruptions est [un des objectifs fondateurs du canal #haskell-beginners](http://chrisdone.com/posts/teaching).
 
@@ -41,7 +41,7 @@ Haskell est un langage de programmation, défini par une spécification, la plus
 
 ## GHC
 
-[GHC](http://www.haskell.org/ghc/) est le moyen le plus populaire de travailler avec le langage Haskell. Il inclut un compilateur, et un REPL (interpréteur), la gestion de paquets, et plus encore.
+[GHC](http://www.haskell.org/ghc/) est le moyen le plus populaire de travailler avec le langage Haskell. Il inclut un compilateur, un REPL (interpréteur), la gestion de paquets, et plus encore.
 
 ## Cabal
 
@@ -78,20 +78,6 @@ en ligne de commandes. Cela ne marchera que si votre répertoire de travail actu
 contient un _bac à sable_ cabal.
 
 ## Debian
-
-### Dépôt GHC pour debian stable
-
-Si vous utilisez la version stable de Debian, il est plus simple d'utiliser
-http://deb.haskell.org/. Pour cela:
-
-- Ajouter la ligne `deb http://deb.haskell.org/stable/ ./` à `/etc/apt/sources.list`
-
-```bash
-## Ajouter la clé pour supprimer les messages d'avertissement
-$ GET http://deb.haskell.org/deb.haskell.org.gpg-key | apt-key add -
-$ sudo apt-get update
-$ sudo apt-get install ghc-7.8.3 happy alex cabal-install
-```
 
 ### Utiliser le PPA d'Ubuntu
 
@@ -231,12 +217,13 @@ beta mais cela devrait répondre au besoin de quiconque lira ce guide.
 N'oubliez pas de lancer l'installation en tant qu'administrateur puisque le
 programme cherchera à s'installer dans votre répertoire Program Files.
 
-### Guide d'installation détaillé pour Mac OS X
+## Utilisateurs d'autres versions de Linux
 
-Vous n'en avez pas besoin si vous utilisez le `.app` mais si cela ne
-marche pas pour vous, essayez
-[ceci](http://www.davesquared.net/2014/05/platformless-haskell.html)
-avec la version exécutable.
+Téléchargez la dernière version des exécutables pour cabal et ghc
+
+- [GHC](http://www.haskell.org/ghc/).
+
+- [Cabal](https://www.haskell.org/cabal/download.html).
 
 
 # Cours de base
@@ -248,8 +235,8 @@ avec la version exécutable.
 Disponible [en ligne](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 Le cours de [Brent Yorgey](https://byorgey.wordpress.com) est le meilleur que j'ai trouvé jusque là.
-Ce cours vous équipera pour écrire du code basique en Haskell mais aussi vous
-aidera à comprendre les combinateurs d'analyse (parser combinators).
+Ce cours vous donnera les bases pour écrire du code en Haskell mais vous
+aidera aussi à comprendre les combinateurs d'analyse (parser combinators).
 
 La seule raison pour laquelle vous ne devriez pas commencer avec cis194 est si vous n'êtes pas un
 développeur ou inexpérimenté. Si c'est le cas, commencez par le
@@ -259,15 +246,16 @@ développeur ou inexpérimenté. Si c'est le cas, commencez par le
 
 ## Le cours NICTA
 
-> C'est le cours que je recommande après avoir suivi le cis194 de Yorgey
+> C'est le cours que je recommande après avoir suivi le cours cis194 de Yorgey
 
 Disponible sur github [ici](https://github.com/NICTA/course).
 
-Ce cours va renforcer vos connaissances et vous donnera de l'experience en implémentant directement
-les abstractions introduites dans le cis194, c'est un exercice *capital* pour
-être confortable avec les usages habituels des Functors/Applicatives/Monades/etc. en
-Haskell. Suivre les cours cis194 puis NICTA est la recommendation principale
-de mon guide et c'est comme ca que j'enseigne Haskell à tout le monde.
+Ce cours va renforcer vos connaissances et vous fera acquérir de l'experience en
+implémentant directement les abstractions introduites dans le cis194, c'est un
+exercice *capital* pour être à l'aise avec les usages habituels des
+Functors/Applicatives/Monades/etc. en Haskell. Suivre les cours cis194 puis
+NICTA est la recommendation principale de mon guide et c'est comme ca que
+j'enseigne Haskell à tout le monde.
 
 ---
 
@@ -279,7 +267,7 @@ Disponible [en ligne](http://www.scs.stanford.edu/14sp-cs240h/).
 
 C'est la version en ligne du cours de [Bryan O'Sullivan](https://github.com/bos)
 enseigné à Stanford. Si vous ne savez qui il est, jetez un coup d'oeil à la moitié
-des libraries utilisées par les applications Haskell, son nom y figure. A regarder de
+des libraries utilisées par les applications Haskell, son nom y figure. À regarder de
 plus près, si vous avez déjà fait le cours de Yorgey, les modules sur les
 types fantômes, les contrôles des flux d'informations, les extensions de language,
 la concurrence, les pipes, et les lenses.
@@ -309,7 +297,7 @@ Un [article](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.ht
 
 Utile pour comprendre `Functor`, `Applicative`, `Monad`, `Monoid` et autres
 typeclasses en général mais aussi un peu de théorie des catégories spécifique
-à Haskell:
+à Hask:
 
 - La [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
 
@@ -385,7 +373,7 @@ expressions en utilisant le papier sur les
 [transformateurs de monades étape par étape](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf)
 (mentionné dans la section "transformateurs de monades" ci-dessous).
 
-Ecrire plusieurs interpréteurs en changeant juste le Monde pour changer les
+Écrire plusieurs interpréteurs en changeant juste le Monde pour changer les
 sémantiques peut aider à comprendre ce qui se passe.
 
 - [Cette présentation](https://vimeo.com/73648150) de Tony justifie avec brio
@@ -494,19 +482,20 @@ il couvre aussi des bases utiles de Cabal.
 - [Ce que j'aurais aimé savoir lors de mon apprentissage d'Haskell](http://dev.stephendiehl.com/hask/)
   aussi disponible sur github [ici](https://github.com/sdiehl/wiwinwlh).
 
-## recommandations pour Cabal
+## Recommandations pour Cabal
 
-L'enfer avec Cabal était un problème pour les utilisateurs d'Haskell avant l'introduction
-des bacs à sable. Installer en dehors d'un bac à sable va installer dans le package-db
-de l'utilisateur. Ce n'est *pas* une bonne idée mis à part pour quelques librairies
-fondamentales comme Cabal, alex, et happy. Rien d'autre ne devrait être installé dans le
-package-db de l'utilisateur ou le global à moins que vous ne sachiez ce que vous faites.
+L'enfer de Cabal était un problème pour les utilisateurs d'Haskell avant
+l'introduction des bacs à sable. Une installation en dehors d'un bac à sable se
+fera dans le package-db de l'utilisateur. Ce n'est *pas* une bonne idée mis à part
+pour quelques librairies fondamentales comme Cabal, alex, et happy. Rien d'autre ne
+devrait être installé dans le package-db de l'utilisateur ou le global à moins que
+vous ne sachiez ce que vous faites.
 
-Quelques bonnes pratiques pour éviter l'enfer avec cabal sont disponibles
+Quelques bonnes pratiques pour éviter l'enfer de cabal sont disponibles
 [ici](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html).
 
-Pour expérimenter avec un package ou démarrer un projet, commencez par
-`cabal sandbox init` dans un nouveau dossier.
+Pour faire des expérimentation avec un package ou démarrer un projet, commencez
+par `cabal sandbox init` dans un nouveau dossier.
 
 Pour résumer:
 
@@ -686,7 +675,7 @@ Ces documents se limitent aux traversables et foldables.
 
 - [Une introduction aux schémas de récursion](http://patrickthomson.ghost.io/an-introduction-to-recursion-schemes/)
 
-- [N'ayez pas peur du chat](http://fho.f12n.de/posts/2014-05-07-dont-fear-the-cat.html) -
+- [N'ayez pas peur du chat](http://fho.f12n.de/posts/2014-05-07-dont-fear-the-cat.html) (un jeu de mot entre "cat" (chat) et le prefixe cata) -
   Une bonne démonstration sur comment l'hylomorphisme est une composition de cata et ana.
 
 - [Schémas de Récursion](http://comonad.com/reader/2009/recursion-schemes/) - Ce
@@ -750,7 +739,7 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 ## Paramétricité, ad-hoc vs. polymorphisme paramétrique, théorèmes libres
 
-- [Paramétricité](../tony_parametricity.pdf).
+- [Paramétricité](tony_parametricity.pdf).
 
 - [Les sources TeX](https://github.com/tonymorris/parametricity/) du
   talk ci-dessus.

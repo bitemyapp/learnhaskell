@@ -88,13 +88,13 @@ $ sudo apt-get install python-software-properties # v12.04 and below
 $ sudo apt-get install software-properties-common # v12.10 and above
 $ sudo add-apt-repository -y ppa:hvr/ghc
 $ sudo apt-get update
-$ sudo apt-get install cabal-install-1.20 ghc-7.8.3 happy-1.19.4 alex-3.1.3
+$ sudo apt-get install cabal-install-1.20 ghc-7.8.4 happy-1.19.4 alex-3.1.3
 ```
 
 Then add the following to your `$PATH` (bash\_profile, zshrc, bashrc, etc):
 
 ```
-~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin
+~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin
 ```
 
 *Optional:* You could also add `.cabal-sandbox/bin` to your path. Code that you
@@ -102,20 +102,6 @@ are actively developing will be available to you from the command line.  This
 only works when your current working directory is a cabal sandbox.
 
 ## Debian
-
-### GHC Repository for debian stable
-
-If you use Debian stable, it is easier to use http://deb.haskell.org/. To
-use it:
-
-- Add the line `deb http://deb.haskell.org/stable/ ./` to `/etc/apt/sources.list`
-
-```bash
-## Add the key to avoid warnings
-$ GET http://deb.haskell.org/deb.haskell.org.gpg-key | apt-key add -
-$ sudo apt-get update
-$ sudo apt-get install ghc-7.8.3 happy alex cabal-install
-```
 
 ### Using Ubuntu PPA
 
@@ -257,12 +243,6 @@ Download the latest binary distributions for cabal and ghc:
 - [GHC](http://www.haskell.org/ghc/).
 
 - [Cabal](https://www.haskell.org/cabal/download.html).
-
-#### Detailed manual install guide for Mac OS X
-
-You don't need this if you use the .app, but if it doesn't work for you, try
-[this](http://www.davesquared.net/2014/05/platformless-haskell.html) with the
-binary distribution.
 
 # Primary Courses
 
