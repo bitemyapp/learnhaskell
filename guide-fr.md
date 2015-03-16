@@ -714,9 +714,9 @@ Ces documents se limitent aux traversables et foldables.
 
 > *Pas* nécessaire pour écrire du Haskell, juste pour ceux interessés !
 
-Si vous voulez suivre sur les types et la théorie des catégories:
+Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
-- [Le guide de Catster](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) and
+- [Le guide de Catster](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) et
   [Le guide de Catster 2](http://byorgey.wordpress.com/catsters-guide-2/)
 
 - Le [wikibook haskell](http://en.wikibooks.org/wiki/Haskell/Category_theory)
