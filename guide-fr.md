@@ -589,6 +589,46 @@ vous recommande alors *fortement* de jeter un œuil à
 [multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) pour avoir une base
 pour de fichier `travis.yml` pour vos projets Haskell.
 
+# Frontend/JavaScript
+
+Nous avons des problèmes de riches ! Voilà les trois principaux choix que je
+peux recommander:
+
+* [Haste](http://haste-lang.org/) un compilateur de Haskell vers JavaScript
+  - Le [compilateur](https://github.com/valderman/haste-compiler) sur github.
+  - Une excellente
+    [démo](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps)
+    de Haste avec un project exemple.
+
+* [GHCJS](https://github.com/ghcjs/ghcjs)
+  - [Introduction à GHCJS](http://weblog.luite.com/wordpress/?p=14)
+  - [Des interfaces web réactives avec GHCJS and Sodium](http://weblog.luite.com/wordpress/?p=127)
+  - [Écrire des extensions Atom en Haskell en utilisant ghcjs](http://edsko.net/2015/02/14/atom-haskell/)
+
+* [PureScript](http://www.purescript.org/)
+  - Pas strcitement du Haskell comme Haste and GHCJS, mais un choix populaire
+    chez les Haskellers.
+  - Écrit en et inspiré par Haskell.
+  - Essayez purescript dans votre navigateur [ici](http://try.purescript.org/)
+  - Un très bon guide pour [démarrer](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
+
+## Quel langage frontend utiliser ?
+
+GHCJS et Haste sont tous deux du pur Haskell. GHCJS marchera avec de plus
+nombreux paquets Haskell que Haste, mais celan n'impacte pas un grand nombre
+de projets frontend. PureScript n'est pas du tout du Haskell, donc un partage
+direct du code avec votre backend ne fonctionnera pas.
+
+GHCJS a le plus gros coût en terme de poids, avec environ 100ko (Luite
+travaille sur ce point). Haste et purescript sont compétitifs.
+
+Purescript a la meilleure intégration dans la suite d'outils javascript (il
+utilise gulp/grunt/bower), GHCJS et Haste s'intègrent mieux avec les outils
+Haskell (Cabal).
+
+Les trois sont de très bons choix et seont adaptés à la plupart des projets
+frontend.
+
 # Pour mieux comprendre l'évaluation paresseuse, NF, WHNF
 
 - [Notes sur lambda-calcul](https://vec.io/posts/notes-on-lambda-calculus).
