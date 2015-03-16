@@ -25,7 +25,7 @@ Ne décrivez pas les choses comme "faciles" ou "triviales". Vous créerez un mal
 
 Ne pas feindre la surprise. N'ayez pas l'air surpris lorsque quelqu'un affirme ne pas savoir quelque chose. La personne se sentira mal et vous n'aurez rien accompli mis à part flatter votre égo.
 
-Pas de "en fait...". Lorsqu'une personne dit quelque chose de presque - mais pas entièrement - correct, et vous répondez, "Ouais… en fait…" puis les corrigez. C'est particulièrement ennuyeux lorsque la correction n'a aucune incidence sur la conversation actuelle. Cela ne signifie pas que Hacker School ne se souci pas de la recherche de la vérité ou que nous ne nous soucions pas d'être précis. Presque tous les "Ouais… en fait…" sont de la démagogie, et non de la recherche de la vérité.
+Pas de "en fait...". Lorsqu'une personne dit quelque chose de presque - mais pas entièrement - correct, et vous répondez, "Ouais… en fait…" puis les corrigez. C'est particulièrement gênant lorsque la correction n'a aucune incidence sur la conversation actuelle. Cela ne signifie pas que Hacker School ne se soucie pas de la recherche de la vérité ou que nous ne nous soucions pas d'être précis. Presque tous les "Ouais… en fait…" sont un moyen de se mettre en valeur, et non de la recherche de la vérité.
 
 Pas de conduite accompagnée. Si vous voyez des personnes buter sur un problème, vous ne devez pas immédiatement donner des conseils. Laissez travailler dessus à moins que quelqu'un demande de l'aide. Eviter les interruptions est [un des objectifs fondateurs du canal #haskell-beginners](http://chrisdone.com/posts/teaching).
 
@@ -33,7 +33,7 @@ Pas de -ismes. Racisme, sexisme, homophobie, transphobie, et autres biais ne son
 
 ---
 
-Recommandations du [manuel de the Hacker School](https://www.hackerschool.com/manual). Merci de l'avoir partagé Hacker School.
+Recommandations du [manuel de the Hacker School](https://www.hackerschool.com/manual). Merci de l'avoir publié Hacker School.
 
 # Qu'est ce que Haskell, GHC, et Cabal?
 
@@ -750,7 +750,7 @@ Si vous voulez suivre sur les types et la théorie des catégories:
 
 ## Paramétricité, ad-hoc vs. polymorphisme paramétrique, théorèmes libres
 
-- [Paramétricité](tony_parametricity.pdf).
+- [Paramétricité](../tony_parametricity.pdf).
 
 - [Les sources TeX](https://github.com/tonymorris/parametricity/) du
   talk ci-dessus.
