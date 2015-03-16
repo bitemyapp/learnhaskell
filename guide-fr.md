@@ -9,7 +9,7 @@ Ceci est ma façon recommandée d'apprendre Haskell.
 
 Notre canal IRC est `#haskell-beginners` sur Freenode.
 
-Client web IRC [ici](http://webchat.freenode.net/).
+Un client web IRC [ici](http://webchat.freenode.net/).
 
 Les [listes de diffusion](https://wiki.haskell.org/Mailing_lists) Haskell.
 
@@ -17,7 +17,7 @@ Les [listes de diffusion](https://wiki.haskell.org/Mailing_lists) Haskell.
 
 [Voir le post sur l'enseignement de Chris Done](http://chrisdone.com/posts/teaching)
 
-Soyez gentils  et courtois. Etre méchant ou déagréable fait peur aux autres et ne les encourage pas à participer.
+Soyez gentils et courtois. Etre méchant ou désagréable fait peur aux autres et ne les encourage pas à participer.
 
 Une critique pour le plaisir de critiquer ne sers que la personne qui la fait, pas celle qui la reçoit.
 
@@ -41,11 +41,11 @@ Haskell est un langage de programmation, défini par une spécification, la plus
 
 ## GHC
 
-[GHC](http://www.haskell.org/ghc/) est le moyen le plus populaire de travailler avec le langage Haskell. Il inclut compilateur, REPL(interpréteur), gestion de paquets, et plus encore.
+[GHC](http://www.haskell.org/ghc/) est le moyen le plus populaire de travailler avec le langage Haskell. Il inclut un compilateur, et un REPL(interpréteur), la gestion de paquets, et plus encore.
 
 ## Cabal
 
-[Cabal](https://www.haskell.org/cabal/download.html) s'occupe de la gestion du projet et de la résolution des dépendances. C'est lui qui aide à l'installation de projets, typiquement dans leurs propres sandbox.
+[Cabal](https://www.haskell.org/cabal/download.html) s'occupe de la gestion du projet et de la résolution des dépendances. C'est lui qui aide à l'installation de projets, typiquement dans leurs propres bac à sable.
 
 Cabal est l'équivalent de Bundler pour Ruby, de pip pour Python, de NPM pour Node, Maven, etc. GHC gère le packaging lui-même, Cabal choisit quelles versions doivent être installées.
 
@@ -75,7 +75,7 @@ Après, ajoutez ce qui suit à votre `$PATH` (bash\_profile, zshrc, bashrc, etc.
 *Optionnel:* Vous pouvez aussi ajouter `.cabal-sandbox/bin` à votre _path_.
 Ainsi, vous aurez accès au code que vous serez en train de développer directement
 en ligne de commandes. Cela ne marchera que si votre répertoire de travail actuel
-contient une _sandbox_ cabal.
+contient un _bac à sable_ cabal.
 
 ## Debian
 
@@ -87,7 +87,7 @@ http://deb.haskell.org/. Pour cela:
 - Ajouter la ligne `deb http://deb.haskell.org/stable/ ./` à `/etc/apt/sources.list`
 
 ```bash
-## Ajoute la clé pour supprimer les messages d'avertissement
+## Ajouter la clé pour supprimer les messages d'avertissement
 $ GET http://deb.haskell.org/deb.haskell.org.gpg-key | apt-key add -
 $ sudo apt-get update
 $ sudo apt-get install ghc-7.8.3 happy alex cabal-install
@@ -98,7 +98,7 @@ $ sudo apt-get install ghc-7.8.3 happy alex cabal-install
 Si vous n'utilisez pas la version stable, vous pouvez suivre les mêmes étapes
 que pour Ubuntu mais vous aurez besoin d'exécuter un commande supplémentaire.
 Immédiatement après l'exécution de `sudo add-apt-repository -y ppa:hvr/ghc`,
-lancez :
+lancez:
 
 ```bash
 $ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
@@ -107,7 +107,7 @@ $ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
 Pour les autres versions de Debian, il suffit de remplacer les occurences de
 `jessie` par le nom de votre version dans la commandes ci-dessus.
 
-Si, pour une quelconque raison, le fichier
+Si, pour une raison quelconque, le fichier
 `/etc/apt/sources.list.d/hvr-ghc-jessie.list` n'existe pas, alors
 `/etc/apt/sources.list` devrait contenir une ligne de ce genre:
 
@@ -124,7 +124,7 @@ Vous pouvez suivre
 Notes:
 
 - Configurez votre préfixe de manière adéquate lorsque vous configurez ghc.
-- Au lieu de récupérez l'exécutable de `cabal-install`, récupérez les sources
+- Au lieu de récupérer l'exécutable de `cabal-install`, récupérez les sources
 et ensuite lancez le script `bootstrap.sh`.
 
 ## Fedora 21
@@ -139,13 +139,13 @@ $ sudo yum install ghc cabal-install
 ```
 
 Comme indiqué dans
-[petersen/ghc-7.8.4 copr page](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/)
-cette version de ghc ne peut pas être installé en même temps que la version
+[la page copr petersen/ghc-7.8.4](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/)
+cette version de ghc ne peut pas être installée en même temps que la version
 Fedora/EPEL de ghc.
 
 ## Arch Linux
 
-Pour installer Haskell depuis le dépôt officiel d'Arch Linux, lancez :
+Pour installer Haskell depuis le dépôt officiel d'Arch Linux, lancez:
 
 ```bash
 $ sudo pacman -S cabal-install ghc happy alex haddock
@@ -169,9 +169,9 @@ Une fois que cela est fait,
 $ emerge -jav dev-lang/ghc dev-haskell/cabal-install
 ```
 
-Gentoo garde une version "stable" (comprenez : vieille) de `cabal-install`
-dans la hierarchie de Portage. Donc, si vous allez devoir utiliser
-`cabal-install` pour installer la dernière version.  Notez que les backslashes
+Gentoo garde une version "stable" (comprenez: vieille) de `cabal-install`
+dans la hierarchie de Portage. Donc vous allez devoir utiliser
+`cabal-install` pour installer la dernière version. Notez que les backslashes
 sont intentionnels dans ce qui suit.
 
 ```bash
@@ -214,13 +214,13 @@ Félicitations ! Vous avez maintenant une installation de Haskell en état de ma
 
 ### 10.9
 
-Installez l'app [GHC pour Mac OS X](http://ghcformacosx.github.io/) qui inclue
+Installez l'app [GHC pour Mac OS X](http://ghcformacosx.github.io/) qui inclus
 GHC et Cabal. Elle vous indiquera comment ajouter GHC et cabal à votre path
 après que vous ayez déposé le `.app` quelquepart.
 
 ### 10.6-10.8
 
-Faites l'installation décrite ci-dessous avec cette [archive](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2).
+Faites l'installation décrite ci-dessus avec cette [archive](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2).
 
 ## Windows
 
@@ -233,9 +233,9 @@ programme cherchera à s'installer dans votre répertoire Program Files.
 
 ### Guide d'installation détaillé pour Mac OS X
 
-Vous n'avez pas besoin de cela si vous utilisez le `.app` mais si cela ne
+Vous n'en avez pas besoin si vous utilisez le `.app` mais si cela ne
 marche pas pour vous, essayez
-[cela](http://www.davesquared.net/2014/05/platformless-haskell.html)
+[ceci](http://www.davesquared.net/2014/05/platformless-haskell.html)
 avec la version exécutable.
 
 
@@ -248,11 +248,11 @@ avec la version exécutable.
 Disponible [en ligne](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 Le cours de [Brent Yorgey](https://byorgey.wordpress.com) est le meilleur que j'ai trouvé jusque là.
-La valeur de ce cours est qu'il vous équipera pour écrire du code basique en Haskell mais aussi vous
+Ce cours vous équipera pour écrire du code basique en Haskell mais aussi vous
 aidera à comprendre les combinateurs d'analyse (parser combinators).
 
 La seule raison pour laquelle vous ne devriez pas commencer avec cis194 est si vous n'êtes pas un
-developpeur ou un inexprimenté. Si c'est le cas, commencez par le
+developpeur ou inexprimenté. Si c'est le cas, commencez par le
 [livre de Thompson](http://www.haskellcraft.com/craft3e/Home.html) puis enchainez avec cis194.
 
 ---
@@ -263,9 +263,9 @@ developpeur ou un inexprimenté. Si c'est le cas, commencez par le
 
 Disponible sur github [ici](https://github.com/NICTA/course).
 
-Ce cours va renforcer et vous donnera de l'experience en implémentant directement
-les abstractions introduites dans le cis194, c'est un exercice *critique* pour
-être confortable avec les usages habituels des Functors/Applicatives/Monads/etc. en
+Ce cours va renforcer vos conaissances et vous donnera de l'experience en implémentant directement
+les abstractions introduites dans le cis194, c'est un exercice *capital* pour
+être confortable avec les usages habituels des Functors/Applicatives/Monades/etc. en
 Haskell. Suivre les cours cis194 puis NICTA est la recommendation principale
 de mon guide et c'est comme ca que j'enseigne Haskell à tout le monde.
 
@@ -279,8 +279,8 @@ Disponible [en ligne](http://www.scs.stanford.edu/14sp-cs240h/).
 
 C'est la version en ligne du cours de [Bryan O'Sullivan](https://github.com/bos)
 enseigné à Stanford. Si vous ne savez qui il est, jetez un coup d'oeil à la moitié
-des libraries utilisées par les applications  Haskell, son nom est dessus. A souligner
-si vous avez déjà fait le cours de Yorgey les modules sur les
+des libraries utilisées par les applications Haskell, son nom y figure. A regarder de
+plus pret, si vous avez déjà fait le cours de Yorgey, les modules sur les
 types fantomes, les controles des flux d'informations, les extensions de language,
 la concurrence, les pipes, et les lenses.
 
@@ -303,12 +303,12 @@ Un [article](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.ht
 
 ### Pour comprendre list et fold
 
-- [Expliquez vous List et Folds](http://vimeo.com/64673035)
+- [Comprendre List et Folds](http://vimeo.com/64673035)
 
 ### Pour apprendre quelques typeclasses courantes
 
 Utile pour comprendre `Functor`, `Applicative`, `Monad`, `Monoid` et autres
-typeclasses en general mais aussi une peu de théorie des catégories spécifique
+typeclasses en général mais aussi un peu de théorie des catégories spécifique
 à Haskell:
 
 - La [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
@@ -333,8 +333,8 @@ vous n'accrochez pas immédiatement à celle ci.
 
 - Question sur SO : '[Haskell a-t-il une évaluation paresseuse ?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
-- les slides de [Johan Tibell](https://github.com/tibbe) pour une présentation
-intitulé [raisoner avec l'évaluation paresseuse](http://www.slideshare.net/tibbe/reasoning-about-laziness).
+- les slides de [Johan Tibell](https://github.com/tibbe) tirés d'une présentation
+intitulée [raisoner avec l'évaluation paresseuse](http://www.slideshare.net/tibbe/reasoning-about-laziness).
 
 ## Brève démonstration
 
@@ -353,14 +353,14 @@ let a = 1 * a -- not guarded, (*) is strict
 
 # IO
 
-- [Ordre d'évaluation et State tokens](https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens)
+- [Ordre d'évaluation et jetons d'états](https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens)
 
 - [Révéler les mytères de la monade IO](http://blog.ezyang.com/2011/05/unraveling-the-mystery-of-the-io-monad/).
 
 - ["instructions" du premier ordre](http://blog.jle.im/entry/first-class-statements).
 
 - [Haddocks pour System.IO.Unsafe.unsafePerformIO](http://hackage.haskell.org/package/base-4.7.0.1/docs/System-IO-Unsafe.html#v:unsafePerformIO)
-  Lire la documentation et remarquez l'implémentation de `unsafeDupablePerformIO`
+  Lisez la documentation et remarquez l'implémentation de `unsafeDupablePerformIO`
 
 Commentaire sur un fil Reddit de `glaebhoerl` :
 
@@ -369,7 +369,7 @@ Commentaire sur un fil Reddit de `glaebhoerl` :
 > être utilisé linéairement (il ne doit pas être dupliqué ou abandonné), mais
 > son système de types ne peut l'imposer. Clean, un autre langage paresseux
 > à la Haskell, a des types uniques (qui sont des types linéaires et qui sont
-> peut être différent sur d'autre points que j0ignore). Ils exposent le passage
+> peut être différents sur d'autre points que j'ignore). Ils exposent le passage
 > du Monde explicitement et proposent une monade IO (non-abstraite) uniquement
 > pour plus de commodités.
 
@@ -385,18 +385,18 @@ expressions en utilisant le papier sur les
 [transformateurs de monades étape par étape](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf)
 (mentioné dans la section "transformateurs de monades" ci-dessous).
 
-Ecrire plusieurs interpréteurs en changeant juste la monde pour changer les
+Ecrire plusieurs interpréteurs en changeant juste le Monde pour changer les
 sémantiques peut aider à comprendre ce qui se passe.
 
 - [Cette présentation](https://vimeo.com/73648150) de Tony justifie avec brio
 l'utilité des transformateurs de monades. Les slides sont également
 [disponibles](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
 
-De la même manière, réimplémanter `Control.Monad`. Des fonctions comme `mapM`
+De la même manière, ré-implémenter `Control.Monad`. Des fonctions comme `mapM`
 ou `sequence` sont de bonnes opportunités pour s'entrainer à écrire du code
 monadique.
 
-Le cours du NICTA peuvent être utiliser comme un guide lors de ce processus,
+Le cours du NICTA peut être utilisé comme un guide lors de ce processus,
 guide qui vous demandera également d'écrire vos propres Applicatives.
 
 Crédits:
@@ -407,7 +407,7 @@ Crédits:
 - Commentaire de jozefg
 [ici](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
-# Test, specification, test de propriétés (tests par génération)
+# Test, spécifications, tests de propriétés (tests par génération)
 
 - Ce [tutoriel](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md)
 de Kazu Yamamoto est fantastique.
@@ -448,7 +448,7 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 
 - Le [package graphs](https://hackage.haskell.org/package/graphs).
 
-- [une question Stack Overflow sur PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+- [une question SO sur PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
 
 - [un article sur PHOAS](https://www.fpcomplete.com/user/edwardk/phoas).
 
@@ -488,11 +488,11 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 
 ## Une FAQ fantastique
 
-En plus d'être un guide extraordinaire pour pleins de sujets comme les GADT,
-il couvre aussi des some useful basics for Cabal
+En plus d'être un guide extraordinaire sur pleins de sujets comme les GADT,
+il couvre aussi des bases utiles de Cabal.
 
 - [Ce que j'aurais aimé savoir lors de mon apprentissage d'Haskell](http://dev.stephendiehl.com/hask/)
-  aussi sur github [ici](https://github.com/sdiehl/wiwinwlh).
+  aussi disponible sur github [ici](https://github.com/sdiehl/wiwinwlh).
 
 ## recommandations pour Cabal
 
@@ -528,7 +528,7 @@ Pour les utilisateurs (de Yesod généralement) qui ont des problèmes de build,
 - Un bon résumé de ce qu'est Stackage
   [ici](https://www.fpcomplete.com/blog/2014/05/stackage-server).
 
-L'auteur éstime que Stackage est généralement plus utile que `cabal freeze`.
+L'auteur estime que Stackage est généralement plus utile que `cabal freeze`.
 
 # Hoogle et Haddock
 
@@ -537,7 +537,7 @@ L'auteur éstime que Stackage est généralement plus utile que `cabal freeze`.
 Le [moteur de recherche Hoogle](http://www.haskell.org/hoogle/) permet des
 recherches par type.
 
-Par exemple, le résultat d'une recherche pour `(a -> b) -> [a] -> [b]`
+Par exemple, le résultat d'une recherche avec `(a -> b) -> [a] -> [b]`
 sont disponibles [ici](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
 
 Hoogle est également hébergé par fpcomplete
@@ -556,27 +556,27 @@ Vous pouvez regerder [ici](https://gist.github.com/bitemyapp/3e6a015760775e0679b
 
 2. [La v2 de la documentation de Hackage](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html)
 
-Notez que ces billets sont *légèrement obsolète*: par exemple, Hacakge contient
-maintent de jolies nouvelles information contenant la documentation et le statut
+Notez que ces billets sont *légèrement obsolètes*: par exemple, Hackage contient
+maintenant de nouvelles informations concernant la documentation et le statut
 du build.
 
 ## Ce que vous avez vraiment besoin de savoir
 
-Afin qu'Haddock inclus la documentation des paquets référencés, vous devez
-mettre `documentation: True` dons votre `~/.cabal/config`. Si la valeur était
-par défaut (`False`) ou délibérément définie comme `False`, vous devrez
-supprimer tous vos paquets et les réinstaller avant de générer haddocks.
+Afin qu'Haddock inclue la documentation des paquets référencés, vous devez
+mettre `documentation: True` dans votre `~/.cabal/config`. Si vous avez laissé la valeur
+par défaut (`False`) ou l'avez délibérément définie comme `False`, vous devrez
+supprimer tous vos paquets et les réinstaller avant de générer des haddocks.
 
-L'autre chose que vous devez garder en tête est que comme le paramètre `$pkg`
+Une autre chose que vous devez garder en tête est que comme le paramètre `$pkg`
 est interprété *par* cabal, et non par vous, les paramètres `html-location` et
 `content-location` *doivent être entourés de guillemets simples* et entrés dans
-un shell ou contenu dans un shell-script. Ils ne marcheront pas dans un Makefile,
+un shell ou contenus dans un script shell. Ils ne fonctionneront pas dans un Makefile,
 car on pensera alors qu'il s'agit de variables pour Make.
 
 ```bash
 #! /usr/bin/env sh
 
-# Vous puvez écrire ceci ligne par ligen en omettant les backslashes
+# Vous puvez écrire ceci ligne par ligne en omettant les backslashes
 cabal haddock --hoogle --hyperlink-source                       \
  --html-location='http://hackage.haskell.org/package/$pkg/docs' \
  --contents-location='http://hackage.haskell.org/package/$pkg'
@@ -585,9 +585,9 @@ cabal haddock --hoogle --hyperlink-source                       \
 # TravisCI
 
 Si vous êtes comme moi un grand fan de [TravisCI](https://travis-ci.org), je
-vous recommande alors *fortement* de jeter un œuil à
+vous recommande alors *fortement* de jeter un oeil à
 [multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) pour avoir une base
-pour de fichier `travis.yml` pour vos projets Haskell.
+de fichier `travis.yml` pour vos projets Haskell.
 
 # Frontend/JavaScript
 
@@ -598,7 +598,7 @@ peux recommander:
   - Le [compilateur](https://github.com/valderman/haste-compiler) sur github.
   - Une excellente
     [démo](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps)
-    de Haste avec un project exemple.
+    de Haste avec un exemple de projet.
 
 * [GHCJS](https://github.com/ghcjs/ghcjs)
   - [Introduction à GHCJS](http://weblog.luite.com/wordpress/?p=14)
@@ -615,18 +615,18 @@ peux recommander:
 ## Quel langage frontend utiliser ?
 
 GHCJS et Haste sont tous deux du pur Haskell. GHCJS marchera avec de plus
-nombreux paquets Haskell que Haste, mais celan n'impacte pas un grand nombre
+nombreux paquets Haskell que Haste, mais celà n'impacte pas un grand nombre
 de projets frontend. PureScript n'est pas du tout du Haskell, donc un partage
 direct du code avec votre backend ne fonctionnera pas.
 
 GHCJS a le plus gros coût en terme de poids, avec environ 100ko (Luite
-travaille sur ce point). Haste et purescript sont compétitifs.
+travaille sur ce point). Haste et PureScript sont compétitifs.
 
-Purescript a la meilleure intégration dans la suite d'outils javascript (il
+PureScript a la meilleure intégration dans la suite d'outils javascript (il
 utilise gulp/grunt/bower), GHCJS et Haste s'intègrent mieux avec les outils
 Haskell (Cabal).
 
-Les trois sont de très bons choix et seont adaptés à la plupart des projets
+Les trois sont de très bons choix et sont adaptés à la plupart des projets
 frontend.
 
 # Pour mieux comprendre l'évaluation paresseuse, NF, WHNF
@@ -650,7 +650,7 @@ frontend.
   la concurence.
 
 - Un [pas à pas](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application) complet
-  sur les tests et le développement incrémental d'une application  multi-threadée en Haskell.
+  sur les tests et le développement incrémental d'une application multi-threadée en Haskell.
 
 - [Programmation Fonctionelle Réactive](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
 
@@ -662,7 +662,7 @@ la catégorie sous-jascente pour que celà vous soit utile.
 
 Les gens sur-estiment grandement la difficulté d'utiliser les Lens. Quiconque confortable
 avec Functor/Foldable/Traversable (ou juste le premier) peux utiliser les
-lenses et prisms et rendre leur vie plus heureuse.
+lenses et prisms et se simplifier la vie.
 
 Si vous avez déjà fait quelque chose comme: `(fmap . fmap)` vous étiez en train de "lenser" dans votre tête.
 
