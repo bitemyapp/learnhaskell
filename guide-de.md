@@ -2,6 +2,8 @@
 
 Das ist mein empfohlener Weg Haskell zu lernen.
 
+*Beachte: Diese Einführung ist zwar in Deutsch, aber alle Referenzen sind leider noch in Englisch.*
+
 #### Denk an folgendes: *Mach dir nichts draus, wenn du etwas nicht direkt verstehst*. Einfach weiter machen.
 
 ## Community
@@ -18,7 +20,7 @@ Die Haskell [Mailing Listen](https://wiki.haskell.org/Mailing_lists).
 
 Sei freundlich und höflich. Unfreundlichkeit und Unhöflichkeit schreckt Leute ab, sodass sie nicht mehr mitmachen wollen.
 
-Wenn du dir keine Mühe bei der Kritik gibst, hilft sie der Person, die sie erhält auch nicht.
+Wenn du dir keine Mühe bei deiner Kritik gibst, hilft sie der Person, die sie erhält, auch nicht.
 
 Beschreibe Dinge nicht als "einfach" oder "trivial". Leute, die hart für ihren Fortschritt arbeiten müssen, werden sich schlecht fühlen deswegen.
 Langsame Lerner sind meistens die sorgfältigsten, das sollte gewürdigt werden!
@@ -38,7 +40,7 @@ Rassismus, Sexismus, Homophobie, Transphobie und andere Arten von Vorurteilen si
 
 Richtlinien aus [the Hacker School manual](https://www.hackerschool.com/manual). Danke für die Veröffentlichung Hacker School.
 
-# What are Haskell, GHC, und Cabal?
+# Was sind Haskell, GHC, und Cabal?
 
 Haskell ist eine Programmiersprache wie in den Reporten festgelegt, mit dem letzten von 2010.
 Der Report ist [online](http://www.haskell.org/onlinereport/haskell2010/) verfügbar.
@@ -57,7 +59,7 @@ eigene Sandbox.
 Cabal ist äquivalent zu Rubys Bundler, Pythons pip, Nodes NPM, Maven, etc. GHC
 kümmert sich selber um Packaging(??), Cabal wählt die zu installierende Version aus.
 
-# Getting set-up
+# Installation
 
 ## Ubuntu
 
@@ -87,7 +89,7 @@ wenn das aktuelle Verzeichnis eine Cabal Sandbox ist.
 
 ## Debian
 
-### GHC Repository for debian stable
+### GHC Repository für Debian Stable
 
 Wenn du Debian stable nutzt, ist es einfacher http://deb.haskell.org/ zu benutzen. 
 Dafür mache folgendes:
@@ -112,7 +114,7 @@ $ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
 ```
 
 Für alle anderen Debian Versionen, ersetze einfach alle Vorkommen von `jessie` mit dem entsprechenden
-Versions Namen im Kommando oben.
+Versionsnamen im Kommando oben.
 
 Wenn, warum auch immer, die Datei `/etc/apt/sources.list.d/hvr-ghc-jessie.list` nicht existiert,
 dann sollte `/etc/apt/sources.list` eine Liste, wie die folgende beinhalten:
@@ -129,7 +131,7 @@ Du kannst
 
 Anmerkungen:
 
-- Setze deinen Prefix entsprechend, wenn du GHC konfiguierst
+- Setze deinen Präfix entsprechend, wenn du GHC konfiguierst
 - Anstatt die `cabal-install` Binary zu laden, lade die Quellen und führe das Skript
   `bootstrap.sh` aus.
 
@@ -227,7 +229,7 @@ Installiere die Binary Distribution, wie unten beschrieben, mit [diesem tarball]
 ## Windows
 
 - Der [windows minimal GHC installer](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
-  ist in der Lage `network` et al. zu installieren. Technisch gesehen in beta, sollte aber funktionieren für die Zwecke
+  ist in der Lage `network` und andere zu installieren. Technisch gesehen in Beta, sollte aber funktionieren für die Zwecke
   eines jeden der diese Anleitung ließt.
 
 Vergesse nicht den Installer als Administrator auszuführen, da er in deinen Programmen installieren will.
@@ -287,7 +289,7 @@ Verfügbar [online](http://www.scs.stanford.edu/14sp-cs240h/).
 
 Das ist [Bryan O'Sullivan](https://github.com/bos)s online Version des Kurses, den er
 in Stanford unterrichtet. Wenn du nicht weißt, wer er ist, guck dir der Hälfte der Libraries
-and, die jede Haskell Anwendunge am Ende braucht und sein Name wird dabei sein. 
+and, die jede Haskell Anwendung am Ende braucht und sein Name wird dabei sein. 
 Wenn du bereits den Yorgey Kurs gemacht hast, sind die Module über
 phantom types, information flow control, language extensions, concurrency,
 pipes, und lenses von besonderer Bedeutung.
@@ -300,8 +302,8 @@ pipes, und lenses von besonderer Bedeutung.
 [Real World Haskell](http://book.realworldhaskell.org) (Danke bos!) sind
 online verfügbar.
 
-I empfehle RWH als Referenz (dickes Buch). Die Kapitel über Parsing und Monaden
-sind sehr gut, um ein Verständnis dafür zu kriegen, wofür Monaten nützlich sind. Andere Leute sagen,
+I empfehle RWH als Referenz (dickes Buch). Die Kapitel über Parsen und Monaden
+sind sehr gut, um ein Verständnis dafür zu kriegen, wofür Monaden nützlich sind. Andere Leute sagen,
 dass sie es oft verlinkt haben. Vermutlich eine gute Nachbereitung für die praktischen Teile
 nachdem du die essentiellen Sachen in Haskell verstanden hast?
 
@@ -428,7 +430,7 @@ Credits:
 - Dieses [Tutorial](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) von Kazu Yamamoto ist fantastisch.
 
 - [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Gute, einfache
-  Bibliothek um zu lernen, wie streaming IO funktioniert im allgemeinen, die Konzepte
+  Bibliothek um zu lernen, wie streaming IO funktioniert im Allgemeinen, die Konzepte
   sind transferierbar auf Bibliotheken wie Pipes und Conduit
 
 # Parsen in Haskell
@@ -504,7 +506,7 @@ Haskell. Verfübar über [hackage](https://hackage.haskell.org/package/aeson) un
 
 # FAQ und Arbeiten mit Cabal
 
-## Fantastic FAQ
+## Tolles FAQ
 
 Neben vielen nützlichen Informationen zu allen Arten von Konzepten, wie GADTs,
 ist dies auch eine hilfreiche Anleitung für Cabal:
@@ -689,7 +691,7 @@ Siehe hier für weitere Informationen: [Lens Paket auf Hackage](http://hackage.h
 
 Einige der verrückten \*-morphismus wörter, die du gehört hast, sind eigentlich
 über Rekursion. Beachte - Bevor du diese Material betrachtest, solltest du wissen,
-wie man foldr für listen implementiert und mindestens eine andere Datenstruktur,
+wie man foldr für Listen implementiert und mindestens eine andere Datenstruktur,
 wie z.B. einen Baum (folds sind Catamorphismen). Wenn du auch noch weißt, wie man
 ein unfold (Anamorphismus) implementiert, ist das hilfreich.
 
@@ -715,7 +717,7 @@ Diese Material passt gut mit Traversable und Foldable zusammen.
 
 - [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core).
 
-- [SO Frage: Reading GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
+- [Stackoverflow Frage: Reading GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
 
 - [Haskell as fast as C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
 
@@ -793,11 +795,11 @@ Wenn du dich mit Typ- oder Kategorien Theorie beschäftigen willst:
 
 - [Comonads in Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
 
-- [SO Frage: Can a Monad be a Comonad](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
+- [Stackoverflow Frage: Can a Monad be a Comonad](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
 
 ## Yoneda / CoYoneda
 
-- [SO Frage: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+- [Stackoverflow Frage: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
 - Free monads for Less, eine Reihe von drei Artikeln von Edward Kmett
   * [Part 1: Codensity](http://comonad.com/reader/2011/free-monads-for-less/).
