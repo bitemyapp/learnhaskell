@@ -1,7 +1,6 @@
 # Die Einführung
 
-Das ist meine empfohlene Art Haskell zu lernen.
-
+Das ist mein empfohlener Weg Haskell zu lernen.
 
 #### Denk an folgendes: *Mach dir nichts draus, wenn du etwas nicht direkt verstehst*. Einfach weiter machen.
 
@@ -19,18 +18,18 @@ Die Haskell [Mailing Listen](https://wiki.haskell.org/Mailing_lists).
 
 Sei freundlich und höflich. Unfreundlichkeit und Unhöflichkeit schreckt Leute ab, sodass sie nicht mehr mitmachen wollen.
 
-Low-effort criticism is for the benefit of the person delivering it, not the person receiving it.
+Wenn du dir keine Mühe bei der Kritik gibst, hilft sie der Person, die sie erhält auch nicht.
 
-Beschreibe Dinge nicht als "einfach" oder "trivial". Leute, die hard für ihren Fortschritt arbeiten müssen, werden sich schlecht fühlen deswegen.
+Beschreibe Dinge nicht als "einfach" oder "trivial". Leute, die hart für ihren Fortschritt arbeiten müssen, werden sich schlecht fühlen deswegen.
 Langsame Lerner sind meistens die sorgfältigsten, das sollte gewürdigt werden!
 
-Keine geheuchelte Überraschung. Spiele nicht überrascht, wenn jemand sagt, dass er etwas nicht weiß. Du erreichst nur, dass jemand sicht schlecht fühlt und du besonders toll.
+Keine geheuchelte Überraschung. Spiele nicht überrascht, wenn jemand sagt, dass er etwas nicht weiß. Du erreichst nur, dass jemand sicht schlecht fühlt und du dich besonders toll.
 
-Kein "also, eigentlich ...". Wenn jemand etwas sagt, das nahezu richtig ist - aber nicht exakt - und du sagst, "also, eigentlch..." und gibst eine kleine Korrektur. Das ist
+Kein "also, eigentlich ...". Wenn jemand etwas sagt, das nahezu richtig ist - aber nicht exakt - und du sagst, "also, eigentlich..." und gibst eine kleine Korrektur. Das ist
 besonders unnötig, da es keine Nutzen für die eigentlich Konversation hat. Das heißt nicht, dass die Hacker School nicht an Richtigkeit oder Genauigkeit interessiert ist.
 Fast alle "also, eigentlich" sind Selbstdarstellung und keine konstruktiven Verbesserungen.
 
-Kein ständiges reinreden. Wenn du siehst wie jemand ein Problem durcharbeitet, sollest du nicht immer wieder Vorschläge einwerfen. Lass es ihn herausfinden außer er fragt
+Kein ständiges Reinreden. Wenn du siehst wie jemand ein Problem durcharbeitet, sollest du nicht immer wieder Vorschläge einwerfen. Lass es ihn herausfinden außer er fragt
 nach Hilfe. Unterbrechungen zu vermeiden ist [eine der Gründe für #haskell-beginners](http://chrisdone.com/posts/teaching). 
 
 Rassismus, Sexismus, Homophobie, Transphobie und andere Arten von Vorurteilen sind nicht erwünscht und werden nicht toleriert.
@@ -41,19 +40,19 @@ Richtlinien aus [the Hacker School manual](https://www.hackerschool.com/manual).
 
 # What are Haskell, GHC, und Cabal?
 
-Haskell ist eine Programmiersprache wie in den Berichten(?) festgelegt, mit dem letzten von 2010.
-Der Bericht(?) ist [online](http://www.haskell.org/onlinereport/haskell2010/) verfügbar.
+Haskell ist eine Programmiersprache wie in den Reporten festgelegt, mit dem letzten von 2010.
+Der Report ist [online](http://www.haskell.org/onlinereport/haskell2010/) verfügbar.
 
 ## GHC
 
 [GHC](http://www.haskell.org/ghc/) ist der beliebteste und bekannteste Weg mit Haskell zu arbeiten.
-Es beinhaltet einen compiler, REPL (Interpreter), Paket Management, und ein paar weitere Dinge.
+Er beinhaltet einen compiler, REPL (Interpreter), Paket Management, und ein paar weitere Dinge.
 
 ## Cabal
 
 [Cabal](https://www.haskell.org/cabal/download.html) ist für Projekt Management und
 Abhängigkeits Auflösung zuständig. Hiermit installierst du Projekte, normalerweise in ihre
-eigene sandbox.
+eigene Sandbox.
 
 Cabal ist äquivalent zu Rubys Bundler, Pythons pip, Nodes NPM, Maven, etc. GHC
 kümmert sich selber um Packaging(??), Cabal wählt die zu installierende Version aus.
@@ -168,7 +167,7 @@ folgende in `/etc/portage/package.keywords` ein.
     dev-haskell/cabal-install
     dev-lang/ghc
 
-Wenn das getan ist,
+Wenn das getan ist:
 
 ```bash
 $ emerge -jav dev-lang/ghc dev-haskell/cabal-install
@@ -270,7 +269,7 @@ cis194.
 
 > Das ist der Kurs, den ich empfehle nach Yorgeys cis194 Kurs, zu machen
 
-Verfügbar auf github [hier](https://github.com/NICTA/course).
+Verfügbar [hier](https://github.com/NICTA/course) auf github 
 
 Das wird dein Verständnis verbessern und dir Erfahrung mit der Implementierung der
 Abstraktionen geben, die in cis194 eingeführt wurden, das ist die Praxis, die *ausschlaggebend* ist, um
@@ -288,7 +287,7 @@ Verfügbar [online](http://www.scs.stanford.edu/14sp-cs240h/).
 
 Das ist [Bryan O'Sullivan](https://github.com/bos)s online Version des Kurses, den er
 in Stanford unterrichtet. Wenn du nicht weißt, wer er ist, guck dir der Hälfte der Libraries
-and, die jede Haskell Anwendunge am Ende braucht unnd sein Name wird dabei sein. 
+and, die jede Haskell Anwendunge am Ende braucht und sein Name wird dabei sein. 
 Wenn du bereits den Yorgey Kurs gemacht hast, sind die Module über
 phantom types, information flow control, language extensions, concurrency,
 pipes, und lenses von besonderer Bedeutung.
@@ -331,7 +330,7 @@ Typ Klassen im Allgemeinen zu verstehen aber auch etwas Hask-bezogene Kategorien
 
 - Marlows [Buch](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)
   über Parallelisierung und Nebenläufigkeit hat eine der besten Einführungen über
-  laziness und normal form, die ich finden konnte. Nutze anderes Material, wenn es nicth direkt
+  laziness und normal form, die ich finden konnte. Nutze anderes Material, wenn es nicht direkt
   verständlich ist.
 
 - [More points for lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
@@ -391,7 +390,7 @@ Original:
 
 # Monaden und Monaden Transformer (monad transformers)
 
-> Versuche nicht diese zu lernen bis du nicht Type Klassen, Monide, Funktoren
+> Versuche nicht diese zu lernen bis du nicht Typ Klassen, Monoide, Funktoren
 > und Applikativen verstanden hast
 
 Implementiere die Monaden aus der Standard Bibliothek ( List, Maybe, Cont, Error, Reader,
@@ -423,34 +422,6 @@ Credits:
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
 
 - [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (warning, code out of date).
-# Testing, tests, specs, generative/property testing
-
-- This [tutorial](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) by Kazu Yamamoto is fantastic.
-
-- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Good simple
-  library for learning how streaming IO works in general, knowledge
-  transferrable to libraries like Pipes and Conduit
-
-# Parsing in Haskell
-
-- Parser combinator [tutorial](https://github.com/JakeWheat/intro_to_parsing)
-  for Haskell using Parsec
-
-- [Writing your own micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
-
-## Parsing and generating JSON
-
-Aeson is the standard [JSON](https://json.org) parsing solution in
-haskell. Available from [hackage](https://hackage.haskell.org/package/aeson) and
-[github](https://github.com/bos/aeson).
-
-- [Parsing JSON using Aeson](http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/)
-
-- [Aeson and user created types](http://bitemyapp.com/posts/2014-04-11-aeson-and-user-created-types.html)
-
-- [Parsing non-deterministic data with aeson and sum types](http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html)
-
-- [Aeson tutorial](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
 
 # Testen, Tests, Specs, generative/property testing
 
@@ -484,7 +455,7 @@ Haskell. Verfübar über [hackage](https://hackage.haskell.org/package/aeson) un
 # Graph Algorithmen und Datenstrukturen
 
 - Das [fgl Paket](https://hackage.haskell.org/package/fgl) im Besonderen die
-  puren, funktionalen kürzester Pfad [Algos](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html).
+  puren, funktionalen kürzester Pfad [Algorithmen](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html).
 
 - [Inductive graphs and Functional Graph Algorithms](http://web.engr.oregonstate.edu/~erwig/papers/abstracts.html#JFP01).
 
@@ -508,7 +479,8 @@ Haskell. Verfübar über [hackage](https://hackage.haskell.org/package/aeson) un
 
 - [Alejandro Serrass Tutorial](https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md)
 
-- [Meine Konfigurationsdateien](https://github.com/bitemyapp/dotfiles/)
+- [Meine dotfiles](https://github.com/bitemyapp/dotfiles/)
+  *Anmerkung: Dotfiles sind die Konfigurationsdateien für Shell und Editor, wie z.b. `.vimrc`*
 
 - [Chris Done's emacs Konfiuration](https://github.com/chrisdone/chrisdone-emacs)
 
@@ -546,7 +518,7 @@ Cabal Hell war ein Problem für Haskell Nutzer vor der Einführung von
 Sandboxes. Eine Installation außerhalb einer sandbox wird in die user
 package-db installieren. Das ist *keine* gute Idee außer für grundlegende Pakete wie
 Cabal, alex, und happy. Nichts anderes sollte in den user oder der globalen
-package-dbs installiert sein, außer du weißt was du tust
+package-db installiert sein, außer du weißt was du tust
 
 [Hier](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html) gibt es ein
 paar gute Praktiken um Cabal hell zu verhindern.
@@ -636,7 +608,7 @@ die ich empfehlen würde:
 
 * [Haste](http://haste-lang.org/) ein Haskell zu JavaScript Compiler
   - Der [Compiler](https://github.com/valderman/haste-compiler) auf github.
-  - Ein tolle
+  - Eine tolle
     [Demo](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps)
     von Haste mit einem Beispiel Projekt.
 
@@ -700,7 +672,7 @@ du zu grunde liegende Kategorie zu verstehen damit es nützlich ist.
 
 Die Schwierigkeit Lens zu nutzen wird oft stark überschätzt. Jeder der vertraut ist
 mit Functor/Foldable/Traversable (oder nur dem ersten der drei) kann Lenses und
-Prisms bereits nutzen, um sein Leben besser zu machen.
+Prisms bereits nutzen, um sein Leben leichter zu machen.
 
 Wenn du jemals etwas wie `(fmap . fmap)` gemacht hast, hast du bereits in deinem
 Kopf "lensing" gemacht.
