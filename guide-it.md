@@ -133,7 +133,7 @@ Note:
 
 ## Fedora 21
 
-Per installare Haskell 7.8.4 dalla repo non ufficiale (Fedora 22+ lo includera' in quella ufficiale):
+Per installare Haskell 7.8.4 dalla repo non ufficiale (Fedora 22+ lo includerà in quella ufficiale):
 
 ```bash
 $ sudo yum-config-manager --add-repo \
@@ -143,7 +143,7 @@ $ sudo yum install ghc cabal-install
 
 Come affermato in
 [petersen/ghc-7.8.4 copr page](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/)
-questo ghc non puo' essere installato in parallelo con il ghc di Fedora/EPEL.
+questo ghc non può essere installato in parallelo con il ghc di Fedora/EPEL.
 
 ## Arch Linux
 
@@ -157,7 +157,7 @@ $ sudo pacman -S cabal-install ghc happy alex haddock
 
 Su Gentoo, potete installare i singoli componenti della Haskell Platform
 attraverso Portage. Se usate `ACCEPT_KEYWORDS=arch` (invece che
-`ACCEPT_KEYWORDS=~arch`), Portage invece installera' versioni antiche delle varie cose Haskell. Tenendone di conto, se usate `ACCEPT_KEYWORDS=arch`, aggiungete le linee seguenti a `/etc/portage/package.keywords`.
+`ACCEPT_KEYWORDS=~arch`), Portage invece installerà versioni antiche delle varie cose Haskell. Tenendone di conto, se usate `ACCEPT_KEYWORDS=arch`, aggiungete le linee seguenti a `/etc/portage/package.keywords`.
 
     dev-haskell/cabal-install
     dev-lang/ghc
@@ -168,21 +168,21 @@ Una volta fatto quello,
 $ emerge -jav dev-lang/ghc dev-haskell/cabal-install
 ```
 
-Gentoo tiene una versione "stabile" (leggi: vecchia) di `cabal-install` nell'albero di Portage, quindi vorrete usare `cabal-install` per installare le versioni piu' recenti. I backslash sono intenzionali.
+Gentoo tiene una versione "stabile" (leggi: vecchia) di `cabal-install` nell'albero di Portage, quindi vorrete usare `cabal-install` per installare le versioni più recenti. I backslash sono intenzionali.
 
 ```bash
 $ \cabal update                # I backslash
 $ \cabal install cabal-install # sono intentionali
 ```
 
-Adesso avete installato cabal a livello globale con portage, e localmente nella vostra directory home con `cabal-install`. Il prossimo passo e' assicurarsi che quando lanciate `cabal` in un terminale, la vostra shell lanci la versione piu' recente che e' nella directory home. Aggiugete le linee seguenti nel file di configurazione della vostra shell:
+Adesso avete installato cabal a livello globale con portage, e localmente nella vostra directory home con `cabal-install`. Il prossimo passo è assicurarsi che quando lanciate `cabal` in un terminale, la vostra shell lanci la versione più recente che è nella directory home. Aggiugete le linee seguenti nel file di configurazione della vostra shell:
 
 ```bash
 PATH=$PATH:$HOME/.cabal/bin
 alias cabal="$HOME/.cabal/bin/cabal"
 ```
 
-Se non sapete quale shell avete, e' molto probabile che la vostra shell sia Bash. Se usate Bash, il file che dovete editare e' `~/.bashrc`. se usate Z-shell, il file e' `~/.zshrc`. Potete lanciare il seguete comando per sapere qual'e' la vostra shell.
+Se non sapete quale shell avete, è molto probabile che la vostra shell sia Bash. Se usate Bash, il file che dovete editare è `~/.bashrc`. se usate Z-shell, il file è `~/.zshrc`. Potete lanciare il seguete comando per sapere qual'è la vostra shell.
 
 ```bash
 echo $SHELL | xargs basename
@@ -203,7 +203,7 @@ Congratulazioni! Adesso avete una installazione di Haskell funzionante!
 
 ### 10.9
 
-Installate [GHC per Mac OS X](http://ghcformacosx.github.io/), che include GHC e Cabal. Vi dara' istruzioni su come installare GHC e Cabal nella vostra path una volta che avete copiato la .app da qualche parte sul disco fisso.
+Installate [GHC per Mac OS X](http://ghcformacosx.github.io/), che include GHC e Cabal. Vi darà istruzioni su come installare GHC e Cabal nella vostra path una volta che avete copiato la .app da qualche parte sul disco fisso.
 
 ### 10.6-10.8
 
@@ -212,7 +212,7 @@ Eseguite l'installazione dei binari come scritto qui sotto usando [questa tarbal
 ## Windows
 
 - L' [installer minimo per windows di GHC](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
-  e' in grado di compilare `network` e altro. E' tecnicamente in beta ma dovrebbe funzionare per gli scopi di chiuque legga questa guida.
+  è in grado di compilare `network` e altro. È tecnicamente in beta ma dovrebbe funzionare per gli scopi di chiunque legga questa guida.
 
 Non dimenticatevi di lanciare l'installer come amministratore, dato che richiede l'accesso alla directory di sistema 'Programmi'.
 
@@ -228,35 +228,35 @@ Scaricate l'ultima distribuzione binaria di cabal e ghc:
 
 ## Il corso cis194 di Yorgey
 
-> *Seguite questo per primo*, questa e' la via che raccomando per il primo contatto con
+> *Seguite questo per primo*, questa è la via che raccomando per il primo contatto con
 > Haskell.
 
 Disponibile [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
-Il corso di [Brent Yorgey](https://byorgey.wordpress.com) e' il migliore che ho trovato finora.  Questo corso ha valore non solo perche' vi rende in grado di scrivere Haskell basilare ma anche perche' vi aiutera' a comprendere i parser combinators.
+Il corso di [Brent Yorgey](https://byorgey.wordpress.com) è il migliore che ho trovato finora.  Questo corso ha valore non solo perché vi rende in grado di scrivere Haskell basilare ma anche perché vi aiuterà a comprendere i parser combinators.
 
-L'unica ragione per cui non dovreste cominciare con cis194 e' se non siete programmatori o se non avete molta esperienza. In questo caso, cominciate con il 
+L'unica ragione per cui non dovreste cominciare con cis194 è se non siete programmatori o se non avete molta esperienza. In questo caso, cominciate con il 
 [libro di Thompson](http://www.haskellcraft.com/craft3e/Home.html) e poi passate a cis194.
 
 ---
 
 ## Il corso NICTA
 
-> Questo e' il corso che raccomando dopo cis194 di Yorgey's
+> Questo è il corso che raccomando dopo cis194 di Yorgey's
 
 Disponibile su github [qui](https://github.com/NICTA/course).
 
-Questo vi dara' esperienza nell'implementare direttamente le astrazioni introdotte in cis194, questi esercizi sono *critici* per sviluppare confidenza con gli usi comuni di Functor/Applicative/Monad/etc. in Haskell. La raccomandazione chiave della mia guida e' seguire cis194 e poi NICTA, e questo e' il percorso che seguo per insegnare Haskell a tutti.
+Questo vi darà esperienza nell'implementare direttamente le astrazioni introdotte in cis194, questi esercizi sono *critici* per sviluppare confidenza con gli usi comuni di Functor/Applicative/Monad/etc. in Haskell. La raccomandazione chiave della mia guida é seguire cis194 e poi NICTA, e questo é il percorso che seguo per insegnare Haskell a tutti.
 
 ---
 
 ## Corso Supplementare cs240h
 
-> Fornisce piu' materiale sugli argomenti intermedi
+> Fornisce più materiale sugli argomenti intermedi
 
 Disponibile [online](http://www.scs.stanford.edu/14sp-cs240h/).
 
-Questo e' il corso online di [Bryan O'Sullivan](https://github.com/bos) tratto dal corso che insegna a Stanford. Se non sapete chi e' date un'occhiata alla meta' delle librerie che qualunque progetto Haskell finisce per richiedere e ci troverete il suo nome. Sa avete gia' seguito il corso di Yorgey sono particolarmente rilevanti i moduli sui phantom types, il flusso di controllo delle informazioni, le estensioni del linguaggio, concorrenza, pipes e lenses.
+Questo é il corso online di [Bryan O'Sullivan](https://github.com/bos) tratto dal corso che insegna a Stanford. Se non sapete chi é date un'occhiata alla metà delle librerie che qualunque progetto Haskell finisce per richiedere e ci troverete il suo nome. Sa avete già seguito il corso di Yorgey sono particolarmente rilevanti i moduli sui phantom types, il flusso di controllo delle informazioni, le estensioni del linguaggio, concorrenza, pipes e lenses.
 
 ---
 
@@ -265,8 +265,8 @@ Questo e' il corso online di [Bryan O'Sullivan](https://github.com/bos) tratto d
 [Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) e
 [Real World Haskell](http://book.realworldhaskell.org) (Grazie bos!) sono disponibili online.
 
-Raccomando RWH come referenza (e' un libro spesso). I capitoli sul parsing e sulle monadi
-sono ottimi per ottenere un'intuizione sull'utilita' delle monadi. Altri hanno detto che gli e' piaciuto molto. Forse un buon seguito per imparare gli idiomi in modo pratico, una volta che avete imparato le cose essenziali di Haskell? 
+Raccomando RWH come referenza (é un libro spesso). I capitoli sul parsing e sulle monadi
+sono ottimi per ottenere un'intuizione sull'utilità delle monadi. Altri hanno detto che gli é piaciuto molto. Forse un buon seguito per imparare gli idiomi in modo pratico, una volta che avete imparato le cose essenziali di Haskell? 
 
 ### Cosa fa quel syntactic sugar `<-` / `do` / sulle list comprehension?
 
@@ -282,18 +282,18 @@ Utile per capire `Functor`, `Applicative`, `Monad`, `Monoid` e altre Typeclass i
 
 - LA [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
 
-### Capire i messaggi di errore piu' comuni di Haskell
+### Capire i messaggi di errore più comuni di Haskell
 
-- [Capire i messaggi di errore piu' comuni](http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf)
+- [Capire i messaggi di errore più comuni](http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf)
 
 ---
 
 # Laziness, strictness, guarded recursion
 
 - Il libro di Marlow [book](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)
-  sul parallelismo e la concorrenza ha una delle migliori introduzioni a alla laziness e alla normal form che abbia trovato. Usate altro materiale in piu' se non acquisite i concetti subito.
+  sul parallelismo e la concorrenza ha una delle migliori introduzioni a alla laziness e alla normal form che abbia trovato. Usate altro materiale in più se non acquisite i concetti subito.
 
-- [Piu' punti per la lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
+- [Più punti per la lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
 
 - [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
 
@@ -305,14 +305,14 @@ Utile per capire `Functor`, `Applicative`, `Monad`, `Monoid` e altre Typeclass i
 ## Breve dimostrazione
 
 ```haskell
-let a = 1 : a -- guarded recursion, (:) e' lazy su di esso si puo' usare pattern matching.
+let a = 1 : a -- guarded recursion, (:) é lazy su di esso si può usare pattern matching.
 let (v : _) = a
 > v
 1
 > head a -- head a == v
 1
 
-let a = 1 * a -- non guarded, (*) e' strict
+let a = 1 * a -- non guarded, (*) é strict
 > a
 *** Exception: <<loop>>
 ```
@@ -332,7 +332,7 @@ Commento da un thread di Reddit, di `glaebhoerl`
 
 > Nota interessante: GHC deve nascondere la rappresentazione dello state token 
 > dietro un tipo IO astratto perche lo state token deve sempre essere usato linearmente (non
-> duplicated o droppato), ma il type system non puo' garantire che accada. Clean, un altro
+> duplicated o droppato), ma il type system non può garantire che accada. Clean, un altro
 > linguaggio lazy come Haskell, ha uniqueness types (sono come i linear types
 > e possibilmente diversi in modi di cui non sono a conoscenza), e espongono 
 > World-passing direttamente e forniscono una monade IO (non astratta) solo per
@@ -340,21 +340,21 @@ Commento da un thread di Reddit, di `glaebhoerl`
 
 # Monadi and monad transformers
 
-> Non cominciate a imparali finche' non capite typeclasse, Monoid, Functor e
+> Non cominciate a imparali finché non capite typeclasse, Monoid, Functor e
 > Applicative!
 
 Implementate per conto vostro le monadi nella libreria standard ( List, Maybe, Cont, Error, Reader,
 Writer, State ) per capirli meglio. Poi potreste scrivere un interprete monadico per un small expression language usando la paper
 [Monad Transformer Passo dopo Passo](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (menzionata in 'monad transformers' qui sotto).
 
-Scrivere molti interpreti cambiando solo la monade per cambiare la semantica puo' aiutarvi a capire in che cosa consiste.
+Scrivere molti interpreti cambiando solo la monade per cambiare la semantica può aiutarvi a capire in che cosa consiste.
 
-- [Questa resentazioe](https://vimeo.com/73648150) di Tony da' un eccellente motivazione per i monad
+- [Questa resentazioe](https://vimeo.com/73648150) di Tony dà un eccellente motivazione per i monad
   transformers, [le slide](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
 
-Poi reimplementate `Control.Monad`. Funzioni come `mapM` o `sequence` sono buone opportunita' per fare esercizio nello scrivere codice monadico generico.
+Poi reimplementate `Control.Monad`. Funzioni come `mapM` o `sequence` sono buone opportunità per fare esercizio nello scrivere codice monadico generico.
 
-Il corso NICTA puo' essere usato come una guida a questo processo, che include anche scrivere il vostro Applicative.
+Il corso NICTA può essere usato come una guida a questo processo, che include anche scrivere il vostro Applicative.
 
 Referenza:
 
@@ -370,7 +370,7 @@ Referenza:
 
 # Testare, test, specifiche, testare generative/property
 
-- Questo [tutorial](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) di Kazu Yamamoto e' fantastico.
+- Questo [tutorial](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) di Kazu Yamamoto è fantastico.
 
 - [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Good simple
   library for learning how streaming IO works in general, knowledge
