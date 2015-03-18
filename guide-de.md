@@ -32,7 +32,7 @@ besonders unnötig, da es keine Nutzen für die eigentlich Konversation hat. Das
 Fast alle "also, eigentlich" sind Selbstdarstellung und keine konstruktiven Verbesserungen.
 
 Kein ständiges Reinreden. Wenn du siehst wie jemand ein Problem durcharbeitet, sollest du nicht immer wieder Vorschläge einwerfen. Lass es ihn herausfinden außer er fragt
-nach Hilfe. Unterbrechungen zu vermeiden ist [eine der Gründe für #haskell-beginners](http://chrisdone.com/posts/teaching). 
+nach Hilfe. Unterbrechungen zu vermeiden ist [eine der Gründe für #haskell-beginners](http://chrisdone.com/posts/teaching).
 
 Rassismus, Sexismus, Homophobie, Transphobie und andere Arten von Vorurteilen sind nicht erwünscht und werden nicht toleriert.
 
@@ -91,7 +91,7 @@ wenn das aktuelle Verzeichnis eine Cabal Sandbox ist.
 
 ### GHC Repository für Debian Stable
 
-Wenn du Debian stable nutzt, ist es einfacher http://deb.haskell.org/ zu benutzen. 
+Wenn du Debian stable nutzt, ist es einfacher http://deb.haskell.org/ zu benutzen.
 Dafür mache folgendes:
 
 - Füge die Zeile `deb http://deb.haskell.org/stable/ ./` zu `/etc/apt/sources.list` hinzu
@@ -106,7 +106,7 @@ $ sudo apt-get install ghc-7.8.3 happy alex cabal-install
 ### Ubuntu PPA nutzen
 
 Wenn du nicht stable benutzt, kannst du dieselben Schritte wie unter Ubuntu ausführen, aber du musst
-ein weiteres Kommando ausführen. Direkt nachdem 
+ein weiteres Kommando ausführen. Direkt nachdem
 `sudo add-apt-repository -y ppa:hvr/ghc` ausgeführt wurde, starte:
 
 ```bash
@@ -142,7 +142,7 @@ zu installieren:
 
 ```bash
 $ sudo yum-config-manager --add-repo \
-> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
+> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
 $ sudo yum install ghc cabal-install
 ```
 
@@ -194,7 +194,7 @@ PATH=$PATH:$HOME/.cabal/bin
 alias cabal="$HOME/.cabal/bin/cabal"
 ```
 
-Wenn du nicht weißt, was für eine Shell du nutzt, ist es mit hoher Wahrscheinlichkeit die Bash. 
+Wenn du nicht weißt, was für eine Shell du nutzt, ist es mit hoher Wahrscheinlichkeit die Bash.
 Wenn du die Bash nutzt, musst du die Datei `~/.bashrc` editieren. Wenn du die Z-shell nutzt, ist
 die Datei `~/.zshrc`. Du kannst folgendes Kommando ausführen, um herauszufinden, was für eine Shell
 du benutzt:
@@ -219,7 +219,7 @@ Glückwunsch! Du hast jetzt eine funktionierende Haskell installation!
 ### 10.9
 
 Installiere die [GHC for Mac OS X](http://ghcformacosx.github.io/) App, welche
-GHC und Cabal beinhaltet. Sie liefert Anweisungen, wie du GHC und Cabal zu deinem 
+GHC und Cabal beinhaltet. Sie liefert Anweisungen, wie du GHC und Cabal zu deinem
 path hinzufügen kansnt, nachdem du die `.app` irgendwo ableget hast.
 
 ### 10.6-10.8
@@ -271,13 +271,25 @@ cis194.
 
 > Das ist der Kurs, den ich empfehle nach Yorgeys cis194 Kurs, zu machen
 
-Verfügbar [hier](https://github.com/NICTA/course) auf github 
+Verfügbar [hier](https://github.com/NICTA/course) auf github
 
 Das wird dein Verständnis verbessern und dir Erfahrung mit der Implementierung der
 Abstraktionen geben, die in cis194 eingeführt wurden, das ist die Praxis, die *ausschlaggebend* ist, um
 mit der üblichen Nutzung von Functor/Applicative/Monad/etc. in Haskell vertraut zu verwerden.
 Erst cis194 und dann den NICTA Kurs zu machen, ist die wesentliche Empfehlung meiner Anleitung
 und ist der Weg, wie ich anderen Leuten Haskell beibringe.
+
+---
+
+## Deutsche Ressourcen
+
+*Anmerkung: Dieser Abschnitt wurde bei der Übersetzung eingefügt, um hilfreiche deutsche Inhalte zu verlinken*
+
+* [funktionale-programmierung.de](http://funktionale-programmierung.de/tags-archive.html#Haskell) ist ein Blog über Funktionale Programmierung
+  im Allgemeinen, welcher auch Posts über Haskell beinhaltet.
+
+* [Skript](http://verify.rwth-aachen.de/fp14/FP14.pdf) der Vorlesung Funktionale Programmierung an der RWTH Aachen. Beinhaltet eine kurze Einführung
+  in Haskell, sowie Kapitel über den Lambda Kalkül und Typüberprüfung und -inferenz.
 
 ---
 
@@ -289,7 +301,7 @@ Verfügbar [online](http://www.scs.stanford.edu/14sp-cs240h/).
 
 Das ist [Bryan O'Sullivan](https://github.com/bos)s online Version des Kurses, den er
 in Stanford unterrichtet. Wenn du nicht weißt, wer er ist, guck dir der Hälfte der Libraries
-and, die jede Haskell Anwendung am Ende braucht und sein Name wird dabei sein. 
+and, die jede Haskell Anwendung am Ende braucht und sein Name wird dabei sein.
 Wenn du bereits den Yorgey Kurs gemacht hast, sind die Module über
 phantom types, information flow control, language extensions, concurrency,
 pipes, und lenses von besonderer Bedeutung.
@@ -341,7 +353,7 @@ Typ Klassen im Allgemeinen zu verstehen aber auch etwas Hask-bezogene Kategorien
 
 - SO Frage '[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
-- [Johan Tibell](https://github.com/tibbe)s Folien von seinem Vortrag 
+- [Johan Tibell](https://github.com/tibbe)s Folien von seinem Vortrag
   [reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness).
 
 ## Kurze Demonstration
