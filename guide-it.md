@@ -372,69 +372,66 @@ Referenza:
 
 - Questo [tutorial](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) di Kazu Yamamoto è fantastico.
 
-- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Good simple
-  library for learning how streaming IO works in general, knowledge
-  transferrable to libraries like Pipes and Conduit
+- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Un'ottima libreria semplice per imparae come lo streaming IO funziona in generale, la conoscenza e' trasferibile a librerie come Pipes e Conduit
 
 # Parsing in Haskell
 
-- Parser combinator [tutorial](https://github.com/JakeWheat/intro_to_parsing)
-  for Haskell using Parsec
+- [Tutorial](https://github.com/JakeWheat/intro_to_parsing) sui Parser combinator
+  per Haskell, usando Parsec
 
-- [Writing your own micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
+- [Scrivi il tuo micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
 
-## Parsing and generating JSON
+## Parsare e generare JSON
 
-Aeson is the standard [JSON](https://json.org) parsing solution in
-haskell. Available from [hackage](https://hackage.haskell.org/package/aeson) and
+Aeson e' la soluzione di parsing [JSON](https://json.org) standard in
+haskell. Disponibile su [hackage](https://hackage.haskell.org/package/aeson) e
 [github](https://github.com/bos/aeson).
 
-- [Parsing JSON using Aeson](http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/)
+- [Parsing JSON usando Aeson](http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/)
 
-- [Aeson and user created types](http://bitemyapp.com/posts/2014-04-11-aeson-and-user-created-types.html)
+- [Aeson e user created types](http://bitemyapp.com/posts/2014-04-11-aeson-and-user-created-types.html)
 
-- [Parsing non-deterministic data with aeson and sum types](http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html)
+- [Parsare dati non deterministici con aeson e sum types](http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html)
 
-- [Aeson tutorial](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
+- [Tutorial di Aeson](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
 
-# Graph algorithms and data structures
+# Algoritmi per grafi e strutture dati
 
-- The [fgl package](https://hackage.haskell.org/package/fgl) particularly the
-  purely functional shortest path [algos](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html).
+- Il [pacchetto fgl](https://hackage.haskell.org/package/fgl) gli [algoritmi](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html) puramente funzionali per trovare la strada piu' breve.
 
-- [Inductive graphs and Functional Graph Algorithms](http://web.engr.oregonstate.edu/~erwig/papers/abstracts.html#JFP01).
+- [Grafi induttivi e Algoritmi funzionali per grafi](http://web.engr.oregonstate.edu/~erwig/papers/abstracts.html#JFP01).
 
-- [FGL/Haskell - A Functional Graph Library](http://web.engr.oregonstate.edu/~erwig/fgl/haskell/old/fgl0103.pdf).
+- [FGL/Haskell - Una Libreria Funzionale per Grafi](http://web.engr.oregonstate.edu/~erwig/fgl/haskell/old/fgl0103.pdf).
 
-- [Data.Graph source from Containers package](http://hackage.haskell.org/package/containers-0.5.5.1/docs/Data-Graph.html).
+- [Il codice sorgente di Data.Graph nel pacchetto Containers](http://hackage.haskell.org/package/containers-0.5.5.1/docs/Data-Graph.html).
 
-- The [graphs package](https://hackage.haskell.org/package/graphs).
+- Il [pacchetto graphs](https://hackage.haskell.org/package/graphs).
 
-- [SO question about PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+- [Domande su SO riguardo a PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
 
-- [PHOAS for free](https://www.fpcomplete.com/user/edwardk/phoas).
+- [PHOAS gratis](https://www.fpcomplete.com/user/edwardk/phoas).
 
 - [Tying the Knot](http://www.haskell.org/haskellwiki/Tying_the_Knot).
 
 - [Hackage: dag](https://hackage.haskell.org/package/dag).
 
-# Development Environment
+# Ambienti di sviluppo
 
 ## Emacs
 
-- [Alejandro Serras's tutorial](https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md)
+- [Il tutorial di Alejandro Serras](https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md)
 
-- [My dotfiles](https://github.com/bitemyapp/dotfiles/)
+- [I miei dotfiles](https://github.com/bitemyapp/dotfiles/)
 
-- [Chris Done's emacs config](https://github.com/chrisdone/chrisdone-emacs)
+- [Il config emacs di Chris Done](https://github.com/chrisdone/chrisdone-emacs)
 
 ## Vim
 
-- [Vim page on haskellwiki](http://www.haskell.org/haskellwiki/Vim)
+- [Pagina di Vim su haskellwiki](http://www.haskell.org/haskellwiki/Vim)
 
 - [Haskell-vim-now](https://github.com/begriffs/haskell-vim-now)
 
-- [A vim+haskell workflow](http://www.stephendiehl.com/posts/vim_haskell.html)
+- [Un workflow vim+haskell](http://www.stephendiehl.com/posts/vim_haskell.html)
 
 - [GHC-Mod](https://github.com/kazu-yamamoto/ghc-mod)
 
@@ -446,78 +443,70 @@ haskell. Available from [hackage](https://hackage.haskell.org/package/aeson) and
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
 
-# FAQ and working with Cabal
+# FAQ e lavorare con Cabal
 
-## Fantastic FAQ
+## Una FAQ fantastica
 
-In addition to being an amazing guide for all kinds of things such as GADTs,
-this also covers some useful basics for Cabal
+Oltre ad essere una guida eccezionale per vari tipi di cose, come i GADT,
+questa guida copre anche alcune utili basi di Cabal
 
-- [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
-  also on github [here](https://github.com/sdiehl/wiwinwlh).
+- [Quello che vorrei aver saputo mentre imparavo Haskell](http://dev.stephendiehl.com/hask/)
+  anche su github [qui](https://github.com/sdiehl/wiwinwlh).
 
-## Cabal guidelines
+## Linee guida di Cabal
 
-Cabal Hell was a problem for Haskell users before the introduction of
-sandboxes. Installing outside of a sandbox will install into your user
-package-db. This is *not* a good idea except for foundational packages like
-Cabal, alex, and happy. Nothing else should be installed in the user or global
-package-dbs unless you know what you're doing.
+Prima dell'introduzione dei sandbox, gli utenti Haskell incappavano nel problema del'Inferno Cabal. Se installate fuori da un sandbox installera' il pacchetto nel vostro user package-db. Questa *non* e' in genere una buona idea, con l'eccezione dei pacchetti di base come
+Cabal, alex e happy. Nient'altro dovrebbe essere installato nei package-db dell'utente o globali, a meno che non sappiate cosa state facendo.
 
-Some best practices for avoiding cabal hell are available
-[here](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html).
+Alcune raccomandazioni per non cadere nell'inferno cabal sono disponibili
+[qui](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html).
 
-To experiment with a package or start a project, begin by doing
-`cabal sandbox init` in a new directory.
+Per provare un pacchetto o cominciare un progetto, cominciate lanciando
+`cabal sandbox init` in una nuova directory.
 
-Put briefly:
+In poche parole:
 
-- Always use sandboxes for installing new packages, building new or existing
-  projects, or starting experiments
+- Quando installate nuovi pacchetti, costruite progetti nuovi o pre-esistenti, o cominciate esperimenti usate sempre i sandbox. 
 
-- Use `cabal repl` to start a project-scoped ghci instance
+- Usate `cabal repl` per cominciare una istanza di ghci project-scoped
 
-The sandbox-based approach I suggest should avoid package-dependency problems,
-but it's incompatible with the way the Haskell Platform provides pre-built
-packages. If you're still learning Haskell and don't understand how ghc-pkg and
-Cabal work, *avoid platform* and instead use the install instructions earlier in
-the guide.
+Questo approccio basato suisandbox che suggerisco dovrebbe scamparvi problemi relativi alle dipendenze dei paccheti,
+ma e' incompatibile con il modo in cui la Haskell Platform fornisce i pacchetti binari. Se state imparando Haskell e non capite come funzionano ghc-pkg e
+Cabal, *evitate platform*, usate invece le istruzioni all'inizio della guida.
 
 ## Stackage
 
-For any users (usually Yesod users) that have build problems, consider Stackage.
+Per tutti gli utenti (di solito utenti di Yesod) che hanno problemi di build, considerate Stackage.
 
-- A good summary of Stackage is
-  [here](https://www.fpcomplete.com/blog/2014/05/stackage-server).
+- Un buon riassunto di Stackage e'
+  [qui](https://www.fpcomplete.com/blog/2014/05/stackage-server).
 
-In the author's opinion, Stackage is usually more useful than `cabal freeze`.
+Nell'opinione dell'autore, Stackage 'e' di solito piu' utile di `cabal freeze`.
 
-# Hoogle and Haddock
+# Hoogle e Haddock
 
-## Search code by type signature
+## Cerca la firma dei tipi nel codice
 
-The [Hoogle search engine](http://www.haskell.org/hoogle/) can search by type.
+Il [motore di ricerca Hoogle](http://www.haskell.org/hoogle/) puo' cercare per tipo.
 
-For example, look at the search results for `(a -> b) -> [a] -> [b]`
-[here](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
+Per esempio, guardate i risultati della ricerca per `(a -> b) -> [a] -> [b]`
+[qui](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
 
-Also hosted by fpcomplete [here](https://www.fpcomplete.com/hoogle).
+Lo trovate anche su fpcomplete [qui](https://www.fpcomplete.com/hoogle).
 
-Also [Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html) (which has all of
-hackage enabled for search by default).
+Anche [Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html) (che cerca su tutto Hackage per default).
 
-## Setting up your own local instance of Hoogle
+## Setup della tua istanza locale di Hoogle
 
-Take a look [here](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
+Guardate [qui](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
 
 ## Haddock
 
-1. [Fix your hackage documentation](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html)
+1. [Aggiusta la tua documentazione hackage](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html)
 
-2. [Hackage documentation v2](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html)
+2. [Documentazione Hackage v2](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html)
 
-Note that these posts are *slightly out of date*: for example, now Hackage sports
-shiny new info with documentation info and build status.
+Fate attenzione, questi post sono *lievemente obsoleti*: per esempio, adesso Hackage vanta nuovi modi di mostrare informazioni, di documentazione e sullo stato del build.
 
 ## What you really need to know
 
