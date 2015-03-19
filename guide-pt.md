@@ -472,4 +472,95 @@ Disponível no [hackage](https://hackage.haskell.org/package/aeson) e
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
 
+# FAQ e trabalhando com o Cabal
 
+## FAQ fantástico
+
+Além de ser um ótimo guia para todos tipo de coisa como GADTs,
+isto também cobre alguns pontos básicos do Cabal.
+
+- [O que eu gostaria de ter sabido quando estava aprendendo Haskell](http://dev.stephendiehl.com/hask/)
+  também no github [aqui](https://github.com/sdiehl/wiwinwlh).
+
+## Diretrizes do Cabal
+
+O *Cabal Hell* (Inferno do Cabal) era um problema para usuário de Haskell
+antes da introdução das *sandboxes*. Instalar fora de uma *sandbox* vai instalar
+no package-db de seu usuário. Isso *não* é uma boa ideia, exceto para pacotes 
+fundamentais como Cabal, alex e happy. Nada além diss deve ser instalado nos
+package-dbs do usuário ou global a menos que você saiba o que está fazendo.
+
+Algumas melhores práticas para evitar o cabal hell estão disponíveis 
+[aqui](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html).
+
+Para experimentar um pacote ou iniciar um projeto, comece fazendo
+`cabal sandbox init` num novo diretório.
+
+Colocando brevemente:
+
+- Sempre use *sandboxes* para instalar novos pacotes, compilar projetos
+  novos ou existentes, ou iniciar experimentos.
+- Use o `cabal repl` para iniciar uma instância do ghci com escopo limitado ao projeto.
+
+A abordagem baseada em *sandbox* que sugiro deve evitar problemas em dependência
+de pactes, mas é incompatível com a maneira que a Plataforma Haskell fornece
+pacotes pré-compilados. Se você ainda está aprendendo Haskell e não entende como o
+ghc-pkg e o Cabal funcinoam, *evite a plataforma* e em vez dela use as instruções para
+instalação no começo deste guia.
+
+
+## Stackage
+
+Para qualquer usuários (principalmente os do Yesod) que tem problemas de compilação,
+considere o Stackage.
+- Um bom sumário do Stackage [aqui](https://www.fpcomplete.com/blog/2014/05/stackage-server).
+
+Na opinião do autor, o Stackage é geralmente mais útil do que o `cabal freeze`.
+
+# Hoogle e Haddock
+
+## Pesquise código pela *type signature*
+
+O [motor de buscas Hoogle](http://www.haskell.org/hoogle/) pode pesquisar pelos tipos.
+
+Por exemplo, olho os resultados de busca para `(a -> b) -> [a] -> [b]` 
+[aqui](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
+
+Também hospedado pelo fpcomplete [aqui](https://www.fpcomplete.com/hoogle).
+
+Também o [Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html) (que por padrão tem tudo do
+hackage disponível para pesquisa).
+
+## Configurando sua própria instância local do Hoogle
+
+Dê uma olhada [aqui](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
+
+## Haddock
+
+1. [Conserte sua documentação do hackage](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html)
+
+2. [Documentação v2 do Hackage](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html)
+
+Perceba que essas postagens estão *levemente desatualizadas*: por exemplo, agora o Hackage ostenta
+informação nova com informação de documentação a estado da build.
+
+## O que você realmente precisa saber
+
+Para fazer com que o haddocks inclua documentação para pacotes relacionados,
+você deve setar `documentation: True` no seu `~/.cabal/config`. Se ele for deixado
+no padrão (`False`) ou setado para `False`, você vai precisar deletar todos os seus
+pacotes e reinstalar antes de gerar os haddocks.
+
+Outra coisa para se ter em mente é que devido ao modo como o parâmetro `$pkg` é
+interpolado *pelo* cabal, não por você, os parâmetros `html-location` e `content-location`
+*precisam estar em aspas simples* e configurados num shell ou contidos num shell script.
+Eles não vão funcionar num Makefile, porque ele vai pensar que são variáveis para o Make!
+
+```bash
+#! /usr/bin/env sh
+
+# You can write it one one line by skipping the backslashes
+cabal haddock --hoogle --hyperlink-source                       \
+ --html-location='http://hackage.haskell.org/package/$pkg/docs' \
+ --contents-location='http://hackage.haskell.org/package/$pkg'
+```
