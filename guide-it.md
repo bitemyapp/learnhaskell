@@ -246,7 +246,7 @@ L'unica ragione per cui non dovreste cominciare con cis194 è se non siete progr
 
 Disponibile su github [qui](https://github.com/NICTA/course).
 
-Questo vi darà esperienza nell'implementare direttamente le astrazioni introdotte in cis194, questi esercizi sono *critici* per sviluppare confidenza con gli usi comuni di Functor/Applicative/Monad/etc. in Haskell. La raccomandazione chiave della mia guida é seguire cis194 e poi NICTA, e questo é il percorso che seguo per insegnare Haskell a tutti.
+Questo vi darà esperienza nell'implementare direttamente le astrazioni introdotte in cis194, questi esercizi sono *critici* per sviluppare confidenza con gli usi comuni di Functor/Applicative/Monad/etc. in Haskell. La raccomandazione chiave della mia guida è seguire cis194 e poi NICTA, e questo è il percorso che seguo per insegnare Haskell a tutti.
 
 ---
 
@@ -256,7 +256,7 @@ Questo vi darà esperienza nell'implementare direttamente le astrazioni introdot
 
 Disponibile [online](http://www.scs.stanford.edu/14sp-cs240h/).
 
-Questo é il corso online di [Bryan O'Sullivan](https://github.com/bos) tratto dal corso che insegna a Stanford. Se non sapete chi é date un'occhiata alla metà delle librerie che qualunque progetto Haskell finisce per richiedere e ci troverete il suo nome. Sa avete già seguito il corso di Yorgey sono particolarmente rilevanti i moduli sui phantom types, il flusso di controllo delle informazioni, le estensioni del linguaggio, concorrenza, pipes e lenses.
+Questo è il corso online di [Bryan O'Sullivan](https://github.com/bos) tratto dal corso che insegna a Stanford. Se non sapete chi è date un'occhiata alla metà delle librerie che qualunque progetto Haskell finisce per richiedere e ci troverete il suo nome. Sa avete già seguito il corso di Yorgey sono particolarmente rilevanti i moduli sui phantom types, il flusso di controllo delle informazioni, le estensioni del linguaggio, concorrenza, pipes e lenses.
 
 ---
 
@@ -265,8 +265,8 @@ Questo é il corso online di [Bryan O'Sullivan](https://github.com/bos) tratto d
 [Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) e
 [Real World Haskell](http://book.realworldhaskell.org) (Grazie bos!) sono disponibili online.
 
-Raccomando RWH come referenza (é un libro spesso). I capitoli sul parsing e sulle monadi
-sono ottimi per ottenere un'intuizione sull'utilità delle monadi. Altri hanno detto che gli é piaciuto molto. Forse un buon seguito per imparare gli idiomi in modo pratico, una volta che avete imparato le cose essenziali di Haskell? 
+Raccomando RWH come referenza (è un libro spesso). I capitoli sul parsing e sulle monadi
+sono ottimi per ottenere un'intuizione sull'utilità delle monadi. Altri hanno detto che gli è piaciuto molto. Forse un buon seguito per imparare gli idiomi in modo pratico, una volta che avete imparato le cose essenziali di Haskell? 
 
 ### Cosa fa quel syntactic sugar `<-` / `do` / sulle list comprehension?
 
@@ -305,14 +305,14 @@ Utile per capire `Functor`, `Applicative`, `Monad`, `Monoid` e altre Typeclass i
 ## Breve dimostrazione
 
 ```haskell
-let a = 1 : a -- guarded recursion, (:) é lazy su di esso si può usare pattern matching.
+let a = 1 : a -- guarded recursion, (:) è lazy su di esso si può usare pattern matching.
 let (v : _) = a
 > v
 1
 > head a -- head a == v
 1
 
-let a = 1 * a -- non guarded, (*) é strict
+let a = 1 * a -- non guarded, (*) è strict
 > a
 *** Exception: <<loop>>
 ```
@@ -372,7 +372,7 @@ Referenza:
 
 - Questo [tutorial](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) di Kazu Yamamoto è fantastico.
 
-- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Un'ottima libreria semplice per imparae come lo streaming IO funziona in generale, la conoscenza e' trasferibile a librerie come Pipes e Conduit
+- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Un'ottima libreria semplice per imparae come lo streaming IO funziona in generale, la conoscenza è trasferibile a librerie come Pipes e Conduit
 
 # Parsing in Haskell
 
@@ -383,7 +383,7 @@ Referenza:
 
 ## Parsare e generare JSON
 
-Aeson e' la soluzione di parsing [JSON](https://json.org) standard in
+Aeson è la soluzione di parsing [JSON](https://json.org) standard in
 haskell. Disponibile su [hackage](https://hackage.haskell.org/package/aeson) e
 [github](https://github.com/bos/aeson).
 
@@ -397,7 +397,7 @@ haskell. Disponibile su [hackage](https://hackage.haskell.org/package/aeson) e
 
 # Algoritmi per grafi e strutture dati
 
-- Il [pacchetto fgl](https://hackage.haskell.org/package/fgl) gli [algoritmi](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html) puramente funzionali per trovare la strada piu' breve.
+- Il [pacchetto fgl](https://hackage.haskell.org/package/fgl) gli [algoritmi](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html) puramente funzionali per trovare la strada più breve.
 
 - [Inductive graphs and Functional Graph Algorithms](http://web.engr.oregonstate.edu/~erwig/papers/abstracts.html#JFP01).
 
@@ -455,7 +455,7 @@ questa guida copre anche alcune utili basi di Cabal
 
 ## Linee guida di Cabal
 
-Prima dell'introduzione dei sandbox, gli utenti Haskell incappavano nel problema del'Inferno Cabal. Se installate fuori da un sandbox installera' il pacchetto nel vostro user package-db. Questa *non* e' in genere una buona idea, con l'eccezione dei pacchetti di base come
+Prima dell'introduzione dei sandbox, gli utenti Haskell incappavano nel problema del'Inferno Cabal. Se installate fuori da un sandbox installerà il pacchetto nel vostro user package-db. Questa *non* è in genere una buona idea, con l'eccezione dei pacchetti di base come
 Cabal, alex e happy. Nient'altro dovrebbe essere installato nei package-db dell'utente o globali, a meno che non sappiate cosa state facendo.
 
 Alcune raccomandazioni per non cadere nell'inferno cabal sono disponibili
@@ -471,23 +471,23 @@ In poche parole:
 - Usate `cabal repl` per cominciare una istanza di ghci project-scoped
 
 Questo approccio basato suisandbox che suggerisco dovrebbe scamparvi problemi relativi alle dipendenze dei paccheti,
-ma e' incompatibile con il modo in cui la Haskell Platform fornisce i pacchetti binari. Se state imparando Haskell e non capite come funzionano ghc-pkg e
+ma è incompatibile con il modo in cui la Haskell Platform fornisce i pacchetti binari. Se state imparando Haskell e non capite come funzionano ghc-pkg e
 Cabal, *evitate platform*, usate invece le istruzioni all'inizio della guida.
 
 ## Stackage
 
 Per tutti gli utenti (di solito utenti di Yesod) che hanno problemi di build, considerate Stackage.
 
-- Un buon riassunto di Stackage e'
+- Un buon riassunto di Stackage è
   [qui](https://www.fpcomplete.com/blog/2014/05/stackage-server).
 
-Nell'opinione dell'autore, Stackage 'e' di solito piu' utile di `cabal freeze`.
+Nell'opinione dell'autore, Stackage 'è di solito più utile di `cabal freeze`.
 
 # Hoogle e Haddock
 
 ## Cerca la firma dei tipi nel codice
 
-Il [motore di ricerca Hoogle](http://www.haskell.org/hoogle/) puo' cercare per tipo.
+Il [motore di ricerca Hoogle](http://www.haskell.org/hoogle/) può cercare per tipo.
 
 Per esempio, guardate i risultati della ricerca per `(a -> b) -> [a] -> [b]`
 [qui](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
@@ -512,9 +512,9 @@ Fate attenzione, questi post sono *lievemente obsoleti*: per esempio, adesso Hac
 
 PEr fare includere ad haddocks la documentazione per i pacchetti correlati, dovete settare `documentation: True` nel vostro `~/.cabal/config`. Se lasciato sul valore di default (`False`) o settato a `False`, dovrete rimuovere tutti i vostri pacchetti e reinstallare prima di generare haddocks.
 
-ThL'altra cosa da tenere a mente e' che a causa del modo in cui il parametro `$pkg` viene interpolato *da* cabal, non da voi, i parametri `html-location` e `content-location`
+L'altra cosa da tenere a mente è che a causa del modo in cui il parametro `$pkg` viene interpolato *da* cabal, non da voi, i parametri `html-location` e `content-location`
  *devono essere fra apici* e inseriti in una shell o contenuti in uno
-shell script. Non funzioneranno in un Makefile, perche' crederanno di essere variabili di Make!
+shell script. Non funzioneranno in un Makefile, perché crederanno di essere variabili di Make!
 
 ```bash
 #! /usr/bin/env sh
@@ -546,24 +546,24 @@ Abbiamo l'imbarazzo della scelta! Ci sono tre scelte principali che raccomandere
   - [Writing Atom plugins in Haskell using ghcjs ](http://edsko.net/2015/02/14/atom-haskell/)
 
 * [PureScript](http://www.purescript.org/)
-  - Non e' strettamente Haskell come Haste e GHCJS, ma e' una scelta popolare fra i programmatori Haskell
+  - Non è strettamente Haskell come Haste e GHCJS, ma è una scelta popolare fra i programmatori Haskell
   - Scritto in e ispirato da haskell
   - Provate purescript nel vostro browser [here](http://try.purescript.org/)
   - Ottima guida per [cominciare a usarlo](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
 
 ## Che linguaggio scegliere per il frontend?
 
-GHCJS e Haste sono entrambi interamente Haskell. GHCJS e' compatibile con piu' pacchetti Haskell
-packages rispetto a Haste, ma questo non sar' rilevante per molti progetti frontend. PureScript non e' per niente Haskell, so quindi non potete condividere il codice fra frontend e backend.
+GHCJS e Haste sono entrambi interamente Haskell. GHCJS è compatibile con più pacchetti Haskell
+packages rispetto a Haste, ma questo non sar' rilevante per molti progetti frontend. PureScript non è per niente Haskell, so quindi non potete condividere il codice fra frontend e backend.
 
-GHCJS ha la runtime piu' abbondante, a 100kb (luite ci sta lavorando). Haste e PureScript sono competitivi.
+GHCJS ha la runtime più abbondante, a 100kb (luite ci sta lavorando). Haste e PureScript sono competitivi.
 
 PureScript ha la migliore integrazione con i tool di JS (usa gulp/grunt/bower), GHCJS
 e Haste si integrano meglio con i tool di Haskell (Cabal).
 
 Tutti e tre sono un ottima scelta e possono funzionare per la maggioranza dei progetti frontend.
 
-# Per una comprensione piu' profonda di laziness, NF, WHNF
+# Per una comprensione più profonda di laziness, NF, WHNF
 
 - [Notes on lambda calculus](https://vec.io/posts/notes-on-lambda-calculus).
 
@@ -580,7 +580,7 @@ Tutti e tre sono un ottima scelta e possono funzionare per la maggioranza dei pr
 # Parallelismo/Concorrenza
 
 - Il libro [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929). This
-  di Simon Marlow e' probabilmente il migliore che ho mai letto sull'argomento.
+  di Simon Marlow è probabilmente il migliore che ho mai letto sull'argomento.
 
 - Un [walk-through](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application) completo su testing & incremental development di un applicazione multi-threaded in Haskell.
 
@@ -588,13 +588,13 @@ Tutti e tre sono un ottima scelta e possono funzionare per la maggioranza dei pr
 
 # Lenti e Prismi
 
-Una volta che trovate a vostro agio con Haskell, e' molto utile imparare Lenti e
+Una volta che trovate a vostro agio con Haskell, è molto utile imparare Lenti e
 Prismi, anche se solo come "utente". Non avete bisogno di capire le categorie sottostanti
-perche' vi siano utili.
+perchè vi siano utili.
 
-La difficolta' di usare le Lenti e' generalmente sovrastimata. Chiunque sia a suo agio con Functor/Foldable/Traversable (o anche solo il primo) puo' usare lenti e prismi per rendersi la vita piu' facile.
+La difficoltà di usare le Lenti è generalmente sovrastimata. Chiunque sia a suo agio con Functor/Foldable/Traversable (o anche solo il primo) può usare lenti e prismi per rendersi la vita più facile.
 
-Se vi e' capitato di fare qualcosa come: `(fmap . fmap)` stavate usando le lenti nella vostra mente.
+Se vi è capitato di fare qualcosa come: `(fmap . fmap)` stavate usando le lenti nella vostra mente.
 
 Raccomando questi due tutorial/introduzioni:
 
@@ -606,7 +606,7 @@ Leggete questo per maggiori informazioni: [pacchetto Lens su hackage](http://hac
 
 # Schemi di ricorsione
 
-Alcune delle pazze parole che finiscono con \*-morfisma di cui avete sentito parlare in effetti riguardano la ricorsione. NB - prima di attaccare questo materiale dovreste sapere come implementare foldr per le liste e almeno un altra struttura di dati, tipo un albero. (i fold sono catamorfismi) Sapere come implementare un unfold (anamorfisma) per le stesse strutture dati e' e' complementare.
+Alcune delle pazze parole che finiscono con \*-morfisma di cui avete sentito parlare in effetti riguardano la ricorsione. NB - prima di attaccare questo materiale dovreste sapere come implementare foldr per le liste e almeno un altra struttura di dati, tipo un albero. (i fold sono catamorfismi) Sapere come implementare un unfold (anamorfisma) per le stesse strutture dati è complementare.
 
 This material dovetails with traversable and foldable.
 
@@ -615,7 +615,7 @@ This material dovetails with traversable and foldable.
 - [Don't fear the cat](http://fho.f12n.de/posts/2014-05-07-dont-fear-the-cat.html) -
   Buona dimostrazione su come l'ilomorfismo sia la composizione di cata e ana.
 
-- [Recursion Schemes](http://comonad.com/reader/2009/recursion-schemes/) - Questa guida e' ottima.
+- [Recursion Schemes](http://comonad.com/reader/2009/recursion-schemes/) - Questa guida è ottima.
 
 - [Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
 
@@ -637,9 +637,9 @@ This material dovetails with traversable and foldable.
 
 # Tipi e Teoria delle Categorie
 
-> *Non* e' necessaria per scrivere Haskell, solo per quelli interessati!
+> *Non* è necessaria per scrivere Haskell, solo per quelli interessati!
 
-Se volete imparare di piu' su tipi e teoria delle categorie:
+Se volete imparare di più su tipi e teoria delle categorie:
 
 - [La guida di Catster](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) e [La seconda guida Catster](http://byorgey.wordpress.com/catsters-guide-2/)
 
@@ -658,7 +658,7 @@ Se volete imparare di piu' su tipi e teoria delle categorie:
 - [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do) e
   [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038). I libri di testo standard sulla teoria delle categorie
 
-- [Harper's Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/plbook/book.pdf) e' la miglior introduzione alla teoria delle categorie focalizzata sui linguaggi di programmazione.
+- [Harper's Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/plbook/book.pdf) è la miglior introduzione alla teoria delle categorie focalizzata sui linguaggi di programmazione.
 
 - [Type theory and Functional Programming](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
 
@@ -670,7 +670,7 @@ Se volete imparare di piu' su tipi e teoria delle categorie:
 
 # Altri argomenti divertenti
 
-## Parametricita', ad-hoc vs. polimorfismo parametrico, teoremi liberi
+## Parametricità, ad-hoc vs. polimorfismo parametrico, teoremi liberi
 
 - [Parametricity](tony_parametricity.pdf).
 
@@ -737,7 +737,7 @@ Se volete imparare di piu' su tipi e teoria delle categorie:
 
 # Lista estesa di materiali da leggere
 
-> Alcuni sono gia' inclusi qui
+> Alcuni sono già inclusi qui
 
 - [Essential Haskell Reading List](http://www.stephendiehl.com/posts/essential_haskell.html)
 
@@ -745,5 +745,5 @@ Se volete imparare di piu' su tipi e teoria delle categorie:
 
 > Disponibile in questa repository [qui](dialogues.md).
 
-Questi sono in realta' importanti e utili. Leggeteli per approfondimenti su una varieta' di argomenti.
+Questi sono in realtà importanti e utili. Leggeteli per approfondimenti su una varietà di argomenti.
 
