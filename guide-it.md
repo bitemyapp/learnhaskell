@@ -27,7 +27,7 @@ La [mailing list](https://wiki.haskell.org/Mailing_lists) di Haskell.
 
 ### Linee guida per la comunità
 
-[Leggete il post di Chris Done  sull'insegnamento](http://chrisdone.com/posts/teaching).
+[Leggete il post di Chris Done sull'insegnamento](http://chrisdone.com/posts/teaching).
 Siate gentili e cortesi. Comportamenti crudeli o meschini spaventano gli altri e fanno passare alla gente la voglia di partecipare.
 
 Crtitiche facili, in cui non mettete impegno, beneficiano solo la persona che le fa, non la persona che le riceve.
@@ -274,7 +274,7 @@ Eccellente [articolo](http://www.haskellforall.com/2014/10/how-to-desugar-haskel
 
 ### Per capire list e fold
 
-- [Come imparare i List Fold](http://vimeo.com/64673035)
+- [Explain List Folds to Yourself](http://vimeo.com/64673035)
 
 ### Per imparare alcune Typeclass comuni
 
@@ -290,17 +290,17 @@ Utile per capire `Functor`, `Applicative`, `Monad`, `Monoid` e altre Typeclass i
 
 # Laziness, strictness, guarded recursion
 
-- Il libro di Marlow [book](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)
+- Il [libro](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html) di Marlow 
   sul parallelismo e la concorrenza ha una delle migliori introduzioni a alla laziness e alla normal form che abbia trovato. Usate altro materiale in più se non acquisite i concetti subito.
 
-- [Più punti per la lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
+- [More points for lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
 
 - [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
 
-- Domanda su SO '[Haskell ha laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+- Domanda su SO '[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
 - LA presentazione di [Johan Tibell](https://github.com/tibbe) su
-  [ragionare sulla laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness).
+  [reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness).
 
 ## Breve dimostrazione
 
@@ -319,13 +319,13 @@ let a = 1 * a -- non guarded, (*) é strict
 
 # IO
 
-- [Evaluation order e State tokens](https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens)
+- [Evaluation order and State tokens](https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens)
 
-- [Svelare il mistero della monade IO](http://blog.ezyang.com/2011/05/unraveling-the-mystery-of-the-io-monad/).
+- [Unraveling the mystery of the IO monad](http://blog.ezyang.com/2011/05/unraveling-the-mystery-of-the-io-monad/).
 
 - [First class "statements"](http://blog.jle.im/entry/first-class-statements).
 
-- [Haddocks per System.IO.Unsafe.unsafePerformIO](http://hackage.haskell.org/package/base-4.7.0.1/docs/System-IO-Unsafe.html#v:unsafePerformIO)
+- [Haddocks for System.IO.Unsafe.unsafePerformIO](http://hackage.haskell.org/package/base-4.7.0.1/docs/System-IO-Unsafe.html#v:unsafePerformIO)
   Leggete la documentazione e le note sulla impplementazione di unsafeDupablePerformIO
 
 Commento da un thread di Reddit, di `glaebhoerl`
@@ -345,11 +345,11 @@ Commento da un thread di Reddit, di `glaebhoerl`
 
 Implementate per conto vostro le monadi nella libreria standard ( List, Maybe, Cont, Error, Reader,
 Writer, State ) per capirli meglio. Poi potreste scrivere un interprete monadico per un small expression language usando la paper
-[Monad Transformer Passo dopo Passo](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (menzionata in 'monad transformers' qui sotto).
+[Monad Transformers Step by Step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (menzionata in 'monad transformers' qui sotto).
 
 Scrivere molti interpreti cambiando solo la monade per cambiare la semantica può aiutarvi a capire in che cosa consiste.
 
-- [Questa resentazioe](https://vimeo.com/73648150) di Tony dà un eccellente motivazione per i monad
+- [Questa presentazioe](https://vimeo.com/73648150) di Tony dà un eccellente motivazione per i monad
   transformers, [le slide](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
 
 Poi reimplementate `Control.Monad`. Funzioni come `mapM` o `sequence` sono buone opportunità per fare esercizio nello scrivere codice monadico generico.
@@ -364,9 +364,9 @@ Referenza:
 
 ## Monad transformers
 
-- [Un'introduzione gentile ai Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
+- [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
 
-- [Monad transformers passo dopo passo](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (warning, code out of date).
+- [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (warning, code out of date).
 
 # Testare, test, specifiche, testare generative/property
 
@@ -379,7 +379,7 @@ Referenza:
 - [Tutorial](https://github.com/JakeWheat/intro_to_parsing) sui Parser combinator
   per Haskell, usando Parsec
 
-- [Scrivi il tuo micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
+- [Writing your own micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
 
 ## Parsare e generare JSON
 
@@ -387,11 +387,11 @@ Aeson e' la soluzione di parsing [JSON](https://json.org) standard in
 haskell. Disponibile su [hackage](https://hackage.haskell.org/package/aeson) e
 [github](https://github.com/bos/aeson).
 
-- [Parsing JSON usando Aeson](http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/)
+- [Parsing JSON using Aeson](http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/)
 
-- [Aeson e user created types](http://bitemyapp.com/posts/2014-04-11-aeson-and-user-created-types.html)
+- [Aeson and user created types](http://bitemyapp.com/posts/2014-04-11-aeson-and-user-created-types.html)
 
-- [Parsare dati non deterministici con aeson e sum types](http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html)
+- [Parsing non-deterministic data with aeson and sum types](http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html)
 
 - [Tutorial di Aeson](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
 
@@ -399,17 +399,17 @@ haskell. Disponibile su [hackage](https://hackage.haskell.org/package/aeson) e
 
 - Il [pacchetto fgl](https://hackage.haskell.org/package/fgl) gli [algoritmi](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html) puramente funzionali per trovare la strada piu' breve.
 
-- [Grafi induttivi e Algoritmi funzionali per grafi](http://web.engr.oregonstate.edu/~erwig/papers/abstracts.html#JFP01).
+- [Inductive graphs and Functional Graph Algorithms](http://web.engr.oregonstate.edu/~erwig/papers/abstracts.html#JFP01).
 
-- [FGL/Haskell - Una Libreria Funzionale per Grafi](http://web.engr.oregonstate.edu/~erwig/fgl/haskell/old/fgl0103.pdf).
+- [FGL/Haskell - A Functional Graph Library](http://web.engr.oregonstate.edu/~erwig/fgl/haskell/old/fgl0103.pdf).
 
-- [Il codice sorgente di Data.Graph nel pacchetto Containers](http://hackage.haskell.org/package/containers-0.5.5.1/docs/Data-Graph.html).
+- [Data.Graph source from Containers package](http://hackage.haskell.org/package/containers-0.5.5.1/docs/Data-Graph.html).
 
 - Il [pacchetto graphs](https://hackage.haskell.org/package/graphs).
 
 - [Domande su SO riguardo a PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
 
-- [PHOAS gratis](https://www.fpcomplete.com/user/edwardk/phoas).
+- [PHOAS for free](https://www.fpcomplete.com/user/edwardk/phoas).
 
 - [Tying the Knot](http://www.haskell.org/haskellwiki/Tying_the_Knot).
 
@@ -508,23 +508,18 @@ Guardate [qui](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
 
 Fate attenzione, questi post sono *lievemente obsoleti*: per esempio, adesso Hackage vanta nuovi modi di mostrare informazioni, di documentazione e sullo stato del build.
 
-## What you really need to know
+## Quello che davvero avete bisogno di sapere
 
-In order to have haddocks include documentation for related packages, you have
-to set `documentation: True` in your `~/.cabal/config`. If it was left on the
-default (`False`) or set to `False`, you'll have to delete all your packages and
-reinstall before generating haddocks.
+PEr fare includere ad haddocks la documentazione per i pacchetti correlati, dovete settare `documentation: True` nel vostro `~/.cabal/config`. Se lasciato sul valore di default (`False`) o settato a `False`, dovrete rimuovere tutti i vostri pacchetti e reinstallare prima di generare haddocks.
 
-The other thing to keep in mind is that due to the way the `$pkg` parameter gets
-interpolated *by* cabal, not by you, the `html-location` and `content-location`
-parameters *must be in single quotes* and entered into a shell or contained in a
-shell script. They will not work in a Makefile, because it will think they are
-Make variables!
+ThL'altra cosa da tenere a mente e' che a causa del modo in cui il parametro `$pkg` viene interpolato *da* cabal, non da voi, i parametri `html-location` e `content-location`
+ *devono essere fra apici* e inseriti in una shell o contenuti in uno
+shell script. Non funzioneranno in un Makefile, perche' crederanno di essere variabili di Make!
 
 ```bash
 #! /usr/bin/env sh
 
-# You can write it one one line by skipping the backslashes
+# potete scrivero su una linea sola non mettendo backslash
 cabal haddock --hoogle --hyperlink-source                       \
  --html-location='http://hackage.haskell.org/package/$pkg/docs' \
  --contents-location='http://hackage.haskell.org/package/$pkg'
@@ -532,54 +527,47 @@ cabal haddock --hoogle --hyperlink-source                       \
 
 # TravisCI
 
-If you're as big a fan of [TravisCI](https://travis-ci.org) as I am, then I
-*strongly* recommend you take a look at
-[multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) by as the basis of
-the `travis.yml` for your Haskell projects.
+Se siete fan di [TravisCI](https://travis-ci.org) come lo sono io, allora vi consiglio
+*caldamente* di dare un'occhiata a
+[multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) come base per il `travis.yml` dei vostri progetti Haskell.
 
 # Frontend/JavaScript
 
-We have an embarrassment of riches! There are three main choices I would
-recommend:
+Abbiamo l'imbarazzo della scelta! Ci sono tre scelte principali che raccomanderei:
 
-* [Haste](http://haste-lang.org/) a Haskell to JavaScript compiler
-  - The [compiler](https://github.com/valderman/haste-compiler) on github.
-  - An excellent
-    [demo](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps)
-    of Haste with an example project.
+* [Haste](http://haste-lang.org/) un compilatore da Haskell a JavaScript
+  - Il [compilatore](https://github.com/valderman/haste-compiler) su github.
+  - Un [demo](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps)
+    eccellente di Haste con un progetto di esempio.
 
 * [GHCJS](https://github.com/ghcjs/ghcjs)
-  - [GHCJS Introduction](http://weblog.luite.com/wordpress/?p=14)
+  - [Introduzione a GHCJS](http://weblog.luite.com/wordpress/?p=14)
   - [Functional Reactive Web Interfaces with GHCJS and Sodium](http://weblog.luite.com/wordpress/?p=127)
   - [Writing Atom plugins in Haskell using ghcjs ](http://edsko.net/2015/02/14/atom-haskell/)
 
 * [PureScript](http://www.purescript.org/)
-  - Not strictly Haskell like Haste and GHCJS, but a popular choice among
-    Haskellers
-  - Written in and inspired by haskell
-  - Try purescript in you browser [here](http://try.purescript.org/)
-  - Great guide for [getting started](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
+  - Non e' strettamente Haskell come Haste e GHCJS, ma e' una scelta popolare fra i programmatori Haskell
+  - Scritto in e ispirato da haskell
+  - Provate purescript nel vostro browser [here](http://try.purescript.org/)
+  - Ottima guida per [cominciare a usarlo](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
 
-## Which frontend language do I use?
+## Che linguaggio scegliere per il frontend?
 
-GHCJS and Haste are both fully Haskell. GHCJS will work with more Haskell
-packages than Haste, but this doesn't affect a lot of frontend
-projects. PureScript isn't Haskell at all, so direct code sharing with your
-backend will not work.
+GHCJS e Haste sono entrambi interamente Haskell. GHCJS e' compatibile con piu' pacchetti Haskell
+packages rispetto a Haste, ma questo non sar' rilevante per molti progetti frontend. PureScript non e' per niente Haskell, so quindi non potete condividere il codice fra frontend e backend.
 
-GHCJS has the fattest runtime payload overhead at about 100kb (luite is working
-on this). Haste and PureScript are competitive.
+GHCJS ha la runtime piu' abbondante, a 100kb (luite ci sta lavorando). Haste e PureScript sono competitivi.
 
-PureScript has the best JS tooling integration (uses gulp/grunt/bower), GHCJS
-and Haste integrate better with Haskell's tooling (Cabal).
+PureScript ha la migliore integrazione con i tool di JS (usa gulp/grunt/bower), GHCJS
+e Haste si integrano meglio con i tool di Haskell (Cabal).
 
-All three are great choices and will work for most frontend projects.
+Tutti e tre sono un ottima scelta e possono funzionare per la maggioranza dei progetti frontend.
 
-# For a more thorough understanding of laziness, NF, WHNF
+# Per una comprensione piu' profonda di laziness, NF, WHNF
 
 - [Notes on lambda calculus](https://vec.io/posts/notes-on-lambda-calculus).
 
-## Research papers about lazy lambda calculi
+## Articoli di ricerca sul lazy lambda calculi
 
 - [A call by need lambda calculus](http://homepages.inf.ed.ac.uk/wadler/topics/call-by-need.html#need-journal).
 
@@ -589,62 +577,51 @@ All three are great choices and will work for most frontend projects.
 
 - [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtlm)
 
-# Parallelism/Concurrency
+# Parallelismo/Concorrenza
 
-- [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929). This
-  book by Simon Marlow is probably the best I've ever read on the topics of
-  Parallelism and Concurrency.
+- Il libro [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929). This
+  di Simon Marlow e' probabilmente il migliore che ho mai letto sull'argomento.
 
-- A thorough [walk-through](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application)
-  on testing & incremental development of a multi-threaded application in
-  Haskell.
+- Un [walk-through](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application) completo su testing & incremental development di un applicazione multi-threaded in Haskell.
 
 - [Functional Reactive Programming](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
 
-# Lenses and Prisms
+# Lenti e Prismi
 
-After you're comfortable with Haskell, strongly consider learning Lenses and
-Prisms, even if just as a "user". You don't need to understand the underlying
-category for it to be useful.
+Una volta che trovate a vostro agio con Haskell, e' molto utile imparare Lenti e
+Prismi, anche se solo come "utente". Non avete bisogno di capire le categorie sottostanti
+perche' vi siano utili.
 
-People vastly overestimate the difficulty of using Lens. Anybody comfortable
-with Functor/Foldable/Traversable (or even just the first one) can leverage
-lenses and prisms to make their life happier.
+La difficolta' di usare le Lenti e' generalmente sovrastimata. Chiunque sia a suo agio con Functor/Foldable/Traversable (o anche solo il primo) puo' usare lenti e prismi per rendersi la vita piu' facile.
 
-If you've ever done something like: `(fmap . fmap)` you were "lensing" in your
-head.
+Se vi e' capitato di fare qualcosa come: `(fmap . fmap)` stavate usando le lenti nella vostra mente.
 
-I recommend these two tutorials/introductions:
+Raccomando questi due tutorial/introduzioni:
 
 - [A little lens starter tutorial](https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/a-little-lens-starter-tutorial)
 
 - [Lens: Lenses, Folds and Traversals](https://github.com/ekmett/lens#lens-lenses-folds-and-traversals)
 
-Look here for more information: [Lens package on hackage](http://hackage.haskell.org/package/lens).
+Leggete questo per maggiori informazioni: [pacchetto Lens su hackage](http://hackage.haskell.org/package/lens).
 
-# Recursion Schemes
+# Schemi di ricorsione
 
-Some of the crazy \*-morphism words you've heard are actually about
-recursion. NB - before tackling this material you should know how to implement
-foldr for lists and at least one other data structure, such as a tree. (folds
-are catamorphisms) Knowing how to implement an unfold (anamorphism) for the same
-will round things out a bit.
+Alcune delle pazze parole che finiscono con \*-morfisma di cui avete sentito parlare in effetti riguardano la ricorsione. NB - prima di attaccare questo materiale dovreste sapere come implementare foldr per le liste e almeno un altra struttura di dati, tipo un albero. (i fold sono catamorfismi) Sapere come implementare un unfold (anamorfisma) per le stesse strutture dati e' e' complementare.
 
 This material dovetails with traversable and foldable.
 
 - [An introduction to recursion schemes](http://patrickthomson.ghost.io/an-introduction-to-recursion-schemes/)
 
 - [Don't fear the cat](http://fho.f12n.de/posts/2014-05-07-dont-fear-the-cat.html) -
-  Good demonstration of how hylomorphism is the composition of cata and ana.
+  Buona dimostrazione su come l'ilomorfismo sia la composizione di cata e ana.
 
-- [Recursion Schemes](http://comonad.com/reader/2009/recursion-schemes/) - This
-  field guide is excellent.
+- [Recursion Schemes](http://comonad.com/reader/2009/recursion-schemes/) - Questa guida e' ottima.
 
 - [Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
 
 - [Catamorphisms](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
 
-# GHC Core and performance tuning
+# GHC Core e ottimizzazione della performance
 
 - [Write Haskell as Fast as C](write_haskell_as_fast_as_c.md)
 
@@ -658,56 +635,52 @@ This material dovetails with traversable and foldable.
 
 - [Real World Haskell, Chapter 25: Profiling and Optimizations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
 
-# Type and Category Theory
+# Tipi e Teoria delle Categorie
 
-> *Not* needed to actually write Haskell, just for those interested!
+> *Non* e' necessaria per scrivere Haskell, solo per quelli interessati!
 
-If you want to follow up on type and category theory:
+Se volete imparare di piu' su tipi e teoria delle categorie:
 
-- [Catster's Guide](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) and
-  [Catster's Guide 2](http://byorgey.wordpress.com/catsters-guide-2/)
+- [La guida di Catster](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) e [La seconda guida Catster](http://byorgey.wordpress.com/catsters-guide-2/)
 
-- The [haskell wikibook](http://en.wikibooks.org/wiki/Haskell/Category_theory)
-  has nice diagrams
+- Il [wikibook haskell](http://en.wikibooks.org/wiki/Haskell/Category_theory) ha dei bei diagrammi
 
-- [Category Theory](http://www.haskell.org/haskellwiki/Category_theory) on
-  haskellwiki, also has good links to other resources
+- [Teoria delle categorie](http://www.haskell.org/haskellwiki/Category_theory) su haskellwiki, ha anche buoni link ad altre risorse
 
 - [Categories from scratch](http://science.raphael.poss.name/categories-from-scratch.html), Includes some practical examples.
 
-- Pierce's [Great Works in PL](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml) list.
+- La lista [Great Works in PL](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml) di Pierce.
 
-## Books
+## Libri
 
-- [Quora Question: What is the best textbook for category theory?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1) Kmett's recommendations
+- [Quora Question: What is the best textbook for category theory?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1) le raccomandazioni di Kmett
 
-- [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do) and
-  [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038). The standard textbooks on category theory.
+- [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do) e
+  [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038). I libri di testo standard sulla teoria delle categorie
 
-- [Harper's Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/plbook/book.pdf) is the best PL focused intro to type theory I've read.
+- [Harper's Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/plbook/book.pdf) e' la miglior introduzione alla teoria delle categorie focalizzata sui linguaggi di programmazione.
 
 - [Type theory and Functional Programming](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
 
-## Stephen's Nifty "How to get to monad" posts
+## Gli ottimi articoli di Stephen su "Come capire le monadi"
 
 - [Adjunctions](http://www.stephendiehl.com/posts/adjunctions.html).
 
 - [Monads](http://www.stephendiehl.com/posts/monads.html).
 
-# Other fun topics
+# Altri argomenti divertenti
 
-## Parametricity, ad-hoc vs. parametric polymorphism, free theorems
+## Parametricita', ad-hoc vs. polimorfismo parametrico, teoremi liberi
 
 - [Parametricity](tony_parametricity.pdf).
 
-- [TeX sources](https://github.com/tonymorris/parametricity/) for the
-  above talk.
+- [Sorgenti TeX](https://github.com/tonymorris/parametricity/) per la presentazione di cui sopra.
 
 - [Making ad-hoc polymorphism less ad-hoc](http://swizec.com/blog/week-20-making-ad-hoc-polymorphism-less-ad-hoc/swizec/6564).
 
 - [Theorems for Free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf).
 
-## Initial and Final, DSLs, Finally Tagless
+## Iniziali e Finali, DSL, Finally Tagless
 
 - [Final Encodings, Part 1: A Quick Demonstration](http://creativelad.wordpress.com/2013/11/28/final-encodings-part-1-a-quick-demonstration/).
 
@@ -721,9 +694,9 @@ If you want to follow up on type and category theory:
 
 - [Typed Tagless Final Interpreters](http://okmij.org/ftp/tagless-final/course/lecture.pdf).
 
-- [The dog that didn't bark](http://existentialtype.wordpress.com/2011/03/21/the-dog-that-didnt-bark/) less specifically relevant but interesting.
+- [The dog that didn't bark](http://existentialtype.wordpress.com/2011/03/21/the-dog-that-didnt-bark/) meno rilevante nello specifico ma interessante.
 
-## Comonads
+## Comonadi
 
 - [Comonads in Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
 
@@ -733,26 +706,26 @@ If you want to follow up on type and category theory:
 
 - [SO question: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
-- Free monads for Less, a sequence of three articles by Edward Kmett
+- Free monads for Less, una sequenza di tre articoli di Edward Kmett
   * [Part 1: Codensity](http://comonad.com/reader/2011/free-monads-for-less/).
   * [Part 2: Yoneda](http://comonad.com/reader/2011/free-monads-for-less-2/).
   * [Part 3: Yielding IO](http://comonad.com/reader/2011/free-monads-for-less-3/).
 
-## Propositions vs. Judgments (computation)
+## Propositions vs. Judgments (computazione)
 
 - [StackExchange question: What is the difference between propositions and judgements](http://cstheory.stackexchange.com/questions/9826/what-is-the-difference-between-propositions-and-judgments).
 
 - [Lecture notes from a short, three lecture course](http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf)
 
-# Dependent typing
+# Tipi dipendenti
 
-- [Grokking sum types, value constructors, and type constructors](http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html) squint hard.
+- [Grokking sum types, value constructors, and type constructors](http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html) strizzate gli occhi.
 
 - [Lightweight Dependent-type Programming](http://okmij.org/ftp/Computation/lightweight-dependent-typing.html).
 
 - [Idris programming language](http://www.idris-lang.org/).
 
-# Statically linking binaries
+# Linkare binari staticamente
 
 - [Static linking](https://wiki.haskell.org/Web/Literature/Static_linking)
 
@@ -762,16 +735,15 @@ If you want to follow up on type and category theory:
 
 - [Statically link GMP using GHC and LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
 
-# Extended Reading list
+# Lista estesa di materiali da leggere
 
-> Some are already included here
+> Alcuni sono gia' inclusi qui
 
 - [Essential Haskell Reading List](http://www.stephendiehl.com/posts/essential_haskell.html)
 
-## Dialogues
+## Dialoghi
 
-> Hosted in this repository [here](dialogues.md).
+> Disponibile in questa repository [qui](dialogues.md).
 
-These are actually pretty important and helpful. Look here for deep dives on a
-variety of topics.
+Questi sono in realta' importanti e utili. Leggeteli per approfondimenti su una varieta' di argomenti.
 
