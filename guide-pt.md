@@ -67,8 +67,8 @@ Especificamente:
 
 ```bash
 $ sudo apt-get update
-$ sudo apt-get install python-software-properties # v12.04 and below
-$ sudo apt-get install software-properties-common # v12.10 and above
+$ sudo apt-get install python-software-properties # v12.04 e abaixo
+$ sudo apt-get install software-properties-common # v12.10 e acima
 $ sudo add-apt-repository -y ppa:hvr/ghc
 $ sudo apt-get update
 $ sudo apt-get install cabal-install-1.20 ghc-7.8.4 happy-1.19.4 alex-3.1.3
@@ -248,6 +248,7 @@ com o [livro do Thompson](http://www.haskellcraft.com/craft3e/Home.html) e depoi
 o cis194.
 
 ---
+
 ## Curso NICTA
 
 > Este é o curso que recomendo fazer após o curso cis194 do Yorgey.
