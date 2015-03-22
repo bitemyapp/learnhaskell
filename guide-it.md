@@ -21,7 +21,7 @@ Questa è la strada che raccomando per imparare Haskell.
 ## Comunità
 Il nostro canale IRC è `#haskell-beginners` su Freenode.
 
-Un client web per IRC e' disponibile [qui](http://webchat.freenode.net/).
+Un client web per IRC è disponibile [qui](http://webchat.freenode.net/).
 
 La [mailing list](https://wiki.haskell.org/Mailing_lists) di Haskell.
 
@@ -36,11 +36,11 @@ Non descrivete niente con parole come "facile" o "banale". Chi legge si sentirà
 
 Non fate finta di essere sorpresi quando qualcuno vi dice che non sa qualcosa. Lo farete sentire soltanto stupido e non avrete ottenuto niente a parte sentirvi più furbi.
 
-Non dite beh-in realtà. Come quando qualcuno dice che qualcosa è quasi, ma non completamente corretta, e voi cominciate a dire, "beh, in realtà…" e poi fate una piccola correzione. È molto irritante, specialmente quando la correzione non è pertinente alla conversazione che state avendo. Questo non significa che l'Hacker School non si preoccupi della verità o che non ci interessi essere precisi. Ma questi modi di fare sono quasi sempre più una questione di pavoneggiarmento che altro.
+Non dite beh-in realtà. Come quando qualcuno dice che qualcosa è quasi, ma non completamente corretta, e voi cominciate a dire, "beh, in realtà…" e poi fate una piccola correzione. È molto irritante, specialmente quando la correzione non è pertinente alla conversazione che state avendo. Questo non significa che l'Hacker School non si preoccupi della verità o che non ci interessi essere precisi. Ma questi modi di fare sono quasi sempre più una questione di pavoneggiamento che altro.
 
 Non dite agli altri cosa devono fare. Se qualcuno sta completando un esercizio non dovreste interromperlo continuamente con consigli. Lasciate che trovi la sua strada a meno che non lo chieda esplicitamente. Evitare interruzioni è [uno degli obiettivi fondamentali di  #haskell-beginners](http://chrisdone.com/posts/teaching).
 
-Non lasciate spazio ai sottilismi. Razzismo, sessismo, omofobia, transfobia, e altri tipi di pregiudizi non saranno tollerati.
+Non lasciate spazio a sottili "ismi". Razzismo, sessismo, omofobia, transfobia, e altri tipi di pregiudizi non saranno tollerati.
 
 ---
 
@@ -57,7 +57,7 @@ Haskell è un linguaggio di programmazione, e come potete leggere nei report, la
 
 ## Cabal
 
-[Cabal](https://www.haskell.org/cabal/download.html) e' software per gestire i progetti haskell e risolvere le dipendenze. È lo strumento che vi permetterà di installare i pacchetti, tipicamente ciascuno nel proprio sandbox.
+[Cabal](https://www.haskell.org/cabal/download.html) è software per gestire i progetti haskell e risolvere le dipendenze. È lo strumento che vi permetterà di installare i pacchetti, tipicamente ciascuno nel proprio sandbox.
 
 Cabal è equivalente a Bundler di Ruby, pip di Python, NPM di Node, Maven, etc. GHC
 gestisce i pacchetti indipendentemente, Cabal sceglie quale versione installare.
@@ -85,7 +85,7 @@ Aggiungete poi la seguente linea al vostro `$PATH` (bash\_profile, zshrc, bashrc
 ~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.3/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin
 ```
 
-*Opzionale:* Potete anche aggiungere `.cabal-sandbox/bin` al vostro path. Il codice che state sviluppando attivamente sarà cosi' disponibile dalla linea di comando. Questo funziona solo quando la directory in cui siete è un sandbox di cabal.
+*Opzionale:* Potete anche aggiungere `.cabal-sandbox/bin` al vostro path. Il codice che state sviluppando attivamente sarà così disponibile dalla linea di comando. Questo funziona solo quando la directory in cui siete è un sandbox di cabal.
 
 ## Debian
 
@@ -104,7 +104,7 @@ $ sudo apt-get install ghc-7.8.3 happy alex cabal-install
 
 ### Usando Ubuntu PPA
 
-Se non state usando Debian stable, le stesse istruzioni che abbiamo indicato per Ubuntu fuzionano, ma dovrete eseguire un comando in più. Imediatamente dopo che il comando
+Se non state usando Debian stable, le stesse istruzioni che abbiamo indicato per Ubuntu fuzionano, ma dovrete eseguire un comando in più. Immediatamente dopo che il comando
 `sudo add-apt-repository -y ppa:hvr/ghc` 
 
 lanciate:
@@ -158,7 +158,7 @@ $ sudo pacman -S cabal-install ghc happy alex haddock
 
 Su Gentoo, potete installare i singoli componenti della Haskell Platform
 attraverso Portage. Se usate `ACCEPT_KEYWORDS=arch` (invece che
-`ACCEPT_KEYWORDS=~arch`), Portage installerà versioni piu' vecchie di Haskell. Tenendone di conto, se usate `ACCEPT_KEYWORDS=arch`, aggiungete le seguenti linee a `/etc/portage/package.keywords`.
+`ACCEPT_KEYWORDS=~arch`), Portage installerà versioni più vecchie di Haskell. Tenendone di conto, se usate `ACCEPT_KEYWORDS=arch`, aggiungete le seguenti linee a `/etc/portage/package.keywords`.
 
     dev-haskell/cabal-install
     dev-lang/ghc
@@ -214,7 +214,7 @@ Eseguite l'installazione dei binari come scritto qui sotto usando [questo tarbal
 - L' [installer minimo per windows di GHC](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html) 
 è in grado di compilare `network` e altro. È tecnicamente in beta ma dovrebbe funzionare per gli scopi di chiunque legga questa guida.
 
-Non dimenticatevi di lanciare l'installer come amministratore, dato che e' richiesto l'accesso alla directory di sistema 'Programmi'.
+Non dimenticatevi di lanciare l'installer come amministratore, dato che è richiesto l'accesso alla directory di sistema 'Programmi'.
 
 ## Altri utenti Linux
 
@@ -266,7 +266,7 @@ Questo è il corso online di [Bryan O'Sullivan](https://github.com/bos) tratto d
 [Real World Haskell](http://book.realworldhaskell.org) (Grazie bos!) sono disponibili online.
 
 Raccomando RWH come referenza (è un libro spesso). I capitoli sul parsing e sulle monadi
-sono ottimi per arrivare a capire l'utilità delle monadi stesse. Alcuni hanno detto che è piaciuto molto. Probabilmente e' un buon follow-up per imparare gli idiomi in modo pratico, una volta che avete imparato le cose essenziali di Haskell? 
+sono ottimi per arrivare a capire l'utilità delle monadi stesse. Alcuni hanno detto che è piaciuto molto. Probabilmente è un buon follow-up per imparare gli idiomi in modo pratico, una volta che avete imparato le cose essenziali di Haskell? 
 
 ### Cosa fa quel syntactic sugar `<-` / `do` / sulle list comprehension?
 
@@ -331,7 +331,7 @@ let a = 1 * a -- non guarded, (*) è strict
 Commento da un thread di Reddit, di `glaebhoerl`
 
 > Nota interessante: GHC deve nascondere la rappresentazione dello state token 
-> dietro un tipo IO astratto perche' lo state token deve sempre essere usato linearmente (non
+> dietro un tipo IO astratto perché lo state token deve sempre essere usato linearmente (non
 > duplicato o droppato), ma il type system non può garantire che questo accada. Clean, un altro
 > linguaggio lazy come Haskell, ha 'uniqueness types' (sono come i linear types
 > e possibilmente diversi per aspetti  di cui non sono a conoscenza), e espongono 
@@ -366,13 +366,13 @@ Referenza:
 
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
 
-- [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (attenzione il codice riportato e' datato).
+- [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (attenzione il codice riportato è datato).
 
-# Testare, test, specifiche, testing generativo e di properita'
+# Testare, test, specifiche, testing generativo e di proprietà
 
 - Questo [tutorial](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) di Kazu Yamamoto è fantastico.
 
-- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Un'ottima libreria per imparare in modo semplice come funziona lo streaming IO in generale; la conoscenza è trasferibile a librerie piu' complesse come Pipes e Conduit
+- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Un'ottima libreria per imparare in modo semplice come funziona lo streaming IO in generale; la conoscenza è trasferibile a librerie più complesse come Pipes e Conduit
 
 # Parsing in Haskell
 
@@ -455,7 +455,7 @@ Oltre ad essere una guida eccezionale per vare cose, come i GADT, questa guida c
 ## Linee guida di Cabal
 
 Prima dell'introduzione dei sandbox, gli utenti Haskell incappavano nel problema definito Cabal Hell (Inferno di Cabal). Se non utilizzate una sandbox, cabal installerà il pacchetto nel vostro user package-db. Questa *non* è in genere una buona idea, fatta l'eccezione per alcuni pacchetti di base come
-Cabal, alex e happy. Nient'altro dovrebbe essere installato nel package-db dell'utente ne' tanto meno a livello globale, a meno che non sappiate cosa state facendo.
+Cabal, alex e happy. Nient'altro dovrebbe essere installato nel package-db dell'utente né tanto meno a livello globale, a meno che non sappiate cosa state facendo.
 
 Alcune raccomandazioni per non cadere nel Cabal Hell sono disponibili
 [qui](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html).
@@ -548,7 +548,7 @@ Abbiamo l'imbarazzo della scelta! Ci sono tre scelte principali che raccomandere
 
 ## Quale linguaggio scegliere per il frontend?
 
-GHCJS e Haste sono entrambi interamente compatibili con Haskell. GHCJS è compatibile con un numero maggiore di pacchetti Haskell rispetto a Haste, ma questo non e' rilevante per molti progetti frontend. Al constrario, PureScript non è Haskell, per tanto non potrete condividere il codice fra frontend e backend.
+GHCJS e Haste sono entrambi interamente compatibili con Haskell. GHCJS è compatibile con un numero maggiore di pacchetti Haskell rispetto a Haste, ma questo non è rilevante per molti progetti frontend. Al contrario, PureScript non è Haskell, per tanto non potrete condividere il codice fra frontend e backend.
 
 GHCJS ha un runtime più grande, a 100kb (luite ci sta lavorando). Haste e PureScript sono competitivi.
 
@@ -573,7 +573,7 @@ Tutti e tre sono un'ottima scelta e possono funzionare per la maggioranza dei pr
 
 # Parallelismo/Concorrenza
 
-- Il libro [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929). di Simon Marlow è probabilmente il migliore che abbia mai letto sull'argomento.
+- Il libro [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929) di Simon Marlow è probabilmente il migliore che abbia mai letto sull'argomento.
 
 - Un [walk-through](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application) completo su testing e incremental development di un applicazione multi-threaded in Haskell.
 
