@@ -664,7 +664,7 @@ Alle drei sind eine gute Wahl und werden für die meisten Frontend Projekte gen�
 
 - [The lazy lambda calculus](http://www.cs.ox.ac.uk/files/293/lazy.pdf).
 
-- [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtlm)
+- [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtml)
 
 # Parallelisierung/Nebenläufigkeit
 

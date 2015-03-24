@@ -630,7 +630,7 @@ frontend.
 
 - [Le lambda-calcul paresseux](http://www.cs.ox.ac.uk/files/293/lazy.pdf).
 
-- [Evaluation paresseuse en Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtlm)
+- [Evaluation paresseuse en Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtml)
 
 # Parallelisme / Concurrence
 

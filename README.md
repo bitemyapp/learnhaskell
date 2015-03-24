@@ -642,7 +642,7 @@ All three are great choices and will work for most frontend projects.
 
 - [The lazy lambda calculus](http://www.cs.ox.ac.uk/files/293/lazy.pdf).
 
-- [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtlm)
+- [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtml)
 
 # Parallelism/Concurrency
 
