@@ -196,3 +196,37 @@ $ cabal install alex happy
 
 - [Cabal](https://www.haskell.org/cabal/download.html).
 
+# 主要課程
+
+## Yorgey's cis194課程
+
+> *先做這個*，這是我推薦入門Haskell的主要方式。
+
+此課程的教材可於[線上取得](http://www.seas.upenn.edu/~cis194/spring13/lectures.html)。
+
+[Brent Yorgey](https://byorgey.wordpress.com)的課是我目前所知最好的。它之所以好，是因為
+它不只教你些基礎知識，還教你parser combinators。
+
+如果你不是個程式設計師，或是比較沒經驗，這門課可能就沒這麼適合你。建議你從
+[Thompson的這本書](http://www.haskellcraft.com/craft3e/Home.html)開始，然後再
+轉到cis194。
+
+---
+
+## NICTA課程
+
+> 在你完成Yorgey的cis194後，我推薦這個課程
+
+這門課發佈在[github上](https://github.com/NICTA/course)。
+
+透過實作cis194中所介紹過的種種抽象表述，你會有更深入的了解。這樣的練習對於
+熟悉Haskell中每天都會面對的Functor/Applicative/Monad等等至關重要。
+先做cis194，緊接著NICTA，是這整篇Haskell學習導覽的核心，也是我教每個人Haskell的方式。
+
+---
+
+
+
+
+
+
