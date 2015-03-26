@@ -225,8 +225,44 @@ $ cabal install alex happy
 
 ---
 
+## 補充課程 cs240h
 
+> 提供更多中階以上議題的教材
 
+[線上教材](http://www.scs.stanford.edu/14sp-cs240h/)
 
+這是[Bryan O'Sullivan](https://github.com/bos)在Stanford所教課程的線上版。
+如果你不知道他是誰，去看看Haskell的函式庫吧！幾乎一半以上常用的都有他的名字。
+特別是phantom types、information flow control、language extensions、concurrency、pipes和lenses。
 
+---
+
+## 以上三門課程的參考材料
+
+[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com)和
+[Real World Haskell](http://book.realworldhaskell.org)都可線上閱讀，謝啦！
+
+我推薦將RWH當作參考書(它很厚！)。關於parsing和monads的章節對了解monads非常有幫助。
+有些人非常喜歡它，或許是因為在你了解Haskell的基本後，一些實用例會很有幫助吧？
+
+### `<-` / `do` / list comprehension簡便語法到底是什麼？
+
+[很棒的解釋](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html)。
+
+### 了解list和fold
+
+- [Explain List Folds to Yourself](http://vimeo.com/64673035)
+
+### 學習常用的typeclasses
+
+對瞭解`Functor`、`Applicative`、`Monad`、`Monoid｀和其他typeclasses很有幫助，而且還有
+些針對Haskell的category theory：
+
+- The [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
+
+### 了解基本的Haskell錯誤訊息
+
+- [Understanding basic error messages](http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf)
+
+---
 
