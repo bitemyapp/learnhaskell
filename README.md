@@ -42,7 +42,7 @@ Don't describe things as "easy" or "trivial". You'll making people feel terrible
 
 No feigning surprise. Don't act surprised when somebody says they don't know something. They'll feel terrible and you've accomplished nothing except to make yourself feel sharp.
 
-No well-actually's. When someone says something that's almost - but not entirely - correct, and you say, "well, actually…" and then give a minor correction. This is especially annoying when the correction has no bearing on the actual conversation. This doesn't mean Hacker School isn't about truth-seeking or that we don't care about being precise. Almost all well-actually's are about grandstanding, not truth-seeking.
+No well-actually's. When someone says something that's almost - but not entirely - correct, and you say, "well, actually…" and then give a minor correction. This is especially annoying when the correction has no bearing on the actual conversation. This doesn't mean Recurse Center isn't about truth-seeking or that we don't care about being precise. Almost all well-actually's are about grandstanding, not truth-seeking.
 
 No back-seat driving. If you see people working through a problem, you shouldn't intermittently interject advice. Let them work it out unless someone asks for help. Avoiding interruptions is [one of the founding purposes of #haskell-beginners](http://chrisdone.com/posts/teaching). 
 
@@ -50,7 +50,7 @@ No subtle -isms. Racism, sexism, homophobia, transphobia, and other kinds of bia
 
 ---
 
-Guidelines by [the Hacker School manual](https://www.hackerschool.com/manual). Thanks for releasing it Hacker School.
+Guidelines by [the Recurse Center manual](https://www.recurse.com/manual). Thanks for releasing it Recurse Center.
 
 # What are Haskell, GHC, and Cabal?
 
@@ -142,7 +142,7 @@ the official one):
 
 ```bash
 $ sudo yum-config-manager --add-repo \
-> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
+> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
 $ sudo yum install ghc cabal-install
 ```
 

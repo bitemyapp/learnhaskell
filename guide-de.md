@@ -28,7 +28,7 @@ Langsame Lerner sind meistens die sorgfältigsten, das sollte gewürdigt werden!
 Keine geheuchelte Überraschung. Spiele nicht überrascht, wenn jemand sagt, dass er etwas nicht weiß. Du erreichst nur, dass jemand sicht schlecht fühlt und du dich besonders toll.
 
 Kein "also, eigentlich ...". Wenn jemand etwas sagt, das nahezu richtig ist - aber nicht exakt - und du sagst, "also, eigentlich..." und gibst eine kleine Korrektur. Das ist
-besonders unnötig, da es keine Nutzen für die eigentlich Konversation hat. Das heißt nicht, dass die Hacker School nicht an Richtigkeit oder Genauigkeit interessiert ist.
+besonders unnötig, da es keine Nutzen für die eigentlich Konversation hat. Das heißt nicht, dass die Recurse Center nicht an Richtigkeit oder Genauigkeit interessiert ist.
 Fast alle "also, eigentlich" sind Selbstdarstellung und keine konstruktiven Verbesserungen.
 
 Kein ständiges Reinreden. Wenn du siehst wie jemand ein Problem durcharbeitet, sollest du nicht immer wieder Vorschläge einwerfen. Lass es ihn herausfinden außer er fragt
@@ -38,7 +38,7 @@ Rassismus, Sexismus, Homophobie, Transphobie und andere Arten von Vorurteilen si
 
 ---
 
-Richtlinien aus [the Hacker School manual](https://www.hackerschool.com/manual). Danke für die Veröffentlichung Hacker School.
+Richtlinien aus [the Recurse Center manual](https://www.recurse.com/manual). Danke für die Veröffentlichung Recurse Center.
 
 # Was sind Haskell, GHC, und Cabal?
 
