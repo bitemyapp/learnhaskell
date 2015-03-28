@@ -24,7 +24,7 @@ Não descreva coisas como "fáceis" ou "triviais". Você fará pessoas se sentir
 
 Sem surpresa fingida. Não se faça de surpreso quando alguém diz que não sabe alguma coisa. Essa pessoa se sentirá mal e você terá conseguido nada além de se sentir afiado.
 
-Sem "bom, na verdade". Quando alguém diz algo que está quase - mas não totalmente - correto, e você diz, "bom, na verdade..." e então faz uma correção pequena. Isso é especialmente incômodo quando a correção não tem relação com o assunto conversado. Isso não significa que a Escola de Hackers não é sobre a busca de verdade ou que nós não nos importamos em ser precisos. Quase todos esses "bom, na verdade" são com intenção de se aparecer, não em benefício da verdade.
+Sem "bom, na verdade". Quando alguém diz algo que está quase - mas não totalmente - correto, e você diz, "bom, na verdade..." e então faz uma correção pequena. Isso é especialmente incômodo quando a correção não tem relação com o assunto conversado. Isso não significa que o Recurse Center não é sobre a busca de verdade ou que nós não nos importamos em ser precisos. Quase todos esses "bom, na verdade" são com intenção de se aparecer, não em benefício da verdade.
 
 Sem essa de dirigir no banco de trás. Se você vê as pessoas trabalhando em um problema, você não deveria lançar conselhos intermitentemente. Deixe-as trabalhar a menos que alguém peça por ajuda. Evitar interrupções é [um dos propósitos fundamentais do #haskell-beginners](http://chrisdone.com/posts/teaching)
 
@@ -32,8 +32,8 @@ Sem "-ismos" sutis. Racismo, sexismo, homofobia, transfobia, e outros tipos de p
 
 ---
 
-Diretrizes do [manual da Hacker School(Escola de Hackers)](https://www.hackerschool.com/manual). 
-Obrigado por disponibilizar isso, Hacker School.
+Diretrizes do [manual do Recurse Center](https://www.recurse.com/manual). 
+Obrigado por disponibilizar isso, Recurse Center.
 
 # O que é Haskell, GHC, e Cabal?
 
@@ -126,7 +126,7 @@ no oficial):
 
 ```bash
 $ sudo yum-config-manager --add-repo \
-> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
+> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
 $ sudo yum install ghc cabal-install
 ```
 
@@ -619,7 +619,7 @@ Todos os três são ótimas escolhas e vão funcionar bem para a maior parte dos
 
 - [O cálculo lambda preguiçoso](http://www.cs.ox.ac.uk/files/293/lazy.pdf).
 
-- [Avaliação preguiçosa em Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtlm)
+- [Avaliação preguiçosa em Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtml)
 
 # Paralelismo/Concorrência
 
