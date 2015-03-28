@@ -20,7 +20,7 @@ Seja gentil e cortês. Ser cruel ou rude assusta as pessoas e as desencoraja a p
 
 Criticismo barato beneficia apenas a pessoa que o emite, não a pessoa que o recebe.
 
-Não descreva coisas como "fáceis" ou "triviais". Você fará pessoas se sentirem mal por ter que trabalhar duro por progredir naquilo. Pessoas que aprendem lentamente frequentemente são aquelas que aprendem melhor, isso é algo para ser celebrado!
+Não descreva coisas como "fáceis" ou "triviais". Você fará pessoas se sentirem mal por terem que trabalhar duro para progredirem. Pessoas que aprendem lentamente frequentemente são aquelas que aprendem melhor, isso é algo para ser celebrado!
 
 Sem surpresa fingida. Não se faça de surpreso quando alguém diz que não sabe alguma coisa. Essa pessoa se sentirá mal e você terá conseguido nada além de se sentir afiado.
 
