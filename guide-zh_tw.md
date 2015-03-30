@@ -266,3 +266,43 @@ $ cabal install alex happy
 
 ---
 
+# Laziness, strictness, guarded recursion
+
+- [Marlow關於平行與同步的書](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)中，關於laziness與normal form的介紹
+  是我所看過最好的。Use other material too if it doesn't stick immediately.
+
+- [More points for lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
+
+- [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
+
+- SO上的討論串'[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+
+- [Johan Tibell](https://github.com/tibbe)'在[reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness)這個talk的投影片
+
+## 演示
+
+```haskell
+let a = 1 : a -- guarded recursion, (:) is lazy and can be pattern matched.
+let (v : _) = a
+> v
+1
+> head a -- head a == v
+1
+
+let a = 1 * a -- not guarded, (*) is strict
+> a
+*** Exception: <<loop>>
+```
+
+# IO
+
+- [Evaluation order and State tokens](https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens)
+
+- [Unraveling the mystery of the IO monad](http://blog.ezyang.com/2011/05/unraveling-the-mystery-of-the-io-monad/).
+
+- [First class "statements"](http://blog.jle.im/entry/first-class-statements).
+
+- [Haddocks for System.IO.Unsafe.unsafePerformIO](http://hackage.haskell.org/package/base-4.7.0.1/docs/System-IO-Unsafe.html#v:unsafePerformIO)
+  
+
+
