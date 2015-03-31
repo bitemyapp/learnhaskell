@@ -303,6 +303,41 @@ let a = 1 * a -- not guarded, (*) is strict
 - [First class "statements"](http://blog.jle.im/entry/first-class-statements).
 
 - [Haddocks for System.IO.Unsafe.unsafePerformIO](http://hackage.haskell.org/package/base-4.7.0.1/docs/System-IO-Unsafe.html#v:unsafePerformIO)
-  
+  請讀unsafeDupablePerformIO的文件和實作筆記。
 
+`glaebhoerl`在Reddit討論串的留言：
+
+> Interesting side note: GHC需要將state token representation隱藏在抽象的IO型別後面，
+> 因為state token必須線性地使用，不能複製或丟棄，但型別系統無法強制這件事。
+> 某個乾淨、lazy、類似Haskell的語言的型別有uniqueness特性(類似linear type，但可能有些
+> 我沒意識到的細微差別)，為了方便，它直接暴露World-passing並提供非抽象的IO monad。
+
+# Monads and monad transformers
+
+> 在你了解typeclasses、Monoid、Functor和Applicative之前，請不要做下列練習！
+
+嘗試自行實作標準函式庫中的monads(List、Maybe、Cont、Error、Reader、Writer、State)，可以讓你
+更了解它們。再來，不妨嘗試用下述技術實作一個小型expression language的monadic直譯器：
+[Monad Transformers Step by Step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf)
+
+透過用不同的monad改變語意，從而產生不同的直譯器，help convey what's going on。
+
+- [Tony的演講](https://vimeo.com/73648150)完美演繹為何需要monad transformer，
+  [投影片在此](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
+
+再來，實作`Control.Monad`中的函數，例如：`mapM`或`sequence`是個練習撰寫generic monadic code的好機會。
+
+前面提到過的NICTA課程也可以用來當這個過程的指南，它也包括了如何撰寫你自己的Applicative。
+
+Credits:
+
+- Reddit上htmltyp和Crandom的[留言](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6)。
+
+- Reddit上jozefg[的留言](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg)。
+
+## Monad transformers
+
+- [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md)。
+
+- [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (警告：程式碼已過期)。
 
