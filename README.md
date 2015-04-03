@@ -206,12 +206,12 @@ echo $SHELL | xargs basename
 
 I use zsh, so that command outputs `zsh` when I run it.
 
-Once you do all of that, you'll want to install the additional tools `alex` and
-`happy`.
-
-```bash
-$ cabal install alex happy
-```
+    Once you do all of that, you'll want to install the additional tools `alex` and
+    `happy`.
+    
+    ```bash
+    $ cabal install alex happy
+    ```
 
 Congratulations! You now have a working Haskell installation!
 
@@ -243,6 +243,15 @@ Download the latest binary distributions for cabal and ghc:
 - [GHC](http://www.haskell.org/ghc/).
 
 - [Cabal](https://www.haskell.org/cabal/download.html).
+
+## Users of other Unix-like Systmes
+
+Install GHC and Cabal from your package system. Then install the additional tools `alex` and `happy`.
+    
+    ```bash
+    $ cabal install alex happy
+    ```
+
 
 # Primary Courses
 
