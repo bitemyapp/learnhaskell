@@ -293,17 +293,6 @@ pipes, and lenses.
 
 ---
 
-## Reference material for the three courses
-
-[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) and
-[Real World Haskell](http://book.realworldhaskell.org) (Thanks bos!) are
-available online.
-
-I recommend RWH as a reference (thick book). The chapters for parsing and monads
-are great for getting a sense for where monads are useful. Other people have
-said that they've liked it a lot. Perhaps a good follow-up for practical idioms
-after you've got the essentials of Haskell down?
-
 ### What does that `<-` / `do` / list comprehension syntactic sugar do?
 
 Excellent [article](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html).
