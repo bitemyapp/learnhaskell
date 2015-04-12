@@ -246,11 +246,13 @@ Download the latest binary distributions for cabal and ghc:
 
 ## Users of other Unix-like Systmes
 
-Install GHC and Cabal from your package system. Then install the additional tools `alex` and `happy`.
+Install GHC and Cabal from your package system, then add `~/.cabal/bin` to your `$PATH`. Finally update `cabal` and install the additional tools `alex` and `happy`.
     
     ```bash
-    $ cabal install alex happy
-    ```
+$ cabal update
+$ cabal install cabal-install alex happy
+```
+
 
 
 # Primary Courses
