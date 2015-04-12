@@ -341,3 +341,132 @@ Credits:
 
 - [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (警告：程式碼已過期)。
 
+# Testing, tests, specs, generative/property testing
+
+- Kazu Yamamoto的[這篇教學](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md)  堪稱典範！
+
+- [Simple-Conduit](https://github.com/jwiegley/simple-conduit)：這個簡單的函式庫對於學習IO串流如何工作很有幫助，
+  所學亦可應用在其他函式庫，例如Pipes和Conduit。 
+
+# Parsing in Haskell
+
+- Parser combinator [tutorial](https://github.com/JakeWheat/intro_to_parsing)
+  for Haskell using Parsec
+
+- [Writing your own micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
+
+## Parsing與產生JSON
+
+Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以從[hackage](https://hackage.haskell.org/package/aeson)或[github](https://github.com/bos/aeson)取得。
+
+- [Parsing JSON using Aeson](http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/)
+
+- [Aeson and user created types](http://bitemyapp.com/posts/2014-04-11-aeson-and-user-created-types.html)
+
+- [Parsing non-deterministic data with aeson and sum types](http://bitemyapp.com/posts/2014-04-17-parsing-nondeterministic-data-with-aeson-and-sum-types.html)
+
+- [Aeson教學](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
+
+# 圖學演算法與資料結構
+
+- [fgl套件](https://hackage.haskell.org/package/fgl)。純函數式的最短路徑[演算法](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html)值得一看。
+
+- [Inductive graphs and Functional Graph Algorithms](http://web.engr.oregonstate.edu/~erwig/papers/abstracts.html#JFP01).
+
+- [FGL/Haskell - A Functional Graph Library](http://web.engr.oregonstate.edu/~erwig/fgl/haskell/old/fgl0103.pdf).
+
+- [Containers套件中的Data.Graph源碼](http://hackage.haskell.org/package/containers-0.5.5.1/docs/Data-Graph.html).
+
+- [graphs套件](https://hackage.haskell.org/package/graphs).
+
+- [SO關於PHOAS的討論串](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+
+- [免費的PHOAS](https://www.fpcomplete.com/user/edwardk/phoas).
+
+- [Tying the Knot](http://www.haskell.org/haskellwiki/Tying_the_Knot).
+
+- [Hackage: dag](https://hackage.haskell.org/package/dag).
+
+# 開發環境
+
+## Emacs
+
+- [Alejandro Serras's tutorial](https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md)
+
+- [My dotfiles](https://github.com/bitemyapp/dotfiles/)
+
+- [Chris Done's emacs config](https://github.com/chrisdone/chrisdone-emacs)
+
+## Vim
+
+- [Vim page on haskellwiki](http://www.haskell.org/haskellwiki/Vim)
+
+- [Haskell-vim-now](https://github.com/begriffs/haskell-vim-now)
+
+- [A vim+haskell workflow](http://www.stephendiehl.com/posts/vim_haskell.html)
+
+- [GHC-Mod](https://github.com/kazu-yamamoto/ghc-mod)
+
+- [GHC-Mod vim plugin](https://github.com/eagletmt/ghcmod-vim)
+
+- [Hindent](https://github.com/chrisdone/hindent)
+
+## Sublime Text
+
+- [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
+
+# Cabal常見問答
+
+## 一篇超讚的常見問答
+
+不但對各種主題都有很好的導覽，也包含了Cabal的一些重要基礎。
+- [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
+
+
+## Cabal導覽
+在引入沙箱(sandbox)前，Cabal地獄(Cabal Hell)對所有Haskell使用者來說都是一大問題。
+在沙箱外安裝的套件會直接裝在你的用戶套件資料庫(user pacakge-db)中。除非是常用的基礎套件，
+例如Cabal、alex、happy等，這絕不是個好方法。除非你很清楚你自己在做什麼，任何套件都不該
+安裝在用戶資料褲或全域資料庫(global package-db)。
+
+這裏有些如何避免Cabal地獄的[最佳指南](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html)。
+
+如果要實驗新套件，或是起始新專案，在一個新目錄中執行`cabal sandbox init`。
+
+簡言之：
+
+- 無論是安裝新套件、建置新舊專案、做任何實驗，用沙箱。
+- 用`cabal repl`來啟動project-scoped ghci實體。
+
+我所建議這種以沙箱為基礎的方式，應該可以避免套件相依性的問題。但這與Haskell Platform提供
+預先編譯套件的方法不相容。如果你還在學習Haskell，而且不太了解ghc-pkg和Cabal如何運作，
+*不要用Haskell Platform*，改用前面所提的安裝方式。
+
+## Stackage
+
+如果你面臨一些建置上的問題(特別是Yesod)，不妨考慮用Stackage
+
+- [Stackage是什麼](https://www.fpcomplete.com/blog/2014/05/stackage-server)
+
+據作者所言，Stackage通常比`cabal freeze`更實用。
+
+# Hoogle與Haddock
+
+## 依型別表述搜尋源碼
+
+[Hoogle搜尋引擎](http://www.haskell.org/hoogle/)可依型別搜尋。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
