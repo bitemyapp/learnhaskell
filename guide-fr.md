@@ -274,17 +274,6 @@ la concurrence, les pipes, et les lenses.
 
 ---
 
-## Documentation de référence pour les trois cours
-
-[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) et
-[Real World Haskell](http://book.realworldhaskell.org) (Merci bos !) sont
-disponibles en ligne.
-
-Je recommande RWH comme reference (un livre épais). Les chapitres sur le parsing et
-les monades sont super pour comprendre où les monades sont utiles. D'autres ont confirmé
-qu'il l'avaient beaucoup apprécié. Certainement une bonne suite pour des idiomes plus pratiques
-lorsque vous aurez intégré les bases d'Haskell.
-
 ### Que sont les sucres syntactiques `<-` / `do` / comprehension de listes ?
 
 Un [article](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html) excellent.
