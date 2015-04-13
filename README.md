@@ -372,7 +372,7 @@ Comment from Reddit thread by `glaebhoerl`
 Implement the standard library monads ( List, Maybe, Cont, Error, Reader,
 Writer, State ) for yourself to understand them better. Then maybe write an
 monadic interpreter for a small expression language using
-[Monad Transformers Step by Step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf)
+[Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf)
 paper (mentioned in 'monad transformers' below).
 
 Writing many interpreters by just changing the monad to change the semantics can
@@ -397,7 +397,7 @@ Credits:
 
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
 
-- [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (warning, code out of date).
+- [Monad transformers step-by-step](http://catamorph.de/documents/Transformers.pdf).
 
 # Testing, tests, specs, generative/property testing
 
