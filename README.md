@@ -206,12 +206,11 @@ echo $SHELL | xargs basename
 
 I use zsh, so that command outputs `zsh` when I run it.
 
-    Once you do all of that, you'll want to install the additional tools `alex` and
-    `happy`.
+Once you do all of that, you'll want to install the additional tools `alex` and `happy`.
     
-    ```bash
-    $ cabal install alex happy
-    ```
+```bash
+$ cabal install alex happy
+```
 
 Congratulations! You now have a working Haskell installation!
 
