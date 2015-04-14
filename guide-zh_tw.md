@@ -456,17 +456,75 @@ Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以�
 
 [Hoogle搜尋引擎](http://www.haskell.org/hoogle/)可依型別搜尋。
 
+比方說，請看以下搜尋`(a -> b) -> [a] -> [b]`的結果：
 
+[搜尋結果](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
 
+fpcomplete所管理的[在此](https://www.fpcomplete.com/hoogle)。
 
+另外[Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html)預設開啟了對所有hackage的搜尋。
 
+## 設定你自己本地端的Hoogle
 
+詳細方法請看[這篇文章](https://gist.github.com/bitemyapp/3e6a015760775e0679bf)。
 
+## Haddock
 
+1. 修正你的hackage文件 [Fix your hackage documentation](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html)
 
+2. Hackage文件第二版 [Hackage documentation v2](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html)
 
+請注意，以上這些文章都*有些過期*，例如：現在Hacakge已支援shiny new info with documentation info and build status.
 
+## 真正重要的事
 
+為了讓haddocks含入相關套件的文件，你必須在`~/.cabal/config`設立`ducumentation: True`。如果它被設為`False`，或間接被default(`False`)關閉，你會需要刪除並重新安裝所有套件，再產生haddocks。
 
+請記住，因為`$pkg`參數會被cabal內插，`html-location`和`content-location`參數*必須以單引號括入*，再插入shell命令或包含在shell腳本中。在Makefile中是不行的，因為它會被當作Make的變數！
+
+```bash
+#! /usr/bin/env sh
+
+# 如果把反斜線去掉，你可以把它寫成一行
+cabal haddock --hoogle --hyperlink-source                       \
+ --html-location='http://hackage.haskell.org/package/$pkg/docs' \
+ --contents-location='http://hackage.haskell.org/package/$pkg'
+```
+
+# TravisCI
+如果你跟我一樣，是[TravisCI](https://travis-ci.org)的超級粉絲，那我*強力建議*你參考[multi-ghc-travis](https://github.com/hvr/multi-ghc-travis)為你的Haskell專案的`travis.yml`設定檔做基礎。
+
+# 前端/JavaScript
+我們的選擇多得驚人！我個人推薦三種：
+
+* [Haste](http://haste-lang.org/) Haskell至JavaScript的編譯器。a Haskell to JavaScript compiler
+  - [Github](https://github.com/valderman/haste-compiler)上的編譯器源碼
+  - 範例專案的[精彩展示](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps)
+
+* [GHCJS](https://github.com/ghcjs/ghcjs)
+  - GHCJS簡介 [GHCJS Introduction](http://weblog.luite.com/wordpress/?p=14)
+  - [Functional Reactive Web Interfaces with GHCJS and Sodium](http://weblog.luite.com/wordpress/?p=127)
+  - 用Haskell搭配ghcjs撰寫Atom插件 [Writing Atom plugins in Haskell using ghcjs](http://edsko.net/2015/02/14/atom-haskell/)
+
+* [PureScript](http://www.purescript.org/)
+  - 不像Haste或GHCJS般是純Haskell，但是Haskller們的熱門選擇
+  - 以Haskell實作，亦受Haskell啟發
+  - 在瀏覽器上[試試](http://try.purescript.org/)
+  - [起步導覽](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
+
+## 我用哪一種前端語言？
+
+GHCJS和Haste都是純Haskell，GHCJS比Haste能和更多的Haskell套件相容，但這不會影響大多數的前端專案。PureScript並非Haskell，因此無法直接和你的後端分享源碼。
+
+GHCJS的執行期payload是最大的，大約100kb (luite正在研究如何解決)，Haste和PureScript差不多。
+
+PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則與Haskell工具鏈整合較佳(例如Cabal)。
+
+以上三者都是極佳選擇，大多數的前端專案都適用。
+
+# 想要更充分了解laziness、NF、WHNF
+
+- [Notes on lambda calculus](https://vec.io/posts/notes-on-lambda-calculus).
+ 
 
 
