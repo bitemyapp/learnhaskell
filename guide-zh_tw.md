@@ -2,57 +2,54 @@
 
 這是我推薦的學習Haskell之路。
 
-#### 請切記：*別在你現在不懂的地方打轉，繼續讀下去就對了！*
+#### 請切記：*別在不懂的地方打轉，先繼續讀下去！*
 
 ## 社群
 
-我們的IRC頻道是Freenode上的 `#haskell-beginners`。
+IRC頻道是Freenode上的`#haskell-beginners`。
 
 IRC web版用戶端可[在這裡取得](http://webchat.freenode.net/)。
 
 Haskell[郵件群組](https://wiki.haskell.org/Mailing_lists)。
 
-### 社群參與須知
+### 社群參與原則
 
 請參考Chris Done所撰：[Teaching](http://chrisdone.com/posts/teaching)。
 
 請友善待人，尖酸苛薄只會把人嚇跑、令人不願再參與而已。
 
-低劣的批評只讓你自己覺得痛快，對聽者沒有任何幫助。
+低劣的批評只讓你自己痛快，對聽者毫無幫助。
 
-不要說『這很簡單』、『這無關緊要』。你會讓人覺得花這麼多功夫才得到進展是因為自己不如人，學得慢的人通常是學得最全面的人，這是值得讚美的！
+別說『這很簡單』、『這沒什麼』。這會讓人覺得要花這麼多功夫來弄懂是因為自不如人，學得慢的人通常是學得最全面的人，這值得稱讚！
 
-不要假做驚訝。當別人說他不知道的時候，不要表現得你很驚訝他居然不知道的樣子。他會很難過，而你除了表現得自己好像很行，你什麼也沒得到。
+當別人承認他不知道的時候，不要故作驚訝。這會讓他難過，而你除了表現得好像很行，什麼也沒得到。
 
-不要說『其實...這樣才對...』(well, actually...)。當有人說了什麼『幾乎正確』的話，而你說『其實...這樣才對』來做些微修正，這很惱人，尤其當這個修正根本跟整個對話沒什麼關係。我並不是在說黑客們不在乎真實或精確，只是像這樣的發言通常都是作秀成分居多，而非追尋真實。
+不要說『其實...這樣才對...』(well, actually...)。當有人說了什麼『幾乎正確』的話，而你說些『其實...這樣才對』來做些枝微末節的修正，這很惱人，尤其這常常跟整個討論根本八竿子打不著。我並不是在說人們不在乎精確，只是像這樣的發言通常是作秀成分居多，而非為了追尋真實。
 
 ---
 
-來自[the Recurse Center manual](https://www.recurse.com/manual)。感謝他們願意公開分享！
+以上部分內容來自[the Recurse Center手冊](https://www.recurse.com/manual)。感謝他們願意公開分享！
 
 # 什麼是Haskell、GHC和Cabal？
 
-Haskell是個依據下列報告定義的程式語言，此報告最新版本為2010版：
+Haskell的規格可在下面這篇報告找到，此報告最新版本為2010版：
 [onlinereport](http://www.haskell.org/onlinereport/haskell2010/)
 
 ## GHC
-[GHC](http://www.haskell.org/ghc/)是使用Haskell語言最主流的方式。
-它包含編譯器、直譯器、套件管理，與其他輔助工具。
+[GHC](http://www.haskell.org/ghc/)是Haskell語言的主流工具選擇。它包含編譯器、直譯器、套件管理，與其他輔助工具。
 
 ## Cabal
-[Cabal](https://www.haskell.org/cabal/download.html)可協助你做專案管理與相依性解析。
-這會是你用來安裝專案的主要方式，而標準的做法會是安裝至其自身的沙箱中。
+[Cabal](https://www.haskell.org/cabal/download.html)可用來做專案管理與套件相依性解析。
+這會是你用來安裝專案、套件的主要工具，其常見的做法是安裝到專屬的沙箱(cabal sandbox)中。
 
-Cabal相當於Ruby Bundler、Python pip、Node NPM、Maven等等。GHC包裝套件，Cabal則選擇
-該安裝哪些版本。
+Cabal相當於Ruby Bundler、Python pip、Node NPM、Maven等等。你可以用GHC來打包套件，Cabal則可用來選擇你想要的版本安裝。
 
 # 環境設定
 
 ## Ubuntu
-[這個PPA](http://launchpad.net/~hvr/+archive/ghc)很棒，我在我所有的Linux環境與建置機上都用這個。
-(build machine =?)
+[這個PPA](http://launchpad.net/~hvr/+archive/ghc)很棒，我在我所有的Linux環境與建置用機器上都靠它。
 
-詳細步驟如下：
+詳細設定步驟如下：
 
 ```bash
 $ sudo apt-get update
@@ -69,37 +66,37 @@ $ sudo apt-get install cabal-install-1.20 ghc-7.8.4 happy-1.19.4 alex-3.1.3
 ~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin
 ```
 
-*註:* 你也可以把`.cabal-sandbox/bin`加到你的路徑中。如此一來，只要你使用cabal sandbox開發，並且
-留在相對的工作路徑中，你就可以在命令列中輕易取用你正在開發的執行檔。
+*註:* 你不妨把`.cabal-sandbox/bin`加到你的路徑中。如此一來，只要你使用沙箱(cabal sandbox)開發，並且
+留在專案的工作路徑中，你就可以在命令列中輕易取用你正在開發的二進位檔。
 
 ## Debian
 
 ### 使用Ubuntu PPA
 
-如果你沒有使用當前穩定版本，你可以用和Ubuntu一樣的流程，但會需要在下面這個命令後：
+如果不打算使用官方提供的穩定版本，你可以用上面提過和Ubuntu一樣的流程，但會需要在下面這個命令後：
 
-`sudo add-apt-repository -y ppa:hvr/ghc` 另外執行：
+`sudo add-apt-repository -y ppa:hvr/ghc` 加上：
 
 ```bash
 $ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
 ```
 
-對於其他的Debian版本，只要把以上所有`jessie`都換成你的版本名即可。
+其他的Debian版本，只需將`jessie`都換成你的版本名即可。
 
-如果基於某種理由，`/etc/apt/sources.list.d/hvr-ghc-jessie.list`不存在，那麼`/etc/apt/sources.list`應該要有一行：
+如果`/etc/apt/sources.list.d/hvr-ghc-jessie.list`不存在，那麼`/etc/apt/sources.list`應該會有：
 
     deb http://ppa.launchpad.net/hvr/ghc/ubuntu jessie main
 
-把`jessie`換成`trusty`即可。
+把上列`jessie`換成`trusty`即可。
 
 ### 自行編譯
 
-請參照這篇為Mac OSX所撰寫的指南：
+請參照這篇為Mac OSX所撰的指南：
 
-注意：
+請注意：
 
-- 根據你的狀況，在設定ghc時指定前綴(prefix)
-- 不要直接下載`cabal-install`的二元檔，下載源碼並執行其`bootstrap.sh`腳本。
+- 根據你個人的工作環境，設定ghc時指定目錄前綴(prefix)
+- 不要直接下載`cabal-install`的二進位檔，請下載源碼並執行其`bootstrap.sh`腳本。
 
 ## Fedora 21
 
@@ -124,36 +121,36 @@ $ sudo pacman -S cabal-install ghc happy alex haddock
 
 ## Gentoo
 
-你可以透過Portage安裝Haskell Platform的子組件。如果你使用`ACCEPT_KEYWORDS=arch`，而非`ACCEPT_KETWORDS=~arch`，
-Portage會弄個骨灰級的Haskell給你。因此，舉凡你用了`ACCEPT_KEYWORDS=arch`，就把下面這幾行加進去：
+你可以透過Portage來分別安裝Haskell Platform的各個組件。如果你使用`ACCEPT_KEYWORDS=arch`，而非`ACCEPT_KETWORDS=~arch`，
+Portage會弄個老舊的Haskell給你。因此，舉凡用了`ACCEPT_KEYWORDS=arch`，請把下面這幾行加進去：
 
     dev-haskell/cabal-install
     dev-lang/ghc
 
-完成後，
+接著請執行：
 
 ```bash
 $ emerge -jav dev-lang/ghc dev-haskell/cabal-install
 ```
 
-Gentoo會留一個『穩定』(換言之，老舊）的`cabal-install`在Portage的套件樹中，因此你可以用這個`cabal-install`來安裝
-更新的版本。請注意，以下反斜線是必須的：
+Gentoo會留一個『穩定』(換言之：老舊）的`cabal-install`在Portage的套件樹中，你可以利用這個`cabal-install`來安裝
+新版的`cabal-install`。請注意，以下反斜線是必須的：
 
 ```bash
 $ \cabal update                # The backslashes
 $ \cabal install cabal-install # are intentional
 ```
 
-現在你透過Protage在global scale中安裝了cabal，以及在你的家目錄中安裝了最新的`cabal-install`。
-下一步是確定每次你在終端機執行`cabal`時，你的shell都是執行你家目錄中的最新版本：
+如此一來，你便透過Protage在系統中安裝了cabal，又在你的個人環境中安裝了最新的`cabal-install`。
+下一步是確定每次你在終端機執行`cabal`時，你的shell都是執行你個人環境中的最新版本：
 
 ```bash
 PATH=$PATH:$HOME/.cabal/bin
 alias cabal="$HOME/.cabal/bin/cabal"
 ```
 
-如果你不知道你的shell是哪一個，那你很可能用的是Bash。如果你用的是Bash，你需要編輯的檔案為`~/.bashrc`。
-如果你用的是Z-shell，那你需要編輯的是`~/.zshrc`，你可以透過下面這個命令來確定：
+不知道你的shell是哪一個？那你很可能用的是Bash。如果你用的是Bash，你需要編輯`~/.bashrc`。
+如果是Z-shell，則是`~/.zshrc`，可用以下面命令來查詢：
 
 ```bash
 echo $SHELL | xargs basename
@@ -161,61 +158,60 @@ echo $SHELL | xargs basename
 
 例如我用的是zsh，所以上列命令會輸出`zsh`。
 
-當以上都完成，你會想要再另外安裝兩個工具：`alex`和`happy`：
+當以上都完成，請再另外安裝兩個工具：`alex`和`happy`：
 
 ```bash
 $ cabal install alex happy
 ```
 
-恭喜！你現在有了一個可用的Haskell！
+恭喜！你有了一個正常運作的Haskell！
 
 ## Mac OS X
 
 ### 10.9
 
 請安裝[GHC for Mac OS X](http://ghcformacosx.github.io/)，它包含了GHC與Cabal。安裝完成後，
-它還會指示你如何將GHC與Cabal加入你的系統路徑。
+它會指示你如何將GHC與Cabal加入你的系統路徑。
 
 ### 10.6-10.8
 
-下載這個[tarball](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2)，
-並安裝其binary distribution。
+請下載這個[tarball](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2)，
+並安裝其包含的二進位版。
 
 ## Windows
 
 - [windows minimal GHC installer](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
-  可以編譯`network`等套件，嚴格說來它還在beta，但應該足夠任何在讀這篇導覽的人使用。
+  它可以用來編譯`network`等套件，雖然嚴格說它還在beta，但應該足夠讓任何讀這篇導覽的人使用。
 
-別忘了，要用administrator的身份來執行安裝檔，因為它需要安裝到Program Files目錄的權限。
+別忘了，要用系統管理者的身份來安裝，因為它需要新增到Program Files的權限。
 
 ## 其他Linux使用者
 
-下載cabal與ghc的最新版本binary distribution
+下載cabal與ghc的最新版二進位檔。
 
 - [GHC](http://www.haskell.org/ghc/).
 
 - [Cabal](https://www.haskell.org/cabal/download.html).
 
-# 主要課程
+# 主要學習課程
 
 ## Yorgey's cis194課程
 
-> *先做這個*，這是我推薦入門Haskell的主要方式。
+> *請先透過這門課學習*，這是我最推薦入門Haskell的課。
 
 此課程的教材可於[線上取得](http://www.seas.upenn.edu/~cis194/spring13/lectures.html)。
 
-[Brent Yorgey](https://byorgey.wordpress.com)的課是我目前所知最好的。它之所以好，是因為
+[Brent Yorgey](https://byorgey.wordpress.com)的課是我目前所知最好的。它之所以好，因為
 它不只教你些基礎知識，還教你parser combinators。
 
-如果你不是個程式設計師，或是比較沒經驗，這門課可能就沒這麼適合你。建議你從
-[Thompson的這本書](http://www.haskellcraft.com/craft3e/Home.html)開始，然後再
-轉到cis194。
+如果你不是個程式設計師，或缺乏經驗，那麼這門課可能沒這麼適合。建議你從
+[Thompson的這本書](http://www.haskellcraft.com/craft3e/Home.html)開始，然後再轉到cis194。
 
 ---
 
 ## NICTA課程
 
-> 在你完成Yorgey的cis194後，我推薦這個課程
+> 在你完成上述Yorgey的cis194後，我推薦繼續挑戰此課程。
 
 這門課發佈在[github上](https://github.com/NICTA/course)。
 
@@ -232,7 +228,7 @@ $ cabal install alex happy
 [線上教材](http://www.scs.stanford.edu/14sp-cs240h/)
 
 這是[Bryan O'Sullivan](https://github.com/bos)在Stanford所教課程的線上版。
-如果你不知道他是誰，去看看Haskell的函式庫吧！幾乎一半以上常用的都有他的名字。
+如果你不知道他是誰，去翻翻Haskell的函式庫吧！幾乎一半以上常用的套件都有他的名字。
 特別是phantom types、information flow control、language extensions、concurrency、pipes和lenses。
 
 ---
@@ -248,9 +244,9 @@ $ cabal install alex happy
 ### 學習常用的typeclasses
 
 對瞭解`Functor`、`Applicative`、`Monad`、`Monoid｀和其他typeclasses很有幫助，而且還有
-些針對Haskell的category theory：
+些針對Haskell的範疇論(category theory)的解釋：
 
-- The [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
+- [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
 
 ### 了解基本的Haskell錯誤訊息
 
@@ -261,7 +257,7 @@ $ cabal install alex happy
 # Laziness, strictness, guarded recursion
 
 - [Marlow關於平行與同步的書](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)中，關於laziness與normal form的介紹
-  是我所看過最好的。Use other material too if it doesn't stick immediately.
+  是我所看過最好的。如果沒有立即理解，不妨搭配以下補充材料。
 
 - [More points for lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
 
@@ -269,7 +265,7 @@ $ cabal install alex happy
 
 - SO上的討論串'[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
-- [Johan Tibell](https://github.com/tibbe)'在[reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness)這個talk的投影片
+- [Johan Tibell](https://github.com/tibbe)'在[reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness)這個演講的投影片
 
 ## 演示
 
@@ -299,7 +295,7 @@ let a = 1 * a -- not guarded, (*) is strict
 
 `glaebhoerl`在Reddit討論串的留言：
 
-> Interesting side note: GHC需要將state token representation隱藏在抽象的IO型別後面，
+> 有趣的補充筆記: GHC需要將state token representation隱藏在抽象的IO型別後面，
 > 因為state token必須線性地使用，不能複製或丟棄，但型別系統無法強制這件事。
 > 某個乾淨、lazy、類似Haskell的語言的型別有uniqueness特性(類似linear type，但可能有些
 > 我沒意識到的細微差別)，為了方便，它直接暴露World-passing並提供非抽象的IO monad。
@@ -310,7 +306,7 @@ let a = 1 * a -- not guarded, (*) is strict
 
 嘗試自行實作標準函式庫中的monads(List、Maybe、Cont、Error、Reader、Writer、State)，可以讓你
 更了解它們。再來，不妨嘗試用下述技術實作一個小型expression language的monadic直譯器：
-[Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf)
+[Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf)(在下列monad transformer章節亦有提及)
 
 透過用不同的monad改變語意，從而產生不同的直譯器，help convey what's going on。
 
@@ -331,11 +327,11 @@ Credits:
 
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md)。
 
-- [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (警告：程式碼已過期)。
+- [Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf)
 
 # Testing, tests, specs, generative/property testing
 
-- Kazu Yamamoto的[這篇教學](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md)  堪稱典範！
+- Kazu Yamamoto的[這篇教學](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md)堪稱典範！
 
 - [Simple-Conduit](https://github.com/jwiegley/simple-conduit)：這個簡單的函式庫對於學習IO串流如何工作很有幫助，
   所學亦可應用在其他函式庫，例如Pipes和Conduit。 
@@ -414,7 +410,6 @@ Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以�
 不但對各種主題都有很好的導覽，也包含了Cabal的一些重要基礎。
 - [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
 
-
 ## Cabal導覽
 在引入沙箱(sandbox)前，Cabal地獄(Cabal Hell)對所有Haskell使用者來說都是一大問題。
 在沙箱外安裝的套件會直接裝在你的用戶套件資料庫(user pacakge-db)中。除非是常用的基礎套件，
@@ -427,7 +422,7 @@ Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以�
 
 簡言之：
 
-- 無論是安裝新套件、建置新舊專案、做任何實驗，用沙箱。
+- 無論是安裝新套件、建置新舊專案、做任何實驗，請用沙箱。
 - 用`cabal repl`來啟動project-scoped ghci實體。
 
 我所建議這種以沙箱為基礎的方式，應該可以避免套件相依性的問題。但這與Haskell Platform提供
@@ -436,7 +431,7 @@ Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以�
 
 ## Stackage
 
-如果你面臨一些建置上的問題(特別是Yesod)，不妨考慮用Stackage
+如果你面臨一些建置上的問題(特別是Yesod)，不妨考慮用Stackage：
 
 - [Stackage是什麼](https://www.fpcomplete.com/blog/2014/05/stackage-server)
 
@@ -508,7 +503,7 @@ cabal haddock --hoogle --hyperlink-source                       \
 
 GHCJS和Haste都是純Haskell，GHCJS比Haste能和更多的Haskell套件相容，但這不會影響大多數的前端專案。PureScript並非Haskell，因此無法直接和你的後端分享源碼。
 
-GHCJS的執行期payload是最大的，大約100kb (luite正在研究如何解決)，Haste和PureScript差不多。
+GHCJS的執行期payload是最大的，大約100kb (luite正在研究如何解決此問題)，Haste則和PureScript差不多。
 
 PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則與Haskell工具鏈整合較佳(例如Cabal)。
 
