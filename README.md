@@ -17,8 +17,6 @@ This is my recommended path for learning Haskell.
 
 * [Em Português](guide-pt.md)
 
-* [Türkçe](guide-tr.md)
-
 
 #### Something to keep in mind: *don't sweat the stuff you don't understand immediately*. Just keep moving.
 
@@ -42,7 +40,7 @@ Don't describe things as "easy" or "trivial". You'll making people feel terrible
 
 No feigning surprise. Don't act surprised when somebody says they don't know something. They'll feel terrible and you've accomplished nothing except to make yourself feel sharp.
 
-No well-actually's. When someone says something that's almost - but not entirely - correct, and you say, "well, actually…" and then give a minor correction. This is especially annoying when the correction has no bearing on the actual conversation. This doesn't mean Hacker School isn't about truth-seeking or that we don't care about being precise. Almost all well-actually's are about grandstanding, not truth-seeking.
+No well-actually's. When someone says something that's almost - but not entirely - correct, and you say, "well, actually…" and then give a minor correction. This is especially annoying when the correction has no bearing on the actual conversation. This doesn't mean Recurse Center isn't about truth-seeking or that we don't care about being precise. Almost all well-actually's are about grandstanding, not truth-seeking.
 
 No back-seat driving. If you see people working through a problem, you shouldn't intermittently interject advice. Let them work it out unless someone asks for help. Avoiding interruptions is [one of the founding purposes of #haskell-beginners](http://chrisdone.com/posts/teaching). 
 
@@ -50,7 +48,7 @@ No subtle -isms. Racism, sexism, homophobia, transphobia, and other kinds of bia
 
 ---
 
-Guidelines by [the Hacker School manual](https://www.hackerschool.com/manual). Thanks for releasing it Hacker School.
+Guidelines by [the Recurse Center manual](https://www.recurse.com/manual). Thanks for releasing it Recurse Center.
 
 # What are Haskell, GHC, and Cabal?
 
@@ -142,7 +140,7 @@ the official one):
 
 ```bash
 $ sudo yum-config-manager --add-repo \
-> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
+> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
 $ sudo yum install ghc cabal-install
 ```
 
@@ -293,17 +291,6 @@ pipes, and lenses.
 
 ---
 
-## Reference material for the three courses
-
-[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) and
-[Real World Haskell](http://book.realworldhaskell.org) (Thanks bos!) are
-available online.
-
-I recommend RWH as a reference (thick book). The chapters for parsing and monads
-are great for getting a sense for where monads are useful. Other people have
-said that they've liked it a lot. Perhaps a good follow-up for practical idioms
-after you've got the essentials of Haskell down?
-
 ### What does that `<-` / `do` / list comprehension syntactic sugar do?
 
 Excellent [article](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html).
@@ -385,7 +372,7 @@ Comment from Reddit thread by `glaebhoerl`
 Implement the standard library monads ( List, Maybe, Cont, Error, Reader,
 Writer, State ) for yourself to understand them better. Then maybe write an
 monadic interpreter for a small expression language using
-[Monad Transformers Step by Step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf)
+[Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf)
 paper (mentioned in 'monad transformers' below).
 
 Writing many interpreters by just changing the monad to change the semantics can
@@ -410,7 +397,7 @@ Credits:
 
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
 
-- [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (warning, code out of date).
+- [Monad transformers step-by-step](http://catamorph.de/documents/Transformers.pdf).
 
 # Testing, tests, specs, generative/property testing
 
@@ -642,7 +629,7 @@ All three are great choices and will work for most frontend projects.
 
 - [The lazy lambda calculus](http://www.cs.ox.ac.uk/files/293/lazy.pdf).
 
-- [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtlm)
+- [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtml)
 
 # Parallelism/Concurrency
 
