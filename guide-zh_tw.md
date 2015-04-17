@@ -28,7 +28,7 @@ Haskell[郵件群組](https://wiki.haskell.org/Mailing_lists)。
 
 ---
 
-來自[the Hacker School manual](https://www.hackerschool.com/manual)的導覽。感謝你們的釋出！
+來自[the Recurse Center manual](https://www.recurse.com/manual)。感謝他們願意公開分享！
 
 # 什麼是Haskell、GHC和Cabal？
 
@@ -237,14 +237,6 @@ $ cabal install alex happy
 
 ---
 
-## 以上三門課程的參考材料
-
-[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com)和
-[Real World Haskell](http://book.realworldhaskell.org)都可線上閱讀，謝啦！
-
-我推薦將RWH當作參考書(它很厚！)。關於parsing和monads的章節對了解monads非常有幫助。
-有些人非常喜歡它，或許是因為在你了解Haskell的基本後，一些實用例會很有幫助吧？
-
 ### `<-` / `do` / list comprehension簡便語法到底是什麼？
 
 [很棒的解釋](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html)。
@@ -318,7 +310,7 @@ let a = 1 * a -- not guarded, (*) is strict
 
 嘗試自行實作標準函式庫中的monads(List、Maybe、Cont、Error、Reader、Writer、State)，可以讓你
 更了解它們。再來，不妨嘗試用下述技術實作一個小型expression language的monadic直譯器：
-[Monad Transformers Step by Step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf)
+[Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf)
 
 透過用不同的monad改變語意，從而產生不同的直譯器，help convey what's going on。
 
@@ -525,6 +517,183 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 # 想要更充分了解laziness、NF、WHNF
 
 - [Notes on lambda calculus](https://vec.io/posts/notes-on-lambda-calculus).
- 
 
+## 關於lazy lambda calculus的研究論文
+
+- [A call by need lambda calculus](http://homepages.inf.ed.ac.uk/wadler/topics/call-by-need.html#need-journal).
+
+- [Demonstrating Lambda Calculus Reduction](http://www.itu.dk/~sestoft/papers/sestoft-lamreduce.pdf)
+
+- [The lazy lambda calculus](http://www.cs.ox.ac.uk/files/293/lazy.pdf).
+
+- [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtml)
+
+# 平行／並行(Parallelism/Concurrency)
+
+- [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929)。在我所讀過的文獻中，Simon Marlow所撰的這本書是此主題的佼佼者。
+
+- [這篇教學](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application)帶領你一步步學習如何用Haskell測試、漸進開發多緒應用程式。
+
+- [Functional Reactive Programming](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
+ 
+# Lenses and Prisms
+
+在你習慣Haskell後，我強烈建議你學習Lenses與Prisms。你不必了解底層的原理，只要當一個使用者，就很受用。
+
+大家普遍誤會Lens是個很難用的東西，其實任何一個了解Functor/Foldable/Traversable，甚至只知道Functor的人，都可以運用Lenses與Prisms來讓他們的開發生涯更快樂。
+
+如果你曾經做過：`(fmap . fmap)`，你其實已經有Lense的思維了。
+
+我推薦以下兩篇教學：
+
+- [A little lens starter tutorial](https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/a-little-lens-starter-tutorial)
+
+- [Lens: Lenses, Folds and Traversals](https://github.com/ekmett/lens#lens-lenses-folds-and-traversals)
+
+詳細資料請看這裡：[Lens package on hackage](http://hackage.haskell.org/package/lens).
+
+# 遞迴範式 (Recursion Schemes)
+
+你一定聽過些瘋狂的『\*-morphism』，他們其實只是遞迴。在嘗試搞懂前，你應該要先知道如何實作list至少一種其他資料結構的foldr，例如tree (folds叫做catamorphisms)。再進一步瞭解如何在以上資料結構實作unfold (anamorphism)會讓整體知識完善些。
+
+以下資料與traversable和foldable的概念相合。
+
+- [An introduction to recursion schemes](http://patrickthomson.ghost.io/an-introduction-to-recursion-schemes/)
+
+- [Don't fear the cat](http://fho.f12n.de/posts/2014-05-07-dont-fear-the-cat.html) -
+  Good demonstration of how hylomorphism is the composition of cata and ana.
+
+- [Recursion Schemes](http://comonad.com/reader/2009/recursion-schemes/) - This
+  field guide is excellent.
+
+- [Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
+
+- [Catamorphisms](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
+
+# GHC核心與效能調校
+
+- [Write Haskell as Fast as C](write_haskell_as_fast_as_c.md)
+
+- [GHC Wiki: CoreSyn Type](https://ghc.haskell.org/trac/ghc/wiki/Commentary/Compiler/CoreSynType).
+
+- [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core).
+
+- [SO Question: Reading GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
+
+- [Haskell as fast as C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
+
+- [Real World Haskell, Chapter 25: Profiling and Optimizations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
+
+# 型別(Type)與範疇論(Category Theory)
+
+> 寫Haskell*不用學*，僅供有興趣的人參考！
+
+如果你想開始學習型別與範疇論：
+
+- [Catster's Guide](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) and
+  [Catster's Guide 2](http://byorgey.wordpress.com/catsters-guide-2/)
+
+- [haskell wikibook](http://en.wikibooks.org/wiki/Haskell/Category_theory) 有不錯的圖解。
+
+- Haskellwiki上的[Category Theory](http://www.haskell.org/haskellwiki/Category_theory)也有不錯的參考資料。
+
+- [Categories from scratch](http://science.raphael.poss.name/categories-from-scratch.html)，有實例。
+
+- Pierce的[Great Works in PL](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml)列表。
+
+## 書籍
+
+- Kmett推薦：[Quora Question: What is the best textbook for category theory?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1)
+
+- [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do)和
+  [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038)。範疇學的標準教科書。
+
+- [Harper's Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/plbook/book.pdf)是我讀過以程式語言角度切入的最佳介紹。
+
+- [Type theory and Functional Programming](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
+
+## Stephen俏皮的"How to get to monad"文章
+
+- [Adjunctions](http://www.stephendiehl.com/posts/adjunctions.html).
+
+- [Monads](http://www.stephendiehl.com/posts/monads.html).
+
+# 其他有趣的主題
+
+## Parametricity, ad-hoc vs. parametric polymorphism, free theorems
+
+- [Parametricity](tony_parametricity.pdf).
+
+- [TeX sources](https://github.com/tonymorris/parametricity/)上述演講的TeX源。
+
+- [Making ad-hoc polymorphism less ad-hoc](http://swizec.com/blog/week-20-making-ad-hoc-polymorphism-less-ad-hoc/swizec/6564).
+
+- [Theorems for Free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf).
+
+## Initial與Final、DSLs、與Tagless
+
+- [Final Encodings, Part 1: A Quick Demonstration](http://creativelad.wordpress.com/2013/11/28/final-encodings-part-1-a-quick-demonstration/).
+
+- [Transforming Polymorphic Values](http://martijn.van.steenbergen.nl/journal/2009/10/18/transforming-polymorphic-values/).
+
+- [GADTs in Haskell 98](http://martijn.van.steenbergen.nl/journal/2009/11/12/gadts-in-haskell-98/).
+
+- [Typed Tagless-Final Linear Lambda Calculus](https://www.fpcomplete.com/user/mutjida/typed-tagless-final-linear-lambda-calculus).
+
+- [Typed tagless-final interpretations: Lecture notes](http://okmij.org/ftp/tagless-final/course/course.html).
+
+- [Typed Tagless Final Interpreters](http://okmij.org/ftp/tagless-final/course/lecture.pdf).
+
+- [The dog that didn't bark](http://existentialtype.wordpress.com/2011/03/21/the-dog-that-didnt-bark/)較無相關，但非常有趣。
+
+## Comonads
+
+- [Comonads in Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
+
+- [SO question: Can a Monad be a Comonad](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
+
+## Yoneda / CoYoneda
+
+- [SO question: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+
+- Free monads for Less, Edward Kmett的系列文章
+  * [Part 1: Codensity](http://comonad.com/reader/2011/free-monads-for-less/).
+  * [Part 2: Yoneda](http://comonad.com/reader/2011/free-monads-for-less-2/).
+  * [Part 3: Yielding IO](http://comonad.com/reader/2011/free-monads-for-less-3/).
+
+## Propositions vs. Judgments (computation)
+
+- [StackExchange question: What is the difference between propositions and judgements](http://cstheory.stackexchange.com/questions/9826/what-is-the-difference-between-propositions-and-judgments).
+
+- [Lecture notes from a short, three lecture course](http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf)
+
+# Dependent typing
+
+- [Grokking sum types, value constructors, and type constructors](http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html) squint hard.
+
+- [Lightweight Dependent-type Programming](http://okmij.org/ftp/Computation/lightweight-dependent-typing.html).
+
+- [Idris programming language](http://www.idris-lang.org/).
+
+# 靜態連結二元檔Statically linking binaries
+
+- [Static linking](https://wiki.haskell.org/Web/Literature/Static_linking)
+
+- [Static linking with GHC on Arch Linux](http://www.edofic.com/posts/2014-05-03-ghc-arch-static.html)
+
+- [Statically linking Linux binaries for ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
+
+- [Statically link GMP using GHC and LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
+
+# 補充資料
+
+> 有部分已在本文提及
+
+- [Essential Haskell Reading List](http://www.stephendiehl.com/posts/essential_haskell.html)
+
+## 對話記錄
+
+> 在[本儲存庫中](dialogues.md)。
+
+裡面有些非常重要而有幫助的資訊，可協助你深入了解許多不同的議題。
 
