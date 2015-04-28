@@ -410,7 +410,7 @@ Original:
 Implementiere die Monaden aus der Standard Bibliothek ( List, Maybe, Cont, Error, Reader,
 Writer, State ) für dich selbst, um sie besser zu verstehen. Dann schreibe vielleicht einen
 monadischen Interpreter für eine kleine Expression Sprache mit dem
-[Monad Transformers Step by Step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf)
+[Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf)
 Paper (erwähnt in 'monad transformers' im folgenden).
 
 Mehrere Interpreter zu schreiben, indem man einfach nur die Monade ändert um die Semantik zu verändern
@@ -432,10 +432,10 @@ Credits:
 - Reddit Kommentar von jozefg [hier](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
 ## Monad transformers
-
+ 
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
 
-- [Monad transformers step-by-step](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf) (warning, code out of date).
+- [Monad transformers step-by-step](http://catamorph.de/documents/Transformers.pdf).
 
 # Testen, Tests, Specs, generative/property testing
 

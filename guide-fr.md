@@ -274,17 +274,6 @@ la concurrence, les pipes, et les lenses.
 
 ---
 
-## Documentation de référence pour les trois cours
-
-[Learn You a Haskell for Great Good (LYAH)](http://learnyouahaskell.com) et
-[Real World Haskell](http://book.realworldhaskell.org) (Merci bos !) sont
-disponibles en ligne.
-
-Je recommande RWH comme reference (un livre épais). Les chapitres sur le parsing et
-les monades sont super pour comprendre où les monades sont utiles. D'autres ont confirmé
-qu'il l'avaient beaucoup apprécié. Certainement une bonne suite pour des idiomes plus pratiques
-lorsque vous aurez intégré les bases d'Haskell.
-
 ### Que sont les sucres syntactiques `<-` / `do` / comprehension de listes ?
 
 Un [article](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html) excellent.
@@ -370,7 +359,7 @@ Implémenter les monades de la librairie standard (List, Maybe, Cont, Error,
 Reader, Writer, State) par vous-même afin de mieux les comprendre. Après, vous
 pouvez peut-être écrire un interpréteur monadique pour un langage avec des petites
 expressions en utilisant le papier sur les
-[transformateurs de monades étape par étape](http://www.cs.virginia.edu/~wh5a/personal/Transformers.pdf)
+[transformateurs de monades étape par étape](http://catamorph.de/documents/Transformers.pdf)
 (mentionné dans la section "transformateurs de monades" ci-dessous).
 
 Écrire plusieurs interpréteurs en changeant juste le Monde pour changer les
@@ -401,7 +390,7 @@ Crédits:
 de Kazu Yamamoto est fantastique.
 
 - [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Une bonne librairie simple pour apprendre comment le streaming d'IO fonctionne en général. Les connaissances acquises ici sont transférables à Pipes et Conduit.
-
+ 
 # Parsing en Haskell
 
 - [Tutoriel](https://github.com/JakeWheat/intro_to_parsing) sur les parser
