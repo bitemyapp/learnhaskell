@@ -602,6 +602,15 @@ recommend:
   - Try purescript in you browser [here](http://try.purescript.org/)
   - Great guide for [getting started](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
 
+## Backend/HTTP
+
+* [Wai](http://hackage.haskell.org/package/wai)/[Warp](http://hackage.haskell.org/package/warp)
+  - [Wai-Extra](http://hackage.haskell.org/package/wai-extra)
+  - [Wai-Static-Middleware](http://hackage.haskell.org/package/wai-static-middleware)
+* [Scotty](http://hackage.haskell.org/package/scotty)
+* [Spock](http://hackage.haskell.org/package/spock)
+* [Nested-Routes](http://hackage.haskell.org/package/wai)
+
 ## Which frontend language do I use?
 
 GHCJS and Haste are both fully Haskell. GHCJS will work with more Haskell
