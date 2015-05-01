@@ -236,7 +236,7 @@ Baixe as últimas distribuições binárias para o cabal e ghc:
 > *Faça este primeiro*, esta é a minha recomendação de como ser introduzido 
 > ao Haskell.
 
-Disponível [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Disponível [online](http://www.seas.upenn.edu/%7Ecis194/lectures.html).
 
 O curso de [Brent Yorgey](https://byorgey.wordpress.com) é o melhor que eu
 encontrei até agora. Esse curso é importante porque ele não só vai equipá-lo

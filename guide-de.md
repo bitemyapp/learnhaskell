@@ -254,7 +254,7 @@ Du musst das nicht machen, wenn du die .app nutzt, aber wenn das für dich nicht
 > *Den solltest du zuerst machen*, das ist eine erstklassige Einführung
 > in Haskell, die ich sehr empfehle
 
-Verfügbar [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Verfügbar [online](http://www.seas.upenn.edu/%7Ecis194/lectures.html).
 
 [Brent Yorgey](https://byorgey.wordpress.com)s Kurs ist der beste, den ich bisher gefunden habe.
 Dieser Kurs ist wertvoll, da du nicht nur Grundlegendes über Haskell lernst, sondern auch lernst
