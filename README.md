@@ -1,6 +1,6 @@
 # How to learn Haskell
 
-This is my recommended path for learning Haskell.
+This is a recommended path for learning Haskell based on experience helping others.
 
 
 ## For non-English speakers
