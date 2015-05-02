@@ -204,9 +204,8 @@ echo $SHELL | xargs basename
 
 I use zsh, so that command outputs `zsh` when I run it.
 
-Once you do all of that, you'll want to install the additional tools `alex` and
-`happy`.
-
+Once you do all of that, you'll want to install the additional tools `alex` and `happy`.
+    
 ```bash
 $ cabal install alex happy
 ```
@@ -241,6 +240,17 @@ Download the latest binary distributions for cabal and ghc:
 - [GHC](http://www.haskell.org/ghc/).
 
 - [Cabal](https://www.haskell.org/cabal/download.html).
+
+## Users of other Unix-like Systmes
+
+Install GHC and Cabal from your package system, then add `~/.cabal/bin` to your `$PATH`. Finally update `cabal` and install the additional tools `alex` and `happy`.
+    
+    ```bash
+$ cabal update
+$ cabal install cabal-install alex happy
+```
+
+
 
 # Primary Courses
 
