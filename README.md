@@ -1,4 +1,4 @@
-# The Guide
+###### The Guide ######
 
 This is my recommended path for learning Haskell.
 
@@ -241,15 +241,15 @@ Download the latest binary distributions for cabal and ghc:
 
 - [Cabal](https://www.haskell.org/cabal/download.html).
 
+
 ## Users of other Unix-like Systmes
 
 Install GHC and Cabal from your package system, then add `~/.cabal/bin` to your `$PATH`. Finally update `cabal` and install the additional tools `alex` and `happy`.
     
-    ```bash
+```bash
 $ cabal update
 $ cabal install cabal-install alex happy
 ```
-
 
 
 # Primary Courses
