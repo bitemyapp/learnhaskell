@@ -61,11 +61,11 @@ See [the install instructions](install.md) for how to get GHC & Cabal installed.
 
 # How should I learn Haskell?
 
-The core recommendation is to read the lectures and complete all exercises/homework for the Spring 13 version of cis194 followed by the NICTA course. Both are linked below. Everything else should be considered optional and is mentioned so you know where to look for various topics.
+The core recommendation is to read the lectures and complete all exercises/homework for the Spring 13 version of cis194 followed by the NICTA course. Both are linked below. Everything else can be considered optional and is mentioned so you know where to look.
 
 ## Yorgey's cis194 course
 
-> *Do this first*, this is the primary way I recommend being introduced to
+> *Do this first*, this is the primary way we recommend being introduced to
 > Haskell.
 
 Available [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
@@ -83,7 +83,7 @@ to cis194.
 
 ## NICTA course
 
-> This is the course I recommend doing after Yorgey's cis194 course
+> This is the course we recommend doing after Yorgey's cis194 course
 
 Available on github [here](https://github.com/NICTA/course).
 
@@ -91,7 +91,7 @@ This will reinforce and give you experience directly implementing the
 abstractions introduced in cis194, this is practice which is *critical* to
 becoming comfortable with everyday uses of Functor/Applicative/Monad/etc. in
 Haskell. Doing cis194 and then the NICTA course represents the core
-recommendation of my guide and is how I teach everyone Haskell.
+recommendation of my guide and is how we teach everyone Haskell.
 
 ---
 
@@ -112,7 +112,7 @@ pipes, and lenses.
 
 # Resources for specific topics in Haskell
 
-These resources are not as aggressively vetted or tested with learners as cis194 and NICTA course have been, but they're linked in [the topic listing](specific_topics.md) so you have ideas on where to begin. This includes things like intermediate/advanced concepts and subjects like tooling and text editors.
+These resources are not vetted or tested with learners as cis194 and NICTA course have been, but they're linked in [the topic listing](specific_topics.md) so you have ideas on where to begin. This includes things like intermediate/advanced concepts and subjects like tooling and text editors.
 
 # Extended Reading list
 
