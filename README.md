@@ -1,4 +1,4 @@
-###### The Guide ######
+# How to learn Haskell
 
 This is my recommended path for learning Haskell.
 
