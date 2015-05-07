@@ -460,8 +460,6 @@ Disponível no [hackage](https://hackage.haskell.org/package/aeson) e
 
 - [Haskell-vim-now](https://github.com/begriffs/haskell-vim-now)
 
-- [Um *workflow* com vim+haskell](http://www.stephendiehl.com/posts/vim_haskell.html)
-
 - [GHC-Mod](https://github.com/kazu-yamamoto/ghc-mod)
 
 - [Plugin do vim para o GHC-Mod](https://github.com/eagletmt/ghcmod-vim)
@@ -472,15 +470,7 @@ Disponível no [hackage](https://hackage.haskell.org/package/aeson) e
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
 
-# FAQ e trabalhando com o Cabal
-
-## FAQ fantástico
-
-Além de ser um ótimo guia para todos tipo de coisa como GADTs,
-isto também cobre alguns pontos básicos do Cabal.
-
-- [O que eu gostaria de ter sabido quando estava aprendendo Haskell](http://dev.stephendiehl.com/hask/)
-  também no github [aqui](https://github.com/sdiehl/wiwinwlh).
+# Trabalhando com Cabal
 
 ## Diretrizes do Cabal
 
@@ -724,12 +714,6 @@ Se você quiser um material complementar em teoria dos tipos e das categorias:
 
 - [Teoria dos tipos e Programação Funcional](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
 
-## Posts elegantes do Stephen ("Como chegar até *monads*")
-
-- [Adjunções](http://www.stephendiehl.com/posts/adjunctions.html).
-
-- [Monads](http://www.stephendiehl.com/posts/monads.html).
-
 # Outros tópicos divertidos
 
 ## Parametricidade, polimorfismo ad-hoc vs. paramétrico, teoremas livres
@@ -797,12 +781,6 @@ Se você quiser um material complementar em teoria dos tipos e das categorias:
 - [Linkando Estaticamente binários do Linux para ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
 
 - [Linkando Estaticamente GMP usando GHC e LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
-
-# Lista de Leitura Estendida
-
-> Alguns já foram incluídos neste guia
-
-- [Lista de Leitura essencial ao Haskell](http://www.stephendiehl.com/posts/essential_haskell.html)
 
 ## Diálogos
 
