@@ -7,7 +7,7 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 * [Auf Deutsch](guide-de.md)
 
-* [Στην ελληνική](guide-el.md)
+<!-- * [Στην ελληνική](guide-el.md) -->
 
 * [En Español](guide-es.md)
 
