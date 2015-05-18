@@ -431,8 +431,6 @@ haskell. Disponibile su [hackage](https://hackage.haskell.org/package/aeson) e
 
 - [Haskell-vim-now](https://github.com/begriffs/haskell-vim-now)
 
-- [Un workflow vim+haskell](http://www.stephendiehl.com/posts/vim_haskell.html)
-
 - [GHC-Mod](https://github.com/kazu-yamamoto/ghc-mod)
 
 - [GHC-Mod vim plugin](https://github.com/eagletmt/ghcmod-vim)
@@ -443,14 +441,7 @@ haskell. Disponibile su [hackage](https://hackage.haskell.org/package/aeson) e
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
 
-# FAQ e lavorare con Cabal
-
-## Una FAQ fantastica
-
-Oltre ad essere una guida eccezionale per vare cose, come i GADT, questa guida copre anche alcune utili basi di Cabal
-
-- [Quello che vorrei aver saputo mentre imparavo Haskell](http://dev.stephendiehl.com/hask/)
-  anche su github [qui](https://github.com/sdiehl/wiwinwlh).
+# Lavorare con Cabal
 
 ## Linee guida di Cabal
 
@@ -655,12 +646,6 @@ Se volete imparare di più su tipi e teoria delle categorie:
 
 - [Type theory and Functional Programming](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
 
-## Gli ottimi articoli di Stephen su "Come capire le monadi"
-
-- [Adjunctions](http://www.stephendiehl.com/posts/adjunctions.html).
-
-- [Monads](http://www.stephendiehl.com/posts/monads.html).
-
 # Altri argomenti divertenti
 
 ## Parametricità, ad-hoc vs. polimorfismo parametrico e teoremi liberi
@@ -727,12 +712,6 @@ Se volete imparare di più su tipi e teoria delle categorie:
 - [Statically linking Linux binaries for ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
 
 - [Statically link GMP using GHC and LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
-
-# Lista estesa di materiali da leggere
-
-> Alcuni sono già inclusi qui
-
-- [Essential Haskell Reading List](http://www.stephendiehl.com/posts/essential_haskell.html)
 
 ## Dialoghi
 

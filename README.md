@@ -114,11 +114,6 @@ pipes, and lenses.
 
 These resources are not vetted or tested with learners as cis194 and NICTA course have been, but they're linked in [the topic listing](specific_topics.md) so you have ideas on where to begin. This includes things like intermediate/advanced concepts and subjects like tooling and text editors.
 
-# Extended Reading list
-
-> Some are already included here
-
-- [Essential Haskell Reading List](http://www.stephendiehl.com/posts/essential_haskell.html)
 
 ## Dialogues
 

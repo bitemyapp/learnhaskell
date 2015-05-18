@@ -449,8 +449,6 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 
 - [Haskell-vim-now](https://github.com/begriffs/haskell-vim-now)
 
-- [Un workflow vim+haskell](http://www.stephendiehl.com/posts/vim_haskell.html)
-
 - [GHC-Mod](https://github.com/kazu-yamamoto/ghc-mod)
 
 - [plugin vim GHC-Mod](https://github.com/eagletmt/ghcmod-vim)
@@ -461,15 +459,7 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
 
-# FAQ et utilisation de Cabal
-
-## Une FAQ fantastique
-
-En plus d'être un guide extraordinaire sur pleins de sujets comme les GADT,
-il couvre aussi des bases utiles de Cabal.
-
-- [Ce que j'aurais aimé savoir lors de mon apprentissage d'Haskell](http://dev.stephendiehl.com/hask/)
-  aussi disponible sur github [ici](https://github.com/sdiehl/wiwinwlh).
+# Utilisation de Cabal
 
 ## Recommandations pour Cabal
 
@@ -718,12 +708,6 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 - [La théorie des Types et la Programmation Functionnelle](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
 
-## Les magnifiques posts de Stephen "Comment aller aux monades"
-
-- [Adjonctions](http://www.stephendiehl.com/posts/adjunctions.html).
-
-- [Monades](http://www.stephendiehl.com/posts/monads.html).
-
 # Autres sujets amusants
 
 ## Paramétricité, ad-hoc vs. polymorphisme paramétrique, théorèmes libres
@@ -791,12 +775,6 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 - [Interconnexion statique de binaires Linux pour ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
 
 - [Interconnexion statique GMP avec GHC et LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
-
-# Liste de lecture étendue
-
-> Certains sont déjà inclus ici
-
-- [Liste de lecture Haskell Essentielle](http://www.stephendiehl.com/posts/essential_haskell.html)
 
 ## Dialogues
 

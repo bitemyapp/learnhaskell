@@ -174,8 +174,6 @@ haskell. Available from [hackage](https://hackage.haskell.org/package/aeson) and
 
 - [Haskell-vim-now](https://github.com/begriffs/haskell-vim-now)
 
-- [A vim+haskell workflow](http://www.stephendiehl.com/posts/vim_haskell.html)
-
 - [GHC-Mod](https://github.com/kazu-yamamoto/ghc-mod)
 
 - [GHC-Mod vim plugin](https://github.com/eagletmt/ghcmod-vim)
@@ -186,15 +184,7 @@ haskell. Available from [hackage](https://hackage.haskell.org/package/aeson) and
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
 
-# FAQ and working with Cabal
-
-## Fantastic FAQ
-
-In addition to being an amazing guide for all kinds of things such as GADTs,
-this also covers some useful basics for Cabal
-
-- [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
-  also on github [here](https://github.com/sdiehl/wiwinwlh).
+# Working with Cabal
 
 ## Cabal guidelines
 
@@ -438,12 +428,6 @@ If you want to follow up on type and category theory:
 - [Harper's Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/plbook/book.pdf) is the best PL focused intro to type theory I've read.
 
 - [Type theory and Functional Programming](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
-
-## Stephen's Nifty "How to get to monad" posts
-
-- [Adjunctions](http://www.stephendiehl.com/posts/adjunctions.html).
-
-- [Monads](http://www.stephendiehl.com/posts/monads.html).
 
 # Other fun topics
 
