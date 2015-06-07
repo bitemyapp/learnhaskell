@@ -7,7 +7,7 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 * [Auf Deutsch](guide-de.md)
 
-* [Στην ελληνική](guide-el.md)
+<!-- * [Στην ελληνική](guide-el.md) -->
 
 * [En Español](guide-es.md)
 
@@ -16,6 +16,8 @@ This is a recommended path for learning Haskell based on experience helping othe
 * [In Italiano](guide-it.md)
 
 * [Em Português](guide-pt.md)
+
+* [繁體中文](guide-zh_tw.md)
 
 
 #### *Don't sweat the stuff you don't understand immediately*. Keep moving!
