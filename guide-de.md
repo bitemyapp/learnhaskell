@@ -42,29 +42,29 @@ Richtlinien aus [the Recurse Center manual](https://www.recurse.com/manual). Dan
 
 # Was sind Haskell, GHC, und Cabal?
 
-Haskell ist eine Programmiersprache wie in den Reporten festgelegt, mit dem letzten von 2010.
+Haskell ist eine Programmiersprache, die in einem Report festgelegt wird, der letzte ist von 2010.
 Der Report ist [online](http://www.haskell.org/onlinereport/haskell2010/) verfügbar.
 
 ## GHC
 
 [GHC](http://www.haskell.org/ghc/) ist der beliebteste und bekannteste Weg mit Haskell zu arbeiten.
-Er beinhaltet einen compiler, REPL (Interpreter), Paket Management, und ein paar weitere Dinge.
+Er beinhaltet einen Compiler, REPL (Interpreter), Paket Management, und ein paar weitere Dinge.
 
 ## Cabal
 
 [Cabal](https://www.haskell.org/cabal/download.html) ist für Projekt Management und
-Abhängigkeits Auflösung zuständig. Hiermit installierst du Projekte, normalerweise in ihre
+Abhängigkeitsauflösung zuständig. Hiermit installierst du Projekte, normalerweise in ihre
 eigene Sandbox.
 
 Cabal ist äquivalent zu Rubys Bundler, Pythons pip, Nodes NPM, Maven, etc. GHC
-kümmert sich selber um Packaging(??), Cabal wählt die zu installierende Version aus.
+kümmert sich selber um die Paketierung, Cabal wählt die zu installierende Version aus.
 
 # Installation
 
 ## Ubuntu
 
 [Dieses PPA](http://launchpad.net/~hvr/+archive/ghc) ist ausgezeichnet und ich benutze
-es auf allen meine Linux Entwicklungs- und Buildmaschinen
+es auf allen meine Linux Entwicklungs- und Buildmaschinen.
 
 Genauer:
 
@@ -146,8 +146,8 @@ $ sudo yum-config-manager --add-repo \
 $ sudo yum install ghc cabal-install
 ```
 
-Wie in
-[petersen/ghc-7.8.4 copr page](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/)
+Wie in auf der Seite
+[petersen/ghc-7.8.4 copr](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/)
 beschrieben kann dieser ghc nicht parallel zu Fedora/EPEL ghc installiert werden.
 
 ## Arch Linux
@@ -163,8 +163,8 @@ $ sudo pacman -S cabal-install ghc happy alex haddock
 Unter Gentoo kannst du verschiedene Komponenten der Haskell Platform
 via Portage installieren. Wenn du `ACCEPT_KEYWORDS=arch` nutzt (anstatt
 `ACCEPT_KEYWORDS=~arch`), installiert Portage die uralt Versionen der verschiedenen
-Haskell Teile. Daher, füge wenn du, und *nur* wenn du `ACCEPT_KEYWORDS=arch` nutzt, das
-folgende in `/etc/portage/package.keywords` ein.
+Haskell Teile. Daher füge, wenn du, und *nur* wenn du `ACCEPT_KEYWORDS=arch` nutzt, das
+Folgende in `/etc/portage/package.keywords` ein.
 
     dev-haskell/cabal-install
     dev-lang/ghc
@@ -228,9 +228,8 @@ Installiere die Binary Distribution, wie unten beschrieben, mit [diesem tarball]
 
 ## Windows
 
-- Der [windows minimal GHC installer](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
-  ist in der Lage `network` und andere zu installieren. Technisch gesehen in Beta, sollte aber funktionieren für die Zwecke
-  eines jeden der diese Anleitung ließt.
+- Der [minimale ghc Installer für Windows](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
+  ist in der Lage `network` und andere zu installieren. Technisch gesehen befindet er sich in der Beta, sollte aber für die Zwecke eines jeden der diese Anleitung ließt funktionieren.
 
 Vergesse nicht den Installer als Administrator auszuführen, da er in deinen Programmen installieren will.
 
@@ -269,13 +268,13 @@ cis194.
 
 ## NICTA Kurs
 
-> Das ist der Kurs, den ich empfehle nach Yorgeys cis194 Kurs, zu machen
+> Das ist der Kurs, den ich nach Yorgeys cis194 Kurs empfehle zu machen
 
 Verfügbar [hier](https://github.com/NICTA/course) auf github
 
 Das wird dein Verständnis verbessern und dir Erfahrung mit der Implementierung der
 Abstraktionen geben, die in cis194 eingeführt wurden, das ist die Praxis, die *ausschlaggebend* ist, um
-mit der üblichen Nutzung von Functor/Applicative/Monad/etc. in Haskell vertraut zu verwerden.
+mit der üblichen Nutzung von Functor/Applicative/Monad/etc. in Haskell vertraut zu werden.
 Erst cis194 und dann den NICTA Kurs zu machen, ist die wesentliche Empfehlung meiner Anleitung
 und ist der Weg, wie ich anderen Leuten Haskell beibringe.
 
@@ -301,7 +300,7 @@ Verfügbar [online](http://www.scs.stanford.edu/14sp-cs240h/).
 
 Das ist [Bryan O'Sullivan](https://github.com/bos)s online Version des Kurses, den er
 in Stanford unterrichtet. Wenn du nicht weißt, wer er ist, guck dir der Hälfte der Libraries
-and, die jede Haskell Anwendung am Ende braucht und sein Name wird dabei sein.
+an, die jede Haskell Anwendung am Ende braucht und sein Name wird dabei sein.
 Wenn du bereits den Yorgey Kurs gemacht hast, sind die Module über
 phantom types, information flow control, language extensions, concurrency,
 pipes, und lenses von besonderer Bedeutung.
@@ -576,8 +575,8 @@ Siehe [hier](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
 
 2. [Hackage Dokumentation v2](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html)
 
-Beachte, dass diese Artikel *etwas veraltet* sind: Zum Beispile, hat Hackage jetzt eine neue
-Info mit Dokumentation Info und Build Status.
+Beachte, dass diese Artikel *etwas veraltet* sind: Zum Beispiel hat Hackage jetzt eine neue
+Info mit Dokumentations- und Build-Status.
 
 ## Was du wirklich wissen solltest
 
@@ -587,8 +586,8 @@ musst du alle Pakete löschen und neu installieren bevor die Haddocks generiert 
 
 Die andere Sache, an die man denken sollte, ist, dass aufgrund der Art wie `$pkg` interpoliert
 wird *von* cabal, nicht von dir, die `html-location` und `content-location` Parameter
-*müssen in Apostrophen* stehen und in die Shell eingegeben werden oder in einem Shell Skript stehen.
-Sie werden nicht in einer Makefile funktionieren, da Make denken wird es seien Make Variablen
+*in Apostrophen* stehen *müssen* und in die Shell eingegeben werden oder in einem Shell Skript stehen.
+Sie werden nicht in einer Makefile funktionieren, da Make denken wird es seien Make Variablen.
 
 ```bash
 #! /usr/bin/env sh
