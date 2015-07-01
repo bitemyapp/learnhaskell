@@ -35,31 +35,11 @@ The haskell [mailing lists](https://wiki.haskell.org/Mailing_lists).
 
 See [the community guidelines](coc.md) to understand the conduct that is expected in the IRC channel. You'll get a warning if you're not obviously trolling, but be aware the channel is exclusively for those learning or teaching Haskell.
 
+# Installing Haskell
 
-# What are Haskell, GHC, and Cabal?
+## DO NOT INSTALL HASKELL PLATFORM
 
-Haskell is a programming language as laid out in the reports, most recent one
-being in 2010. The report is available as the
-[onlinereport](http://www.haskell.org/onlinereport/haskell2010/).
-
-## GHC
-
-[GHC](http://www.haskell.org/ghc/) is the most popular way to work in the
-Haskell language. It includes a compiler, REPL (interpreter), package
-management, and other things besides.
-
-## Cabal
-
-[Cabal](https://www.haskell.org/cabal/download.html) does project management and
-dependency resolution. It's how you'll install projects, typically into their
-own sandbox.
-
-Cabal is equivalent to Ruby's Bundler, Python's pip, Node's NPM, Maven, etc. GHC
-manages packaging itself, Cabal chooses what versions to install.
-
-# Getting set-up
-
-See [the install instructions](install.md) for how to get GHC & Cabal installed.
+Instead of following the instructions on Haskell.org, See [the install instructions](install.md) for how to get GHC & Cabal installed.
 
 # How should I learn Haskell?
 

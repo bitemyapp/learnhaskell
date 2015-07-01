@@ -1,3 +1,24 @@
+# What are Haskell, GHC, and Cabal?
+
+Haskell is a programming language as laid out in the reports, most recent one
+being in 2010. The report is available as the
+[onlinereport](http://www.haskell.org/onlinereport/haskell2010/).
+
+## GHC
+
+[GHC](http://www.haskell.org/ghc/) is the most popular way to work in the
+Haskell language. It includes a compiler, REPL (interpreter), package
+management, and other things besides.
+
+## Cabal
+
+[Cabal](https://www.haskell.org/cabal/download.html) does project management and
+dependency resolution. It's how you'll install projects, typically into their
+own sandbox.
+
+Cabal is equivalent to Ruby's Bundler, Python's pip, Node's NPM, Maven, etc. GHC
+manages packaging itself, Cabal chooses what versions to install.
+
 # Installing GHC & Cabal
 
 ## Ubuntu
