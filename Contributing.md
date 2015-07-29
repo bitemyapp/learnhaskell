@@ -1,6 +1,6 @@
 # CONTRIBUTING.md
 
-> Building the pdf requires pandoc. 
+> Building the pdf requires pandoc.
 
 - Don't hyperlink anything that appears in the table-of-content.
   * Reason: Those links get messed up in the final pdf.
@@ -29,3 +29,4 @@ languages:
  Italian    | `GUIDE_LANG=it`
  Portuguese | `GUIDE_LANG=pt`
  Turkish    | `GUIDE_LANG=tr`
+ Russian    | `GUIDE_LANG=ru`
