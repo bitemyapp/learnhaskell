@@ -117,5 +117,147 @@ export PATH=$PATH:~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.8.4/bin:/opt/happy
 Код, который вы разрабатываете будет доступен вам из командной строки.
 Это работает только тогда, когда ваша текущая рабочая папка - песочница cabal.
 
+## Debian
+
+### Использование Ubuntu PPA
+
+Если вы не используете стабильный дистрибутив, вы можете повторить все теже шаги,
+что и для Ubuntu, но вам надо будет выполнить дополнительную команду.
+Сразу после `sudo add-apt-repository -y ppa:hvr/ghc` выполните:
+
+```bash
+$ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
+```
+
+Для остальных версий Debian, просто замените все `jessie` именем вашей версии в команде выше.
+
+Если по какой-то причине файл `/etc/apt/sources.list.d/hvr-ghc-jessie.list`
+не существует, то `/etc/apt/sources.list` должен содержать строку со ссылкой вроде этой:
+
+    deb http://ppa.launchpad.net/hvr/ghc/ubuntu jessie main
+
+Замените `jessie` на `trusty` в этой строке.
+
+### Сборка из исходников
+
+Вы можете использовать
+[это руководство]
+(http://www.davesquared.net/2014/05/platformless-haskell.html), написанное для Mac OS X:
+
+Замечания:
+
+- Выставьте ваш префикс соответственно, когда конфигурируете ghc.
+- Вместо того, чтобы забирать бинарник `cabal-install`, скачайте исходный код и запустите скрипт `bootstrap.sh`.
+
+## Fedora 21
+
+Чтобы уставновить Haskell 7.8.4 из неофициального репо (Fedora 22+ будут содержать его в официальном):
+
+```bash
+$ sudo yum-config-manager --add-repo \
+> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
+$ sudo yum install ghc cabal-install
+```
+
+Как указано на странице
+[petersen/ghc-7.8.4](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/)
+этот ghc не может быть установлен вместе с Fedora/EPEL ghc.
+
+## Arch Linux
+
+Чтобы установить Haskell из официального репо на Arch Linux, выполните:
+
+```bash
+$ sudo pacman -S cabal-install ghc happy alex haddock
+```
+
+## Gentoo
+
+На Gentoo вы можете установить индивидуальные компоненты Haskell Platform через Portage.
+Если вы используете `ACCEPT_KEYWORDS=arch` (вместо `ACCEPT_KEYWORDS=~arch`),
+Portage установит древние версии различных компонент Haskell. Помня это, если вы используете `ACCEPT_KEYWORDS=arch`, добавьте следующие строки в `/etc/portage/package.keywords`.
+
+    dev-haskell/cabal-install
+    dev-lang/ghc
+
+Как только это сделано,
 
 
+```bash
+$ emerge -jav dev-lang/ghc dev-haskell/cabal-install
+```
+
+Gentoo хранит "стабильную" (читай "старую") версию `cabal-install` в дереве Portage, так что, если вы хотите использовать более современную версию `cabal-install`, выполните (заметтье, что слеши здесь нужны)
+
+```bash
+$ \cabal update                # Слеши здесь
+$ \cabal install cabal-install # нужны
+```
+
+Вы установили cabal глобально через Portage и локально в вашей домашней директории с `cabal-install`.
+Следующий шаг, это убедиться, что когда вы запускаете `cabal` в вашем терминале,
+ваша оболочка запускает последнюю версию в вашей домашней директории.
+Вам нужно добавить следующие строки к конфигурационному файлу вашей оболочки.
+
+```bash
+PATH=$PATH:$HOME/.cabal/bin
+alias cabal="$HOME/.cabal/bin/cabal"
+```
+
+Если вы не знаете, какая оболочка у вас используется, то скорее всего это Bash. Если это Bash, то файл, в который вам надо добавлять эти строки - `~/.bashrc`. Если вы используете Z-shell, то это `~/.zshrc`. Вы можете понять, какая оболочка у вас используется, запустив:
+
+```bash
+echo $SHELL | xargs basename
+```
+
+Я использую zsh, так что вывод этой команды у меня выглядит как `zsh`.
+
+После всего этого вы захотите установить дополнительные инструменты `alex` и `happy`.
+
+```bash
+$ cabal install alex happy
+```
+
+Поздравляю! Теперь у вас рабочий Haskell!
+
+## Mac OS X
+
+### 10.9
+
+Установите [GHC для Mac OS X](http://ghcformacosx.github.io/) приложение,
+которе включает в себя GHC и Cabal.
+Оно предоставляет инструкции, как добавить GHC и Cabal в ваш путь,
+после того как вы скопируете приложение `.app` куда-либо.
+
+### 10.6-10.8
+
+Выполните установку бинарников, которая описана ниже,
+для [этого архива](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2).
+
+## Windows
+
+- [Минимальный установщик GHC для Windows](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
+  способен скомпилировать `network` и тп. Технически, это бета версия,
+  но должна работать для тех, кто читает это руководство.
+
+Не забудьте запустить установщик как администратор, так как он захочет установить файлы в Program Files.
+
+## Пользователям других Linux дистрибутивов
+
+Скачайте последние бинарники cabal и ghc:
+
+- [GHC](http://www.haskell.org/ghc/).
+
+- [Cabal](https://www.haskell.org/cabal/download.html).
+
+
+## Пользователям других Unix-подобных систем
+
+Скачайте GHC и Cabal из вашего пакетного менеджера,
+затем добавьте `~/.cabal/bin` в ваше `$PATH`.
+Поосле этого обновите `cabal` и установите дополнительные инструменты `alex` и `happy`.
+
+```bash
+$ cabal update
+$ cabal install cabal-install alex happy
+```
