@@ -364,7 +364,6 @@ cs240h доступен [онлайн](http://www.scs.stanford.edu/14sp-cs240h/)
   [reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness).
 
 ## Краткая демонстрация
-<!-- TODO:  translate when understand better -->
 
 ```haskell
 let a = 1 : a -- guarded recursion, (:) is lazy and can be pattern matched.
@@ -388,9 +387,21 @@ let a = 1 * a -- not guarded, (*) is strict
 - [First class "statements"](http://blog.jle.im/entry/first-class-statements).
 
 - [Haddocks for System.IO.Unsafe.unsafePerformIO](http://hackage.haskell.org/package/base-4.7.0.1/docs/System-IO-Unsafe.html#v:unsafePerformIO)
-  Read the docs and note implementation of unsafeDupablePerformIO
+  Читая документацию обратите внимание на реализацию unsafeDupablePerformIO
 
-Comment from Reddit thread by `glaebhoerl`
+Комментарий с обсуждения на Reddit от `glaebhoerl`
+
+Перевод:
+
+<!-- TODO: I don't really understand this, so I can't translate properly -->
+> Интересное замечание: GHC должен скрывать отображение токена статуса поздаи
+> абстрактного типа IO, потому что токен статуса должен все время быть использован
+> линейно (не быть дуплицирован или сброшен), но система типов не может принудительно
+> этого делать. Понятно, что другой ленивый подобный Haskell язык, имеет уникальные типы
+> (которые подобны линейным типам и возможно отличаются, но я не знаю как), и они разкрывают
+> передачу в Мир напрямую и предоставляют (не абстрактную) IO монаду только для соблюдения соглашения.
+
+Оригинал:
 
 > Interesting side note: GHC needs to hide the state token representation behind
 > an abstract IO type because the state token must always be used linearly (not
@@ -400,60 +411,59 @@ Comment from Reddit thread by `glaebhoerl`
 > World-passing directly and provide a (non-abstract) IO monad only for
 > convenience.
 
-# Monads and monad transformers
+# Монады и трансформеры монад
 
-> Do not do these until you understand typeclasses, Monoid, Functor, and
-> Applicative!
+> Не делайте этого пока вы не поняли классы типов Monoid, Funcor и Applicative!
 
-Implement the standard library monads ( List, Maybe, Cont, Error, Reader,
-Writer, State ) for yourself to understand them better. Then maybe write an
-monadic interpreter for a small expression language using
+Реализуйте монады из стандартной библиотеки (List, Maybe, Cont, Error, Reader,
+Writer, State) для себя, чтобы понять их лучше. Затем, может быть, напишите
+монадный интерпритатор для маленького языка выражений используя документ
 [Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf)
-paper (mentioned in 'monad transformers' below).
+(упомянут в 'трансформеры монад' ниже).
 
-Writing many interpreters by just changing the monad to change the semantics can
-help convey what's going on.
+Написание многих интерпритаторов просто изменяя монаду для изменения семантики
+может помочь лучше понять, что происходит.
 
-- [This talk](https://vimeo.com/73648150) by Tony excellently motivates monad
-  transformers, [the slides](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
+- [Этот рассказ](https://vimeo.com/73648150) от Tony отлично мотивирует трансформеры монад
+  , [слайды](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
 
-Also, reimplement `Control.Monad`. Functions like `mapM` or `sequence` are good
-opportunities to practice writing generic monadic code.
+Также, реализуйте `Control.Monad`. Функции типа `mapM` или `sequence` - хорошая
+возможность попрактиковаться в написании общего кода монад.
 
-The NICTA course can be used as a guide to this process, which will also involve
-writing your own Applicative as well.
+Курс NICTA может быть использован как руководство для этого, он также включает написание
+своего собственного Applicative.
 
-Credits:
+Упоминания:
 
-- Reddit comment by htmltyp and Crandom [here](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
+- Комментарии на Reddit от htmltyp и Crandom [здесь](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
 
-- Reddit comment by jozefg [here](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
+- Комментарий на Reddit от jozefg [здесь](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
-## Monad transformers
+## Трансформеры монад
 
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
 
 - [Monad transformers step-by-step](http://catamorph.de/documents/Transformers.pdf).
 
-# Testing, tests, specs, generative/property testing
+# Тестирование, тесты, спеки, generative/property тестирование
 
-- This [tutorial](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) by Kazu Yamamoto is fantastic.
+- Это [руководство](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) от Kazu Yamamoto просто фантастичкое.
 
-- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Good simple
-  library for learning how streaming IO works in general, knowledge
-  transferrable to libraries like Pipes and Conduit
+- [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Хорошая простая
+  библиотека для изучения, как работает стриминг IO вобщем, знания, применимые также
+  к таким библиотекам как Pipes и Conduit.
 
-# Parsing in Haskell
+# Парсинг в Haskell
 
-- Parser combinator [tutorial](https://github.com/JakeWheat/intro_to_parsing)
-  for Haskell using Parsec
+- [Руководство по Parser комбинаторy](https://github.com/JakeWheat/intro_to_parsing)
+  для Haskell с использованием Parsec
 
 - [Writing your own micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
 
-## Parsing and generating JSON
+## Парсинг и генерация JSON
 
-Aeson is the standard [JSON](https://json.org) parsing solution in
-haskell. Available from [hackage](https://hackage.haskell.org/package/aeson) and
+Aeson - это стандартное решение для парсинга [JSON](https://json.org) в Haskell.
+Доступно из [hackage](https://hackage.haskell.org/package/aeson) и
 [github](https://github.com/bos/aeson).
 
 - [Parsing JSON using Aeson](http://blog.raynes.me/blog/2012/11/27/easy-json-parsing-in-haskell-with-aeson/)
@@ -464,10 +474,10 @@ haskell. Available from [hackage](https://hackage.haskell.org/package/aeson) and
 
 - [Aeson tutorial](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
 
-# Graph algorithms and data structures
+# Алгоритмы графов и структуры данных
 
-- The [fgl package](https://hackage.haskell.org/package/fgl) particularly the
-  purely functional shortest path [algos](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html).
+- [Пакет fgl](https://hackage.haskell.org/package/fgl) частично чисто функциональный кратчайший путь
+  [algos](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html).
 
 - [Inductive graphs and Functional Graph Algorithms](http://web.engr.oregonstate.edu/~erwig/papers/abstracts.html#JFP01).
 
@@ -475,17 +485,17 @@ haskell. Available from [hackage](https://hackage.haskell.org/package/aeson) and
 
 - [Data.Graph source from Containers package](http://hackage.haskell.org/package/containers-0.5.5.1/docs/Data-Graph.html).
 
-- The [graphs package](https://hackage.haskell.org/package/graphs).
+- [Пакет graphs](https://hackage.haskell.org/package/graphs).
 
-- [SO question about PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+- [SO вопрос про PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
 
-- [PHOAS for free](https://www.fpcomplete.com/user/edwardk/phoas).
+- [PHOAS бесплатно](https://www.fpcomplete.com/user/edwardk/phoas).
 
 - [Tying the Knot](http://www.haskell.org/haskellwiki/Tying_the_Knot).
 
 - [Hackage: dag](https://hackage.haskell.org/package/dag).
 
-# Development Environment
+# Окружение разработки
 
 ## Emacs
 
@@ -511,61 +521,61 @@ haskell. Available from [hackage](https://hackage.haskell.org/package/aeson) and
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
 
-# Working with Cabal
+# Работа с Cabal
 
-## Cabal guidelines
+## Руководства по Cabal
 
-Cabal Hell was a problem for Haskell users before the introduction of
-sandboxes. Installing outside of a sandbox will install into your user
-package-db. This is *not* a good idea except for foundational packages like
-Cabal, alex, and happy. Nothing else should be installed in the user or global
-package-dbs unless you know what you're doing.
+Cabal Hell был проблемой для пользователей Haskell до появления песочниц (sandboxes).
+Установка вне песочницы происходит в вашу пользовательскую базу данных пакетов.
+Это *не очень* хорошая идея, за исключением основных пакетов, таких как Cabal. alex и happy.
+Более ничто не должно быть установлено глобально или в пользовательскую базу данных пакетов,
+если вы не уверены в том, что делаете.
 
-Some best practices for avoiding cabal hell are available
-[here](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html).
+Несколько советов об избежании cabal hell можно найти
+[здесь](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html).
 
-To experiment with a package or start a project, begin by doing
-`cabal sandbox init` in a new directory.
+Для экспериментов с пакетом или в начале нового проекта, начните с команды
+`cabal sandbox init` в новой папке.
 
-Put briefly:
+Кратко:
 
-- Always use sandboxes for installing new packages, building new or existing
-  projects, or starting experiments
+- Всегда используйте песочницы для установки новых пакетов, создания новых проектов,
+  или для экспериментов.
 
-- Use `cabal repl` to start a project-scoped ghci instance
+- Используйте `cabal repl` для использования ghci внутри проекта.
 
-The sandbox-based approach I suggest should avoid package-dependency problems,
-but it's incompatible with the way the Haskell Platform provides pre-built
-packages. If you're still learning Haskell and don't understand how ghc-pkg and
-Cabal work, *avoid platform* and instead use the install instructions earlier in
-the guide.
+Основанный на песочницах подход, который я советую, поможет избежать проблем с
+зависимостями пакетов, но он не совместим со способом, предоставляемым Haskell Platform для
+собраных пакетов. Если вы все еще изучаете Haskell и не понимаете как ghc-pkg и Cabal
+работает, *избегайте платформу* и вместо этого используйте инструкции по установке, описаные выше.
 
 ## Stackage
 
-For any users (usually Yesod users) that have build problems, consider Stackage.
+Для любых пользователей (обычно для пользователей Yesod), которые испытывают проблемы со сборкой,
+существует Stackage.
 
-- A good summary of Stackage is
-  [here](https://www.fpcomplete.com/blog/2014/05/stackage-server).
+- Хороший обзор Stackage
+  [здесь](https://www.fpcomplete.com/blog/2014/05/stackage-server).
 
-In the author's opinion, Stackage is usually more useful than `cabal freeze`.
+По мнению автора, Stackage обычно более полезен, чем `cabal freeze`.
 
-# Hoogle and Haddock
+# Hoogle и Haddock
 
-## Search code by type signature
+## Поиск кода по сигнатуре типов
 
-The [Hoogle search engine](http://www.haskell.org/hoogle/) can search by type.
+[Поисковый движок Hoogle](http://www.haskell.org/hoogle/) может искать по типам.
 
-For example, look at the search results for `(a -> b) -> [a] -> [b]`
-[here](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
+Например, взгляните на результат поиска для `(a -> b) -> [a] -> [b]`
+[здесь](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
 
-Also hosted by fpcomplete [here](https://www.fpcomplete.com/hoogle).
+Так же он доступен на fpcomplete [здесь](https://www.fpcomplete.com/hoogle).
 
-Also [Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html) (which has all of
-hackage enabled for search by default).
+Еще есть [Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html) (который включает все пакеты
+hackage для поиска по дефолту).
 
-## Setting up your own local instance of Hoogle
+## Разворачивание собственного локального Hoogle
 
-Take a look [here](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
+Взгляните [сюда](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
 
 ## Haddock
 
@@ -573,26 +583,26 @@ Take a look [here](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
 
 2. [Hackage documentation v2](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Hackage-documentation-v2.html)
 
-Note that these posts are *slightly out of date*: for example, now Hackage sports
-shiny new info with documentation info and build status.
+Заметтье, что эти публикации *слегка устарели*: например, теперь Hackage поддерживает
+новую информацию с информацией о документации и статус сборки.
 
-## What you really need to know
+## Что вам правда нужно знать
 
-In order to have haddocks include documentation for related packages, you have
-to set `documentation: True` in your `~/.cabal/config`. If it was left on the
-default (`False`) or set to `False`, you'll have to delete all your packages and
-reinstall before generating haddocks.
+Чтобы haddock включал документацию для зависимых пакетов, вам нужно выставить
+`documentation: True` в вашем `~/.cabal/config`. Если это было выставлено по дефолту (`False`)
+или выставлено непосредственно в `False`, вам нужно будет удалить все ваши пакеты
+и переустановить перед генерацией haddock.
 
-The other thing to keep in mind is that due to the way the `$pkg` parameter gets
-interpolated *by* cabal, not by you, the `html-location` and `content-location`
-parameters *must be in single quotes* and entered into a shell or contained in a
-shell script. They will not work in a Makefile, because it will think they are
-Make variables!
+Другая вещь, о которой надо помнить, это то, что из-за способа, которым `$pkg` параметр
+интерполируется *посредством* cabal, не вами, `html-location` и `content-location`
+параметры *должны быть в одиночных кавычках* и набираться в оболочке или содержаться в
+шелл-скрипте. Они не будут работать в Makefile, потому что haddock будет думать, что они
+являются переменными Make!
 
 ```bash
 #! /usr/bin/env sh
 
-# You can write it one one line by skipping the backslashes
+# Вы можете набирать это одной строкой без обратных слешей
 cabal haddock --hoogle --hyperlink-source                       \
  --html-location='http://hackage.haskell.org/package/$pkg/docs' \
  --contents-location='http://hackage.haskell.org/package/$pkg'
@@ -600,21 +610,20 @@ cabal haddock --hoogle --hyperlink-source                       \
 
 # TravisCI
 
-If you're as big a fan of [TravisCI](https://travis-ci.org) as I am, then I
-*strongly* recommend you take a look at
-[multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) by as the basis of
-the `travis.yml` for your Haskell projects.
+Если вы такой же большой фанат [TravisCI](https://travis-ci.org) как я,
+тогда *очень* рекомендую вам взглянуть на
+[multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) как основу для
+`travis.yml` ваших Haskell проектов.
 
 # Frontend/JavaScript
 
-We have an embarrassment of riches! There are three main choices I would
-recommend:
+Мы обладаем огромными богатствами! Есть три основных вещи, которые я рекомендую:
 
-* [Haste](http://haste-lang.org/) a Haskell to JavaScript compiler
-  - The [compiler](https://github.com/valderman/haste-compiler) on github.
-  - An excellent
-    [demo](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps)
-    of Haste with an example project.
+* [Haste](http://haste-lang.org/) компилятор Haskell в JavaScript
+  - [Компилятор](https://github.com/valderman/haste-compiler) на github.
+  - Отличное
+    [демо](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps)
+    Haste с примером проекта.
 
 * [GHCJS](https://github.com/ghcjs/ghcjs)
   - [GHCJS Introduction](http://weblog.luite.com/wordpress/?p=14)
@@ -622,32 +631,30 @@ recommend:
   - [Writing Atom plugins in Haskell using ghcjs ](http://edsko.net/2015/02/14/atom-haskell/)
 
 * [PureScript](http://www.purescript.org/)
-  - Not strictly Haskell like Haste and GHCJS, but a popular choice among
-    Haskellers
-  - Written in and inspired by haskell
-  - Try purescript in you browser [here](http://try.purescript.org/)
-  - Great guide for [getting started](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
+  - Не совсем Haskell как Haste или GHCJS, но популярный выбор многих пользователей Haskell
+  - Написан и вдохновлен языком Haskell
+  - Попробуйте purescript в вашем браузере [здесь](http://try.purescript.org/)
+  - Отличное руководство для [начала](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
 
-## Which frontend language do I use?
+## Какой фронтенд язык мне использовать?
 
-GHCJS and Haste are both fully Haskell. GHCJS will work with more Haskell
-packages than Haste, but this doesn't affect a lot of frontend
-projects. PureScript isn't Haskell at all, so direct code sharing with your
-backend will not work.
+GHCJS и Haste оба являются полноценным Haskell. GHCJS будет работать с большим
+числом пакетов, нежели Haste, но это не затрагивает большинство фронтенд проектов.
+PureScript совсем не Haskell, так что использовать Haskell код из вашего бекенда совсем не получится.
 
-GHCJS has the fattest runtime payload overhead at about 100kb (luite is working
-on this). Haste and PureScript are competitive.
+GHCJS имеет самое быстрое время выполнение на уровне 100kb (luite работает на этом).
+Haste и PureScript сравнимы.
 
-PureScript has the best JS tooling integration (uses gulp/grunt/bower), GHCJS
-and Haste integrate better with Haskell's tooling (Cabal).
+PureScript имеет наилучшую интеграцию с JS инструментами (использует gulp/grunt/bower),
+GHCJS и Haste интегрируются лучше с инструментами Haskell (Cabal).
 
-All three are great choices and will work for most frontend projects.
+Все три являются отличным выбором и будут работать для большинства фронтэнд проектов.
 
-# For a more thorough understanding of laziness, NF, WHNF
+# Для более глубокого понимания laziness, NF, WHNF
 
 - [Notes on lambda calculus](https://vec.io/posts/notes-on-lambda-calculus).
 
-## Research papers about lazy lambda calculi
+## Исследовательские документы про lazy lambda calculi
 
 - [A call by need lambda calculus](http://homepages.inf.ed.ac.uk/wadler/topics/call-by-need.html#need-journal).
 
@@ -659,60 +666,57 @@ All three are great choices and will work for most frontend projects.
 
 # Parallelism/Concurrency
 
-- [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929). This
-  book by Simon Marlow is probably the best I've ever read on the topics of
-  Parallelism and Concurrency.
+- [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929).
+  Эта книга от Simon Marlow, наверное лучшее, что я когда-либо читал о параллелизме и конкаренси.
 
-- A thorough [walk-through](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application)
-  on testing & incremental development of a multi-threaded application in
-  Haskell.
+- Хорошее [руководство](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application)
+  по тестированию и инкрементальной разработке многопоточного приложения в Haskell.
 
 - [Functional Reactive Programming](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
 
-# Lenses and Prisms
+# Линзы и призмы
 
-After you're comfortable with Haskell, strongly consider learning Lenses and
-Prisms, even if just as a "user". You don't need to understand the underlying
-category for it to be useful.
+Как только вы почувствуюте себя комфортно с Haskell, очень рекомендую изучить Lenses
+и Prisms, даже лишь в качестве "пользователя". Вам не обязательно нужно понимать лежащую
+в основе категорию для того, чтобы они были полезны.
 
-People vastly overestimate the difficulty of using Lens. Anybody comfortable
-with Functor/Foldable/Traversable (or even just the first one) can leverage
-lenses and prisms to make their life happier.
+Люди зачастую завышают сложность использования линз. Все, кто комфортно чувствует
+себя используя Functor/Foldable/Traversable (или даже если лишь первый) могут
+начать использовать линзы и призмы для облегчения своей жизни.
 
-If you've ever done something like: `(fmap . fmap)` you were "lensing" in your
-head.
+Если вы когда-либо делали что-то вроде: `(fmap . fmap)`, вы уже "использовали линзы"
+в своей голове.
 
-I recommend these two tutorials/introductions:
+Я рекомендую следующие два руководства:
 
 - [A little lens starter tutorial](https://www.fpcomplete.com/school/to-infinity-and-beyond/pick-of-the-week/a-little-lens-starter-tutorial)
 
 - [Lens: Lenses, Folds and Traversals](https://github.com/ekmett/lens#lens-lenses-folds-and-traversals)
 
-Look here for more information: [Lens package on hackage](http://hackage.haskell.org/package/lens).
+За дальнейшей информацией смотрите: [Lens package on hackage](http://hackage.haskell.org/package/lens).
 
-# Recursion Schemes
+# Схемы рекурсии
 
-Some of the crazy \*-morphism words you've heard are actually about
-recursion. NB - before tackling this material you should know how to implement
-foldr for lists and at least one other data structure, such as a tree. (folds
-are catamorphisms) Knowing how to implement an unfold (anamorphism) for the same
-will round things out a bit.
+Некоторые сумасшедшие \*-morphism слова, которые вы могли слышать, на самом деле о рекурсии.
+Но перед тем как трогать этот материал, вы должны знать как реализовать
+foldr для списков и хотя бы одну структуру данных, такую как дерево. (folds являются
+catamorphisms). Знание о том, как реализовать unfold (anamorphism), также помогут в осознании этих вещей.
 
-This material dovetails with traversable and foldable.
+Этот материал согласуется с traversable и foldable.
 
 - [An introduction to recursion schemes](http://patrickthomson.ghost.io/an-introduction-to-recursion-schemes/)
 
 - [Don't fear the cat](http://fho.f12n.de/posts/2014-05-07-dont-fear-the-cat.html) -
-  Good demonstration of how hylomorphism is the composition of cata and ana.
+  Хорошая демонстрация того, как hylomorphism, это композиция из cata и ana.
 
-- [Recursion Schemes](http://comonad.com/reader/2009/recursion-schemes/) - This
-  field guide is excellent.
+- [Recursion Schemes](http://comonad.com/reader/2009/recursion-schemes/) - это
+  руководство просто замечательно!
 
 - [Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire](http://eprints.eemcs.utwente.nl/7281/01/db-utwente-40501F46.pdf)
 
 - [Catamorphisms](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
 
-# GHC Core and performance tuning
+# Ядро GHC и настройка производительности
 
 - [Write Haskell as Fast as C](write_haskell_as_fast_as_c.md)
 
@@ -726,44 +730,44 @@ This material dovetails with traversable and foldable.
 
 - [Real World Haskell, Chapter 25: Profiling and Optimizations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
 
-# Type and Category Theory
+# Тип и теория категорий
 
-> *Not* needed to actually write Haskell, just for those interested!
+> *Не* необходимо для работы с Haskell, просто для тех, кто интересуется!
 
-If you want to follow up on type and category theory:
+Если вы хотите вникнуть в типы и теорию категорий:
 
-- [Catster's Guide](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) and
+- [Catster's Guide](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) и
   [Catster's Guide 2](http://byorgey.wordpress.com/catsters-guide-2/)
 
-- The [haskell wikibook](http://en.wikibooks.org/wiki/Haskell/Category_theory)
-  has nice diagrams
+- [Вики-книга haskell](http://en.wikibooks.org/wiki/Haskell/Category_theory)
+  содержит неплохие диаграмы
 
-- [Category Theory](http://www.haskell.org/haskellwiki/Category_theory) on
-  haskellwiki, also has good links to other resources
+- [Category Theory](http://www.haskell.org/haskellwiki/Category_theory)
+  на haskellwiki, также содержит хорошие ссылки
 
-- [Categories from scratch](http://science.raphael.poss.name/categories-from-scratch.html), Includes some practical examples.
+- [Categories from scratch](http://science.raphael.poss.name/categories-from-scratch.html), содержит несколько практических примеров.
 
-- Pierce's [Great Works in PL](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml) list.
+- Список Pierce [Great Works in PL](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml).
 
-## Books
+## Книги
 
-- [Quora Question: What is the best textbook for category theory?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1) Kmett's recommendations
+- Рекомендации Kmett: [Quora Question: What is the best textbook for category theory?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1)
 
-- [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do) and
-  [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038). The standard textbooks on category theory.
+- [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do) и
+  [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038). Стандартные книги про теорию категорий.
 
-- [Harper's Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/plbook/book.pdf) is the best PL focused intro to type theory I've read.
+- [Harper's Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/plbook/book.pdf)
+  лучшее PL интро к теории типов, которое я читал.
 
 - [Type theory and Functional Programming](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
 
-# Other fun topics
+# Другие веселые темы
 
 ## Parametricity, ad-hoc vs. parametric polymorphism, free theorems
 
 - [Parametricity](tony_parametricity.pdf).
 
-- [TeX sources](https://github.com/tonymorris/parametricity/) for the
-  above talk.
+- [Исходники в TeX](https://github.com/tonymorris/parametricity/) для доклада выше.
 
 - [Making ad-hoc polymorphism less ad-hoc](http://swizec.com/blog/week-20-making-ad-hoc-polymorphism-less-ad-hoc/swizec/6564).
 
@@ -795,7 +799,7 @@ If you want to follow up on type and category theory:
 
 - [SO question: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
-- Free monads for Less, a sequence of three articles by Edward Kmett
+- Свободные монады для Less, серия из трех публикаций от Edward Kmett
   * [Part 1: Codensity](http://comonad.com/reader/2011/free-monads-for-less/).
   * [Part 2: Yoneda](http://comonad.com/reader/2011/free-monads-for-less-2/).
   * [Part 3: Yielding IO](http://comonad.com/reader/2011/free-monads-for-less-3/).
@@ -806,7 +810,7 @@ If you want to follow up on type and category theory:
 
 - [Lecture notes from a short, three lecture course](http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf)
 
-# Dependent typing
+# Зависимая типизация
 
 - [Grokking sum types, value constructors, and type constructors](http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html) squint hard.
 
