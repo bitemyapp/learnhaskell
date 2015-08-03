@@ -174,12 +174,13 @@ Do the binary distribution install described below with [this tarball](https://w
 
 ## Windows
 
-- The [windows minimal GHC installer](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
-  is able to compile `network` et al. Technically in beta but should work for
-  the purposes of anybody reading this guide.
+- The [Minimum GHC Installer](https://github.com/fpco/minghc#using-the-installer)
+  is able to compile `network` and other libraries. It includes a minimal GHC environment along with Cabal
+  and MSYS (the compiler environment that allows you to install things like `network`.
 
-Don't forget to run the installer as administrator as it will want to install in
-your Program Files.
+The [minghc](https://github.com/fpco/minghc) web page does have a few additional details, but note that the 
+default is to install to your local AppData directory rather than a system-wide directory.
+(C:\Users\<username>\AppData\Local\Programs)
 
 ## Other Linux users
 
