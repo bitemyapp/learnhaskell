@@ -615,10 +615,9 @@ cabal haddock --hoogle --hyperlink-source                       \
 Мы обладаем огромными богатствами! Есть три основных вещи, которые я рекомендую:
 
 * [Haste](http://haste-lang.org/) компилятор Haskell в JavaScript
-  - [Компилятор](https://github.com/valderman/haste-compiler) на github.
-  - Отличное
-    [демо](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps)
-    Haste с примером проекта.
+  - [Компилятор](https://github.com/valderman/haste-compiler) на github
+  - [Отличное демо](http://www.airpair.com/haskell/posts/haskell-tutorial-introduction-to-web-apps)
+    Haste с примером проекта
 
 * [GHCJS](https://github.com/ghcjs/ghcjs)
   - [GHCJS Introduction](http://weblog.luite.com/wordpress/?p=14)
@@ -626,10 +625,10 @@ cabal haddock --hoogle --hyperlink-source                       \
   - [Writing Atom plugins in Haskell using ghcjs ](http://edsko.net/2015/02/14/atom-haskell/)
 
 * [PureScript](http://www.purescript.org/)
-  - Не совсем Haskell как Haste или GHCJS, но популярный выбор многих пользователей Haskell
-  - Написан и вдохновлен языком Haskell
-  - Попробуйте [PureScript](http://try.purescript.org/) в вашем браузере
-  - Отличное руководство для [начала](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
+  - Не совсем Haskell как Haste или GHCJS, но популярный выбор многих пользователей Haskell.
+  - Написан и вдохновлен языком Haskell.
+  - Попробуйте [PureScript](http://try.purescript.org/) в вашем браузере.
+  - Отличное руководство для [начала](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/).
 
 ## Какой фронтенд язык мне использовать?
 
