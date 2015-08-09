@@ -19,7 +19,7 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 * [繁體中文](guide-zh_tw.md)
 
-* [На Русском](guide-ru.md)
+* [По-русски](guide-ru.md)
 
 
 #### *Don't sweat the stuff you don't understand immediately*. Keep moving!
