@@ -32,6 +32,8 @@
 
 Пов'язані з Haskell [поштові розсилки](https://wiki.haskell.org/Mailing_lists).
 
+Отримати допомогу українською можна в чаті [dou-ua/fp](https://gitter.im/dou-ua/fp).
+
 
 ### Норми та правила ком'юніті
 
