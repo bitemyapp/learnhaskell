@@ -347,8 +347,8 @@ let a = 1 * a -- not guarded, (*) is strict
 Коментар з обговорення в Reddit від `glaebhoerl`
 
 > Цікаве зауваження: GHC мусить приховувати представлення токену стану за абстрактним типом IO через те, що
-> токен стану завжду мусть використовуватись лінійно (не дублюватись або бути скинутим), але система типів не може примушувати до цього.
-> Інша Haskell-подібна мова під назвою Clean має систему унікальних типів (які подібні до лінейних типів і, можливо, інші в аспектах, які я не знаю),
+> токен стану завжди мусить використовуватись лінійно (не дублюватись або бути скинутим), але система типів не може примушувати до цього.
+> Інша Haskell-подібна мова під назвою Clean має систему унікальних типів (які подібні до лінійних типів і, можливо, інші в аспектах, які я не знаю),
 > і вони надають можливість прямої передачі World, маючи (не абстрактну) монаду IO тільки для зручності.
 
 
@@ -361,18 +361,18 @@ let a = 1 * a -- not guarded, (*) is strict
 > World-passing directly and provide a (non-abstract) IO monad only for
 > convenience.
 
-# Монади та їх трансормери
+# Монади та їх трансформери
 
 > Не займатесь цим доки ви не розумієете класи типів, Monoid, Functor, Applicative!
 
 
-Самотужки реалізуйте бібліотечні монади (List, Maybe, Cont, Error, Reader, Writer, State) для того, щоб зрозуміти їх краще. Тоді, наприклад, напишіть монадний інтерпретатор невеликої мови виразів за допомогою [Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf) (згадується також нижче, у розділі 'транфсормери монад').
+Самотужки реалізуйте бібліотечні монади (List, Maybe, Cont, Error, Reader, Writer, State) для того, щоб зрозуміти їх краще. Тоді, наприклад, напишіть монадний інтерпретатор невеликої мови виразів за допомогою [Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf) (згадується також нижче, у розділі 'трансформери монад').
 
 Написання декількох інтерпретаторів простою зміною монад для зміни семантики може надати додаткового розуміння про те, що відбувається.
 
 - [Ця доповідь](https://vimeo.com/73648150) від Тоні яскраво показує обґрунтування монадних трансформерів, [слайди](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
 
-Також заново реалізуйте `Control.Monad`. Функціїї накшталт `mapM` чи `sequence` є чудовою можливістю набути практики з написання узагаленного монадічного коду.
+Також заново реалізуйте `Control.Monad`. Функції накшталт `mapM` чи `sequence` є чудовою можливістю набути практики з написання узагаленного монадічного коду.
 
 У якості путівника можна також використати курс NICTA, частиною якого також є написання власної реалізації Applicative.
 
@@ -381,10 +381,10 @@ let a = 1 * a -- not guarded, (*) is strict
 
 - Коментар на Reddit від htmltyp та Crandom [here](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
 
-- Комментар на Reddit від jozefg [here](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
+- Коментар на Reddit від jozefg [here](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
 
-## Трансформари монад
+## Трансформери монад
 
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
 
@@ -520,7 +520,7 @@ Aeson - стандартне рішення для парсингу [JSON](https
 
 Для того, щоб haddocks містив документацію і з пакунків, які стосуються вашого проекту, треба додати `documentation: True` до вашого `~/.cabal/config`. Якщо було використане значення за замовчуванням (`False`) або `False` було встановлене вручну, то перед генерацією haddocks необхідно буде видалити всі ваші пакунки і заново переінсталювати їх.
 
-Треба пам'ятати ще одну річ: через те, що Cabal, *а не ви*, інтерпретує параметр `$pkg`, тому параметри `html-location` та `content-location` *мусять бути записані у одинарник лапках* і введені в командний інтерпретатор або записані у скрипті інтерпретатора. Вони не будуть працювати у Makefile через те, що вони будуть інтерпретовані як змінні Make!
+Треба пам'ятати ще одну річ: через те, що Cabal, *а не ви*, інтерпретує параметр `$pkg`, параметри `html-location` та `content-location` *мусять бути записані у одинарних лапках* і введені в командний інтерпретатор або записані у скрипті інтерпретатора. Вони не будуть працювати у Makefile через те, що вони будуть інтерпретовані як змінні Make!
 
 ```bash
 #! /usr/bin/env sh
@@ -560,10 +560,10 @@ cabal haddock --hoogle --hyperlink-source                       \
 І GHCJS, і Haste є повноцінною реалізацією Haskell. Під GHCJS будуть працювати більше Haskell проектів, ніж із Haste, але це не дуже впливає на розробку фронтенд-проектів.
 Purescript - це зовсім не Haskell і тому використовувати код із бекенду напряму не вийде.
 
-GHCJS має найбільший розмір допоміжних бібліотек, необхідних для його работи, який сягає 100Кб (luite працює над цією проблемою).
+GHCJS має найбільший розмір допоміжних бібліотек, необхідних для його роботи, який сягає 100Кб (luite працює над цією проблемою).
 Haste та PureScript більш-менш однакові.
 
-Інтеграція із інтструментарем JS найкраща в PureScript (використовується gulp/grunt/bower), в той час як у GHCJS та Haste краще працює із інструментами Haskell (Cabal).
+Інтеграція із інструментарем JS найкраща в PureScript (використовується gulp/grunt/bower), в той час як GHCJS та Haste краще працює із інструментами Haskell (Cabal).
 
 Усі три - чудовий вибір і підходять для більшості фронтендових проектів.
 
@@ -582,7 +582,7 @@ Haste та PureScript більш-менш однакові.
 
 - [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtml)
 
-# Паралелізм/конкарренсі
+# Паралелізм/конкаренсі
 
 - [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929). Ця книга за авторством Саймона Мерлоу (Simon Marlow) є, мабуть, однією із найкращих книг про паралелізм та конкаренсі
 
@@ -607,7 +607,7 @@ Haste та PureScript більш-менш однакові.
 
 - [Lens: Lenses, Folds and Traversals](https://github.com/ekmett/lens#lens-lenses-folds-and-traversals)
 
-Для подальшої інформації звертайтесь сюда: [Lens package on hackage](http://hackage.haskell.org/package/lens).
+Для подальшої інформації звертайтесь сюди: [Lens package on hackage](http://hackage.haskell.org/package/lens).
 
 # Схеми рекурсії
 
@@ -720,7 +720,7 @@ Haste та PureScript більш-менш однакові.
 
 - [Lecture notes from a short, three lecture course](http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf)
 
-# Залежная типізація
+# Залежна типізація
 
 - [Grokking sum types, value constructors, and type constructors](http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html).
 
@@ -728,7 +728,7 @@ Haste та PureScript більш-менш однакові.
 
 - [Idris programming language](http://www.idris-lang.org/).
 
-# Статичная лінковка бінарників
+# Статична лінковка бінарників
 
 - [Static linking](https://wiki.haskell.org/Web/Literature/Static_linking)
 
