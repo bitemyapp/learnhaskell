@@ -360,7 +360,7 @@ let a = 1 * a -- not guarded, (*) is strict
 > World-passing directly and provide a (non-abstract) IO monad only for
 > convenience.
 
-# Монади та їх трансормери
+# Монади та їх трансформери
 
 > Не займатесь цим доки ви не розумієете класи типів, Monoid, Functor, Applicative!
 
@@ -383,7 +383,7 @@ let a = 1 * a -- not guarded, (*) is strict
 - Комментар на Reddit від jozefg [here](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
 
-## Трансформари монад
+## Трансформери монад
 
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
 
