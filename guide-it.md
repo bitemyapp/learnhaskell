@@ -89,19 +89,6 @@ Aggiungete poi la seguente linea al vostro `$PATH` (bash\_profile, zshrc, bashrc
 
 ## Debian
 
-### Repository GHC per debian stable
-
-Se utilizzate Debian stable, è meglio usare il repository http://deb.haskell.org/. Per usarlo:
-
-- Aggiungete la linea `deb http://deb.haskell.org/stable/ ./` a `/etc/apt/sources.list`
-
-```bash
-## Aggiungi la chiave per evitare warning
-$ GET http://deb.haskell.org/deb.haskell.org.gpg-key | apt-key add -
-$ sudo apt-get update
-$ sudo apt-get install ghc-7.8.3 happy alex cabal-install
-```
-
 ### Usando Ubuntu PPA
 
 Se non state usando Debian stable, le stesse istruzioni che abbiamo indicato per Ubuntu fuzionano, ma dovrete eseguire un comando in più. Immediatamente dopo che il comando
