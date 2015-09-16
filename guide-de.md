@@ -89,20 +89,6 @@ wenn das aktuelle Verzeichnis eine Cabal Sandbox ist.
 
 ## Debian
 
-### GHC Repository für Debian Stable
-
-Wenn du Debian stable nutzt, ist es einfacher http://deb.haskell.org/ zu benutzen.
-Dafür mache folgendes:
-
-- Füge die Zeile `deb http://deb.haskell.org/stable/ ./` zu `/etc/apt/sources.list` hinzu
-
-```bash
-## Add the key to avoid warnings
-$ GET http://deb.haskell.org/deb.haskell.org.gpg-key | apt-key add -
-$ sudo apt-get update
-$ sudo apt-get install ghc-7.8.3 happy alex cabal-install
-```
-
 ### Ubuntu PPA nutzen
 
 Wenn du nicht stable benutzt, kannst du dieselben Schritte wie unter Ubuntu ausführen, aber du musst
