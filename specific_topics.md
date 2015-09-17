@@ -425,7 +425,7 @@ If you want to follow up on type and category theory:
 - [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do) and
   [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038). The standard textbooks on category theory.
 
-- [Harper's Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/plbook/book.pdf) is the best PL focused intro to type theory I've read.
+- [Harper's Practical Foundations for Programming Languages](http://www.cs.cmu.edu/~rwh/plbook/1sted-revised.pdf) is the best PL focused intro to type theory I've read.
 
 - [Type theory and Functional Programming](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
 
