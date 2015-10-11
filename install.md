@@ -37,10 +37,10 @@ $ sudo apt-get update
 $ sudo apt-get install cabal-install-1.22 ghc-7.8.4 happy-1.19.5 alex-3.1.4
 ```
 
-Then add the following to your `$PATH` (bash\_profile, zshrc, bashrc, etc):
+Then prepend the following to your `$PATH` (bash\_profile, zshrc, bashrc, etc):
 
 ```
-~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.4/bin
+export PATH=~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.4/bin:$PATH
 ```
 
 *Optional:* You could also add `.cabal-sandbox/bin` to your path. Code that you
