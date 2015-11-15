@@ -44,6 +44,10 @@ See [the community guidelines](coc.md) to understand the conduct that is expecte
 
 Instead of following the instructions on Haskell.org, See [the install instructions](install.md) for how to get GHC & Cabal installed.
 
+## Why not platform?
+
+https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
+
 # How should I learn Haskell?
 
 The core recommendation is to read the lectures and complete all exercises/homework for the Spring 13 version of cis194 followed by the NICTA course. Both are linked below. Everything else can be considered optional and is mentioned so you know where to look.
