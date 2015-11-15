@@ -429,6 +429,39 @@ If you want to follow up on type and category theory:
 
 - [Type theory and Functional Programming](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
 
+# Metaprogramming
+
+## Generics
+
+Generics are usually used to generate typeclass instances, but you'll see TH used for that purpose too.
+
+- https://ocharles.org.uk/blog/posts/2014-04-26-constructing-generically.html
+
+- Current docs: https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/generic-programming.html
+
+## QuasiQuotation
+
+- Simple example, nice for avoiding gnarly escape sequences in strings: https://hackage.haskell.org/package/raw-strings-qq-1.0.2/docs/Text-RawString-QQ.html
+
+- Tutorial: https://www.fpcomplete.com/user/marcin/quasiquotation-101
+
+- http://www.well-typed.com/blog/2014/10/quasi-quoting-dsls/
+
+## Template Haskell
+
+- https://www.fpcomplete.com/user/marcin/template-haskell-101
+
+- https://ocharles.org.uk/blog/guest-posts/2014-12-22-template-haskell.html
+
+- Current docs: https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/template-haskell.html
+
+- OCaml and TH slides: https://nicolaspouillard.fr/talks/cufp-metaprogramming-tutorial-slides.pdf
+
+- http://illustratedhaskell.org/index.php/2011/09/24/template-haskell-tutorial/ (old)
+
+- http://stackoverflow.com/questions/10857030/whats-so-bad-about-template-haskell (warnings about TH)
+
+
 # Other fun topics
 
 ## Parametricity, ad-hoc vs. parametric polymorphism, free theorems
