@@ -449,7 +449,7 @@ Generics are usually used to generate typeclass instances, but you'll see TH use
 
 ## Template Haskell
 
-- http://www.parsonsmatt.org/programming/2015/11/15/template_haskell.html (Great tutorial)
+- http://www.parsonsmatt.org/programming/2015/11/15/template_haskell.html (Great tutorial, strongly recommended even if the Ruby doesn't mean much to you)
 
 - https://www.fpcomplete.com/user/marcin/template-haskell-101
 
