@@ -449,6 +449,8 @@ Generics are usually used to generate typeclass instances, but you'll see TH use
 
 ## Template Haskell
 
+- http://www.parsonsmatt.org/programming/2015/11/15/template_haskell.html (Great tutorial)
+
 - https://www.fpcomplete.com/user/marcin/template-haskell-101
 
 - https://ocharles.org.uk/blog/guest-posts/2014-12-22-template-haskell.html
