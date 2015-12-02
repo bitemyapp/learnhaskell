@@ -36,8 +36,6 @@ Code listed isn't necessarily complete or a usable product. The point is that th
 
 - https://wiki.haskell.org/Roll_your_own_IRC_bot
 
-- https://github.com/Lokathor/haizod
-
 ## Slack stuff
 
 ### Slack API client
