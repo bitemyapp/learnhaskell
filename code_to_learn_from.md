@@ -42,10 +42,11 @@ Code listed isn't necessarily complete or a usable product. The point is that th
 
 - https://hackage.haskell.org/package/slack-api
 
-### Slack bot libraries/frameworks
+### Slack bots
 
-- https://github.com/hlian/linklater
+- https://github.com/hlian/linklater library/framework
 
+- https://github.com/twopoint718/spocks-brain example bot/app
 
 ## Chat application in Servant + React
 
