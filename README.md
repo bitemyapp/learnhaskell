@@ -19,6 +19,8 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 * [繁體中文](guide-zh_tw.md)
 
+* [简体中文](guide-zh_CN.md)
+
 * [По-русски](guide-ru.md)
 
 * [Українською](guide-ua.md)
