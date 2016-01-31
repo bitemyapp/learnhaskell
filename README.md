@@ -38,6 +38,7 @@ The haskell [mailing lists](https://wiki.haskell.org/Mailing_lists).
 
 See [the community guidelines](coc.md) to understand the conduct that is expected in the IRC channel. You'll get a warning if you're not obviously trolling, but be aware the channel is exclusively for those learning or teaching Haskell.
 
+
 # Installing Haskell
 
 ## Use Stack to get going with Haskell
