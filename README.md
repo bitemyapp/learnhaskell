@@ -43,7 +43,7 @@ See [the community guidelines](coc.md) to understand the conduct that is expecte
 
 ## Use Stack to get going with Haskell
 
-Get [Stack](haskellstack.org) to get GHC installed and to build your projects.
+Get [Stack](http://haskellstack.org) to get GHC installed and to build your projects.
 
 If you don't know anything about Stack and would like an overview, check out this [comprehensive Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
