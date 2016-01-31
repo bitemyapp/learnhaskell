@@ -1,3 +1,7 @@
+# These instructions are deprecated
+
+We now recommend you use [Stack](haskellstack.org) instead, but the instructions are preserved here for those that might want a minimal install.
+
 # What are Haskell, GHC, and Cabal?
 
 Haskell is a programming language as laid out in the reports, most recent one

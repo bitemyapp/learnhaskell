@@ -42,7 +42,9 @@ See [the community guidelines](coc.md) to understand the conduct that is expecte
 
 ## DO NOT INSTALL HASKELL PLATFORM
 
-Instead of following the instructions on Haskell.org, See [the install instructions](install.md) for how to get GHC & Cabal installed.
+Instead of following the instructions on Haskell.org, get [Stack](haskellstack.org) to get GHC installed and to build your projects.
+
+If you don't know anything about Stack and would like an overview, check out this [comprehensive Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
 ## Why not platform?
 
