@@ -40,15 +40,21 @@ See [the community guidelines](coc.md) to understand the conduct that is expecte
 
 # Installing Haskell
 
-## DO NOT INSTALL HASKELL PLATFORM
+## Use Stack to get going with Haskell
 
-Instead of following the instructions on Haskell.org, get [Stack](haskellstack.org) to get GHC installed and to build your projects.
+Get [Stack](haskellstack.org) to get GHC installed and to build your projects.
 
 If you don't know anything about Stack and would like an overview, check out this [comprehensive Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
-## Why not platform?
+
+## Also, DO NOT INSTALL HASKELL PLATFORM
+
+Instead of following the instructions on Haskell.org, get Stack.
+
+### Why not platform?
 
 https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
+
 
 # How should I learn Haskell?
 
