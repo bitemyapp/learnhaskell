@@ -20,6 +20,12 @@ Good for digging up recent'ish development history of various topics.
 
 - [RTS notes on the garbage collector](https://ghc.haskell.org/trac/ghc/wiki/Commentary/Rts/Storage/GC)
 
+# Thread scheduling
+
+- [Dynamic Circular Work-stealing Deque; David Chase, Yossi Lev](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.170.1097&rep=rep1&type=pdf)
+
+- [Wool - fine grained independent task parallelism in C](https://www.sics.se/~kff/wool/)
+
 # GHC commentary
 
 - [Commentary top level](https://ghc.haskell.org/trac/ghc/wiki/Commentary)
