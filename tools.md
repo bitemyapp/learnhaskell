@@ -19,10 +19,10 @@ It's a bit fragile, more than a bit slow, and it's not worth the grief.
 - Vim
   - We recommend [Stephen Diehl's vim instructions](http://www.stephendiehl.com/posts/vim_2016.html) but we suggest replacing ghc-mod with the below for now.
   - For getting type errors in vim reliably (in lieu of ghc-mod)
-    ```
-        autocmd FileType haskell setlocal makeprg=stack\ build
-        autocmd FileType haskell setlocal errorformat=%f:%l:%v:%m
-    ```
+```
+autocmd FileType haskell setlocal makeprg=stack\ build
+autocmd FileType haskell setlocal errorformat=%f:%l:%v:%m
+```
     from: https://github.com/ishiy1993/dotfiles/blob/master/.vimrc
 
 - [Sublime Text](https://github.com/SublimeHaskell/SublimeHaskell)
