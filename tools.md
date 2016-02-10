@@ -16,7 +16,9 @@ It's a bit fragile, more than a bit slow, and it's not worth the grief.
   - Symlink Stack to `/usr/bin` or otherwise make sure flycheck can find it
   - [dunzo.](https://twitter.com/bitemyapp/status/693621160571985920)
 
-- For Vim, we recommend [Stephen Diehl's instructions](http://www.stephendiehl.com/posts/vim_2016.html), though we'd recommend not bothering with ghc-mod if possible.
+- Vim
+  - We recommend [Stephen Diehl's vim instructions](http://www.stephendiehl.com/posts/vim_2016.html) but we suggest replacing ghc-mod with the below for now.
+  - For getting type errors in vim reliably (in lieu of ghc-mod):  https://github.com/ishiy1993/dotfiles/blob/master/.vimrc#L176-L177
 
 - [Sublime Text](https://github.com/SublimeHaskell/SublimeHaskell)
 
