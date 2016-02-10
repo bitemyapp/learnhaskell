@@ -23,7 +23,7 @@ It's a bit fragile, more than a bit slow, and it's not worth the grief.
 autocmd FileType haskell setlocal makeprg=stack\ build
 autocmd FileType haskell setlocal errorformat=%f:%l:%v:%m
 ```
-    from: https://github.com/ishiy1993/dotfiles/blob/master/.vimrc
+from: https://github.com/ishiy1993/dotfiles/blob/master/.vimrc
 
 - [Sublime Text](https://github.com/SublimeHaskell/SublimeHaskell)
 
