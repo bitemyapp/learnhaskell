@@ -11,7 +11,7 @@ Nuestro canal en IRC es `#haskell-beginners` en Freenode.
 
 Cliente web IRC [aquí](http://webchat.freenode.net/).
 
-La [lista de correo](https://wiki.haskell.org/Mailing_lists) de Haskel.
+La [lista de correo](https://wiki.haskell.org/Mailing_lists) de Haskell.
 
 ### Directrices de la Comunidad
 [Ver el post de Chris Done sobre enseñanza](http://chrisdone.com/posts/teaching)
