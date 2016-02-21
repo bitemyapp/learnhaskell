@@ -35,199 +35,23 @@ Sem "-ismos" sutis. Racismo, sexismo, homofobia, transfobia, e outros tipos de p
 Diretrizes do [manual do Recurse Center](https://www.recurse.com/manual). 
 Obrigado por disponibilizar isso, Recurse Center.
 
-# O que é Haskell, GHC, e Cabal?
+# Installando Haskell
 
-Haskell é uma linguagem de programação como é definido nos relatórios, o 
-mais recente sendo o de 2010. O relatório está disponível como 
-[onlinereport](http://www.haskell.org/onlinereport/haskell2010/).
+## Use a ferramenta Stack para começar a com Haskell
 
-## GHC
+Instale [Stack](http://haskellstack.org) para ter o GHC (Glasgow Haskell Compiler) instalado e para poder compilar seus projetos.
 
-[GHC](http://www.haskell.org/ghc/) é o meio mais popular de se trabalhar na 
-linguagem Haskell. Ele inclui um compilador, REPL (interpretador), gerenciamento 
-de pacotes, e outras coisas mais.
-
-## Cabal
-
-[Cabal](https://www.haskell.org/cabal/download.html) realiza gerenciamento de projetos e
-resolução de dependências. É como você instalará projetos, tipicamente na própria *sandbox* deles.
-
-Cabal é equivalente ao Bundler do Ruby, pip do Python, NPM do Node.js, Maven, 
-etc. O GHC é responsável pelos pacotes propriamente ditos, o Cabal escolhe 
-quais versões serão instaladas.
-
-# Configurações iniciais
-
-## Ubuntu
-
-[Este PPA](http://launchpad.net/~hvr/+archive/ghc) é excelente e é o que eu 
-uso em todas as máquinas Linux de desenvolvimento e produção.
-
-Especificamente:
-
-```bash
-$ sudo apt-get update
-$ sudo apt-get install python-software-properties # v12.04 e abaixo
-$ sudo apt-get install software-properties-common # v12.10 e acima
-$ sudo add-apt-repository -y ppa:hvr/ghc
-$ sudo apt-get update
-$ sudo apt-get install cabal-install-1.20 ghc-7.8.4 happy-1.19.4 alex-3.1.3
-```
-
-Então adicione o seguinte ao seu `$PATH` (bash\_profile, zshrc, bashrc, etc):
-
-```
-~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin
-```
-
-*Opcional:* Você também pode adicionar `.cabal-sandbox/bin` ao seu *path*. 
-Código que você está desenvolvendo ativamente estará disponível a partir 
-da sua linha de comando. Isso funciona apenas quando o diretório de trabalho 
-atual é uma *sandbox* do cabal.
-
-## Debian
-
-### Usando Ubuntu PPA
-
-Se você não está usando o *stable*, pode seguir os mesmos passos do Ubuntu, mas
-precisará executar um comando adicional. Imediatamente após o
-`sudo add-apt-repository -y ppa:hvr/ghc`, execute: 
-
-```bash
-$ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
-```
-
-Para outras versões do Debian, apenas substitua todas as ocorrências de `jessie`
-com o nome da sua versão no comando acima.
-
-Se, por alguma razão, o arquivo `/etc/apt/sources.list.d/hvr-ghc-jessie-list` não
-existir, então `/etc/apt/sources.list` deve conter uma linha assim:
+Se você não sabe nada sobre Stack e gostaria de uma visão geral, confira o [tutorial em videl sobre Stack](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
 
-    deb http://ppa.launchpad.net/hvr/ghc/ubuntu jessie main
+## NÃO INSTALLE "HASKELL PLATFORM"
 
-Substitua `jessie` por `trusty` nesta linha.
+Ao invés de utilizar as instruções disponível em Haskell.org, instale Stack.
 
-### Compilação manual
+### Por quê não utilizar "Haskell Platform"?
 
-Você pode seguir [este](http://www.davesquared.net/2014/05/platformless-haskell.html) 
-guia escrito para Mac OS X:
+https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
-Notas:
-
-- Configure o seu prefixo adequadamente quando configurar o ghc.
-- Em vez de pegar o binário do `cabal-install`, pegue o código fonte e execute
-o *script* `bootstrap.sh`.
-
-## Fedora 21
-
-Para instalar o Haskell 7.8.4 a partir do repositório não-oficial (versões 22+ do Fedora vão incluí-lo
-no oficial):
-
-```bash
-$ sudo yum-config-manager --add-repo \
-> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
-$ sudo yum install ghc cabal-install
-```
-
-Como dito na [página do copr
-petersen/ghc-7.8.4](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/)
-este ghc não pode ser instalado em paralelo com o ghc do Fedora/EPEL.
-
-## Arch Linux
-
-Para instalar o Haskell dos repositórios oficiais no Arch Linux, execute
-
-```bash
-$ sudo pacman -S cabal-install ghc happy alex haddock
-```
-
-## Gentoo
-
-No Gentoo, você pode instalar os componentes individuais da Plataforma Haskell 
-através do Portage. Se você usar `ACCEPT_KEYWORDS=arch` (em vez de `ACCEPT_KEYWORDS=~arch`),
-o Portage vai instalar versões antigas dos vários componentes do Haskell. 
-Com isso em mente, se você usar `ACCEPT_KEYWORDS=arch`, adicione o seguinte ao 
-`/etc/portage/package.keywords`:
-
-    dev-haskell/cabal-install
-    dev-lang/ghc
-
-Uma vez que isso foi feito,
-
-```bash
-$ emerge -jav dev-lang/ghc dev-haskell/cabal-install
-```
-
-O Gentoo mantém uma versão "estável" (leia-se: antiga) do `cabal-install` na 
-árvore do Portage, então você vai querer usar o `cabal-install` para instalar 
-a versão mais recente. Note que as contrabarras são intencionais.
-
-```bash
-$ \cabal update                # As contrabarras
-$ \cabal install cabal-install # são intencionais
-```
-
-Agora você instalou o cabal num escopo global com o portage, e localmente no 
-seu diretório *home* com o `cabal-install`. O próximo passo é garantir que 
-quando você executar o comando `cabal` num terminal, seu *shell* vai executar a 
-versão recente que está no seu diretório *home*. Para isso, as seguintes linhas
-devem ser adicionadas ao arquivo de configuração do seu *shell*:
-
-```bash
-PATH=$PATH:$HOME/.cabal/bin
-alias cabal="$HOME/.cabal/bin/cabal"
-```
-
-Se não sabe qual *shell* é o seu, provavelmente ele é o Bash. Se você usa o
-Bash, o arquivo a ser editado é o `~/.bashrc`. Se você usa o Z-shell(zsh), o
-arquivo é o `~/.zshrc`. Você pode executar o seguinte comando para descobrir
-qual é o seu *shell*.
-
-```bash
-echo $SHELL | xargs basename
-```
-
-Eu uso o zsh, então esse comando produz `zsh` como saída.
-
-Uma vez que você fez tudo isso, você vai querer instalar as ferramentas adicionais
-`alex` e `happy`.
-
-```bash
-$ cabal install alex happy
-```
-
-Parabéns! Agora você tem uma instalação funcional do Haskell!
-
-## Mac OS X
-
-### 10.9
-
-Instale o app [GHC for Mac OS X](http://ghcformacosx.github.io/), que inclui o
-GHC e o Cabal. Ele traz instruções sobre como adicionar o GHC e o Cabal ao seu
-*path* depois de ter arrastado o `.app` para algum lugar.
-
-### 10.6-10.8
-
-Faça a instalação da distribuição binária descrita 
-[neste arquivo](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2).
-
-## Windows
-
-- O [instalador mínimo do GHC para Windows] (http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
-  é capaz de compilar `network` e etc. Tecnicamente está em beta, mas deve
-  funcionar para os propósitos de qualquer um que está lendo este guia.
-
-Não esqueça de rodar o instalador como administrador, já que ele vai querer
-instalar no seu Arquivos de Programas.
-
-## Usuários de outros Linux
-
-Baixe as últimas distribuições binárias para o cabal e ghc:
-
-- [GHC](http://www.haskell.org/ghc/).
-
-- [Cabal](https://www.haskell.org/cabal/download.html).
 
 # Cursos Iniciais
 
