@@ -35,16 +35,16 @@ Sem "-ismos" sutis. Racismo, sexismo, homofobia, transfobia, e outros tipos de p
 Diretrizes do [manual do Recurse Center](https://www.recurse.com/manual). 
 Obrigado por disponibilizar isso, Recurse Center.
 
-# Installando Haskell
+# Instalando Haskell
 
-## Use a ferramenta Stack para começar a com Haskell
+## Use a ferramenta Stack para começar com Haskell
 
 Instale [Stack](http://haskellstack.org) para ter o GHC (Glasgow Haskell Compiler) instalado e para poder compilar seus projetos.
 
-Se você não sabe nada sobre Stack e gostaria de uma visão geral, confira o [tutorial em videl sobre Stack](https://www.youtube.com/watch?v=sRonIB8ZStw).
+Se você não sabe nada sobre Stack e gostaria de uma visão geral, confira o [tutorial em video sobre Stack](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
 
-## NÃO INSTALLE "HASKELL PLATFORM"
+## NÃO INSTALE "HASKELL PLATFORM"
 
 Ao invés de utilizar as instruções disponível em Haskell.org, instale Stack.
 
