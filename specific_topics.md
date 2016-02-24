@@ -23,6 +23,8 @@ typeclasses in general but also some Hask-specific category theory:
 
 # Laziness, strictness, guarded recursion
 
+- Heinrich Apfelmus' article series at https://hackhands.com/guide-lazy-evaluation-haskell/ is excellent.
+
 - Marlow's [book](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)
   about parallelism and concurrency has one of the best introductions to
   laziness and normal form I've found. Use other material too if it doesn't
