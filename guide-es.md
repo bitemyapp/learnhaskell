@@ -7,7 +7,7 @@ Este es el sendero que recomiendo para aprender Haskell.
 
 ## Comunidad
 
-Nuestro canal en IRC es `#Haskell-beginners` en Freenode.
+Nuestro canal en IRC es `#haskell-beginners` en Freenode.
 
 Cliente web IRC [aquí](http://webchat.freenode.net/).
 
