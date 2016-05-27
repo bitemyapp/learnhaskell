@@ -439,7 +439,7 @@ Generics are usually used to generate typeclass instances, but you'll see TH use
 
 - https://ocharles.org.uk/blog/posts/2014-04-26-constructing-generically.html
 
-- Current docs: https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/generic-programming.html
+- Current docs: https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/glasgow_exts.html#generic-programming
 
 ## QuasiQuotation
 
@@ -457,7 +457,7 @@ Generics are usually used to generate typeclass instances, but you'll see TH use
 
 - https://ocharles.org.uk/blog/guest-posts/2014-12-22-template-haskell.html
 
-- Current docs: https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/template-haskell.html
+- Current docs: https://downloads.haskell.org/~ghc/latest/docs/html/users_guide/glasgow_exts.html#template-haskell
 
 - OCaml and TH slides: https://nicolaspouillard.fr/talks/cufp-metaprogramming-tutorial-slides.pdf
 
