@@ -611,7 +611,7 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 
 - [Adjunctions](http://www.stephendiehl.com/posts/adjunctions.html).
 
-- [Monads]​​(http://www.stephendiehl.com/posts/monads.html).
+- [Monads](http://www.stephendiehl.com/posts/monads.html).
 
 # 其他有趣的主题
 
