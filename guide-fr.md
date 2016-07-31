@@ -21,7 +21,7 @@ Soyez gentils et courtois. Etre méchant ou désagréable fait peur aux autres e
 
 Une critique pour le plaisir de critiquer ne sert que la personne qui la fait, pas celle qui la reçoit.
 
-Ne décrivez pas quelquechose comme "facile" ou "trivial". Vous créeriez un malaise chez ceux qui doivent travailler plus durement pour progresser. Les personnes qui apprennent lentement sont souvent celles qui font un apprentissage plus approfondi, c'est quelque chose que nous devons célébrer et encourager !
+Ne décrivez pas quelque chose comme "facile" ou "trivial". Vous créeriez un malaise chez ceux qui doivent travailler plus durement pour progresser. Les personnes qui apprennent lentement sont souvent celles qui font un apprentissage plus approfondi, c'est quelque chose que nous devons célébrer et encourager !
 
 Ne pas feindre la surprise. N'ayez pas l'air surpris lorsque quelqu'un affirme ne pas savoir quelque chose. La personne se sentira mal et vous n'aurez rien accompli mis à part flatter votre égo.
 
