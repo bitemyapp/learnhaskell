@@ -1,8 +1,6 @@
 # How to learn Haskell
 
-This is a recommended path for learning Haskell based on experience helping others.
-
-@dmvianna wanted me to let you know that these are just the _free_ recommended resources. If you're willing to check out a book, we heartily recommend our own [Haskell Book!](http://haskellbook.com)
+This is a recommended path for learning Haskell based on experience helping others. A list of recommendations from one of the authors of the [Haskell Book.](http://haskellbook.com)
 
 
 ## For non-English speakers
@@ -64,6 +62,10 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 # How should I learn Haskell?
 
 The core recommendation is to read the lectures and complete all exercises/homework for the Spring 13 version of cis194 followed by the NICTA course. Both are linked below. Everything else can be considered optional and is mentioned so you know where to look.
+
+## Alternately...
+
+[@dmvianna](https://github.com/dmvianna) wanted me to let you know that these are just the _free_ recommended resources. If you're willing to check out a book, we heartily recommend our own [Haskell Book!](http://haskellbook.com) That book replaces all of the primary resources recommended here.
 
 ## Yorgey's cis194 course
 
