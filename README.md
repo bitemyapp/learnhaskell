@@ -2,6 +2,8 @@
 
 This is a recommended path for learning Haskell based on experience helping others.
 
+@dmvianna wanted me to let you know that these are just the _free_ recommended resources. If you're willing to check out a book, we heartily recommend our own [Haskell Book!](http://haskellbook.com)
+
 
 ## For non-English speakers
 
