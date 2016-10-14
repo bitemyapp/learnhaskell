@@ -25,7 +25,7 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 * [Українською](guide-ua.md)
 
-* [Bahasa Indonesia] (guide-id.md)
+* [Bahasa Indonesia](guide-id.md)
 
 #### *Don't sweat the stuff you don't understand immediately*. Keep moving!
 
