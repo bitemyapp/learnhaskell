@@ -36,38 +36,38 @@ Haskell的规格可在下面这篇报告找到，此报告最新版本为2010版
 [onlinereport](http://www.haskell.org/onlinereport/haskell2010/)
 
 ## GHC
-[GHC](http://www.haskell.org/ghc/)是Haskell语言的主流工具选择。它包含编译器、直译器、套件管理，与其他辅助工具。
+[GHC](http://www.haskell.org/ghc/)是Haskell语言的主流工具选择。它包含编译器、REPL(解释器)、套件管理器，与其他辅助工具。
 
 ## Cabal
 [Cabal](https://www.haskell.org/cabal/download.html)可用来做专案管理与套件相依性解析。
 这会是你用来安装专案、套件的主要工具，其常见的做法是安装到专属的沙箱(cabal sandbox)中。
 
-Cabal相当于Ruby Bundler、Python pip、Node NPM、Maven等等。你可以用GHC来打包套件，Cabal则可用来选择你想要的版本安装。
+Cabal相当于Ruby Bundler、Python pip、Node NPM、Maven等等。你可以用GHC来打包套件，Cabal则可用来选择你想要安装的版本。
 
 # 环境设定
 
 ## Ubuntu
-[这个PPA](http://launchpad.net/~hvr/+archive/ghc)很棒，我在我所有的Linux环境与建置用机器上都靠它。
+[这个PPA](http://launchpad.net/~hvr/+archive/ghc)很棒，我在我所有的Linux开发与构建用机器上都靠它。
 
 详细设定步骤如下：
 
 ```bash
 $ sudo apt-get update
-$ sudo apt-get install python-software-properties # v12.04 and below
-$ sudo apt-get install software-properties-common # v12.10 and above
+$ sudo apt-get install python-software-properties # v12.04 及以下
+$ sudo apt-get install software-properties-common # v12.10 及以上
 $ sudo add-apt-repository -y ppa:hvr/ghc
 $ sudo apt-get update
 $ sudo apt-get install cabal-install-1.20 ghc-7.8.4 happy-1.19.4 alex-3.1.3
 ```
 
-接着，把以下路径加入你的`$PATH`环境变数中(bash\_profile, zshrc, bashrc, etc)：
+接着，把以下路径加入你的`$PATH`环境变量中(bash\_profile, zshrc, bashrc, etc)：
 
 ```
 ~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin
 ```
 
 *注:* 你不妨把`.cabal-sandbox/bin`加到你的路径中。如此一来，只要你使用沙箱(cabal sandbox)开发，并且
-留在专案的工作路径中，你就可以在命令列中轻易取用你正在开发的二进位档。
+留在专案的工作路径中，你就可以在命令行中轻易取用你正在开发的二进制档。
 
 ## Debian
 
@@ -91,12 +91,12 @@ $ sudo sed -is/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
 
 ### 自行编译
 
-请参照这篇为Mac OSX所撰的指南：
+请参照这篇为Mac OS X所撰的指南：
 
 请注意：
 
 - 根据你个人的工作环境，设定ghc时指定目录前缀(prefix)
-- 不要直接下载`cabal-install`的二进位档，请下载源码并执行其`bootstrap.sh`脚本。
+- 不要直接下载`cabal-install`的二进位档，请下载源码并执行`bootstrap.sh`脚本。
 
 ## Fedora 21
 
@@ -141,7 +141,7 @@ $ \cabal update # The backslashes
 $ \cabal install cabal-install # are intentional
 ```
 
-如此一来，你便透过Protage在系统中安装了cabal，又在你的个人环境中安装了最新的`cabal-install`。
+如此一来，你便通过Protage在系统中安装了cabal，又在你的个人环境中安装了最新的`cabal-install`。
 下一步是确定每次你在终端机执行`cabal`时，你的shell都是执行你个人环境中的最新版本：
 
 ```bash
@@ -176,7 +176,7 @@ $ cabal install alex happy
 ### 10.6-10.8
 
 请下载这个[tarball](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2)，
-并安装其包含的二进位版。
+并安装其包含的二进制档。
 
 ## Windows
 
@@ -187,7 +187,7 @@ $ cabal install alex happy
 
 ## 其他Linux使用者
 
-下载cabal与ghc的最新版二进位档。
+下载cabal与ghc的最新版二进制档。
 
 - [GHC](http://www.haskell.org/ghc/).
 
@@ -197,14 +197,14 @@ $ cabal install alex happy
 
 ## Yorgey's cis194课程
 
-> *请先透过这门课学习*，这是我最推荐入门Haskell的课。
+> *请先通过这门课学习*，这是我最推荐入门Haskell的课。
 
 此课程的教材可于[线上取得](http://www.seas.upenn.edu/~cis194/spring13/lectures.html)。
 
 [Brent Yorgey](https://byorgey.wordpress.com)的课是我目前所知最好的。它之所以好，因为
 它不只教你些基础知识，还教你parser combinators。
 
-如果你不是个程式设计师，或缺乏经验，那么这门课可能没这么适合。建议你从
+如果你不是个程序设计师，或缺乏经验，那么这门课可能没这么适合。建议你从
 [Thompson的这本书](http://www.haskellcraft.com/craft3e/Home.html)开始，然后再转到cis194。
 
 ---
@@ -215,7 +215,7 @@ $ cabal install alex happy
 
 这门课发布在[github上](https://github.com/NICTA/course)。
 
-透过实作cis194中所介绍过的种种抽象表述，你会有更深入的了解。这样的练习对于
+透过实现cis194中所介绍过的种种抽象表述，你会有更深入的了解。这样的练习对于
 熟悉Haskell中每天都会面对的Functor/Applicative/Monad等等至关重要。
 先做cis194，紧接着NICTA，是这整篇Haskell学习导览的核心，也是我​​教每个人Haskell的方式。
 
@@ -256,7 +256,7 @@ $ cabal install alex happy
 
 # Laziness, strictness, guarded recursion
 
-- [Marlow关于平行与同步的书](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)中，关于laziness与normal form的介绍
+- [Marlow关于并行与并发的书](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)中，关于laziness与normal form的介绍
   是我所看过最好的。如果没有立即理解，不妨搭配以下补充材料。
 
 - [More points for lazy evaluation](http://augustss.blogspot.hu/2011/05/more-points-for-lazy-evaluation-in.html)
@@ -291,29 +291,29 @@ let a = 1 * a -- not guarded, (*) is strict
 - [First class "statements"](http://blog.jle.im/entry/first-class-statements).
 
 - [Haddocks for System.IO.Unsafe.unsafePerformIO](http://hackage.haskell.org/package/base-4.7.0.1/docs/System-IO-Unsafe.html#v:unsafePerformIO)
-  请读unsafeDupablePerformIO的文件和实作笔记。
+  请读unsafeDupablePerformIO的文档和实现笔记。
 
 `glaebhoerl`在Reddit讨论串的留言：
 
-> 有趣的补充笔记: GHC需要将state token representation隐藏在抽象的IO型别后面，
-> 因为state token必须线性地使用，不能复制或丢弃，但型别系统无法强制这件事。
-> 某个干净、lazy、类似Haskell的语言的型别有uniqueness特性(类似linear type，但可能有些
+> 有趣的补充笔记: GHC需要将state token representation隐藏在抽象的IO类型后面，
+> 因为state token必须线性地使用，不能复制或丢弃，但类型系统无法强制这件事。
+> 某个干净、lazy、类似Haskell的语言有uniqueness特性(类似linear type，但可能有些
 > 我没意识到的细微差别)，为了方便，它直接暴露World-passing并提供非抽象的IO monad。
 
 # Monads and monad transformers
 
 > 在你了解typeclasses、Monoid、Functor和Applicative之前，请不要做下列练习！
 
-尝试自行实作标准函式库中的monads(List、Maybe、Cont、Error、Reader、Writer、State)，可以让你
-更了解它们。再来，不妨尝试用下述技术实作一个小型expression language的monadic直译器：
+尝试自行实现标准函式库中的monads(List、Maybe、Cont、Error、Reader、Writer、State)，可以让你
+更了解它们。再来，不妨尝试用下述技术实现一个小型expression language的monadic解释器：
 [Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf)(在下列monad transformer章节亦有提及)
 
-透过用不同的monad改变语意，从而产生不同的直译器，help convey what's going on。
+通过用不同的monad改变语意，从而产生不同的解释器，help convey what's going on。
 
 - [Tony的演讲](https://vimeo.com/73648150)完美演绎为何需要monad transformer，
   [投影片在此](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
 
-再来，实作`Control.Monad`中的函数，例如：`mapM`或`sequence`是个练习撰写generic monadic code的好机会。
+再来，实现`Control.Monad`中的函数，例如：`mapM`或`sequence`是个练习撰写generic monadic code的好机会。
 
 前面提到过的NICTA课程也可以用来当这个过程的指南，它也包括了如何撰写你自己的Applicative。
 
@@ -355,7 +355,7 @@ Aeson是Haskell标准的[JSON](https://json.org)parsing解决方案。你可以�
 
 - [Aeson教学](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
 
-# 图学演算法与资料结构
+# 图算法与数据结构
 
 - [fgl套件](https://hackage.haskell.org/package/fgl)。纯函数式的最短路径[演算法](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html)值得一看。
 
@@ -414,7 +414,7 @@ Aeson是Haskell标准的[JSON](https://json.org)parsing解决方案。你可以�
 在引入沙箱(sandbox)前，Cabal地狱(Cabal Hell)对所有Haskell使用者来说都是一大问题。
 在沙箱外安装的套件会直接装在你的用户套件资料库(user pacakge-db)中。除非是常用的基础套件，
 例如Cabal、alex、happy等，这绝不是个好方法。除非你很清楚你自己在做什么，任何套件都不该
-安装在用户资料裤或全域资料库(global package-db)。
+安装在用户资料库或全域资料库(global package-db)。
 
 这里有些如何避免Cabal地狱的[最佳指南](http://softwaresimply.blogspot.com/2014/07/haskell-best-practices-for-avoiding.html)。
 
@@ -431,7 +431,7 @@ Aeson是Haskell标准的[JSON](https://json.org)parsing解决方案。你可以�
 
 ## Stackage
 
-如果你面临一些建置上的问题(特别是Yesod)，不妨考虑用Stackage：
+如果你面临一些构建上的问题(特别是Yesod)，不妨考虑用Stackage：
 
 - [Stackage是什么](https://www.fpcomplete.com/blog/2014/05/stackage-server)
 
@@ -439,13 +439,13 @@ Aeson是Haskell标准的[JSON](https://json.org)parsing解决方案。你可以�
 
 # Hoogle与Haddock
 
-## 依型别表述搜寻源码
+## 依类型签名搜索代码
 
-[Hoogle搜寻引擎](http://www.haskell.org/hoogle/)可依型别搜寻。
+[Hoogle搜索引擎](http://www.haskell.org/hoogle/)可依型别搜寻。
 
-比方说，请看以下搜寻`(a -> b) -> [a] -> [b]`的结果：
+比方说，请看以下搜索`(a -> b) -> [a] -> [b]`的结果：
 
-[搜寻结果](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
+[搜索结果](http://www.haskell.org/hoogle/?hoogle=%28a+-%3E+b%29+-%3E+%5ba%5d+-%3E+%5bb%5d).
 
 fpcomplete所管理的[在此](https://www.fpcomplete.com/hoogle)。
 
@@ -479,7 +479,7 @@ cabal haddock --hoogle --hyperlink-source \
 ```
 
 # TravisCI
-如果你跟我一样，是[TravisCI](https://travis-ci.org)的超级粉丝，那我*强力建议*你参考[multi-ghc-travis](https://github.com/hvr /multi-ghc-travis)为你的Haskell专案的`travis.yml`设定档做基础。
+如果你跟我一样，是[TravisCI](https://travis-ci.org)的超级粉丝，那我*强力建议*你参考[multi-ghc-travis](https://github.com/hvr /multi-ghc-travis)为你的Haskell专案的`travis.yml`作基础。
 
 # 前端/JavaScript
 我们的选择多得惊人！我个人推荐三种：
@@ -499,13 +499,13 @@ cabal haddock --hoogle --hyperlink-source \
   - 在浏览器上[试试](http://try.purescript.org/)
   - [起步导览](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
 
-## 我用哪一种前端语言？
+## 我该用哪一种前端语言？
 
-GHCJS和Haste都是纯Haskell，GHCJS比Haste能和更多的Haskell套件相容，但这不会影响大多数的前端专案。PureScript并非Haskell，因此无法直接和你的后端分享源码。
+GHCJS和Haste都是纯Haskell，GHCJS比Haste能和更多的Haskell套件相容，但这不会影响大多数的前端专案。PureScript并非Haskell，因此无法直接和你的后端共享源码。
 
 GHCJS的执行期payload是最大的，大约100kb (luite正在研究如何解决此问题)，Haste则和PureScript差不多。
 
-PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则与Haskell工具链整合较佳(例如Cabal)。
+PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则与Haskell工具链整合较好(例如Cabal)。
 
 以上三者都是极佳选择，大多数的前端专案都适用。
 
@@ -523,7 +523,7 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 
 - [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtml)
 
-# 平行／并行(Parallelism/Concurrency)
+# 并行／并发(Parallelism/Concurrency)
 
 - [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929)。在我所读过的文献中，Simon Marlow所撰的这本书是此主题的佼佼者。
 
@@ -547,9 +547,9 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 
 详细资料请看这里：[Lens package on hackage](http://hackage.haskell.org/package/lens).
 
-# 递回范式(Recursion Schemes)
+# 递归范式(Recursion Schemes)
 
-你一定听过些疯狂的『\*-morphism』，他们其实只是递回。在尝试搞懂前，你应该要先知道如何实作list至少一种其他资料结构的foldr，例如tree (folds叫做catamorphisms)。再进一步了解如何在以上资料结构实作unfold (anamorphism)会让整体知识完善些。
+你一定听过些疯狂的『\*-morphism』，他们其实只是递归。在尝试搞懂前，你应该要先知道如何为list以及至少一种其他数据结构实现foldr，例如tree (folds叫做catamorphisms)。再进一步了解如何在以上数据结构实现unfold (anamorphism)会让整体知识完善些。
 
 以下资料与traversable和foldable的概念相合。
 
@@ -565,7 +565,7 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 
 - [Catamorphisms](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
 
-# GHC核心与效能调校
+# GHC Core与效能调校
 
 - [Write Haskell as Fast as C](write_haskell_as_fast_as_c.md)
 
@@ -579,11 +579,11 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 
 - [Real World Haskell, Chapter 25: Profiling and Optimizations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
 
-# 型别(Type)与范畴论(Category Theory)
+# 类型(Type)与范畴论(Category Theory)
 
 > 写Haskell*不用学*，仅供有兴趣的人参考！
 
-如果你想开始学习型别与范畴论：
+如果你想开始学习类型与范畴论：
 
 - [Catster's Guide](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) and
   [Catster's Guide 2](http://byorgey.wordpress.com/catsters-guide-2/)
@@ -670,7 +670,7 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 
 - [Idris programming language](http://www.idris-lang.org/).
 
-# 静态连结二元档Statically linking binaries
+# 静态链接二进制档 Statically linking binaries
 
 - [Static linking](https://wiki.haskell.org/Web/Literature/Static_linking)
 
