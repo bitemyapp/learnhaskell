@@ -479,7 +479,7 @@ cabal haddock --hoogle --hyperlink-source \
 ```
 
 # TravisCI
-如果你跟我一样，是[TravisCI](https://travis-ci.org)的超级粉丝，那我*强力建议*你参考[multi-ghc-travis](https://github.com/hvr /multi-ghc-travis)为你的Haskell专案的`travis.yml`设定档做基础。
+如果你跟我一样，是[TravisCI](https://travis-ci.org)的超级粉丝，那我*强力建议*你参考[multi-ghc-travis](https://github.com/hvr /multi-ghc-travis)为你的Haskell专案的`travis.yml`作基础。
 
 # 前端/JavaScript
 我们的选择多得惊人！我个人推荐三种：
@@ -499,13 +499,13 @@ cabal haddock --hoogle --hyperlink-source \
   - 在浏览器上[试试](http://try.purescript.org/)
   - [起步导览](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
 
-## 我用哪一种前端语言？
+## 我该用哪一种前端语言？
 
-GHCJS和Haste都是纯Haskell，GHCJS比Haste能和更多的Haskell套件相容，但这不会影响大多数的前端专案。PureScript并非Haskell，因此无法直接和你的后端分享源码。
+GHCJS和Haste都是纯Haskell，GHCJS比Haste能和更多的Haskell套件相容，但这不会影响大多数的前端专案。PureScript并非Haskell，因此无法直接和你的后端共享源码。
 
 GHCJS的执行期payload是最大的，大约100kb (luite正在研究如何解决此问题)，Haste则和PureScript差不多。
 
-PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则与Haskell工具链整合较佳(例如Cabal)。
+PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则与Haskell工具链整合较好(例如Cabal)。
 
 以上三者都是极佳选择，大多数的前端专案都适用。
 
@@ -579,11 +579,11 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 
 - [Real World Haskell, Chapter 25: Profiling and Optimizations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
 
-# 型别(Type)与范畴论(Category Theory)
+# 类型(Type)与范畴论(Category Theory)
 
 > 写Haskell*不用学*，仅供有兴趣的人参考！
 
-如果你想开始学习型别与范畴论：
+如果你想开始学习类型与范畴论：
 
 - [Catster's Guide](http://byorgey.wordpress.com/2014/01/14/catsters-guide/) and
   [Catster's Guide 2](http://byorgey.wordpress.com/catsters-guide-2/)
@@ -670,7 +670,7 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 
 - [Idris programming language](http://www.idris-lang.org/).
 
-# 静态链接二进位 Statically linking binaries
+# 静态链接二进制档 Statically linking binaries
 
 - [Static linking](https://wiki.haskell.org/Web/Literature/Static_linking)
 
