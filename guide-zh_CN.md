@@ -67,7 +67,7 @@ $ sudo apt-get install cabal-install-1.20 ghc-7.8.4 happy-1.19.4 alex-3.1.3
 ```
 
 *注:* 你不妨把`.cabal-sandbox/bin`加到你的路径中。如此一来，只要你使用沙箱(cabal sandbox)开发，并且
-留在专案的工作路径中，你就可以在命令列中轻易取用你正在开发的二进制档。
+留在专案的工作路径中，你就可以在命令行中轻易取用你正在开发的二进制档。
 
 ## Debian
 
@@ -141,7 +141,7 @@ $ \cabal update # The backslashes
 $ \cabal install cabal-install # are intentional
 ```
 
-如此一来，你便透过Protage在系统中安装了cabal，又在你的个人环境中安装了最新的`cabal-install`。
+如此一来，你便通过Protage在系统中安装了cabal，又在你的个人环境中安装了最新的`cabal-install`。
 下一步是确定每次你在终端机执行`cabal`时，你的shell都是执行你个人环境中的最新版本：
 
 ```bash
@@ -176,7 +176,7 @@ $ cabal install alex happy
 ### 10.6-10.8
 
 请下载这个[tarball](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2)，
-并安装其包含的二进制版。
+并安装其包含的二进制档。
 
 ## Windows
 
@@ -197,7 +197,7 @@ $ cabal install alex happy
 
 ## Yorgey's cis194课程
 
-> *请先透过这门课学习*，这是我最推荐入门Haskell的课。
+> *请先通过这门课学习*，这是我最推荐入门Haskell的课。
 
 此课程的教材可于[线上取得](http://www.seas.upenn.edu/~cis194/spring13/lectures.html)。
 
@@ -291,7 +291,7 @@ let a = 1 * a -- not guarded, (*) is strict
 - [First class "statements"](http://blog.jle.im/entry/first-class-statements).
 
 - [Haddocks for System.IO.Unsafe.unsafePerformIO](http://hackage.haskell.org/package/base-4.7.0.1/docs/System-IO-Unsafe.html#v:unsafePerformIO)
-  请读unsafeDupablePerformIO的文件和实作笔记。
+  请读unsafeDupablePerformIO的文档和实现笔记。
 
 `glaebhoerl`在Reddit讨论串的留言：
 
@@ -304,11 +304,11 @@ let a = 1 * a -- not guarded, (*) is strict
 
 > 在你了解typeclasses、Monoid、Functor和Applicative之前，请不要做下列练习！
 
-尝试自行实作标准函式库中的monads(List、Maybe、Cont、Error、Reader、Writer、State)，可以让你
-更了解它们。再来，不妨尝试用下述技术实作一个小型expression language的monadic直译器：
+尝试自行实现标准函式库中的monads(List、Maybe、Cont、Error、Reader、Writer、State)，可以让你
+更了解它们。再来，不妨尝试用下述技术实现一个小型expression language的monadic解释器：
 [Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf)(在下列monad transformer章节亦有提及)
 
-透过用不同的monad改变语意，从而产生不同的解释器，help convey what's going on。
+通过用不同的monad改变语意，从而产生不同的解释器，help convey what's going on。
 
 - [Tony的演讲](https://vimeo.com/73648150)完美演绎为何需要monad transformer，
   [投影片在此](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
