@@ -2,7 +2,7 @@
 
 Acest tutorial reprezintă calea recomandată pentru a învăța Haskell, pe baza experiențelor avute ajutând alte persoane. Lista de recomandări este creată de unul din autorii [Haskell Book.](http://haskellbook.com).
 
-#### *Nu vă stresați prea mult pentru lucrurile pe care nu le înțelegi imediat*. Mergeți mai departe!
+#### *Nu vă stresați prea mult pentru lucrurile pe care nu le înțelegeți imediat*. Mergeți mai departe!
 
 ## Comunitate
 
@@ -10,7 +10,7 @@ Canalul de IRC este `#haskell-beginners` de pe Freenode.
 
 Un client web the IRC este [aici](http://webchat.freenode.net/).
 
-[List de discuții](https://wiki.haskell.org/Mailing_lists).
+[Lista de discuții](https://wiki.haskell.org/Mailing_lists).
 
 ### Recomandări pentru integrarea în comunitate
 
@@ -22,11 +22,11 @@ Citiți [lista de sfaturi](coc.md) pentru a înțelege regulile de bună purtare
 
 Obțineți [Stack](http://haskellstack.org) pentru a instala GHC și a construi proiecte.
 
-Dacă nu știți nimic despre Stack și vreți o descriere, vizionați aces[tutorial Stack detaliat](https://www.youtube.com/watch?v=sRonIB8ZStw).
+Dacă nu știți nimic despre Stack și vreți o descriere, vizionați acest [tutorial Stack detaliat](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
 ## De asemenea, NU INSTALAȚI HASKELL PLATFORM
 
-În loc să urmăriți instrucțiunile de pe Haskell.org, obțineți Stack.
+În loc să urmăriți instrucțiunile de pe Haskell.org, folosiți Stack.
 
 ### De ce nu Haskell platform?
 
@@ -52,7 +52,7 @@ Este foarte valoros mai ales că nu numai că vă va învăța cum să scrieți 
 și ajuta să înțelegi combinatorii de analiză gramaticală.
 
 Singurul caz în care acest curs nu este recomandat este dacă nu sunteți programator/programatoare sau nu aveți multă experiență în domeniu.
-În acest caz, recomandarea este să învepeți cu
+În acest caz, recomandarea este să începeți cu
 [cartea lui Thompson](http://www.haskellcraft.com/craft3e/Home.html) și să tranziționați ulterior la cis194.
 
 ---
@@ -92,4 +92,4 @@ Lucruri precum concepte de nivel mediu/avansat și subiecte precum instrumente d
 
 > Stocate în repository-ul de [aici](dialogues.md).
 
-De fapt, acestea sunt foarte importante și ajută. Uitați-vă aici pentru a aprofunda în o varietate de topicuri.
+De fapt, acestea sunt foarte importante și ajută. Citiți aceste dialoguri pentru a aprofunda o varietate de topicuri.
