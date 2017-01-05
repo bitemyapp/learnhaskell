@@ -6,7 +6,7 @@ Be kind and courteous. Being mean or rude scares people off and makes people not
 
 Low-effort criticism is for the benefit of the person delivering it, not the person receiving it.
 
-Don't describe things as "easy" or "trivial". You'll making people feel terrible for having to work hard for their progress. Slow learners are often the most thorough learners, this is something to celebrate!
+Don't describe things as "easy" or "trivial". You're making people feel terrible for having to work hard for their progress. Slow learners are often the most thorough learners, this is something to celebrate!
 
 No feigning surprise. Don't act surprised when somebody says they don't know something. They'll feel terrible and you've accomplished nothing except to make yourself feel sharp.
 
