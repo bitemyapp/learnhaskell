@@ -479,7 +479,7 @@ cabal haddock --hoogle --hyperlink-source \
 ```
 
 # TravisCI
-如果你跟我一样，是[TravisCI](https://travis-ci.org)的超级粉丝，那我*强力建议*你参考[multi-ghc-travis](https://github.com/hvr /multi-ghc-travis)为你的Haskell专案的`travis.yml`作基础。
+如果你跟我一样，是[TravisCI](https://travis-ci.org)的超级粉丝，那我*强力建议*你参考[multi-ghc-travis](https://github.com/hvr/multi-ghc-travis)为你的Haskell专案的`travis.yml`作基础。
 
 # 前端/JavaScript
 我们的选择多得惊人！我个人推荐三种：
