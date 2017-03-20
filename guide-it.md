@@ -218,7 +218,7 @@ Scaricate l'ultima distribuzione binaria di cabal e ghc:
 > *Seguite questo per primo*, è la strada che raccomando per il primo approccio ad
 > Haskell.
 
-Disponibile [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Disponibile [online](http://www.seas.upenn.edu/%7Ecis194/lectures.html).
 
 Il corso di [Brent Yorgey](https://byorgey.wordpress.com) è il migliore che ho trovato finora.  Questo corso ha valore non solo perché vi rende in grado di scrivere codice Haskell basilare ma anche perché vi aiuterà a comprendere i parser combinators.
 

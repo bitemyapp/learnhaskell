@@ -232,7 +232,7 @@ Téléchargez la dernière version des exécutables pour cabal et ghc
 
 > *Faites le en premier*, c'est la principale introduction à Haskell que je recommande.
 
-Disponible [en ligne](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Disponible [en ligne](http://www.seas.upenn.edu/%7Ecis194/lectures.html).
 
 Le cours de [Brent Yorgey](https://byorgey.wordpress.com) est le meilleur que j'ai trouvé jusque là.
 Ce cours vous donnera les bases pour écrire du code en Haskell mais vous
