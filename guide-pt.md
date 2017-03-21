@@ -73,16 +73,16 @@ o cis194.
 
 ---
 
-## Curso NICTA
+## Curso Data61
 
 > Este é o curso que recomendo fazer após o curso cis194 do Yorgey.
 
-Disponível no github [aqui](https://github.com/NICTA/course).
+Disponível no github [aqui](https://github.com/data61/fp-course).
 
 Isso vai reforçar e lhe dar experiência implementado diretamente as abstrações
 introduzidas no cis194. Essa prática é *crítica* para alguém se tornar confortável
 com o uso diário de *Functors*/*Applicatives*/*Monads*/etc em Haskell. Fazer o cis194
-e então o curso do NICTA representa a recomendação fundamental do meu guia, 
+e então o curso do Data61 representa a recomendação fundamental do meu guia, 
 e é como eu ensino Haskell para todo mundo.
 
 --- 
@@ -203,7 +203,7 @@ pode ajudar a entender o que está acontecendo.
 Além disso, reimplemente `Control.Monad`. Funções como `mapM` ou `sequence` são boas
 oportunidades para praticar escrevendo código monádico genérico.
 
-O curso NICTA pode ser usado como um guia para esse processo, o que também vai
+O curso Data61 pode ser usado como um guia para esse processo, o que também vai
 envolver escrever seu próprio *Applicative*.
 
 Créditos:
