@@ -209,15 +209,15 @@ $ cabal install alex happy
 
 ---
 
-## NICTA课程
+## Data61课程
 
 > 在你完成上述Yorgey的cis194后，我推荐继续挑战此课程。
 
-这门课发布在[github上](https://github.com/NICTA/course)。
+这门课发布在[github上](https://github.com/data61/fp-course)。
 
 透过实现cis194中所介绍过的种种抽象表述，你会有更深入的了解。这样的练习对于
 熟悉Haskell中每天都会面对的Functor/Applicative/Monad等等至关重要。
-先做cis194，紧接着NICTA，是这整篇Haskell学习导览的核心，也是我​​教每个人Haskell的方式。
+先做cis194，紧接着Data61，是这整篇Haskell学习导览的核心，也是我​​教每个人Haskell的方式。
 
 ---
 
@@ -315,7 +315,7 @@ let a = 1 * a -- not guarded, (*) is strict
 
 再来，实现`Control.Monad`中的函数，例如：`mapM`或`sequence`是个练习撰写generic monadic code的好机会。
 
-前面提到过的NICTA课程也可以用来当这个过程的指南，它也包括了如何撰写你自己的Applicative。
+前面提到过的Data61课程也可以用来当这个过程的指南，它也包括了如何撰写你自己的Applicative。
 
 Credits:
 

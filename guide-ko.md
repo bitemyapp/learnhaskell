@@ -58,7 +58,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # 하스켈을 어떻게 배워야 하나요?
 
-저희들은 2013년 봄학기 cis194 강의에 있는 모든 문제를 풀어본 다음에 NICTA강의를 듣는 방법을 추천합니다. 두 강의 모두 아래에 링크가 걸려있습니다. 그외에는 선택이며, 여러분이 찾을 수 있도록 아래에 링크가 있습니다.
+저희들은 2013년 봄학기 cis194 강의에 있는 모든 문제를 풀어본 다음에 Data61강의를 듣는 방법을 추천합니다. 두 강의 모두 아래에 링크가 걸려있습니다. 그외에는 선택이며, 여러분이 찾을 수 있도록 아래에 링크가 있습니다.
 
 ## Yorgey의 cis194 강의
 
@@ -73,17 +73,17 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ---
 
-## NICTA 강의
+## Data61 강의
 
 > 이 강의는 Yorgey의 cis194 강의를 모두 보신 후에 추천드리는 강의입니다. 
 
-github에서 가능합니다 [여기](https://github.com/NICTA/course).
+github에서 가능합니다 [여기](https://github.com/data61/fp-course).
 
-이 강의는 cis194에서 소개했던 Functor나 Applicative, Monad 등의 추상화를 직접 사용하면서 추상화를 사용하는데 어려움이 없도록 훈련하는 강의입니다. cis194를 먼저 보고 NICTA강의를 보는 방법이 저희들이 추천하는 하스켈 학습방법입니다.
+이 강의는 cis194에서 소개했던 Functor나 Applicative, Monad 등의 추상화를 직접 사용하면서 추상화를 사용하는데 어려움이 없도록 훈련하는 강의입니다. cis194를 먼저 보고 Data61강의를 보는 방법이 저희들이 추천하는 하스켈 학습방법입니다.
 
 ---
 
-## cis194와 NICTA강의를 본 후의 보충강의
+## cis194와 Data61강의를 본 후의 보충강의
 
 > 더 많은 자료와 중급 주제를 제공합니다.
 
@@ -95,7 +95,7 @@ cs240h는 [온라인](http://www.scs.stanford.edu/14sp-cs240h/)에서 볼 수 �
 
 # Haskell의 특별한 주제에 대한 자료
 
-이 자료들은 cis194와 NICTA강의를 들은 사람들에 대해 점검해보지 않았지만, 여러분이 어디서 시작해야 할지 도와주기 위해 [주제 리스트](specific_topucs.md)에 링크를 모아두었습니다. 이 리스트에는 툴과 에디터 같은 중급이나 고급정도의 개념들과 주제도 담겨있습니다. 
+이 자료들은 cis194와 Data61강의를 들은 사람들에 대해 점검해보지 않았지만, 여러분이 어디서 시작해야 할지 도와주기 위해 [주제 리스트](specific_topucs.md)에 링크를 모아두었습니다. 이 리스트에는 툴과 에디터 같은 중급이나 고급정도의 개념들과 주제도 담겨있습니다. 
 
 ## 토론
 

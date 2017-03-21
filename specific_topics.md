@@ -95,7 +95,7 @@ help convey what's going on.
 Also, reimplement `Control.Monad`. Functions like `mapM` or `sequence` are good
 opportunities to practice writing generic monadic code.
 
-The NICTA course can be used as a guide to this process, which will also involve
+The Data61 course can be used as a guide to this process, which will also involve
 writing your own Applicative as well.
 
 Credits:

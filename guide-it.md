@@ -227,13 +227,13 @@ L'unica ragione per cui non dovreste cominciare con cis194 è se non siete progr
 
 ---
 
-## Il corso NICTA
+## Il corso Data61
 
 > Questo è il corso che raccomando dopo cis194 di Yorgey
 
-Disponibile su github [qui](https://github.com/NICTA/course).
+Disponibile su github [qui](https://github.com/data61/fp-course).
 
-Questo vi darà esperienza nell'implementare direttamente le astrazioni introdotte in cis194. Questi esercizi sono *fondamentali* per sviluppare confidenza con gli usi comuni di Functor/Applicative/Monad/etc. in Haskell. La raccomandazione principale di questa guida è seguire cis194 e poi NICTA: questo è il percorso che seguo per insegnare Haskell a tutti.
+Questo vi darà esperienza nell'implementare direttamente le astrazioni introdotte in cis194. Questi esercizi sono *fondamentali* per sviluppare confidenza con gli usi comuni di Functor/Applicative/Monad/etc. in Haskell. La raccomandazione principale di questa guida è seguire cis194 e poi Data61: questo è il percorso che seguo per insegnare Haskell a tutti.
 
 ---
 
@@ -341,7 +341,7 @@ Scrivere diversi interpreti cambiando solo la monade per cambiare la semantica p
 
 Poi reimplementate `Control.Monad`. Funzioni come `mapM` o `sequence` sono buone opportunità per fare esercizio e scrivere codice monadico generico.
 
-Il corso NICTA può essere usato come guida a questo scopo, che include anche lo scrivere la vostra typeclass Applicative.
+Il corso Data61 può essere usato come guida a questo scopo, che include anche lo scrivere la vostra typeclass Applicative.
 
 Referenza:
 

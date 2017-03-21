@@ -65,7 +65,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # How should I learn Haskell?
 
-The core recommendation is to read the lectures and complete all exercises/homework for the Spring 13 version of cis194 followed by the NICTA course. Both are linked below. Everything else can be considered optional and is mentioned so you know where to look.
+The core recommendation is to read the lectures and complete all exercises/homework for the Spring 13 version of cis194 followed by the Data61 course. Both are linked below. Everything else can be considered optional and is mentioned so you know where to look.
 
 ## Alternately...
 
@@ -89,21 +89,21 @@ to cis194.
 
 ---
 
-## NICTA course
+## Data61 course
 
 > This is the course we recommend doing after Yorgey's cis194 course
 
-Available on github [here](https://github.com/NICTA/course).
+Available on github [here](https://github.com/data61/fp-course).
 
 This will reinforce and give you experience directly implementing the
 abstractions introduced in cis194, this is practice which is *critical* to
 becoming comfortable with everyday uses of Functor/Applicative/Monad/etc. in
-Haskell. Doing cis194 and then the NICTA course represents the core
+Haskell. Doing cis194 and then the Data61 course represents the core
 recommendation of my guide and is how we teach everyone Haskell.
 
 ---
 
-## Supplementary course after cis194 and the NICTA course
+## Supplementary course after cis194 and the Data61 course
 
 > Provides more material on intermediate topics
 
@@ -120,7 +120,7 @@ pipes, and lenses.
 
 # Resources for specific topics in Haskell
 
-These resources are not vetted or tested with learners as cis194 and NICTA course have been, but they're linked in [the topic listing](specific_topics.md) so you have ideas on where to begin. This includes things like intermediate/advanced concepts and subjects like tooling and text editors.
+These resources are not vetted or tested with learners as cis194 and Data61 course have been, but they're linked in [the topic listing](specific_topics.md) so you have ideas on where to begin. This includes things like intermediate/advanced concepts and subjects like tooling and text editors.
 
 
 ## Dialogues
