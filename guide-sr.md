@@ -28,103 +28,97 @@ Ovo je preporučeni put za učenje Haskell-a zasnovan na iskustvu u pomaganju dr
 
 * [Bahasa Indonesia](guide-id.md)
 
-#### *Ne obraćajte mnogo paznju na stvari koje ne razumete iz prve*. Samo idite napred!
+#### *Ne obraćajte mnogo pažnju na stvari koje ne razumete iz prve*. Samo idite napred!
 
 ## Zajednica
 
 Naš IRC kanal je `#haskell-beginners` na Freenode-u.
 
-IRC web client [here](http://webchat.freenode.net/).
+IRC web [klijent](http://webchat.freenode.net/).
 
-The haskell [mailing lists](https://wiki.haskell.org/Mailing_lists).
-
-
-### Community Guidelines
-
-See [the community guidelines](coc.md) to understand the conduct that is expected in the IRC channel. You'll get a warning if you're not obviously trolling, but be aware the channel is exclusively for those learning or teaching Haskell.
+Haskell [email lista](https://wiki.haskell.org/Mailing_lists).
 
 
-# Installing Haskell
+### Smernice zajednice
 
-## Use Stack to get going with Haskell
-
-Get [Stack](http://haskellstack.org) to get GHC installed and to build your projects.
-
-If you don't know anything about Stack and would like an overview, check out this [comprehensive Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw).
+Pogledajte [smernice zajednice](coc.md) da bi razumeli kakvo ponašanje se očekuje na IRC kanalu. Bićete upozoreni ako očigledno "trolujete" , ali budite svesni toga da kanal služi isključivo onima koji uče ili podučavaju Haskell.
 
 
-## Also, DO NOT INSTALL HASKELL PLATFORM
+# Instaliranje Haskell-a
 
-Instead of following the instructions on Haskell.org, get Stack.
+## Koristite Stack da bi krenuli sa Haskell-om
 
-### Why not platform?
+Preuzmite [Stack](http://haskellstack.org) da bi uz pomoć njega instalirali GHC za bildovanje projekata.
+
+Ako ne znata ništa o Stack-u a želeli biste da saznate, pogledajte ovo [Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw).
+
+
+## Takodje, NEMOJTE INSTALIRATI HASKELL PLATFORMU
+
+Umesto da pratite uputstva sa Haskell.org instalirajte Stack.
+
+### Zašto ne platforma ?
 
 https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 
-# How should I learn Haskell?
+# Kako da učim Haskell?
 
-The core recommendation is to read the lectures and complete all exercises/homework for the Spring 13 version of cis194 followed by the Data61 course. Both are linked below. Everything else can be considered optional and is mentioned so you know where to look.
+Glavna preporuka je da pročitate lekcije i završite sve vezbe iz Spring 13 verzije cis194 kursa posle koga ide Data61 kurs. Oba linka su ispod. Sve ostalo može da se smatra opcionim i pomenuto je ovde da bi znali gde da tražite resurse.
 
-## Alternately...
+## Alternativno...
 
-[@dmvianna](https://github.com/dmvianna) wanted me to let you know that these are just the _free_ recommended resources. If you're willing to check out a book, we heartily recommend our own [Haskell Book!](http://haskellbook.com) That book replaces all of the primary resources recommended here.
+[@dmvianna](https://github.com/dmvianna) je želela da napomenem da su ovo samo besplatni i preporučeni resursi, ako ste zainteresovani da pogledate knjigu preporučujemo od sveg srca našu [Haskell Knjigu!](http://haskellbook.com) Ova knjiga zamenjuje sve pomenuto.
 
-## Yorgey's cis194 course
+## Yorgey-jev cis194 kurs
 
-> *Do this first*, this is the primary way we recommend being introduced to
-> Haskell.
+> *Pročitajte ovo prvo*, ovo je primarni način koji preporučujemo za upoznavanje sa Haskell-om
 
-Available [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Dostupno [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
-[Brent Yorgey](https://byorgey.wordpress.com)'s course is the best I've found so
-far.  This course is valuable as it will not only equip you to write basic
-Haskell but also help you to understand parser combinators.
+[Brent Yorgey](https://byorgey.wordpress.com)-jev kurs je najbolji kurs koji sam video do sada. Ovaj kurs je vredan zato što ne samo da će Vas spremiti da pišete osnovni Haskell već će i pomoći da razumete parser kombinatore.
 
-The only reason you shouldn't start with cis194 is if you are not a programmer
-or are an inexperienced one. If that's the case, start with
-[Thompson's book](http://www.haskellcraft.com/craft3e/Home.html) and transition
-to cis194.
+Jedini razlog da ne počnete sa cis194 kursom je ako niste programer ili ste programer sa malo iskustva. 
+U tom slučaju počnite sa [Thompson-ovom knjigom](http://www.haskellcraft.com/craft3e/Home.html) i posle predjite na cis194.
 
 ---
 
-## Data61 course
+## Data61 kurs
 
-> This is the course we recommend doing after Yorgey's cis194 course
+> Ovo je kurs koji preporučujemo posle Yorgey-jevog cis194 kursa
 
-Available on github [here](https://github.com/data61/fp-course).
+Dostupan je na github/u [ovde](https://github.com/data61/fp-course).
 
-This will reinforce and give you experience directly implementing the
-abstractions introduced in cis194, this is practice which is *critical* to
-becoming comfortable with everyday uses of Functor/Applicative/Monad/etc. in
-Haskell. Doing cis194 and then the Data61 course represents the core
-recommendation of my guide and is how we teach everyone Haskell.
-
----
-
-## Supplementary course after cis194 and the Data61 course
-
-> Provides more material on intermediate topics
-
-cs240h is available [online](http://www.scs.stanford.edu/14sp-cs240h/).
-
-This is [Bryan O'Sullivan](https://github.com/bos)'s online course from the
-class he teaches at Stanford. If you don't know who he is, take a gander at half
-the libraries any Haskell application ends up needing and his name is on it. Of
-particular note if you've already done the Yorgey course are the modules on
-phantom types, information flow control, language extensions, concurrency,
-pipes, and lenses.
+On će utvrditi iskustvo u direktnom implementiranju abstrakcija koje
+su uvedene u cis194 kursu. Ovo je praksa koja je *kritična* da bi se osećali
+prijatno sa svakodnevnom upotrebom Fanktora/Aplikativa/Monada itd. u Haskell-u.
+Glavna preporuka ovog vodiča je da predjete cis194 a zatim Data61 kurs i to je način
+na koji učimo Haskell sve zainteresovane.
 
 ---
 
-# Resources for specific topics in Haskell
+## Dodatni kurs posle cis194 i Data61
 
-These resources are not vetted or tested with learners as cis194 and Data61 course have been, but they're linked in [the topic listing](specific_topics.md) so you have ideas on where to begin. This includes things like intermediate/advanced concepts and subjects like tooling and text editors.
+> Sadrži više materijala o srednje naprednim temama
+
+cs240h je dostupan [online](http://www.scs.stanford.edu/14sp-cs240h/).
+
+Ovo je [Bryan O'Sullivan](https://github.com/bos)-ov online kurs kojim on predaje na
+Stanford-u. Ako ne znate ko je on bacite oko i videćete da je njegovo ime na pola Haskell
+biblioteka koje se potrebne bilo kojem Haskell programu.
+Naročito treba pomenuti, ako ste već završili Yorgey-jev kurs,
+module sa fantomskim tipovima, kontrola toka informacija, ekstenzije jezika, konkurentnost,
+pipes i lenses biblioteke.
+
+---
+
+# Resursi za specifične teme u Haskell-u
+
+Ovi resursi nisu testirani sa učenicima kao što su kursevi cis194 i Data61 ali se nalaze u [listingu tema](specific_topics.md) tako da imate predstavu odakle da krenete. Ovo uključuje srednje/napredne koncepte i teme kao što su alati i tekst editori.
 
 
-## Dialogues
+## Dijalozi
 
-> Hosted in this repository [here](dialogues.md).
+> Nalaze se u ovom repozitorijumu [ovde](dialogues.md).
 
-These are actually pretty important and helpful. Look here for deep dives on a
-variety of topics.
+Ovo je naročito važno i korisno. Ovo je dublji pregled različitih tema.
