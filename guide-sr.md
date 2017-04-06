@@ -1,9 +1,8 @@
-# How to learn Haskell
+# Kako učiti Haskell
 
-This is a recommended path for learning Haskell based on experience helping others. A list of recommendations from one of the authors of the [Haskell Book.](http://haskellbook.com)
+Ovo je preporučeni put za učenje Haskell-a zasnovan na iskustvu u pomaganju drugim ljudima. Ovo je lista preporuka jednog od autora [Haskell knjige](http://haskellbook.com)
 
-
-## For non-English speakers
+## Za one koji ne govore Srpski
 
 * [Auf Deutsch](guide-de.md)
 
@@ -29,11 +28,11 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 * [Bahasa Indonesia](guide-id.md)
 
-#### *Don't sweat the stuff you don't understand immediately*. Keep moving!
+#### *Ne obraćajte mnogo paznju na stvari koje ne razumete iz prve*. Samo idite napred!
 
-## Community
+## Zajednica
 
-Our IRC channel is `#haskell-beginners` on Freenode.
+Naš IRC kanal je `#haskell-beginners` na Freenode-u.
 
 IRC web client [here](http://webchat.freenode.net/).
 
