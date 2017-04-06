@@ -26,6 +26,8 @@ Ini adalah langkah yang direkomendasikan untuk belajar Haskell berdasarkan penga
 
 * [Bahasa Indonesia](guide-id.md)
 
+* [Srpski](guide-sr.md)
+
 #### *Jangan memikirkan hal yang tidak langsung anda mengerti*. Lanjutkan terus! 
 
 ## Komunitas
