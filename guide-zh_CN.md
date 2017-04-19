@@ -104,7 +104,7 @@ $ sudo sed -is/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
 
 ```bash
 $ sudo yum-config-manager --add-repo \
-> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
+> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
 $ sudo yum install ghc cabal-install
 ```
 
@@ -334,7 +334,7 @@ Credits:
 - Kazu Yamamoto的[这篇教学](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md)堪称典范！
 
 - [Simple-Conduit](https://github.com/jwiegley/simple-conduit)：这个简单的函式库对于学习IO串流如何工作很有帮助，
-  所学亦可应用在其他函式库，例如Pipes和Conduit。 
+  所学亦可应用在其他函式库，例如Pipes和Conduit。
 
 # Parsing in Haskell
 
@@ -530,7 +530,7 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 - [这篇教学](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application)带领你一步步学习如何用Haskell测试、渐进开发多绪应用程式。
 
 - [Functional Reactive Programming](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
- 
+
 # Lenses and Prisms
 
 在你习惯Haskell后，我强烈建议你学习Lenses与Prisms。你不必了解底层的原理，只要当一个使用者，就很受用。
@@ -575,7 +575,7 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 
 - [SO Question: Reading GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
 
-- [Haskell as fast as C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level -performance/).
+- [Haskell as fast as C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
 
 - [Real World Haskell, Chapter 25: Profiling and Optimizations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
 
@@ -598,7 +598,7 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 
 ## 书籍
 
-- Kmett推荐：[Quora Question: What is the best textbook for category theory?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share =1)
+- Kmett推荐：[Quora Question: What is the best textbook for category theory?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1)
 
 - [Awodey](http://ukcatalogue.oup.com/product/9780199237180.do)和
   [MacLane](http://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038)。范畴学的标准教科书。
@@ -649,7 +649,7 @@ PureScript有最好的JS工具链整合(用gulp/grunt/bower)，GHCJS和Haste则�
 
 ## Yoneda / CoYoneda
 
-- [SO question: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala -throu).
+- [SO question: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
 - Free monads for Less, Edward Kmett的系列文章
   * [Part 1: Codensity](http://comonad.com/reader/2011/free-monads-for-less/).
