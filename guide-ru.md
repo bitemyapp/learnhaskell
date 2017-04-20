@@ -148,8 +148,7 @@ $ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
 ### Сборка из исходников
 
 Вы можете использовать
-[это руководство]
-(http://www.davesquared.net/2014/05/platformless-haskell.html), написанное для Mac OS X:
+[это руководство](http://www.davesquared.net/2014/05/platformless-haskell.html), написанное для Mac OS X:
 
 Замечания:
 
