@@ -62,7 +62,7 @@ Instead of following the instructions on Haskell.org, get Stack.
 
 ### Why not platform?
 
-https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
+Many reasons, including the difficulty of upgrading later and the way it installs packages. If want the long-winded version, you can find more details [here]( https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html).
 
 
 # How should I learn Haskell?
