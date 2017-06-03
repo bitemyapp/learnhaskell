@@ -78,7 +78,11 @@ The core recommendation is to read the lectures and complete all exercises/homew
 > *Do this first*, this is the primary way we recommend being introduced to
 > Haskell.
 
-Available [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Available online (some differences in topics covered by year):
+* [Spring 13](http://www.seas.upenn.edu/~cis194/spring13/lectures.html)
+* [Spring 15](http://www.seas.upenn.edu/~cis194/spring15/lectures.html)
+* [Fall 16](http://www.seas.upenn.edu/~cis194/fall16/)
+
 
 [Brent Yorgey](https://byorgey.wordpress.com)'s course is the best I've found so
 far.  This course is valuable as it will not only equip you to write basic
