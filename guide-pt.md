@@ -53,7 +53,13 @@ Ao invés de utilizar as instruções disponível em Haskell.org, instale Stack.
 https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 
-# Cursos Iniciais
+# Como devo aprender Haskell?
+
+A principal recomendação é ler as aulas e fazer todos os exercícios/trabalhos de casa do curso cis194 da Primavera de 2013 seguido pelo curso Data61. Links para ambos podem ser encontrados abaixo. Tudo o resto pode ser considerado opcional e é referido aqui para saber onde procurar.
+
+## Alternativamente...
+
+[@dmvianna](https://github.com/dmvianna) quer que saibam que estes são apenas os recursos _grátis_ recomendados. Se estiver disposto a adquirir um livro, recomendamos o [nosso livro](http://haskellbook.com). Este livro substitui todos os recursos primários aqui disponíveis.
 
 ## Curso cis194 do Yorgey
 
