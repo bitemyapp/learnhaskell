@@ -1,7 +1,6 @@
 # Як вивчати Haskell
 
-Цей документ є рекомендованим шляхом вивчання Haskell, який ґрунтується на досвіді допомоги іншим.
-
+Цей документ є рекомендованим шляхом вивчання Haskell, який ґрунтується на досвіді допомоги іншим. Список рекомендацій від одного з авторів [HaskellBook](http://haskellbook.com/).
 
 ## Інші переклади
 
@@ -17,12 +16,17 @@
 
 * [Em Português](guide-pt.md)
 
+* [În Română](guide-ro.md)
+
 * [繁體中文](guide-zh_tw.md)
+
+* [简体中文](guide-zh_CN.md)
 
 * [По-русски](guide-ru.md)
 
-* [Srpski](guide-sr.md)
+* [Bahasa Indonesia](guide-id.md)
 
+* [Srpski](guide-sr.md)
 
 #### *Не намагайтесь одразу зрозуміти все*. Краще не зупиняйтесь і продовжуйте рухатись далі!
 
@@ -34,10 +38,9 @@
 
 Пов'язані з Haskell [поштові розсилки](https://wiki.haskell.org/Mailing_lists).
 
-Отримати допомогу українською можна в чаті [dou-ua/fp](https://gitter.im/dou-ua/fp).
+Отримати допомогу українською можна в [Slack-чаті KyivHaskell](https://github.com/KyivHaskell/KyivHaskell#join-our-slack-channel) або [Gitter-чаті dou-ua/fp](https://gitter.im/dou-ua/fp).
 
-
-### Норми та правила ком'юніті
+### Норми та правила спільноти
 
 [Прочитайте допис Кріса Дона присвячений навчанню](http://chrisdone.com/posts/teaching)
 
@@ -55,195 +58,31 @@
 
 Ніяких -измів, навіть замаскованих. Расизм, сексизм, гомофобія, трансфобія та інші види упередженності у жодному разі не припускаються.
 
-
 Якщо ви не займаєтесь відвертим тролінгом, то на каналі ви можете отримати зауваження. Завжди зважайте на те, що канал створено для людей, які або самотужки вивчають Haskell або вчать програмуванню на ньому інших.
-
-
-# Що таке Haskell, GHC та Cabal?
-
-Haskell - це мова програмування, специфікація якої знаходиться у документах під назвою "звіт" (англ. report). Останній на сьогодні звіт було зроблено у 2010 році і він доступний [за цим посиланням](http://www.haskell.org/onlinereport/haskell2010/).
-
 
 # Встановлення Haskell
 
+## Використовуйте Stack для початку роботи з Haskell
+
+Встановіть [Stack](http://haskellstack.org/) щоби встановити GHC та збирати свої проекти.
+
+Якщо ви не знаєте нічого про Stack та хотіли би отримати огляд — подивіться цей [відео туторіал](https://www.youtube.com/watch?v=sRonIB8ZStw).
+
 ## НЕ ВСТАНОВЛЮЙТЕ HASKELL PLATFORM
 
-Замість того, щоб слідувати інструкції на Haskell.org, виконайте наступні вказівки для встановлення GHC та Cabal.
+Замість того, щоб слідувати інструкції на Haskell.org, використовуйте Stack.
 
+## Чому не Haskell Platform?
 
-## GHC
-
-[GHC](http://www.haskell.org/ghc/) (Glasgow Haskell Compiler) є найбільш популярним інструментом роботи з мовою Haskell. Це пакет, що включає в себе компілятор, інтерпретатор командного рядка, менеджер пакетів та ще деякі речі.
-
-## Cabal
-
-[Cabal](https://www.haskell.org/cabal/download.html) є інструментом з керування проектом та розв'язання залежностей. Завдяки йому ви будете встановлювати проекти, начастіше в їхнє власне ізольоване середовище (так званий сендбокс).
-
-Cabal - це еквівалент Bundler в Ruby, pip в Python, NPM в Node.js, Maven та інших. GHC самостійно займається обслуговуванням пакунків, але Cabal обирає версії для встановлення.
-
-
-# Встановлення GHC та Cabal
-
-## Ubuntu
-
-[Цей PPA](http://launchpad.net/~hvr/+archive/ghc) є майже бездоганним и саме його рекомендується використовувати.
-
-Покроково:
-
-```bash
-$ sudo apt-get update
-$ sudo apt-get install python-software-properties # v12.04 and below
-$ sudo apt-get install software-properties-common # v12.10 and above
-$ sudo add-apt-repository -y ppa:hvr/ghc
-$ sudo apt-get update
-$ sudo apt-get install cabal-install-1.22 ghc-7.8.4 happy-1.19.5 alex-3.1.4
-```
-
-Після цього додайте наступний рядок до свого `$PATH` (bash\_profile, zshrc, bashrc, etc):
-
-```
-~/.cabal/bin:/opt/cabal/1.22/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.5/bin:/opt/alex/3.1.4/bin
-```
-
-*Не обов'язково:* Можна також додати `.cabal-sandbox/bin` до системних шляхів. Код, над яким ви зараз працюєте, буде доступний для вас одразу із командного рядка. Цей метод працює, коли ваша робоча директорія - сендбокс Cabal.
-
-## Debian
-
-### Використання Ubuntu PPA
-
-Якщо ви не використовуєте стабільну гілку Debian, то можете виконати ті ж самі кроки, що й для Ubuntu, але треба буде виконати ще одну додаткову команду.
-Одразу після виконання `sudo add-apt-repository -y ppa:hvr/ghc` треба запустити:
-
-```bash
-$ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
-```
-
-
-Для інших версій Debian замінінть всі входження `jessie` на назву вашого дистрибутиву.
-
-Якщо з якихось причин файл `/etc/apt/sources.list.d/hvr-ghc-jessie.list` не існує, тоді  `/etc/apt/sources.list` мусить містити щось накшталт:
-
-    deb http://ppa.launchpad.net/hvr/ghc/ubuntu jessie main
-
-Замініть `jessie` на `trusty` в цьому файлі.
-
-### Компіляція власноруч
-
-Для Mac OS X була створена [ця](http://www.davesquared.net/2014/05/platformless-haskell.html) інструкція.
-
-Примітки:
-
-- Встановіть правильний префікс перед компіляцією GHC.
-- Замість того, шоб використовувати готовий `cabal-install`, візміть його початковий код та запустіть скрипт `bootstrap.sh`.
-
-## Fedora 21
-
-Інсталляція Haskell 7.8.4 з неофіційного репозитарію (очікується, що Fedora 22 і подальші версії вже будуть включати його в офіційну дистрибуцію)
-
-```bash
-$ sudo yum-config-manager --add-repo \
-> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
-$ sudo yum install ghc cabal-install
-```
-
-Сторінка [petersen/ghc-7.8.4](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/) вказує, що ghc не можна встановити параллельно із Fedora/EPEL ghc.
-
-
-## Arch Linux
-
-Для інсталяції Haskell з офіційного репозитарію Arch Linux, виконайте наступну команду:
-
-```bash
-$ sudo pacman -S cabal-install ghc happy alex haddock
-```
-
-## Gentoo
-
-На Gentoo встановити індивідуальні компоненти Haskell Platform можливо за допомогою Portage. При використанні `ACCEPT_KEYWORDS=arch` (замість `ACCEPT_KEYWORDS=~arch`), Portage встановить більш давні версії різноманітних пакетів, пов'язаних із Haskell. Маючи це на увазі, якщо і тільки якщо ви користуєтесь `ACCEPT_KEYWORDS=arch`, тоді додайте до `/etc/portage/package.keywords` наступні рядки:
-
-    dev-haskell/cabal-install
-    dev-lang/ghc
-
-Після цього,
-
-```bash
-$ emerge -jav dev-lang/ghc dev-haskell/cabal-install
-```
-
-
-В дереві Portage Gentoo містить "стабільні" (читай: застарілі) версії `cabal-install`, тож якщо ви хочете використовувати `cabal-install` для інсталяції останніх версій пакетів, виконайте наступні команди (зважайте на зворотні слеші, це важливо):
-
-
-```bash
-$ \cabal update                # The backslashes
-$ \cabal install cabal-install # are intentional
-```
-
-
-Таким чином ви встановили системний пакет Cabal із Portage і локальну версію у вашій домашній директорії через `cabal-install`. Тепер треба переконатись, що запуск в терміналі команди `cabal` призведе запуск найсвіжішої версії у вашій домашній директорії. Для цього можна додати наступні рядки до конфігурації вашого командного інтерпретатора:
-
-```bash
-PATH=$PATH:$HOME/.cabal/bin
-alias cabal="$HOME/.cabal/bin/cabal"
-```
-
-Якщо ви не знаєте, який ваш  інтерпретатор, то найбільш ймовірно, що це Bash. Якщо ви використовуєте Bash, тоді треба редагувати файл `~/.bashrc`. Для Z-shell треба редагувати `~/.zshrc`. Наступна команда дозволить вам з'ясувати, який інтерпретатор ви використовуєте.
-
-```bash
-echo $SHELL | xargs basename
-```
-
-Я використовую zsh, і ця команда повертає `zsh`.
-
-Наостанок, рекомендується встановити додаткові інструменти: `alex` and `happy`.
-
-```bash
-$ cabal install alex happy
-```
-
-Вітаю! Тепер ви маєте готову інсталяцію Haskell!
-
-## Mac OS X
-
-### 10.9
-
-Встановіть додаток [GHC for Mac OS X](http://ghcformacosx.github.io/), в який включено GHC та Cabal. Додаток містить опис додання GHC та Cabal до вашого системного шляху після того, як ви кудись встановите `.app`.
-
-### 10.6-10.8
-
-Треба виконати встановлення готового дистрибутиву із [цього tarball](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2). Інструкції по встановленню див. нижче.
-
-## Windows
-
-- [Мінімальний встановник GHC](https://github.com/fpco/minghc#using-the-installer) вміє скомпілювати `network` та інші бібліотеки. Він містить мінімальну версію середовища GHC разом із Cabal та MSYS (середовище для компілятора, яке надає можливість встановлювати пакети накшталт  `network`)
-
-Web-сторінка [minghc](https://github.com/fpco/minghc) містить трохи додаткових деталей, але зауважте, що за замовченням встановлення відбудеться у вашу локальну директорію AppData, а не глобально для всієї системи.
-(C:\\Users\\<username>\\AppData\\Local\\Programs)
-
-## Інші версії Linux
-
-Отримайте найсвіжішу версію дистрибутивів Cabal та GHC:
-
-- [GHC](http://www.haskell.org/ghc/).
-
-- [Cabal](https://www.haskell.org/cabal/download.html).
-
-
-## Користувачі інших операційних систем, подібних до Unix
-
-Встановіть GHC та Cabal із вашої пакетної системи, потім додайте `~/.cabal/bin` до змінної `$PATH`. Після цього, оновіть `cabal` та встановіть додаткові інструменти `alex` та `happy`.
-
-```bash
-$ cabal update
-$ cabal install cabal-install alex happy
-```
-
-
-
+https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # Як мені слід вивчати Haskell?
 
 Основна рекомендація - прочитати лекції та пройти всі вправи та домашні завдання версії Spring 13 курсу cis194, потім пройти курс Data61 (посилання на обидва курси нижче). Все інше можна вважати додатковим матеріалом, який згадується для того, щоб ви знали, де шукати.
+
+## Альтернативно...
+
+[@dmvianna](https://github.com/dmvianna) хотіла, щоби я вам передав, що це лише ресурси для безкоштовного вивчення. Якщо ви хочете купити книгу, ми сердешно рекомендуємо нашу власну [Haskell Book!](http://haskellbook.com/)! Ця книга замінює необхідність всіх інших ресурсів, перелічених тут.
 
 ## Курс cis194 від Yorgey
 
