@@ -160,7 +160,7 @@ We can also confirm that the input list is allocated lazily.
     in ..
 ```
 
-The 'let' here is the lazy allocation primitive. If you see it on non-unboxed type, you can be sure that thing will be lazily allocated on the heap. Remeber: core is like Haskell, but there's only 'let' and 'case' (one for laziness, one for evaluation).
+The 'let' here is the lazy allocation primitive. If you see it on non-unboxed type, you can be sure that thing will be lazily allocated on the heap. Remember: core is like Haskell, but there's only 'let' and 'case' (one for laziness, one for evaluation).
 
 So that's good. It means the list itself isn't costing us anything to write. This lazy allocation also explains why we're able to make some progress before running out of memory resources -- the list is only allocated as we traverse it.
 
@@ -399,7 +399,7 @@ Note the very tight inner loop, and final division. Meanwhile, GHC produces, wit
       divsd %xmm0,%xmm5
 ```
 
-Quite a bit more junk in the inner loop, which explains the slowdown with -fasm. That native code gen needs more work for competitve floating point work. But with the GHC C backend:
+Quite a bit more junk in the inner loop, which explains the slowdown with -fasm. That native code gen needs more work for competitive floating point work. But with the GHC C backend:
 
 ```asm
     s1bn_info:
