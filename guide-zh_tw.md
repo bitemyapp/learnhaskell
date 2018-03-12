@@ -310,9 +310,6 @@ let a = 1 * a -- not guarded, (*) is strict
 
 透過用不同的monad改變語意，從而產生不同的直譯器，help convey what's going on。
 
-- [Tony的演講](https://vimeo.com/73648150)完美演繹為何需要monad transformer，
-  [投影片在此](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
-
 再來，實作`Control.Monad`中的函數，例如：`mapM`或`sequence`是個練習撰寫generic monadic code的好機會。
 
 前面提到過的Data61課程也可以用來當這個過程的指南，它也包括了如何撰寫你自己的Applicative。

@@ -203,9 +203,6 @@ interpretador monádico para uma pequena linguagem de expressões usando o artig
 Escrever vários interpretadores apenas mudando a *monad* para mudar a semântica
 pode ajudar a entender o que está acontecendo.
 
-- [Esta palestra](https://vimeo.com/73648150) feita pelo Tony motiva de maneira
-  excelente o uso de *monad transformers*. [Os slides](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
-
 Além disso, reimplemente `Control.Monad`. Funções como `mapM` ou `sequence` são boas
 oportunidades para praticar escrevendo código monádico genérico.
 

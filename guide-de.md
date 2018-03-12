@@ -401,9 +401,6 @@ Paper (erwähnt in 'monad transformers' im folgenden).
 Mehrere Interpreter zu schreiben, indem man einfach nur die Monade ändert um die Semantik zu verändern
 kann helfen, zu verstehen was passiert.
 
-- [Dieser Vortrag](https://vimeo.com/73648150) von Tony motiviert Monad
-  Transformers sehr gut, [die Folien](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
-
 Zusätzlich, implementiere `Control.Monad` selbst. Funktionen wie `mapM` oder `sequence` sind gute
 Möglichkeiten, um zu üben, generischen monadischen Code zu schreiben.
 

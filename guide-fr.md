@@ -365,10 +365,6 @@ expressions en utilisant le papier sur les
 Écrire plusieurs interpréteurs en changeant juste le Monde pour changer les
 sémantiques peut aider à comprendre ce qui se passe.
 
-- [Cette présentation](https://vimeo.com/73648150) de Tony justifie avec brio
-l'utilité des transformateurs de monades. Les slides sont également
-[disponibles](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
-
 De la même manière, ré-implémenter `Control.Monad`. Des fonctions comme `mapM`
 ou `sequence` sont de bonnes opportunités pour s'entrainer à écrire du code
 monadique.

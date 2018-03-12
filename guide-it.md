@@ -338,9 +338,6 @@ Writer, State) per capirle meglio. Poi potreste provare a scrivere un interprete
 
 Scrivere diversi interpreti cambiando solo la monade per cambiare la semantica può aiutarvi a capire in che cosa consiste.
 
-- [Questa presentazione](https://vimeo.com/73648150) di Tony dà un eccellente motivazione per imparare i monad
-  transformers, [le slide](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
-
 Poi reimplementate `Control.Monad`. Funzioni come `mapM` o `sequence` sono buone opportunità per fare esercizio e scrivere codice monadico generico.
 
 Il corso Data61 può essere usato come guida a questo scopo, che include anche lo scrivere la vostra typeclass Applicative.

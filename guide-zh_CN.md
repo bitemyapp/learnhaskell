@@ -310,9 +310,6 @@ let a = 1 * a -- not guarded, (*) is strict
 
 通过用不同的monad改变语意，从而产生不同的解释器，help convey what's going on。
 
-- [Tony的演讲](https://vimeo.com/73648150)完美演绎为何需要monad transformer，
-  [投影片在此](https://dl.dropboxusercontent.com/u/7810909/talks/monad-transformers/cbaa991e0eb49224eb286c1e418e2b9828e1fb21/monad-transformers.pdf).
-
 再来，实现`Control.Monad`中的函数，例如：`mapM`或`sequence`是个练习撰写generic monadic code的好机会。
 
 前面提到过的Data61课程也可以用来当这个过程的指南，它也包括了如何撰写你自己的Applicative。
