@@ -75,8 +75,7 @@ The core recommendation is to read the lectures and complete all exercises/homew
 
 ## Yorgey's cis194 course
 
-> *Do this first*, this is the primary way we recommend being introduced to
-> Haskell.
+> *Do this first* if aren't getting the Haskell Book, this is the best _free_ introduction to Haskell.
 
 Available [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
