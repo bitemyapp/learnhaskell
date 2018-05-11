@@ -64,7 +64,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # Kako da učim Haskell?
 
-Glavna preporuka je da pročitate lekcije i završite sve vezbe iz Spring 13 verzije cis194 kursa posle koga ide Data61 kurs. Oba linka su ispod. Sve ostalo može da se smatra opcionim i pomenuto je ovde da bi znali gde da tražite resurse.
+Glavna preporuka je da pročitate lekcije i završite sve vezbe iz Spring 13 verzije cis194 kursa posle koga ide FP kurs. Oba linka su ispod. Sve ostalo može da se smatra opcionim i pomenuto je ovde da bi znali gde da tražite resurse.
 
 ## Alternativno...
 
@@ -83,21 +83,21 @@ U tom slučaju počnite sa [Thompson-ovom knjigom](http://www.haskellcraft.com/c
 
 ---
 
-## Data61 kurs
+## FP kurs
 
 > Ovo je kurs koji preporučujemo posle Yorgey-jevog cis194 kursa
 
-Dostupan je na github/u [ovde](https://github.com/data61/fp-course).
+Dostupan je na github/u [ovde](https://github.com/bitemyapp/fp-course).
 
 On će utvrditi iskustvo u direktnom implementiranju abstrakcija koje
 su uvedene u cis194 kursu. Ovo je praksa koja je *kritična* da bi se osećali
 prijatno sa svakodnevnom upotrebom Fanktora/Aplikativa/Monada itd. u Haskell-u.
-Glavna preporuka ovog vodiča je da predjete cis194 a zatim Data61 kurs i to je način
+Glavna preporuka ovog vodiča je da predjete cis194 a zatim FP kurs i to je način
 na koji učimo Haskell sve zainteresovane.
 
 ---
 
-## Dodatni kurs posle cis194 i Data61
+## Dodatni kurs posle cis194 i FP
 
 > Sadrži više materijala o srednje naprednim temama
 
@@ -114,7 +114,7 @@ pipes i lenses biblioteke.
 
 # Resursi za specifične teme u Haskell-u
 
-Ovi resursi nisu testirani sa učenicima kao što su kursevi cis194 i Data61 ali se nalaze u [listingu tema](specific_topics.md) tako da imate predstavu odakle da krenete. Ovo uključuje srednje/napredne koncepte i teme kao što su alati i tekst editori.
+Ovi resursi nisu testirani sa učenicima kao što su kursevi cis194 i FP ali se nalaze u [listingu tema](specific_topics.md) tako da imate predstavu odakle da krenete. Ovo uključuje srednje/napredne koncepte i teme kao što su alati i tekst editori.
 
 
 ## Dijalozi

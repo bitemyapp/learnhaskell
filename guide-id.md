@@ -64,7 +64,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # Bagaimana seharusnya Saya mempelajari Haskell?
 
-Yang paling direkomendasikan adalah untuk membaca materi kuliah dan menyelesaikan seluruh latihan/pekerjaan rumah untuk versi Spring 13 dari cis194 diikuti dengan pelajaran Data61. Keduanya ditautkan dibawah. Selain dari itu dapat dikategorikan sebagai opsional dan diberitahukan agar anda mengetahui kemana harus mencarinya.
+Yang paling direkomendasikan adalah untuk membaca materi kuliah dan menyelesaikan seluruh latihan/pekerjaan rumah untuk versi Spring 13 dari cis194 diikuti dengan pelajaran FP. Keduanya ditautkan dibawah. Selain dari itu dapat dikategorikan sebagai opsional dan diberitahukan agar anda mengetahui kemana harus mencarinya.
 
 ## Kursus cis194 Yorgey
 
@@ -85,21 +85,21 @@ ke cis194.
 
 ---
 
-## Pelajaran Data61 
+## Pelajaran FP 
 
 > Ini adalah pelajaran yang kami rekomendasikan untuk dikerjakan setelah mata kuliah cis194 Yorgey.
 
-Tersedia di github [disini](https://github.com/data61/fp-course).
+Tersedia di github [disini](https://github.com/bitemyapp/fp-course).
 
 Ini akan membantu dan memberikan anda pengalaman secara langsung mengimplementasikan 
 abstraksi yang dikenalkan di cis194, ini adalah latihan yang *penting* untuk 
 menjadi nyaman dengan penggunaan Functor/Applicative/Monad/dll sehari-hari pada
-Haskell. Menempuh cis194 dan kemudian pelajaran Data61 mewakili rekomendasi utama
+Haskell. Menempuh cis194 dan kemudian pelajaran FP mewakili rekomendasi utama
 dari panduan saya dan bagaimana kami mengajarkan Haskell kepada semua orang.
 
 ---
 
-## Pelajaran tambahan setelah pelajaran cis194 dan Data61
+## Pelajaran tambahan setelah pelajaran cis194 dan FP
 
 > Menyediakan materi tambahan untuk topik menengah.
 
@@ -116,7 +116,7 @@ pipes, dan lenses.
 
 # Sumber untuk topik spesifik pada Haskell
 
-Sumber-sumber ini tidak diperiksa atau dicoba kepada pelajar seperti pelajaran cis194 dan Data61, tapi ditautkan pada [the topic listing](specific_topics.md) sehingga anda memiliki gambaran mengenai darimana harus memulai. Hal ini juga termasuk konsep menengah/lanjutan dan subyek seperti alat-alat dan editor teks.
+Sumber-sumber ini tidak diperiksa atau dicoba kepada pelajar seperti pelajaran cis194 dan FP, tapi ditautkan pada [the topic listing](specific_topics.md) sehingga anda memiliki gambaran mengenai darimana harus memulai. Hal ini juga termasuk konsep menengah/lanjutan dan subyek seperti alat-alat dan editor teks.
 
 
 ## Dialog

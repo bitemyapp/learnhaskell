@@ -53,7 +53,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # ¿Cómo debería aprender Haskell?
 
-La recomendación principal es leer las clases y completar todos los ejercicios de la versión 13 de cis194 seguidos por el curso Data61. Los links de ambos se encuentran abajo. Todo lo demas puede ser considerado opcional y es mencionado para que así sepas donde mirar.
+La recomendación principal es leer las clases y completar todos los ejercicios de la versión 13 de cis194 seguidos por el curso FP. Los links de ambos se encuentran abajo. Todo lo demas puede ser considerado opcional y es mencionado para que así sepas donde mirar.
 
 ## Curso cis194 de Yorgey
 
@@ -67,17 +67,17 @@ La unica razón por la que no deberías empezar con cis194 es si no eres un prog
 
 ---
 
-## Curso Data61
+## Curso FP
 
 > Este es el curso que recomendamos hacer despues del curso cis194 de Yorgey.
 
-Disponible en github [aquí](https://github.com/data61/fp-course).
+Disponible en github [aquí](https://github.com/bitemyapp/fp-course).
 
-Esto reforzara y te dara experiencia implementando directamente las abstracciones introducidas en cis194, esto es practica que es *critica* para estar cada vez mas comodo con el uso diario de Functor/Aplicativo/Monada/etc en Haskell. Realizando cis194 y luego el curso Data61 es la recomendación principal de mi guia y es como enseñamos Haskell a cualquier persona.
+Esto reforzara y te dara experiencia implementando directamente las abstracciones introducidas en cis194, esto es practica que es *critica* para estar cada vez mas comodo con el uso diario de Functor/Aplicativo/Monada/etc en Haskell. Realizando cis194 y luego el curso FP es la recomendación principal de mi guia y es como enseñamos Haskell a cualquier persona.
 
 ---
 
-## Curso suplementario despues de los cursos cis194 y Data61
+## Curso suplementario despues de los cursos cis194 y FP
 
 > Proporciona mas material en temas intermediarios
 
@@ -89,7 +89,7 @@ Este es el curso online de [Bryan O'Sullivan](https://github.com/bos) de la clas
 
 # Recursos para temas especificos en Haskell
 
-Estos recursos no han sido investigados o probados con aprendices como los cursos cis194 y Data61T, pero estan listados en [la lista de temas](specific_topics.md) para que así tengas ideas de donde empezar.Esto incluye cosas como conceptos y temas intermedios/avanzados, por ejemplo herramientas y editores de texto.
+Estos recursos no han sido investigados o probados con aprendices como los cursos cis194 y FPT, pero estan listados en [la lista de temas](specific_topics.md) para que así tengas ideas de donde empezar.Esto incluye cosas como conceptos y temas intermedios/avanzados, por ejemplo herramientas y editores de texto.
 
 
 ## Dialogos

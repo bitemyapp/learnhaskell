@@ -7,8 +7,6 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 * [Auf Deutsch](guide-de.md)
 
-<!-- * [Στην ελληνική](guide-el.md) -->
-
 * [En Español](guide-es.md)
 
 * [En Français](guide-fr.md)
@@ -67,11 +65,13 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # How should I learn Haskell?
 
-The core recommendation is to read the lectures and complete all exercises/homework for the Spring 13 version of cis194 followed by the Data61 course. Both are linked below. Everything else can be considered optional and is mentioned so you know where to look.
+The core recommendation is to read the lectures and complete all exercises/homework for the Spring 13 version of cis194 followed by the FP course. Both are linked below. Everything else can be considered optional and is mentioned so you know where to look.
 
-## Alternately...
+## Haskell Programming from First Principles.
 
-[@dmvianna](https://github.com/dmvianna) wanted me to let you know that these are just the _free_ recommended resources. If you're willing to check out a book, we heartily recommend our own [Haskell Book!](http://haskellbook.com) That book replaces all of the primary resources recommended here.
+[@dmvianna](https://github.com/dmvianna) wanted me to let you know that these are just the _free_ recommended resources. If you're willing to check out a book, we heartily recommend our own [Haskell Book!](http://haskellbook.com).
+
+### Haskell Book subsumes all of the primary resources recommended here
 
 ## Yorgey's cis194 course
 
@@ -91,21 +91,21 @@ to cis194.
 
 ---
 
-## Data61 course
+## Functional Programming course
 
 > This is the course we recommend doing after Yorgey's cis194 course
 
-Available on github [here](https://github.com/data61/fp-course).
+Available on github [here](https://github.com/bitemyapp/fp-course).
 
 This will reinforce and give you experience directly implementing the
 abstractions introduced in cis194, this is practice which is *critical* to
 becoming comfortable with everyday uses of Functor/Applicative/Monad/etc. in
-Haskell. Doing cis194 and then the Data61 course represents the core
+Haskell. Doing cis194 and then the FP course represents the core
 recommendation of my guide and is how we teach everyone Haskell.
 
 ---
 
-## Supplementary course after cis194 and the Data61 course
+## Supplementary course after cis194 and the FP course
 
 > Provides more material on intermediate topics
 
@@ -124,7 +124,7 @@ pipes, and lenses.
 
 # Resources for specific topics in Haskell
 
-These resources are not vetted or tested with learners as cis194 and Data61 course have been, but they're linked in [the topic listing](specific_topics.md) so you have ideas on where to begin. This includes things like intermediate/advanced concepts and subjects like tooling and text editors.
+These resources are not vetted or tested with learners as cis194 and FP course have been, but they're linked in [the topic listing](specific_topics.md) so you have ideas on where to begin. This includes things like intermediate/advanced concepts and subjects like tooling and text editors.
 
 
 ## Dialogues

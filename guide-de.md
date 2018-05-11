@@ -252,16 +252,16 @@ cis194.
 
 ---
 
-## Data61 Kurs
+## FP Kurs
 
 > Das ist der Kurs, den ich nach Yorgeys cis194 Kurs empfehle zu machen
 
-Verfügbar [hier](https://github.com/data61/fp-course) auf github
+Verfügbar [hier](https://github.com/bitemyapp/fp-course) auf github
 
 Das wird dein Verständnis verbessern und dir Erfahrung mit der Implementierung der
 Abstraktionen geben, die in cis194 eingeführt wurden, das ist die Praxis, die *ausschlaggebend* ist, um
 mit der üblichen Nutzung von Functor/Applicative/Monad/etc. in Haskell vertraut zu werden.
-Erst cis194 und dann den Data61 Kurs zu machen, ist die wesentliche Empfehlung meiner Anleitung
+Erst cis194 und dann den FP Kurs zu machen, ist die wesentliche Empfehlung meiner Anleitung
 und ist der Weg, wie ich anderen Leuten Haskell beibringe.
 
 ---
@@ -404,7 +404,7 @@ kann helfen, zu verstehen was passiert.
 Zusätzlich, implementiere `Control.Monad` selbst. Funktionen wie `mapM` oder `sequence` sind gute
 Möglichkeiten, um zu üben, generischen monadischen Code zu schreiben.
 
-Der Data61 Kurs kann als Anleitung für diese Prozess genutzt werden, was auch beinhaltet
+Der FP Kurs kann als Anleitung für diese Prozess genutzt werden, was auch beinhaltet
 eine eigene Applicative zu schreiben.
 
 Credits:

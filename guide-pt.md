@@ -55,7 +55,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # Como devo aprender Haskell?
 
-A principal recomendação é ler as aulas e fazer todos os exercícios/trabalhos de casa do curso cis194 da Primavera de 2013 seguido pelo curso Data61. Links para ambos podem ser encontrados abaixo. Tudo o resto pode ser considerado opcional e é referido aqui para saber onde procurar.
+A principal recomendação é ler as aulas e fazer todos os exercícios/trabalhos de casa do curso cis194 da Primavera de 2013 seguido pelo curso FP. Links para ambos podem ser encontrados abaixo. Tudo o resto pode ser considerado opcional e é referido aqui para saber onde procurar.
 
 ## Alternativamente...
 
@@ -79,16 +79,16 @@ o cis194.
 
 ---
 
-## Curso Data61
+## Curso FP
 
 > Este é o curso que recomendo fazer após o curso cis194 do Yorgey.
 
-Disponível no github [aqui](https://github.com/data61/fp-course).
+Disponível no github [aqui](https://github.com/bitemyapp/fp-course).
 
 Isso vai reforçar e lhe dar experiência implementado diretamente as abstrações
 introduzidas no cis194. Essa prática é *crítica* para alguém se tornar confortável
 com o uso diário de *Functors*/*Applicatives*/*Monads*/etc em Haskell. Fazer o cis194
-e então o curso do Data61 representa a recomendação fundamental do meu guia, 
+e então o curso do FP representa a recomendação fundamental do meu guia, 
 e é como eu ensino Haskell para todo mundo.
 
 --- 
@@ -206,7 +206,7 @@ pode ajudar a entender o que está acontecendo.
 Além disso, reimplemente `Control.Monad`. Funções como `mapM` ou `sequence` são boas
 oportunidades para praticar escrevendo código monádico genérico.
 
-O curso Data61 pode ser usado como um guia para esse processo, o que também vai
+O curso FP pode ser usado como um guia para esse processo, o que também vai
 envolver escrever seu próprio *Applicative*.
 
 Créditos:

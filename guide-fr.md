@@ -244,17 +244,17 @@ développeur ou inexpérimenté. Si c'est le cas, commencez par le
 
 ---
 
-## Le cours Data61
+## Le cours FP
 
 > C'est le cours que je recommande après avoir suivi le cours cis194 de Yorgey
 
-Disponible sur github [ici](https://github.com/data61/fp-course).
+Disponible sur github [ici](https://github.com/bitemyapp/fp-course).
 
 Ce cours va renforcer vos connaissances et vous fera acquérir de l'experience en
 implémentant directement les abstractions introduites dans le cis194, c'est un
 exercice *capital* pour être à l'aise avec les usages habituels des
 Functors/Applicatives/Monades/etc. en Haskell. Suivre les cours cis194 puis
-Data61 est la recommendation principale de mon guide et c'est comme ca que
+FP est la recommendation principale de mon guide et c'est comme ca que
 j'enseigne Haskell à tout le monde.
 
 ---
@@ -369,7 +369,7 @@ De la même manière, ré-implémenter `Control.Monad`. Des fonctions comme `map
 ou `sequence` sont de bonnes opportunités pour s'entrainer à écrire du code
 monadique.
 
-Le cours du Data61 peut être utilisé comme un guide lors de ce processus,
+Le cours du FP peut être utilisé comme un guide lors de ce processus,
 guide qui vous demandera également d'écrire vos propres Applicatives.
 
 Crédits:
