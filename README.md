@@ -69,7 +69,7 @@ The core recommendation is to read the lectures and complete all exercises/homew
 
 ## Haskell Programming from First Principles.
 
-[@dmvianna](https://github.com/dmvianna) wanted me to let you know that these are just the _free_ recommended resources. If you're willing to check out a book, we heartily recommend our own [Haskell Book!](http://haskellbook.com).
+[@dmvianna](https://github.com/dmvianna) wanted me to let you know that the below are just the _free_ recommended resources. If you're willing to check out a book, we heartily recommend our own [Haskell Book!](http://haskellbook.com). If you can't afford the book for any reasons, please email us using the contact information at [our support page](http://haskellbook.com/support.html).
 
 ### Haskell Book subsumes all of the primary resources recommended here
 
