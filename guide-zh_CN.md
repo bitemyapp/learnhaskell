@@ -30,168 +30,22 @@ Haskell[邮件群组](https://wiki.haskell.org/Mailing_lists)。
 
 以上部分内容来自[the Recurse Center手册](https://www.recurse.com/manual)。感谢他们愿意公开分享！
 
-# 什么是Haskell、GHC和Cabal？
+# 安装Haskell
 
-Haskell的规格可在下面这篇报告找到，此报告最新版本为2010版：
-[onlinereport](http://www.haskell.org/onlinereport/haskell2010/)
+## 通过 Stack 使用 Haskell
 
-## GHC
-[GHC](http://www.haskell.org/ghc/)是Haskell语言的主流工具选择。它包含编译器、REPL(解释器)、套件管理器，与其他辅助工具。
+获取 [Stack](http://haskellstack.org) 来安装 GHC 构建你的项目。
 
-## Cabal
-[Cabal](https://www.haskell.org/cabal/download.html)可用来做专案管理与套件相依性解析。
-这会是你用来安装专案、套件的主要工具，其常见的做法是安装到专属的沙箱(cabal sandbox)中。
+如果你从未了解过 Stack 并需要它的概述，请看这个[comprehensive Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw)。
 
-Cabal相当于Ruby Bundler、Python pip、Node NPM、Maven等等。你可以用GHC来打包套件，Cabal则可用来选择你想要安装的版本。
+## 不要安装 HASKELL PLATFORM
 
-# 环境设定
+不要遵循 Haskell.org 里面的说明，直接使用 Stack。
 
-## Ubuntu
-[这个PPA](http://launchpad.net/~hvr/+archive/ghc)很棒，我在我所有的Linux开发与构建用机器上都靠它。
+### 为什么不用 platform?
 
-详细设定步骤如下：
+https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
-```bash
-$ sudo apt-get update
-$ sudo apt-get install python-software-properties # v12.04 及以下
-$ sudo apt-get install software-properties-common # v12.10 及以上
-$ sudo add-apt-repository -y ppa:hvr/ghc
-$ sudo apt-get update
-$ sudo apt-get install cabal-install-1.20 ghc-7.8.4 happy-1.19.4 alex-3.1.3
-```
-
-接着，把以下路径加入你的`$PATH`环境变量中(bash\_profile, zshrc, bashrc, etc)：
-
-```
-~/.cabal/bin:/opt/cabal/1.20/bin:/opt/ghc/7.8.4/bin:/opt/happy/1.19.4/bin:/opt/alex/3.1.3/bin
-```
-
-*注:* 你不妨把`.cabal-sandbox/bin`加到你的路径中。如此一来，只要你使用沙箱(cabal sandbox)开发，并且
-留在专案的工作路径中，你就可以在命令行中轻易取用你正在开发的二进制档。
-
-## Debian
-
-### 使用Ubuntu PPA
-
-如果不打算使用官方提供的稳定版本，你可以用上面提过和Ubuntu一样的流程，但会需要在下面这个命令后：
-
-`sudo add-apt-repository -y ppa:hvr/ghc` 加上：
-
-```bash
-$ sudo sed -is/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
-```
-
-其他的Debian版本，只需将`jessie`都换成你的版本名即可。
-
-如果`/etc/apt/sources.list.d/hvr-ghc-jessie.list`不存在，那么`/etc/apt/sources.list`应该会有：
-
-    deb http://ppa.launchpad.net/hvr/ghc/ubuntu jessie main
-
-把上列`jessie`换成`trusty`即可。
-
-### 自行编译
-
-请参照这篇为Mac OS X所撰的指南：
-
-请注意：
-
-- 根据你个人的工作环境，设定ghc时指定目录前缀(prefix)
-- 不要直接下载`cabal-install`的二进位档，请下载源码并执行`bootstrap.sh`脚本。
-
-## Fedora 21
-
-从非官方套件库安装Haskell 7.8.4 (Fedora 22以上已经有官方版本)：
-
-```bash
-$ sudo yum-config-manager --add-repo \
-> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
-$ sudo yum install ghc cabal-install
-```
-
-根据[petersen/ghc-7.8.4 copr page](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/)，此版本的ghc
-无法与Fedora/EPEL ghc并存。
-
-## Arch Linux
-
-从官方套件库安装：
-
-```bash
-$ sudo pacman -S cabal-install ghc happy alex haddock
-```
-
-## Gentoo
-
-你可以透过Portage来分别安装Haskell Platform的各个组件。如果你使用`ACCEPT_KEYWORDS=arch`，而非`ACCEPT_KETWORDS=~arch`，
-Portage会弄个老旧的Haskell给你。因此，举凡用了`ACCEPT_KEYWORDS=arch`，请把下面这几行加进去：
-
-    dev-haskell/cabal-install
-    dev-lang/ghc
-
-接着请执行：
-
-```bash
-$ emerge -jav dev-lang/ghc dev-haskell/cabal-install
-```
-
-Gentoo会留一个『稳定』(换言之：老旧）的`cabal-install`在Portage的套件树中，你可以利用这个`cabal-install`来安装
-新版的`cabal-install`。请注意，以下反斜线是必须的：
-
-```bash
-$ \cabal update # The backslashes
-$ \cabal install cabal-install # are intentional
-```
-
-如此一来，你便通过Protage在系统中安装了cabal，又在你的个人环境中安装了最新的`cabal-install`。
-下一步是确定每次你在终端机执行`cabal`时，你的shell都是执行你个人环境中的最新版本：
-
-```bash
-PATH=$PATH:$HOME/.cabal/bin
-alias cabal="$HOME/.cabal/bin/cabal"
-```
-
-不知道你的shell是哪一个？那你很可能用的是Bash。如果你用的是Bash，你需要编辑`~/.bashrc`。
-如果是Z-shell，则是`~/.zshrc`，可用以下面命令来查询：
-
-```bash
-echo $SHELL | xargs basename
-```
-
-例如我用的是zsh，所以上列命令会输出`zsh`。
-
-当以上都完成，请再另外安装两个工具：`alex`和`happy`：
-
-```bash
-$ cabal install alex happy
-```
-
-恭喜！你有了一个正常运作的Haskell！
-
-## Mac OS X
-
-### 10.9
-
-请安装[GHC for Mac OS X](http://ghcformacosx.github.io/)，它包含了GHC与Cabal。安装完成后，
-它会指示你如何将GHC与Cabal加入你的系统路径。
-
-### 10.6-10.8
-
-请下载这个[tarball](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2)，
-并安装其包含的二进制档。
-
-## Windows
-
-- [windows minimal GHC installer](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
-  它可以用来编译`network`等套件，虽然严格说它还在beta，但应该足够让任何读这篇导览的人使用。
-
-别忘了，要用系统管理者的身份来安装，因为它需要新增到Program Files的权限。
-
-## 其他Linux使用者
-
-下载cabal与ghc的最新版二进制档。
-
-- [GHC](http://www.haskell.org/ghc/).
-
-- [Cabal](https://www.haskell.org/cabal/download.html).
 
 # 主要学习课程
 
