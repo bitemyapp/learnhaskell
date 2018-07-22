@@ -627,7 +627,7 @@ cabal haddock --hoogle --hyperlink-source                       \
   - Не совсем Haskell как Haste или GHCJS, но популярный выбор многих пользователей Haskell.
   - Написан и вдохновлен языком Haskell.
   - Попробуйте [PureScript](http://try.purescript.org/) в вашем браузере.
-  - Отличное руководство для [начала](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/).
+  - Отличное руководство для [начала](https://www.christopherbiscardi.com/2014/6/22/getting-started-with-purescript/).
 
 ## Какой фронтенд язык мне использовать?
 
