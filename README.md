@@ -77,7 +77,7 @@ The core recommendation is to read the lectures and complete all exercises/homew
 
 > *Do this first* if aren't getting the Haskell Book, this is the best _free_ introduction to Haskell.
 
-Available [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Available [online](https://www.seas.upenn.edu/~cis194/fall16/).
 
 [Brent Yorgey](https://byorgey.wordpress.com)'s course is the best I've found so
 far.  This course is valuable as it will not only equip you to write basic
