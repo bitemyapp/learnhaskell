@@ -1,6 +1,6 @@
 # 하스켈 학습 가이드
 
-이 글은 여러분이 하스켈을 배우는데 도움이 될 수 있도록 경험을 바탕으로 만들어진 가이드입니다.
+이 글은 여러분이 하스켈을 배우는데 도움이 될 수 있도록 경험을 바탕으로 만들어진 가이드로 [하스켈 북 (Haskell Book)] (http://haskellbook.com)의 저자 중 한 사람의 추천 목록입니다.
 
 ## 비 영어권 사람들을 위한 번역
 
@@ -47,7 +47,7 @@ IRC 체널의 [커뮤니티 규칙](cdc.md)을 꼭 읽어주세요. 여러분이
 
 GHC를 설치하고 프로젝트를 만들기 위해 [Stack](http://haskellstack.org)을 사용하세요.
 
-만약 당신이 Stack에 대해 처음 들어보거나 개요를 보기 원하신다면, [comprehensive Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw)을 보세요.
+Stack을 처음 들어보거나 개요를 보기 원하신다면, [comprehensive Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw)을 참고하세요.
 
 ## 그리고 HASKELL PLATFORM으로 설치하지 마세요
 
@@ -60,24 +60,23 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # 하스켈을 어떻게 배워야 하나요?
 
-저희들은 2013년 봄학기 cis194 강의에 있는 모든 문제를 풀어본 다음에 FP강의를 듣는 방법을 추천합니다. 두 강의 모두 아래에 링크가 걸려있습니다. 그외에는 선택이며, 여러분이 찾을 수 있도록 아래에 링크가 있습니다.
+저희들은 2013년 봄학기 cis194 강의에 있는 모든 문제를 풀어본 다음에 FP강의를 듣는 방법을 추천합니다. 두 강의 모두 아래에 링크가 걸려있습니다. 그 외에는 선택이며, 여러분이 찾을 수 있도록 아래에 링크가 있습니다.
 
 ## Haskell Programming from First Principles.
 
 [@dmvianna](https://github.com/dmvianna)는 아래의 내용이 무료 권장 자료 일 뿐이라는 사실을 알려 드리고자합니다. 하지만 만약 책으로 보고 싶다면, 제가 쓴 [Haskell Book!](http://haskellbook.com)을 진심으로 추천합니다. 만약 어떤 이유로든 책을 구입할 여유가 없으면 [our support page](http://haskellbook.com/support.html)로 연락해주세요.
 
-### Haskell Book은 여기에서 권장되는 모든 주요 리소스를 포함합니다.
+### Haskell Book은 여기에서 권장되는 모든 주요 내용을 포함합니다.
 
 ## Yorgey의 cis194 강의
 
-> *반드시 이 강의를 먼저 들으세요*,
-> 여러분이 하스켈을 배우신다고 하실때 저희가 가장 먼저 추천하는 강의입니다.
+> Haskell Book을 구매하지 않았다면 이 강의를 먼저 들으세요. Haskell 입문을 위한 최고의 수업입니다.
 
 [온라인](http://www.seas.upenn.edu/~cis194/spring13/lectures.html)에서 보실 수 있습니다.
 
 [Brent Yorgey](https://byorgey.wordpress.com)의 강의는 제가 찾아 본 것중 가장 좋은 강의입니다. 이 강의는 기본적인 하스켈 코딩능력을 갖춰줄 뿐만이 아니라 parser combinator를 이해하는데 도움을 주기 때문에 중요합니다.
 
-만약 여러분이 프로그래머가 아니거나 프로그래밍을 해본적이 없다면 이 강의를 들으시면 안됩니다. 혹시 그렇다면, [Thompson의 책](http://www.haskellcraft.com/craft3e/Home.html)을 먼저 보고 cis194로 돌아가세요.
+만약 여러분이 프로그래머가 아니거나 프로그래밍을 해본적이 없다면 이 강의로 시작하는 것을 추천하지 않습니다. 그렇다면, [Thompson의 책](http://www.haskellcraft.com/craft3e/Home.html)을 먼저 보고 cis194로 돌아가세요.
 
 ---
 
@@ -85,7 +84,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 > 이 강의는 Yorgey의 cis194 강의를 모두 보신 후에 추천드리는 강의입니다.
 
-github에서 가능합니다 [여기](https://github.com/bitemyapp/fp-course).
+[GitHub](https://github.com/bitemyapp/fp-course)에서 볼 수 있습니다.
 
 이 강의는 cis194에서 소개했던 Functor나 Applicative, Monad 등의 추상화를 직접 사용하면서 추상화를 사용하는데 어려움이 없도록 훈련하는 강의입니다. cis194를 먼저 보고 FP강의를 보는 방법이 저희들이 추천하는 하스켈 학습방법입니다.
 
@@ -107,6 +106,6 @@ cs240h는 [온라인](http://www.scs.stanford.edu/14sp-cs240h/)에서 볼 수 �
 
 ## 토론
 
-> 이 저장소에 있습니다. [여기](dialogues.md).
+> [이 저장소](dialogues.md)에 있습니다.
 
 이것들은 꽤 중요하고 도움이 될겁니다. 여기에 들어가서 다양한 주제들을 만나보실 수 있습니다.
