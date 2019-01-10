@@ -62,10 +62,16 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 저희들은 2013년 봄학기 cis194 강의에 있는 모든 문제를 풀어본 다음에 FP강의를 듣는 방법을 추천합니다. 두 강의 모두 아래에 링크가 걸려있습니다. 그외에는 선택이며, 여러분이 찾을 수 있도록 아래에 링크가 있습니다.
 
+## Haskell Programming from First Principles.
+
+[@dmvianna](https://github.com/dmvianna)는 아래의 내용이 무료 권장 자료 일 뿐이라는 사실을 알려 드리고자합니다. 하지만 만약 책으로 보고 싶다면, 제가 쓴 [Haskell Book!](http://haskellbook.com)을 진심으로 추천합니다. 만약 어떤 이유로든 책을 구입할 여유가 없으면 [our support page](http://haskellbook.com/support.html)로 연락해주세요.
+
+### Haskell Book은 여기에서 권장되는 모든 주요 리소스를 포함합니다.
+
 ## Yorgey의 cis194 강의
 
-> *반드시 이 강의를 먼저 들으세요*, 
-> 여러분이 하스켈을 배우신다고 하실때 저희가 가장 먼저 추천하는 강의입니다. 
+> *반드시 이 강의를 먼저 들으세요*,
+> 여러분이 하스켈을 배우신다고 하실때 저희가 가장 먼저 추천하는 강의입니다.
 
 [온라인](http://www.seas.upenn.edu/~cis194/spring13/lectures.html)에서 보실 수 있습니다.
 
@@ -77,7 +83,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ## FP 강의
 
-> 이 강의는 Yorgey의 cis194 강의를 모두 보신 후에 추천드리는 강의입니다. 
+> 이 강의는 Yorgey의 cis194 강의를 모두 보신 후에 추천드리는 강의입니다.
 
 github에서 가능합니다 [여기](https://github.com/bitemyapp/fp-course).
 
@@ -97,7 +103,7 @@ cs240h는 [온라인](http://www.scs.stanford.edu/14sp-cs240h/)에서 볼 수 �
 
 # Haskell의 특별한 주제에 대한 자료
 
-이 자료들은 cis194와 FP강의를 들은 사람들에 대해 점검해보지 않았지만, 여러분이 어디서 시작해야 할지 도와주기 위해 [주제 리스트](specific_topucs.md)에 링크를 모아두었습니다. 이 리스트에는 툴과 에디터 같은 중급이나 고급정도의 개념들과 주제도 담겨있습니다. 
+이 자료들은 cis194와 FP강의를 들은 사람들에 대해 점검해보지 않았지만, 여러분이 어디서 시작해야 할지 도와주기 위해 [주제 리스트](specific_topucs.md)에 링크를 모아두었습니다. 이 리스트에는 툴과 에디터 같은 중급이나 고급정도의 개념들과 주제도 담겨있습니다.
 
 ## 토론
 
