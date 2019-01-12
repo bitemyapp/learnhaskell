@@ -28,6 +28,8 @@ Ovo je preporučeni put za učenje Haskell-a zasnovan na iskustvu u pomaganju dr
 
 * [Bahasa Indonesia](guide-id.md)
 
+* [Sa Tagalog](guide-tl.md)
+
 #### *Ne obraćajte mnogo pažnju na stvari koje ne razumete iz prve*. Samo idite napred!
 
 ## Zajednica

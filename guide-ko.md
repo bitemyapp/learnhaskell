@@ -26,6 +26,8 @@
 
 * [Srpski](guide-sr.md)
 
+* [Sa Tagalog](guide-tl.md)
+
 #### *이해가 잘 안된다고 계속 붙잡고 있지 마세요*. 진도를 계속 나가세요!
 
 ## 커뮤니티
