@@ -29,6 +29,8 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 * [Srpski](guide-sr.md)
 
+* [Sa Tagalog](guide-tl.md)
+
 #### *Don't sweat the stuff you don't understand immediately*. Keep moving!
 
 ## Community

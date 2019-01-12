@@ -28,6 +28,8 @@ Ovo je preporučeni put za učenje Haskella zasnovan na iskustvu u pomaganju dru
 
 * [Bahasa Indonesia](guide-id.md)
 
+* [Sa Tagalog](guide-tl.md)
+
 #### *Ne obraćajte mnogo pažnje na stvari koje iz prve ne razumijete*. Samo idite naprijed!
 
 ## Zajednica

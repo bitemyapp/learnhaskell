@@ -17,6 +17,8 @@ Questa è la strada che raccomando per imparare Haskell.
 
 * [Srpski](guide-sr.md)
 
+* [Sa Tagalog](guide-tl.md)
+
 
 #### Un consiglio: *non preoccupatevi se non capite qualcosa alla prima lettura*. Andate avanti.
 
