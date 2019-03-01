@@ -1,34 +1,36 @@
 # 하스켈 학습 가이드
 
-이 글은 여러분이 하스켈을 배우는데 도움이 될 수 있도록 경험을 바탕으로 만들어진 가이드로 [하스켈 북 (Haskell Book)] (http://haskellbook.com)의 저자 중 한 사람의 추천 목록입니다.
+이 글은 여러분이 하스켈을 배우는데 도움이 될 수 있도록 경험을 바탕으로 만들어진 가이드로 [하스켈 북 (Haskell Book)](http://haskellbook.com)의 저자 중 한 사람의 추천 목록입니다.
 
 ## 비 영어권 사람들을 위한 번역
 
-* [Auf Deutsch](guide-de.md)
+- [Auf Deutsch](guide-de.md)
 
-<!-- * [Στην ελληνική](guide-el.md) -->
+- [En Español](guide-es.md)
 
-* [En Español](guide-es.md)
+- [En Français](guide-fr.md)
 
-* [En Français](guide-fr.md)
+- [In Italiano](guide-it.md)
 
-* [In Italiano](guide-it.md)
+- [Em Português](guide-pt.md)
 
-* [Em Português](guide-pt.md)
+- [În Română](guide-ro.md)
 
-* [繁體中文](guide-zh_tw.md)
+- [繁體中文](guide-zh_tw.md)
 
-* [简体中文](guide-zh_CN.md)
+- [简体中文](guide-zh_CN.md)
 
-* [По-русски](guide-ru.md)
+- [По-русски](guide-ru.md)
 
-* [Українською](guide-ua.md)
+- [Українською](guide-ua.md)
 
-* [Srpski](guide-sr.md)
+- [Bahasa Indonesia](guide-id.md)
 
-* [Sa Tagalog](guide-tl.md)
+- [Srpski](guide-sr.md)
 
-#### *이해가 잘 안된다고 계속 붙잡고 있지 마세요*. 진도를 계속 나가세요!
+- [Sa Tagalog](guide-tl.md)
+
+#### _이해가 잘 안된다고 계속 붙잡고 있지 마세요_. 진도를 계속 나가세요!
 
 ## 커뮤니티
 
@@ -37,7 +39,6 @@
 IRC 웹 클라이언트 [here](http://webchat.freenode.net/).
 
 하스켈 [메일링 리스트](https://wiki.haskell.org/Mailing_lists).
-
 
 ### 커뮤니티 규칙
 
@@ -58,7 +59,6 @@ Haskell.org에서 지시하는 대로 설치하지 마시고, Stack을 사용하
 ### 왜 platform을 사용하면 안되나요?
 
 https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
-
 
 # 하스켈을 어떻게 배워야 하나요?
 
@@ -82,13 +82,15 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ---
 
-## FP 강의
+## 함수형 프로그래밍 강의
 
 > 이 강의는 Yorgey의 cis194 강의를 모두 보신 후에 추천드리는 강의입니다.
 
 [GitHub](https://github.com/bitemyapp/fp-course)에서 볼 수 있습니다.
 
-이 강의는 cis194에서 소개했던 Functor나 Applicative, Monad 등의 추상화를 직접 사용하면서 추상화를 사용하는데 어려움이 없도록 훈련하는 강의입니다. cis194를 먼저 보고 FP강의를 보는 방법이 저희들이 추천하는 하스켈 학습방법입니다.
+이 강의는 cis194에서 소개한 추상화기법을 직접 사용해보고 실력을 길러줍니다.
+이 강의는 하스켈에서 Functor, Applicative, Monad처럼 매일 사용되는 개념들에 익숙해지도록 훈련해주는 중요한 강의입니다.
+cis194를 먼저 보고 FP강의를 보는 방법이 저희들이 추천하는 하스켈 학습방법입니다.
 
 ---
 
@@ -96,13 +98,17 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 > 더 많은 자료와 중급 주제를 제공합니다.
 
-cs240h는 [온라인](http://www.scs.stanford.edu/14sp-cs240h/)에서 볼 수 있습니다.
+cs240h는 온라인에서 볼 수 있습니다.
 
-이 강의는 Stanford에서 강의하시는 [Bryan O'Sullivan](https://github.com/bos)의 온라인 강의입니다. 만약 이분을 모르신다면, 나중에 필요하게 될 하스켈 라이브러리들을 살펴보면 그의 이름을 발견할 수 있습니다. phantom types, information flow control, language extensions, concurrency, pipes,그리고 lenses 모듈들은 여러분이 Yorgey의 cis194 강의를 들었다면 한번쯤 봤을 겁니다.
+- [14년 봄학기](http://www.scs.stanford.edu/14sp-cs240h/)
+- [16년 겨울학기](http://www.scs.stanford.edu/16wi-cs240h/)
+
+이 강의는 Stanford에서 강의하시는 [Bryan O'Sullivan](https://github.com/bos)의 온라인 강의입니다. 만약 이분을 모르신다면, 나중에 필요하게 될 하스켈 라이브러리들을 살펴보면 그의 이름을 발견할 수 있습니다.
+cis194를 끝마쳤다면 phantom types나 information flow control, language extensions, concurrency, pipes, lenses 내용은 보신적이 있을 겁니다.
 
 ---
 
-# Haskell의 특별한 주제에 대한 자료
+# Haskell의 특정 주제에 대한 자료
 
 이 자료들은 cis194와 FP강의를 들은 사람들에 대해 점검해보지 않았지만, 여러분이 어디서 시작해야 할지 도와주기 위해 [주제 리스트](specific_topucs.md)에 링크를 모아두었습니다. 이 리스트에는 툴과 에디터 같은 중급이나 고급정도의 개념들과 주제도 담겨있습니다.
 
