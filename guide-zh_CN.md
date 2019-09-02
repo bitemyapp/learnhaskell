@@ -66,7 +66,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ---
 
-## 在 cic194 和 FP 课程之后的补充课程
+## 在 cis194 和 FP 课程之后的补充课程
 
 > 该课程提供更多中级材料
 
