@@ -21,12 +21,6 @@
 19:32 < edwardk> :t foldl.foldl.foldl
 19:32 < lambdabot> (b -> a -> b) -> b -> [[[a]]] -> b
 19:33 < edwardk> yay transducers, next? =)
-19:32 < edwardk> now the left and right are 'of the same shape
-19:32 < edwardk> :t foldl.foldl
-19:32 < lambdabot> (b -> a -> b) -> b -> [[a]] -> b
-19:32 < edwardk> :t foldl.foldl.foldl
-19:32 < lambdabot> (b -> a -> b) -> b -> [[[a]]] -> b
-19:33 < edwardk> yay transducers, next? =)
 19:35 < bitemyapp> dfeuer: the last definition Hickey gave of transducers was: "a transducer is just a pre-fused
                    Kleisli arrows in the list monad"
 19:35 < dfeuer> bitemyapp, yeeeeeeeeeeaaaaahhhhhh.
