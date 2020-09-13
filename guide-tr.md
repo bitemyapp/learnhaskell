@@ -46,7 +46,25 @@ Haskell [e-posta listesi](https://wiki.haskell.org/Mailing_lists).
 
 ### Topluluk Kuralları
 
-[Topluluk Kuralları Dosyası](coc.md) söyleşi kanalımızdaki davranış kurallarını içermektedir. Davranış kuralları çerçevesinin dışına bilmeden çıkarsanız uyarı alırsınız, fakat kanalın yalnızca Haskell öğrenenler ve/veya öğretenler için olduğunun her zaman farkında olun.
+[Chris Done'ın eğitim hakkındaki gönderisine göz atın](http://chrisdone.com/posts/teaching)
+
+Nazik ve kibar olun. Kabalık ve edepsizlik insanları korkutur ve onları iletişime katkı yapmalarını engeller.
+
+Yapıcı olmayan eleştiriler sadece söyleyene yara sağlar, dinleyene değil.
+
+Olayları "çok basit" veya "önemsiz" olarak nitelendirmeyin. Bu şekilde insanlar sıkı çalışmaları gerektiği için kötü hissederler. Yavaş öğrenen kişiler genellikle titizlerdir ve bu övülmesi gereken bir şey!
+
+Şaşırmış gibi yapmak yok. Birisi size bir şeyi bilmediğini söyleyince şaşırmış numarası yapmayın. Bu durumda karşınızdaki berbat hisseder ve siz de kendinizi uyanık hissetmekten başka hiç bir şey elde etmezsiniz.
+
+"Aslında..." cümlesini kurmayın. Biri çoğunluğu doğru olan - fakat tamamı değil  - bir şey söylediğinde, siz de, "Aslında…" diyip küçük bir düzeltme yaparsınız. Bu özellikle yapılan düzeltme ana konuyla alakasız bir şey olduğu zaman irite edicidir. Ayrıca bu durum #haskell-beginners kanalının doğrunun peşinde olmayan veya kusursuz olmaya önem vermeyen bir kanal olduğu anlamına gelmez. "Aslında ..." diye başlayan cümlelerin çoğu gösterişle alakalıdır, gerçeği aramakla değil.
+
+Üzerinize vazife olmayan konularda akıl vermeyin. Bir problemi çözmeye çalışan kişiler gördüğünüzde hemen araya kendi tavsiyenizi sıkıştırmaya çalışmamalısınız. Birisi yardım isteyene kadar onları çalışmalarıyla başbaşa bırakın. Birbirinin sözünü kesmeden konuşmak [#haskell-beginners kanalının kuruluş amaçlarından biridir](http://chrisdone.com/posts/teaching). 
+
+Irkçılık, seksistlik, homofobi, transfobi, ve herhangi bir çeşit önyargı hoş karşılanmayacak ve kesinlikle müsamaha gösterilmeyecektir.
+
+---
+
+ İlkeler [Recurse Center](https://www.recurse.com/manual) 'ın yayınladığı kılavuzdan alınmıştır. Recurse Center'a yayınladığı için teşekkürler!
 
 # Haskell Yükleme Rehberi
 
@@ -76,7 +94,7 @@ Ana tavsiyemiz, cis194 kursunun Bahar'13 versiyonundaki ve İşlevsel Programlam
 
 ## Yorgey'in cis194 kursu 
 
-> _Bununla başlayın_ Eğer "Haskell Book" kitabını almayı düşünmüyorsanız bu kurs Haskell'e giriş için en iyi _ücretsiz_  kaynak.
+> _Bununla başlayın;_ Eğer "Haskell Book" kitabını almayı düşünmüyorsanız bu kurs Haskell'e giriş için en iyi _ücretsiz_  kaynak.
 
 Çevrimiçi [erişim](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
