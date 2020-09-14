@@ -210,8 +210,8 @@ ağacında tutar. Eğer `cabal-install`'ın daha yeni bir sürümü kullanmak is
 aşağıdaki komutları çalıştırın. Burada "\" işaretlerinin gerekli olduğuna dikkat edin.
 
 ```bash
-$ \cabal update                # The backslashes
-$ \cabal install cabal-install # are intentional
+$ \cabal update                # Ters eğik çizgiler
+$ \cabal install cabal-install #     gereklidir.
 ```
 
 Şu anda Cabal'ı Portage kullanarak global şekilde ve  `cabal-install` kullanarak
@@ -344,6 +344,46 @@ pipes, ve lenses hakkındaki modüller ilginizi çekebilir.
 # Haskell'deki Belirli Konular için Kaynaklar
 
 Bu kaynaklar cis194 and IP kurslarının aksine test edilmemiştir, yine de [konu listesi](specific_topics.md)'nden nereden başlamanız gerektiğine dair bilgi alabilirsiniz. Belgede orta/ileri düzeydeki konseptleri ve "işleme" ve "metin editörleri" gibi konuları bulabilirsiniz.
+
+
+# Araçlar 
+
+## Eğer acemiyseniz ghc-mod indirmeyin ve kullanmaya çalışmayın
+
+Biraz kırılgan, daha yavaş ve çaba sarfetmeye değmez.
+
+
+## Text Editors
+
+- Emacs
+  - [haskell-mode yükleyin](https://github.com/bitemyapp/dotfiles/blob/master/.emacs#L31)
+  - [flycheck yükleyin](https://github.com/bitemyapp/dotfiles/blob/master/.emacs#L29)
+  - Haskell'i etkinleştirin ve ayarlayın, diğer şeyleri önemsemiyorsanız `(require 'haskell)` modülünü gerektirir.
+  - [flycheck'i etkinleştirin](https://github.com/bitemyapp/dotfiles/blob/master/.emacs#L97)
+  - Stack'in `/usr/bin` dizinine kısayol bağlantısını yapın veya flycheck'in onu görebildiğinden emin olun.
+  - [dunzo.](https://twitter.com/bitemyapp/status/693621160571985920)
+
+- Vim
+  - Biz [Stephen Diehl'in vim yönergesini](http://www.stephendiehl.com/posts/vim_2016.html) öneriyoruz fakat şimdilik ghc-mod'u aşağıdaki satırlarla değiştirin.
+  - Vim'de type hatalarını eksiksiz biçimde almak için (ghc-mod yerine)
+```
+autocmd FileType haskell setlocal makeprg=stack\ build
+autocmd FileType haskell setlocal errorformat=%f:%l:%v:%m
+```
+
+- [Sublime Text](https://github.com/SublimeHaskell/SublimeHaskell)
+
+- [Atom](https://atom.io/packages/ide-haskell)
+
+- [IntelliJ](https://github.com/carymrobbins/intellij-haskforce)
+
+- Notepad++, Haskell destekler.
+
+- gedit, Haskell destekler.
+
+## Other
+
+- Haskell For Mac
 
 ## Diyaloglar
 
