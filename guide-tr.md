@@ -50,7 +50,7 @@ Haskell [e-posta listesi](https://wiki.haskell.org/Mailing_lists).
 
 Nazik ve kibar olun. Kabalık ve edepsizlik insanları korkutur ve onları iletişime katkı yapmalarını engeller.
 
-Yapıcı olmayan eleştiriler sadece söyleyene yara sağlar, dinleyene değil.
+Yapıcı olmayan eleştiriler sadece söyleyene yarar sağlar, dinleyene değil.
 
 Olayları "çok basit" veya "önemsiz" olarak nitelendirmeyin. Bu şekilde insanlar sıkı çalışmaları gerektiği için kötü hissederler. Yavaş öğrenen kişiler genellikle titizlerdir ve bu övülmesi gereken bir şey!
 
@@ -302,7 +302,7 @@ Ana tavsiyemiz, cis194 kursunun Bahar'13 versiyonundaki ve İşlevsel Programlam
 [Brent Yorgey](https://byorgey.wordpress.com)'in kursu şu ana kadar bulabildiğim 
 en iyi kurs. Bu kurs sadece Haskell yazmayı öğretmekle kalmayıp üstüne "Parser Combinator"ler
 hakkında bilgi sahibi olmanızı sağladığından dolayı çok değerli bir kaynak.
-Eğer bilgisayar progriamcısı değilseniz veya yeterince deneyminiz yoksa cis194 
+Eğer bilgisayar programcısı değilseniz veya yeterince deneyminiz yoksa cis194 
 kursuyla başlamanızı tavsiye etmiyoruz. Bu durumda 
 [Simon Thompson'ın kitabıyla](http://www.haskellcraft.com/craft3e/Home.html) başlayıp
 daha sonra cis194 kursuna geçin.
@@ -345,13 +345,11 @@ pipes, ve lenses hakkındaki modüller ilginizi çekebilir.
 
 Bu kaynaklar cis194 and IP kurslarının aksine test edilmemiştir, yine de [konu listesi](specific_topics.md)'nden nereden başlamanız gerektiğine dair bilgi alabilirsiniz. Belgede orta/ileri düzeydeki konseptleri ve "işleme" ve "metin editörleri" gibi konuları bulabilirsiniz.
 
-
 # Araçlar 
 
 ## Eğer acemiyseniz ghc-mod indirmeyin ve kullanmaya çalışmayın
 
 Biraz kırılgan, daha yavaş ve çaba sarfetmeye değmez.
-
 
 ## Text Editors
 
