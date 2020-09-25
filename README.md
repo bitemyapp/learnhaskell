@@ -38,7 +38,7 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 Our IRC channel is `#haskell-beginners` on Freenode.
 
-IRC web client [here](http://webchat.freenode.net/).
+IRC web client [here](https://kiwiirc.com/nextclient/irc.freenode.net/#haskell-beginners/).
 
 The haskell [mailing lists](https://wiki.haskell.org/Mailing_lists).
 
