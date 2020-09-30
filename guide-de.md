@@ -152,10 +152,8 @@ via Portage installieren. Wenn du `ACCEPT_KEYWORDS=arch` nutzt (anstatt
 Haskell Teile. Daher füge, wenn du, und *nur* wenn du `ACCEPT_KEYWORDS=arch` nutzt, das
 Folgende in `/etc/portage/package.accept_keywords` ein.
 
-```bash
     dev-haskell/cabal-install ~arch
     dev-lang/ghc ~arch
-```
 
 Wenn das getan ist:
 

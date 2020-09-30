@@ -146,10 +146,8 @@ composants Haskell. Maintenant que vous avez ça en tête, si et seulement si vo
 utilisez `ACCEPT_KEYWORDS=arch`, ajoutez ce qui suit à
 `/etc/portage/package.accept_keywords`.
 
-```bash
     dev-haskell/cabal-install ~arch
     dev-lang/ghc ~arch
-```
 
 Une fois que cela est fait,
 

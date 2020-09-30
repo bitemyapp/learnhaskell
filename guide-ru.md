@@ -185,10 +185,8 @@ $ sudo pacman -S cabal-install ghc happy alex haddock
 Если вы используете `ACCEPT_KEYWORDS=arch` (вместо `ACCEPT_KEYWORDS=~arch`),
 Portage установит древние версии различных компонент Haskell. Помня это, если вы используете `ACCEPT_KEYWORDS=arch`, добавьте следующие строки в `/etc/portage/package.accept_keywords`.
 
-```bash
     dev-haskell/cabal-install ~arch
     dev-lang/ghc ~arch
-```
 
 Как только это сделано,
 

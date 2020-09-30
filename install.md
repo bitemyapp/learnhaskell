@@ -116,10 +116,8 @@ through Portage. If you use `ACCEPT_KEYWORDS=arch` (as opposed to
 Haskell things. With that in mind, iff you use `ACCEPT_KEYWORDS=arch`, add the
 following to `/etc/portage/package.accept_keywords`.
 
-```bash
     dev-haskell/cabal-install ~arch
     dev-lang/ghc ~arch
-```
 
 Once that is done,
 
