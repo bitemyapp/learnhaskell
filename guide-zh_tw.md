@@ -124,8 +124,10 @@ $ sudo pacman -S cabal-install ghc happy alex haddock
 你可以透過Portage來分別安裝Haskell Platform的各個組件。如果你使用`ACCEPT_KEYWORDS=arch`，而非`ACCEPT_KETWORDS=~arch`，
 Portage會弄個老舊的Haskell給你。因此，舉凡用了`ACCEPT_KEYWORDS=arch`，請把下面這幾行加進去：
 
-    dev-haskell/cabal-install
-    dev-lang/ghc
+```bash
+    dev-haskell/cabal-install ~arch
+    dev-lang/ghc ~arch
+```
 
 接著請執行：
 
