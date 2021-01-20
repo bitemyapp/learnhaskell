@@ -52,15 +52,15 @@ Nazik ve kibar olun. Kabalık ve edepsizlik insanları korkutur ve onları ileti
 
 Yapıcı olmayan eleştiriler sadece söyleyene yarar sağlar, dinleyene değil.
 
-Olayları "çok basit" veya "önemsiz" olarak nitelendirmeyin. Bu şekilde insanlar sıkı çalışmaları gerektiği için kötü hissederler. Yavaş öğrenen kişiler genellikle titizlerdir ve bu övülmesi gereken bir şey!
+Olayları "çok basit" veya "önemsiz" olarak nitelendirmeyin. Bu şekilde insanlar sıkı çalışmaları gerektiğinde kötü hissederler. Yavaş öğrenen kişiler genellikle titizlerdir ve bu övülmesi gereken bir şeydir!
 
-Şaşırmış gibi yapmak yok. Birisi size bir şeyi bilmediğini söyleyince şaşırmış numarası yapmayın. Bu durumda karşınızdaki berbat hisseder ve siz de kendinizi uyanık hissetmekten başka hiç bir şey elde etmezsiniz.
+Şaşırmış gibi yapmayın. Birisi size bir şeyi bilmediğini söylediğinde şaşırmış numarası yapmayın. Bu durumda karşınızdaki berbat hisseder ve siz de kendinizi uyanık hissetmekten başka hiçbir şey elde etmezsiniz.
 
-"Aslında..." cümlesini kurmayın. Biri çoğunluğu doğru olan - fakat tamamı değil  - bir şey söylediğinde, siz de, "Aslında…" diyip küçük bir düzeltme yaparsınız. Bu özellikle yapılan düzeltme ana konuyla alakasız bir şey olduğu zaman irite edicidir. Ayrıca bu durum #haskell-beginners kanalının doğrunun peşinde olmayan veya kusursuz olmaya önem vermeyen bir kanal olduğu anlamına gelmez. "Aslında ..." diye başlayan cümlelerin çoğu gösterişle alakalıdır, gerçeği aramakla değil.
+"Aslında..." cümlesini kurmayın. Biri, çoğunluğu doğru olan - fakat tamamı değil  - bir şey söylediğinde, siz de, "Aslında…" diyip küçük bir düzeltme yaparsınız. Bu özellikle yapılan düzeltme ana konuyla alakasız bir şey olduğu zaman irite edici olabilir. Ayrıca bu durum #haskell-beginners kanalının doğruluğa ve kusursuz olmaya önem vermeyen bir kanal olduğu anlamına gelmez. "Aslında ..." diye başlayan cümlelerin çoğu gösterişle alakalıdır, doğruluğa ulaşmakla alakalı değildir.
 
-Üzerinize vazife olmayan konularda akıl vermeyin. Bir problemi çözmeye çalışan kişiler gördüğünüzde hemen araya kendi tavsiyenizi sıkıştırmaya çalışmamalısınız. Birisi yardım isteyene kadar onları çalışmalarıyla başbaşa bırakın. Birbirinin sözünü kesmeden konuşmak [#haskell-beginners kanalının kuruluş amaçlarından biridir](http://chrisdone.com/posts/teaching). 
+Üzerinize vazife olmayan konularda akıl vermeyin. Bir problemi çözmeye çalışan kişiler gördüğünüzde hemen araya kendi tavsiyelerinizi sıkıştırmaya çalışmayın. Biri yardım isteyene kadar onları çalışmalarıyla başbaşa bırakın. Birbirinin sözünü kesmeden konuşmak [#haskell-beginners kanalının kuruluş amaçlarından biridir](http://chrisdone.com/posts/teaching). 
 
-Irkçılık, seksistlik, homofobi, transfobi, ve herhangi bir çeşit önyargı hoş karşılanmayacak ve kesinlikle müsamaha gösterilmeyecektir.
+Irkçılık, seksistlik, homofobi, transfobi, veya herhangi bir önyargı ya da nefret söylemi hoş karşılanmayacak ve kesinlikle müsamaha gösterilmeyecektir.
 
 ---
 
@@ -78,9 +78,9 @@ Irkçılık, seksistlik, homofobi, transfobi, ve herhangi bir çeşit önyargı 
  ## Cabal
  
  [Cabal](https://www.haskell.org/cabal/download.html) proje yönetimini ve
- bağımlılık çözümünü yapar. Cabal ile projeleri oluşturabilir ve genellikle kendi yalıtılmış ortamına ("sandbox") indirebilirsiniz, .
+ bağımlılık çözümünü yapar. Cabal ile projeleri oluşturabilir ve genellikle kendi yalıtılmış ortamına ("sandbox") indirebilirsiniz.
  
- Cabal Ruby'deki Bundler, Python'daki pip, Node'daki NPM ve Maven'e eşdeğerdir. GHC
+ Cabal Ruby'deki Bundler, Python'daki pip, Node'daki NPM ve Maven'e eş değerdir. GHC
  paketleri yönetir, Cabal hangi sürümlerin kurulacağına karar verir.
 
 # Haskell Kurulum Rehberi
@@ -107,8 +107,7 @@ Aşağıdaki yönergeleri izlemek yerine [Stack](http://haskellstack.org) edinme
 
 ## Ubuntu
 
-[Bu arşiv (PPA)](http://launchpad.net/~hvr/+archive/ghc) mükemmel ve tüm Linux makinelerimde
-bunu kullanıyorum.
+[Bu arşiv (PPA)](http://launchpad.net/~hvr/+archive/ghc) mükemmel ve tüm Linux makinelerimde bunu kullanıyorum.
 
 Yani:
 
@@ -128,14 +127,13 @@ export PATH=~/.cabal/bin:/opt/cabal/1.24/bin:/opt/ghc/7.10.3/bin:/opt/happy/1.19
 ```
 
 *Opsiyonel:* Path değişkeninize `.cabal-sandbox/bin` de ekleyebilirsiniz. Geliştirdiğiniz
- koda komut satırından erişebilirsiniz. Bu sadece şu anki çalıştığınız dizin 
- Cabal sandbox ise çalışır.
+ koda komut satırından erişebilirsiniz. Bu sadece şu anda çalıştığınız dizin Cabal sandbox ise çalışır.
 
 ## Debian
 
 ### Ubuntu PPA kullanarak
 
-Eğer stabil sürümü kullanmıyorsanız, Ubuntu'daki adımları aynen yapabilirsiniz, fakat ekstradan
+Eğer stabil sürümü kullanmıyorsanız, Ubuntu'daki adımları olduğu gibi yapabilirsiniz, fakat ekstradan
 bir komut daha çalıştırmanız gerekecek.
 `sudo add-apt-repository -y ppa:hvr/ghc` çalıştırıldıktan hemen sonra aşağıdaki kodu çalıştırın:
 
@@ -267,7 +265,7 @@ path değişkenine nasıl ekleyeceğinizi anlatan yönergeleri de bulabilirsiniz
 
 ## Diğer Linux Kullanıcıları
 
- Cabal and ghc'nin son sürümlerini aşağıdaki linklerden indirin:
+ Cabal and ghc'nin son sürümlerini aşağıdaki linklerden indirebilirsiniz:
 
 - [GHC](http://www.haskell.org/ghc/).
 
@@ -285,7 +283,7 @@ $ cabal install cabal-install alex happy
 
 # Nasıl Haskell öğrenmeliyim?
 
-Ana tavsiyemiz, cis194 kursunun Bahar'13 versiyonundaki ve İşlevsel Programlama kursundaki dersleri okumanız ve tüm alıştırma/ödevleri tamamlamanızdır. İkisini de aşağıda bulabilirsiniz. Bunlar dışındaki her şey opsiyoneldir ve size nereye bakmanız gerektiğiyle alakalı fikir vermek için bahsedilmiştir.
+Ana tavsiyemiz, cis194 kursunun Bahar'13 versiyonundaki ve İşlevsel Programlama kursundaki dersleri okumanız ve tüm alıştırma/ödevleri tamamlamanızdır. İkisini de aşağıda bulabilirsiniz. Bunlar dışındaki her şey opsiyoneldir ve size nereye bakmanız gerektiğiyle ilgili fikir vermek için bahsedilmiştir.
 
 ## "Haskell Programming from First Principles" - Kitap.
 
@@ -335,7 +333,7 @@ cs240h kursuna çevrimiçi olarak aşağıdaki linklerden erişebilirsiniz:
 Bu kurs [Bryan O'Sullivan](https://github.com/bos) 'ın Standford'da verdiği
 derslerin online derlenmiş hali. Eğer kendisinin kim olduğunu bilmiyorsanız, 
 herhangi bir Haskell uygulamasının kütüphanelerine göz atın. En az yarısında
-ismine rastlayacaksınız. Eğer Yorgey'in kursunu tamamladıysanız
+ismine rastlayacaksınızdır. Eğer Yorgey'in kursunu tamamladıysanız
 phantom types, bilgi akışı kontrolü, dil eklentileri, concurrency,
 pipes, ve lenses hakkındaki modüller ilginizi çekebilir.
 
@@ -343,13 +341,13 @@ pipes, ve lenses hakkındaki modüller ilginizi çekebilir.
 
 # Haskell'deki Belirli Konular için Kaynaklar
 
-Bu kaynaklar cis194 and IP kurslarının aksine test edilmemiştir, yine de [konu listesi](specific_topics.md)'nden nereden başlamanız gerektiğine dair bilgi alabilirsiniz. Belgede orta/ileri düzeydeki konseptleri ve "işleme" ve "metin editörleri" gibi konuları bulabilirsiniz.
+Bu kaynaklar cis194 and IP kurslarının aksine test edilmemiştir, yine de [konu listesi](specific_topics.md)'den nereden başlamanız gerektiğine dair bilgi alabilirsiniz. Belgede orta/ileri düzeydeki konseptleri ve "işleme" ve "metin editörleri" gibi konuları bulabilirsiniz.
 
 # Araçlar 
 
 ## Eğer acemiyseniz ghc-mod indirmeyin ve kullanmaya çalışmayın
 
-Biraz kırılgan, daha yavaş ve çaba sarfetmeye değmez.
+Biraz kırılgan ve daha yavaştır, çaba sarfetmeye değmez.
 
 ## Text Editors
 
@@ -387,5 +385,5 @@ autocmd FileType haskell setlocal errorformat=%f:%l:%v:%m
 
 > [Burada](dialogues.md) muhafaza edilmektedir.
 
-Bu diyaloglar aslında çok önemli ve öğretici. Birçok konuda derin sohbetler
+Bu diyaloglar aslında çok önemli ve öğreticidir. Birçok konuda derin sohbetler
 için buraya bakabilirsiniz.
