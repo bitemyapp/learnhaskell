@@ -86,7 +86,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 > 이 강의는 Yorgey의 cis194 강의를 모두 보신 후에 추천드리는 강의입니다.
 
-[GitHub](https://github.com/bitemyapp/fp-course)에서 볼 수 있습니다.
+[GitHub](https://github.com/system-f/fp-course)에서 볼 수 있습니다.
 
 이 강의는 cis194에서 소개한 추상화기법을 직접 사용해보고 실력을 길러줍니다.
 이 강의는 하스켈에서 Functor, Applicative, Monad처럼 매일 사용되는 개념들에 익숙해지도록 훈련해주는 중요한 강의입니다.

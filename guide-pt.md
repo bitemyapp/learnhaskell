@@ -83,7 +83,7 @@ o cis194.
 
 > Este é o curso que recomendo fazer após o curso cis194 do Yorgey.
 
-Disponível no github [aqui](https://github.com/bitemyapp/fp-course).
+Disponível no github [aqui](https://github.com/system-f/fp-course).
 
 Isso vai reforçar e lhe dar experiência implementado diretamente as abstrações
 introduzidas no cis194. Essa prática é *crítica* para alguém se tornar confortável

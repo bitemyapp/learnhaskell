@@ -299,7 +299,7 @@ $ cabal install cabal-install alex happy
 
 > Этот курс мы рекомендуем выполнять после курса  Yorgey cis194.
 
-[Доступен на Github](https://github.com/bitemyapp/fp-course).
+[Доступен на Github](https://github.com/system-f/fp-course).
 
 Этот курс укрепит и добавит опыта реализации абстракций,
 представленных в курсе cis194.

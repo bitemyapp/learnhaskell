@@ -248,7 +248,7 @@ développeur ou inexpérimenté. Si c'est le cas, commencez par le
 
 > C'est le cours que je recommande après avoir suivi le cours cis194 de Yorgey
 
-Disponible sur github [ici](https://github.com/bitemyapp/fp-course).
+Disponible sur github [ici](https://github.com/system-f/fp-course).
 
 Ce cours va renforcer vos connaissances et vous fera acquérir de l'experience en
 implémentant directement les abstractions introduites dans le cis194, c'est un

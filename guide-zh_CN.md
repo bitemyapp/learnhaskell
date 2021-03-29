@@ -58,7 +58,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 > 我们推荐你在完成 Yorgey 的 cis194 课程之后再学习这门课。
 
-在 GitHub [这里](https://github.com/bitemyapp/fp-course)获取。
+在 GitHub [这里](https://github.com/system-f/fp-course)获取。
 
 这门课会让你直接体验用代码实现 cis194 中介绍过的各种抽象并加深你对它们的理解。这样的练习对于让你熟悉 Haskell 中 Functor/Applicative/Monad 等等概念的日常使用至关重要。先学 cis194，然后学 FP，是我这篇指南的核心，也是我教大家 Haskell 的方式。
 

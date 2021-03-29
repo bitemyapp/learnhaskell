@@ -91,7 +91,7 @@ at tyaka lumipat sa cis194.
 
 > Ito ang inirerekomenda naming kurso pagkatapos ng Kursong cis194 ni Yorgey
 
-Makukuha sa [dito](https://github.com/bitemyapp/fp-course) sa github.
+Makukuha sa [dito](https://github.com/system-f/fp-course) sa github.
 
 Ito ay magbibigay lakas at karanasan sayo sa pag-implementa ng
 kabasalan na itinuro sa cis194, ito ay isang gawi na *kritikal* upang

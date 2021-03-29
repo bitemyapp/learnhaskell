@@ -61,7 +61,7 @@ Singurul caz în care acest curs nu este recomandat este dacă nu sunteți progr
 
 > Este cursul pe care-l recomandăm după ce ați trecut prin cursul lui Yorgey
 
-Este disponibil pe GitHub [aici](https://github.com/bitemyapp/fp-course).
+Este disponibil pe GitHub [aici](https://github.com/system-f/fp-course).
 
 Acesta vă va oferi experiența de a implementa abstracțiile din cis194, o practică **esențială** pentru a fi obișnuiți cu utilizarea comună a Functor/Applicative/Monad/etc în Haskell
 Principala recomandare a acestui ghid este să treceți întâi prin cis194 și apoi prin FP și reprezintă exact modul în care noi predăm Haskell.

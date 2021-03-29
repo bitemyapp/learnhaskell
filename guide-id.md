@@ -89,7 +89,7 @@ ke cis194.
 
 > Ini adalah pelajaran yang kami rekomendasikan untuk dikerjakan setelah mata kuliah cis194 Yorgey.
 
-Tersedia di github [disini](https://github.com/bitemyapp/fp-course).
+Tersedia di github [disini](https://github.com/system-f/fp-course).
 
 Ini akan membantu dan memberikan anda pengalaman secara langsung mengimplementasikan 
 abstraksi yang dikenalkan di cis194, ini adalah latihan yang *penting* untuk 

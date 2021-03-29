@@ -89,7 +89,7 @@ U tom slučaju počnite sa [Thompsonovom knjigom](http://www.haskellcraft.com/cr
 
 > Ovo je tečaj koji preporučujemo nakon Yorgeyjevog cis194 tečaja
 
-Dostupan je na [githubu](https://github.com/bitemyapp/fp-course).
+Dostupan je na [githubu](https://github.com/system-f/fp-course).
 
 On će utvrditi iskustvo u direktnom implementiranju apstrakcija koje
 su uvedene u cis194 tečaju. Ovo je praksa koja je *kritična* da bi se osjećali

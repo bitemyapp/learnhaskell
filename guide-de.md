@@ -256,7 +256,7 @@ cis194.
 
 > Das ist der Kurs, den ich nach Yorgeys cis194 Kurs empfehle zu machen
 
-Verfügbar [hier](https://github.com/bitemyapp/fp-course) auf github
+Verfügbar [hier](https://github.com/system-f/fp-course) auf github
 
 Das wird dein Verständnis verbessern und dir Erfahrung mit der Implementierung der
 Abstraktionen geben, die in cis194 eingeführt wurden, das ist die Praxis, die *ausschlaggebend* ist, um

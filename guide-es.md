@@ -71,7 +71,7 @@ La unica razón por la que no deberías empezar con cis194 es si no eres un prog
 
 > Este es el curso que recomendamos hacer despues del curso cis194 de Yorgey.
 
-Disponible en github [aquí](https://github.com/bitemyapp/fp-course).
+Disponible en github [aquí](https://github.com/system-f/fp-course).
 
 Esto reforzara y te dara experiencia implementando directamente las abstracciones introducidas en cis194, esto es practica que es *critica* para estar cada vez mas comodo con el uso diario de Functor/Aplicativo/Monada/etc en Haskell. Realizando cis194 y luego el curso FP es la recomendación principal de mi guia y es como enseñamos Haskell a cualquier persona.
 
