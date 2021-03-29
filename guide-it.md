@@ -235,7 +235,7 @@ L'unica ragione per cui non dovreste cominciare con cis194 è se non siete progr
 
 > Questo è il corso che raccomando dopo cis194 di Yorgey
 
-Disponibile su github [qui](https://github.com/bitemyapp/fp-course).
+Disponibile su github [qui](https://github.com/system-f/fp-course).
 
 Questo vi darà esperienza nell'implementare direttamente le astrazioni introdotte in cis194. Questi esercizi sono *fondamentali* per sviluppare confidenza con gli usi comuni di Functor/Applicative/Monad/etc. in Haskell. La raccomandazione principale di questa guida è seguire cis194 e poi FP: questo è il percorso che seguo per insegnare Haskell a tutti.
 

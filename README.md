@@ -93,7 +93,7 @@ to cis194.
 
 > This is the course we recommend doing after Yorgey's cis194 course
 
-Available on github [here](https://github.com/bitemyapp/fp-course).
+Available on github [here](https://github.com/system-f/fp-course).
 
 This will reinforce and give you experience directly implementing the
 abstractions introduced in cis194, this is practice which is _critical_ to

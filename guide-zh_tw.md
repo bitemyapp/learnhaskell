@@ -213,7 +213,7 @@ $ cabal install alex happy
 
 > 在你完成上述Yorgey的cis194後，我推薦繼續挑戰此課程。
 
-這門課發佈在[github上](https://github.com/bitemyapp/fp-course)。
+這門課發佈在[github上](https://github.com/system-f/fp-course)。
 
 透過實作cis194中所介紹過的種種抽象表述，你會有更深入的了解。這樣的練習對於
 熟悉Haskell中每天都會面對的Functor/Applicative/Monad等等至關重要。

@@ -89,7 +89,7 @@ U tom slučaju počnite sa [Thompson-ovom knjigom](http://www.haskellcraft.com/c
 
 > Ovo je kurs koji preporučujemo posle Yorgey-jevog cis194 kursa
 
-Dostupan je na github/u [ovde](https://github.com/bitemyapp/fp-course).
+Dostupan je na github/u [ovde](https://github.com/system-f/fp-course).
 
 On će utvrditi iskustvo u direktnom implementiranju abstrakcija koje
 su uvedene u cis194 kursu. Ovo je praksa koja je *kritična* da bi se osećali
