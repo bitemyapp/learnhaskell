@@ -144,10 +144,10 @@ Haskell depuis Portage. Si vous utilisez `ACCEPT_KEYWORDS=arch` (par opposition 
 `ACCEPT_KEYWORDS=~arch`), Portage installera d'anciennes versions des différents
 composants Haskell. Maintenant que vous avez ça en tête, si et seulement si vous
 utilisez `ACCEPT_KEYWORDS=arch`, ajoutez ce qui suit à
-`/etc/portage/package.keywords`.
+`/etc/portage/package.accept_keywords`.
 
-    dev-haskell/cabal-install
-    dev-lang/ghc
+    dev-haskell/cabal-install ~arch
+    dev-lang/ghc ~arch
 
 Une fois que cela est fait,
 
