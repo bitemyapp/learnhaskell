@@ -29,7 +29,7 @@
 
 - [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
 
-- Питання на Stack Overflow '[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+- Питання на Stack Overflow '[Does haskell have laziness?](https://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
 - Слайди з виступу [Johan Tibell](https://github.com/tibbe) на тему [reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness).
 
@@ -92,9 +92,9 @@ let a = 1 * a -- not guarded, (*) is strict
 
 Автори:
 
-- Коментар на Reddit від htmltyp та Crandom [here](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
+- Коментар на Reddit від htmltyp та Crandom [here](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
 
-- Комментар на Reddit від jozefg [here](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
+- Комментар на Reddit від jozefg [here](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
 
 ## Трансформари монад
@@ -140,7 +140,7 @@ Aeson - стандартне рішення для парсингу [JSON](https
 
 - [Пакет graphs](https://hackage.haskell.org/package/graphs).
 
-- [Питання про PHOAS на Stack Overflow](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+- [Питання про PHOAS на Stack Overflow](https://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
 
 - [PHOAS for free](https://www.fpcomplete.com/user/edwardk/phoas).
 
@@ -348,7 +348,7 @@ Haste та PureScript більш-менш однакові.
 
 - [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core).
 
-- [SO Question: Reading GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
+- [SO Question: Reading GHC Core](https://stackoverflow.com/questions/6121146/reading-ghc-core).
 
 - [Haskell as fast as C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
 
@@ -416,11 +416,11 @@ Haste та PureScript більш-менш однакові.
 
 - [Comonads in Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
 
-- [SO question: Can a Monad be a Comonad](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
+- [SO question: Can a Monad be a Comonad](https://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
 
 ## Yoneda / CoYoneda
 
-- [SO question: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+- [SO question: Step-by-step explanation of coyoneda](https://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
 - Free monads for Less, a sequence of three articles by Edward Kmett
   * [Part 1: Codensity](http://comonad.com/reader/2011/free-monads-for-less/).
@@ -447,6 +447,6 @@ Haste та PureScript більш-менш однакові.
 
 - [Static linking with GHC on Arch Linux](http://www.edofic.com/posts/2014-05-03-ghc-arch-static.html)
 
-- [Statically linking Linux binaries for ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
+- [Statically linking Linux binaries for ARM & MIPS](https://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
 
-- [Statically link GMP using GHC and LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
+- [Statically link GMP using GHC and LLVM](https://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)

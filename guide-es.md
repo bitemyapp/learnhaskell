@@ -38,7 +38,7 @@ Directrices del [Manual de Recurse Center](https://www.recurse.com/manual). Grac
 
 ## Use la herramienta Stack para empezar con Haskell
 
-Instale [Stack](http://haskellstack.org) para tener el GHC (Glasgow Haskell Compiler) listo y para compilar sus proyectos.
+Instale [Stack](https://haskellstack.org) para tener el GHC (Glasgow Haskell Compiler) listo y para compilar sus proyectos.
 
 En el caso de que usted no conozca nada sobre Stack y le gustaria tener una visión general, hay un [tutorial en vídeo sobre Stack](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
@@ -59,11 +59,11 @@ La recomendación principal es leer las clases y completar todos los ejercicios 
 
 > *Haz esto primero*, esta es la vía principal que recomendamos al ser introducido a Haskell.
 
-Disponible [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Disponible [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 [Brent Yorgey](https://byorgey.wordpress.com) Este curso es el mejor que he encontrado hasta ahora. Este curso es valioso ya que no te equipara para escribir Haskell basico, sino que ademas te ayudara a entender combinatoria.
 
-La unica razón por la que no deberías empezar con cis194 es si no eres un programador o eres uno con poca experiencia. Si ese es el caso, empieza con [El libro de Thompson (ingles)](http://www.haskellcraft.com/craft3e/Home.html) y haz la transición a cis194.
+La unica razón por la que no deberías empezar con cis194 es si no eres un programador o eres uno con poca experiencia. Si ese es el caso, empieza con [El libro de Thompson (ingles)](https://www.haskellcraft.com/craft3e/Home.html) y haz la transición a cis194.
 
 ---
 

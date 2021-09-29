@@ -39,7 +39,7 @@ Obrigado por disponibilizar isso, Recurse Center.
 
 ## Use a ferramenta Stack para começar com Haskell
 
-Instale [Stack](http://haskellstack.org) para ter o GHC (Glasgow Haskell Compiler) instalado e para poder compilar seus projetos.
+Instale [Stack](https://haskellstack.org) para ter o GHC (Glasgow Haskell Compiler) instalado e para poder compilar seus projetos.
 
 Se você não sabe nada sobre Stack e gostaria de uma visão geral, confira o [tutorial em video sobre Stack](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
@@ -59,14 +59,14 @@ A principal recomendação é ler as aulas e fazer todos os exercícios/trabalho
 
 ## Alternativamente...
 
-[@dmvianna](https://github.com/dmvianna) quer que saibam que estes são apenas os recursos _grátis_ recomendados. Se estiver disposto a adquirir um livro, recomendamos o [nosso livro](http://haskellbook.com). Este livro substitui todos os recursos primários aqui disponíveis.
+[@dmvianna](https://github.com/dmvianna) quer que saibam que estes são apenas os recursos _grátis_ recomendados. Se estiver disposto a adquirir um livro, recomendamos o [nosso livro](https://haskellbook.com). Este livro substitui todos os recursos primários aqui disponíveis.
 
 ## Curso cis194 do Yorgey
 
 > *Faça este primeiro*, esta é a minha recomendação de como ser introduzido 
 > ao Haskell.
 
-Disponível [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Disponível [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 O curso de [Brent Yorgey](https://byorgey.wordpress.com) é o melhor que eu
 encontrei até agora. Esse curso é importante porque ele não só vai equipá-lo
@@ -74,7 +74,7 @@ a escrever Haskell básico mas também vai ajudá-lo a entender *parser combinat
 
 A única razão pela qual você não deveria começar com o cis194 é se você não
 for um programador ou se for um que é inexperiente. Se esse é o caso, comece
-com o [livro do Thompson](http://www.haskellcraft.com/craft3e/Home.html) e depois
+com o [livro do Thompson](https://www.haskellcraft.com/craft3e/Home.html) e depois
 o cis194.
 
 ---
@@ -148,7 +148,7 @@ em geral, mas também conceitos de Teoria das Categorias específicos à Hask.
 
 - [Oh minha preguiça!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
 
-- Questão no SO '[Haskell tem otimização de recursão de cauda?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+- Questão no SO '[Haskell tem otimização de recursão de cauda?](https://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
 - Slides do [Johan Tibell](https://github.com/tibbe) de uma palestra sobre
   [raciocinando sobre avaliação preguiçosa](http://www.slideshare.net/tibbe/reasoning-about-laziness).
@@ -211,9 +211,9 @@ envolver escrever seu próprio *Applicative*.
 
 Créditos:
 
-- comentário no Reddit feito por htmltyp e Crandom [aqui](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
+- comentário no Reddit feito por htmltyp e Crandom [aqui](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
 
-- comentário no Reddit feito por jozefg [aqui](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
+- comentário no Reddit feito por jozefg [aqui](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
 ## Monad Transformers
 
@@ -263,7 +263,7 @@ Disponível no [hackage](https://hackage.haskell.org/package/aeson) e
 
 - O [pacote graphs](https://hackage.haskell.org/package/graphs).
 
-- [Pergunta no SO sobre PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+- [Pergunta no SO sobre PHOAS](https://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
 
 - [PHOAS de brinde](https://www.fpcomplete.com/user/edwardk/phoas).
 
@@ -500,7 +500,7 @@ Este material se encaixa com *traversable* e *foldable*.
 
 - [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core).
 
-- [Questão no SO:  Lendo o GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
+- [Questão no SO:  Lendo o GHC Core](https://stackoverflow.com/questions/6121146/reading-ghc-core).
 
 - [Haskell tão rápido quanto C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
 
@@ -574,11 +574,11 @@ Se você quiser um material complementar em teoria dos tipos e das categorias:
 
 - [Comonads em Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
 
-- [Questão no SO: Uma *monad* pode ser uma *comonad*?](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
+- [Questão no SO: Uma *monad* pode ser uma *comonad*?](https://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
 
 ## Yoneda / CoYoneda
 
-- [Questão no SO: Explicação passo-a-passo de coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+- [Questão no SO: Explicação passo-a-passo de coyoneda](https://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
 - *Free monads for Less*, uma sequência de três artigos por Edward Kmett.
   * [Parte 1: Codensidade](http://comonad.com/reader/2011/free-monads-for-less/).
@@ -605,9 +605,9 @@ Se você quiser um material complementar em teoria dos tipos e das categorias:
 
 - [Linkagem Estática com o GHC no Arch Linux](http://www.edofic.com/posts/2014-05-03-ghc-arch-static.html)
 
-- [Linkando Estaticamente binários do Linux para ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
+- [Linkando Estaticamente binários do Linux para ARM & MIPS](https://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
 
-- [Linkando Estaticamente GMP usando GHC e LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
+- [Linkando Estaticamente GMP usando GHC e LLVM](https://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
 
 ## Diálogos
 

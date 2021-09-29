@@ -1,6 +1,6 @@
 # These instructions are deprecated
 
-We now recommend you use [Stack](http://haskellstack.org) instead, but the instructions are preserved here for those that might want a minimal install.
+We now recommend you use [Stack](https://haskellstack.org) instead, but the instructions are preserved here for those that might want a minimal install.
 
 # What are Haskell, GHC, and Cabal?
 

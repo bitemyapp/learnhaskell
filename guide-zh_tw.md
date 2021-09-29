@@ -199,13 +199,13 @@ $ cabal install alex happy
 
 > *請先透過這門課學習*，這是我最推薦入門Haskell的課。
 
-此課程的教材可於[線上取得](http://www.seas.upenn.edu/~cis194/spring13/lectures.html)。
+此課程的教材可於[線上取得](https://www.seas.upenn.edu/~cis194/spring13/lectures.html)。
 
 [Brent Yorgey](https://byorgey.wordpress.com)的課是我目前所知最好的。它之所以好，因為
 它不只教你些基礎知識，還教你parser combinators。
 
 如果你不是個程式設計師，或缺乏經驗，那麼這門課可能沒這麼適合。建議你從
-[Thompson的這本書](http://www.haskellcraft.com/craft3e/Home.html)開始，然後再轉到cis194。
+[Thompson的這本書](https://www.haskellcraft.com/craft3e/Home.html)開始，然後再轉到cis194。
 
 ---
 
@@ -263,7 +263,7 @@ $ cabal install alex happy
 
 - [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
 
-- SO上的討論串'[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+- SO上的討論串'[Does haskell have laziness?](https://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
 - [Johan Tibell](https://github.com/tibbe)'在[reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness)這個演講的投影片
 
@@ -316,9 +316,9 @@ let a = 1 * a -- not guarded, (*) is strict
 
 Credits:
 
-- Reddit上htmltyp和Crandom的[留言](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6)。
+- Reddit上htmltyp和Crandom的[留言](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6)。
 
-- Reddit上jozefg[的留言](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg)。
+- Reddit上jozefg[的留言](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg)。
 
 ## Monad transformers
 
@@ -364,7 +364,7 @@ Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以�
 
 - [graphs套件](https://hackage.haskell.org/package/graphs).
 
-- [SO關於PHOAS的討論串](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+- [SO關於PHOAS的討論串](https://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
 
 - [免費的PHOAS](https://www.fpcomplete.com/user/edwardk/phoas).
 
@@ -570,7 +570,7 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core).
 
-- [SO Question: Reading GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
+- [SO Question: Reading GHC Core](https://stackoverflow.com/questions/6121146/reading-ghc-core).
 
 - [Haskell as fast as C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
 
@@ -642,11 +642,11 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - [Comonads in Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
 
-- [SO question: Can a Monad be a Comonad](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
+- [SO question: Can a Monad be a Comonad](https://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
 
 ## Yoneda / CoYoneda
 
-- [SO question: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+- [SO question: Step-by-step explanation of coyoneda](https://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
 - Free monads for Less, Edward Kmett的系列文章
   * [Part 1: Codensity](http://comonad.com/reader/2011/free-monads-for-less/).
@@ -673,9 +673,9 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - [Static linking with GHC on Arch Linux](http://www.edofic.com/posts/2014-05-03-ghc-arch-static.html)
 
-- [Statically linking Linux binaries for ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
+- [Statically linking Linux binaries for ARM & MIPS](https://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
 
-- [Statically link GMP using GHC and LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
+- [Statically link GMP using GHC and LLVM](https://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
 
 # 補充資料
 

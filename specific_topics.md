@@ -34,7 +34,7 @@ typeclasses in general but also some Hask-specific category theory:
 
 - [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
 
-- SO question '[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+- SO question '[Does haskell have laziness?](https://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
 - [Johan Tibell](https://github.com/tibbe)'s slides from a talk on
   [reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness).
@@ -97,9 +97,9 @@ writing your own Applicative as well.
 
 Credits:
 
-- Reddit comment by htmltyp and Crandom [here](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
+- Reddit comment by htmltyp and Crandom [here](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
 
-- Reddit comment by jozefg [here](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
+- Reddit comment by jozefg [here](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
 ## Monad transformers
 
@@ -149,7 +149,7 @@ haskell. Available from [hackage](https://hackage.haskell.org/package/aeson) and
 
 - The [graphs package](https://hackage.haskell.org/package/graphs).
 
-- [SO question about PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+- [SO question about PHOAS](https://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
 
 - [PHOAS for free](https://www.fpcomplete.com/user/edwardk/phoas).
 
@@ -392,7 +392,7 @@ This material dovetails with traversable and foldable.
 
 - [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core).
 
-- [SO Question: Reading GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
+- [SO Question: Reading GHC Core](https://stackoverflow.com/questions/6121146/reading-ghc-core).
 
 - [Haskell as fast as C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
 
@@ -460,7 +460,7 @@ Generics are usually used to generate typeclass instances, but you'll see TH use
 
 - http://illustratedhaskell.org/index.php/2011/09/24/template-haskell-tutorial/ (old)
 
-- http://stackoverflow.com/questions/10857030/whats-so-bad-about-template-haskell (warnings about TH)
+- https://stackoverflow.com/questions/10857030/whats-so-bad-about-template-haskell (warnings about TH)
 
 
 # Other fun topics
@@ -496,11 +496,11 @@ Generics are usually used to generate typeclass instances, but you'll see TH use
 
 - [Comonads in Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
 
-- [SO question: Can a Monad be a Comonad](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
+- [SO question: Can a Monad be a Comonad](https://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
 
 ## Yoneda / CoYoneda
 
-- [SO question: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+- [SO question: Step-by-step explanation of coyoneda](https://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
 - Free monads for Less, a sequence of three articles by Edward Kmett
   * [Part 1: Codensity](http://comonad.com/reader/2011/free-monads-for-less/).
@@ -527,6 +527,6 @@ Generics are usually used to generate typeclass instances, but you'll see TH use
 
 - [Static linking with GHC on Arch Linux](http://www.edofic.com/posts/2014-05-03-ghc-arch-static.html)
 
-- [Statically linking Linux binaries for ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
+- [Statically linking Linux binaries for ARM & MIPS](https://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
 
-- [Statically link GMP using GHC and LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
+- [Statically link GMP using GHC and LLVM](https://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)

@@ -1,6 +1,6 @@
 # Ghid pentru a învăța Haskell
 
-Acest tutorial reprezintă calea recomandată pentru a învăța Haskell, pe baza experiențelor avute ajutând alte persoane. Lista de recomandări este creată de unul din autorii [Haskell Book.](http://haskellbook.com).
+Acest tutorial reprezintă calea recomandată pentru a învăța Haskell, pe baza experiențelor avute ajutând alte persoane. Lista de recomandări este creată de unul din autorii [Haskell Book.](https://haskellbook.com).
 
 #### *Nu vă stresați prea mult pentru lucrurile pe care nu le înțelegeți imediat*. Mergeți mai departe!
 
@@ -20,7 +20,7 @@ Citiți [lista de sfaturi](coc.md) pentru a înțelege regulile de bună purtare
 
 ## Folosiți Stack pentru a lucra în Haskell
 
-Obțineți [Stack](http://haskellstack.org) pentru a instala GHC și a construi proiecte.
+Obțineți [Stack](https://haskellstack.org) pentru a instala GHC și a construi proiecte.
 
 Dacă nu știți nimic despre Stack și vreți o descriere, vizionați acest [tutorial Stack detaliat](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
@@ -38,14 +38,14 @@ Recomandarea principală este să citiți lecrurile și să rezolvați toate exe
 
 ## Alternativ...
 
-[@dmvianna](https://github.com/dmvianna) a dorit să vă anunț că recomandările de aici sunt doar resursele _gratuite_. Dacă doriți să citiți o carte, vă recomandăm cu mare placere cartea noastră, [Haskell Book!](http://haskellbook.com). Aceasta înlocuiește în principiu toate recomandările de aici.
+[@dmvianna](https://github.com/dmvianna) a dorit să vă anunț că recomandările de aici sunt doar resursele _gratuite_. Dacă doriți să citiți o carte, vă recomandăm cu mare placere cartea noastră, [Haskell Book!](https://haskellbook.com). Aceasta înlocuiește în principiu toate recomandările de aici.
 
 ## Cursul cis194 al lui Yorgey
 
 > *Treceți prin acest curs prima dată*, acesta este modul principal prin care recomandăm
 > primul contact cu Haskell.
 
-Este disponibil [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Este disponibil [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 Cursul lui [Brent Yorgey](https://byorgey.wordpress.com) este cel mai bun pe care l-am găsit până acum.
 Este foarte valoros mai ales că nu numai că vă va învăța cum să scrieți cod Haskell de bază dar vă va
@@ -53,7 +53,7 @@ Este foarte valoros mai ales că nu numai că vă va învăța cum să scrieți 
 
 Singurul caz în care acest curs nu este recomandat este dacă nu sunteți programator/programatoare sau nu aveți multă experiență în domeniu.
 În acest caz, recomandarea este să începeți cu
-[cartea lui Thompson](http://www.haskellcraft.com/craft3e/Home.html) și să tranziționați ulterior la cis194.
+[cartea lui Thompson](https://www.haskellcraft.com/craft3e/Home.html) și să tranziționați ulterior la cis194.
 
 ---
 

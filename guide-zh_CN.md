@@ -1,6 +1,6 @@
 # 前言
 
-这是根据帮助别人的经验总结而来的一条 Haskell 学习路线，其中列出了 [Haskell 书](http://haskellbook.com/)的作者之一所推荐的一系列学习资料。
+这是根据帮助别人的经验总结而来的一条 Haskell 学习路线，其中列出了 [Haskell 书](https://haskellbook.com/)的作者之一所推荐的一系列学习资料。
 
 #### _如果遇到不懂的地方也不要紧张。继续读下去！_
 
@@ -20,7 +20,7 @@ Haskell [邮件群组](https://wiki.haskell.org/Mailing_lists)。
 
 ## 通过 Stack 使用 Haskell
 
-获取 [Stack](http://haskellstack.org) 来安装 GHC 并构建你的项目。
+获取 [Stack](https://haskellstack.org) 来安装 GHC 并构建你的项目。
 
 如果你对 Stack 一无所知，又想了解一下，可以看看这个[全面的 Stack 视频教程](https://www.youtube.com/watch?v=sRonIB8ZStw)。
 
@@ -38,7 +38,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ## Haskell 编程：从第一原理开始
 
-[@dmvianna](https://github.com/dmvianna) 让我告诉你，下面列出的都只是*免费*的推荐资料。如果你愿意看书，衷心推荐我们自己写的 [Haskell 书](http://haskellbook.com/)！如果你因为某些原因买不起这本书，请使用[支持页面](http://haskellbook.com/support.html)里的联系方式发邮件给我们。
+[@dmvianna](https://github.com/dmvianna) 让我告诉你，下面列出的都只是*免费*的推荐资料。如果你愿意看书，衷心推荐我们自己写的 [Haskell 书](https://haskellbook.com/)！如果你因为某些原因买不起这本书，请使用[支持页面](https://haskellbook.com/support.html)里的联系方式发邮件给我们。
 
 ### Haskell Book 书包含了这里列出的全部基础资料（包含的内容）
 
@@ -46,11 +46,11 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 > 如果/你不打算买那本 Haskell 书，那就*先学习*本课程，它是最好的免费 Haskell 入门介绍。
 
-[在线](http://www.seas.upenn.edu/~cis194/spring13/lectures.html)获取。
+[在线](https://www.seas.upenn.edu/~cis194/spring13/lectures.html)获取。
 
 [Brent Yorgey](https://byorgey.wordpress.com) 的课程是迄今为止我所发现的最好的课程。 这门课程非常有价值，因为它不仅会教你编写基本的 Haskell，而且还会帮助你了解语法分析组合子。
 
-只有当你不是程序员，或者是个缺乏经验的程序员时，你才不应该从 cis194 开始学。 如果你真的是这样，请从[Thompson 的这本书](http://www.haskellcraft.com/craft3e/Home.html)开始学并过渡到 cis194。
+只有当你不是程序员，或者是个缺乏经验的程序员时，你才不应该从 cis194 开始学。 如果你真的是这样，请从[Thompson 的这本书](https://www.haskellcraft.com/craft3e/Home.html)开始学并过渡到 cis194。
 
 ---
 
