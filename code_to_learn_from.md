@@ -25,7 +25,7 @@ Code listed isn't necessarily complete or a usable product. The point is that th
 
 # Web apps
 
-- https://github.com/bitemyapp/shawty-prime This URL shortener written in Scotty is explained in detail in [Haskell Programming](http://haskellbook.com)
+- https://github.com/bitemyapp/shawty-prime This URL shortener written in Scotty is explained in detail in [Haskell Programming](https://haskellbook.com)
 
 - https://github.com/thoughtbot/carnival Yesod app. Sort of an open source clone of Disqus.
 

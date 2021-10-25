@@ -1,6 +1,6 @@
 # Kako naučiti Haskell
 
-Ovo je preporučeni put za učenje Haskella zasnovan na iskustvu u pomaganju drugim ljudima. Ovo je lista preporuka jednog od autora [Haskell knjige](http://haskellbook.com)
+Ovo je preporučeni put za učenje Haskella zasnovan na iskustvu u pomaganju drugim ljudima. Ovo je lista preporuka jednog od autora [Haskell knjige](https://haskellbook.com)
 
 ## Za one koji ne govore Hrvatski
 
@@ -50,7 +50,7 @@ Pogledajte [smjernice zajednice](coc.md) da bi razumjeli kakvo ponašanje se oč
 
 ## Koristite Stack da biste krenuli sa Haskellom
 
-Preuzmite [Stack](http://haskellstack.org) da bi uz pomoć njega instalirali GHC za gradnju projekata.
+Preuzmite [Stack](https://haskellstack.org) da bi uz pomoć njega instalirali GHC za gradnju projekata.
 
 Ako ne znate ništa o Stacku a željeli biste saznati, pogledajte ovaj [Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
@@ -70,18 +70,18 @@ Glavna preporuka je da pročitate lekcije i završite sve vježbe iz Spring 13 v
 
 ## Alternativno...
 
-[@dmvianna](https://github.com/dmvianna) je željela da napomenem da su ovo samo besplatni i preporučeni resursi, ako ste zainteresirani da pogledate knjigu preporučujemo od sveg srca našu [Haskell Knjigu!](http://haskellbook.com) Ova knjiga zamjenjuje sve spomenuto.
+[@dmvianna](https://github.com/dmvianna) je željela da napomenem da su ovo samo besplatni i preporučeni resursi, ako ste zainteresirani da pogledate knjigu preporučujemo od sveg srca našu [Haskell Knjigu!](https://haskellbook.com) Ova knjiga zamjenjuje sve spomenuto.
 
 ## Yorgeyjev cis194 tečaj
 
 > *Pročitajte ovo prvo*, ovo je primarni način koji preporučujemo za upoznavanje sa Haskellom
 
-Dostupno [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Dostupno [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 [Brent Yorgey](https://byorgey.wordpress.com)jev tečaj je najbolji tečaj koji sam vidio do sada. Ovaj tečaj je vrijedan zato što ne samo da će Vas pripremiti da pišete osnovni Haskell već će Vam i pomoći da razumijete parser kombinatore.
 
 Jedini razlog da ne počnete sa cis194 tečajem je ako niste programer ili ste programer sa malo iskustva. 
-U tom slučaju počnite sa [Thompsonovom knjigom](http://www.haskellcraft.com/craft3e/Home.html) i nakon nje prijeđite na cis194.
+U tom slučaju počnite sa [Thompsonovom knjigom](https://www.haskellcraft.com/craft3e/Home.html) i nakon nje prijeđite na cis194.
 
 ---
 

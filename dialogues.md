@@ -581,7 +581,7 @@ Note: Seeing a paper on free monoids dating to 1972 by Eduardo J. Dubuc.
 
 - Practical type inference for arbitrary-rank types - Peyton Jones, Vytinotis, Weirich, Shields
 
-- http://stackoverflow.com/questions/9259921/haskell-existential-quantification-in-detail
+- https://stackoverflow.com/questions/9259921/haskell-existential-quantification-in-detail
 
 - http://en.wikibooks.org/wiki/Haskell/Polymorphism
 
@@ -898,7 +898,7 @@ instance Functor ((->) r) where
 -- (.) or .  is function composition
 -- (.) :: (b -> c) -> (a -> b) -> a -> c
 -- more on this Functor instance:
--- http://stackoverflow.com/questions/10294272/confused-about-function-as-instance-of-functor-in-haskell
+-- https://stackoverflow.com/questions/10294272/confused-about-function-as-instance-of-functor-in-haskell
 ```
 
 Bonus round for upvoting me:
@@ -906,7 +906,7 @@ Bonus round for upvoting me:
 http://www.haskellforall.com/2012/09/the-functor-design-pattern.html
 http://hackage.haskell.org/package/kan-extensions-3.7/docs/Data-Functor-Coyoneda.html
 http://oleksandrmanzyuk.wordpress.com/2013/01/18/co-yoneda-lemma/
-http://www.reddit.com/r/haskell/comments/17a33g/free_functors_the_reason_free_and_operational_are/c83p8k2
+https://www.reddit.com/r/haskell/comments/17a33g/free_functors_the_reason_free_and_operational_are/c83p8k2
 https://gist.github.com/thoughtpolice/5843762
 
 * * * * *
@@ -1112,7 +1112,7 @@ did show me an important piece of the puzzle :P )
 
 - [Guy Steele talk referenced](https://vimeo.com/6624203)
 
-- [Comment thread](http://www.reddit.com/r/haskell/comments/2corq6/algebraic_terraforming_trees_from_magma/)
+- [Comment thread](https://www.reddit.com/r/haskell/comments/2corq6/algebraic_terraforming_trees_from_magma/)
 
 * * * * *
 

@@ -1,6 +1,6 @@
 # 하스켈 학습 가이드
 
-이 글은 여러분이 하스켈을 배우는데 도움이 될 수 있도록 경험을 바탕으로 만들어진 가이드로 [하스켈 북 (Haskell Book)](http://haskellbook.com)의 저자 중 한 사람의 추천 목록입니다.
+이 글은 여러분이 하스켈을 배우는데 도움이 될 수 있도록 경험을 바탕으로 만들어진 가이드로 [하스켈 북 (Haskell Book)](https://haskellbook.com)의 저자 중 한 사람의 추천 목록입니다.
 
 ## 비 영어권 사람들을 위한 번역
 
@@ -48,7 +48,7 @@ IRC 체널의 [커뮤니티 규칙](cdc.md)을 꼭 읽어주세요. 여러분이
 
 ## 하스켈을 설치하기 위해 Stack을 사용하세요
 
-GHC를 설치하고 프로젝트를 만들기 위해 [Stack](http://haskellstack.org)을 사용하세요.
+GHC를 설치하고 프로젝트를 만들기 위해 [Stack](https://haskellstack.org)을 사용하세요.
 
 Stack을 처음 들어보거나 개요를 보기 원하신다면, [comprehensive Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw)을 참고하세요.
 
@@ -66,7 +66,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ## Haskell Programming from First Principles.
 
-[@dmvianna](https://github.com/dmvianna)는 아래의 내용이 무료 권장 자료 일 뿐이라는 사실을 알려 드리고자합니다. 하지만 만약 책으로 보고 싶다면, 제가 쓴 [Haskell Book!](http://haskellbook.com)을 진심으로 추천합니다. 만약 어떤 이유로든 책을 구입할 여유가 없으면 [our support page](http://haskellbook.com/support.html)로 연락해주세요.
+[@dmvianna](https://github.com/dmvianna)는 아래의 내용이 무료 권장 자료 일 뿐이라는 사실을 알려 드리고자합니다. 하지만 만약 책으로 보고 싶다면, 제가 쓴 [Haskell Book!](https://haskellbook.com)을 진심으로 추천합니다. 만약 어떤 이유로든 책을 구입할 여유가 없으면 [our support page](https://haskellbook.com/support.html)로 연락해주세요.
 
 ### Haskell Book은 여기에서 권장되는 모든 주요 내용을 포함합니다.
 
@@ -74,11 +74,11 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 > Haskell Book을 구매하지 않았다면 이 강의를 먼저 들으세요. Haskell 입문을 위한 최고의 수업입니다.
 
-[온라인](http://www.seas.upenn.edu/~cis194/spring13/lectures.html)에서 보실 수 있습니다.
+[온라인](https://www.seas.upenn.edu/~cis194/spring13/lectures.html)에서 보실 수 있습니다.
 
 [Brent Yorgey](https://byorgey.wordpress.com)의 강의는 제가 찾아 본 것중 가장 좋은 강의입니다. 이 강의는 기본적인 하스켈 코딩능력을 갖춰줄 뿐만이 아니라 parser combinator를 이해하는데 도움을 주기 때문에 중요합니다.
 
-만약 여러분이 프로그래머가 아니거나 프로그래밍을 해본적이 없다면 이 강의로 시작하는 것을 추천하지 않습니다. 그렇다면, [Thompson의 책](http://www.haskellcraft.com/craft3e/Home.html)을 먼저 보고 cis194로 돌아가세요.
+만약 여러분이 프로그래머가 아니거나 프로그래밍을 해본적이 없다면 이 강의로 시작하는 것을 추천하지 않습니다. 그렇다면, [Thompson의 책](https://www.haskellcraft.com/craft3e/Home.html)을 먼저 보고 cis194로 돌아가세요.
 
 ---
 

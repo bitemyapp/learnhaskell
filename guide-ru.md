@@ -282,7 +282,7 @@ $ cabal install cabal-install alex happy
 
 > *Выполните его в первую очередь*, это лучший путь получить представление о Haskell
 
-Доступен [онлайн](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Доступен [онлайн](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 Курс от [Brent Yorgey](https://byorgey.wordpress.com), это лучшее, что я пока нашел.
 Этот курс ценен тем, что он не только научит вас писать базовый код на Haskell,
@@ -290,7 +290,7 @@ $ cabal install cabal-install alex happy
 
 Единственная причина, по которой вам не стоит начинать с курса cis194,
 это если вы не программист или вы неопытный программист.
-В этом случае, начинайте с [книги от Thompson](http://www.haskellcraft.com/craft3e/Home.html)
+В этом случае, начинайте с [книги от Thompson](https://www.haskellcraft.com/craft3e/Home.html)
 и после этого уже курс cis194.
 
 ---
@@ -360,7 +360,7 @@ cs240h доступен [онлайн](http://www.scs.stanford.edu/14sp-cs240h/)
 
 - [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
 
-- Вопрос на Stack Overflow — [Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)
+- Вопрос на Stack Overflow — [Does haskell have laziness?](https://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)
 
 - Слайды [Johan Tibell](https://github.com/tibbe) из доклада
   [reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness).
@@ -434,9 +434,9 @@ Writer, State) для себя, чтобы понять их лучше. Зат�
 
 Упоминания:
 
-- [Комментарии](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6) на Reddit от htmltyp и Crandom.
+- [Комментарии](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6) на Reddit от htmltyp и Crandom.
 
-- [Комментарий](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg) на Reddit от jozefg.
+- [Комментарий](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg) на Reddit от jozefg.
 
 ## Трансформеры монад
 
@@ -486,7 +486,7 @@ Aeson — это стандартное решение для парсинга 
 
 - [Пакет graphs](https://hackage.haskell.org/package/graphs).
 
-- [SO вопрос про PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+- [SO вопрос про PHOAS](https://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
 
 - [PHOAS бесплатно](https://www.fpcomplete.com/user/edwardk/phoas).
 
@@ -718,7 +718,7 @@ catamorphisms). Знание о том, как реализовать unfold (an
 
 - [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core)
 
-- [SO Question: Reading GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core)
+- [SO Question: Reading GHC Core](https://stackoverflow.com/questions/6121146/reading-ghc-core)
 
 - [Haskell as fast as C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/)
 
@@ -787,11 +787,11 @@ catamorphisms). Знание о том, как реализовать unfold (an
 
 - [Comonads in Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell)
 
-- [SO question: Can a Monad be a Comonad](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad)
+- [SO question: Can a Monad be a Comonad](https://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad)
 
 ## Yoneda / CoYoneda
 
-- [SO question: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+- [SO question: Step-by-step explanation of coyoneda](https://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
 - Свободные монады для Less, серия из трех публикаций от Edward Kmett
   * [Part 1: Codensity](http://comonad.com/reader/2011/free-monads-for-less/)
@@ -818,9 +818,9 @@ catamorphisms). Знание о том, как реализовать unfold (an
 
 - [Static linking with GHC on Arch Linux](http://www.edofic.com/posts/2014-05-03-ghc-arch-static.html)
 
-- [Statically linking Linux binaries for ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
+- [Statically linking Linux binaries for ARM & MIPS](https://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
 
-- [Statically link GMP using GHC and LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
+- [Statically link GMP using GHC and LLVM](https://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
 
 ## Диалоги
 

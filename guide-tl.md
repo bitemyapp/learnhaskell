@@ -1,6 +1,6 @@
 #Paano matuto ng Haskell
 
-Ito ay ang maipapayong daan upang matutunan ang Haskell base sa karanasan na makatutulong sa iba. Mayroong listahang ng mga rekomendasyon sa isa sa mga may akda ng [Haskell Book.](http://haskellbook.com)
+Ito ay ang maipapayong daan upang matutunan ang Haskell base sa karanasan na makatutulong sa iba. Mayroong listahang ng mga rekomendasyon sa isa sa mga may akda ng [Haskell Book.](https://haskellbook.com)
 
 ## Para sa mga di nag-Iingles
 
@@ -48,7 +48,7 @@ Tignan [ang patakaran ng komunidad](coc.md) upang malaman ang adhikain sa IRC ch
 
 ## Gamitin ang Stack upang makapag simula sa Haskell
 
-I-install ang [Stack](http://haskellstack.org) upang ma-install ang GHC para makapagtayo ng sariling proyekto.
+I-install ang [Stack](https://haskellstack.org) upang ma-install ang GHC para makapagtayo ng sariling proyekto.
 
 Kung wala kang alam sa kahit ano mang bagay tungkol sa Stack at gustong matuto tungkol dito, tignan itong [unawaan ng Stack bidyo tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw)
 
@@ -66,7 +66,7 @@ Ang pinaka-rekomendasyon ay basahin ang mga lektura at tapusin ang mga pagsasana
 
 ## Haskell Programming from First Principles.
 
-I-Pinapaalam ni [@dmvianna](https://github.com/dmvianna) na ang mga nasa babaya _libreng_ mga rekomendasyon pang-kaalaman. Kung gusto mong tumingin ng libro, inirerekomenda na kumuha ng iyong sariling [Haskell Book](http://haskellbook.com). Kung hindi mo makakayang bilhin ang libro sa anumang dahilan, maaaring mag-sumite saamin ng email gamit ang [aming pahinang pang-suporta](http://haskellbook.com/support.html).
+I-Pinapaalam ni [@dmvianna](https://github.com/dmvianna) na ang mga nasa babaya _libreng_ mga rekomendasyon pang-kaalaman. Kung gusto mong tumingin ng libro, inirerekomenda na kumuha ng iyong sariling [Haskell Book](https://haskellbook.com). Kung hindi mo makakayang bilhin ang libro sa anumang dahilan, maaaring mag-sumite saamin ng email gamit ang [aming pahinang pang-suporta](https://haskellbook.com/support.html).
 
 ### Ang Haskell Book ay nilalathala ang lahat ng primerong mapagaaralan dito
 
@@ -74,7 +74,7 @@ I-Pinapaalam ni [@dmvianna](https://github.com/dmvianna) na ang mga nasa babaya 
 
 > *Talakayin muna ito* kung hindi mo bibilhin ang Haskell Book, ito ay ang pinakamagandang _libreng_ introduksyon sa Haskell.
 
-Makukuha [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Makukuha [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 Ang kurso ni [Brent Yorgey](https://byorgey.wordpress.com) ay ang pinakamaganda
 sa pagkakaalam ko. Itong kurso ay mahalaga dahil hindi ka lamang tuturuan mag-sulat ng
@@ -82,7 +82,7 @@ pinakapundomental na Haskell ngunit matutulungan karin maintindihan ang mga
 parser combinators.
 
 Ang tanging dahilan para wag mag-simula sa cis194 ay kung ikaw ay hindi programmer
-o hindi eksperyensado. Kung yun ang kaso, mag-simula sa [Libro ni Thompson](http://www.haskellcraft.com/craft3e/Home.html)
+o hindi eksperyensado. Kung yun ang kaso, mag-simula sa [Libro ni Thompson](https://www.haskellcraft.com/craft3e/Home.html)
 at tyaka lumipat sa cis194.
 
 ---

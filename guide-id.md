@@ -48,7 +48,7 @@ Lihat [Panduak Komunitas](coc.md) untuk mengerti etika yang diharapkan ketika be
 
 ## Gunakan Stack untuk melanjutkan dengan Haskell
 
-Dapatkan [Stack](http://haskellstack.org) untuk mendapatkan GHC terpasang dan membuat proyek anda.
+Dapatkan [Stack](https://haskellstack.org) untuk mendapatkan GHC terpasang dan membuat proyek anda.
 
 Jika Anda tidak tau apapun tentang Stack dan ingin sebuah ikhtisar, periksa ini [Video pengajaran Stack komprehensif](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
@@ -71,7 +71,7 @@ Yang paling direkomendasikan adalah untuk membaca materi kuliah dan menyelesaika
 > *Lakukan ini terlebih dahulu*, ini adalah langkah awal yang kami rekomendasikan untuk dikenalkan kepada 
 > Haskell.
 
-Tersedia [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Tersedia [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 Mata kuliah [Brent Yorgey](https://byorgey.wordpress.com) adalah yang terbaik yang saya temukan sejauh ini.
 Mata kuliah ini berharga karena tidak hanya membekali anda untuk menulis dasar
@@ -79,7 +79,7 @@ Haskell namun juga membantu anda untuk mengerti parser combinators.
 
 Satu-satunya alasan anda tidak seharusnya mulai dengan cis194 adalah jika anda bukanlah programmer
 atau adalah yang tidak berpengalaman. Jika demikian, mulailah dengan
-[Thompson's book](http://www.haskellcraft.com/craft3e/Home.html) kemudian beralih 
+[Thompson's book](https://www.haskellcraft.com/craft3e/Home.html) kemudian beralih 
 ke cis194.
 
 

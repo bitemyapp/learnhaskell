@@ -232,7 +232,7 @@ Téléchargez la dernière version des exécutables pour cabal et ghc
 
 > *Faites le en premier*, c'est la principale introduction à Haskell que je recommande.
 
-Disponible [en ligne](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Disponible [en ligne](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 Le cours de [Brent Yorgey](https://byorgey.wordpress.com) est le meilleur que j'ai trouvé jusque là.
 Ce cours vous donnera les bases pour écrire du code en Haskell mais vous
@@ -240,7 +240,7 @@ aidera aussi à comprendre les combinateurs d'analyse (parser combinators).
 
 La seule raison pour laquelle vous ne devriez pas commencer avec cis194 est si vous n'êtes pas un
 développeur ou inexpérimenté. Si c'est le cas, commencez par le
-[livre de Thompson](http://www.haskellcraft.com/craft3e/Home.html) puis enchainez avec cis194.
+[livre de Thompson](https://www.haskellcraft.com/craft3e/Home.html) puis enchainez avec cis194.
 
 ---
 
@@ -308,7 +308,7 @@ vous n'accrochez pas immédiatement à celle ci.
 
 - [Oh ma paresse !](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
 
-- Question sur SO : '[Haskell a-t-il une évaluation paresseuse ?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+- Question sur SO : '[Haskell a-t-il une évaluation paresseuse ?](https://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
 - les slides de [Johan Tibell](https://github.com/tibbe) tirés d'une présentation
 intitulée [raisonner avec l'évaluation paresseuse](http://www.slideshare.net/tibbe/reasoning-about-laziness).
@@ -375,10 +375,10 @@ guide qui vous demandera également d'écrire vos propres Applicatives.
 Crédits:
 
 - Commentaires de htmltyp et Crandom sur Reddit
-[ici](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
+[ici](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
 
 - Commentaire de jozefg
-[ici](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
+[ici](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
 # Test, spécifications, tests de propriétés (tests par génération)
 
@@ -421,7 +421,7 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 
 - Le [package graphs](https://hackage.haskell.org/package/graphs).
 
-- [une question SO sur PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+- [une question SO sur PHOAS](https://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
 
 - [un article sur PHOAS](https://www.fpcomplete.com/user/edwardk/phoas).
 
@@ -668,7 +668,7 @@ Ces documents se limitent aux traversables et foldables.
 
 - [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core).
 
-- [Question sur SO: Lire GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
+- [Question sur SO: Lire GHC Core](https://stackoverflow.com/questions/6121146/reading-ghc-core).
 
 - [Haskell aussi rapide que du C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
 
@@ -737,11 +737,11 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 - [Co-monades en Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
 
-- [question sur SO: Est-ce qu'une monade peut être une co-monade ?](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
+- [question sur SO: Est-ce qu'une monade peut être une co-monade ?](https://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
 
 ## Yoneda / Co-Yoneda
 
-- [question sur SO: explication pas-à-pas de co-yoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+- [question sur SO: explication pas-à-pas de co-yoneda](https://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
 - Free monads for Less, une séquence de trois articles par Edward Kmett
   * [Partie 1: Co-densité](http://comonad.com/reader/2011/free-monads-for-less/).
@@ -768,9 +768,9 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 - [Interconnexion statique avec GHC sur Arch Linux](http://www.edofic.com/posts/2014-05-03-ghc-arch-static.html)
 
-- [Interconnexion statique de binaires Linux pour ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
+- [Interconnexion statique de binaires Linux pour ARM & MIPS](https://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
 
-- [Interconnexion statique GMP avec GHC et LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
+- [Interconnexion statique GMP avec GHC et LLVM](https://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
 
 ## Dialogues
 

@@ -239,7 +239,7 @@ Du musst das nicht machen, wenn du die .app nutzt, aber wenn das für dich nicht
 > *Den solltest du zuerst machen*, das ist eine erstklassige Einführung
 > in Haskell, die ich sehr empfehle
 
-Verfügbar [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Verfügbar [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 [Brent Yorgey](https://byorgey.wordpress.com)s Kurs ist der beste, den ich bisher gefunden habe.
 Dieser Kurs ist wertvoll, da du nicht nur Grundlegendes über Haskell lernst, sondern auch lernst
@@ -247,7 +247,7 @@ Parser Combinators zu verstehen.
 
 Der einzige Fall, in dem du nicht mit cis194 anfangen solltest, ist, wenn du kein oder ein unerfahrener
 Programmierer bist. Wenn das der Fall ist, starte mit
-[Thompsons Buch](http://www.haskellcraft.com/craft3e/Home.html) und gehe über zu
+[Thompsons Buch](https://www.haskellcraft.com/craft3e/Home.html) und gehe über zu
 cis194.
 
 ---
@@ -336,7 +336,7 @@ Typ Klassen im Allgemeinen zu verstehen aber auch etwas Hask-bezogene Kategorien
 
 - [Oh my laziness!](http://alpmestan.com/posts/2013-10-02-oh-my-laziness.html)
 
-- SO Frage '[Does haskell have laziness?](http://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
+- SO Frage '[Does haskell have laziness?](https://stackoverflow.com/questions/13042353/does-haskell-have-tail-recursive-optimization)'
 
 - [Johan Tibell](https://github.com/tibbe)s Folien von seinem Vortrag
   [reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness).
@@ -409,9 +409,9 @@ eine eigene Applicative zu schreiben.
 
 Credits:
 
-- Reddit Kommentar von htmltyp und Crandom [hier](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
+- Reddit Kommentar von htmltyp und Crandom [hier](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5aj6).
 
-- Reddit Kommentar von jozefg [hier](http://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
+- Reddit Kommentar von jozefg [hier](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
 ## Monad transformers
  
@@ -461,7 +461,7 @@ Haskell. Verfübar über [hackage](https://hackage.haskell.org/package/aeson) un
 
 - Das [graphs Paket](https://hackage.haskell.org/package/graphs).
 
-- [SO Frage zu PHOAS](http://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
+- [SO Frage zu PHOAS](https://stackoverflow.com/questions/24369954/separate-positive-and-negative-occurrences-of-phoas-variables-in-presence-of-rec)
 
 - [PHOAS for free](https://www.fpcomplete.com/user/edwardk/phoas).
 
@@ -701,7 +701,7 @@ Diese Material passt gut mit Traversable und Foldable zusammen.
 
 - [Hackage: GHC Core](https://hackage.haskell.org/package/ghc-core).
 
-- [Stackoverflow Frage: Reading GHC Core](http://stackoverflow.com/questions/6121146/reading-ghc-core).
+- [Stackoverflow Frage: Reading GHC Core](https://stackoverflow.com/questions/6121146/reading-ghc-core).
 
 - [Haskell as fast as C](http://donsbot.wordpress.com/2008/06/04/haskell-as-fast-as-c-working-at-a-high-altitude-for-low-level-performance/).
 
@@ -773,11 +773,11 @@ Wenn du dich mit Typ- oder Kategorien Theorie beschäftigen willst:
 
 - [Comonads in Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
 
-- [Stackoverflow Frage: Can a Monad be a Comonad](http://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
+- [Stackoverflow Frage: Can a Monad be a Comonad](https://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
 
 ## Yoneda / CoYoneda
 
-- [Stackoverflow Frage: Step-by-step explanation of coyoneda](http://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
+- [Stackoverflow Frage: Step-by-step explanation of coyoneda](https://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
 - Free monads for Less, eine Reihe von drei Artikeln von Edward Kmett
   * [Part 1: Codensity](http://comonad.com/reader/2011/free-monads-for-less/).
@@ -804,9 +804,9 @@ Wenn du dich mit Typ- oder Kategorien Theorie beschäftigen willst:
 
 - [Static linking with GHC on Arch Linux](http://www.edofic.com/posts/2014-05-03-ghc-arch-static.html)
 
-- [Statically linking Linux binaries for ARM & MIPS](http://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
+- [Statically linking Linux binaries for ARM & MIPS](https://stackoverflow.com/questions/14270177/ghc-statically-linking-linux-binaries-for-arm-mips-processors)
 
-- [Statically link GMP using GHC and LLVM](http://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
+- [Statically link GMP using GHC and LLVM](https://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
 
 ## Dialog
 

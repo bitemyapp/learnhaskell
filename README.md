@@ -1,6 +1,6 @@
 # How to learn Haskell
 
-This is a recommended path for learning Haskell based on experience helping others. A list of recommendations from one of the authors of the [Haskell Book.](http://haskellbook.com)
+This is a recommended path for learning Haskell based on experience helping others. A list of recommendations from one of the authors of the [Haskell Book.](https://haskellbook.com)
 
 ## For non-English speakers
 
@@ -50,7 +50,7 @@ See [the community guidelines](coc.md) to understand the conduct that is expecte
 
 ## Use Stack to get going with Haskell
 
-Get [Stack](http://haskellstack.org) to get GHC installed and to build your projects.
+Get [Stack](https://haskellstack.org) to get GHC installed and to build your projects.
 
 If you don't know anything about Stack and would like an overview, check out this [comprehensive Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
@@ -68,7 +68,7 @@ The core recommendation is to read the lectures and complete all exercises/homew
 
 ## Haskell Programming from First Principles.
 
-[@dmvianna](https://github.com/dmvianna) wanted me to let you know that the below are just the _free_ recommended resources. If you're willing to check out a book, we heartily recommend our own [Haskell Book!](http://haskellbook.com) If you can't afford the book for any reasons, please email us using the contact information at [our support page](http://haskellbook.com/support.html).
+[@dmvianna](https://github.com/dmvianna) wanted me to let you know that the below are just the _free_ recommended resources. If you're willing to check out a book, we heartily recommend our own [Haskell Book!](https://haskellbook.com) If you can't afford the book for any reasons, please email us using the contact information at [our support page](https://haskellbook.com/support.html).
 
 ### Haskell Book subsumes all of the primary resources recommended here
 
@@ -76,7 +76,7 @@ The core recommendation is to read the lectures and complete all exercises/homew
 
 > _Do this first_ if aren't getting the Haskell Book, this is the best _free_ introduction to Haskell.
 
-Available [online](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Available [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
 
 [Brent Yorgey](https://byorgey.wordpress.com)'s course is the best I've found so
 far. This course is valuable as it will not only equip you to write basic
@@ -84,7 +84,7 @@ Haskell but also help you to understand parser combinators.
 
 The only reason you shouldn't start with cis194 is if you are not a programmer
 or are an inexperienced one. If that's the case, start with
-[Thompson's book](http://www.haskellcraft.com/craft3e/Home.html) and transition
+[Thompson's book](https://www.haskellcraft.com/craft3e/Home.html) and transition
 to cis194.
 
 ---
