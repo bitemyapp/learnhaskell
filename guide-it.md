@@ -149,10 +149,10 @@ $ sudo pacman -S cabal-install ghc happy alex haddock
 
 Su Gentoo, potete installare i singoli componenti della Haskell Platform
 attraverso Portage. Se usate `ACCEPT_KEYWORDS=arch` (invece che
-`ACCEPT_KEYWORDS=~arch`), Portage installerà versioni più vecchie di Haskell. Tenendone di conto, se usate `ACCEPT_KEYWORDS=arch`, aggiungete le seguenti linee a `/etc/portage/package.keywords`.
+`ACCEPT_KEYWORDS=~arch`), Portage installerà versioni più vecchie di Haskell. Tenendone di conto, se usate `ACCEPT_KEYWORDS=arch`, aggiungete le seguenti linee a `/etc/portage/package.accept_keywords`.
 
-    dev-haskell/cabal-install
-    dev-lang/ghc
+    dev-haskell/cabal-install ~arch
+    dev-lang/ghc ~arch
 
 Una volta fatto quello, lanciate:
 

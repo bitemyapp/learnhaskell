@@ -150,10 +150,10 @@ Unter Gentoo kannst du verschiedene Komponenten der Haskell Platform
 via Portage installieren. Wenn du `ACCEPT_KEYWORDS=arch` nutzt (anstatt
 `ACCEPT_KEYWORDS=~arch`), installiert Portage die uralt Versionen der verschiedenen
 Haskell Teile. Daher füge, wenn du, und *nur* wenn du `ACCEPT_KEYWORDS=arch` nutzt, das
-Folgende in `/etc/portage/package.keywords` ein.
+Folgende in `/etc/portage/package.accept_keywords` ein.
 
-    dev-haskell/cabal-install
-    dev-lang/ghc
+    dev-haskell/cabal-install ~arch
+    dev-lang/ghc ~arch
 
 Wenn das getan ist:
 
