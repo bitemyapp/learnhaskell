@@ -176,7 +176,7 @@ $ sudo yum install ghc cabal-install
 Чтобы установить Haskell из официального репо на Arch Linux, выполните:
 
 ```bash
-$ sudo pacman -S cabal-install ghc happy alex haddock
+$ sudo pacman -S cabal-install ghc happy alex haskell-haddock-library
 ```
 
 ## Gentoo

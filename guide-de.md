@@ -141,7 +141,7 @@ beschrieben kann dieser ghc nicht parallel zu Fedora/EPEL ghc installiert werden
 Um Haskell aus den offiziellen Repos unter Arch Linux zu installieren, mache folgendes:
 
 ```bash
-$ sudo pacman -S cabal-install ghc happy alex haddock
+$ sudo pacman -S cabal-install ghc happy alex haskell-haddock-library
 ```
 
 ## Gentoo

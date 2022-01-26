@@ -134,7 +134,7 @@ Fedora/EPEL de ghc.
 Pour installer Haskell depuis le dépôt officiel d'Arch Linux, lancez:
 
 ```bash
-$ sudo pacman -S cabal-install ghc happy alex haddock
+$ sudo pacman -S cabal-install ghc happy alex haskell-haddock-library
 ```
 
 ## Gentoo

@@ -116,7 +116,7 @@ $ sudo yum install ghc cabal-install
 從官方套件庫安裝：
 
 ```bash
-$ sudo pacman -S cabal-install ghc happy alex haddock
+$ sudo pacman -S cabal-install ghc happy alex haskell-haddock-library
 ```
 
 ## Gentoo
