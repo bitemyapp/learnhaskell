@@ -5,7 +5,21 @@ Este es el sendero que recomiendo para aprender Haskell.
 
 #### Para tener en consideración: *no te preocupes por las cosas que no entiendes de inmediato*. Continúa a pesar de ello.
 
-## Comunidad
+# Contenido
+* [Comunidad](#wl21s8byor)
+  * [Directrices de la Comunidad](#ub7ivkmfle)
+* [Instalación de Haskell](#4z6rc7azky)
+  * [Use la herramienta Stack para empezar con Haskell](#etmeqfi0a9)
+  * [NO INSTALE "HASKELL PLATFORM"](#3a342zyy56)
+    * [¿Por qué no utilizar "Haskell Platform"?](#xndnf5ldaj)
+* [¿Cómo debería aprender Haskell?](#2shh2e8ci3)
+  * [Curso cis194 de Yorgey](#73lzsmwelt)
+  * [Curso FP](#1nz7i65vjh)
+  * [Curso suplementario despues de los cursos cis194 y FP](#1u1ldoeyp4g)
+* [Recursos para temas especificos en Haskell](#v9oc7ln6lm)
+  * [Dialogos](#xyvey5zwl)
+
+# Comunidad <a name="wl21s8byor"></a>
 
 Nuestro canal en IRC es `#haskell-beginners` en Freenode.
 
@@ -13,7 +27,7 @@ Cliente web IRC [aquí](http://webchat.freenode.net/).
 
 La [lista de correo](https://wiki.haskell.org/Mailing_lists) de Haskell.
 
-### Directrices de la Comunidad
+## Directrices de la Comunidad <a name="ub7ivkmfle"></a>
 [Ver el post de Chris Done sobre enseñanza](http://chrisdone.com/posts/teaching)
 
 Se amable y cortés. Ser odioso y rudo ahuyenta a la gente y les desmotiva a participar.
@@ -24,7 +38,7 @@ No describas las cosas como "sencillas" o "simples". Vas a hacer sentir a las pe
 
 No simules sorpresa. No actúes sorprendido cuando alguien reconoce no saber algo, eso hará sentir terrible a la persona y no obtendrás nada excepto hacerte ver sarcástico.
 
-"Mmm...no, de hecho..." Cuando alguien dice algo que es casi pero no completamente correcto y dices, "bueno...no, de hecho..." y luego das una mínima corrección, es especialmente molesto si la corrección que realizas no es lo suficientemente relevante. Esto no significa que al no hacerlo tratamos de ignorar la verdad o que no nos importa ser precisos. El punto es que casi todos los "Mmm... no, de hecho..." son fanfarronerías, no procuradores de la verdad. 
+"Mmm...no, de hecho..." Cuando alguien dice algo que es casi pero no completamente correcto y dices, "bueno...no, de hecho..." y luego das una mínima corrección, es especialmente molesto si la corrección que realizas no es lo suficientemente relevante. Esto no significa que al no hacerlo tratamos de ignorar la verdad o que no nos importa ser precisos. El punto es que casi todos los "Mmm... no, de hecho..." son fanfarronerías, no procuradores de la verdad.
 
 No seas el copiloto pesado que siempre esta dando instrucciones al conductor del vehículo.Si ves a alguien trabajando en un problema, no deberías interrumpir intermitentemente para dar consejo. Déjales trabajar hasta que pidan ayuda. Evitar interrupciones es [uno de los principios fundamentales de #haskell-beginners](http://chrisdone.com/posts/teaching).
 
@@ -34,28 +48,28 @@ Ningún sutil -ismo. Racismo, sexismo, homofobia, transfobia u otro tipo de prej
 
 Directrices del [Manual de Recurse Center](https://www.recurse.com/manual). Gracias por la publicación, Recurse.
 
-# Instalación de Haskell
+# Instalación de Haskell <a name="4z6rc7azky"></a>
 
-## Use la herramienta Stack para empezar con Haskell
+## Use la herramienta Stack para empezar con Haskell <a name="etmeqfi0a9"></a>
 
 Instale [Stack](https://haskellstack.org) para tener el GHC (Glasgow Haskell Compiler) listo y para compilar sus proyectos.
 
 En el caso de que usted no conozca nada sobre Stack y le gustaria tener una visión general, hay un [tutorial en vídeo sobre Stack](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
 
-## NO INSTALE "HASKELL PLATFORM"
+## NO INSTALE "HASKELL PLATFORM" <a name="3a342zyy56"></a>
 
 En lugar de utilizar las instrucciones disponibles en Haskell.org, utilize Stack.
 
-### ¿Por qué no utilizar "Haskell Platform"?
+### ¿Por qué no utilizar "Haskell Platform"? <a name="xndnf5ldaj"></a>
 
 https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
-# ¿Cómo debería aprender Haskell?
+# ¿Cómo debería aprender Haskell? <a name="2shh2e8ci3"></a>
 
 La recomendación principal es leer las clases y completar todos los ejercicios de la versión 13 de cis194 seguidos por el curso FP. Los links de ambos se encuentran abajo. Todo lo demas puede ser considerado opcional y es mencionado para que así sepas donde mirar.
 
-## Curso cis194 de Yorgey
+## Curso cis194 de Yorgey <a name="73lzsmwelt"></a>
 
 > *Haz esto primero*, esta es la vía principal que recomendamos al ser introducido a Haskell.
 
@@ -67,7 +81,7 @@ La unica razón por la que no deberías empezar con cis194 es si no eres un prog
 
 ---
 
-## Curso FP
+## Curso FP <a name="1nz7i65vjh"></a>
 
 > Este es el curso que recomendamos hacer despues del curso cis194 de Yorgey.
 
@@ -77,7 +91,7 @@ Esto reforzara y te dara experiencia implementando directamente las abstraccione
 
 ---
 
-## Curso suplementario despues de los cursos cis194 y FP
+## Curso suplementario despues de los cursos cis194 y FP <a name="1u1ldoeyp4g"></a>
 
 > Proporciona mas material en temas intermediarios
 
@@ -87,19 +101,13 @@ Este es el curso online de [Bryan O'Sullivan](https://github.com/bos) de la clas
 
 ---
 
-# Recursos para temas especificos en Haskell
+# Recursos para temas especificos en Haskell <a name="v9oc7ln6lm"></a>
 
 Estos recursos no han sido investigados o probados con aprendices como los cursos cis194 y FPT, pero estan listados en [la lista de temas](specific_topics.md) para que así tengas ideas de donde empezar.Esto incluye cosas como conceptos y temas intermedios/avanzados, por ejemplo herramientas y editores de texto.
 
 
-## Dialogos
+## Dialogos <a name="xyvey5zwl"></a>
 
 > Alojado en este repositorio [Aquí](dialogues.md).
 
 Estos son de hecho muy importantes y de gran ayuda. Da un vistazo a estos para inmersiones profundas en una variedad de temas.
-
-
-
-
-
-

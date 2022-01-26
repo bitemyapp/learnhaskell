@@ -2,10 +2,78 @@
 
 Ceci est ma façon recommandée d'apprendre Haskell.
 
-
 #### Quelque chose à garder en tête: *ne bloquez pas sur les points que vous ne comprenez pas immédiatement*. Continuez à avancer.
 
-## Communauté
+# Contenu
+* [Communauté](#2zta8d5q1)
+  * [Règles d'usage de la communauté](#c0jxsy7133)
+* [Qu'est ce que Haskell, GHC, et Cabal?](#iarbof78ee)
+  * [GHC](#5jwilb2fub)
+  * [Cabal](#9dwjayx21hk)
+* [Mise en place](#ctcclv605ak)
+  * [Ubuntu](#efgeloplz2)
+  * [Debian](#wpts8a8udp)
+    * [Utiliser le PPA d'Ubuntu](#fnv2e24ehg)
+    * [Compilation depuis les sources](#9efu9epfng)
+  * [Fedora 21](#74m2bm45g7)
+  * [Arch Linux](#bq1zcv5cp)
+  * [Gentoo](#wiqesskwuh)
+  * [Mac OS X](#726xv5vm96j)
+    * [10.9](#hikluwhz6f)
+    * [10.6-10.8](#84j6waukfq)
+  * [Windows](#977hqmi6zf)
+  * [Utilisateurs d'autres versions de Linux](#rtok4vekq7g)
+* [Cours de base](#e66nxdz88a)
+  * [Le cours cis194 de Yorgey](#5pcph760fq)
+  * [Le cours FP](#rrhqakqy9y)
+  * [Cours supplémentaire cs240h](#tlw6p3jen4)
+    * [Que sont les sucres syntactiques `<-` / `do` / comprehension de listes ?](#nvfx7wteqo)
+    * [Pour comprendre list et fold](#0g9auxvex2)
+    * [Pour apprendre quelques typeclasses courantes](#r21xa96x5z)
+    * [Comprendre les messages d'erreur standards d'Haskell](#zrsd8sc6oi)
+* [Evaluation stricte et paresseuse, _guarded recursion_](#olmcume4yg)
+  * [Brève démonstration](#gbdz8azb1x)
+* [IO](#ynrl4ot8kd)
+* [Monades et transformateurs de monades](#1ugngn0g0r)
+* [Test, spécifications, tests de propriétés (tests par génération)](#aiv4jahs4u)
+* [Parsing en Haskell](#y85alsnkmwh)
+  * [Parsing et génération de JSON](#juogb3904h)
+* [Algorithmes de graphes et structures de données](#vxk8o58jm4)
+* [Environment de développement](#9dp9nvlb8f)
+  * [Emacs](#z509ysqwrk)
+  * [Vim](#o1pu994fp7)
+  * [Sublime Text](#ckltzvs5kf)
+* [Utilisation de Cabal](#onf68plm7rk)
+  * [Recommandations pour Cabal](#qn3a6tvht8)
+  * [Stackage](#l9wjnbqt50f)
+* [Hoogle et Haddock](#r4ecm2l6h9)
+  * [Chercher du code à partir de la signature des types](#27qhf5h5np)
+  * [Mettre en place propre instance local de Hoogle](#392i8cxtmj)
+  * [Haddock](#miu43ojumtf)
+  * [Ce que vous avez vraiment besoin de savoir](#anp6v1qtsa)
+* [Vous pouvez écrire ceci ligne par ligne en omettant les backslashes](#qqmjkcbvm7)
+* [TravisCI](#9p7le1bizg)
+* [Frontend/JavaScript](#uhgpf5mph6)
+  * [Quel langage frontend utiliser ?](#h5hi6d0bqd)
+* [Pour mieux comprendre l'évaluation paresseuse, NF, WHNF](#pf2wm74zcah)
+  * [Documents de recherche sur le lambda-calcul paresseux](#sv8bh290cf)
+* [Parallelisme / Concurrence](#j0ommd3us5)
+* [Lenses et Prisms](#mdy5g09xqq)
+* [Schémas de récursion](#s7iz6rfb2w)
+* [GHC Core et tuning de performance](#a3ay2btzy4)
+* [Type et Théorie des Catégories](#bkvp4zt05d)
+  * [Livres](#ppzxooi9gi)
+* [Autres sujets amusants](#scng5euytwl)
+  * [Paramétricité, ad-hoc vs. polymorphisme paramétrique, théorèmes libres](#zjqqxtqkeg)
+  * [Initial et Final, les DSL, Finally Tagless](#vd93fz45nz)
+  * [Co-monades](#h6c2iayec5h)
+  * [Yoneda / Co-Yoneda](#u4a97wy1v8)
+  * [Propositions vs. Jugements (informatique)](#8k0gcdr4f)
+* [Typage Dépendent](#si0rsfqvj8)
+* [Interconnexion de binaires statique](#ntkrm9wlm4)
+  * [Dialogues](#ckru2s4on7)
+
+# Communauté <a name="2zta8d5q1"></a>
 
 Notre canal IRC est `#haskell-beginners` sur Freenode.
 
@@ -13,7 +81,7 @@ Un client web IRC [ici](http://webchat.freenode.net/).
 
 Les [listes de diffusion](https://wiki.haskell.org/Mailing_lists) Haskell.
 
-### Règles d'usage de la communauté
+## Règles d'usage de la communauté <a name="c0jxsy7133"></a>
 
 [Voir le post sur l'enseignement de Chris Done](http://chrisdone.com/posts/teaching)
 
@@ -35,23 +103,24 @@ Pas de -ismes. Racisme, sexisme, homophobie, transphobie, et autres biais ne son
 
 Recommandations du [manuel de the Recurse Center](https://www.recurse.com/manual). Merci de l'avoir publié Recurse Center.
 
-# Qu'est ce que Haskell, GHC, et Cabal?
+
+# Qu'est ce que Haskell, GHC, et Cabal? <a name="iarbof78ee"></a>
 
 Haskell est un langage de programmation, défini par une spécification, la plus récente datant de 2010. Celle-ci est disponible [en ligne](http://www.haskell.org/onlinereport/haskell2010/).
 
-## GHC
+## GHC <a name="5jwilb2fub"></a>
 
 [GHC](http://www.haskell.org/ghc/) est le moyen le plus populaire de travailler avec le langage Haskell. Il inclut un compilateur, un REPL (interpréteur), la gestion de paquets, et plus encore.
 
-## Cabal
+## Cabal <a name="9dwjayx21hk"></a>
 
 [Cabal](https://www.haskell.org/cabal/download.html) s'occupe de la gestion du projet et de la résolution des dépendances. C'est lui qui aide à l'installation de projets, typiquement dans leurs propres bac à sable.
 
 Cabal est l'équivalent de Bundler pour Ruby, de pip pour Python, de NPM pour Node, Maven, etc. GHC gère le packaging lui-même, Cabal choisit quelles versions doivent être installées.
 
-# Mise en place
+# Mise en place <a name="ctcclv605ak"></a>
 
-## Ubuntu
+## Ubuntu <a name="efgeloplz2"></a>
 
 [Ce PPA](http://launchpad.net/~hvr/+archive/ghc) est excellent. C'est ce que j'utilise sur toutes mes machines Linux dédiées au développement.
 
@@ -77,9 +146,9 @@ Ainsi, vous aurez accès au code que vous serez en train de développer directem
 en ligne de commandes. Cela ne marchera que si votre répertoire de travail actuel
 contient un _bac à sable_ cabal.
 
-## Debian
+## Debian <a name="wpts8a8udp"></a>
 
-### Utiliser le PPA d'Ubuntu
+### Utiliser le PPA d'Ubuntu <a name="fnv2e24ehg"></a>
 
 Si vous n'utilisez pas la version stable, vous pouvez suivre les mêmes étapes
 que pour Ubuntu mais vous aurez besoin d'exécuter un commande supplémentaire.
@@ -101,7 +170,7 @@ Si, pour une raison quelconque, le fichier
 
 Remplacez alors `jessie` par `trusty` dans cette ligne.
 
-### Compilation depuis les sources
+### Compilation depuis les sources <a name="9efu9epfng"></a>
 
 Vous pouvez suivre
 [ce guide](http://www.davesquared.net/2014/05/platformless-haskell.html)
@@ -113,7 +182,7 @@ Notes:
 - Au lieu de récupérer l'exécutable de `cabal-install`, récupérez les sources
 et ensuite lancez le script `bootstrap.sh`.
 
-## Fedora 21
+## Fedora 21 <a name="74m2bm45g7"></a>
 
 Pour installer Haskell 7.8.4 depuis le dépôt non-officiel
 (Fedora 22+ l'inclura dans l'officiel) :
@@ -129,7 +198,7 @@ Comme indiqué dans
 cette version de ghc ne peut pas être installée en même temps que la version
 Fedora/EPEL de ghc.
 
-## Arch Linux
+## Arch Linux <a name="bq1zcv5cp"></a>
 
 Pour installer Haskell depuis le dépôt officiel d'Arch Linux, lancez:
 
@@ -137,7 +206,7 @@ Pour installer Haskell depuis le dépôt officiel d'Arch Linux, lancez:
 $ sudo pacman -S cabal-install ghc happy alex haddock
 ```
 
-## Gentoo
+## Gentoo <a name="wiqesskwuh"></a>
 
 Sur Gentoo, vous pouvez installer les différents composants de la plateforme
 Haskell depuis Portage. Si vous utilisez `ACCEPT_KEYWORDS=arch` (par opposition à
@@ -196,19 +265,19 @@ $ cabal install alex happy
 
 Félicitations ! Vous avez maintenant une installation de Haskell en état de marche !
 
-## Mac OS X
+## Mac OS X <a name="726xv5vm96j"></a>
 
-### 10.9
+### 10.9 <a name="hikluwhz6f"></a>
 
 Installez l'app [GHC pour Mac OS X](http://ghcformacosx.github.io/) qui inclus
 GHC et Cabal. Elle vous indiquera comment ajouter GHC et cabal à votre path
 après que vous ayez déposé le `.app` quelque part.
 
-### 10.6-10.8
+### 10.6-10.8 <a name="84j6waukfq"></a>
 
 Faites l'installation décrite ci-dessus avec cette [archive](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2).
 
-## Windows
+## Windows <a name="977hqmi6zf"></a>
 
 - L'[installeur minimal pour GHC](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
 est capable de compiler `network` et les autres. Techniquement, il s'agit d'une
@@ -217,7 +286,7 @@ beta mais cela devrait répondre au besoin de quiconque lira ce guide.
 N'oubliez pas de lancer l'installation en tant qu'administrateur puisque le
 programme cherchera à s'installer dans votre répertoire Program Files.
 
-## Utilisateurs d'autres versions de Linux
+## Utilisateurs d'autres versions de Linux <a name="rtok4vekq7g"></a>
 
 Téléchargez la dernière version des exécutables pour cabal et ghc
 
@@ -226,9 +295,9 @@ Téléchargez la dernière version des exécutables pour cabal et ghc
 - [Cabal](https://www.haskell.org/cabal/download.html).
 
 
-# Cours de base
+# Cours de base <a name="e66nxdz88a"></a>
 
-## Le cours cis194 de Yorgey
+## Le cours cis194 de Yorgey <a name="5pcph760fq"></a>
 
 > *Faites le en premier*, c'est la principale introduction à Haskell que je recommande.
 
@@ -244,7 +313,7 @@ développeur ou inexpérimenté. Si c'est le cas, commencez par le
 
 ---
 
-## Le cours FP
+## Le cours FP <a name="rrhqakqy9y"></a>
 
 > C'est le cours que je recommande après avoir suivi le cours cis194 de Yorgey
 
@@ -259,7 +328,7 @@ j'enseigne Haskell à tout le monde.
 
 ---
 
-## Cours supplémentaire cs240h
+## Cours supplémentaire cs240h <a name="tlw6p3jen4"></a>
 
 > Fournit plus de matière sur des sujets intermédiaires
 
@@ -274,15 +343,15 @@ la concurrence, les pipes, et les lenses.
 
 ---
 
-### Que sont les sucres syntactiques `<-` / `do` / comprehension de listes ?
+### Que sont les sucres syntactiques `<-` / `do` / comprehension de listes ? <a name="nvfx7wteqo"></a>
 
 Un [article](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html) excellent.
 
-### Pour comprendre list et fold
+### Pour comprendre list et fold <a name="0g9auxvex2"></a>
 
 - [Comprendre List et Folds](http://vimeo.com/64673035)
 
-### Pour apprendre quelques typeclasses courantes
+### Pour apprendre quelques typeclasses courantes <a name="r21xa96x5z"></a>
 
 Utile pour comprendre `Functor`, `Applicative`, `Monad`, `Monoid` et autres
 typeclasses en général mais aussi un peu de théorie des catégories spécifique
@@ -290,13 +359,13 @@ typeclasses en général mais aussi un peu de théorie des catégories spécifiq
 
 - La [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
 
-### Comprendre les messages d'erreur standards d'Haskell
+### Comprendre les messages d'erreur standards d'Haskell <a name="zrsd8sc6oi"></a>
 
 - [Comprendre les messages d'erreur standards](http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf)
 
 ---
 
-# Evaluation stricte et paresseuse, _guarded recursion_
+# Evaluation stricte et paresseuse, _guarded recursion_ <a name="olmcume4yg"></a>
 
 - Le [livre](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)
 écrit par Marlow au sujet du parallélisme et de la concurrence est une des
@@ -313,7 +382,7 @@ vous n'accrochez pas immédiatement à celle ci.
 - les slides de [Johan Tibell](https://github.com/tibbe) tirés d'une présentation
 intitulée [raisonner avec l'évaluation paresseuse](http://www.slideshare.net/tibbe/reasoning-about-laziness).
 
-## Brève démonstration
+## Brève démonstration <a name="gbdz8azb1x"></a>
 
 ```haskell
 let a = 1 : a   -- guarded recursion, (:) est évalué paresseusement
@@ -328,7 +397,7 @@ let a = 1 * a -- not guarded, (*) is strict
 *** Exception: <<loop>>
 ```
 
-# IO
+# IO <a name="ynrl4ot8kd"></a>
 
 - [Ordre d'évaluation et jetons d'états](https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens)
 
@@ -350,7 +419,7 @@ Commentaire sur un fil Reddit de `glaebhoerl` :
 > du Monde explicitement et proposent une monade IO (non-abstraite) uniquement
 > pour plus de commodités.
 
-# Monades et transformateurs de monades
+# Monades et transformateurs de monades <a name="1ugngn0g0r"></a>
 
 > Ne faites pas ça avant de comprendre les typeclasses, Monoid, Functor et
 > Applicative !
@@ -380,21 +449,21 @@ Crédits:
 - Commentaire de jozefg
 [ici](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
-# Test, spécifications, tests de propriétés (tests par génération)
+# Test, spécifications, tests de propriétés (tests par génération) <a name="aiv4jahs4u"></a>
 
 - Ce [tutoriel](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md)
 de Kazu Yamamoto est fantastique.
 
 - [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Une bonne librairie simple pour apprendre comment le streaming d'IO fonctionne en général. Les connaissances acquises ici sont transférables à Pipes et Conduit.
- 
-# Parsing en Haskell
+
+# Parsing en Haskell <a name="y85alsnkmwh"></a>
 
 - [Tutoriel](https://github.com/JakeWheat/intro_to_parsing) sur les parser
 combinators en Haskell utilisant Parsec.
 
 - [Ecrivez votre propre micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
 
-## Parsing et génération de JSON
+## Parsing et génération de JSON <a name="juogb3904h"></a>
 
 Aeson est la solution standard de parsing de [JSON](https://json.org) en haskell.
 Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
@@ -408,7 +477,7 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 
 - [tutoriel Aeson](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
 
-# Algorithmes de graphes et structures de données
+# Algorithmes de graphes et structures de données <a name="vxk8o58jm4"></a>
 
 - Le [package fgl](https://hackage.haskell.org/package/fgl) en particulier
   le plus court chemin purement fonctionnel [algos](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html).
@@ -429,9 +498,9 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 
 - [Hackage: dag](https://hackage.haskell.org/package/dag).
 
-# Environment de développement
+# Environment de développement <a name="9dp9nvlb8f"></a>
 
-## Emacs
+## Emacs <a name="z509ysqwrk"></a>
 
 - [le tutoriel d'Alejandro Serras](https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md)
 
@@ -439,7 +508,7 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 
 - [la config emacs de Chris Done](https://github.com/chrisdone/chrisdone-emacs)
 
-## Vim
+## Vim <a name="o1pu994fp7"></a>
 
 - [la page Vim sur haskellwiki](http://www.haskell.org/haskellwiki/Vim)
 
@@ -451,13 +520,13 @@ Disponible sur [hackage](https://hackage.haskell.org/package/aeson) et
 
 - [Hindent](https://github.com/chrisdone/hindent)
 
-## Sublime Text
+## Sublime Text <a name="ckltzvs5kf"></a>
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
 
-# Utilisation de Cabal
+# Utilisation de Cabal <a name="onf68plm7rk"></a>
 
-## Recommandations pour Cabal
+## Recommandations pour Cabal <a name="qn3a6tvht8"></a>
 
 L'enfer de Cabal était un problème pour les utilisateurs d'Haskell avant
 l'introduction des bacs à sable. Une installation en dehors d'un bac à sable se
@@ -485,7 +554,7 @@ les packages pré-construits fournis par Haskell Platform.
 Si vous apprenez Haskell et ne comprenez pas comment ghc-pkg et Cabal fonctionnent,
 *évitez platform* et utilisez les instructions préalables du guide à la place.
 
-## Stackage
+## Stackage <a name="l9wjnbqt50f"></a>
 
 Pour les utilisateurs (de Yesod généralement) qui ont des problèmes de build, considérez Stackage.
 
@@ -494,9 +563,9 @@ Pour les utilisateurs (de Yesod généralement) qui ont des problèmes de build,
 
 L'auteur estime que Stackage est généralement plus utile que `cabal freeze`.
 
-# Hoogle et Haddock
+# Hoogle et Haddock <a name="r4ecm2l6h9"></a>
 
-## Chercher du code à partir de la signature des types
+## Chercher du code à partir de la signature des types <a name="27qhf5h5np"></a>
 
 Le [moteur de recherche Hoogle](http://www.haskell.org/hoogle/) permet des
 recherches par type.
@@ -510,11 +579,11 @@ Hoogle est également hébergé par fpcomplete
 Il existe aussi [Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html) (qui
 contient tout hackage par défaut).
 
-## Mettre en place propre instance local de Hoogle
+## Mettre en place propre instance local de Hoogle <a name="392i8cxtmj"></a>
 
 Vous pouvez regarder [ici](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
 
-## Haddock
+## Haddock <a name="miu43ojumtf"></a>
 
 1. [Réparer votre documentation Hackage](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html)
 
@@ -524,7 +593,7 @@ Notez que ces billets sont *légèrement obsolètes*: par exemple, Hackage conti
 maintenant de nouvelles informations concernant la documentation et le statut
 du build.
 
-## Ce que vous avez vraiment besoin de savoir
+## Ce que vous avez vraiment besoin de savoir <a name="anp6v1qtsa"></a>
 
 Afin qu'Haddock inclue la documentation des paquets référencés, vous devez
 mettre `documentation: True` dans votre `~/.cabal/config`. Si vous avez laissé la valeur
@@ -540,20 +609,20 @@ car on pensera alors qu'il s'agit de variables pour Make.
 ```bash
 #! /usr/bin/env sh
 
-# Vous pouvez écrire ceci ligne par ligne en omettant les backslashes
+# Vous pouvez écrire ceci ligne par ligne en omettant les backslashes <a name="qqmjkcbvm7"></a>
 cabal haddock --hoogle --hyperlink-source                       \
  --html-location='http://hackage.haskell.org/package/$pkg/docs' \
  --contents-location='http://hackage.haskell.org/package/$pkg'
 ```
 
-# TravisCI
+# TravisCI <a name="9p7le1bizg"></a>
 
 Si vous êtes comme moi un grand fan de [TravisCI](https://travis-ci.org), je
 vous recommande alors *fortement* de jeter un oeil à
 [multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) pour avoir une base
 de fichier `travis.yml` pour vos projets Haskell.
 
-# Frontend/JavaScript
+# Frontend/JavaScript <a name="uhgpf5mph6"></a>
 
 Nous avons des problèmes de riches ! Voilà les trois principaux choix que je
 peux recommander:
@@ -576,7 +645,7 @@ peux recommander:
   - Essayez PureScript dans votre navigateur [ici](http://try.purescript.org/)
   - Un très bon guide pour [démarrer](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
 
-## Quel langage frontend utiliser ?
+## Quel langage frontend utiliser ? <a name="h5hi6d0bqd"></a>
 
 GHCJS et Haste sont tous deux du pur Haskell. GHCJS marchera avec de plus
 nombreux paquets Haskell que Haste, mais cela n'impacte pas un grand nombre
@@ -593,11 +662,11 @@ Haskell (Cabal).
 Les trois sont de très bons choix et sont adaptés à la plupart des projets
 frontend.
 
-# Pour mieux comprendre l'évaluation paresseuse, NF, WHNF
+# Pour mieux comprendre l'évaluation paresseuse, NF, WHNF <a name="pf2wm74zcah"></a>
 
 - [Notes sur lambda-calcul](https://vec.io/posts/notes-on-lambda-calculus).
 
-## Documents de recherche sur le lambda-calcul paresseux
+## Documents de recherche sur le lambda-calcul paresseux <a name="sv8bh290cf"></a>
 
 - [La nécessité du lambda-calcul](http://homepages.inf.ed.ac.uk/wadler/topics/call-by-need.html#need-journal).
 
@@ -607,7 +676,7 @@ frontend.
 
 - [Evaluation paresseuse en Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtml)
 
-# Parallelisme / Concurrence
+# Parallelisme / Concurrence <a name="j0ommd3us5"></a>
 
 - [Programmation Parallele et Concurrente en Haskell](http://chimera.labs.oreilly.com/books/1230000000929)
   Ce livre de Simon Marlow est probablement le meilleur que j'ai lu sur le sujet du parallélisme et de
@@ -618,7 +687,7 @@ frontend.
 
 - [Programmation Fonctionnelle Réactive](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
 
-# Lenses et Prisms
+# Lenses et Prisms <a name="mdy5g09xqq"></a>
 
 Une fois que êtes confortables avec Haskell, vous devriez considérer fortement l'apprentissage
 des Lenses et Prisms, même en tant que simple "utilisateur". Vous n'avez pas besoin de comprendre
@@ -638,7 +707,7 @@ Je recommande ces deux tutoriels / introductions:
 
 Regardez ici pour plus d'informations: [Lens package on hackage](http://hackage.haskell.org/package/lens).
 
-# Schémas de récursion
+# Schémas de récursion <a name="s7iz6rfb2w"></a>
 
 Certains des mots en \*-morphisme dont vous avez entendu parler jusque là renvoient à la
 récursion. NB - avant de vous attaquer à la suite vous devriez savoir comment implementer
@@ -660,7 +729,7 @@ Ces documents se limitent aux traversables et foldables.
 
 - [Catamorphismes](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
 
-# GHC Core et tuning de performance
+# GHC Core et tuning de performance <a name="a3ay2btzy4"></a>
 
 - [Ecrire du Haskell aussi rapide que du C](write_haskell_as_fast_as_c.md)
 
@@ -674,7 +743,7 @@ Ces documents se limitent aux traversables et foldables.
 
 - [Real World Haskell, Chapitre 25: Profilage and Optimisations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
 
-# Type et Théorie des Catégories
+# Type et Théorie des Catégories <a name="bkvp4zt05d"></a>
 
 > *Pas* nécessaire pour écrire du Haskell, juste pour ceux intéressés !
 
@@ -693,7 +762,7 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 - La liste [Superbes travaux sur les languages de programmation](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml) de Pierce.
 
-## Livres
+## Livres <a name="ppzxooi9gi"></a>
 
 - [Question sur Quora: Quel est le meilleur livre sur la théorie des catégories ?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1) les recommandations de Kmett
 
@@ -704,9 +773,9 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 - [La théorie des Types et la Programmation Functionnelle](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
 
-# Autres sujets amusants
+# Autres sujets amusants <a name="scng5euytwl"></a>
 
-## Paramétricité, ad-hoc vs. polymorphisme paramétrique, théorèmes libres
+## Paramétricité, ad-hoc vs. polymorphisme paramétrique, théorèmes libres <a name="zjqqxtqkeg"></a>
 
 - [Paramétricité](tony_parametricity.pdf).
 
@@ -717,7 +786,7 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 - [Théorèmes gratuits !](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf).
 
-## Initial et Final, les DSL, Finally Tagless
+## Initial et Final, les DSL, Finally Tagless <a name="vd93fz45nz"></a>
 
 - [Encodages finaux, Partie 1: Une Démonstration rapide](http://creativelad.wordpress.com/2013/11/28/final-encodings-part-1-a-quick-demonstration/).
 
@@ -733,13 +802,13 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 - [Le chien qui n'aboyait pas](http://existentialtype.wordpress.com/2011/03/21/the-dog-that-didnt-bark/) moins spécifique mais intéressant tout de même.
 
-## Co-monades
+## Co-monades <a name="h6c2iayec5h"></a>
 
 - [Co-monades en Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
 
 - [question sur SO: Est-ce qu'une monade peut être une co-monade ?](https://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
 
-## Yoneda / Co-Yoneda
+## Yoneda / Co-Yoneda <a name="u4a97wy1v8"></a>
 
 - [question sur SO: explication pas-à-pas de co-yoneda](https://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
@@ -748,13 +817,13 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
   * [Partie 2: Yoneda](http://comonad.com/reader/2011/free-monads-for-less-2/).
   * [Partie 3: Yielding IO](http://comonad.com/reader/2011/free-monads-for-less-3/).
 
-## Propositions vs. Jugements (informatique)
+## Propositions vs. Jugements (informatique) <a name="8k0gcdr4f"></a>
 
 - [une question sur StackExchange: Quelle est la difference entre les propositions et les jugements ?](http://cstheory.stackexchange.com/questions/9826/what-is-the-difference-between-propositions-and-judgments).
 
 - [Notes de lecture d'un petit cours de trois lectures](http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf)
 
-# Typage Dépendent
+# Typage Dépendent <a name="si0rsfqvj8"></a>
 
 - [Intégrer les type sum, les value constructors, et les type constructors](http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html).
 
@@ -762,7 +831,7 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 - [Le language de programmation Idris](http://www.idris-lang.org/).
 
-# Interconnexion de binaires statique
+# Interconnexion de binaires statique <a name="ntkrm9wlm4"></a>
 
 - [Interconnexion statique](https://wiki.haskell.org/Web/Literature/Static_linking)
 
@@ -772,7 +841,7 @@ Si vous voulez en apprendre plus sur les types et la théorie des catégories:
 
 - [Interconnexion statique GMP avec GHC et LLVM](https://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
 
-## Dialogues
+## Dialogues <a name="ckru2s4on7"></a>
 
 > Hébergés dans un dépôt [ici](dialogues.md).
 

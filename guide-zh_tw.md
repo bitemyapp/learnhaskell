@@ -4,7 +4,80 @@
 
 #### 請切記：*別在不懂的地方打轉，先繼續讀下去！*
 
-## 社群
+# 内容
+* [社群](#yd8x95rlwhg)
+  * [社群參與原則](#rnsxfn7ynp)
+* [什麼是Haskell、GHC和Cabal？](#4i39589kvi)
+  * [GHC](#coeuwetq07h)
+  * [Cabal](#eldq6ru03r)
+* [環境設定](#e4f38nxvbw)
+  * [Ubuntu](#i03w9ect4i)
+  * [Debian](#19eryniaix)
+    * [使用Ubuntu PPA](#edy3onfa1ck)
+    * [自行編譯](#l4y6p284uy)
+  * [Fedora 21](#sa6i5c3hf8)
+  * [Arch Linux](#6bc9006vyv)
+  * [Gentoo](#s3vx4omvedh)
+  * [Mac OS X](#3433fqfal6)
+    * [10.9](#ffiw692243f)
+    * [10.6-10.8](#mgcbyeedpv)
+  * [Windows](#28ylxwps8h)
+  * [其他Linux使用者](#ft6qde4fq1)
+* [主要學習課程](#u9s7web75k)
+  * [Yorgey's cis194課程](#ybcm0f2g93i)
+  * [FP課程](#wii9ptxb57)
+  * [補充課程 cs240h](#1cm6vuqx3vk)
+    * [`<-` / `do` / list comprehension簡便語法到底是什麼？](#xlm2bq5lvwf)
+    * [了解list和fold](#vnuurla8bsj)
+    * [學習常用的typeclasses](#ck4hju5tgbg)
+    * [了解基本的Haskell錯誤訊息](#wdjdz2zmbq)
+* [Laziness, strictness, guarded recursion](#zv2luifl96)
+  * [演示](#cl4gztoi52)
+* [IO](#oavt90id87k)
+* [Monads and monad transformers](#0df47k5de4)
+  * [Monad transformers](#avodawdokn)
+* [Testing, tests, specs, generative/property testing](#hnr2jardqa)
+* [Parsing in Haskell](#ur0scjjpa6)
+  * [Parsing與產生JSON](#0obyam5zix)
+* [圖學演算法與資料結構](#1vpfbzu2rf)
+* [開發環境](#s5gwd9bf13)
+  * [Emacs](#3d5x2nskwx)
+  * [Vim](#il7oa2j0ep)
+  * [Sublime Text](#1qm6up7euvj)
+* [Cabal常見問答](#lmuvaicg3c)
+  * [一篇超讚的常見問答](#elxvde7p38)
+  * [Cabal導覽](#n2ir2e3v5jl)
+  * [Stackage](#a8qli666hy)
+* [Hoogle與Haddock](#uebs90y451)
+  * [依型別表述搜尋源碼](#pe11ov76sm)
+  * [設定你自己本地端的Hoogle](#ftryoiemfy)
+  * [Haddock](#a0isvz2ul5)
+  * [真正重要的事](#699ahk8tk8)
+* [如果把反斜線去掉，你可以把它寫成一行](#f8mq5lhzx8)
+* [TravisCI](#3fdcej0tv3)
+* [前端/JavaScript](#o0retj9hsf)
+  * [我用哪一種前端語言？](#98mcgvjgnef)
+* [想要更充分了解laziness、NF、WHNF](#11inwismz7)
+  * [關於lazy lambda calculus的研究論文](#rhlg83ah4z)
+* [平行／並行(Parallelism/Concurrency)](#rh2ir9ny52k)
+* [Lenses and Prisms](#ivqtph9s7z)
+* [遞迴範式 (Recursion Schemes)](#3tp9k0v0n5)
+* [GHC核心與效能調校](#ijxg5kq9n6)
+* [型別(Type)與範疇論(Category Theory)](#g5gtj2vh62)
+  * [書籍](#m74peapekm)
+  * [Stephen俏皮的"How to get to monad"文章](#fizaz8v4wu)
+* [其他有趣的主題](#cakdu971aak)
+  * [Parametricity, ad-hoc vs. parametric polymorphism, free theorems](#pgu9vqyx6p)
+  * [Initial與Final、DSLs、與Tagless](#2v0hdbfa18)
+  * [Comonads](#kn523ydgb1)
+  * [Yoneda / CoYoneda](#ilnouz4a92h)
+  * [Propositions vs. Judgments (computation)](#15jecbw4wi)
+* [Dependent typing](#ixfuhlqvcq)
+* [靜態連結二元檔Statically linking binaries](#f4xbb86h8t)
+* [補充資料](#kxdj4jh7dl)
+  * [對話記錄](#pcc5ncqc4c)
+
+# 社群 <a name="yd8x95rlwhg"></a>
 
 IRC頻道是Freenode上的`#haskell-beginners`。
 
@@ -12,7 +85,7 @@ IRC web版用戶端可[在這裡取得](http://webchat.freenode.net/)。
 
 Haskell[郵件群組](https://wiki.haskell.org/Mailing_lists)。
 
-### 社群參與原則
+## 社群參與原則 <a name="rnsxfn7ynp"></a>
 
 請參考Chris Done所撰：[Teaching](http://chrisdone.com/posts/teaching)。
 
@@ -30,23 +103,23 @@ Haskell[郵件群組](https://wiki.haskell.org/Mailing_lists)。
 
 以上部分內容來自[the Recurse Center手冊](https://www.recurse.com/manual)。感謝他們願意公開分享！
 
-# 什麼是Haskell、GHC和Cabal？
+# 什麼是Haskell、GHC和Cabal？ <a name="4i39589kvi"></a>
 
 Haskell的規格可在下面這篇報告找到，此報告最新版本為2010版：
 [onlinereport](http://www.haskell.org/onlinereport/haskell2010/)
 
-## GHC
+## GHC <a name="coeuwetq07h"></a>
 [GHC](http://www.haskell.org/ghc/)是Haskell語言的主流工具選擇。它包含編譯器、直譯器、套件管理，與其他輔助工具。
 
-## Cabal
+## Cabal <a name="eldq6ru03r"></a>
 [Cabal](https://www.haskell.org/cabal/download.html)可用來做專案管理與套件相依性解析。
 這會是你用來安裝專案、套件的主要工具，其常見的做法是安裝到專屬的沙箱(cabal sandbox)中。
 
 Cabal相當於Ruby Bundler、Python pip、Node NPM、Maven等等。你可以用GHC來打包套件，Cabal則可用來選擇你想要的版本安裝。
 
-# 環境設定
+# 環境設定 <a name="e4f38nxvbw"></a>
 
-## Ubuntu
+## Ubuntu <a name="i03w9ect4i"></a>
 [這個PPA](http://launchpad.net/~hvr/+archive/ghc)很棒，我在我所有的Linux環境與建置用機器上都靠它。
 
 詳細設定步驟如下：
@@ -69,9 +142,9 @@ $ sudo apt-get install cabal-install-1.20 ghc-7.8.4 happy-1.19.4 alex-3.1.3
 *註:* 你不妨把`.cabal-sandbox/bin`加到你的路徑中。如此一來，只要你使用沙箱(cabal sandbox)開發，並且
 留在專案的工作路徑中，你就可以在命令列中輕易取用你正在開發的二進位檔。
 
-## Debian
+## Debian <a name="19eryniaix"></a>
 
-### 使用Ubuntu PPA
+### 使用Ubuntu PPA <a name="edy3onfa1ck"></a>
 
 如果不打算使用官方提供的穩定版本，你可以用上面提過和Ubuntu一樣的流程，但會需要在下面這個命令後：
 
@@ -89,7 +162,7 @@ $ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
 
 把上列`jessie`換成`trusty`即可。
 
-### 自行編譯
+### 自行編譯 <a name="l4y6p284uy"></a>
 
 請參照這篇為Mac OSX所撰的指南：
 
@@ -98,20 +171,20 @@ $ sudo sed -i s/jessie/trusty/g /etc/apt/sources.list.d/hvr-ghc-jessie.list
 - 根據你個人的工作環境，設定ghc時指定目錄前綴(prefix)
 - 不要直接下載`cabal-install`的二進位檔，請下載源碼並執行其`bootstrap.sh`腳本。
 
-## Fedora 21
+## Fedora 21 <a name="sa6i5c3hf8"></a>
 
 從非官方套件庫安裝Haskell 7.8.4 (Fedora 22以上已經有官方版本)：
 
 ```bash
 $ sudo yum-config-manager --add-repo \
-> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo 
+> https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/repo/fedora-21/petersen-ghc-7.8.4-fedora-21.repo
 $ sudo yum install ghc cabal-install
 ```
 
 根據[petersen/ghc-7.8.4 copr page](https://copr.fedoraproject.org/coprs/petersen/ghc-7.8.4/)，此版本的ghc
 無法與Fedora/EPEL ghc並存。
 
-## Arch Linux
+## Arch Linux <a name="6bc9006vyv"></a>
 
 從官方套件庫安裝：
 
@@ -119,7 +192,7 @@ $ sudo yum install ghc cabal-install
 $ sudo pacman -S cabal-install ghc happy alex haddock
 ```
 
-## Gentoo
+## Gentoo <a name="s3vx4omvedh"></a>
 
 你可以透過Portage來分別安裝Haskell Platform的各個組件。如果你使用`ACCEPT_KEYWORDS=arch`，而非`ACCEPT_KETWORDS=~arch`，
 Portage會弄個老舊的Haskell給你。因此，舉凡用了`ACCEPT_KEYWORDS=arch`，請把下面這幾行加進去：
@@ -166,26 +239,26 @@ $ cabal install alex happy
 
 恭喜！你有了一個正常運作的Haskell！
 
-## Mac OS X
+## Mac OS X <a name="3433fqfal6"></a>
 
-### 10.9
+### 10.9 <a name="ffiw692243f"></a>
 
 請安裝[GHC for Mac OS X](http://ghcformacosx.github.io/)，它包含了GHC與Cabal。安裝完成後，
 它會指示你如何將GHC與Cabal加入你的系統路徑。
 
-### 10.6-10.8
+### 10.6-10.8 <a name="mgcbyeedpv"></a>
 
 請下載這個[tarball](https://www.haskell.org/platform/download/2014.2.0.0/ghc-7.8.3-x86_64-apple-darwin-r3.tar.bz2)，
 並安裝其包含的二進位版。
 
-## Windows
+## Windows <a name="28ylxwps8h"></a>
 
 - [windows minimal GHC installer](http://neilmitchell.blogspot.com/2014/12/beta-testing-windows-minimal-ghc.html)
   它可以用來編譯`network`等套件，雖然嚴格說它還在beta，但應該足夠讓任何讀這篇導覽的人使用。
 
 別忘了，要用系統管理者的身份來安裝，因為它需要新增到Program Files的權限。
 
-## 其他Linux使用者
+## 其他Linux使用者 <a name="ft6qde4fq1"></a>
 
 下載cabal與ghc的最新版二進位檔。
 
@@ -193,9 +266,9 @@ $ cabal install alex happy
 
 - [Cabal](https://www.haskell.org/cabal/download.html).
 
-# 主要學習課程
+# 主要學習課程 <a name="u9s7web75k"></a>
 
-## Yorgey's cis194課程
+## Yorgey's cis194課程 <a name="ybcm0f2g93i"></a>
 
 > *請先透過這門課學習*，這是我最推薦入門Haskell的課。
 
@@ -209,7 +282,7 @@ $ cabal install alex happy
 
 ---
 
-## FP課程
+## FP課程 <a name="wii9ptxb57"></a>
 
 > 在你完成上述Yorgey的cis194後，我推薦繼續挑戰此課程。
 
@@ -221,7 +294,7 @@ $ cabal install alex happy
 
 ---
 
-## 補充課程 cs240h
+## 補充課程 cs240h <a name="1cm6vuqx3vk"></a>
 
 > 提供更多中階以上議題的教材
 
@@ -233,28 +306,28 @@ $ cabal install alex happy
 
 ---
 
-### `<-` / `do` / list comprehension簡便語法到底是什麼？
+### `<-` / `do` / list comprehension簡便語法到底是什麼？ <a name="xlm2bq5lvwf"></a>
 
 [很棒的解釋](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html)。
 
-### 了解list和fold
+### 了解list和fold <a name="vnuurla8bsj"></a>
 
 - [Explain List Folds to Yourself](http://vimeo.com/64673035)
 
-### 學習常用的typeclasses
+### 學習常用的typeclasses <a name="ck4hju5tgbg"></a>
 
 對瞭解`Functor`、`Applicative`、`Monad`、`Monoid｀和其他typeclasses很有幫助，而且還有
 些針對Haskell的範疇論(category theory)的解釋：
 
 - [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
 
-### 了解基本的Haskell錯誤訊息
+### 了解基本的Haskell錯誤訊息 <a name="wdjdz2zmbq"></a>
 
 - [Understanding basic error messages](http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf)
 
 ---
 
-# Laziness, strictness, guarded recursion
+# Laziness, strictness, guarded recursion <a name="zv2luifl96"></a>
 
 - [Marlow關於平行與同步的書](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html)中，關於laziness與normal form的介紹
   是我所看過最好的。如果沒有立即理解，不妨搭配以下補充材料。
@@ -267,7 +340,7 @@ $ cabal install alex happy
 
 - [Johan Tibell](https://github.com/tibbe)'在[reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness)這個演講的投影片
 
-## 演示
+## 演示 <a name="cl4gztoi52"></a>
 
 ```haskell
 let a = 1 : a -- guarded recursion, (:) is lazy and can be pattern matched.
@@ -282,7 +355,7 @@ let a = 1 * a -- not guarded, (*) is strict
 *** Exception: <<loop>>
 ```
 
-# IO
+# IO <a name="oavt90id87k"></a>
 
 - [Evaluation order and State tokens](https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens)
 
@@ -300,7 +373,7 @@ let a = 1 * a -- not guarded, (*) is strict
 > 某個乾淨、lazy、類似Haskell的語言的型別有uniqueness特性(類似linear type，但可能有些
 > 我沒意識到的細微差別)，為了方便，它直接暴露World-passing並提供非抽象的IO monad。
 
-# Monads and monad transformers
+# Monads and monad transformers <a name="0df47k5de4"></a>
 
 > 在你了解typeclasses、Monoid、Functor和Applicative之前，請不要做下列練習！
 
@@ -320,27 +393,27 @@ Credits:
 
 - Reddit上jozefg[的留言](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg)。
 
-## Monad transformers
+## Monad transformers <a name="avodawdokn"></a>
 
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md)。
 
 - [Monad Transformers Step by Step](http://catamorph.de/documents/Transformers.pdf)
 
-# Testing, tests, specs, generative/property testing
+# Testing, tests, specs, generative/property testing <a name="hnr2jardqa"></a>
 
 - Kazu Yamamoto的[這篇教學](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md)堪稱典範！
 
 - [Simple-Conduit](https://github.com/jwiegley/simple-conduit)：這個簡單的函式庫對於學習IO串流如何工作很有幫助，
-  所學亦可應用在其他函式庫，例如Pipes和Conduit。 
+  所學亦可應用在其他函式庫，例如Pipes和Conduit。
 
-# Parsing in Haskell
+# Parsing in Haskell <a name="ur0scjjpa6"></a>
 
 - Parser combinator [tutorial](https://github.com/JakeWheat/intro_to_parsing)
   for Haskell using Parsec
 
 - [Writing your own micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
 
-## Parsing與產生JSON
+## Parsing與產生JSON <a name="0obyam5zix"></a>
 
 Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以從[hackage](https://hackage.haskell.org/package/aeson)或[github](https://github.com/bos/aeson)取得。
 
@@ -352,7 +425,7 @@ Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以�
 
 - [Aeson教學](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
 
-# 圖學演算法與資料結構
+# 圖學演算法與資料結構 <a name="1vpfbzu2rf"></a>
 
 - [fgl套件](https://hackage.haskell.org/package/fgl)。純函數式的最短路徑[演算法](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html)值得一看。
 
@@ -372,9 +445,9 @@ Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以�
 
 - [Hackage: dag](https://hackage.haskell.org/package/dag).
 
-# 開發環境
+# 開發環境 <a name="s5gwd9bf13"></a>
 
-## Emacs
+## Emacs <a name="3d5x2nskwx"></a>
 
 - [Alejandro Serras's tutorial](https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md)
 
@@ -382,7 +455,7 @@ Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以�
 
 - [Chris Done's emacs config](https://github.com/chrisdone/chrisdone-emacs)
 
-## Vim
+## Vim <a name="il7oa2j0ep"></a>
 
 - [Vim page on haskellwiki](http://www.haskell.org/haskellwiki/Vim)
 
@@ -396,18 +469,18 @@ Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以�
 
 - [Hindent](https://github.com/chrisdone/hindent)
 
-## Sublime Text
+## Sublime Text <a name="1qm6up7euvj"></a>
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
 
-# Cabal常見問答
+# Cabal常見問答 <a name="lmuvaicg3c"></a>
 
-## 一篇超讚的常見問答
+## 一篇超讚的常見問答 <a name="elxvde7p38"></a>
 
 不但對各種主題都有很好的導覽，也包含了Cabal的一些重要基礎。
 - [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
 
-## Cabal導覽
+## Cabal導覽 <a name="n2ir2e3v5jl"></a>
 在引入沙箱(sandbox)前，Cabal地獄(Cabal Hell)對所有Haskell使用者來說都是一大問題。
 在沙箱外安裝的套件會直接裝在你的用戶套件資料庫(user pacakge-db)中。除非是常用的基礎套件，
 例如Cabal、alex、happy等，這絕不是個好方法。除非你很清楚你自己在做什麼，任何套件都不該
@@ -426,7 +499,7 @@ Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以�
 預先編譯套件的方法不相容。如果你還在學習Haskell，而且不太了解ghc-pkg和Cabal如何運作，
 *不要用Haskell Platform*，改用前面所提的安裝方式。
 
-## Stackage
+## Stackage <a name="a8qli666hy"></a>
 
 如果你面臨一些建置上的問題(特別是Yesod)，不妨考慮用Stackage：
 
@@ -434,9 +507,9 @@ Aeson是Haskell標準的[JSON](https://json.org)parsing解決方案。你可以�
 
 據作者所言，Stackage通常比`cabal freeze`更實用。
 
-# Hoogle與Haddock
+# Hoogle與Haddock <a name="uebs90y451"></a>
 
-## 依型別表述搜尋源碼
+## 依型別表述搜尋源碼 <a name="pe11ov76sm"></a>
 
 [Hoogle搜尋引擎](http://www.haskell.org/hoogle/)可依型別搜尋。
 
@@ -448,11 +521,11 @@ fpcomplete所管理的[在此](https://www.fpcomplete.com/hoogle)。
 
 另外[Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html)預設開啟了對所有hackage的搜尋。
 
-## 設定你自己本地端的Hoogle
+## 設定你自己本地端的Hoogle <a name="ftryoiemfy"></a>
 
 詳細方法請看[這篇文章](https://gist.github.com/bitemyapp/3e6a015760775e0679bf)。
 
-## Haddock
+## Haddock <a name="a0isvz2ul5"></a>
 
 1. 修正你的hackage文件 [Fix your hackage documentation](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html)
 
@@ -460,7 +533,7 @@ fpcomplete所管理的[在此](https://www.fpcomplete.com/hoogle)。
 
 請注意，以上這些文章都*有些過期*，例如：現在Hacakge已支援shiny new info with documentation info and build status.
 
-## 真正重要的事
+## 真正重要的事 <a name="699ahk8tk8"></a>
 
 為了讓haddocks含入相關套件的文件，你必須在`~/.cabal/config`設立`ducumentation: True`。如果它被設為`False`，或間接被default(`False`)關閉，你會需要刪除並重新安裝所有套件，再產生haddocks。
 
@@ -469,16 +542,16 @@ fpcomplete所管理的[在此](https://www.fpcomplete.com/hoogle)。
 ```bash
 #! /usr/bin/env sh
 
-# 如果把反斜線去掉，你可以把它寫成一行
+# 如果把反斜線去掉，你可以把它寫成一行 <a name="f8mq5lhzx8"></a>
 cabal haddock --hoogle --hyperlink-source                       \
  --html-location='http://hackage.haskell.org/package/$pkg/docs' \
  --contents-location='http://hackage.haskell.org/package/$pkg'
 ```
 
-# TravisCI
+# TravisCI <a name="3fdcej0tv3"></a>
 如果你跟我一樣，是[TravisCI](https://travis-ci.org)的超級粉絲，那我*強力建議*你參考[multi-ghc-travis](https://github.com/hvr/multi-ghc-travis)為你的Haskell專案的`travis.yml`設定檔做基礎。
 
-# 前端/JavaScript
+# 前端/JavaScript <a name="o0retj9hsf"></a>
 我們的選擇多得驚人！我個人推薦三種：
 
 * [Haste](http://haste-lang.org/) Haskell至JavaScript的編譯器。a Haskell to JavaScript compiler
@@ -496,7 +569,7 @@ cabal haddock --hoogle --hyperlink-source                       \
   - 在瀏覽器上[試試](http://try.purescript.org/)
   - [起步導覽](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/)
 
-## 我用哪一種前端語言？
+## 我用哪一種前端語言？ <a name="98mcgvjgnef"></a>
 
 GHCJS和Haste都是純Haskell，GHCJS比Haste能和更多的Haskell套件相容，但這不會影響大多數的前端專案。PureScript並非Haskell，因此無法直接和你的後端分享源碼。
 
@@ -506,11 +579,11 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 以上三者都是極佳選擇，大多數的前端專案都適用。
 
-# 想要更充分了解laziness、NF、WHNF
+# 想要更充分了解laziness、NF、WHNF <a name="11inwismz7"></a>
 
 - [Notes on lambda calculus](https://vec.io/posts/notes-on-lambda-calculus).
 
-## 關於lazy lambda calculus的研究論文
+## 關於lazy lambda calculus的研究論文 <a name="rhlg83ah4z"></a>
 
 - [A call by need lambda calculus](http://homepages.inf.ed.ac.uk/wadler/topics/call-by-need.html#need-journal).
 
@@ -520,15 +593,15 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtml)
 
-# 平行／並行(Parallelism/Concurrency)
+# 平行／並行(Parallelism/Concurrency) <a name="rh2ir9ny52k"></a>
 
 - [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929)。在我所讀過的文獻中，Simon Marlow所撰的這本書是此主題的佼佼者。
 
 - [這篇教學](http://kukuruku.co/hub/haskell/haskell-testing-a-multithread-application)帶領你一步步學習如何用Haskell測試、漸進開發多緒應用程式。
 
 - [Functional Reactive Programming](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
- 
-# Lenses and Prisms
+
+# Lenses and Prisms <a name="ivqtph9s7z"></a>
 
 在你習慣Haskell後，我強烈建議你學習Lenses與Prisms。你不必了解底層的原理，只要當一個使用者，就很受用。
 
@@ -544,7 +617,7 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 詳細資料請看這裡：[Lens package on hackage](http://hackage.haskell.org/package/lens).
 
-# 遞迴範式 (Recursion Schemes)
+# 遞迴範式 (Recursion Schemes) <a name="3tp9k0v0n5"></a>
 
 你一定聽過些瘋狂的『\*-morphism』，他們其實只是遞迴。在嘗試搞懂前，你應該要先知道如何實作list至少一種其他資料結構的foldr，例如tree (folds叫做catamorphisms)。再進一步瞭解如何在以上資料結構實作unfold (anamorphism)會讓整體知識完善些。
 
@@ -562,7 +635,7 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - [Catamorphisms](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
 
-# GHC核心與效能調校
+# GHC核心與效能調校 <a name="ijxg5kq9n6"></a>
 
 - [Write Haskell as Fast as C](write_haskell_as_fast_as_c.md)
 
@@ -576,7 +649,7 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - [Real World Haskell, Chapter 25: Profiling and Optimizations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
 
-# 型別(Type)與範疇論(Category Theory)
+# 型別(Type)與範疇論(Category Theory) <a name="g5gtj2vh62"></a>
 
 > 寫Haskell*不用學*，僅供有興趣的人參考！
 
@@ -593,7 +666,7 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - Pierce的[Great Works in PL](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml)列表。
 
-## 書籍
+## 書籍 <a name="m74peapekm"></a>
 
 - Kmett推薦：[Quora Question: What is the best textbook for category theory?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1)
 
@@ -604,15 +677,15 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - [Type theory and Functional Programming](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
 
-## Stephen俏皮的"How to get to monad"文章
+## Stephen俏皮的"How to get to monad"文章 <a name="fizaz8v4wu"></a>
 
 - [Adjunctions](http://www.stephendiehl.com/posts/adjunctions.html).
 
 - [Monads](http://www.stephendiehl.com/posts/monads.html).
 
-# 其他有趣的主題
+# 其他有趣的主題 <a name="cakdu971aak"></a>
 
-## Parametricity, ad-hoc vs. parametric polymorphism, free theorems
+## Parametricity, ad-hoc vs. parametric polymorphism, free theorems <a name="pgu9vqyx6p"></a>
 
 - [Parametricity](tony_parametricity.pdf).
 
@@ -622,7 +695,7 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - [Theorems for Free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf).
 
-## Initial與Final、DSLs、與Tagless
+## Initial與Final、DSLs、與Tagless <a name="2v0hdbfa18"></a>
 
 - [Final Encodings, Part 1: A Quick Demonstration](http://creativelad.wordpress.com/2013/11/28/final-encodings-part-1-a-quick-demonstration/).
 
@@ -638,13 +711,13 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - [The dog that didn't bark](http://existentialtype.wordpress.com/2011/03/21/the-dog-that-didnt-bark/)較無相關，但非常有趣。
 
-## Comonads
+## Comonads <a name="kn523ydgb1"></a>
 
 - [Comonads in Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
 
 - [SO question: Can a Monad be a Comonad](https://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
 
-## Yoneda / CoYoneda
+## Yoneda / CoYoneda <a name="ilnouz4a92h"></a>
 
 - [SO question: Step-by-step explanation of coyoneda](https://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
@@ -653,13 +726,13 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
   * [Part 2: Yoneda](http://comonad.com/reader/2011/free-monads-for-less-2/).
   * [Part 3: Yielding IO](http://comonad.com/reader/2011/free-monads-for-less-3/).
 
-## Propositions vs. Judgments (computation)
+## Propositions vs. Judgments (computation) <a name="15jecbw4wi"></a>
 
 - [StackExchange question: What is the difference between propositions and judgements](http://cstheory.stackexchange.com/questions/9826/what-is-the-difference-between-propositions-and-judgments).
 
 - [Lecture notes from a short, three lecture course](http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf)
 
-# Dependent typing
+# Dependent typing <a name="ixfuhlqvcq"></a>
 
 - [Grokking sum types, value constructors, and type constructors](http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html) squint hard.
 
@@ -667,7 +740,7 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - [Idris programming language](http://www.idris-lang.org/).
 
-# 靜態連結二元檔Statically linking binaries
+# 靜態連結二元檔Statically linking binaries <a name="f4xbb86h8t"></a>
 
 - [Static linking](https://wiki.haskell.org/Web/Literature/Static_linking)
 
@@ -677,13 +750,13 @@ PureScript有最好的JS工具鏈整合(用gulp/grunt/bower)，GHCJS和Haste則�
 
 - [Statically link GMP using GHC and LLVM](https://stackoverflow.com/questions/10539857/statically-link-gmp-to-an-haskell-application-using-ghc-llvm)
 
-# 補充資料
+# 補充資料 <a name="kxdj4jh7dl"></a>
 
 > 有部分已在本文提及
 
 - [Essential Haskell Reading List](http://www.stephendiehl.com/posts/essential_haskell.html)
 
-## 對話記錄
+## 對話記錄 <a name="pcc5ncqc4c"></a>
 
 > 在[本儲存庫中](dialogues.md)。
 

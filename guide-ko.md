@@ -32,7 +32,23 @@
 
 #### _이해가 잘 안된다고 계속 붙잡고 있지 마세요_. 진도를 계속 나가세요!
 
-## 커뮤니티
+# 콘텐츠
+* [커뮤니티](#4cd77v0mug)
+  * [커뮤니티 규칙](#7baunmxdorg)
+* [하스켈 설치하기](#hckz180qhx)
+  * [하스켈을 설치하기 위해 Stack을 사용하세요](#sl3n63vyd2)
+  * [그리고 HASKELL PLATFORM으로 설치하지 마세요](#pqyodgoi74)
+    * [왜 platform을 사용하면 안되나요?](#33azdow203h)
+* [하스켈을 어떻게 배워야 하나요?](#bcmv3pasd4)
+  * [Haskell Programming from First Principles.](#kywv8nprnv)
+    * [Haskell Book은 여기에서 권장되는 모든 주요 내용을 포함합니다.](#rzcuvv6adx)
+  * [Yorgey의 cis194 강의](#irw2xq38cg)
+  * [함수형 프로그래밍 강의](#9q00lzbuvr)
+  * [cis194와 FP강의를 본 후의 보충강의](#9h50ct1d1y)
+* [Haskell의 특정 주제에 대한 자료](#4hd4ow38vt)
+  * [토론](#4ij1gxs9md)
+
+# 커뮤니티 <a name="4cd77v0mug"></a>
 
 저희 IRC 체널은 Freenode의 `#haskell-beginners` 입니다.
 
@@ -40,37 +56,37 @@ IRC 웹 클라이언트 [here](http://webchat.freenode.net/).
 
 하스켈 [메일링 리스트](https://wiki.haskell.org/Mailing_lists).
 
-### 커뮤니티 규칙
+## 커뮤니티 규칙 <a name="7baunmxdorg"></a>
 
 IRC 체널의 [커뮤니티 규칙](cdc.md)을 꼭 읽어주세요. 여러분이 지나치게 트롤링을 하지 않는 한 경고로 끝나겠지만, 반드시 이 체널은 하스켈을 배우고 가르치는 공간이라는 점을 명심해주세요.
 
-# 하스켈 설치하기
+# 하스켈 설치하기 <a name="hckz180qhx"></a>
 
-## 하스켈을 설치하기 위해 Stack을 사용하세요
+## 하스켈을 설치하기 위해 Stack을 사용하세요 <a name="sl3n63vyd2"></a>
 
 GHC를 설치하고 프로젝트를 만들기 위해 [Stack](https://haskellstack.org)을 사용하세요.
 
 Stack을 처음 들어보거나 개요를 보기 원하신다면, [comprehensive Stack video tutorial](https://www.youtube.com/watch?v=sRonIB8ZStw)을 참고하세요.
 
-## 그리고 HASKELL PLATFORM으로 설치하지 마세요
+## 그리고 HASKELL PLATFORM으로 설치하지 마세요 <a name="pqyodgoi74"></a>
 
 Haskell.org에서 지시하는 대로 설치하지 마시고, Stack을 사용하세요.
 
-### 왜 platform을 사용하면 안되나요?
+### 왜 platform을 사용하면 안되나요? <a name="33azdow203h"></a>
 
 https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
-# 하스켈을 어떻게 배워야 하나요?
+# 하스켈을 어떻게 배워야 하나요? <a name="bcmv3pasd4"></a>
 
 저희들은 2013년 봄학기 cis194 강의에 있는 모든 문제를 풀어본 다음에 FP강의를 듣는 방법을 추천합니다. 두 강의 모두 아래에 링크가 걸려있습니다. 그 외에는 선택이며, 여러분이 찾을 수 있도록 아래에 링크가 있습니다.
 
-## Haskell Programming from First Principles.
+## Haskell Programming from First Principles. <a name="kywv8nprnv"></a>
 
 [@dmvianna](https://github.com/dmvianna)는 아래의 내용이 무료 권장 자료 일 뿐이라는 사실을 알려 드리고자합니다. 하지만 만약 책으로 보고 싶다면, 제가 쓴 [Haskell Book!](https://haskellbook.com)을 진심으로 추천합니다. 만약 어떤 이유로든 책을 구입할 여유가 없으면 [our support page](https://haskellbook.com/support.html)로 연락해주세요.
 
-### Haskell Book은 여기에서 권장되는 모든 주요 내용을 포함합니다.
+### Haskell Book은 여기에서 권장되는 모든 주요 내용을 포함합니다. <a name="rzcuvv6adx"></a>
 
-## Yorgey의 cis194 강의
+## Yorgey의 cis194 강의 <a name="irw2xq38cg"></a>
 
 > Haskell Book을 구매하지 않았다면 이 강의를 먼저 들으세요. Haskell 입문을 위한 최고의 수업입니다.
 
@@ -82,7 +98,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ---
 
-## 함수형 프로그래밍 강의
+## 함수형 프로그래밍 강의 <a name="9q00lzbuvr"></a>
 
 > 이 강의는 Yorgey의 cis194 강의를 모두 보신 후에 추천드리는 강의입니다.
 
@@ -94,7 +110,7 @@ cis194를 먼저 보고 FP강의를 보는 방법이 저희들이 추천하는 �
 
 ---
 
-## cis194와 FP강의를 본 후의 보충강의
+## cis194와 FP강의를 본 후의 보충강의 <a name="9h50ct1d1y"></a>
 
 > 더 많은 자료와 중급 주제를 제공합니다.
 
@@ -108,11 +124,11 @@ cis194를 끝마쳤다면 phantom types나 information flow control, language ex
 
 ---
 
-# Haskell의 특정 주제에 대한 자료
+# Haskell의 특정 주제에 대한 자료 <a name="4hd4ow38vt"></a>
 
 이 자료들은 cis194와 FP강의를 들은 사람들에 대해 점검해보지 않았지만, 여러분이 어디서 시작해야 할지 도와주기 위해 [주제 리스트](specific_topucs.md)에 링크를 모아두었습니다. 이 리스트에는 툴과 에디터 같은 중급이나 고급정도의 개념들과 주제도 담겨있습니다.
 
-## 토론
+## 토론 <a name="4ij1gxs9md"></a>
 
 > [이 저장소](dialogues.md)에 있습니다.
 

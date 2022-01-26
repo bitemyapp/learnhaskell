@@ -4,7 +4,24 @@
 
 #### _如果遇到不懂的地方也不要紧张。继续读下去！_
 
-## 社群
+# 内容
+* [社群](#6u57sgoch5)
+  * [社群参与原则](#m351a5j702)
+* [安装 Haskell](#a14vv61zkr)
+  * [通过 Stack 使用 Haskell](#xhnulb9pfwj)
+  * [还有，不要安装 Haskell Platform](#8nl4hrv6kzg)
+    * [为什么不使用 platform?](#fincxqpnn3)
+* [我该如何学习 Haskell？](#7r4jvw6m4h)
+  * [Haskell 编程：从第一原理开始](#0azxjpp5d7)
+    * [Haskell Book 书包含了这里列出的全部基础资料（包含的内容）](#zv2prc963w)
+  * [Yorgey 的 cis194 课程](#srhv943vnd)
+  * [函数式编程课程](#818o775z2v)
+  * [cis194 和 FP 课程之后的补充课程](#8b78pn5zl4)
+* [补充资料](#4o8tk0f449)
+  * [译著](#25vsuzsjjb)
+  * [对话记录](#j0ho9sstne)
+
+# 社群 <a name="6u57sgoch5"></a>
 
 IRC 频道：Freenode 上的 `#haskell-beginners`。
 
@@ -12,37 +29,37 @@ IRC web 版[客户端](http://webchat.freenode.net/)。
 
 Haskell [邮件群组](https://wiki.haskell.org/Mailing_lists)。
 
-### 社群参与原则
+## 社群参与原则 <a name="m351a5j702"></a>
 
 阅读我们的[社群参与原则](coc.md)，了解在 IRC 频道应遵守的原则。变相的攻讦行为将会被警告。请注意，这个频道是专为学习和教授 Haskell 的人准备的。
 
-# 安装 Haskell
+# 安装 Haskell <a name="a14vv61zkr"></a>
 
-## 通过 Stack 使用 Haskell
+## 通过 Stack 使用 Haskell <a name="xhnulb9pfwj"></a>
 
 获取 [Stack](https://haskellstack.org) 来安装 GHC 并构建你的项目。
 
 如果你对 Stack 一无所知，又想了解一下，可以看看这个[全面的 Stack 视频教程](https://www.youtube.com/watch?v=sRonIB8ZStw)。
 
-## 还有，不要安装 Haskell Platform
+## 还有，不要安装 Haskell Platform <a name="8nl4hrv6kzg"></a>
 
 直接使用 Stack，而不要遵循 Haskell.org 里面的说明。
 
-### 为什么不使用 platform?
+### 为什么不使用 platform? <a name="fincxqpnn3"></a>
 
 https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
-# 我该如何学习 Haskell？
+# 我该如何学习 Haskell？ <a name="7r4jvw6m4h"></a>
 
 推荐的核心是阅读 cis194 课程（2013 年春季学期版）的讲解并完成所有习题和作业，然后是 FP 课程。下方列出了两门课的链接。其他的所有内容都可以视为选学内容，我们就在这里提一下是为了让你知道该到哪里找到它们。
 
-## Haskell 编程：从第一原理开始
+## Haskell 编程：从第一原理开始 <a name="0azxjpp5d7"></a>
 
 [@dmvianna](https://github.com/dmvianna) 让我告诉你，下面列出的都只是*免费*的推荐资料。如果你愿意看书，衷心推荐我们自己写的 [Haskell 书](https://haskellbook.com/)！如果你因为某些原因买不起这本书，请使用[支持页面](https://haskellbook.com/support.html)里的联系方式发邮件给我们。
 
-### Haskell Book 书包含了这里列出的全部基础资料（包含的内容）
+### Haskell Book 书包含了这里列出的全部基础资料（包含的内容） <a name="zv2prc963w"></a>
 
-## Yorgey 的 cis194 课程
+## Yorgey 的 cis194 课程 <a name="srhv943vnd"></a>
 
 > 如果/你不打算买那本 Haskell 书，那就*先学习*本课程，它是最好的免费 Haskell 入门介绍。
 
@@ -54,7 +71,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ---
 
-## 函数式编程课程
+## 函数式编程课程 <a name="818o775z2v"></a>
 
 > 我们推荐你在完成 Yorgey 的 cis194 课程之后再学习这门课。
 
@@ -64,7 +81,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ---
 
-## cis194 和 FP 课程之后的补充课程
+## cis194 和 FP 课程之后的补充课程 <a name="8b78pn5zl4"></a>
 
 > 这门课提供了更多中级材料
 
@@ -77,15 +94,15 @@ cs240h 可从线上获取
 
 ---
 
-# 补充资料
+# 补充资料 <a name="4o8tk0f449"></a>
 
 这些资料不像 cis194 和 FP 课程那样经过了学习者的共同把关和评测，它们的链接都在[主题清单](/specific_topics.md)里，方便你知道从哪里开始。这里面涉及中高级的概念和课题，比如工具和文本编辑器。
 
-## 译著
+## 译著 <a name="25vsuzsjjb"></a>
 
 补充资料部分的旧版中译可从[这里](https://github.com/bitemyapp/learnhaskell/blob/213dcb9decdce7f6f472247f0d4b82447e015f1d/guide-zh_CN.md#---do--list-comprehension%E7%AE%80%E4%BE%BF%E8%AF%AD%E6%B3%95%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88)获得。
 
-## 对话记录
+## 对话记录 <a name="j0ho9sstne"></a>
 
 > 存放在[这个仓库](dialogues.md)里。
 

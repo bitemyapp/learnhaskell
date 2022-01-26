@@ -32,7 +32,67 @@
 
 #### *Не намагайтесь одразу зрозуміти все*. Краще не зупиняйтесь і продовжуйте рухатись далі!
 
-## Ком’юніті
+* [Ком’юніті](#3tk13ob3xi)
+  * [Норми та правила спільноти](#z0u6gmyq6a)
+* [Встановлення Haskell](#oe1pgrpja9)
+  * [Використовуйте Stack для початку роботи з Haskell](#r8myxytjlei)
+  * [НЕ ВСТАНОВЛЮЙТЕ HASKELL PLATFORM](#ztkqbo1sq3)
+  * [Чому не Haskell Platform?](#o5hrogwpp8)
+* [Як мені слід вивчати Haskell?](#ort1rb7igcj)
+  * [Альтернативно...](#tdawnch6ke)
+  * [Курс cis194 від Yorgey](#wl6ol1gl3w)
+  * [Курс FP](#kyyvvwv3ajk)
+  * [Додаткові матеріали після курсів cis194 та FP](#bhnz3etecx)
+* [Ресурси, що розглядають конкретні теми Haskell](#u7sxorkrup)
+* [Конкретні питання по Haskell](#auf3g0yr6n)
+    * [Що роблять синтаксичні конструкції `<-` / `do` / спискове включення?](#p2oii8v6mr)
+    * [Щоб зрозуміти списки та згортання списків (fold)](#dzsabjajkq)
+    * [Щоб вивчити деякі відомі класи типів](#1qdxrl1einf)
+    * [Розуміння базових повідомлень про помилки від Haskell](#rb8urvn9rr)
+* [Лінивість, строгість, стримана рекурсія](#f5bvuqwetd)
+  * [Маленька демонстрація](#ww1uetgpjx)
+* [IO](#v7tt7f6naa)
+* [Монади та їх трансформери](#rar1i9ok5mi)
+  * [Трансформери монад](#bybo2puv5f)
+* [Тестування, тести, специфікації, тестування властивостей та генеративне](#48mgsvlcwf)
+* [Парсинг у Haskell](#z7obc2zall)
+  * [Парсинг та генерація JSON](#jmuaapdq4w)
+* [Структури даних та алгоритми для роботи з графами](#yxxu2nq4tc)
+* [Середовище розробки](#2y4i08dcft)
+  * [Emacs](#x0zikw4se7)
+  * [Vim](#wipy3fxesv)
+  * [Sublime Text](#8si1ofsehkf)
+* [Робота із Cabal](#yv2p7qgmd3)
+  * [Принципи роботи з Cabal](#i9ixdpgm6h)
+  * [Stackage](#vco7jlujte)
+* [Hoogle and Haddock](#dz0s4m6iz1)
+  * [Шукайте код за сигнатурою типів](#r9xvferugo)
+  * [Налаштування власної локальної копії Hoogle](#hex3csuu16)
+  * [Haddock](#96azeun2pf)
+  * [Що дійсно треба знати](#59pdx72t1a)
+* [Цю команду можна записати в один рядок, але тоді приберіть слеші](#ab9lxcvksy)
+* [TravisCI](#28uuo2zbme)
+* [Frontend/JavaScript](#9agw3uhu3u)
+  * [Яку мову використовувати для фронтенду](#83c1qr2ecef)
+* [Для більш повного розуміння лінивості NF, WHNF](#nwacgyc07x)
+  * [Дослідницькі папери про ліниве лямбда-числення](#4i0uklokx3)
+* [Паралелізм/конкаренсі](#ng0xdfwx6k)
+* [Lenses та Prisms](#5uea2v8yjf)
+* [Схеми рекурсії](#9yin7ora6h)
+* [GHC Core та оптимізація швидкості виконання](#9zycl4bnhf)
+* [Типи та теорія категорій](#eydr938ubc)
+  * [Книги](#gmc7vpz4lx)
+* [Інші веселі теми](#t1yw35nfapj)
+  * [Параметричність, ad-hoc та параметричний поліморфізм, вільні теореми](#2h3bczeca7)
+  * [Initial та Final, DSL, Finally Tagless](#ldngh6akfj)
+  * [Комонади](#ym4plrmult)
+  * [Yoneda / CoYoneda](#tcro22kj1lh)
+  * [Propositions vs. Judgments (обчислення)](#zrcdpsnfpy)
+* [Залежна типізація](#1abec048ev)
+* [Статична лінковка бінарників](#yzk6jpu9oy)
+  * [Діалоги](#hqfdip8h3z)
+
+# Ком’юніті <a name="3tk13ob3xi"></a>
 
 Наш канал в IRC -  `#haskell-beginners` на серверах Freenode.
 
@@ -42,7 +102,7 @@
 
 Отримати допомогу українською можна в [Slack-чаті KyivHaskell](https://github.com/KyivHaskell/KyivHaskell#join-our-slack-channel) або [Gitter-чаті dou-ua/fp](https://gitter.im/dou-ua/fp).
 
-### Норми та правила спільноти
+## Норми та правила спільноти <a name="z0u6gmyq6a"></a>
 
 [Прочитайте допис Кріса Дона присвячений навчанню](http://chrisdone.com/posts/teaching)
 
@@ -62,31 +122,31 @@
 
 Якщо ви не займаєтесь відвертим тролінгом, то на каналі ви можете отримати зауваження. Завжди зважайте на те, що канал створено для людей, які або самотужки вивчають Haskell або вчать програмуванню на ньому інших.
 
-# Встановлення Haskell
+# Встановлення Haskell <a name="oe1pgrpja9"></a>
 
-## Використовуйте Stack для початку роботи з Haskell
+## Використовуйте Stack для початку роботи з Haskell <a name="r8myxytjlei"></a>
 
 Встановіть [Stack](https://haskellstack.org/) щоби встановити GHC та збирати свої проекти.
 
 Якщо ви не знаєте нічого про Stack та хотіли би отримати огляд — подивіться цей [відео туторіал](https://www.youtube.com/watch?v=sRonIB8ZStw).
 
-## НЕ ВСТАНОВЛЮЙТЕ HASKELL PLATFORM
+## НЕ ВСТАНОВЛЮЙТЕ HASKELL PLATFORM <a name="ztkqbo1sq3"></a>
 
 Замість того, щоб слідувати інструкції на Haskell.org, використовуйте Stack.
 
-## Чому не Haskell Platform?
+## Чому не Haskell Platform? <a name="o5hrogwpp8"></a>
 
 https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
-# Як мені слід вивчати Haskell?
+# Як мені слід вивчати Haskell? <a name="ort1rb7igcj"></a>
 
 Основна рекомендація - прочитати лекції та пройти всі вправи та домашні завдання версії Spring 13 курсу cis194, потім пройти курс FP (посилання на обидва курси нижче). Все інше можна вважати додатковим матеріалом, який згадується для того, щоб ви знали, де шукати.
 
-## Альтернативно...
+## Альтернативно... <a name="tdawnch6ke"></a>
 
 [@dmvianna](https://github.com/dmvianna) хотіла, щоби я вам передав, що це лише ресурси для безкоштовного вивчення. Якщо ви хочете купити книгу, ми сердешно рекомендуємо нашу власну [Haskell Book!](https://haskellbook.com/)! Ця книга замінює необхідність всіх інших ресурсів, перелічених тут.
 
-## Курс cis194 від Yorgey
+## Курс cis194 від Yorgey <a name="wl6ol1gl3w"></a>
 
 > *ПОЧНІТЬ З ЦЬОГО*, це головний рекомендований метод занурення в Haskell.
 
@@ -98,7 +158,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ---
 
-## Курс FP
+## Курс FP <a name="kyyvvwv3ajk"></a>
 
 > Цей курс рекомендовано до вивчання після закінчення курсу cis194
 
@@ -109,7 +169,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ---
 
-## Додаткові матеріали після курсів cis194 та FP
+## Додаткові матеріали після курсів cis194 та FP <a name="bhnz3etecx"></a>
 
 > Додатковий матеріал на більш складні теми
 
@@ -120,34 +180,34 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ---
 
-# Ресурси, що розглядають конкретні теми Haskell
+# Ресурси, що розглядають конкретні теми Haskell <a name="u7sxorkrup"></a>
 
 На додаток пропонуються матеріали, присвячені поглибленному вивчанню більш складних тем, а також обговорюють інструменти розробки та текстові редактори. Ці матеріали не були випробувані у навчальних цілях так ретельно, як cis194 та FP, але їх список можна передивитись
 
 
-# Конкретні питання по Haskell
+# Конкретні питання по Haskell <a name="auf3g0yr6n"></a>
 
-### Що роблять синтаксичні конструкції `<-` / `do` / спискове включення?
+### Що роблять синтаксичні конструкції `<-` / `do` / спискове включення? <a name="p2oii8v6mr"></a>
 
 [Чудова стаття](http://www.haskellforall.com/2014/10/how-to-desugar-haskell-code.html) розглядає ці питання.
 
-### Щоб зрозуміти списки та згортання списків (fold)
+### Щоб зрозуміти списки та згортання списків (fold) <a name="dzsabjajkq"></a>
 
 - [Explain List Folds to Yourself](http://vimeo.com/64673035)
 
-### Щоб вивчити деякі відомі класи типів
+### Щоб вивчити деякі відомі класи типів <a name="1qdxrl1einf"></a>
 
 Матеріал, що дуже корисний для розуміння `Functor`, `Applicative`, `Monad`, `Monoid` та інших класів типів в цілому, а також трохи специіфчної для Haskell теорії категорій.
 
 - [Typeclassopedia](http://www.haskell.org/haskellwiki/Typeclassopedia)
 
-### Розуміння базових повідомлень про помилки від Haskell
+### Розуміння базових повідомлень про помилки від Haskell <a name="rb8urvn9rr"></a>
 
 - [Understanding basic error messages](http://ics.p.lodz.pl/~stolarek/_media/pl:research:stolarek_understanding_basic_haskell_error_messages.pdf)
 
 ---
 
-# Лінивість, строгість, стримана рекурсія
+# Лінивість, строгість, стримана рекурсія <a name="f5bvuqwetd"></a>
 
 - [Книга Марлоу](http://chimera.labs.oreilly.com/books/1230000000929/ch02.html) (Marlow) про паралелизм та сумісне виконання має одне з
   найкращих введень в лінивість та нормальні форми. Якщо матеріал з неї не буде засвоюватись, зверніться до інших джерел.
@@ -160,7 +220,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 - Слайди з виступу [Johan Tibell](https://github.com/tibbe) на тему [reasoning about laziness](http://www.slideshare.net/tibbe/reasoning-about-laziness).
 
-## Маленька демонстрація
+## Маленька демонстрація <a name="ww1uetgpjx"></a>
 
 ```haskell
 let a = 1 : a -- guarded recursion, (:) is lazy and can be pattern matched.
@@ -175,7 +235,7 @@ let a = 1 * a -- not guarded, (*) is strict
 *** Exception: <<loop>>
 ```
 
-# IO
+# IO <a name="v7tt7f6naa"></a>
 
 - [Evaluation order and State tokens](https://www.fpcomplete.com/user/snoyberg/general-haskell/advanced/evaluation-order-and-state-tokens)
 
@@ -203,7 +263,7 @@ let a = 1 * a -- not guarded, (*) is strict
 > World-passing directly and provide a (non-abstract) IO monad only for
 > convenience.
 
-# Монади та їх трансформери
+# Монади та їх трансформери <a name="rar1i9ok5mi"></a>
 
 > Не займатесь цим доки ви не розумієете класи типів, Monoid, Functor, Applicative!
 
@@ -224,25 +284,25 @@ let a = 1 * a -- not guarded, (*) is strict
 - Коментар на Reddit від jozefg [here](https://www.reddit.com/r/haskell/comments/29eke6/basic_program_ideas_for_learning_about_monads/cik5trg).
 
 
-## Трансформери монад
+## Трансформери монад <a name="bybo2puv5f"></a>
 
 - [A gentle introduction to Monad Transformers](https://github.com/kqr/gists/blob/master/articles/gentle-introduction-monad-transformers.md).
 
 - [Monad transformers step-by-step](http://catamorph.de/documents/Transformers.pdf).
 
-# Тестування, тести, специфікації, тестування властивостей та генеративне
+# Тестування, тести, специфікації, тестування властивостей та генеративне <a name="48mgsvlcwf"></a>
 
 - [Фантастичний посібник](https://github.com/kazu-yamamoto/unit-test-example/blob/master/markdown/en/tutorial.md) від Kazu Yamamoto.
 
 - [Simple-Conduit](https://github.com/jwiegley/simple-conduit): Гарна маленька бібліотека, яка допомогає зрозуміти, як загалом працює потоковий IO. Це знання можна відобразити на бібліотеки типу Pipes та Conduit.
 
-# Парсинг у Haskell
+# Парсинг у Haskell <a name="z7obc2zall"></a>
 
 - [Посібник](https://github.com/JakeWheat/intro_to_parsing) з комбінаторів парсеру із використанням Parsec
 
 - [Writing your own micro-Parsec](http://olenhad.me/articles/monadic-parsers/)
 
-## Парсинг та генерація JSON
+## Парсинг та генерація JSON <a name="jmuaapdq4w"></a>
 
 Aeson - стандартне рішення для парсингу [JSON](https://json.org) в Haskell. Цей пакет доступний на [hackage](https://hackage.haskell.org/package/aeson) та
 [github](https://github.com/bos/aeson).
@@ -255,7 +315,7 @@ Aeson - стандартне рішення для парсингу [JSON](https
 
 - [Aeson tutorial](https://www.fpcomplete.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json)
 
-# Структури даних та алгоритми для роботи з графами
+# Структури даних та алгоритми для роботи з графами <a name="yxxu2nq4tc"></a>
 
 - [Пакет fgl](https://hackage.haskell.org/package/fgl), зокрема чисто функціональні [алгоритми найкоротшого шляху](http://hackage.haskell.org/package/fgl-5.4.2.2/docs/Data-Graph-Inductive-Query-SP.html).
 
@@ -275,9 +335,9 @@ Aeson - стандартне рішення для парсингу [JSON](https
 
 - [Hackage: dag](https://hackage.haskell.org/package/dag).
 
-# Середовище розробки
+# Середовище розробки <a name="2y4i08dcft"></a>
 
-## Emacs
+## Emacs <a name="x0zikw4se7"></a>
 
 - [Посібник від Alejandro Serras](https://github.com/serras/emacs-haskell-tutorial/blob/master/tutorial.md)
 
@@ -285,7 +345,7 @@ Aeson - стандартне рішення для парсингу [JSON](https
 
 - [Chris Done's emacs config](https://github.com/chrisdone/chrisdone-emacs)
 
-## Vim
+## Vim <a name="wipy3fxesv"></a>
 
 - [Vim page on haskellwiki](http://www.haskell.org/haskellwiki/Vim)
 
@@ -297,13 +357,13 @@ Aeson - стандартне рішення для парсингу [JSON](https
 
 - [Hindent](https://github.com/chrisdone/hindent)
 
-## Sublime Text
+## Sublime Text <a name="8si1ofsehkf"></a>
 
 - [SublimeHaskell](https://github.com/SublimeHaskell/SublimeHaskell)
 
-# Робота із Cabal
+# Робота із Cabal <a name="yv2p7qgmd3"></a>
 
-## Принципи роботи з Cabal
+## Принципи роботи з Cabal <a name="i9ixdpgm6h"></a>
 
 До того, як з'явились так звані сендбокси, користувачі Haskell стикались з проблемою, відомою як Cabal Hell. Встановлення пакетів поза сендбоксом призведе до реєстрації його у базі package-db, що є глобальною для користувача, і зазвичай це не дуже гарна ідея. Виключенням є лише найбазовіші пакети накшталт Cabal, alex, happy. Нічого іншого не мусить встановлюватись у package-db глобальний для системи або користувача окрім випадків, коли ви дійсно знаєте, що робите.
 
@@ -320,7 +380,7 @@ Aeson - стандартне рішення для парсингу [JSON](https
 
 Рекомендований тут підхід, що базується на  використанні сендбоксів, призначений допомогти обійти проблеми із залежностями, але він не сумісний із тим, як Haskell Platform надає готові пакунки. Якщо ви ще тільки вивчаєте Haskell і не розумієте, як працють ghc-pkg and Cabal, *уникайте platform* і замість того використовуйте підхід, що описано раніше в цьому посібнику.
 
-## Stackage
+## Stackage <a name="vco7jlujte"></a>
 
 Усі користувачі, в яких є проблеми з білдами (зазвичай це користувачі Yesod), мають можливість обміркувати використання Stackage.
 
@@ -329,9 +389,9 @@ Aeson - стандартне рішення для парсингу [JSON](https
 Автор вважає, що Stackage, зазвичай, більш корисний, ніж `cabal freeze`.
 
 
-# Hoogle and Haddock
+# Hoogle and Haddock <a name="dz0s4m6iz1"></a>
 
-## Шукайте код за сигнатурою типів
+## Шукайте код за сигнатурою типів <a name="r9xvferugo"></a>
 
 [Пошуковий сервіс Hoogle](http://www.haskell.org/hoogle/) вміє шукати за типом.
 
@@ -343,11 +403,11 @@ Aeson - стандартне рішення для парсингу [JSON](https
 Ще є [Hayoo](http://holumbus.fh-wedel.de/hayoo/hayoo.html) (який для пошуку за замовченням використовує увесь зміст hackage).
 
 
-## Налаштування власної локальної копії Hoogle
+## Налаштування власної локальної копії Hoogle <a name="hex3csuu16"></a>
 
 [Описано тут](https://gist.github.com/bitemyapp/3e6a015760775e0679bf).
 
-## Haddock
+## Haddock <a name="96azeun2pf"></a>
 
 1. [Fix your hackage documentation](http://fuuzetsu.co.uk/blog/posts/2014-01-06-Fix-your-Hackage-documentation.html)
 
@@ -356,7 +416,7 @@ Aeson - стандартне рішення для парсингу [JSON](https
 Зауваження: обидві статті *трошки застаріли*: наприклад, зараз Hackage також показує новесеньку інформацію стосовно статусу білда і документації.
 
 
-## Що дійсно треба знати
+## Що дійсно треба знати <a name="59pdx72t1a"></a>
 
 Для того, щоб haddocks містив документацію і з пакунків, які стосуються вашого проекту, треба додати `documentation: True` до вашого `~/.cabal/config`. Якщо було використане значення за замовчуванням (`False`) або `False` було встановлене вручну, то перед генерацією haddocks необхідно буде видалити всі ваші пакунки і заново переінсталювати їх.
 
@@ -365,17 +425,17 @@ Aeson - стандартне рішення для парсингу [JSON](https
 ```bash
 #! /usr/bin/env sh
 
-# Цю команду можна записати в один рядок, але тоді приберіть слеші
+# Цю команду можна записати в один рядок, але тоді приберіть слеші <a name="ab9lxcvksy"></a>
 cabal haddock --hoogle --hyperlink-source                       \
  --html-location='http://hackage.haskell.org/package/$pkg/docs' \
  --contents-location='http://hackage.haskell.org/package/$pkg'
 ```
 
-# TravisCI
+# TravisCI <a name="28uuo2zbme"></a>
 
 Якщо ви є великим шанувальником [TravisCI](https://travis-ci.org), тоді *дуже* рекомендується подивитись на [multi-ghc-travis](https://github.com/hvr/multi-ghc-travis) як на базовий приклад `travis.yml` для ваших Haskell-проектів.
 
-# Frontend/JavaScript
+# Frontend/JavaScript <a name="9agw3uhu3u"></a>
 
 Тут в нас є просто безліч різноманітних варіантів. Ось три базові рекомендації:
 
@@ -394,7 +454,7 @@ cabal haddock --hoogle --hyperlink-source                       \
   - Спробувати PureScript прямо у браузері можна [тут](http://try.purescript.org/)
   - [Чудовий посібник](http://www.christopherbiscardi.com/2014/06/22/getting-started-with-purescript/) про те, як почати працювати з PureScript
 
-## Яку мову використовувати для фронтенду
+## Яку мову використовувати для фронтенду <a name="83c1qr2ecef"></a>
 
 
 І GHCJS, і Haste є повноцінними реалізаціями Haskell. Під GHCJS будуть працювати більше Haskell проектів, ніж із Haste, але це не дуже впливає на розробку фронтенд-проектів.
@@ -408,11 +468,11 @@ Haste та PureScript більш-менш однакові.
 Усі три - чудовий вибір і підходять для більшості фронтендових проектів.
 
 
-# Для більш повного розуміння лінивості NF, WHNF
+# Для більш повного розуміння лінивості NF, WHNF <a name="nwacgyc07x"></a>
 
 - [Notes on lambda calculus](https://vec.io/posts/notes-on-lambda-calculus).
 
-## Дослідницькі папери про ліниве лямбда-числення
+## Дослідницькі папери про ліниве лямбда-числення <a name="4i0uklokx3"></a>
 
 - [A call by need lambda calculus](http://homepages.inf.ed.ac.uk/wadler/topics/call-by-need.html#need-journal).
 
@@ -422,7 +482,7 @@ Haste та PureScript більш-менш однакові.
 
 - [Lazy evaluation of Haskell](http://www.vex.net/~trebla/haskell/lazy.xhtml)
 
-# Паралелізм/конкаренсі
+# Паралелізм/конкаренсі <a name="ng0xdfwx6k"></a>
 
 - [Parallel and Concurrent Programming in Haskell](http://chimera.labs.oreilly.com/books/1230000000929). Ця книга за авторством Саймона Мерлоу (Simon Marlow) є, мабуть, однією із найкращих книг про паралелізм та конкаренсі
 
@@ -433,7 +493,7 @@ Haste та PureScript більш-менш однакові.
 
 - [Functional Reactive Programming](http://www.haskell.org/haskellwiki/Functional_Reactive_Programming)
 
-# Lenses та Prisms
+# Lenses та Prisms <a name="5uea2v8yjf"></a>
 
 Після того, як ви набудете певності у роботі із Haskell, поставьтесь серйозно до вивчення Lenses та Prisms, навіть якщо ви просто "користувач". Для того, щоб вони стали вам у нагоді, не треба розуміти базові для них категорії.
 
@@ -449,7 +509,7 @@ Haste та PureScript більш-менш однакові.
 
 Для подальшої інформації звертайтесь сюди: [Lens package on hackage](http://hackage.haskell.org/package/lens).
 
-# Схеми рекурсії
+# Схеми рекурсії <a name="9yin7ora6h"></a>
 
 Деякі божевільні \*-morphism слова, які ви зустрічали, насправді говорять про рекурсію.
 Зауважте: перед тим, як переходити до цього матеріалу, треба розуміти, як реалізувати foldr для списків і хочаб ще однієї структури даних, наприклад для дерев (fold - це катаморфізм). Розуміння реалізації unfold (анаморфізм)  для тих же структур ще більше полегшить вивчення теми.
@@ -467,7 +527,7 @@ Haste та PureScript більш-менш однакові.
 
 - [Catamorphisms](https://www.fpcomplete.com/user/edwardk/recursion-schemes/catamorphisms)
 
-# GHC Core та оптимізація швидкості виконання
+# GHC Core та оптимізація швидкості виконання <a name="9zycl4bnhf"></a>
 
 - [Write Haskell as Fast as C](write_haskell_as_fast_as_c.md)
 
@@ -481,7 +541,7 @@ Haste та PureScript більш-менш однакові.
 
 - [Real World Haskell, Chapter 25: Profiling and Optimizations](http://book.realworldhaskell.org/read/profiling-and-optimization.html).
 
-# Типи та теорія категорій
+# Типи та теорія категорій <a name="eydr938ubc"></a>
 
 > *НЕ ПОТРІБНА* для того, щоб просто писати на Haskell. Просто для тих, хто цікавиться.
 
@@ -500,7 +560,7 @@ Haste та PureScript більш-менш однакові.
 
 - Список [Great Works in PL](http://www.cis.upenn.edu/~bcpierce/courses/670Fall04/GreatWorksInPL.shtml) за авторством Пірса.
 
-## Книги
+## Книги <a name="gmc7vpz4lx"></a>
 
 - [Quora Question: What is the best textbook for category theory?](http://www.quora.com/Category-Theory/What-is-the-best-textbook-for-Category-theory?share=1) Рекомендація Кметта (Kmett)
 
@@ -511,9 +571,9 @@ Haste та PureScript більш-менш однакові.
 
 - [Type theory and Functional Programming](http://www.cs.kent.ac.uk/people/staff/sjt/TTFP/).
 
-# Інші веселі теми
+# Інші веселі теми <a name="t1yw35nfapj"></a>
 
-## Параметричність, ad-hoc та параметричний поліморфізм, вільні теореми
+## Параметричність, ad-hoc та параметричний поліморфізм, вільні теореми <a name="2h3bczeca7"></a>
 
 - [Parametricity](tony_parametricity.pdf).
 
@@ -523,7 +583,7 @@ Haste та PureScript більш-менш однакові.
 
 - [Theorems for Free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf).
 
-## Initial та Final, DSL, Finally Tagless
+## Initial та Final, DSL, Finally Tagless <a name="ldngh6akfj"></a>
 
 - [Final Encodings, Part 1: A Quick Demonstration](http://creativelad.wordpress.com/2013/11/28/final-encodings-part-1-a-quick-demonstration/).
 
@@ -539,13 +599,13 @@ Haste та PureScript більш-менш однакові.
 
 - [The dog that didn't bark](http://existentialtype.wordpress.com/2011/03/21/the-dog-that-didnt-bark/) менш релевантна, але все одно цікава стаття.
 
-## Комонади
+## Комонади <a name="ym4plrmult"></a>
 
 - [Comonads in Haskell](https://speakerdeck.com/dmoverton/comonads-in-haskell).
 
 - [SO question: Can a Monad be a Comonad](https://stackoverflow.com/questions/16551734/can-a-monad-be-a-comonad).
 
-## Yoneda / CoYoneda
+## Yoneda / CoYoneda <a name="tcro22kj1lh"></a>
 
 - [SO question: Step-by-step explanation of coyoneda](https://stackoverflow.com/questions/24000465/step-by-step-deep-explain-the-power-of-coyoneda-preferably-in-scala-throu).
 
@@ -554,13 +614,13 @@ Haste та PureScript більш-менш однакові.
   * [Part 2: Yoneda](http://comonad.com/reader/2011/free-monads-for-less-2/).
   * [Part 3: Yielding IO](http://comonad.com/reader/2011/free-monads-for-less-3/).
 
-## Propositions vs. Judgments (обчислення)
+## Propositions vs. Judgments (обчислення) <a name="zrcdpsnfpy"></a>
 
 - [StackExchange question: What is the difference between propositions and judgements](http://cstheory.stackexchange.com/questions/9826/what-is-the-difference-between-propositions-and-judgments).
 
 - [Lecture notes from a short, three lecture course](http://www.ae-info.org/attach/User/Martin-L%C3%B6f_Per/OtherInformation/article.pdf)
 
-# Залежна типізація
+# Залежна типізація <a name="1abec048ev"></a>
 
 - [Grokking sum types, value constructors, and type constructors](http://bitemyapp.com/posts/2014-04-05-grokking-sums-and-constructors.html).
 
@@ -568,7 +628,7 @@ Haste та PureScript більш-менш однакові.
 
 - [Idris programming language](http://www.idris-lang.org/).
 
-# Статична лінковка бінарників
+# Статична лінковка бінарників <a name="yzk6jpu9oy"></a>
 
 - [Static linking](https://wiki.haskell.org/Web/Literature/Static_linking)
 
@@ -580,7 +640,7 @@ Haste та PureScript більш-менш однакові.
 
 
 
-## Діалоги
+## Діалоги <a name="hqfdip8h3z"></a>
 
 > Діалоги із IRC знаходяться [в цьому документі](dialogues.md).
 
