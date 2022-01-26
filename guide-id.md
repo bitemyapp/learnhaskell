@@ -1,32 +1,36 @@
 # Bagaimana cara belajar Haskell
 
-Ini adalah langkah yang direkomendasikan untuk belajar Haskell berdasarkan pengalaman membantu orang lain.
+Ini adalah langkah yang direkomendasikan untuk belajar Haskell berdasarkan pengalaman membantu orang lain. Daftar rekomendasi bersumber dari salah satu penulis [Haskell Book.](http://haskellbook.com)
 
 ## Untuk pembicara non-English 
 
-* [Auf Deutsch](guide-de.md)
+- [Auf Deutsch](guide-de.md)
 
-<!-- * [Στην ελληνική](guide-el.md) -->
+- [En Español](guide-es.md)
 
-* [En Español](guide-es.md)
+- [En Français](guide-fr.md)
 
-* [En Français](guide-fr.md)
+- [In Italiano](guide-it.md)
 
-* [In Italiano](guide-it.md)
+- [Em Português](guide-pt.md)
 
-* [Em Português](guide-pt.md)
+- [În Română](guide-ro.md)
 
-* [繁體中文](guide-zh_tw.md)
+- [繁體中文](guide-zh_tw.md)
 
-* [简体中文](guide-zh_CN.md)
+- [简体中文](guide-zh_CN.md)
 
-* [По-русски](guide-ru.md)
+- [По-русски](guide-ru.md)
 
-* [Українською](guide-ua.md)
+- [Українською](guide-ua.md)
 
-* [Bahasa Indonesia](guide-id.md)
+- [Bahasa Indonesia](guide-id.md)
 
-* [Srpski](guide-sr.md)
+- [Srpski](guide-sr.md)
+
+- [Sa Tagalog](guide-tl.md)
+
+- [한국어](guide-ko.md
 
 #### *Jangan memikirkan hal yang tidak langsung anda mengerti*. Lanjutkan terus! 
 
@@ -66,6 +70,10 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 Yang paling direkomendasikan adalah untuk membaca materi kuliah dan menyelesaikan seluruh latihan/pekerjaan rumah untuk versi Spring 13 dari cis194 diikuti dengan pelajaran FP. Keduanya ditautkan dibawah. Selain dari itu dapat dikategorikan sebagai opsional dan diberitahukan agar anda mengetahui kemana harus mencarinya.
 
+## Haskell Programming from First Principles
+
+[@dmvianna](https://github.com/dmvianna) menginginkan saya untuk memberitahu bahwa dibawah ini adalah rekomendasi sumber yang _gratis_. Jika anda ingin memiliki buku, kami sangat merekomendasikan buku kami  [Haskell Book!](http://haskellbook.com). Jika kamu tidak mampu membeli bukunya karena alasan apapun, silahkan hubungi kami dengan surat elektronik menggunakan kontak di [our support page](http://haskellbook.com/support.html).
+
 ## Kursus cis194 Yorgey
 
 > *Lakukan ini terlebih dahulu*, ini adalah langkah awal yang kami rekomendasikan untuk dikenalkan kepada 
@@ -92,7 +100,7 @@ ke cis194.
 Tersedia di github [disini](https://github.com/bitemyapp/fp-course).
 
 Ini akan membantu dan memberikan anda pengalaman secara langsung mengimplementasikan 
-abstraksi yang dikenalkan di cis194, ini adalah latihan yang *penting* untuk 
+abstraksi yang dikenalkan di cis194, ini adalah latihan yang _penting_ untuk 
 menjadi nyaman dengan penggunaan Functor/Applicative/Monad/dll sehari-hari pada
 Haskell. Menempuh cis194 dan kemudian pelajaran FP mewakili rekomendasi utama
 dari panduan saya dan bagaimana kami mengajarkan Haskell kepada semua orang.
@@ -103,7 +111,9 @@ dari panduan saya dan bagaimana kami mengajarkan Haskell kepada semua orang.
 
 > Menyediakan materi tambahan untuk topik menengah.
 
-cs240h tersedia secara [online](http://www.scs.stanford.edu/14sp-cs240h/).
+cs240h tersedia secara online:
+- [Spring 14](http://www.scs.stanford.edu/14sp-cs240h/)
+- [Winter 16](http://www.scs.stanford.edu/16wi-cs240h/)
 
 Ini adalah pelajaran online [Bryan O'Sullivan](https://github.com/bos) dari kelas
 yang ia ajar di Stanford. Jika anda tidak mengetahui siapa ia, coba lihat sebentar pada setengah
