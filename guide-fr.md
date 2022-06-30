@@ -228,32 +228,32 @@ Téléchargez la dernière version des exécutables pour cabal et ghc
 
 # Cours de base
 
-## Le cours cis194 de Yorgey
+## Le cours cis1940 de Yorgey
 
 > *Faites le en premier*, c'est la principale introduction à Haskell que je recommande.
 
-Disponible [en ligne](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Disponible [en ligne](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html).
 
 Le cours de [Brent Yorgey](https://byorgey.wordpress.com) est le meilleur que j'ai trouvé jusque là.
 Ce cours vous donnera les bases pour écrire du code en Haskell mais vous
 aidera aussi à comprendre les combinateurs d'analyse (parser combinators).
 
-La seule raison pour laquelle vous ne devriez pas commencer avec cis194 est si vous n'êtes pas un
+La seule raison pour laquelle vous ne devriez pas commencer avec cis1940 est si vous n'êtes pas un
 développeur ou inexpérimenté. Si c'est le cas, commencez par le
-[livre de Thompson](https://www.haskellcraft.com/craft3e/Home.html) puis enchainez avec cis194.
+[livre de Thompson](https://www.haskellcraft.com/craft3e/Home.html) puis enchainez avec cis1940.
 
 ---
 
 ## Le cours FP
 
-> C'est le cours que je recommande après avoir suivi le cours cis194 de Yorgey
+> C'est le cours que je recommande après avoir suivi le cours cis1940 de Yorgey
 
 Disponible sur github [ici](https://github.com/bitemyapp/fp-course).
 
 Ce cours va renforcer vos connaissances et vous fera acquérir de l'experience en
-implémentant directement les abstractions introduites dans le cis194, c'est un
+implémentant directement les abstractions introduites dans le cis1940, c'est un
 exercice *capital* pour être à l'aise avec les usages habituels des
-Functors/Applicatives/Monades/etc. en Haskell. Suivre les cours cis194 puis
+Functors/Applicatives/Monades/etc. en Haskell. Suivre les cours cis1940 puis
 FP est la recommendation principale de mon guide et c'est comme ca que
 j'enseigne Haskell à tout le monde.
 

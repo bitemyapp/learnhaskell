@@ -64,7 +64,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # How should I learn Haskell?
 
-The core recommendation is to read the lectures and complete all exercises/homework for the Spring 13 version of cis194 followed by the FP course. Both are linked below. Everything else can be considered optional and is mentioned so you know where to look.
+The core recommendation is to read the lectures and complete all exercises/homework for the Spring 13 version of cis1940 followed by the FP course. Both are linked below. Everything else can be considered optional and is mentioned so you know where to look.
 
 ## Haskell Programming from First Principles.
 
@@ -72,38 +72,38 @@ The core recommendation is to read the lectures and complete all exercises/homew
 
 ### Haskell Book subsumes all of the primary resources recommended here
 
-## Yorgey's cis194 course
+## Yorgey's cis1940 course
 
 > _Do this first_ if aren't getting the Haskell Book, this is the best _free_ introduction to Haskell.
 
-Available [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Available [online](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html).
 
 [Brent Yorgey](https://byorgey.wordpress.com)'s course is the best I've found so
 far. This course is valuable as it will not only equip you to write basic
 Haskell but also help you to understand parser combinators.
 
-The only reason you shouldn't start with cis194 is if you are not a programmer
+The only reason you shouldn't start with cis1940 is if you are not a programmer
 or are an inexperienced one. If that's the case, start with
 [Thompson's book](https://www.haskellcraft.com/craft3e/Home.html) and transition
-to cis194.
+to cis1940.
 
 ---
 
 ## Functional Programming course
 
-> This is the course we recommend doing after Yorgey's cis194 course
+> This is the course we recommend doing after Yorgey's cis1940 course
 
 Available on github [here](https://github.com/bitemyapp/fp-course).
 
 This will reinforce and give you experience directly implementing the
-abstractions introduced in cis194, this is practice which is _critical_ to
+abstractions introduced in cis1940, this is practice which is _critical_ to
 becoming comfortable with everyday uses of Functor/Applicative/Monad/etc. in
-Haskell. Doing cis194 and then the FP course represents the core
+Haskell. Doing cis1940 and then the FP course represents the core
 recommendation of my guide and is how we teach everyone Haskell.
 
 ---
 
-## Supplementary course after cis194 and the FP course
+## Supplementary course after cis1940 and the FP course
 
 > Provides more material on intermediate topics
 
@@ -123,7 +123,7 @@ pipes, and lenses.
 
 # Resources for specific topics in Haskell
 
-These resources are not vetted or tested with learners as cis194 and FP course have been, but they're linked in [the topic listing](specific_topics.md) so you have ideas on where to begin. This includes things like intermediate/advanced concepts and subjects like tooling and text editors.
+These resources are not vetted or tested with learners as cis1940 and FP course have been, but they're linked in [the topic listing](specific_topics.md) so you have ideas on where to begin. This includes things like intermediate/advanced concepts and subjects like tooling and text editors.
 
 ## Dialogues
 

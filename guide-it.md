@@ -217,27 +217,27 @@ Scaricate l'ultima distribuzione binaria di cabal e ghc:
 
 # Corsi primari
 
-## Il corso cis194 di Yorgey
+## Il corso cis1940 di Yorgey
 
 > *Seguite questo per primo*, è la strada che raccomando per il primo approccio ad
 > Haskell.
 
-Disponibile [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Disponibile [online](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html).
 
 Il corso di [Brent Yorgey](https://byorgey.wordpress.com) è il migliore che ho trovato finora.  Questo corso ha valore non solo perché vi rende in grado di scrivere codice Haskell basilare ma anche perché vi aiuterà a comprendere i parser combinators.
 
-L'unica ragione per cui non dovreste cominciare con cis194 è se non siete programmatori o se non avete molta esperienza. In questo caso, suggerisco di iniziare con il 
-[libro di Thompson](https://www.haskellcraft.com/craft3e/Home.html) e poi passate a cis194.
+L'unica ragione per cui non dovreste cominciare con cis1940 è se non siete programmatori o se non avete molta esperienza. In questo caso, suggerisco di iniziare con il 
+[libro di Thompson](https://www.haskellcraft.com/craft3e/Home.html) e poi passate a cis1940.
 
 ---
 
 ## Il corso FP
 
-> Questo è il corso che raccomando dopo cis194 di Yorgey
+> Questo è il corso che raccomando dopo cis1940 di Yorgey
 
 Disponibile su github [qui](https://github.com/bitemyapp/fp-course).
 
-Questo vi darà esperienza nell'implementare direttamente le astrazioni introdotte in cis194. Questi esercizi sono *fondamentali* per sviluppare confidenza con gli usi comuni di Functor/Applicative/Monad/etc. in Haskell. La raccomandazione principale di questa guida è seguire cis194 e poi FP: questo è il percorso che seguo per insegnare Haskell a tutti.
+Questo vi darà esperienza nell'implementare direttamente le astrazioni introdotte in cis1940. Questi esercizi sono *fondamentali* per sviluppare confidenza con gli usi comuni di Functor/Applicative/Monad/etc. in Haskell. La raccomandazione principale di questa guida è seguire cis1940 e poi FP: questo è il percorso che seguo per insegnare Haskell a tutti.
 
 ---
 

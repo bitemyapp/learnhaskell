@@ -62,7 +62,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # Paano ko pag-aaralan ang Haskell?
 
-Ang pinaka-rekomendasyon ay basahin ang mga lektura at tapusin ang mga pagsasanay/takdang aralin para sa Spring 13 version ng cis194 tapos ang kurso ng FP. Ang dalawa ay naka-takda sa ibaba. Ang iba ay hindi na kailangan ngunit ini-mungkahi para sa iyong kapakanan.
+Ang pinaka-rekomendasyon ay basahin ang mga lektura at tapusin ang mga pagsasanay/takdang aralin para sa Spring 13 version ng cis1940 tapos ang kurso ng FP. Ang dalawa ay naka-takda sa ibaba. Ang iba ay hindi na kailangan ngunit ini-mungkahi para sa iyong kapakanan.
 
 ## Haskell Programming from First Principles.
 
@@ -70,38 +70,38 @@ I-Pinapaalam ni [@dmvianna](https://github.com/dmvianna) na ang mga nasa babaya 
 
 ### Ang Haskell Book ay nilalathala ang lahat ng primerong mapagaaralan dito
 
-## Kursong cis194 ni Yorgey
+## Kursong cis1940 ni Yorgey
 
 > *Talakayin muna ito* kung hindi mo bibilhin ang Haskell Book, ito ay ang pinakamagandang _libreng_ introduksyon sa Haskell.
 
-Makukuha [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Makukuha [online](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html).
 
 Ang kurso ni [Brent Yorgey](https://byorgey.wordpress.com) ay ang pinakamaganda
 sa pagkakaalam ko. Itong kurso ay mahalaga dahil hindi ka lamang tuturuan mag-sulat ng
 pinakapundomental na Haskell ngunit matutulungan karin maintindihan ang mga
 parser combinators.
 
-Ang tanging dahilan para wag mag-simula sa cis194 ay kung ikaw ay hindi programmer
+Ang tanging dahilan para wag mag-simula sa cis1940 ay kung ikaw ay hindi programmer
 o hindi eksperyensado. Kung yun ang kaso, mag-simula sa [Libro ni Thompson](https://www.haskellcraft.com/craft3e/Home.html)
-at tyaka lumipat sa cis194.
+at tyaka lumipat sa cis1940.
 
 ---
 
 ## Kurso ng Functional Programming
 
-> Ito ang inirerekomenda naming kurso pagkatapos ng Kursong cis194 ni Yorgey
+> Ito ang inirerekomenda naming kurso pagkatapos ng Kursong cis1940 ni Yorgey
 
 Makukuha sa [dito](https://github.com/bitemyapp/fp-course) sa github.
 
 Ito ay magbibigay lakas at karanasan sayo sa pag-implementa ng
-kabasalan na itinuro sa cis194, ito ay isang gawi na *kritikal* upang
+kabasalan na itinuro sa cis1940, ito ay isang gawi na *kritikal* upang
 maing kumportable sa pang-araw araw na pag-gamit ng Functor/Applicative/Monad/etc. sa
-Haskell. Ang pag-talakay sa cis194 at sa FP course ay ang nag-rerepresenta ng ubod
+Haskell. Ang pag-talakay sa cis1940 at sa FP course ay ang nag-rerepresenta ng ubod
 ng rekomendasyon ng aking patnubay at kung paano kami nag-tuturo ng Haskell sa lahat.
 
 ---
 
-## Dagdag kurso pagkatapos ng cis194 at FP course
+## Dagdag kurso pagkatapos ng cis1940 at FP course
 
 > Nag-bibigay kaalaman sa mga nakalalalim ng paksa.
 
@@ -120,7 +120,7 @@ pipes, at lenses.
 
 # Pang-kaalaman para sa tiyak na paksa sa Haskell
 
-Ang mga mapagkukunan na ito ay hindi tiyak para sa mga nag-aaral di katulad ng cis194 at FP course, ngunit sila'y linked in [sa listahan ng paksa](specific_topics.md) upang ikaw ay mag-ka ideya kung saan mag-sisimula. Naisasama dito ang mga intermediate/advanced na ideya at paksa katulad ng tooling at text editors.
+Ang mga mapagkukunan na ito ay hindi tiyak para sa mga nag-aaral di katulad ng cis1940 at FP course, ngunit sila'y linked in [sa listahan ng paksa](specific_topics.md) upang ikaw ay mag-ka ideya kung saan mag-sisimula. Naisasama dito ang mga intermediate/advanced na ideya at paksa katulad ng tooling at text editors.
 
 
 ## Dalwausap

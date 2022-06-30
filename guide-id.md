@@ -68,46 +68,46 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # Bagaimana seharusnya Saya mempelajari Haskell?
 
-Yang paling direkomendasikan adalah untuk membaca materi kuliah dan menyelesaikan seluruh latihan/pekerjaan rumah untuk versi Spring 13 dari cis194 diikuti dengan pelajaran FP. Keduanya ditautkan dibawah. Selain dari itu dapat dikategorikan sebagai opsional dan diberitahukan agar anda mengetahui kemana harus mencarinya.
+Yang paling direkomendasikan adalah untuk membaca materi kuliah dan menyelesaikan seluruh latihan/pekerjaan rumah untuk versi Spring 13 dari cis1940 diikuti dengan pelajaran FP. Keduanya ditautkan dibawah. Selain dari itu dapat dikategorikan sebagai opsional dan diberitahukan agar anda mengetahui kemana harus mencarinya.
 
 ## Haskell Programming from First Principles
 
 [@dmvianna](https://github.com/dmvianna) menginginkan saya untuk memberitahu bahwa dibawah ini adalah rekomendasi sumber yang _gratis_. Jika anda ingin memiliki buku, kami sangat merekomendasikan buku kami  [Haskell Book!](http://haskellbook.com). Jika kamu tidak mampu membeli bukunya karena alasan apapun, silahkan hubungi kami dengan surat elektronik menggunakan kontak di [our support page](http://haskellbook.com/support.html).
 
-## Kursus cis194 Yorgey
+## Kursus cis1940 Yorgey
 
 > *Lakukan ini terlebih dahulu*, ini adalah langkah awal yang kami rekomendasikan untuk dikenalkan kepada 
 > Haskell.
 
-Tersedia [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Tersedia [online](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html).
 
 Mata kuliah [Brent Yorgey](https://byorgey.wordpress.com) adalah yang terbaik yang saya temukan sejauh ini.
 Mata kuliah ini berharga karena tidak hanya membekali anda untuk menulis dasar
 Haskell namun juga membantu anda untuk mengerti parser combinators.
 
-Satu-satunya alasan anda tidak seharusnya mulai dengan cis194 adalah jika anda bukanlah programmer
+Satu-satunya alasan anda tidak seharusnya mulai dengan cis1940 adalah jika anda bukanlah programmer
 atau adalah yang tidak berpengalaman. Jika demikian, mulailah dengan
 [Thompson's book](https://www.haskellcraft.com/craft3e/Home.html) kemudian beralih 
-ke cis194.
+ke cis1940.
 
 
 ---
 
 ## Pelajaran FP 
 
-> Ini adalah pelajaran yang kami rekomendasikan untuk dikerjakan setelah mata kuliah cis194 Yorgey.
+> Ini adalah pelajaran yang kami rekomendasikan untuk dikerjakan setelah mata kuliah cis1940 Yorgey.
 
 Tersedia di github [disini](https://github.com/bitemyapp/fp-course).
 
 Ini akan membantu dan memberikan anda pengalaman secara langsung mengimplementasikan 
-abstraksi yang dikenalkan di cis194, ini adalah latihan yang _penting_ untuk 
+abstraksi yang dikenalkan di cis1940, ini adalah latihan yang _penting_ untuk 
 menjadi nyaman dengan penggunaan Functor/Applicative/Monad/dll sehari-hari pada
-Haskell. Menempuh cis194 dan kemudian pelajaran FP mewakili rekomendasi utama
+Haskell. Menempuh cis1940 dan kemudian pelajaran FP mewakili rekomendasi utama
 dari panduan saya dan bagaimana kami mengajarkan Haskell kepada semua orang.
 
 ---
 
-## Pelajaran tambahan setelah pelajaran cis194 dan FP
+## Pelajaran tambahan setelah pelajaran cis1940 dan FP
 
 > Menyediakan materi tambahan untuk topik menengah.
 
@@ -126,7 +126,7 @@ pipes, dan lenses.
 
 # Sumber untuk topik spesifik pada Haskell
 
-Sumber-sumber ini tidak diperiksa atau dicoba kepada pelajar seperti pelajaran cis194 dan FP, tapi ditautkan pada [the topic listing](specific_topics.md) sehingga anda memiliki gambaran mengenai darimana harus memulai. Hal ini juga termasuk konsep menengah/lanjutan dan subyek seperti alat-alat dan editor teks.
+Sumber-sumber ini tidak diperiksa atau dicoba kepada pelajar seperti pelajaran cis1940 dan FP, tapi ditautkan pada [the topic listing](specific_topics.md) sehingga anda memiliki gambaran mengenai darimana harus memulai. Hal ini juga termasuk konsep menengah/lanjutan dan subyek seperti alat-alat dan editor teks.
 
 
 ## Dialog
