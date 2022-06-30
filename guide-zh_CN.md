@@ -34,7 +34,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # 我该如何学习 Haskell？
 
-推荐的核心是阅读 cis194 课程（2013 年春季学期版）的讲解并完成所有习题和作业，然后是 FP 课程。下方列出了两门课的链接。其他的所有内容都可以视为选学内容，我们就在这里提一下是为了让你知道该到哪里找到它们。
+推荐的核心是阅读 cis1940 课程（2013 年春季学期版）的讲解并完成所有习题和作业，然后是 FP 课程。下方列出了两门课的链接。其他的所有内容都可以视为选学内容，我们就在这里提一下是为了让你知道该到哪里找到它们。
 
 ## Haskell 编程：从第一原理开始
 
@@ -42,29 +42,29 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ### Haskell Book 书包含了这里列出的全部基础资料（包含的内容）
 
-## Yorgey 的 cis194 课程
+## Yorgey 的 cis1940 课程
 
 > 如果/你不打算买那本 Haskell 书，那就*先学习*本课程，它是最好的免费 Haskell 入门介绍。
 
-[在线](https://www.seas.upenn.edu/~cis194/spring13/lectures.html)获取。
+[在线](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html)获取。
 
 [Brent Yorgey](https://byorgey.wordpress.com) 的课程是迄今为止我所发现的最好的课程。 这门课程非常有价值，因为它不仅会教你编写基本的 Haskell，而且还会帮助你了解语法分析组合子。
 
-只有当你不是程序员，或者是个缺乏经验的程序员时，你才不应该从 cis194 开始学。 如果你真的是这样，请从[Thompson 的这本书](https://www.haskellcraft.com/craft3e/Home.html)开始学并过渡到 cis194。
+只有当你不是程序员，或者是个缺乏经验的程序员时，你才不应该从 cis1940 开始学。 如果你真的是这样，请从[Thompson 的这本书](https://www.haskellcraft.com/craft3e/Home.html)开始学并过渡到 cis1940。
 
 ---
 
 ## 函数式编程课程
 
-> 我们推荐你在完成 Yorgey 的 cis194 课程之后再学习这门课。
+> 我们推荐你在完成 Yorgey 的 cis1940 课程之后再学习这门课。
 
 在 GitHub [这里](https://github.com/bitemyapp/fp-course)获取。
 
-这门课会让你直接体验用代码实现 cis194 中介绍过的各种抽象并加深你对它们的理解。这样的练习对于让你熟悉 Haskell 中 Functor/Applicative/Monad 等等概念的日常使用至关重要。先学 cis194，然后学 FP，是我这篇指南的核心，也是我教大家 Haskell 的方式。
+这门课会让你直接体验用代码实现 cis1940 中介绍过的各种抽象并加深你对它们的理解。这样的练习对于让你熟悉 Haskell 中 Functor/Applicative/Monad 等等概念的日常使用至关重要。先学 cis1940，然后学 FP，是我这篇指南的核心，也是我教大家 Haskell 的方式。
 
 ---
 
-## cis194 和 FP 课程之后的补充课程
+## cis1940 和 FP 课程之后的补充课程
 
 > 这门课提供了更多中级材料
 
@@ -79,7 +79,7 @@ cs240h 可从线上获取
 
 # 补充资料
 
-这些资料不像 cis194 和 FP 课程那样经过了学习者的共同把关和评测，它们的链接都在[主题清单](/specific_topics.md)里，方便你知道从哪里开始。这里面涉及中高级的概念和课题，比如工具和文本编辑器。
+这些资料不像 cis1940 和 FP 课程那样经过了学习者的共同把关和评测，它们的链接都在[主题清单](/specific_topics.md)里，方便你知道从哪里开始。这里面涉及中高级的概念和课题，比如工具和文本编辑器。
 
 ## 译著
 

@@ -55,39 +55,39 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # Como devo aprender Haskell?
 
-A principal recomendação é ler as aulas e fazer todos os exercícios/trabalhos de casa do curso cis194 da Primavera de 2013 seguido pelo curso FP. Links para ambos podem ser encontrados abaixo. Tudo o resto pode ser considerado opcional e é referido aqui para saber onde procurar.
+A principal recomendação é ler as aulas e fazer todos os exercícios/trabalhos de casa do curso cis1940 da Primavera de 2013 seguido pelo curso FP. Links para ambos podem ser encontrados abaixo. Tudo o resto pode ser considerado opcional e é referido aqui para saber onde procurar.
 
 ## Alternativamente...
 
 [@dmvianna](https://github.com/dmvianna) quer que saibam que estes são apenas os recursos _grátis_ recomendados. Se estiver disposto a adquirir um livro, recomendamos o [nosso livro](https://haskellbook.com). Este livro substitui todos os recursos primários aqui disponíveis.
 
-## Curso cis194 do Yorgey
+## Curso cis1940 do Yorgey
 
 > *Faça este primeiro*, esta é a minha recomendação de como ser introduzido 
 > ao Haskell.
 
-Disponível [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Disponível [online](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html).
 
 O curso de [Brent Yorgey](https://byorgey.wordpress.com) é o melhor que eu
 encontrei até agora. Esse curso é importante porque ele não só vai equipá-lo
 a escrever Haskell básico mas também vai ajudá-lo a entender *parser combinators*.
 
-A única razão pela qual você não deveria começar com o cis194 é se você não
+A única razão pela qual você não deveria começar com o cis1940 é se você não
 for um programador ou se for um que é inexperiente. Se esse é o caso, comece
 com o [livro do Thompson](https://www.haskellcraft.com/craft3e/Home.html) e depois
-o cis194.
+o cis1940.
 
 ---
 
 ## Curso FP
 
-> Este é o curso que recomendo fazer após o curso cis194 do Yorgey.
+> Este é o curso que recomendo fazer após o curso cis1940 do Yorgey.
 
 Disponível no github [aqui](https://github.com/bitemyapp/fp-course).
 
 Isso vai reforçar e lhe dar experiência implementado diretamente as abstrações
-introduzidas no cis194. Essa prática é *crítica* para alguém se tornar confortável
-com o uso diário de *Functors*/*Applicatives*/*Monads*/etc em Haskell. Fazer o cis194
+introduzidas no cis1940. Essa prática é *crítica* para alguém se tornar confortável
+com o uso diário de *Functors*/*Applicatives*/*Monads*/etc em Haskell. Fazer o cis1940
 e então o curso do FP representa a recomendação fundamental do meu guia, 
 e é como eu ensino Haskell para todo mundo.
 

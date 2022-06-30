@@ -195,29 +195,29 @@ $ cabal install alex happy
 
 # 主要學習課程
 
-## Yorgey's cis194課程
+## Yorgey's cis1940課程
 
 > *請先透過這門課學習*，這是我最推薦入門Haskell的課。
 
-此課程的教材可於[線上取得](https://www.seas.upenn.edu/~cis194/spring13/lectures.html)。
+此課程的教材可於[線上取得](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html)。
 
 [Brent Yorgey](https://byorgey.wordpress.com)的課是我目前所知最好的。它之所以好，因為
 它不只教你些基礎知識，還教你parser combinators。
 
 如果你不是個程式設計師，或缺乏經驗，那麼這門課可能沒這麼適合。建議你從
-[Thompson的這本書](https://www.haskellcraft.com/craft3e/Home.html)開始，然後再轉到cis194。
+[Thompson的這本書](https://www.haskellcraft.com/craft3e/Home.html)開始，然後再轉到cis1940。
 
 ---
 
 ## FP課程
 
-> 在你完成上述Yorgey的cis194後，我推薦繼續挑戰此課程。
+> 在你完成上述Yorgey的cis1940後，我推薦繼續挑戰此課程。
 
 這門課發佈在[github上](https://github.com/bitemyapp/fp-course)。
 
-透過實作cis194中所介紹過的種種抽象表述，你會有更深入的了解。這樣的練習對於
+透過實作cis1940中所介紹過的種種抽象表述，你會有更深入的了解。這樣的練習對於
 熟悉Haskell中每天都會面對的Functor/Applicative/Monad等等至關重要。
-先做cis194，緊接著FP，是這整篇Haskell學習導覽的核心，也是我教每個人Haskell的方式。
+先做cis1940，緊接著FP，是這整篇Haskell學習導覽的核心，也是我教每個人Haskell的方式。
 
 ---
 

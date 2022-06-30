@@ -34,18 +34,18 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # Cum puteți învăța Haskell?
 
-Recomandarea principală este să citiți lecrurile și să rezolvați toate exercițiile/temele acasă din versiunea de toamnă, 2013, a cursului cis194, urmate de a face același lucru și pentru cursul FP. Ambele cursuri sunt referite mai jos. Orice altceva poate fi considerat opțional, celelate referințe de mai jos sunt doar ca să știți unde vă mai puteți uita.
+Recomandarea principală este să citiți lecrurile și să rezolvați toate exercițiile/temele acasă din versiunea de toamnă, 2013, a cursului cis1940, urmate de a face același lucru și pentru cursul FP. Ambele cursuri sunt referite mai jos. Orice altceva poate fi considerat opțional, celelate referințe de mai jos sunt doar ca să știți unde vă mai puteți uita.
 
 ## Alternativ...
 
 [@dmvianna](https://github.com/dmvianna) a dorit să vă anunț că recomandările de aici sunt doar resursele _gratuite_. Dacă doriți să citiți o carte, vă recomandăm cu mare placere cartea noastră, [Haskell Book!](https://haskellbook.com). Aceasta înlocuiește în principiu toate recomandările de aici.
 
-## Cursul cis194 al lui Yorgey
+## Cursul cis1940 al lui Yorgey
 
 > *Treceți prin acest curs prima dată*, acesta este modul principal prin care recomandăm
 > primul contact cu Haskell.
 
-Este disponibil [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Este disponibil [online](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html).
 
 Cursul lui [Brent Yorgey](https://byorgey.wordpress.com) este cel mai bun pe care l-am găsit până acum.
 Este foarte valoros mai ales că nu numai că vă va învăța cum să scrieți cod Haskell de bază dar vă va
@@ -53,7 +53,7 @@ Este foarte valoros mai ales că nu numai că vă va învăța cum să scrieți 
 
 Singurul caz în care acest curs nu este recomandat este dacă nu sunteți programator/programatoare sau nu aveți multă experiență în domeniu.
 În acest caz, recomandarea este să începeți cu
-[cartea lui Thompson](https://www.haskellcraft.com/craft3e/Home.html) și să tranziționați ulterior la cis194.
+[cartea lui Thompson](https://www.haskellcraft.com/craft3e/Home.html) și să tranziționați ulterior la cis1940.
 
 ---
 
@@ -63,12 +63,12 @@ Singurul caz în care acest curs nu este recomandat este dacă nu sunteți progr
 
 Este disponibil pe GitHub [aici](https://github.com/bitemyapp/fp-course).
 
-Acesta vă va oferi experiența de a implementa abstracțiile din cis194, o practică **esențială** pentru a fi obișnuiți cu utilizarea comună a Functor/Applicative/Monad/etc în Haskell
-Principala recomandare a acestui ghid este să treceți întâi prin cis194 și apoi prin FP și reprezintă exact modul în care noi predăm Haskell.
+Acesta vă va oferi experiența de a implementa abstracțiile din cis1940, o practică **esențială** pentru a fi obișnuiți cu utilizarea comună a Functor/Applicative/Monad/etc în Haskell
+Principala recomandare a acestui ghid este să treceți întâi prin cis1940 și apoi prin FP și reprezintă exact modul în care noi predăm Haskell.
 
 ---
 
-## Cursuri suplimentare după cis194 și FP
+## Cursuri suplimentare după cis1940 și FP
 
 > Oferă mai multe materiale pe subiecte de dificultate medie
 
@@ -84,7 +84,7 @@ extensiile de limbaj, concurență, pipes și lenses.
 
 # Resourse pentru topicuri specifice în Haskell
 
-Aceste resurse nu sunt validate în practică la aceeași profunzime ca cis194 și FP, dar sunt referite în
+Aceste resurse nu sunt validate în practică la aceeași profunzime ca cis1940 și FP, dar sunt referite în
 [lista de topicuri](specific_topics.md) ca să aveți o idee de unde să începeți.
 Lucruri precum concepte de nivel mediu/avansat și subiecte precum instrumente de dezvoltare și editoare de text sunt incluse.
 

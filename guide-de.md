@@ -234,34 +234,34 @@ Du musst das nicht machen, wenn du die .app nutzt, aber wenn das für dich nicht
 
 # Grundlegende Kurse
 
-## Yorgey's cis194 Kurs
+## Yorgey's cis1940 Kurs
 
 > *Den solltest du zuerst machen*, das ist eine erstklassige Einführung
 > in Haskell, die ich sehr empfehle
 
-Verfügbar [online](https://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Verfügbar [online](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html).
 
 [Brent Yorgey](https://byorgey.wordpress.com)s Kurs ist der beste, den ich bisher gefunden habe.
 Dieser Kurs ist wertvoll, da du nicht nur Grundlegendes über Haskell lernst, sondern auch lernst
 Parser Combinators zu verstehen.
 
-Der einzige Fall, in dem du nicht mit cis194 anfangen solltest, ist, wenn du kein oder ein unerfahrener
+Der einzige Fall, in dem du nicht mit cis1940 anfangen solltest, ist, wenn du kein oder ein unerfahrener
 Programmierer bist. Wenn das der Fall ist, starte mit
 [Thompsons Buch](https://www.haskellcraft.com/craft3e/Home.html) und gehe über zu
-cis194.
+cis1940.
 
 ---
 
 ## FP Kurs
 
-> Das ist der Kurs, den ich nach Yorgeys cis194 Kurs empfehle zu machen
+> Das ist der Kurs, den ich nach Yorgeys cis1940 Kurs empfehle zu machen
 
 Verfügbar [hier](https://github.com/bitemyapp/fp-course) auf github
 
 Das wird dein Verständnis verbessern und dir Erfahrung mit der Implementierung der
-Abstraktionen geben, die in cis194 eingeführt wurden, das ist die Praxis, die *ausschlaggebend* ist, um
+Abstraktionen geben, die in cis1940 eingeführt wurden, das ist die Praxis, die *ausschlaggebend* ist, um
 mit der üblichen Nutzung von Functor/Applicative/Monad/etc. in Haskell vertraut zu werden.
-Erst cis194 und dann den FP Kurs zu machen, ist die wesentliche Empfehlung meiner Anleitung
+Erst cis1940 und dann den FP Kurs zu machen, ist die wesentliche Empfehlung meiner Anleitung
 und ist der Weg, wie ich anderen Leuten Haskell beibringe.
 
 ---

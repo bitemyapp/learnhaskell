@@ -283,7 +283,7 @@ $ cabal install cabal-install alex happy
 
 # Nasıl Haskell öğrenmeliyim?
 
-Ana tavsiyemiz, cis194 kursunun Bahar'13 versiyonundaki ve İşlevsel Programlama kursundaki dersleri okumanız ve tüm alıştırma/ödevleri tamamlamanızdır. İkisini de aşağıda bulabilirsiniz. Bunlar dışındaki her şey opsiyoneldir ve size nereye bakmanız gerektiğiyle ilgili fikir vermek için bahsedilmiştir.
+Ana tavsiyemiz, cis1940 kursunun Bahar'13 versiyonundaki ve İşlevsel Programlama kursundaki dersleri okumanız ve tüm alıştırma/ödevleri tamamlamanızdır. İkisini de aşağıda bulabilirsiniz. Bunlar dışındaki her şey opsiyoneldir ve size nereye bakmanız gerektiğiyle ilgili fikir vermek için bahsedilmiştir.
 
 ## "Haskell Programming from First Principles" - Kitap.
 
@@ -291,37 +291,37 @@ Ana tavsiyemiz, cis194 kursunun Bahar'13 versiyonundaki ve İşlevsel Programlam
 
 ### "Haskell Book" Kitabı burada önerilen birincil kaynakların hepsini içerir.
 
-## Yorgey'in cis194 kursu 
+## Yorgey'in cis1940 kursu 
 
 > _Bununla başlayın;_ Eğer "Haskell Book" kitabını almayı düşünmüyorsanız bu kurs Haskell'e giriş için en iyi _ücretsiz_  kaynak.
 
-Çevrimiçi [erişim](http://www.seas.upenn.edu/~cis194/spring13/lectures.html).
+Çevrimiçi [erişim](http://www.seas.upenn.edu/~cis1940/spring13/lectures.html).
 
 [Brent Yorgey](https://byorgey.wordpress.com)'in kursu şu ana kadar bulabildiğim 
 en iyi kurs. Bu kurs sadece Haskell yazmayı öğretmekle kalmayıp üstüne "Parser Combinator"ler
 hakkında bilgi sahibi olmanızı sağladığından dolayı çok değerli bir kaynak.
-Eğer bilgisayar programcısı değilseniz veya yeterince deneyminiz yoksa cis194 
+Eğer bilgisayar programcısı değilseniz veya yeterince deneyminiz yoksa cis1940 
 kursuyla başlamanızı tavsiye etmiyoruz. Bu durumda 
 [Simon Thompson'ın kitabıyla](http://www.haskellcraft.com/craft3e/Home.html) başlayıp
-daha sonra cis194 kursuna geçin.
+daha sonra cis1940 kursuna geçin.
 
 ---
 
 ## İşlevsel Programlama Kursu
 
-> Bu kursu Yorgey'in cis194 kursunu tamamladıktan sonra öneriyoruz.
+> Bu kursu Yorgey'in cis1940 kursunu tamamladıktan sonra öneriyoruz.
 
 Kursa github üzerinden erişmek için [tıklayınız](https://github.com/bitemyapp/fp-course).
 
-Bu kurs cis194 kursunda bahsedilen kavramları uygulayarak size deneyim katacak
+Bu kurs cis1940 kursunda bahsedilen kavramları uygulayarak size deneyim katacak
 ve Haskell'deki Functor/Applicative/Monad/vb. kavramlarını rahatça kullanmanıza 
-_kritik_ düzeyde katkı sağlayacak bir kurs. cis194 ve ardından İşlevsel Programlama
+_kritik_ düzeyde katkı sağlayacak bir kurs. cis1940 ve ardından İşlevsel Programlama
 kursunu tamamlamak benim tavsiyelerimin özünü oluşturuyor ve biz herkese Haskell'i
 bu şekilde öğretiyoruz.
 
 ---
 
-## Tamamlayıcı Kurs - cis194 ve İşlevsel Programlama kursundan sonra 
+## Tamamlayıcı Kurs - cis1940 ve İşlevsel Programlama kursundan sonra 
 
 > Orta seviye konularda daha fazla materyal içerir
 
@@ -341,7 +341,7 @@ pipes, ve lenses hakkındaki modüller ilginizi çekebilir.
 
 # Haskell'deki Belirli Konular için Kaynaklar
 
-Bu kaynaklar cis194 and IP kurslarının aksine test edilmemiştir, yine de [konu listesi](specific_topics.md)'den nereden başlamanız gerektiğine dair bilgi alabilirsiniz. Belgede orta/ileri düzeydeki konseptleri ve "işleme" ve "metin editörleri" gibi konuları bulabilirsiniz.
+Bu kaynaklar cis1940 and IP kurslarının aksine test edilmemiştir, yine de [konu listesi](specific_topics.md)'den nereden başlamanız gerektiğine dair bilgi alabilirsiniz. Belgede orta/ileri düzeydeki konseptleri ve "işleme" ve "metin editörleri" gibi konuları bulabilirsiniz.
 
 # Araçlar 
 

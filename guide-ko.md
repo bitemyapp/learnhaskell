@@ -62,7 +62,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # 하스켈을 어떻게 배워야 하나요?
 
-저희들은 2013년 봄학기 cis194 강의에 있는 모든 문제를 풀어본 다음에 FP강의를 듣는 방법을 추천합니다. 두 강의 모두 아래에 링크가 걸려있습니다. 그 외에는 선택이며, 여러분이 찾을 수 있도록 아래에 링크가 있습니다.
+저희들은 2013년 봄학기 cis1940 강의에 있는 모든 문제를 풀어본 다음에 FP강의를 듣는 방법을 추천합니다. 두 강의 모두 아래에 링크가 걸려있습니다. 그 외에는 선택이며, 여러분이 찾을 수 있도록 아래에 링크가 있습니다.
 
 ## Haskell Programming from First Principles.
 
@@ -70,31 +70,31 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ### Haskell Book은 여기에서 권장되는 모든 주요 내용을 포함합니다.
 
-## Yorgey의 cis194 강의
+## Yorgey의 cis1940 강의
 
 > Haskell Book을 구매하지 않았다면 이 강의를 먼저 들으세요. Haskell 입문을 위한 최고의 수업입니다.
 
-[온라인](https://www.seas.upenn.edu/~cis194/spring13/lectures.html)에서 보실 수 있습니다.
+[온라인](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html)에서 보실 수 있습니다.
 
 [Brent Yorgey](https://byorgey.wordpress.com)의 강의는 제가 찾아 본 것중 가장 좋은 강의입니다. 이 강의는 기본적인 하스켈 코딩능력을 갖춰줄 뿐만이 아니라 parser combinator를 이해하는데 도움을 주기 때문에 중요합니다.
 
-만약 여러분이 프로그래머가 아니거나 프로그래밍을 해본적이 없다면 이 강의로 시작하는 것을 추천하지 않습니다. 그렇다면, [Thompson의 책](https://www.haskellcraft.com/craft3e/Home.html)을 먼저 보고 cis194로 돌아가세요.
+만약 여러분이 프로그래머가 아니거나 프로그래밍을 해본적이 없다면 이 강의로 시작하는 것을 추천하지 않습니다. 그렇다면, [Thompson의 책](https://www.haskellcraft.com/craft3e/Home.html)을 먼저 보고 cis1940로 돌아가세요.
 
 ---
 
 ## 함수형 프로그래밍 강의
 
-> 이 강의는 Yorgey의 cis194 강의를 모두 보신 후에 추천드리는 강의입니다.
+> 이 강의는 Yorgey의 cis1940 강의를 모두 보신 후에 추천드리는 강의입니다.
 
 [GitHub](https://github.com/bitemyapp/fp-course)에서 볼 수 있습니다.
 
-이 강의는 cis194에서 소개한 추상화기법을 직접 사용해보고 실력을 길러줍니다.
+이 강의는 cis1940에서 소개한 추상화기법을 직접 사용해보고 실력을 길러줍니다.
 이 강의는 하스켈에서 Functor, Applicative, Monad처럼 매일 사용되는 개념들에 익숙해지도록 훈련해주는 중요한 강의입니다.
-cis194를 먼저 보고 FP강의를 보는 방법이 저희들이 추천하는 하스켈 학습방법입니다.
+cis1940를 먼저 보고 FP강의를 보는 방법이 저희들이 추천하는 하스켈 학습방법입니다.
 
 ---
 
-## cis194와 FP강의를 본 후의 보충강의
+## cis1940와 FP강의를 본 후의 보충강의
 
 > 더 많은 자료와 중급 주제를 제공합니다.
 
@@ -104,13 +104,13 @@ cs240h는 온라인에서 볼 수 있습니다.
 - [16년 겨울학기](http://www.scs.stanford.edu/16wi-cs240h/)
 
 이 강의는 Stanford에서 강의하시는 [Bryan O'Sullivan](https://github.com/bos)의 온라인 강의입니다. 만약 이분을 모르신다면, 나중에 필요하게 될 하스켈 라이브러리들을 살펴보면 그의 이름을 발견할 수 있습니다.
-cis194를 끝마쳤다면 phantom types나 information flow control, language extensions, concurrency, pipes, lenses 내용은 보신적이 있을 겁니다.
+cis1940를 끝마쳤다면 phantom types나 information flow control, language extensions, concurrency, pipes, lenses 내용은 보신적이 있을 겁니다.
 
 ---
 
 # Haskell의 특정 주제에 대한 자료
 
-이 자료들은 cis194와 FP강의를 들은 사람들에 대해 점검해보지 않았지만, 여러분이 어디서 시작해야 할지 도와주기 위해 [주제 리스트](specific_topucs.md)에 링크를 모아두었습니다. 이 리스트에는 툴과 에디터 같은 중급이나 고급정도의 개념들과 주제도 담겨있습니다.
+이 자료들은 cis1940와 FP강의를 들은 사람들에 대해 점검해보지 않았지만, 여러분이 어디서 시작해야 할지 도와주기 위해 [주제 리스트](specific_topucs.md)에 링크를 모아두었습니다. 이 리스트에는 툴과 에디터 같은 중급이나 고급정도의 개념들과 주제도 담겨있습니다.
 
 ## 토론
 
