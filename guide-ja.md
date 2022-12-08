@@ -1,6 +1,6 @@
 # Haskellを学ぶ
 
-これは、他の人を助けた経験に基づくHaskellを学ぶための推奨経路であり、[Haskell Book](https://haskellbook.com)の著者の一人によるおすすめリストです。
+これは、私が教えた経験に基づくHaskellの学習パスであり、[Haskell Book](https://haskellbook.com)の著者の一人が推奨するものです。
 
 #### _すぐに理解できないことを気にする必要はありません_. 前に進みましょう!
 
@@ -20,9 +20,9 @@ IRCチャンネルで求められる行為については、[コミュニティ�
 
 ## Haskell を始めるには Stack を使う
 
-GHC をインストールし、プロジェクトをビルドするためには [Stack](https://haskellstack.org) を入手します。
+GHC をインストールし、プロジェクトをビルドするためには [Stack](https://haskellstack.org) が必要です。
 
-もしStackについて何も知らず、概要を知りたいのであれば、この[Stackビデオチュートリアル](https://www.youtube.com/watch?v=sRonIB8ZStw)をチェックしてみてください。
+Stackの概要については、[Stackビデオチュートリアル](https://www.youtube.com/watch?v=sRonIB8ZStw)をチェックしてください。
 
 ## **Haskell Platform をインストールしないでください**
 
@@ -34,7 +34,7 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 # Haskell をどのように学ぶべきですか？
 
-13年春学期の cis1940 の講義・演習・宿題を修了した後にFPコースを受講することをお勧めします。どちらも下にリンクがあります。他の科目は選択コースです。
+13年春学期の cis1940 の講義・演習・宿題を修了した後に関数型プログラミングコースを受講することをお勧めします。どちらも下にリンクがあります。他は選択コースです。
 
 ## Haskell プログラミングの基礎
 
@@ -45,9 +45,9 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ## Yorgey の cis1940 コース
 
-> Haskell Book を入手していないなら、まずこれをやってください。
+> Haskell Book を入手していないなら、まずこれを受講してください。
 
-[オンライン](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html)で入手可能です。
+[オンライン](https://www.seas.upenn.edu/~cis1940/spring13/lectures.html)でアクセスできます。
 
 [Brent Yorgey](https://byorgey.wordpress.com) のコースは、私がこれまで見つけた中で最も優れています。
 このコースは、基本的な Haskell を書くだけではなく、パーサコンビネータを理解するのにも役立ちます。
@@ -59,16 +59,16 @@ https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html
 
 ## 関数型プログラミングコース
 
-> Yorgeyのcis1940コースの後に行うことをお勧めするコースです。
+> Yorgeyのcis1940コースの後に受講するべきコースです。
 
 GitHub上のレポジトリ[bitemyapp/fp-course](https://github.com/bitemyapp/fp-course)で公開されています。
 
 このコースでは、cis1940で紹介された抽象化を直接実装します。これは、関手やアプリカティブ、モナドなどの使い方に慣れるために重要です。
-cis1940とFPコースはこのガイドの核であり、すべての人にHaskellを教える方法なのです。
+cis1940と関数型プログラミングコースはこのガイドの核であり、すべての人にHaskellを教える方法なのです。
 
 ---
 
-## cis1940とFPコースの後の補足コース
+## cis1940と関数型プログラミングコースの補足コース
 
 > 中級者向けのトピックをより多く提供します。
 
@@ -86,7 +86,7 @@ cs240h はオンラインで利用可能です。
 
 > [トピックリスト](specific_topic.md)
 
-これらのリソースは、cis1940やFPコースのように学習者によって十分に精査されたものではありませんが、 中級・上級のコンセプトや、ツールやテキストエディタなどのテーマを含みます。
+これらのリソースは、 中級・上級のコンセプトや、ツールやテキストエディタなどのテーマを含みます。ただし、cis1940や関数型プログラミングコースのように学習者によって十分に精査されたものではありません。
 
 ## 議論
 
