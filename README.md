@@ -32,6 +32,8 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 - [한국어](guide-ko.md)
 
+- [日本語](guide-ja.md)
+
 #### _Don't sweat the stuff you don't understand immediately_. Keep moving!
 
 ## Community
