@@ -4,31 +4,39 @@ Ovo je preporučeni put za učenje Haskell-a zasnovan na iskustvu u pomaganju dr
 
 ## Za one koji ne govore Srpski
 
-* [Auf Deutsch](guide-de.md)
+- [In English](README.md)
 
-<!-- * [Στην ελληνική](guide-el.md) -->
+- [Auf Deutsch](guide-de.md)
 
-* [En Español](guide-es.md)
+- [En Español](guide-es.md)
 
-* [En Français](guide-fr.md)
+- [En Français](guide-fr.md)
 
-* [In Italiano](guide-it.md)
+- [Na Hrvatskom](guide-hr.md)
 
-* [Em Português](guide-pt.md)
+- [Bahasa Indonesia](guide-id.md)
 
-* [În Română](guide-ro.md)
+- [In Italiano](guide-it.md)
 
-* [繁體中文](guide-zh_tw.md)
+- [日本語](guide-ja.md)
 
-* [简体中文](guide-zh_CN.md)
+- [한국어](guide-ko.md)
 
-* [По-русски](guide-ru.md)
+- [Em Português](guide-pt.md)
 
-* [Українською](guide-ua.md)
+- [În Română](guide-ro.md)
 
-* [Bahasa Indonesia](guide-id.md)
+- [По-русски](guide-ru.md)
 
-* [Sa Tagalog](guide-tl.md)
+- [Sa Tagalog](guide-tl.md)
+
+- [Türkçe](guide-tr.md)
+
+- [Українською](guide-ua.md)
+
+- [简体中文](guide-zh_CN.md)
+
+- [繁體中文](guide-zh_tw.md)
 
 #### *Ne obraćajte mnogo pažnju na stvari koje ne razumete iz prve*. Samo idite napred!
 

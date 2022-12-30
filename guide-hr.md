@@ -4,31 +4,39 @@ Ovo je preporučeni put za učenje Haskella zasnovan na iskustvu u pomaganju dru
 
 ## Za one koji ne govore Hrvatski
 
-* [Auf Deutsch](guide-de.md)
+- [In English](README.md)
 
-<!-- * [Στην ελληνική](guide-el.md) -->
+- [Auf Deutsch](guide-de.md)
 
-* [En Español](guide-es.md)
+- [En Español](guide-es.md)
 
-* [En Français](guide-fr.md)
+- [En Français](guide-fr.md)
 
-* [In Italiano](guide-it.md)
+- [Bahasa Indonesia](guide-id.md)
 
-* [Em Português](guide-pt.md)
+- [In Italiano](guide-it.md)
 
-* [În Română](guide-ro.md)
+- [日本語](guide-ja.md)
 
-* [繁體中文](guide-zh_tw.md)
+- [한국어](guide-ko.md)
 
-* [简体中文](guide-zh_CN.md)
+- [Em Português](guide-pt.md)
 
-* [По-русски](guide-ru.md)
+- [În Română](guide-ro.md)
 
-* [Українською](guide-ua.md)
+- [По-русски](guide-ru.md)
 
-* [Bahasa Indonesia](guide-id.md)
+- [Srpski](guide-sr.md)
 
-* [Sa Tagalog](guide-tl.md)
+- [Sa Tagalog](guide-tl.md)
+
+- [Türkçe](guide-tr.md)
+
+- [Українською](guide-ua.md)
+
+- [简体中文](guide-zh_CN.md)
+
+- [繁體中文](guide-zh_tw.md)
 
 #### *Ne obraćajte mnogo pažnje na stvari koje iz prve ne razumijete*. Samo idite naprijed!
 

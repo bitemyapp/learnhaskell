@@ -4,35 +4,41 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 ## For non-English speakers
 
+- [In English](README.md)
+
 - [Auf Deutsch](guide-de.md)
 
 - [En Español](guide-es.md)
 
 - [En Français](guide-fr.md)
 
+- [Na Hrvatskom](guide-hr.md)
+
+- [Bahasa Indonesia](guide-id.md)
+
 - [In Italiano](guide-it.md)
+
+- [日本語](guide-ja.md)
+
+- [한국어](guide-ko.md)
 
 - [Em Português](guide-pt.md)
 
 - [În Română](guide-ro.md)
 
-- [繁體中文](guide-zh_tw.md)
-
-- [简体中文](guide-zh_CN.md)
-
 - [По-русски](guide-ru.md)
-
-- [Українською](guide-ua.md)
-
-- [Bahasa Indonesia](guide-id.md)
 
 - [Srpski](guide-sr.md)
 
 - [Sa Tagalog](guide-tl.md)
 
-- [한국어](guide-ko.md)
+- [Türkçe](guide-tr.md)
 
-- [日本語](guide-ja.md)
+- [Українською](guide-ua.md)
+
+- [简体中文](guide-zh_CN.md)
+
+- [繁體中文](guide-zh_tw.md)
 
 #### _Don't sweat the stuff you don't understand immediately_. Keep moving!
 

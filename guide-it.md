@@ -3,21 +3,39 @@ Questa è la strada che raccomando per imparare Haskell.
 
 ## Per chi non parla italiano
 
-* [Auf Deutsch](guide-de.md)
+- [In English](README.md)
 
-* [Στην ελληνική](guide-el.md)
+- [Auf Deutsch](guide-de.md)
 
-* [En Français](guide-fr.md)
+- [En Español](guide-es.md)
 
-* [In English](README.md)
+- [En Français](guide-fr.md)
 
-* [Em Português](guide-pt.md)
+- [Na Hrvatskom](guide-hr.md)
 
-* [Türkçe](guide-tr.md)
+- [Bahasa Indonesia](guide-id.md)
 
-* [Srpski](guide-sr.md)
+- [日本語](guide-ja.md)
 
-* [Sa Tagalog](guide-tl.md)
+- [한국어](guide-ko.md)
+
+- [Em Português](guide-pt.md)
+
+- [În Română](guide-ro.md)
+
+- [По-русски](guide-ru.md)
+
+- [Srpski](guide-sr.md)
+
+- [Sa Tagalog](guide-tl.md)
+
+- [Türkçe](guide-tr.md)
+
+- [Українською](guide-ua.md)
+
+- [简体中文](guide-zh_CN.md)
+
+- [繁體中文](guide-zh_tw.md)
 
 
 #### Un consiglio: *non preoccupatevi se non capite qualcosa alla prima lettura*. Andate avanti.
@@ -706,4 +724,3 @@ Se volete imparare di più su tipi e teoria delle categorie:
 > Disponibile in questo repository [qui](dialogues.md).
 
 Questi sono in realtà importanti e utili. Leggeteli per approfondimenti su una varietà di argomenti.
-
