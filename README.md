@@ -4,8 +4,6 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 ## For non-English speakers
 
-- [In English](README.md)
-
 - [Auf Deutsch](guide-de.md)
 
 - [En Español](guide-es.md)
