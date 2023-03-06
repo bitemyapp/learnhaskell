@@ -4,25 +4,39 @@
 
 ## Это руководство доступно на других языках:
 
-* [In English](README.md)
+- [In English](README.md)
 
-* [Auf Deutsch](guide-de.md)
+- [Auf Deutsch](guide-de.md)
 
-<!-- * [Στην ελληνική](guide-el.md) -->
+- [En Español](guide-es.md)
 
-* [En Español](guide-es.md)
+- [En Français](guide-fr.md)
 
-* [En Français](guide-fr.md)
+- [Na Hrvatskom](guide-hr.md)
 
-* [In Italiano](guide-it.md)
+- [Bahasa Indonesia](guide-id.md)
 
-* [Em Português](guide-pt.md)
+- [In Italiano](guide-it.md)
 
-* [繁體中文](guide-zh_tw.md)
+- [日本語](guide-ja.md)
 
-* [Srpski](guide-sr.md)
+- [한국어](guide-ko.md)
 
-* [Sa Tagalog](guide-tl.md)
+- [Em Português](guide-pt.md)
+
+- [În Română](guide-ro.md)
+
+- [Srpski](guide-sr.md)
+
+- [Sa Tagalog](guide-tl.md)
+
+- [Türkçe](guide-tr.md)
+
+- [Українською](guide-ua.md)
+
+- [简体中文](guide-zh_CN.md)
+
+- [繁體中文](guide-zh_tw.md)
 
 #### *Не мучайтесь над одним топиком, который вы не можете понять сразу*. Двигайтесь дальше!
 

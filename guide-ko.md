@@ -4,31 +4,39 @@
 
 ## 비 영어권 사람들을 위한 번역
 
+- [In English](README.md)
+
 - [Auf Deutsch](guide-de.md)
 
 - [En Español](guide-es.md)
 
 - [En Français](guide-fr.md)
 
+- [Na Hrvatskom](guide-hr.md)
+
+- [Bahasa Indonesia](guide-id.md)
+
 - [In Italiano](guide-it.md)
+
+- [日本語](guide-ja.md)
 
 - [Em Português](guide-pt.md)
 
 - [În Română](guide-ro.md)
 
-- [繁體中文](guide-zh_tw.md)
-
-- [简体中文](guide-zh_CN.md)
-
 - [По-русски](guide-ru.md)
-
-- [Українською](guide-ua.md)
-
-- [Bahasa Indonesia](guide-id.md)
 
 - [Srpski](guide-sr.md)
 
 - [Sa Tagalog](guide-tl.md)
+
+- [Türkçe](guide-tr.md)
+
+- [Українською](guide-ua.md)
+
+- [简体中文](guide-zh_CN.md)
+
+- [繁體中文](guide-zh_tw.md)
 
 #### _이해가 잘 안된다고 계속 붙잡고 있지 마세요_. 진도를 계속 나가세요!
 

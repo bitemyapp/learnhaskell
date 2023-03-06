@@ -4,31 +4,39 @@ Ito ay ang maipapayong daan upang matutunan ang Haskell base sa karanasan na mak
 
 ## Para sa mga di nag-Iingles
 
-* [Auf Deutsch](guide-de.md)
+- [In English](README.md)
 
-* [En Español](guide-es.md)
+- [Auf Deutsch](guide-de.md)
 
-* [En Français](guide-fr.md)
+- [En Español](guide-es.md)
 
-* [In Italiano](guide-it.md)
+- [En Français](guide-fr.md)
 
-* [Em Português](guide-pt.md)
+- [Na Hrvatskom](guide-hr.md)
 
-* [În Română](guide-ro.md)
+- [Bahasa Indonesia](guide-id.md)
 
-* [繁體中文](guide-zh_tw.md)
+- [In Italiano](guide-it.md)
 
-* [简体中文](guide-zh_CN.md)
+- [日本語](guide-ja.md)
 
-* [По-русски](guide-ru.md)
+- [한국어](guide-ko.md)
 
-* [Українською](guide-ua.md)
+- [Em Português](guide-pt.md)
 
-* [Bahasa Indonesia](guide-id.md)
+- [În Română](guide-ro.md)
 
-* [Srpski](guide-sr.md)
+- [По-русски](guide-ru.md)
 
-* [Sa Tagalog](guide-tl.md)
+- [Srpski](guide-sr.md)
+
+- [Türkçe](guide-tr.md)
+
+- [Українською](guide-ua.md)
+
+- [简体中文](guide-zh_CN.md)
+
+- [繁體中文](guide-zh_tw.md)
 
 
 #### *Wag kang kabahan sa mga bagay na hindi mo naiintindihan agad*. Mag-patuloy ka lamang!

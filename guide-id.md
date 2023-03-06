@@ -4,33 +4,39 @@ Ini adalah langkah yang direkomendasikan untuk belajar Haskell berdasarkan penga
 
 ## Untuk pembicara non-English 
 
+- [In English](README.md)
+
 - [Auf Deutsch](guide-de.md)
 
 - [En Español](guide-es.md)
 
 - [En Français](guide-fr.md)
 
+- [Na Hrvatskom](guide-hr.md)
+
 - [In Italiano](guide-it.md)
+
+- [日本語](guide-ja.md)
+
+- [한국어](guide-ko.md)
 
 - [Em Português](guide-pt.md)
 
 - [În Română](guide-ro.md)
 
-- [繁體中文](guide-zh_tw.md)
-
-- [简体中文](guide-zh_CN.md)
-
 - [По-русски](guide-ru.md)
-
-- [Українською](guide-ua.md)
-
-- [Bahasa Indonesia](guide-id.md)
 
 - [Srpski](guide-sr.md)
 
 - [Sa Tagalog](guide-tl.md)
 
-- [한국어](guide-ko.md
+- [Türkçe](guide-tr.md)
+
+- [Українською](guide-ua.md)
+
+- [简体中文](guide-zh_CN.md)
+
+- [繁體中文](guide-zh_tw.md)
 
 #### *Jangan memikirkan hal yang tidak langsung anda mengerti*. Lanjutkan terus! 
 
