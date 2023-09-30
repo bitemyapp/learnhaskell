@@ -4,6 +4,8 @@
 
 ## Другие языки:
 
+- [In English](README.md)
+
 - [Auf Deutsch](guide-de.md)
 
 - [En Español](guide-es.md)
@@ -24,8 +26,6 @@
 
 - [În Română](guide-ro.md)
 
-- [По-русски](guide-ru.md)
-
 - [Srpski](guide-sr.md)
 
 - [Sa Tagalog](guide-tl.md)
@@ -37,8 +37,6 @@
 - [简体中文](guide-zh_CN.md)
 
 - [繁體中文](guide-zh_tw.md)
-
-#### _Don't sweat the stuff you don't understand immediately_. Keep moving!
 
 ## Сообщество
 
@@ -64,7 +62,7 @@ Web-клиент для IRC [здесь](https://web.libera.chat/).
 
 Просто установите Stack, Haskell Platform - давно устраевший способ установки [(подробнее)](https://mail.haskell.org/pipermail/haskell-community/2015-September/000014.html)
 
-# Как конкретно вучить Haskell?
+# Как конкретно выучить Haskell?
 
 Основная рекомендация - прочитать все лекции и решить все задачи из версии Spring 13 курса cis1940, далее пройти курс по ФП. Обе ссылки внизу. Все остальное можно считать опциональным и приведено для того, чтобы вы знали, куда смотреть.
 
