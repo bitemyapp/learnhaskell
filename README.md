@@ -115,8 +115,8 @@ recommendation of my guide and is how we teach everyone Haskell.
 
 cs240h is available online:
 
-- [Spring 14](http://www.scs.stanford.edu/14sp-cs240h/)
-- [Winter 16](http://www.scs.stanford.edu/16wi-cs240h/)
+- [Spring 14](https://www.scs.stanford.edu/14sp-cs240h/)
+- [Winter 16](https://www.scs.stanford.edu/16wi-cs240h/)
 
 This is [Bryan O'Sullivan](https://github.com/bos)'s online course from the
 class he teaches at Stanford. If you don't know who he is, take a gander at half
