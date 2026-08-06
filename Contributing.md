@@ -30,3 +30,4 @@ languages:
  Portuguese | `GUIDE_LANG=pt`
  Turkish    | `GUIDE_LANG=tr`
  Russian    | `GUIDE_LANG=ru`
+ Hungarian  | `GUIDE_LANG=hu`

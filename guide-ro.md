@@ -1,6 +1,6 @@
 # Ghid pentru a învăța Haskell
 
-Acest tutorial reprezintă calea recomandată pentru a învăța Haskell, pe baza experiențelor avute ajutând alte persoane. Lista de recomandări este creată de unul din autorii [Haskell Book.](https://haskellbook.com).
+Acest tutorial reprezintă calea recomandată pentru a învăța Haskell, pe baza experiențelor avute ajutând alte persoane. Lista de recomandări este creată de unul din autorii [Haskell Book](https://haskellbook.com).
 
 #### *Nu vă stresați prea mult pentru lucrurile pe care nu le înțelegeți imediat*. Mergeți mai departe!
 

@@ -38,6 +38,8 @@ Ovo je preporučeni put za učenje Haskella zasnovan na iskustvu u pomaganju dru
 
 - [繁體中文](guide-zh_tw.md)
 
+- [Magyarul](guide-hu.md)
+
 #### *Ne obraćajte mnogo pažnje na stvari koje iz prve ne razumijete*. Samo idite naprijed!
 
 ## Zajednica

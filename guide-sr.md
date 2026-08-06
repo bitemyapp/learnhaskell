@@ -38,6 +38,8 @@ Ovo je preporučeni put za učenje Haskell-a zasnovan na iskustvu u pomaganju dr
 
 - [繁體中文](guide-zh_tw.md)
 
+- [Magyarul](guide-hu.md)
+
 #### *Ne obraćajte mnogo pažnju na stvari koje ne razumete iz prve*. Samo idite napred!
 
 ## Zajednica

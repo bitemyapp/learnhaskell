@@ -38,6 +38,8 @@
 
 - [繁體中文](guide-zh_tw.md)
 
+- [Magyarul](guide-hu.md)
+
 
 #### _Anlamadığın şeyleri hemen başına dert etme_. Devam et!
 

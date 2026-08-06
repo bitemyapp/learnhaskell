@@ -38,6 +38,8 @@ Ini adalah langkah yang direkomendasikan untuk belajar Haskell berdasarkan penga
 
 - [繁體中文](guide-zh_tw.md)
 
+- [Magyarul](guide-hu.md)
+
 #### *Jangan memikirkan hal yang tidak langsung anda mengerti*. Lanjutkan terus! 
 
 ## Komunitas

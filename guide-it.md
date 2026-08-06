@@ -37,6 +37,8 @@ Questa è la strada che raccomando per imparare Haskell.
 
 - [繁體中文](guide-zh_tw.md)
 
+- [Magyarul](guide-hu.md)
+
 
 #### Un consiglio: *non preoccupatevi se non capite qualcosa alla prima lettura*. Andate avanti.
 

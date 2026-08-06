@@ -38,6 +38,8 @@ This is a recommended path for learning Haskell based on experience helping othe
 
 - [繁體中文](guide-zh_tw.md)
 
+- [Magyarul](guide-hu.md)
+
 #### _Don't sweat the stuff you don't understand immediately_. Keep moving!
 
 ## Community

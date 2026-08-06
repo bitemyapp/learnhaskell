@@ -38,6 +38,8 @@ Ito ay ang maipapayong daan upang matutunan ang Haskell base sa karanasan na mak
 
 - [繁體中文](guide-zh_tw.md)
 
+- [Magyarul](guide-hu.md)
+
 
 #### *Wag kang kabahan sa mga bagay na hindi mo naiintindihan agad*. Mag-patuloy ka lamang!
 
